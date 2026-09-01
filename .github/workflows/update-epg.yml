@@ -134,7 +134,16 @@ jobs:
             --grab-timeout-seconds "${{ steps.profile.outputs.grab_timeout }}" \
             --overall-timeout-seconds "${{ steps.profile.outputs.overall_timeout }}"
 
-      - name: Validate staged XMLTV and Last Known Good
+      - name: Normalize final display names and export platform EPG subsets
+        run: |
+          python scripts/export_platform_epgs.py \
+            --master build/publish/de.xml \
+            --candidates build/candidates.json \
+            --config config/platforms.json \
+            --output-dir build/publish/platforms \
+            --report build/publish/platform-coverage.csv
+
+      - name: Validate final XMLTV, critical channels and Last Known Good
         shell: bash
         run: |
           set -euo pipefail
@@ -143,6 +152,17 @@ jobs:
             --gzip build/publish/de.xml.gz
             --min-channels 25
             --min-programmes 100
+            --require-display-names
+            --required-active-channel Silverline.de
+            --required-active-channel SerienPlus.de@HD
+            --required-active-channel SerienPlus.de@SD
+            --required-active-channel OneTerra.de@SD
+            --required-display-name "Silverline.de=Silverline"
+            --required-display-name "SerienPlus.de@HD=SERIEN+ HD"
+            --required-display-name "SerienPlus.de@SD=SERIEN+"
+            --required-display-name "SerienPlus.de@SD=Serien Plus"
+            --required-display-name "SerienPlus.de@SD=SerienPlus"
+            --required-display-name "OneTerra.de@SD=One TERRA"
           )
 
           baseline=""
@@ -164,14 +184,30 @@ jobs:
 
           python scripts/validate_epg.py "${args[@]}"
 
-      - name: Export platform EPG subsets
+      - name: Validate platform XMLTV subsets
+        shell: bash
         run: |
-          python scripts/export_platform_epgs.py \
-            --master build/publish/de.xml \
-            --candidates build/candidates.json \
-            --config config/platforms.json \
-            --output-dir build/publish/platforms \
-            --report build/publish/platform-coverage.csv
+          set -euo pipefail
+
+          python scripts/validate_epg.py \
+            build/publish/platforms/samsung.xml \
+            --gzip build/publish/platforms/samsung.xml.gz \
+            --min-channels 20 \
+            --min-programmes 1000 \
+            --require-display-names
+
+          python scripts/validate_epg.py \
+            build/publish/platforms/pluto.xml \
+            --gzip build/publish/platforms/pluto.xml.gz \
+            --min-channels 50 \
+            --min-programmes 1000 \
+            --require-display-names
+
+          python scripts/validate_epg.py \
+            build/publish/platforms/amazon.xml \
+            --gzip build/publish/platforms/amazon.xml.gz \
+            --min-channels 0 \
+            --min-programmes 0
 
       - name: Promote validated build (Last Known Good)
         shell: bash
