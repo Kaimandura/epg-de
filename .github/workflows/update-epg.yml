@@ -2,8 +2,18 @@ name: Update Germany EPG
 
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "Build profile"
+        required: true
+        default: "fast"
+        type: choice
+        options:
+          - fast
+          - deep
   schedule:
     - cron: "17 2 * * *"
+    - cron: "47 3 * * 0"
   push:
     branches:
       - main
@@ -22,11 +32,54 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 330
+    timeout-minutes: 300
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Select build profile
+        id: profile
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_SCHEDULE: ${{ github.event.schedule }}
+          REQUESTED_MODE: ${{ inputs.mode }}
+        run: |
+          set -euo pipefail
+
+          mode="fast"
+          if [[ "$EVENT_NAME" == "schedule" && "$EVENT_SCHEDULE" == "47 3 * * 0" ]]; then
+            mode="deep"
+          elif [[ "$EVENT_NAME" == "workflow_dispatch" && "$REQUESTED_MODE" == "deep" ]]; then
+            mode="deep"
+          fi
+
+          if [[ "$mode" == "deep" ]]; then
+            rounds=6
+            workers=4
+            batch_size=30
+            grab_timeout=420
+            overall_timeout=12600
+          else
+            rounds=2
+            workers=3
+            batch_size=40
+            grab_timeout=180
+            overall_timeout=5400
+          fi
+
+          {
+            echo "mode=$mode"
+            echo "rounds=$rounds"
+            echo "workers=$workers"
+            echo "batch_size=$batch_size"
+            echo "grab_timeout=$grab_timeout"
+            echo "overall_timeout=$overall_timeout"
+          } >> "$GITHUB_OUTPUT"
+
+          echo "Build profile: $mode"
+          echo "rounds=$rounds workers=$workers batch_size=$batch_size grab_timeout=${grab_timeout}s overall_timeout=${overall_timeout}s"
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -42,8 +95,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          rm -rf upstream
-          mkdir -p upstream build data epg reports
+          rm -rf upstream build
+          mkdir -p upstream build/publish data epg reports
           git clone --depth 1 https://github.com/iptv-org/epg.git upstream/epg
           git clone --depth 1 https://github.com/iptv-org/database.git upstream/database
           curl --retry 3 --connect-timeout 15 --max-time 60 -fsSL \
@@ -64,19 +117,50 @@ jobs:
             --candidates build/candidates.json \
             --channels data/de-channels.xml
 
-      - name: Build guide with source fallback
+      - name: Build staged guide with bounded parallel fallback
         run: |
           python scripts/build_epg.py \
             --epg-root upstream/epg \
             --candidates build/candidates.json \
-            --output epg/de.xml \
-            --coverage reports/coverage.csv \
+            --output build/publish/de.xml \
+            --coverage build/publish/coverage.csv \
             --days 7 \
-            --rounds 4 \
-            --min-programmes 4
+            --rounds "${{ steps.profile.outputs.rounds }}" \
+            --min-programmes 4 \
+            --workers "${{ steps.profile.outputs.workers }}" \
+            --batch-size "${{ steps.profile.outputs.batch_size }}" \
+            --grab-timeout-seconds "${{ steps.profile.outputs.grab_timeout }}" \
+            --overall-timeout-seconds "${{ steps.profile.outputs.overall_timeout }}"
 
-      - name: Validate XMLTV
-        run: python scripts/validate_epg.py epg/de.xml
+      - name: Validate staged XMLTV and Last Known Good
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=(
+            build/publish/de.xml
+            --gzip build/publish/de.xml.gz
+            --min-channels 25
+            --min-programmes 100
+          )
+
+          if [[ -f epg/de.xml ]]; then
+            args+=(
+              --baseline epg/de.xml
+              --min-baseline-programme-ratio 0.60
+              --min-baseline-active-channel-ratio 0.70
+            )
+          fi
+
+          python scripts/validate_epg.py "${args[@]}"
+
+      - name: Promote validated build (Last Known Good)
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p epg reports
+          cp build/publish/de.xml epg/de.xml
+          cp build/publish/de.xml.gz epg/de.xml.gz
+          cp build/publish/coverage.csv reports/coverage.csv
 
       - name: Publish generated files
         shell: bash
@@ -89,5 +173,5 @@ jobs:
             echo "No generated changes."
             exit 0
           fi
-          git commit -m "chore: update Germany EPG"
+          git commit -m "chore: update Germany EPG (${{ steps.profile.outputs.mode }})"
           git push
