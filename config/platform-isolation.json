@@ -1,0 +1,23 @@
+{
+  "platforms": [
+    {
+      "name": "samsung",
+      "label": "Samsung TV Plus",
+      "site": "i.mjh.nz",
+      "site_id_prefix": [
+        "SamsungTVPlus/de#",
+        "SamsungTVPlus/at#",
+        "SamsungTVPlus/ch#"
+      ],
+      "id_prefix": "SamsungTVPlus"
+    },
+    {
+      "name": "pluto",
+      "label": "Pluto TV",
+      "site": "pluto.tv",
+      "source_file_contains": "pluto.tv_de.channels.xml",
+      "id_prefix": "PlutoTV",
+      "region": "de"
+    }
+  ]
+}
