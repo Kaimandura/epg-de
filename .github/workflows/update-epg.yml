@@ -36,7 +36,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Select build profile
         id: profile
@@ -82,12 +82,12 @@ jobs:
           echo "rounds=$rounds workers=$workers batch_size=$batch_size grab_timeout=${grab_timeout}s overall_timeout=${overall_timeout}s"
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "22"
 
@@ -164,14 +164,62 @@ jobs:
 
       - name: Publish generated files
         shell: bash
+        env:
+          START_SHA: ${{ github.sha }}
+          BUILD_MODE: ${{ steps.profile.outputs.mode }}
         run: |
           set -euo pipefail
+
           git config user.name "epg-de bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/de-channels.xml epg/de.xml epg/de.xml.gz reports/coverage.csv
-          if git diff --cached --quiet; then
-            echo "No generated changes."
-            exit 0
-          fi
-          git commit -m "chore: update Germany EPG (${{ steps.profile.outputs.mode }})"
-          git push
+
+          publish_tmp="$(mktemp -d)"
+          trap 'rm -rf "$publish_tmp"' EXIT
+
+          cp data/de-channels.xml "$publish_tmp/de-channels.xml"
+          cp epg/de.xml "$publish_tmp/de.xml"
+          cp epg/de.xml.gz "$publish_tmp/de.xml.gz"
+          cp reports/coverage.csv "$publish_tmp/coverage.csv"
+
+          for attempt in 1 2 3; do
+            echo "Publish attempt $attempt/3"
+            git fetch origin main --depth=1
+            remote_sha="$(git rev-parse origin/main)"
+
+            if [[ "$remote_sha" != "$START_SHA" ]]; then
+              pipeline_changes="$(
+                git diff --name-only "$START_SHA" "$remote_sha" -- \
+                  .github/workflows/update-epg.yml scripts config || true
+              )"
+              if [[ -n "$pipeline_changes" ]]; then
+                echo "A newer pipeline/config revision is already on main:"
+                echo "$pipeline_changes"
+                echo "This build is superseded; keeping the current Last Known Good publication."
+                exit 0
+              fi
+            fi
+
+            git reset --hard "$remote_sha"
+            mkdir -p data epg reports
+            cp "$publish_tmp/de-channels.xml" data/de-channels.xml
+            cp "$publish_tmp/de.xml" epg/de.xml
+            cp "$publish_tmp/de.xml.gz" epg/de.xml.gz
+            cp "$publish_tmp/coverage.csv" reports/coverage.csv
+
+            git add data/de-channels.xml epg/de.xml epg/de.xml.gz reports/coverage.csv
+            if git diff --cached --quiet; then
+              echo "No generated changes."
+              exit 0
+            fi
+
+            git commit -m "chore: update Germany EPG ($BUILD_MODE)"
+            if git push origin HEAD:main; then
+              echo "Publication succeeded."
+              exit 0
+            fi
+
+            echo "Remote main moved during publication; retrying safely."
+          done
+
+          echo "Publication failed after 3 race-safe attempts."
+          exit 1
