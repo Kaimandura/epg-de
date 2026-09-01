@@ -145,9 +145,18 @@ jobs:
             --min-programmes 100
           )
 
+          baseline=""
           if [[ -f epg/de.xml ]]; then
+            baseline="epg/de.xml"
+          elif [[ -f epg/de.xml.gz ]]; then
+            mkdir -p build/baseline
+            gzip -dc epg/de.xml.gz > build/baseline/de.xml
+            baseline="build/baseline/de.xml"
+          fi
+
+          if [[ -n "$baseline" ]]; then
             args+=(
-              --baseline epg/de.xml
+              --baseline "$baseline"
               --min-baseline-programme-ratio 0.60
               --min-baseline-active-channel-ratio 0.70
             )
@@ -160,7 +169,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p epg reports
-          cp build/publish/de.xml epg/de.xml
+          rm -f epg/de.xml
           cp build/publish/de.xml.gz epg/de.xml.gz
           cp build/publish/coverage.csv reports/coverage.csv
           cp build/unmapped-de-channels.csv reports/unmapped-de-channels.csv
@@ -180,10 +189,17 @@ jobs:
           trap 'rm -rf "$publish_tmp"' EXIT
 
           cp data/de-channels.xml "$publish_tmp/de-channels.xml"
-          cp epg/de.xml "$publish_tmp/de.xml"
           cp epg/de.xml.gz "$publish_tmp/de.xml.gz"
           cp reports/coverage.csv "$publish_tmp/coverage.csv"
           cp reports/unmapped-de-channels.csv "$publish_tmp/unmapped-de-channels.csv"
+
+          for file in "$publish_tmp/de-channels.xml" "$publish_tmp/de.xml.gz" "$publish_tmp/coverage.csv" "$publish_tmp/unmapped-de-channels.csv"; do
+            size="$(stat -c%s "$file")"
+            if (( size >= 100 * 1024 * 1024 )); then
+              echo "Refusing publication: $file is ${size} bytes and exceeds GitHub's 100 MiB limit."
+              exit 1
+            fi
+          done
 
           for attempt in 1 2 3; do
             echo "Publish attempt $attempt/3"
@@ -205,13 +221,13 @@ jobs:
 
             git reset --hard "$remote_sha"
             mkdir -p data epg reports
+            rm -f epg/de.xml
             cp "$publish_tmp/de-channels.xml" data/de-channels.xml
-            cp "$publish_tmp/de.xml" epg/de.xml
             cp "$publish_tmp/de.xml.gz" epg/de.xml.gz
             cp "$publish_tmp/coverage.csv" reports/coverage.csv
             cp "$publish_tmp/unmapped-de-channels.csv" reports/unmapped-de-channels.csv
 
-            git add \
+            git add -A -- \
               data/de-channels.xml \
               epg/de.xml \
               epg/de.xml.gz \
