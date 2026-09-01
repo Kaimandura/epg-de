@@ -5,6 +5,7 @@ import argparse
 import gzip
 import math
 import xml.etree.ElementTree as ET
+from collections import Counter
 from pathlib import Path
 
 
@@ -30,6 +31,26 @@ def counts(root: ET.Element) -> tuple[set[str], list[ET.Element], set[str]]:
     return channel_ids, programmes, active_channels
 
 
+def channel_display_names(node: ET.Element) -> list[str]:
+    return [
+        (display.text or "").strip()
+        for display in node.findall("display-name")
+        if (display.text or "").strip()
+    ]
+
+
+def parse_required_display_name(spec: str) -> tuple[str, str]:
+    xmltv_id, separator, expected_name = spec.partition("=")
+    xmltv_id = xmltv_id.strip()
+    expected_name = expected_name.strip()
+    if not separator or not xmltv_id or not expected_name:
+        raise SystemExit(
+            "Invalid --required-display-name value. Expected XMLTV_ID=DISPLAY_NAME, "
+            f"got: {spec!r}"
+        )
+    return xmltv_id, expected_name
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Validate generated XMLTV output and Last-Known-Good regression gates."
@@ -41,6 +62,25 @@ def main() -> int:
     parser.add_argument("--baseline", type=Path)
     parser.add_argument("--min-baseline-programme-ratio", type=float, default=0.0)
     parser.add_argument("--min-baseline-active-channel-ratio", type=float, default=0.0)
+    parser.add_argument(
+        "--require-display-names",
+        action="store_true",
+        help="Require every channel to have at least one non-empty display-name.",
+    )
+    parser.add_argument(
+        "--required-active-channel",
+        action="append",
+        default=[],
+        metavar="XMLTV_ID",
+        help="Require this XMLTV channel ID to exist and have at least one programme.",
+    )
+    parser.add_argument(
+        "--required-display-name",
+        action="append",
+        default=[],
+        metavar="XMLTV_ID=DISPLAY_NAME",
+        help="Require an exact case-insensitive display-name for the given XMLTV ID.",
+    )
     args = parser.parse_args()
 
     for name, value in (
@@ -53,6 +93,11 @@ def main() -> int:
     root = load_xml(args.xml)
     channel_nodes = root.findall("channel")
     channel_ids, programmes, active_channels = counts(root)
+    channel_by_id = {
+        node.attrib.get("id", ""): node
+        for node in channel_nodes
+        if node.attrib.get("id", "")
+    }
 
     if len(channel_ids) < args.min_channels:
         raise SystemExit(f"Too few channels: {len(channel_ids)} < {args.min_channels}")
@@ -61,11 +106,26 @@ def main() -> int:
     if len(channel_nodes) != len(channel_ids):
         raise SystemExit("Duplicate or empty channel IDs found.")
 
+    if args.require_display_names:
+        missing_display_names = [
+            channel_id
+            for channel_id, node in sorted(channel_by_id.items())
+            if not channel_display_names(node)
+        ]
+        if missing_display_names:
+            preview = ", ".join(missing_display_names[:20])
+            raise SystemExit(
+                "Channels without display-name found: "
+                f"{preview}" + (" ..." if len(missing_display_names) > 20 else "")
+            )
+
     seen: set[tuple[str, str, str, str]] = set()
+    programme_counts: Counter[str] = Counter()
     for programme in programmes:
         channel_id = programme.attrib.get("channel", "")
         if channel_id not in channel_ids:
             raise SystemExit(f"Programme references unknown channel: {channel_id}")
+        programme_counts[channel_id] += 1
         signature = (
             channel_id,
             programme.attrib.get("start", ""),
@@ -75,6 +135,32 @@ def main() -> int:
         if signature in seen:
             raise SystemExit(f"Duplicate programme found: {signature}")
         seen.add(signature)
+
+    for required_id in args.required_active_channel:
+        required_id = required_id.strip()
+        if not required_id:
+            continue
+        if required_id not in channel_by_id:
+            raise SystemExit(f"Required channel missing: {required_id}")
+        count = programme_counts.get(required_id, 0)
+        if count < 1:
+            raise SystemExit(f"Required channel has no programmes: {required_id}")
+        if not channel_display_names(channel_by_id[required_id]):
+            raise SystemExit(f"Required channel has no display-name: {required_id}")
+        print(f"Required channel OK: {required_id} ({count} programmes)")
+
+    for spec in args.required_display_name:
+        required_id, expected_name = parse_required_display_name(spec)
+        node = channel_by_id.get(required_id)
+        if node is None:
+            raise SystemExit(f"Required display-name channel missing: {required_id}")
+        names = channel_display_names(node)
+        if expected_name.casefold() not in {name.casefold() for name in names}:
+            raise SystemExit(
+                f"Required display-name missing for {required_id}: {expected_name!r}; "
+                f"available={names!r}"
+            )
+        print(f"Required display-name OK: {required_id} -> {expected_name}")
 
     gzip_path = args.gzip_path or args.xml.with_suffix(args.xml.suffix + ".gz")
     if not gzip_path.exists():

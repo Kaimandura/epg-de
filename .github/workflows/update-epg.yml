@@ -119,6 +119,20 @@ jobs:
             --candidates build/candidates.json \
             --channels data/de-channels.xml
 
+      - name: Apply authoritative channel ID remaps
+        run: |
+          python scripts/remap_candidates.py \
+            --candidates build/candidates.json \
+            --remap-file config/channel-remaps.json \
+            --channels data/de-channels.xml
+
+      - name: Isolate FAST platform channel identities
+        run: |
+          python scripts/isolate_platform_candidates.py \
+            --candidates build/candidates.json \
+            --config config/platform-isolation.json \
+            --channels data/de-channels.xml
+
       - name: Build staged guide with bounded parallel fallback
         run: |
           python scripts/build_epg.py \
@@ -134,7 +148,16 @@ jobs:
             --grab-timeout-seconds "${{ steps.profile.outputs.grab_timeout }}" \
             --overall-timeout-seconds "${{ steps.profile.outputs.overall_timeout }}"
 
-      - name: Validate staged XMLTV and Last Known Good
+      - name: Normalize final display names and export platform EPG subsets
+        run: |
+          python scripts/export_platform_epgs.py \
+            --master build/publish/de.xml \
+            --candidates build/candidates.json \
+            --config config/platforms.json \
+            --output-dir build/publish/platforms \
+            --report build/publish/platform-coverage.csv
+
+      - name: Validate final XMLTV, critical channels and Last Known Good
         shell: bash
         run: |
           set -euo pipefail
@@ -143,6 +166,19 @@ jobs:
             --gzip build/publish/de.xml.gz
             --min-channels 25
             --min-programmes 100
+            --require-display-names
+            --required-active-channel Silverline.de
+            --required-active-channel SerienPlus.de@HD
+            --required-active-channel SerienPlus.de@SD
+            --required-active-channel OneTerra.de@SD
+            --required-active-channel CrimeTime.de@SD
+            --required-display-name "Silverline.de=Silverline"
+            --required-display-name "SerienPlus.de@HD=SERIEN+ HD"
+            --required-display-name "SerienPlus.de@SD=SERIEN+"
+            --required-display-name "SerienPlus.de@SD=Serien Plus"
+            --required-display-name "SerienPlus.de@SD=SerienPlus"
+            --required-display-name "OneTerra.de@SD=One TERRA"
+            --required-display-name "CrimeTime.de@SD=Crime Time"
           )
 
           baseline=""
@@ -163,15 +199,40 @@ jobs:
           fi
 
           python scripts/validate_epg.py "${args[@]}"
+          python scripts/validate_channel_namespace.py \
+            build/publish/de.xml \
+            --forbid-id CrimeTime.us@SD
 
-      - name: Export platform EPG subsets
+      - name: Validate platform XMLTV subsets
+        shell: bash
         run: |
-          python scripts/export_platform_epgs.py \
-            --master build/publish/de.xml \
-            --candidates build/candidates.json \
-            --config config/platforms.json \
-            --output-dir build/publish/platforms \
-            --report build/publish/platform-coverage.csv
+          set -euo pipefail
+
+          python scripts/validate_epg.py \
+            build/publish/platforms/samsung.xml \
+            --gzip build/publish/platforms/samsung.xml.gz \
+            --min-channels 20 \
+            --min-programmes 1000 \
+            --require-display-names
+          python scripts/validate_channel_namespace.py \
+            build/publish/platforms/samsung.xml \
+            --require-prefix SamsungTVPlus.
+
+          python scripts/validate_epg.py \
+            build/publish/platforms/pluto.xml \
+            --gzip build/publish/platforms/pluto.xml.gz \
+            --min-channels 50 \
+            --min-programmes 1000 \
+            --require-display-names
+          python scripts/validate_channel_namespace.py \
+            build/publish/platforms/pluto.xml \
+            --require-prefix PlutoTV.
+
+          python scripts/validate_epg.py \
+            build/publish/platforms/amazon.xml \
+            --gzip build/publish/platforms/amazon.xml.gz \
+            --min-channels 0 \
+            --min-programmes 0
 
       - name: Promote validated build (Last Known Good)
         shell: bash

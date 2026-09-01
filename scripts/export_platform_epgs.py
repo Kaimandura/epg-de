@@ -98,6 +98,21 @@ def display_name_variants(name: str) -> list[str]:
     return result
 
 
+def candidate_display_names(candidate: dict[str, Any]) -> list[str]:
+    names = display_name_variants(str(candidate.get("name", "")))
+    for alias in as_list(candidate.get("display_aliases")):
+        names.extend(display_name_variants(alias))
+
+    result: list[str] = []
+    seen: set[str] = set()
+    for value in names:
+        normalized = value.casefold()
+        if value and normalized not in seen:
+            seen.add(normalized)
+            result.append(value)
+    return result
+
+
 def ensure_master_display_names(
     master_root: ET.Element,
     candidate_data: dict[str, list[dict[str, Any]]],
@@ -114,10 +129,6 @@ def ensure_master_display_names(
         if channel is None or not candidates:
             continue
 
-        canonical_name = str(candidates[0].get("name", "")).strip()
-        if not canonical_name:
-            continue
-
         existing = {
             (node.text or "").strip().casefold()
             for node in channel.findall("display-name")
@@ -126,7 +137,7 @@ def ensure_master_display_names(
         lang = str(candidates[0].get("attrs", {}).get("lang", "")).strip()
 
         insert_at = 0
-        for value in display_name_variants(canonical_name):
+        for value in candidate_display_names(candidates[0]):
             if value.casefold() in existing:
                 continue
             attrs = {"lang": lang} if lang else {}
