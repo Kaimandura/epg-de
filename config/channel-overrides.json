@@ -41,6 +41,13 @@
       "site": "tv.blue.ch",
       "site_id": "2042",
       "lang": "de"
+    },
+    {
+      "xmltv_id": "CrimeTime.de@SD",
+      "name": "Crime Time",
+      "site": "sky.com",
+      "site_id": "DE#2009",
+      "lang": "de"
     }
   ]
 }
