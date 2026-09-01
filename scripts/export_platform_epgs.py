@@ -78,6 +78,79 @@ def platform_ids(
     return selected
 
 
+def display_name_variants(name: str) -> list[str]:
+    variants = [name.strip()]
+    if "+" in name:
+        variants.extend(
+            [
+                name.replace("+", " Plus").strip(),
+                name.replace("+", "Plus").strip(),
+            ]
+        )
+
+    result: list[str] = []
+    seen: set[str] = set()
+    for value in variants:
+        normalized = value.casefold()
+        if value and normalized not in seen:
+            seen.add(normalized)
+            result.append(value)
+    return result
+
+
+def ensure_master_display_names(
+    master_root: ET.Element,
+    candidate_data: dict[str, list[dict[str, Any]]],
+) -> int:
+    channels_by_id = {
+        channel.attrib.get("id", ""): channel
+        for channel in master_root.findall("channel")
+        if channel.attrib.get("id", "")
+    }
+
+    added = 0
+    for xmltv_id, candidates in candidate_data.items():
+        channel = channels_by_id.get(xmltv_id)
+        if channel is None or not candidates:
+            continue
+
+        canonical_name = str(candidates[0].get("name", "")).strip()
+        if not canonical_name:
+            continue
+
+        existing = {
+            (node.text or "").strip().casefold()
+            for node in channel.findall("display-name")
+            if (node.text or "").strip()
+        }
+        lang = str(candidates[0].get("attrs", {}).get("lang", "")).strip()
+
+        insert_at = 0
+        for value in display_name_variants(canonical_name):
+            if value.casefold() in existing:
+                continue
+            attrs = {"lang": lang} if lang else {}
+            node = ET.Element("display-name", attrs)
+            node.text = value
+            channel.insert(insert_at, node)
+            insert_at += 1
+            existing.add(value.casefold())
+            added += 1
+
+    return added
+
+
+def write_master(master_root: ET.Element, xml_path: Path) -> None:
+    tree = ET.ElementTree(master_root)
+    ET.indent(tree, space="  ")
+    tree.write(xml_path, encoding="utf-8", xml_declaration=True)
+
+    gzip_path = xml_path.with_suffix(xml_path.suffix + ".gz")
+    with xml_path.open("rb") as source, gzip_path.open("wb") as raw:
+        with gzip.GzipFile(filename="", mode="wb", fileobj=raw, mtime=0) as target:
+            shutil.copyfileobj(source, target)
+
+
 def write_subset(
     master_root: ET.Element,
     wanted_ids: set[str],
@@ -156,6 +229,10 @@ def main() -> int:
 
     candidate_payload = json.loads(args.candidates.read_text(encoding="utf-8"))
     candidate_data: dict[str, list[dict[str, Any]]] = candidate_payload["channels"]
+
+    added_display_names = ensure_master_display_names(master_root, candidate_data)
+    write_master(master_root, args.master)
+    print(f"Master display-name normalization: added={added_display_names}")
 
     config_payload = json.loads(args.config.read_text(encoding="utf-8"))
     platforms = config_payload.get("platforms", {})
