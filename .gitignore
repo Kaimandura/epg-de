@@ -1,5 +1,6 @@
 upstream/
 build/
+epg/de.xml
 __pycache__/
 *.pyc
 *.tmp
