@@ -20,6 +20,27 @@
       "site": "sky.com",
       "site_id": "DE#2021",
       "lang": "de"
+    },
+    {
+      "xmltv_id": "OneTerra.de@SD",
+      "name": "One TERRA",
+      "site": "sky.com",
+      "site_id": "DE#2008",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "OneTerra.de@SD",
+      "name": "One TERRA",
+      "site": "epgshare01.online",
+      "site_id": "RAKUTEN_DE1#DE:.One.Terra.de",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "OneTerra.de@SD",
+      "name": "One TERRA",
+      "site": "tv.blue.ch",
+      "site_id": "2042",
+      "lang": "de"
     }
   ]
 }
