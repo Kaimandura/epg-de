@@ -199,6 +199,9 @@ jobs:
           fi
 
           python scripts/validate_epg.py "${args[@]}"
+          python scripts/validate_channel_namespace.py \
+            build/publish/de.xml \
+            --forbid-id CrimeTime.us@SD
 
       - name: Validate platform XMLTV subsets
         shell: bash
@@ -211,6 +214,9 @@ jobs:
             --min-channels 20 \
             --min-programmes 1000 \
             --require-display-names
+          python scripts/validate_channel_namespace.py \
+            build/publish/platforms/samsung.xml \
+            --require-prefix SamsungTVPlus.
 
           python scripts/validate_epg.py \
             build/publish/platforms/pluto.xml \
@@ -218,6 +224,9 @@ jobs:
             --min-channels 50 \
             --min-programmes 1000 \
             --require-display-names
+          python scripts/validate_channel_namespace.py \
+            build/publish/platforms/pluto.xml \
+            --require-prefix PlutoTV.
 
           python scripts/validate_epg.py \
             build/publish/platforms/amazon.xml \
