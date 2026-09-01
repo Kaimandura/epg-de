@@ -1,0 +1,12 @@
+{
+  "remaps": [
+    {
+      "site": "tv.blue.ch",
+      "site_id": "2039",
+      "from_xmltv_id": "CrimeTime.us@SD",
+      "to_xmltv_id": "CrimeTime.de@SD",
+      "name": "Crime Time",
+      "lang": "de"
+    }
+  ]
+}
