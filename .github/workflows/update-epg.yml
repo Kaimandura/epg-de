@@ -27,7 +27,7 @@ permissions:
 
 concurrency:
   group: epg-de-update
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
