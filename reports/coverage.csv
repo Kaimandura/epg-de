@@ -13,8 +13,8 @@ xmltv_id,name,status,programme_count,selected_site,candidate_count,attempt_count
 4Plus.ch@SD,4+,OK,79,tv.blue.ch,3,2,teleboy.ch:OK:0;tv.blue.ch:OK:79,lang=de
 5Plus.ch@SD,5+,OK,107,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:107,lang=de
 6Plus.ch@SD,6+,OK,93,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:93,lang=de
-7PlusNickSchweiz.ch@SD,7+ / Nick CH,OK,375,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:375,lang=de
-ALFTV.ch@SD,ALF-TV,OK,168,tv.blue.ch,1,1,tv.blue.ch:OK:168,lang=de
+7PlusNickSchweiz.ch@SD,7+ / Nick CH,OK,374,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:374,lang=de
+ALFTV.ch@SD,ALF-TV,OK,169,tv.blue.ch,1,1,tv.blue.ch:OK:169,lang=de
 ARDalpha.de@HD,ARD alpha HD,OK,313,sky.com,3,1,sky.com:OK:313,broadcast_area=DE;lang=de
 ARDalpha.de@SD,ARD-alpha,OK,318,web.magentatv.de,7,1,web.magentatv.de:OK:318,broadcast_area=DE;iptv-country=DE;lang=de
 ASpor.ch,A Spor,NO_EPG,0,,1,1,tvprofil.com:OK:0,lang=de
@@ -40,14 +40,14 @@ AnixeHDSerie.de@SD,ANIXE HD Serie,OK,298,web.magentatv.de,6,1,web.magentatv.de:O
 AnixePlus.de@SD,ANIXE+,OK,375,web.magentatv.de,3,1,web.magentatv.de:OK:375,broadcast_area=DE;iptv-country=DE;lang=de
 Antena3.ch,Antena 3,NO_EPG,0,,1,1,tvprofil.com:OK:0,lang=de
 AragonTVInternacional.es@SD,ARAGON TV INT,OK,150,sky.com,1,1,sky.com:OK:150,lang=de
-ArcadiaTV.li@SD,ARCADIA world TV,OK,578,tv.blue.ch,1,1,tv.blue.ch:OK:578,lang=de
+ArcadiaTV.li@SD,ARCADIA world TV,OK,576,tv.blue.ch,1,1,tv.blue.ch:OK:576,lang=de
 ArcadiaWorldHD.at@SD,ARCADIA World HD,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
 ArirangWorld.kr@SD,Arirang HD,OK,299,sky.com,1,1,sky.com:OK:299,lang=de
 AuftankenTV.ch@SD,auftanken.tv,OK,87,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:87,lang=de
 AugsburgTV.de@SD,a.tv HD,OK,391,sky.com,1,1,sky.com:OK:391,broadcast_area=DE;iptv-country=DE;lang=de
 AutenticHistory.de@SD,Autentic History,OK,104,watch.whaletvplus.com,1,1,watch.whaletvplus.com:OK:104,broadcast_area=DE;iptv-country=DE
 AutenticTravel.de@SD,Autentic Travel,NO_EPG,0,,1,1,watch.whaletvplus.com:OK:0,broadcast_area=DE;iptv-country=DE
-AutoMotorogSportTV.no@SD,auto motor und sport,OK,410,tv.blue.ch,1,1,tv.blue.ch:OK:410,lang=de
+AutoMotorogSportTV.no@SD,auto motor und sport,OK,408,tv.blue.ch,1,1,tv.blue.ch:OK:408,lang=de
 BBCEntertainment.uk@SD,BBC Entertainment,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
 BBCNews.uk@Europe,BBC News,OK,395,web.magentatv.de,2,1,web.magentatv.de:OK:395,lang=de
 BBCTravel.us@Germany,BBC Travel,OK,167,plex.tv,5,1,plex.tv:OK:167,broadcast_area=DE;iptv-country=DE;lang=de
@@ -72,17 +72,17 @@ BlueEvent1.ch@SD,blue Music D 1,NO_EPG,0,,1,1,tv.blue.ch:OK:0,lang=de
 BlueHustler.nl@SD,Blue Hustler,OK,126,web.magentatv.de,1,1,web.magentatv.de:OK:126,lang=de
 BluePrime.ch@SD,blue Prime,NO_EPG,0,,1,1,tv.blue.ch:OK:0,lang=de
 BlueRetro.ch@SD,blue Retro,OK,96,tv.blue.ch,1,1,tv.blue.ch:OK:96,lang=de
-BlueSport1.ch@SD,blue Sport D 1,OK,128,tv.blue.ch,1,1,tv.blue.ch:OK:128,lang=de
+BlueSport1.ch@SD,blue Sport D 1,OK,130,tv.blue.ch,1,1,tv.blue.ch:OK:130,lang=de
 BlueSport2.ch@SD,blue Sport D 2,OK,118,tv.blue.ch,1,1,tv.blue.ch:OK:118,lang=de
 BlueStars.ch@SD,blue Stars,OK,98,tv.blue.ch,1,1,tv.blue.ch:OK:98,lang=de
-BlueZoomD.ch@SD,blue Zoom de,OK,182,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:182,lang=de
-BlueZoomF.ch@SD,blue Zoom F,OK,177,tv.blue.ch,1,1,tv.blue.ch:OK:177,lang=de
-BodenseeTV.ch@SD,Bodensee TV,OK,398,tv.blue.ch,1,1,tv.blue.ch:OK:398,lang=de
+BlueZoomD.ch@SD,blue Zoom de,OK,180,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:180,lang=de
+BlueZoomF.ch@SD,blue Zoom F,OK,176,tv.blue.ch,1,1,tv.blue.ch:OK:176,lang=de
+BodenseeTV.ch@SD,Bodensee TV,OK,396,tv.blue.ch,1,1,tv.blue.ch:OK:396,lang=de
 BonGusto.de@HD,Bongusto HD,NO_EPG,0,,1,1,tv.magenta.at:OK:0,broadcast_area=DE;lang=de
 BonGusto.de@SD,BonGusto,OK,349,web.magentatv.de,2,1,web.magentatv.de:OK:349,broadcast_area=DE;lang=de
 Boomerang.de@SD,Cartoonito,OK,779,web.magentatv.de,3,1,web.magentatv.de:OK:779,broadcast_area=DE;lang=de
 CARAC5.ch,CARAC5,NO_EPG,0,,1,1,tvprofil.com:OK:0,lang=de
-CCPlutoTV.de@DACH,CC Pluto TV,OK,81,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:81,broadcast_area=DE;iptv-country=DE;lang=de
+CCPlutoTV.de@DACH,CC Pluto TV,OK,70,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:70,broadcast_area=DE;iptv-country=DE;lang=de
 CCTV4Europe.cn@SD,CCTV4,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
 CGTN.cn@SD,CGTN News HD,OK,313,sky.com,1,1,sky.com:OK:313,lang=de
 CGTNDocumentary.cn@SD,CGTN Documentary HD,OK,240,sky.com,1,1,sky.com:OK:240,lang=de
@@ -99,13 +99,13 @@ CartoonNetworkCEE.uk@GermanyHD,Cartoon Network HD,NO_EPG,0,,1,1,tv.magenta.at:OK
 CartoonNetworkCEE.uk@Hungary,Cartoon Network,NO_EPG,0,,2,2,musor.tv:OK:0;tvmusor.hu:OK:0,broadcast_area=DE
 CartoonNetworkCEE.uk@Poland,Cartoon Network (pl),NO_EPG,0,,2,2,m.tv.sms.cz:OK:0;programtv.onet.pl:TIMEOUT:0,broadcast_area=DE
 CartoonNetworkCEE.uk@Romania,Cartoon Network,OK,792,programetv.ro,1,1,programetv.ro:OK:792,broadcast_area=DE
-CartoonNetworkCEE.uk@Russia,Cartoon Network,OK,575,magticom.ge,3,1,magticom.ge:OK:575,broadcast_area=DE
+CartoonNetworkCEE.uk@Russia,Cartoon Network,OK,572,magticom.ge,3,1,magticom.ge:OK:572,broadcast_area=DE
 CartoonitoCEE.uk@Germany,Cartoonito,OK,858,sky.com,3,1,sky.com:OK:858,broadcast_area=DE;lang=de
 CartoonitoCEE.uk@Poland,Cartoonito,NO_EPG,0,,1,1,programtv.onet.pl:TIMEOUT:0,broadcast_area=DE
 CartoonitoCEE.uk@SD,Boomerang,OK,195,melita.com,11,1,melita.com:OK:195,broadcast_area=DE
 CartoonitoMENA.uk@SD,SUPER RTL,OK,439,mujtvprogram.cz,1,1,mujtvprogram.cz:OK:439,lang=de
 Channel21.de@SD,CHANNEL21,NO_EPG,0,,1,1,web.magentatv.de:OK:0,broadcast_area=DE;lang=de
-ChaosCity.us@Germany,Chaos City,OK,108,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:108,broadcast_area=DE;iptv-country=DE;lang=de
+ChaosCity.us@Germany,Chaos City,OK,77,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:77,broadcast_area=DE;iptv-country=DE;lang=de
 Cheers.us@Germany,Cheers,OK,95,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:95,lang=de
 CiraTV.de@SD,Çira TV,NO_EPG,0,,1,1,sat.tv:OK:0,broadcast_area=DE;iptv-country=DE
 ClipMyHorseTV.de@SD,ClipMyHorse.TV,OK,177,sky.com,1,1,sky.com:OK:177,broadcast_area=DE;lang=de
@@ -117,7 +117,7 @@ ComedyCentral.at@SD,Comedy Central,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
 ComedyCentral.de@HD,Comedy Central HD,OK,404,sky.com,2,1,sky.com:OK:404,broadcast_area=DE;lang=de
 ComedyCentral.de@Plus1,Nick/Comedy Central+1,OK,418,web.magentatv.de,1,1,web.magentatv.de:OK:418,broadcast_area=DE;lang=de
 ComedyCentral.de@SD,Comedy Central,OK,411,web.magentatv.de,4,1,web.magentatv.de:OK:411,broadcast_area=DE;iptv-country=DE;lang=de
-ComedyCentralSouthPark.us@Germany,Comedy Central South Park,OK,73,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:73,lang=de
+ComedyCentralSouthPark.us@Germany,Comedy Central South Park,OK,100,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:100,lang=de
 CrimePlusInvestigation.de@HD,Crime + Investigation HD,NO_EPG,0,,1,1,tv.magenta.at:OK:0,broadcast_area=DE;lang=de
 CrimePlusInvestigation.de@SD,Crime+Investigation,OK,221,web.magentatv.de,6,1,web.magentatv.de:OK:221,broadcast_area=DE;lang=de
 CrimeTime.us@SD,Crime Time,OK,205,tv.blue.ch,1,1,tv.blue.ch:OK:205,lang=de
@@ -166,7 +166,7 @@ DeluxeRap.de@SD,Deluxe Rap HD,OK,31,sky.com,3,1,sky.com:OK:31,broadcast_area=DE;
 DiscoveryChannel.de@SD,Discovery Channel,OK,231,web.magentatv.de,4,1,web.magentatv.de:OK:231,broadcast_area=DE;lang=de
 DisneyChannel.de@HD,Disney Channel HD,OK,351,sky.com,2,1,sky.com:OK:351,broadcast_area=DE;lang=de
 DisneyChannel.de@SD,Disney Channel,OK,356,web.magentatv.de,7,1,web.magentatv.de:OK:356,broadcast_area=DE;lang=de
-DoctorWhoClassic.us@US,Doctor Who Classic,OK,95,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:95,broadcast_area=DE
+DoctorWhoClassic.us@US,Doctor Who Classic,OK,36,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:36,broadcast_area=DE
 DocuBoxHD.at,DocuBox HD,NO_EPG,0,,1,1,tvprofil.com:OK:0,lang=de
 Dokusat.de@SD,Dokusat,OK,129,sky.com,2,1,sky.com:OK:129,broadcast_area=DE;iptv-country=DE;lang=de
 ETBBasque.ch,ETB Basque,NO_EPG,0,,1,1,tvprofil.com:OK:0,lang=de
@@ -176,7 +176,7 @@ EroX.nl@HD,Erox HD,NO_EPG,0,,1,1,programtv.onet.pl:TIMEOUT:0,lang=de
 EroXXX.nl@HD,Eroxxx HD,NO_EPG,0,,1,1,programtv.onet.pl:TIMEOUT:0,lang=de
 EuroD.tr@SD,Euro D,OK,79,web.magentatv.de,1,1,web.magentatv.de:OK:79,lang=de
 EuroStar.tr@SD,Eurostar TV,OK,42,web.magentatv.de,1,1,web.magentatv.de:OK:42,lang=de
-Eurochannel.uk@SD,Eurochannel D,OK,111,tv.blue.ch,1,1,tv.blue.ch:OK:111,lang=de
+Eurochannel.uk@SD,Eurochannel D,OK,110,tv.blue.ch,1,1,tv.blue.ch:OK:110,lang=de
 EuronewsGerman.fr@HD,euronews HD,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
 EuronewsGerman.fr@SD,Euronews Deutsch,OK,388,web.magentatv.de,10,1,web.magentatv.de:OK:388,lang=de
 EuronewsItalian.fr@SD,Euronews Italiano,OK,388,web.magentatv.de,1,1,web.magentatv.de:OK:388,lang=de
@@ -193,7 +193,7 @@ Eurosport1.fr@Poland,Eurosport 1,NO_EPG,0,,1,1,programtv.onet.pl:TIMEOUT:0,broad
 Eurosport1.fr@Romania,Eurosport 1,OK,78,programetv.ro,1,1,programetv.ro:OK:78,broadcast_area=DE
 Eurosport1.fr@Russia,Eurosport,OK,85,teliatv.ee,3,1,teliatv.ee:OK:85,broadcast_area=DE
 Eurosport1.fr@Serbia,Eurosport 1 Srbija,NO_EPG,0,,1,1,tv.magenta.at:OK:0,broadcast_area=DE;lang=de
-Eurosport1.fr@Spain,Canal Eurosport 1 (España),OK,102,gatotv.com,1,1,gatotv.com:OK:102,broadcast_area=DE
+Eurosport1.fr@Spain,Canal Eurosport 1 (España),OK,100,gatotv.com,1,1,gatotv.com:OK:100,broadcast_area=DE
 Eurosport1.fr@UK,Eurosport 1,NO_EPG,0,,3,2,mytelly.co.uk:OK:0;tvireland.ie:OK:0,broadcast_area=DE
 Eurosport1.fr@UKHD,Eurosport 1 HD,NO_EPG,0,,2,2,mytelly.co.uk:OK:0;tvireland.ie:OK:0,broadcast_area=DE
 Eurosport2.fr@France,Eurosport 2,OK,109,web.magentatv.de,30,1,web.magentatv.de:OK:109,broadcast_area=DE;lang=de
@@ -275,7 +275,7 @@ History.de@SD,The HISTORY Channel,OK,223,web.magentatv.de,5,1,web.magentatv.de:O
 HitExpressTV.ch@SD,AW2 TV,OK,124,tv.blue.ch,1,1,tv.blue.ch:OK:124,lang=de
 HitradioO3.at@SD,Hitradio Ö3,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
 HopeChannelGerman.de@SD,Hope TV,OK,337,sky.com,2,1,sky.com:OK:337,broadcast_area=DE;iptv-country=DE;lang=de
-HorseCountryTV.uk@SD,Horse & Country TV,OK,37,tv.nu,4,1,tv.nu:OK:37,broadcast_area=DE;iptv-country=DE
+HorseCountryTV.uk@SD,Horse & Country TV,OK,36,tv.nu,4,1,tv.nu:OK:36,broadcast_area=DE;iptv-country=DE
 INFAST.nl@DE,INFAST,OK,272,plex.tv,1,1,plex.tv:OK:272,lang=de
 INPLUS.nl@SD,INPLUS.,OK,12,sky.com,1,1,sky.com:OK:12,lang=de
 ITVNEurope.pl@SD,iTVN,OK,261,web.magentatv.de,1,1,web.magentatv.de:OK:261,lang=de
@@ -308,7 +308,7 @@ LiloTV.de@SD,Lilo TV,OK,210,tv.blue.ch,1,1,tv.blue.ch:OK:210,broadcast_area=DE;l
 LolyTV.ch@SD,Loly TV,OK,91,tv.blue.ch,1,1,tv.blue.ch:OK:91,lang=de
 LoveThePlanet.es@DE,Love The Planet,OK,186,plex.tv,2,1,plex.tv:OK:186,broadcast_area=DE;iptv-country=DE;lang=de
 LoveThePlanet.es@EN,Love The Planet (EN),NO_EPG,0,,2,2,watch.whaletvplus.com:OK:0;xumo.tv:OK:0,broadcast_area=DE
-LoveThePlanet.es@ES,Love The Planet En Español,OK,107,watch.whaletvplus.com,2,2,i.mjh.nz:TIMEOUT:0;watch.whaletvplus.com:OK:107,broadcast_area=DE
+LoveThePlanet.es@ES,Love The Planet En Español,OK,108,watch.whaletvplus.com,2,2,i.mjh.nz:TIMEOUT:0;watch.whaletvplus.com:OK:108,broadcast_area=DE
 LoveThePlanet.es@IT,Love The Planet (IT),NO_EPG,0,,1,1,watch.whaletvplus.com:OK:0,broadcast_area=DE
 LustPur.de@SD,Lust pur,OK,97,web.magentatv.de,1,1,web.magentatv.de:OK:97,broadcast_area=DE;lang=de
 MDF1.de@SD,MDF.1 Fernsehen,OK,35,web.magentatv.de,1,1,web.magentatv.de:OK:35,broadcast_area=DE;iptv-country=DE;lang=de
@@ -326,8 +326,8 @@ MTVDating.us@Germany,MTV Dating,OK,93,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:O
 MTVHitsEurope.uk@SD,MTVhits!,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
 MTVLive.uk@SD,MTV live HD,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
 MTVPlutoTV.de@DACH,MTV Pluto TV,OK,72,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:72,broadcast_area=DE;iptv-country=DE;lang=de
-MTVPlutoTV.de@UK,MTV Pluto TV,OK,63,pluto.tv,1,1,pluto.tv:OK:63,broadcast_area=DE
-MTVRidiculousness.us@Germany,MTV Ridiculousness,OK,74,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:74,lang=de
+MTVPlutoTV.de@UK,MTV Pluto TV,OK,46,pluto.tv,1,1,pluto.tv:OK:46,broadcast_area=DE
+MTVRidiculousness.us@Germany,MTV Ridiculousness,OK,101,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:101,lang=de
 MTVTeenMom.us@Germany,MTV Teen Mom,OK,92,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:92,lang=de
 MTVTheShores.us@Germany,MTV The Shores,NO_EPG,0,,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:0,lang=de
 MagentaSport.de@SD,MagentaSport,OK,42,web.magentatv.de,1,1,web.magentatv.de:OK:42,broadcast_area=DE;lang=de
@@ -353,13 +353,13 @@ MovieSphere.us@US,MOVIESPHERE,OK,86,plex.tv,4,1,plex.tv:OK:86,broadcast_area=DE
 Moviedome.us@Germany,Moviedome,OK,99,plex.tv,3,1,plex.tv:OK:99,broadcast_area=DE;iptv-country=DE;lang=de
 MoviepilotTVmitPlutoTV.de@DACH,Moviepilot TV mit Pluto TV,NO_EPG,0,,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:0,broadcast_area=DE;lang=de
 MunchenTV.de@SD,münchen.tv,OK,455,web.magentatv.de,3,1,web.magentatv.de:OK:455,broadcast_area=DE;iptv-country=DE;lang=de
-Musig24TV.ch@SD,musig24,OK,190,tv.blue.ch,1,1,tv.blue.ch:OK:190,lang=de
+Musig24TV.ch@SD,musig24,OK,188,tv.blue.ch,1,1,tv.blue.ch:OK:188,lang=de
 MySports2.ch@SD,MySports 2,OK,8,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:8,lang=de
-MySports3.ch@SD,MySports 3,OK,7,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:7,lang=de
-MySports4.ch@SD,MySports 4,OK,6,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:6,lang=de
-MySports5.ch@SD,MySports 5,OK,7,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:7,lang=de
-MySports6.ch@SD,MySports 6,OK,6,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:6,lang=de
-MySports7.ch@SD,MySports 7,OK,4,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:4,lang=de
+MySports3.ch@SD,MySports 3,OK,6,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:6,lang=de
+MySports4.ch@SD,MySports 4,OK,7,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:7,lang=de
+MySports5.ch@SD,MySports 5,OK,8,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:8,lang=de
+MySports6.ch@SD,MySports 6,OK,7,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:7,lang=de
+MySports7.ch@SD,MySports 7,OK,6,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:6,lang=de
 MySports8.ch@SD,MySports 8,OK,6,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:6,lang=de
 MySports9.ch@SD,MySports 9,NO_EPG,0,,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:0,lang=de
 MySportsOne.ch@SD,MySports Eins,OK,84,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:84,lang=de
@@ -374,8 +374,8 @@ NHKWorldJapan.jp@SD,NHK WORLD-JPN,OK,463,sky.com,1,1,sky.com:OK:463,lang=de
 NRWision.de@SD,NRWision,OK,418,web.magentatv.de,1,1,web.magentatv.de:OK:418,broadcast_area=DE;iptv-country=DE;lang=de
 Nachrichten360.de@HD,Nachrichten 360,OK,336,plex.tv,2,1,plex.tv:OK:336,broadcast_area=DE;iptv-country=DE;lang=de
 Naruto.us@Brazil,Naruto,OK,75,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:75,broadcast_area=DE
-Naruto.us@Germany,Naruto,OK,93,pluto.tv,4,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:93,broadcast_area=DE;iptv-country=DE;lang=de
-Naruto.us@US,Naruto,OK,67,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:67,broadcast_area=DE
+Naruto.us@Germany,Naruto,OK,40,pluto.tv,4,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:40,broadcast_area=DE;iptv-country=DE;lang=de
+Naruto.us@US,Naruto,OK,34,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:34,broadcast_area=DE
 NashKinomir.de@SD,Kinomir,OK,42,web.magentatv.de,3,1,web.magentatv.de:OK:42,broadcast_area=DE;iptv-country=DE;lang=de
 NationalGeographic.de@HD,NatGeo HD,OK,212,sky.com,2,1,sky.com:OK:212,broadcast_area=DE;lang=de
 NationalGeographic.de@SD,National Geographic,OK,218,web.magentatv.de,3,1,web.magentatv.de:OK:218,broadcast_area=DE;lang=de
@@ -418,7 +418,7 @@ ORF2Steiermark.at@HD,ORF2St HD,OK,344,sky.com,2,1,sky.com:OK:344,lang=de
 ORF2Tirol.at@HD,ORF2T HD,OK,344,sky.com,2,1,sky.com:OK:344,lang=de
 ORF2Vorarlberg.at@HD,ORF2V HD,OK,344,sky.com,2,1,sky.com:OK:344,lang=de
 ORF2Wien.at@HD,ORF2W HD,OK,344,sky.com,2,1,sky.com:OK:344,lang=de
-ORFIII.at@HD,ORF III HD,OK,188,sky.com,2,1,sky.com:OK:188,lang=de
+ORFIII.at@HD,ORF III HD,OK,187,sky.com,2,1,sky.com:OK:187,lang=de
 ORFIII.at@SD,ORF III,NO_EPG,0,,4,2,horizon.tv:TIMEOUT:0;teleboy.ch:OK:0,lang=de
 ORFSportPlus.at@HD,ORF SPORT+ HD,OK,179,sky.com,2,1,sky.com:OK:179,lang=de
 ORFSportPlus.at@SD,ORF Sport +,OK,187,tv.blue.ch,2,1,tv.blue.ch:OK:187,lang=de
@@ -434,99 +434,99 @@ OstWest.de@SD,OstWest,OK,42,web.magentatv.de,2,1,web.magentatv.de:OK:42,broadcas
 Parlamentsfernsehen1.de@SD,Deutscher Bundestag,OK,47,tv.blue.ch,1,1,tv.blue.ch:OK:47,broadcast_area=DE;iptv-country=DE;lang=de
 PearlTV.de@SD,pearl.tv HD Shop,OK,168,sky.com,2,1,sky.com:OK:168,broadcast_area=DE;lang=de
 PenthousePassion.us@SD,Penthouse Passion,OK,49,web.magentatv.de,1,1,web.magentatv.de:OK:49,lang=de
-PerryMason.us@SD,Perry Mason,OK,26,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:26,lang=de
+PerryMason.us@SD,Perry Mason,OK,33,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:33,lang=de
 PinkExtra.rs@SD,Pink Extra,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
 PinkFilm.rs@SD,Pink Film,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
 PinkMusic.rs@SD,Pink Music,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
 PinkPlus.rs@SD,Pink Plus,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
 PlayboyTVEurope.us@SD,Playboy Europe,OK,208,web.magentatv.de,1,1,web.magentatv.de:OK:208,lang=de
-PlutoTVAction.de@DACH,Pluto TV Action,OK,23,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:23,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVAction.de@UK,Pluto TV Action,OK,30,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:30,broadcast_area=DE
-PlutoTVAction.de@UKPlus,Pluto TV Action+,OK,37,pluto.tv,1,1,pluto.tv:OK:37,broadcast_area=DE
+PlutoTVAction.de@DACH,Pluto TV Action,OK,22,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:22,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVAction.de@UK,Pluto TV Action,OK,23,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:23,broadcast_area=DE
+PlutoTVAction.de@UKPlus,Pluto TV Action+,OK,41,pluto.tv,1,1,pluto.tv:OK:41,broadcast_area=DE
 PlutoTVAction.de@UKPlus2,Pluto TV Action,OK,56,pluto.tv,1,1,pluto.tv:OK:56,broadcast_area=DE
-PlutoTVAdultAnimation.de@DACH,Pluto TV Adult Animation,OK,67,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:67,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVAnimals.de@DACH,Pluto TV Animals,OK,39,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:39,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVAnimals.de@UK,Pluto TV Animals,OK,42,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:42,broadcast_area=DE
+PlutoTVAdultAnimation.de@DACH,Pluto TV Adult Animation,OK,75,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:75,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVAnimals.de@DACH,Pluto TV Animals,OK,35,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:35,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVAnimals.de@UK,Pluto TV Animals,OK,39,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:39,broadcast_area=DE
 PlutoTVAnime.de@DACH,Pluto TV Anime,OK,63,pluto.tv,2,2,i.mjh.nz:TIMEOUT:0;pluto.tv:OK:63,broadcast_area=DE;iptv-country=DE;lang=de
 PlutoTVAnime.de@ES,Pluto TV Anime,OK,28,i.mjh.nz,2,1,i.mjh.nz:OK:28,broadcast_area=DE
-PlutoTVAnime.de@IT,Pluto TV Anime,OK,34,i.mjh.nz,2,1,i.mjh.nz:OK:34,broadcast_area=DE
-PlutoTVBritischeSerien.de@DACH,Pluto TV Britische Serien,OK,20,i.mjh.nz,2,1,i.mjh.nz:OK:20,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVAnime.de@IT,Pluto TV Anime,OK,33,i.mjh.nz,2,1,i.mjh.nz:OK:33,broadcast_area=DE
+PlutoTVBritischeSerien.de@DACH,Pluto TV Britische Serien,OK,19,i.mjh.nz,2,1,i.mjh.nz:OK:19,broadcast_area=DE;iptv-country=DE;lang=de
 PlutoTVBudTerence.de@FI,Pluto TV Bud & Terence,OK,22,pluto.tv,1,1,pluto.tv:OK:22,broadcast_area=DE
-PlutoTVComedyTherapie.de@DACH,Pluto TV Comedy Therapie,OK,2,pluto.tv,2,2,i.mjh.nz:OK:0;pluto.tv:OK:2,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVCrime.de@DACH,Pluto TV Crime,OK,11,i.mjh.nz,2,1,i.mjh.nz:OK:11,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVCrime.de@UK,Pluto TV Crime,OK,28,i.mjh.nz,2,1,i.mjh.nz:OK:28,broadcast_area=DE
+PlutoTVComedyTherapie.de@DACH,Pluto TV Comedy Therapie,NO_EPG,0,,2,2,i.mjh.nz:OK:0;pluto.tv:OK:0,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVCrime.de@DACH,Pluto TV Crime,OK,10,i.mjh.nz,2,1,i.mjh.nz:OK:10,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVCrime.de@UK,Pluto TV Crime,OK,26,i.mjh.nz,2,1,i.mjh.nz:OK:26,broadcast_area=DE
 PlutoTVCrime.de@UKPlus,Pluto TV Crime+,OK,53,pluto.tv,1,1,pluto.tv:OK:53,broadcast_area=DE
-PlutoTVDeutscheComedy.de@DACH,Pluto TV Deutsche Comedy,OK,19,i.mjh.nz,2,1,i.mjh.nz:OK:19,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVEmmanuelleFilme.de@DACH,Pluto TV Emmanuelle Filme,OK,18,i.mjh.nz,2,1,i.mjh.nz:OK:18,broadcast_area=DE;lang=de
+PlutoTVDeutscheComedy.de@DACH,Pluto TV Deutsche Comedy,OK,18,i.mjh.nz,2,1,i.mjh.nz:OK:18,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVEmmanuelleFilme.de@DACH,Pluto TV Emmanuelle Filme,OK,17,i.mjh.nz,2,1,i.mjh.nz:OK:17,broadcast_area=DE;lang=de
 PlutoTVExplore.de@DACH,Pluto TV Explore,OK,14,i.mjh.nz,2,1,i.mjh.nz:OK:14,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVFerneGalaxien.de@DACH,Pluto TV Ferne Galaxien,OK,4,pluto.tv,2,2,i.mjh.nz:OK:0;pluto.tv:OK:4,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVFood.de@DACH,Pluto TV Food,OK,21,i.mjh.nz,2,1,i.mjh.nz:OK:21,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVFood.de@UK,Pluto TV Food,OK,19,i.mjh.nz,2,1,i.mjh.nz:OK:19,broadcast_area=DE
-PlutoTVFranBesteMamaMomente.de@DACH,Pluto TV Fran: Beste Mama-Momente,OK,58,pluto.tv,2,2,i.mjh.nz:OK:0;pluto.tv:OK:58,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVHeisseNachteRetro.de@DACH,Pluto TV Heiße Nächte Retro,OK,17,i.mjh.nz,2,1,i.mjh.nz:OK:17,broadcast_area=DE;lang=de
+PlutoTVFerneGalaxien.de@DACH,Pluto TV Ferne Galaxien,OK,52,pluto.tv,2,2,i.mjh.nz:OK:0;pluto.tv:OK:52,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVFood.de@DACH,Pluto TV Food,OK,20,i.mjh.nz,2,1,i.mjh.nz:OK:20,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVFood.de@UK,Pluto TV Food,OK,18,i.mjh.nz,2,1,i.mjh.nz:OK:18,broadcast_area=DE
+PlutoTVFranBesteMamaMomente.de@DACH,Pluto TV Fran: Beste Mama-Momente,OK,32,pluto.tv,2,2,i.mjh.nz:OK:0;pluto.tv:OK:32,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVHeisseNachteRetro.de@DACH,Pluto TV Heiße Nächte Retro,OK,16,i.mjh.nz,2,1,i.mjh.nz:OK:16,broadcast_area=DE;lang=de
 PlutoTVHistorischeSerien.de@DACH,Pluto TV Historische Serien,OK,11,i.mjh.nz,2,1,i.mjh.nz:OK:11,broadcast_area=DE;iptv-country=DE;lang=de
 PlutoTVHistory.de@DACH,Pluto TV History,OK,11,i.mjh.nz,2,1,i.mjh.nz:OK:11,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVHistory.de@UK,Pluto TV History,OK,17,i.mjh.nz,2,1,i.mjh.nz:OK:17,broadcast_area=DE
-PlutoTVHorror.de@DACH,Pluto TV Horror,OK,26,i.mjh.nz,2,1,i.mjh.nz:OK:26,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVHistory.de@UK,Pluto TV History,OK,16,i.mjh.nz,2,1,i.mjh.nz:OK:16,broadcast_area=DE
+PlutoTVHorror.de@DACH,Pluto TV Horror,OK,24,i.mjh.nz,2,1,i.mjh.nz:OK:24,broadcast_area=DE;iptv-country=DE;lang=de
 PlutoTVHorror.de@ES,Pluto TV Horror,OK,10,i.mjh.nz,2,1,i.mjh.nz:OK:10,broadcast_area=DE
 PlutoTVHorror.de@IT,Pluto TV Horror,OK,9,i.mjh.nz,2,1,i.mjh.nz:OK:9,broadcast_area=DE
 PlutoTVHorror.de@UK,Pluto TV Horror,OK,13,i.mjh.nz,2,1,i.mjh.nz:OK:13,broadcast_area=DE
-PlutoTVHorrorSerien.de@DACH,Pluto TV Horror-Serien,OK,20,i.mjh.nz,2,1,i.mjh.nz:OK:20,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVKultComedies.de@DACH,Pluto TV Kult Comedies,OK,8,i.mjh.nz,2,1,i.mjh.nz:OK:8,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVHorrorSerien.de@DACH,Pluto TV Horror-Serien,OK,19,i.mjh.nz,2,1,i.mjh.nz:OK:19,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVKultComedies.de@DACH,Pluto TV Kult Comedies,OK,7,i.mjh.nz,2,1,i.mjh.nz:OK:7,broadcast_area=DE;iptv-country=DE;lang=de
 PlutoTVKultfilme.de@DACH,Pluto TV Kultfilme,OK,6,i.mjh.nz,2,1,i.mjh.nz:OK:6,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVMovies.de@DACH,Pluto TV Movies,OK,7,i.mjh.nz,2,1,i.mjh.nz:OK:7,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVMovies.de@UK,Pluto TV Movies,OK,8,i.mjh.nz,2,1,i.mjh.nz:OK:8,broadcast_area=DE
-PlutoTVMystery.de@DACH,Pluto TV Mystery,OK,13,i.mjh.nz,2,1,i.mjh.nz:OK:13,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVMovies.de@DACH,Pluto TV Movies,OK,6,i.mjh.nz,2,1,i.mjh.nz:OK:6,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVMovies.de@UK,Pluto TV Movies,OK,7,i.mjh.nz,2,1,i.mjh.nz:OK:7,broadcast_area=DE
+PlutoTVMystery.de@DACH,Pluto TV Mystery,OK,12,i.mjh.nz,2,1,i.mjh.nz:OK:12,broadcast_area=DE;iptv-country=DE;lang=de
 PlutoTVNature.de@DACH,Pluto TV Nature,OK,11,i.mjh.nz,2,1,i.mjh.nz:OK:11,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVNordicCrime.de@DACH,Pluto TV Nordic Crime,OK,13,i.mjh.nz,2,1,i.mjh.nz:OK:13,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVParanormal.de@DACH,Pluto TV Paranormal,OK,12,i.mjh.nz,2,1,i.mjh.nz:OK:12,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVNordicCrime.de@DACH,Pluto TV Nordic Crime,OK,12,i.mjh.nz,2,1,i.mjh.nz:OK:12,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVParanormal.de@DACH,Pluto TV Paranormal,OK,11,i.mjh.nz,2,1,i.mjh.nz:OK:11,broadcast_area=DE;iptv-country=DE;lang=de
 PlutoTVParanormal.de@ES,Pluto TV Paranormal,OK,15,i.mjh.nz,2,1,i.mjh.nz:OK:15,broadcast_area=DE
-PlutoTVParanormal.de@FR,Pluto TV Paranormal,OK,14,i.mjh.nz,2,1,i.mjh.nz:OK:14,broadcast_area=DE
-PlutoTVParanormal.de@IT,Pluto TV Paranormal,OK,16,i.mjh.nz,2,1,i.mjh.nz:OK:16,broadcast_area=DE
-PlutoTVParanormal.de@UK,Pluto TV Paranormal,OK,18,i.mjh.nz,2,1,i.mjh.nz:OK:18,broadcast_area=DE
-PlutoTVParanormal.de@UKPlus,Pluto TV Paranormal+,OK,46,pluto.tv,1,1,pluto.tv:OK:46,broadcast_area=DE
+PlutoTVParanormal.de@FR,Pluto TV Paranormal,OK,13,i.mjh.nz,2,1,i.mjh.nz:OK:13,broadcast_area=DE
+PlutoTVParanormal.de@IT,Pluto TV Paranormal,OK,15,i.mjh.nz,2,1,i.mjh.nz:OK:15,broadcast_area=DE
+PlutoTVParanormal.de@UK,Pluto TV Paranormal,OK,17,i.mjh.nz,2,1,i.mjh.nz:OK:17,broadcast_area=DE
+PlutoTVParanormal.de@UKPlus,Pluto TV Paranormal+,OK,32,pluto.tv,1,1,pluto.tv:OK:32,broadcast_area=DE
 PlutoTVPolizeiserien.de@DACH,Pluto TV Polizeiserien,OK,11,i.mjh.nz,2,1,i.mjh.nz:OK:11,broadcast_area=DE;iptv-country=DE;lang=de
 PlutoTVReality.de@DACH,Pluto TV Reality,NO_EPG,0,,2,2,i.mjh.nz:OK:0;pluto.tv:OK:0,broadcast_area=DE;lang=de
-PlutoTVReality.de@FR,Pluto TV Pride,OK,29,i.mjh.nz,2,1,i.mjh.nz:OK:29,broadcast_area=DE
+PlutoTVReality.de@FR,Pluto TV Pride,OK,28,i.mjh.nz,2,1,i.mjh.nz:OK:28,broadcast_area=DE
 PlutoTVReality.de@UK,Pluto TV Reality,OK,22,i.mjh.nz,2,1,i.mjh.nz:OK:22,broadcast_area=DE
-PlutoTVReportagen.de@DACH,Pluto TV Reportagen,OK,11,i.mjh.nz,2,1,i.mjh.nz:OK:11,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVRomance.de@UKPlus,Pluto TV Romance+,OK,34,pluto.tv,1,1,pluto.tv:OK:34,broadcast_area=DE
-PlutoTVSanfteBeruhrungen.de@DACH,Pluto TV Sanfte Berührungen,OK,16,i.mjh.nz,2,1,i.mjh.nz:OK:16,broadcast_area=DE;lang=de
-PlutoTVSciFi.de@DACH,Pluto TV Sci-Fi,OK,11,i.mjh.nz,2,1,i.mjh.nz:OK:11,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVReportagen.de@DACH,Pluto TV Reportagen,OK,10,i.mjh.nz,2,1,i.mjh.nz:OK:10,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVRomance.de@UKPlus,Pluto TV Romance+,OK,33,pluto.tv,1,1,pluto.tv:OK:33,broadcast_area=DE
+PlutoTVSanfteBeruhrungen.de@DACH,Pluto TV Sanfte Berührungen,OK,15,i.mjh.nz,2,1,i.mjh.nz:OK:15,broadcast_area=DE;lang=de
+PlutoTVSciFi.de@DACH,Pluto TV Sci-Fi,OK,10,i.mjh.nz,2,1,i.mjh.nz:OK:10,broadcast_area=DE;iptv-country=DE;lang=de
 PlutoTVSciFi.de@ES,Pluto TV Sci-Fi,OK,8,i.mjh.nz,2,1,i.mjh.nz:OK:8,broadcast_area=DE
 PlutoTVSciFi.de@FI,Pluto TV Sci-Fi,OK,38,pluto.tv,1,1,pluto.tv:OK:38,broadcast_area=DE
 PlutoTVSciFi.de@IT,Pluto TV Sci-Fi,OK,8,i.mjh.nz,2,1,i.mjh.nz:OK:8,broadcast_area=DE
-PlutoTVSciFi.de@UK,Pluto TV Sci-Fi,OK,9,i.mjh.nz,2,1,i.mjh.nz:OK:9,broadcast_area=DE
+PlutoTVSciFi.de@UK,Pluto TV Sci-Fi,OK,8,i.mjh.nz,2,1,i.mjh.nz:OK:8,broadcast_area=DE
 PlutoTVSciFi.de@UKPlus,Pluto TV Sci-Fi,NO_EPG,0,,1,1,pluto.tv:OK:0,broadcast_area=DE
-PlutoTVScience.de@DACH,Pluto TV Science,OK,14,i.mjh.nz,2,1,i.mjh.nz:OK:14,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVScience.de@DACH,Pluto TV Science,OK,13,i.mjh.nz,2,1,i.mjh.nz:OK:13,broadcast_area=DE;iptv-country=DE;lang=de
 PlutoTVScience.de@UK,Pluto TV Science,OK,15,i.mjh.nz,2,1,i.mjh.nz:OK:15,broadcast_area=DE
-PlutoTVSerie.de@DACH,Pluto TV Serie,OK,14,i.mjh.nz,2,1,i.mjh.nz:OK:14,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVSerie.de@DACHPlus,Pluto TV Serie+,OK,39,pluto.tv,1,1,pluto.tv:OK:39,broadcast_area=DE;lang=de
-PlutoTVSerie.de@IT,Pluto TV Serie,OK,17,i.mjh.nz,2,1,i.mjh.nz:OK:17,broadcast_area=DE
-PlutoTVSerie.de@ITPlus,Pluto TV Serie+,OK,38,pluto.tv,1,1,pluto.tv:OK:38,broadcast_area=DE
-PlutoTVSitcoms.de@DACH,Pluto TV Sitcoms,OK,28,i.mjh.nz,2,1,i.mjh.nz:OK:28,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVSitcoms.de@DACHPlus,Pluto TV Sitcoms+,OK,61,pluto.tv,1,1,pluto.tv:OK:61,broadcast_area=DE;lang=de
-PlutoTVSitcoms.de@UK,Pluto TV Sitcoms,OK,34,i.mjh.nz,2,1,i.mjh.nz:OK:34,broadcast_area=DE
+PlutoTVSerie.de@DACH,Pluto TV Serie,OK,13,i.mjh.nz,2,1,i.mjh.nz:OK:13,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVSerie.de@DACHPlus,Pluto TV Serie+,OK,40,pluto.tv,1,1,pluto.tv:OK:40,broadcast_area=DE;lang=de
+PlutoTVSerie.de@IT,Pluto TV Serie,OK,16,i.mjh.nz,2,1,i.mjh.nz:OK:16,broadcast_area=DE
+PlutoTVSerie.de@ITPlus,Pluto TV Serie+,OK,43,pluto.tv,1,1,pluto.tv:OK:43,broadcast_area=DE
+PlutoTVSitcoms.de@DACH,Pluto TV Sitcoms,OK,26,i.mjh.nz,2,1,i.mjh.nz:OK:26,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVSitcoms.de@DACHPlus,Pluto TV Sitcoms+,OK,95,pluto.tv,1,1,pluto.tv:OK:95,broadcast_area=DE;lang=de
+PlutoTVSitcoms.de@UK,Pluto TV Sitcoms,OK,33,i.mjh.nz,2,1,i.mjh.nz:OK:33,broadcast_area=DE
 PlutoTVSnooker900.de@DACH,Pluto TV Snooker 900,OK,6,i.mjh.nz,2,1,i.mjh.nz:OK:6,broadcast_area=DE;iptv-country=DE;lang=de
 PlutoTVSnooker900.de@ES,Pluto TV Snooker 900,OK,7,i.mjh.nz,2,1,i.mjh.nz:OK:7,broadcast_area=DE
-PlutoTVSnooker900.de@FI,Pluto TV Snooker 900,OK,19,pluto.tv,1,1,pluto.tv:OK:19,broadcast_area=DE
+PlutoTVSnooker900.de@FI,Pluto TV Snooker 900,OK,23,pluto.tv,1,1,pluto.tv:OK:23,broadcast_area=DE
 PlutoTVSnooker900.de@FR,Pluto TV Snooker 900,OK,7,i.mjh.nz,2,1,i.mjh.nz:OK:7,broadcast_area=DE
 PlutoTVSnooker900.de@IT,Pluto TV Snooker 900,OK,7,i.mjh.nz,2,1,i.mjh.nz:OK:7,broadcast_area=DE
 PlutoTVSnooker900.de@UK,Pluto TV Snooker 900,OK,7,i.mjh.nz,2,1,i.mjh.nz:OK:7,broadcast_area=DE
 PlutoTVSpace.de@DACH,Pluto TV Space,OK,19,i.mjh.nz,2,1,i.mjh.nz:OK:19,broadcast_area=DE;iptv-country=DE;lang=de
 PlutoTVSpace.de@UK,Pluto TV Space,OK,24,i.mjh.nz,2,1,i.mjh.nz:OK:24,broadcast_area=DE
-PlutoTVStarTrek.de@DACH,Pluto TV Star Trek,OK,13,i.mjh.nz,2,1,i.mjh.nz:OK:13,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVStarTrekAnimation.de@DACH,Pluto TV Star Trek: Animation,OK,24,i.mjh.nz,2,1,i.mjh.nz:OK:24,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVTrueCrime.de@DACH,Pluto TV True Crime,OK,13,i.mjh.nz,2,1,i.mjh.nz:OK:13,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVStarTrek.de@DACH,Pluto TV Star Trek,OK,12,i.mjh.nz,2,1,i.mjh.nz:OK:12,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVStarTrekAnimation.de@DACH,Pluto TV Star Trek: Animation,OK,23,i.mjh.nz,2,1,i.mjh.nz:OK:23,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVTrueCrime.de@DACH,Pluto TV True Crime,OK,12,i.mjh.nz,2,1,i.mjh.nz:OK:12,broadcast_area=DE;iptv-country=DE;lang=de
 PlutoTVTrueCrime.de@ES,Pluto TV True Crime,OK,15,i.mjh.nz,2,1,i.mjh.nz:OK:15,broadcast_area=DE
 PlutoTVTrueCrime.de@FI,Pluto TV True Crime,OK,55,pluto.tv,1,1,pluto.tv:OK:55,broadcast_area=DE
-PlutoTVTrueCrime.de@IT,Pluto TV True Crime,OK,21,i.mjh.nz,2,1,i.mjh.nz:OK:21,broadcast_area=DE
-PlutoTVWestern.de@DACH,Pluto TV Western,OK,8,i.mjh.nz,2,1,i.mjh.nz:OK:8,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVTrueCrime.de@IT,Pluto TV True Crime,OK,19,i.mjh.nz,2,1,i.mjh.nz:OK:19,broadcast_area=DE
+PlutoTVWestern.de@DACH,Pluto TV Western,OK,7,i.mjh.nz,2,1,i.mjh.nz:OK:7,broadcast_area=DE;iptv-country=DE;lang=de
 PlutoTVWestern.de@ES,Pluto TV Western,OK,9,i.mjh.nz,2,1,i.mjh.nz:OK:9,broadcast_area=DE
-PlutoTVWestern.de@IT,Pluto TV Western,OK,10,i.mjh.nz,2,1,i.mjh.nz:OK:10,broadcast_area=DE
-PlutoTVWesternSerien.de@DACH,Pluto TV Western Serien,OK,17,i.mjh.nz,2,1,i.mjh.nz:OK:17,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVWorstofBundy.de@DACH,Pluto TV Worst of Bundy,OK,58,pluto.tv,2,2,i.mjh.nz:OK:0;pluto.tv:OK:58,broadcast_area=DE;iptv-country=DE;lang=de
-PlutoTVheisseNachte.de@DACH,Pluto TV heiße Nächte,OK,17,i.mjh.nz,2,1,i.mjh.nz:OK:17,broadcast_area=DE;lang=de
+PlutoTVWestern.de@IT,Pluto TV Western,OK,9,i.mjh.nz,2,1,i.mjh.nz:OK:9,broadcast_area=DE
+PlutoTVWesternSerien.de@DACH,Pluto TV Western Serien,OK,16,i.mjh.nz,2,1,i.mjh.nz:OK:16,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVWorstofBundy.de@DACH,Pluto TV Worst of Bundy,OK,1,pluto.tv,2,2,i.mjh.nz:OK:0;pluto.tv:OK:1,broadcast_area=DE;iptv-country=DE;lang=de
+PlutoTVheisseNachte.de@DACH,Pluto TV heiße Nächte,OK,16,i.mjh.nz,2,1,i.mjh.nz:OK:16,broadcast_area=DE;lang=de
 PremiumShoppingTV.ch@SD,Premium Shopping,OK,49,tv.blue.ch,1,1,tv.blue.ch:OK:49,lang=de
 ProSieben.de@SD,ProSieben,OK,246,web.magentatv.de,22,1,web.magentatv.de:OK:246,broadcast_area=DE;iptv-country=DE;lang=de
 ProSiebenAustria.at@HD,ProSieben HD Austria,OK,229,sky.com,1,1,sky.com:OK:229,lang=de
@@ -548,7 +548,7 @@ QVC.de@SD,QVC,OK,168,web.magentatv.de,3,1,web.magentatv.de:OK:168,broadcast_area
 QVCStyle.de@SD,QVC STYLE HD,OK,168,sky.com,3,1,sky.com:OK:168,broadcast_area=DE;iptv-country=DE;lang=de
 QVCZwei.de@HD,QVC ZWEI HD,OK,168,sky.com,1,1,sky.com:OK:168,broadcast_area=DE;lang=de
 R9.at@HD,R9 Oesterreich HD,OK,304,sky.com,2,1,sky.com:OK:304,lang=de
-R9.at@SD,R9 Österreich,OK,297,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:297,lang=de
+R9.at@SD,R9 Österreich,OK,290,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:290,lang=de
 RFH.de@SD,RFH Regionalfernsehen Harz,OK,35,web.magentatv.de,1,1,web.magentatv.de:OK:35,broadcast_area=DE;iptv-country=DE;lang=de
 RFO.de@SD,RFO,OK,780,web.magentatv.de,2,1,web.magentatv.de:OK:780,broadcast_area=DE;iptv-country=DE;lang=de
 RNF.de@SD,RNF,NO_EPG,0,,1,1,web.magentatv.de:OK:0,broadcast_area=DE;lang=de
@@ -728,10 +728,10 @@ SkySportBundesliga9.de@HD,Sky Sport Bundesliga 9 HD,OK,8,sky.com,3,1,sky.com:OK:
 SkySportBundesliga9.de@SD,Sky Sport Bundesliga 8,OK,14,web.magentatv.de,3,1,web.magentatv.de:OK:14,broadcast_area=DE;lang=de
 SkySportF1.de@HD,Sky Sport F1 HD,OK,161,sky.com,2,1,sky.com:OK:161,broadcast_area=DE;lang=de
 SkySportF1.de@SD,Sky Sport F1,OK,164,web.magentatv.de,3,1,web.magentatv.de:OK:164,broadcast_area=DE;lang=de
-SkySportGolf.de@HD,Sky Sport Golf HD,OK,98,sky.com,3,1,sky.com:OK:98,broadcast_area=DE;lang=de
-SkySportGolf.de@SD,Sky Sport Golf,OK,106,tv.blue.ch,1,1,tv.blue.ch:OK:106,broadcast_area=DE;lang=de
+SkySportGolf.de@HD,Sky Sport Golf HD,OK,99,sky.com,3,1,sky.com:OK:99,broadcast_area=DE;lang=de
+SkySportGolf.de@SD,Sky Sport Golf,OK,108,tv.blue.ch,1,1,tv.blue.ch:OK:108,broadcast_area=DE;lang=de
 SkySportMix.de@HD,Sky Sport Mix HD,OK,132,sky.com,3,1,sky.com:OK:132,broadcast_area=DE;lang=de
-SkySportNews.de@HD,Sky Sport News HD,OK,145,sky.com,3,1,sky.com:OK:145,broadcast_area=DE;lang=de
+SkySportNews.de@HD,Sky Sport News HD,OK,146,sky.com,3,1,sky.com:OK:146,broadcast_area=DE;lang=de
 SkySportNews.de@SD,Sky Sport News,OK,161,web.magentatv.de,3,1,web.magentatv.de:OK:161,broadcast_area=DE;lang=de
 SkySportPremierLeague.de@HD,Sky Sport Premier League HD,OK,251,sky.com,3,1,sky.com:OK:251,broadcast_area=DE;lang=de
 SkySportTennis.de@HD,Sky Sport Tennis HD,OK,64,sky.com,5,1,sky.com:OK:64,broadcast_area=DE;lang=de
@@ -742,7 +742,7 @@ SouvenirsfromEarthTV.de@SD,SOUVENIRS FROM EARTH,NO_EPG,0,,1,1,chaines-tv.orange.
 SpiegelGeschichte.de@HD,Spiegel Geschichte HD,NO_EPG,0,,1,1,tv.magenta.at:OK:0,broadcast_area=DE;lang=de
 SpiegelGeschichte.de@SD,Spiegel Geschichte,OK,225,web.magentatv.de,4,1,web.magentatv.de:OK:225,broadcast_area=DE;lang=de
 SpiegelTV.de@HD,SPIEGEL TV Konflikt,NO_EPG,0,,1,1,teleboy.ch:OK:0,broadcast_area=DE;lang=de
-SpongeBobSchwammkopf.us@Germany,SpongeBob Schwammkopf,OK,22,i.mjh.nz,2,1,i.mjh.nz:OK:22,lang=de
+SpongeBobSchwammkopf.us@Germany,SpongeBob Schwammkopf,OK,21,i.mjh.nz,2,1,i.mjh.nz:OK:21,lang=de
 Sport1.de@HD,SPORT1 HD,OK,161,sky.com,2,1,sky.com:OK:161,broadcast_area=DE;lang=de
 Sport1.de@SD,SPORT1,OK,165,web.magentatv.de,10,1,web.magentatv.de:OK:165,broadcast_area=DE;lang=de
 Sport1Plus.de@HD,Sport1+ HD,NO_EPG,0,,1,1,tv.magenta.at:OK:0,broadcast_area=DE;lang=de
@@ -754,12 +754,12 @@ SportdigitalFUSSBALL2.de@HD,SPORTDIGITAL FUSSBALL 2,OK,75,tv.blue.ch,1,1,tv.blue
 StarTV.ch@SD,Star TV,OK,111,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:111,lang=de
 StimmungsgartenTV.at@SD,Stimmungsgarten TV,OK,113,sky.com,2,1,sky.com:OK:113,broadcast_area=DE;lang=de
 StingrayClassica.ca@HD,Stingray Classica HD,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
-StingrayClassica.ca@SD,Stingray Classica D,OK,190,tv.blue.ch,1,1,tv.blue.ch:OK:190,lang=de
+StingrayClassica.ca@SD,Stingray Classica D,OK,189,tv.blue.ch,1,1,tv.blue.ch:OK:189,lang=de
 Streamstertv.de@SD,Streamster.tv,NO_EPG,0,,1,1,tv.magenta.at:OK:0,broadcast_area=DE;lang=de
 Studio47.de@SD,Studio 47,OK,251,web.magentatv.de,1,1,web.magentatv.de:OK:251,broadcast_area=DE;lang=de
 Sudostschweiz.ch@SD,Tele Südostschweiz,OK,451,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:451,lang=de
 Swiss1.ch@SD,SWISS1,OK,144,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:144,lang=de
-SwissSportTV.ch@SD,Swiss Sport TV,OK,74,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:74,lang=de
+SwissSportTV.ch@SD,Swiss Sport TV,OK,73,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:73,lang=de
 Sylt1.de@SD,SYLT1,OK,49,tv.blue.ch,1,1,tv.blue.ch:OK:49,broadcast_area=DE;lang=de
 TELE5.de@HD,TELE 5 HD,OK,135,sky.com,1,1,sky.com:OK:135,broadcast_area=DE;lang=de
 TELE5.de@SD,TELE 5,OK,141,web.magentatv.de,9,1,web.magentatv.de:OK:141,broadcast_area=DE;lang=de
@@ -774,7 +774,7 @@ TOPTRUECRIME.de@HD,Top True Crime,NO_EPG,0,,1,1,teleboy.ch:OK:0,broadcast_area=D
 TRTWorld.tr@HD,TRT World HD,OK,326,sky.com,1,1,sky.com:OK:326,lang=de
 TRTWorld.tr@SD,TRT World,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
 TV24.ch@SD,TV24,OK,96,tv.blue.ch,3,2,teleboy.ch:OK:0;tv.blue.ch:OK:96,lang=de
-TV25.ch@SD,TV25,OK,90,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:90,lang=de
+TV25.ch@SD,TV25,OK,91,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:91,lang=de
 TV4TNG.ch@SD,TV4TNG,NO_EPG,0,,1,1,tv.blue.ch:OK:0,lang=de
 TV5MondeEurope.fr@SD,TV5MONDE EUROPE HD,OK,415,sky.com,2,1,sky.com:OK:415,lang=de
 TV8int.tr@SD,TV8 Int,OK,90,web.magentatv.de,1,1,web.magentatv.de:OK:90,lang=de
@@ -784,42 +784,42 @@ TVCGMNE.me@SD,MNE,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
 TVIngolstadt.de@SD,tv.ingolstadt,OK,423,web.magentatv.de,2,1,web.magentatv.de:OK:423,broadcast_area=DE;iptv-country=DE;lang=de
 TVMainfranken.de@SD,TV Mainfranken,OK,422,web.magentatv.de,2,1,web.magentatv.de:OK:422,broadcast_area=DE;iptv-country=DE;lang=de
 TVMittelrhein.de@SD,TV Mittelrhein,OK,57,web.magentatv.de,1,1,web.magentatv.de:OK:57,broadcast_area=DE;lang=de
-TVO.ch@SD,TVO - das Ostschweizer Fernsehen,OK,555,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:555,lang=de
+TVO.ch@SD,TVO - das Ostschweizer Fernsehen,OK,554,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:554,lang=de
 TVOberfranken.de@SD,TV Oberfranken,OK,453,web.magentatv.de,1,1,web.magentatv.de:OK:453,broadcast_area=DE;iptv-country=DE;lang=de
-TVOberwallis.ch@SD,TV Oberwallis,OK,131,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:131,lang=de
+TVOberwallis.ch@SD,TV Oberwallis,OK,132,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:132,lang=de
 TVPPolonia.pl@SD,TVP Polonia,OK,294,web.magentatv.de,2,1,web.magentatv.de:OK:294,lang=de
 TVRIWorld.id@SD,TVRI WORLD HD,OK,42,sky.com,1,1,sky.com:OK:42,lang=de
 TVRheintal.ch@SD,TV Rheintal,OK,49,tv.blue.ch,1,1,tv.blue.ch:OK:49,lang=de
 TVWestsachsen.de@SD,TV Westsachsen,OK,111,web.magentatv.de,1,1,web.magentatv.de:OK:111,broadcast_area=DE;lang=de
-TakeshisCastle.us@Germany,Takeshi's Castle,OK,26,i.mjh.nz,2,1,i.mjh.nz:OK:26,lang=de
+TakeshisCastle.us@Germany,Takeshi's Castle,OK,25,i.mjh.nz,2,1,i.mjh.nz:OK:25,lang=de
 Tastemade.us@Australia,Tastemade,NO_EPG,0,,3,2,plex.tv:OK:0;i.mjh.nz:OK:0,broadcast_area=DE
 Tastemade.us@UK,Tastemade,NO_EPG,0,,3,2,plex.tv:OK:0;i.mjh.nz:OK:0,broadcast_area=DE
 Tastemade.us@US,Tastemade,OK,273,plex.tv,8,1,plex.tv:OK:273,broadcast_area=DE
 TeenNick.us@East,TeenNick,OK,422,tvguide.com,2,1,tvguide.com:OK:422,broadcast_area=DE
-Tele1.ch@SD,Tele 1,OK,594,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:594,lang=de
+Tele1.ch@SD,Tele 1,OK,595,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:595,lang=de
 TeleBarn.ch@SD,TeleBärn,OK,573,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:573,lang=de
 TeleBielingue.ch@SD,TeleBielingue,OK,343,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:343,lang=de
-TeleD.ch@SD,Tele D,OK,102,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:102,lang=de
+TeleD.ch@SD,Tele D,OK,99,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:99,lang=de
 TeleGold.de@SD,TELEGOLD,OK,116,sky.com,2,1,sky.com:OK:116,broadcast_area=DE;lang=de
 TeleM1.ch@SD,Tele M1,OK,614,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:614,lang=de
-TeleTop.ch@SD,Tele Top,OK,526,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:526,lang=de
-TeleZ.ch@SD,Tele Z,OK,313,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:313,lang=de
+TeleTop.ch@SD,Tele Top,OK,531,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:531,lang=de
+TeleZ.ch@SD,Tele Z,OK,317,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:317,lang=de
 TeleZentralschweiz.ch@SD,Tele Zentralschweiz,OK,175,tv.blue.ch,1,1,tv.blue.ch:OK:175,lang=de
-TeleZuri.ch@SD,TeleZüri,OK,565,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:565,lang=de
+TeleZuri.ch@SD,TeleZüri,OK,545,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:545,lang=de
 Telebasel.ch@SD,Telebasel,OK,689,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:689,lang=de
 TelebomTeledom.de@SD,TeleBom/TeleDom,OK,42,web.magentatv.de,2,1,web.magentatv.de:OK:42,broadcast_area=DE;lang=de
 Televista.ch@SD,Televista,OK,343,tv.blue.ch,1,1,tv.blue.ch:OK:343,lang=de
-TennisChannel.us@SD,Tennis Channel,OK,22,i.mjh.nz,2,1,i.mjh.nz:OK:22,lang=de
+TennisChannel.us@SD,Tennis Channel,OK,21,i.mjh.nz,2,1,i.mjh.nz:OK:21,lang=de
 TerraMaterWILD.de@English,Terra Mater Wild (EN),NO_EPG,0,,1,1,watch.whaletvplus.com:OK:0,broadcast_area=DE
-TerraMaterWILD.de@German,Terra Mater WILD,OK,22,i.mjh.nz,4,1,i.mjh.nz:OK:22,broadcast_area=DE;iptv-country=DE;lang=de
+TerraMaterWILD.de@German,Terra Mater WILD,OK,21,i.mjh.nz,4,1,i.mjh.nz:OK:21,broadcast_area=DE;iptv-country=DE;lang=de
 TheAsylum.us@France,The Asylum,OK,9,i.mjh.nz,1,1,i.mjh.nz:OK:9,broadcast_area=DE
 TheAsylum.us@US,The Asylum,OK,48,i.mjh.nz,3,1,i.mjh.nz:OK:48,broadcast_area=DE
 TheGrahamNortonShow.uk@SD,The Graham Norton Show,OK,243,plex.tv,7,1,plex.tv:OK:243,broadcast_area=DE;iptv-country=DE
 ThePetCollective.us@Brazil,The Pet Collective,OK,8,i.mjh.nz,2,1,i.mjh.nz:OK:8,broadcast_area=DE
 ThePetCollective.us@UK,The Pet Collective,OK,282,plex.tv,9,1,plex.tv:OK:282,broadcast_area=DE
-ThePetCollective.us@US,The Pet Collective,OK,13,i.mjh.nz,5,1,i.mjh.nz:OK:13,broadcast_area=DE
+ThePetCollective.us@US,The Pet Collective,OK,12,i.mjh.nz,5,1,i.mjh.nz:OK:12,broadcast_area=DE
 TirolTV.at@HD,Tirol TV HD,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
-TotallyTurtles.us@Germany,Totally Turtles,OK,27,i.mjh.nz,2,1,i.mjh.nz:OK:27,lang=de
+TotallyTurtles.us@Germany,Totally Turtles,OK,26,i.mjh.nz,2,1,i.mjh.nz:OK:26,lang=de
 ToxicTV.rs@HD,Toxic TV HD,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
 Trailers.es@DE,Trailers (DE),NO_EPG,0,,1,1,watch.whaletvplus.com:OK:0,broadcast_area=DE;lang=de
 Trailers.es@ES,Trailers (ES),NO_EPG,0,,1,1,watch.whaletvplus.com:OK:0,broadcast_area=DE
@@ -827,7 +827,7 @@ Trailers.es@FR,TRAILERS,OK,123,plex.tv,3,1,plex.tv:OK:123,broadcast_area=DE
 Trailers.es@IT,TRAILERS,OK,184,plex.tv,2,1,plex.tv:OK:184,broadcast_area=DE
 Trailers.es@UK,Trailers (EN),NO_EPG,0,,1,1,watch.whaletvplus.com:OK:0,broadcast_area=DE
 Travelxp.in@DE,Travelxp (DE),NO_EPG,0,,1,1,watch.whaletvplus.com:OK:0,lang=de
-UHD1.lu@SD,UHD1 by ASTRA,OK,133,tv.blue.ch,1,1,tv.blue.ch:OK:133,lang=de
+UHD1.lu@SD,UHD1 by ASTRA,OK,138,tv.blue.ch,1,1,tv.blue.ch:OK:138,lang=de
 UlkeTV.tr@SD,ÜLKE TV,OK,35,web.magentatv.de,1,1,web.magentatv.de:OK:35,lang=de
 UniversalTV.de@HD,Universal TV HD,OK,234,sky.com,2,1,sky.com:OK:234,broadcast_area=DE;lang=de
 UniversalTV.de@SD,Universal TV,OK,240,web.magentatv.de,3,1,web.magentatv.de:OK:240,broadcast_area=DE;lang=de
@@ -868,7 +868,7 @@ WettercomTV.de@SD,wetter.com TV,OK,1499,web.magentatv.de,2,1,web.magentatv.de:OK
 WorldPokerTour.us@Germany,World Poker Tour,OK,7,i.mjh.nz,2,1,i.mjh.nz:OK:7,broadcast_area=DE;iptv-country=DE;lang=de
 WorldPokerTour.us@Italy,World Poker Tour,OK,11,i.mjh.nz,1,1,i.mjh.nz:OK:11,broadcast_area=DE
 WorldPokerTour.us@Spain,World Poker Tour,OK,16,i.mjh.nz,3,1,i.mjh.nz:OK:16,broadcast_area=DE
-WorldPokerTour.us@UK,World Poker Tour,OK,10,i.mjh.nz,2,1,i.mjh.nz:OK:10,broadcast_area=DE
+WorldPokerTour.us@UK,World Poker Tour,OK,9,i.mjh.nz,2,1,i.mjh.nz:OK:9,broadcast_area=DE
 WorldPokerTour.us@US,World Poker Tour,OK,6,i.mjh.nz,6,2,distro.tv:OK:0;i.mjh.nz:OK:6,broadcast_area=DE
 WorldofFreesports.de@SD,World of Freesports,NO_EPG,0,,1,1,teleboy.ch:OK:0,broadcast_area=DE;iptv-country=DE;lang=de
 XITEHits.nl@Germany,XITE Hits,OK,60,plex.tv,1,1,plex.tv:OK:60,broadcast_area=DE;iptv-country=DE;lang=de
@@ -897,14 +897,14 @@ automotorundsportchannel.de@SD,auto motor und sport,OK,406,web.magentatv.de,8,1,
 automotorundsportchannel.de@UHD,auto motor und sport channel UHD,NO_EPG,0,,1,1,tv.magenta.at:OK:0,broadcast_area=DE;lang=de
 beINIZ.tr@SD,beIN iZ,OK,516,web.magentatv.de,1,1,web.magentatv.de:OK:516,lang=de
 beINMoviesTurk.tr@SD,beIN Movies Turk,OK,106,web.magentatv.de,1,1,web.magentatv.de:OK:106,lang=de
-ducktv.sk@SD,ducktv,OK,3859,tv.blue.ch,1,1,tv.blue.ch:OK:3859,lang=de
+ducktv.sk@SD,ducktv,OK,3855,tv.blue.ch,1,1,tv.blue.ch:OK:3855,lang=de
 eSports1.de@HD,eSports1 HD,NO_EPG,0,,1,1,tv.magenta.at:OK:0,broadcast_area=DE;lang=de
 eSports1.de@SD,eSportsONE,OK,40,web.magentatv.de,4,1,web.magentatv.de:OK:40,broadcast_area=DE;lang=de
 eXXpressTV.at@SD,eXXpressTV,NO_EPG,0,,1,1,tv.magenta.at:OK:0,lang=de
 emsTVLingen.de@SD,ems TV,OK,63,web.magentatv.de,1,1,web.magentatv.de:OK:63,broadcast_area=DE;lang=de
 hrfernsehen.de@HD,hr-fernsehen HD,OK,271,sky.com,2,1,sky.com:OK:271,broadcast_area=DE;iptv-country=DE;lang=de
 hrfernsehen.de@SD,hr-fernsehen,OK,275,web.magentatv.de,7,1,web.magentatv.de:OK:275,broadcast_area=DE;iptv-country=DE;lang=de
-iCarly.us@Germany,iCarly,OK,25,i.mjh.nz,2,1,i.mjh.nz:OK:25,lang=de
+iCarly.us@Germany,iCarly,OK,24,i.mjh.nz,2,1,i.mjh.nz:OK:24,lang=de
 kabeleins.de@SD,Kabel Eins,OK,184,web.magentatv.de,16,1,web.magentatv.de:OK:184,broadcast_area=DE;iptv-country=DE;lang=de
 kabeleinsAustria.at@HD,kabel eins HD Austria,OK,180,sky.com,1,1,sky.com:OK:180,lang=de
 kabeleinsAustria.at@SD,Kabel 1 Austria,OK,180,sky.com,2,1,sky.com:OK:180,lang=de
@@ -925,7 +925,7 @@ rbbFernsehen.de@Berlin,rbb Berlin HD,OK,241,sky.com,1,1,sky.com:OK:241,broadcast
 rbbFernsehen.de@Brandenburg,rbb Brandenburg HD,OK,234,sky.com,1,1,sky.com:OK:234,broadcast_area=DE;iptv-country=DE;lang=de
 rbbFernsehen.de@SD,rbb Berlin,OK,248,tv.blue.ch,2,2,teleboy.ch:OK:0;tv.blue.ch:OK:248,broadcast_area=DE;iptv-country=DE;lang=de
 rrotv.ch@SD,rrotv,NO_EPG,0,,1,1,tv.blue.ch:OK:0,lang=de
-sixx.de@HD,SIXX HD,OK,195,sky.com,1,1,sky.com:OK:195,broadcast_area=DE;lang=de
+sixx.de@HD,SIXX HD,OK,199,sky.com,1,1,sky.com:OK:199,broadcast_area=DE;lang=de
 sixx.de@SD,sixx,OK,202,web.magentatv.de,9,1,web.magentatv.de:OK:202,broadcast_area=DE;iptv-country=DE;lang=de
 sixxAustria.at@HD,sixx HD Austria,OK,174,sky.com,2,1,sky.com:OK:174,lang=de
 sixxAustria.at@SD,sixx AUSTRIA,OK,174,sky.com,3,1,sky.com:OK:174,lang=de
