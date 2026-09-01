@@ -119,6 +119,20 @@ jobs:
             --candidates build/candidates.json \
             --channels data/de-channels.xml
 
+      - name: Apply authoritative channel ID remaps
+        run: |
+          python scripts/remap_candidates.py \
+            --candidates build/candidates.json \
+            --remap-file config/channel-remaps.json \
+            --channels data/de-channels.xml
+
+      - name: Isolate FAST platform channel identities
+        run: |
+          python scripts/isolate_platform_candidates.py \
+            --candidates build/candidates.json \
+            --config config/platform-isolation.json \
+            --channels data/de-channels.xml
+
       - name: Build staged guide with bounded parallel fallback
         run: |
           python scripts/build_epg.py \
@@ -157,12 +171,14 @@ jobs:
             --required-active-channel SerienPlus.de@HD
             --required-active-channel SerienPlus.de@SD
             --required-active-channel OneTerra.de@SD
+            --required-active-channel CrimeTime.de@SD
             --required-display-name "Silverline.de=Silverline"
             --required-display-name "SerienPlus.de@HD=SERIEN+ HD"
             --required-display-name "SerienPlus.de@SD=SERIEN+"
             --required-display-name "SerienPlus.de@SD=Serien Plus"
             --required-display-name "SerienPlus.de@SD=SerienPlus"
             --required-display-name "OneTerra.de@SD=One TERRA"
+            --required-display-name "CrimeTime.de@SD=Crime Time"
           )
 
           baseline=""
