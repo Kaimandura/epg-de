@@ -1,0 +1,25 @@
+{
+  "channels": [
+    {
+      "xmltv_id": "Silverline.de",
+      "name": "Silverline",
+      "site": "epgshare01.online",
+      "site_id": "DE1#Silverline.de",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "SerienPlus.de@HD",
+      "name": "SERIEN+ HD",
+      "site": "sky.com",
+      "site_id": "DE#2017",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "SerienPlus.de@SD",
+      "name": "SERIEN+",
+      "site": "sky.com",
+      "site_id": "DE#2021",
+      "lang": "de"
+    }
+  ]
+}
