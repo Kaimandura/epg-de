@@ -1,0 +1,935 @@
+<?xml version='1.0' encoding='utf-8'?>
+<channels>
+  <channel site="web.magentatv.de" site_id="4724" lang="de" xmltv_id="123tv.de@SD">1-2-3.tv</channel>
+  <channel site="sky.com" site_id="DE#127" lang="de" xmltv_id="13thStreetUniversal.de@HD">13th Street HD</channel>
+  <channel site="web.magentatv.de" site_id="255" lang="de" xmltv_id="13thStreetUniversal.de@SD">13TH STREET</channel>
+  <channel site="web.magentatv.de" site_id="146" lang="de" xmltv_id="1730SAT1Bayern.de@SD">SAT.1 Bayern</channel>
+  <channel site="web.magentatv.de" site_id="145" lang="de" xmltv_id="1730SAT1LIVE.de@SD">SAT.1 Rheinland-Pfalz und Hessen</channel>
+  <channel site="web.magentatv.de" site_id="142" lang="de" xmltv_id="1730SAT1REGIONALHamburgSchleswigHolstein.de@SD">SAT.1 Hamburg und Schleswig-Holstein</channel>
+  <channel site="web.magentatv.de" site_id="144" lang="de" xmltv_id="1730SAT1REGIONALLowerSaxonyBremen.de@SD">SAT.1 Niedersachsen und Bremen</channel>
+  <channel site="teleboy.ch" site_id="524" lang="de" xmltv_id="1FLTV.li@SD">1 FL TV</channel>
+  <channel site="teleboy.ch" site_id="350" lang="de" xmltv_id="3Plus.ch@SD">3+</channel>
+  <channel site="sky.com" site_id="DE#1150" lang="de" xmltv_id="3sat.de@HD">3sat HD</channel>
+  <channel site="web.magentatv.de" site_id="392" lang="de" xmltv_id="3sat.de@SD">3sat</channel>
+  <channel site="teleboy.ch" site_id="351" lang="de" xmltv_id="4Plus.ch@SD">4+</channel>
+  <channel site="teleboy.ch" site_id="348" lang="de" xmltv_id="5Plus.ch@SD">5+</channel>
+  <channel site="teleboy.ch" site_id="390" lang="de" xmltv_id="6Plus.ch@SD">6+</channel>
+  <channel site="teleboy.ch" site_id="182" lang="de" xmltv_id="7PlusNickSchweiz.ch@SD">7+ / Nick CH</channel>
+  <channel site="tv.blue.ch" site_id="1377" lang="de" xmltv_id="ALFTV.ch@SD">ALF-TV</channel>
+  <channel site="sky.com" site_id="DE#377" lang="de" xmltv_id="ARDalpha.de@HD">ARD alpha HD</channel>
+  <channel site="web.magentatv.de" site_id="479" lang="de" xmltv_id="ARDalpha.de@SD">ARD-alpha</channel>
+  <channel site="tvprofil.com" site_id="ch/tv-programm#a-spor" lang="de" xmltv_id="ASpor.ch">A Spor</channel>
+  <channel site="tvprofil.com" site_id="de/tvprogramm#a-spor" lang="de" xmltv_id="ASpor.de">A Spor</channel>
+  <channel site="sky.com" site_id="DE#3228" lang="de" xmltv_id="ATV.at@HD">ATV HD AT</channel>
+  <channel site="programtv.onet.pl" site_id="atv-251" lang="de" xmltv_id="ATV.at@SD">ATV</channel>
+  <channel site="sky.com" site_id="DE#3223" lang="de" xmltv_id="ATV2.at@HD">ATV2 HD AT</channel>
+  <channel site="tvheute.at" site_id="atv2" lang="de" xmltv_id="ATV2.at@SD">ATV2</channel>
+  <channel site="sky.com" site_id="DE#2027" lang="de" xmltv_id="AXNBlack.de@HD">AXN Black HD</channel>
+  <channel site="web.magentatv.de" site_id="110" lang="de" xmltv_id="AXNBlack.de@SD">AXN Black</channel>
+  <channel site="neo.io" site_id="adria" lang="sl" xmltv_id="AdriaMusicTelevision.de@SD">Adria</channel>
+  <channel site="plex.tv" site_id="6533e27abd43e1c8b1865154" lang="en" xmltv_id="AdventureEarth.de@SD">Adventure Earth</channel>
+  <channel site="sky.com" site_id="DE#4440" lang="de" xmltv_id="AlJazeera.qa@English">Al Jazeera English</channel>
+  <channel site="sky.com" site_id="DE#5031" lang="de" xmltv_id="AlJazeera.qa@EnglishHD">Al Jazeera English HD</channel>
+  <channel site="web.magentatv.de" site_id="649" lang="de" xmltv_id="AlexBerlin.de@SD">ALEX Berlin</channel>
+  <channel site="web.magentatv.de" site_id="448" lang="de" xmltv_id="AllgauTV.de@SD">allgäu.tv</channel>
+  <channel site="tv.blue.ch" site_id="18" lang="de" xmltv_id="AlpenlandTV.ch@SD">AW1 TV</channel>
+  <channel site="web.magentatv.de" site_id="3660" lang="de" xmltv_id="AltenburgTV.de@SD">altenburg.tv</channel>
+  <channel site="plex.tv" site_id="691d65b18f4092bc7bb24c8e" lang="de" xmltv_id="Andromeda.us">Andromeda</channel>
+  <channel site="web.magentatv.de" site_id="105" lang="de" xmltv_id="AnimalPlanet.de@SD">Animal Planet</channel>
+  <channel site="tv.blue.ch" site_id="23" lang="de" xmltv_id="Animax.de@SD">Animax</channel>
+  <channel site="web.magentatv.de" site_id="4777" lang="de" xmltv_id="AnixeHDSerie.de@SD">ANIXE HD Serie</channel>
+  <channel site="web.magentatv.de" site_id="452" lang="de" xmltv_id="AnixePlus.de@SD">ANIXE+</channel>
+  <channel site="tvprofil.com" site_id="ch/tv-programm#antena3" lang="de" xmltv_id="Antena3.ch">Antena 3</channel>
+  <channel site="sky.com" site_id="DE#205" lang="de" xmltv_id="AragonTVInternacional.es@SD">ARAGON TV INT</channel>
+  <channel site="tv.blue.ch" site_id="1950" lang="de" xmltv_id="ArcadiaTV.li@SD">ARCADIA world TV</channel>
+  <channel site="tv.magenta.at" site_id="206965800368" lang="de" xmltv_id="ArcadiaWorldHD.at@SD">ARCADIA World HD</channel>
+  <channel site="sky.com" site_id="DE#7012" lang="de" xmltv_id="ArirangWorld.kr@SD">Arirang HD</channel>
+  <channel site="teleboy.ch" site_id="558" lang="de" xmltv_id="AuftankenTV.ch@SD">auftanken.tv</channel>
+  <channel site="sky.com" site_id="DE#5800" lang="de" xmltv_id="AugsburgTV.de@SD">a.tv HD</channel>
+  <channel site="watch.whaletvplus.com" site_id="931186243466302968" lang="en" xmltv_id="AutenticHistory.de@SD">Autentic History</channel>
+  <channel site="watch.whaletvplus.com" site_id="931186243466302967" lang="en" xmltv_id="AutenticTravel.de@SD">Autentic Travel</channel>
+  <channel site="tv.blue.ch" site_id="1616" lang="de" xmltv_id="AutoMotorogSportTV.no@SD">auto motor und sport</channel>
+  <channel site="tv.magenta.at" site_id="207382568056" lang="de" xmltv_id="BBCEntertainment.uk@SD">BBC Entertainment</channel>
+  <channel site="web.magentatv.de" site_id="454" lang="de" xmltv_id="BBCNews.uk@Europe">BBC News</channel>
+  <channel site="plex.tv" site_id="65622eddb7d737841f30a4fd" lang="en" xmltv_id="BBCTravel.us@Germany">BBC Travel</channel>
+  <channel site="sky.com" site_id="DE#630" lang="de" xmltv_id="BRFernsehen.de@Nord">BR Fernsehen Nord HD</channel>
+  <channel site="sky.com" site_id="DE#631" lang="de" xmltv_id="BRFernsehen.de@Sud">BR Fernsehen Süd HD</channel>
+  <channel site="sky.com" site_id="DE#5701" lang="de" xmltv_id="BVN.nl@SD">BVN TV</channel>
+  <channel site="web.magentatv.de" site_id="109" lang="de" xmltv_id="BabyTV.uk@UK">Baby TV</channel>
+  <channel site="web.magentatv.de" site_id="3685" lang="de" xmltv_id="BadenTV.de@SD">Baden TV</channel>
+  <channel site="web.magentatv.de" site_id="3749" lang="de" xmltv_id="BadenTVSud.de@SD">Baden TV Süd</channel>
+  <channel site="sky.com" site_id="DE#133" lang="de" xmltv_id="BeateUhseTV.de@HD">Beate Uhse HD</channel>
+  <channel site="web.magentatv.de" site_id="107" lang="de" xmltv_id="BeateUhseTV.de@SD">Beate-Uhse.TV (Sky)</channel>
+  <channel site="web.magentatv.de" site_id="45" lang="de" xmltv_id="Bergblick.de@SD">Bergblick</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#60afb576053df900076fa2f0" lang="de" xmltv_id="BeverlyHills90210.us@Germany">Beverly Hills 90210</channel>
+  <channel site="plex.tv" site_id="64d78d48950759afa2523ee9" lang="de" xmltv_id="BeyondBeliefFactorFiction.us">Beyond Belief</channel>
+  <channel site="sky.com" site_id="DE#3224" lang="de" xmltv_id="BibelTV.de@HD">Bibel TV HD</channel>
+  <channel site="web.magentatv.de" site_id="485" lang="de" xmltv_id="BibelTV.de@SD">Bibel TV</channel>
+  <channel site="tv.blue.ch" site_id="1865" lang="de" xmltv_id="Bild.de@SD">Bild</channel>
+  <channel site="sky.com" site_id="DE#619" lang="de" xmltv_id="BloombergTV.us@Europe">Bloomberg Europe TV</channel>
+  <channel site="tv.blue.ch" site_id="591" lang="de" xmltv_id="BlueAction.ch@SD">blue Action</channel>
+  <channel site="tv.blue.ch" site_id="1225" lang="de" xmltv_id="BlueCity.ch@SD">blue City</channel>
+  <channel site="tv.blue.ch" site_id="1282" lang="de" xmltv_id="BlueEvent1.ch@SD">blue Music D 1</channel>
+  <channel site="web.magentatv.de" site_id="112" lang="de" xmltv_id="BlueHustler.nl@SD">Blue Hustler</channel>
+  <channel site="tv.blue.ch" site_id="588" lang="de" xmltv_id="BluePrime.ch@SD">blue Prime</channel>
+  <channel site="tv.blue.ch" site_id="1226" lang="de" xmltv_id="BlueRetro.ch@SD">blue Retro</channel>
+  <channel site="tv.blue.ch" site_id="483" lang="de" xmltv_id="BlueSport1.ch@SD">blue Sport D 1</channel>
+  <channel site="tv.blue.ch" site_id="494" lang="de" xmltv_id="BlueSport2.ch@SD">blue Sport D 2</channel>
+  <channel site="tv.blue.ch" site_id="589" lang="de" xmltv_id="BlueStars.ch@SD">blue Stars</channel>
+  <channel site="teleboy.ch" site_id="389" lang="de" xmltv_id="BlueZoomD.ch@SD">blue Zoom de</channel>
+  <channel site="tv.blue.ch" site_id="420" lang="de" xmltv_id="BlueZoomF.ch@SD">blue Zoom F</channel>
+  <channel site="tv.blue.ch" site_id="49" lang="de" xmltv_id="BodenseeTV.ch@SD">Bodensee TV</channel>
+  <channel site="tv.magenta.at" site_id="207381032322" lang="de" xmltv_id="BonGusto.de@HD">Bongusto HD</channel>
+  <channel site="web.magentatv.de" site_id="117" lang="de" xmltv_id="BonGusto.de@SD">BonGusto</channel>
+  <channel site="web.magentatv.de" site_id="148" lang="de" xmltv_id="Boomerang.de@SD">Cartoonito</channel>
+  <channel site="tvprofil.com" site_id="ch/tv-programm#carac5" lang="de" xmltv_id="CARAC5.ch">CARAC5</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5d4947590ba40f75dc29c26b" lang="de" xmltv_id="CCPlutoTV.de@DACH">CC Pluto TV</channel>
+  <channel site="tv.magenta.at" site_id="207381032415" lang="de" xmltv_id="CCTV4Europe.cn@SD">CCTV4</channel>
+  <channel site="sky.com" site_id="DE#6801" lang="de" xmltv_id="CGTN.cn@SD">CGTN News HD</channel>
+  <channel site="sky.com" site_id="DE#6802" lang="de" xmltv_id="CGTNDocumentary.cn@SD">CGTN Documentary HD</channel>
+  <channel site="sky.com" site_id="DE#6803" lang="de" xmltv_id="CGTNFrench.cn@SD">CGTN Francais HD</channel>
+  <channel site="sky.com" site_id="DE#125" lang="de" xmltv_id="CNBCEurope.uk@HD">CNBC HD</channel>
+  <channel site="tv.magenta.at" site_id="206970408317" lang="de" xmltv_id="CNBCEurope.uk@SD">CNBC</channel>
+  <channel site="web.magentatv.de" site_id="399" lang="de" xmltv_id="CNNInternational.us@MENA">CNN International</channel>
+  <channel site="tvheute.at" site_id="canal+" lang="de" xmltv_id="CanalPlusFirst.at@SD">CANAL+</channel>
+  <channel site="horizon.tv" site_id="10091" lang="cs" xmltv_id="CartoonNetworkCEE.uk@CzechRepublic">Cartoon Network HD</channel>
+  <channel site="mon-programme-tv.be" site_id="93/programme-television-cartoon-network" lang="fr" xmltv_id="CartoonNetworkCEE.uk@France">CARTOON NETWORK</channel>
+  <channel site="pickx.be" site_id="UID2361" lang="fr" xmltv_id="CartoonNetworkCEE.uk@FranceHD">Cartoon F HD</channel>
+  <channel site="web.magentatv.de" site_id="126" lang="de" xmltv_id="CartoonNetworkCEE.uk@Germany">Cartoon Network</channel>
+  <channel site="tv.magenta.at" site_id="207381032280" lang="de" xmltv_id="CartoonNetworkCEE.uk@GermanyHD">Cartoon Network HD</channel>
+  <channel site="musor.tv" site_id="CARTOON" lang="hu" xmltv_id="CartoonNetworkCEE.uk@Hungary">Cartoon Network</channel>
+  <channel site="m.tv.sms.cz" site_id="Cartoon+Network+%28pl%29" lang="pl" xmltv_id="CartoonNetworkCEE.uk@Poland">Cartoon Network (pl)</channel>
+  <channel site="programetv.ro" site_id="cartoon-network" lang="ro" xmltv_id="CartoonNetworkCEE.uk@Romania">Cartoon Network</channel>
+  <channel site="magticom.ge" site_id="41" lang="ru" xmltv_id="CartoonNetworkCEE.uk@Russia">Cartoon Network</channel>
+  <channel site="sky.com" site_id="DE#28" lang="de" xmltv_id="CartoonitoCEE.uk@Germany">Cartoonito</channel>
+  <channel site="programtv.onet.pl" site_id="boomerang-270" lang="pl" xmltv_id="CartoonitoCEE.uk@Poland">Cartoonito</channel>
+  <channel site="melita.com" site_id="dac0cc07-c3f1-4753-a1b6-fd9465ba2e20" lang="en" xmltv_id="CartoonitoCEE.uk@SD">Boomerang</channel>
+  <channel site="mujtvprogram.cz" site_id="303" lang="de" xmltv_id="CartoonitoMENA.uk@SD">SUPER RTL</channel>
+  <channel site="web.magentatv.de" site_id="5176" lang="de" xmltv_id="Channel21.de@SD">CHANNEL21</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#60afbad343e3840007164348" lang="de" xmltv_id="ChaosCity.us@Germany">Chaos City</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#611e7f224676bf00076a4d8d" lang="de" xmltv_id="Cheers.us@Germany">Cheers</channel>
+  <channel site="sat.tv" site_id="1#33#Çira TV" lang="en" xmltv_id="CiraTV.de@SD">Çira TV</channel>
+  <channel site="sky.com" site_id="DE#4305" lang="de" xmltv_id="ClipMyHorseTV.de@SD">ClipMyHorse.TV</channel>
+  <channel site="tv.magenta.at" site_id="207382568013" lang="de" xmltv_id="ClubMTVEurope.uk@SD">Club MTV</channel>
+  <channel site="chaines-tv.orange.fr" site_id="1989" lang="fr" logo="https://cdn-proxymedia-digicert.tv-fr-cdn.orange.net/api/v1/images/2090%2Flogos%2Fv2%2Flogos%2Flivetv_clubbingtv%2F20151026_092415%2FmobileAppliDark%2Flogo_183x183.png?service=LIVE&amp;amp;device=W_PC" xmltv_id="ClubbingTV.us@France">CLUBBING TV</channel>
+  <channel site="epg.iptvx.one" site_id="clubbing-tv" lang="ru" xmltv_id="ClubbingTV.us@Germany">Clubbing TV</channel>
+  <channel site="tv.mail.ru" site_id="2280" lang="ru" xmltv_id="ClubbingTV.us@Russia">Clubbing TV</channel>
+  <channel site="tv.magenta.at" site_id="206969384229" lang="de" xmltv_id="ComedyCentral.at@SD">Comedy Central</channel>
+  <channel site="sky.com" site_id="DE#8652" lang="de" xmltv_id="ComedyCentral.de@HD">Comedy Central HD</channel>
+  <channel site="web.magentatv.de" site_id="54" lang="de" xmltv_id="ComedyCentral.de@Plus1">Nick/Comedy Central+1</channel>
+  <channel site="web.magentatv.de" site_id="50" lang="de" xmltv_id="ComedyCentral.de@SD">Comedy Central</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#60c716084d842c00085f6e64" lang="de" xmltv_id="ComedyCentralSouthPark.us@Germany">Comedy Central South Park</channel>
+  <channel site="tv.magenta.at" site_id="207382568024" lang="de" xmltv_id="CrimePlusInvestigation.de@HD">Crime + Investigation HD</channel>
+  <channel site="web.magentatv.de" site_id="106" lang="de" xmltv_id="CrimePlusInvestigation.de@SD">Crime+Investigation</channel>
+  <channel site="tv.blue.ch" site_id="2039" lang="de" xmltv_id="CrimeTime.us@SD">Crime Time</channel>
+  <channel site="web.magentatv.de" site_id="186" lang="de" xmltv_id="CuriosityChannel.de@SD">Curiosity Channel</channel>
+  <channel site="plex.tv" site_id="654bc54830d2712ab098fc9b" lang="de" xmltv_id="CuriosityNOW.de@DE">Curiosity Now</channel>
+  <channel site="plex.tv" site_id="64831c8be3541c909e96d240" lang="en" xmltv_id="CuriosityNOW.de@EN">Curiosity NOW</channel>
+  <channel site="sky.com" site_id="DE#1446" lang="de" xmltv_id="DASDING908.de@SD">DASDING</channel>
+  <channel site="pickx.be" site_id="UID0640" lang="fr" xmltv_id="DAZN1.uk@France">DAZN 1 F</channel>
+  <channel site="pickx.be" site_id="UID0644" lang="fr" xmltv_id="DAZN1.uk@FranceHD">DAZN 1 F HD</channel>
+  <channel site="tvheute.at" site_id="dazn" lang="de" xmltv_id="DAZN1.uk@Germany">DAZN</channel>
+  <channel site="sky.com" site_id="DE#132" lang="de" xmltv_id="DAZN1.uk@GermanyHD">DAZN 1 HD</channel>
+  <channel site="pickx.be" site_id="UID0641" lang="nl" xmltv_id="DAZN1.uk@Netherlands">DAZN 1 N</channel>
+  <channel site="pickx.be" site_id="UID0645" lang="nl" xmltv_id="DAZN1.uk@NetherlandsHD">DAZN 1 N HD</channel>
+  <channel site="meo.pt" site_id="DAZN1" lang="pt" xmltv_id="DAZN1.uk@Portugal">DAZN 1</channel>
+  <channel site="tv.sfr.fr" site_id="3795" lang="fr" xmltv_id="DAZN1.uk@UKHD">DAZN 1</channel>
+  <channel site="pickx.be" site_id="UID0642" lang="fr" xmltv_id="DAZN2.uk@France">DAZN 2 F</channel>
+  <channel site="pickx.be" site_id="UID0646" lang="fr" xmltv_id="DAZN2.uk@FranceHD">DAZN 2 F HD</channel>
+  <channel site="sky.com" site_id="DE#122" lang="de" xmltv_id="DAZN2.uk@GermanyHD">DAZN 2 HD</channel>
+  <channel site="pickx.be" site_id="UID0643" lang="nl" xmltv_id="DAZN2.uk@Netherlands">DAZN 2 N</channel>
+  <channel site="pickx.be" site_id="UID0647" lang="nl" xmltv_id="DAZN2.uk@NetherlandsHD">DAZN 2 N HD</channel>
+  <channel site="meo.pt" site_id="DAZN2" lang="pt" xmltv_id="DAZN2.uk@Portugal">DAZN 2</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#64b67f0424ade50008a3be17" lang="de" xmltv_id="DAZNDartsxPlutoTV.de@DACH">DAZN Darts x Pluto TV</channel>
+  <channel site="tv.blue.ch" site_id="1452" lang="de" xmltv_id="DAZNFAST.de@HD">DAZN</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#6683f7fe36a2f9000804940c" lang="de" xmltv_id="DAZNHandballxPlutoTV.de@DACH">DAZN Handball x Pluto TV</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#64afe50c5dc16600087f3227" lang="de" xmltv_id="DAZNHeldinnenxPlutoTV.de@DACH">DAZN Heldinnen x Pluto TV</channel>
+  <channel site="sky.com" site_id="DE#4914" lang="de" xmltv_id="DF1.de@SD">DF1 HD</channel>
+  <channel site="sky.com" site_id="DE#5402" lang="de" xmltv_id="DMAX.de@HD">DMAX HD</channel>
+  <channel site="web.magentatv.de" site_id="429" lang="de" xmltv_id="DMAX.de@SD">DMAX</channel>
+  <channel site="web.magentatv.de" site_id="5312" lang="de" xmltv_id="DMF.de@SD">DMF</channel>
+  <channel site="teleboy.ch" site_id="427" lang="ar" xmltv_id="DW.de@Arabic">Deutsche Welle ar</channel>
+  <channel site="mi.tv" site_id="br#deutsche-welle" lang="de" xmltv_id="DW.de@Deutsch">DW (Deutsch+)</channel>
+  <channel site="mi.tv" site_id="pe#deutsche-welle-amerika" lang="es" xmltv_id="DW.de@DeutschPlus">DW (Español)</channel>
+  <channel site="chaines-tv.orange.fr" site_id="61" lang="fr" logo="https://cdn-proxymedia-digicert.tv-fr-cdn.orange.net/api/v1/images/2090%2Flogos%2Fv2%2Flogos%2Flivetv_deutschewelle%2F20220615_153218%2FmobileAppliDark%2Flogo_183x183.png?service=LIVE&amp;amp;device=W_PC" xmltv_id="DW.de@English">DEUTSCHE WELLE</channel>
+  <channel site="anteltv.com.uy" site_id="2s689" lang="es" xmltv_id="DW.de@Espanol">DW (Español)</channel>
+  <channel site="digiturk.com.tr" site_id="529" lang="tr" xmltv_id="DaVinci.de@SD">Da Vinci</channel>
+  <channel site="web.magentatv.de" site_id="4375" lang="de" xmltv_id="DabeiTV.de@SD">#dabeiTV</channel>
+  <channel site="pickx.be" site_id="UID2375" lang="de" xmltv_id="DasErste.de@HD">Das Erste HD</channel>
+  <channel site="web.magentatv.de" site_id="373" lang="de" xmltv_id="DasErste.de@SD">Das Erste</channel>
+  <channel site="sky.com" site_id="DE#1439" lang="de" xmltv_id="DeluxeDance.de@SD">Deluxe Dance by Kontor HD</channel>
+  <channel site="tv.blue.ch" site_id="2046" lang="de" xmltv_id="DeluxeFlashback.de@SD">Deluxe Flashback</channel>
+  <channel site="watch.whaletvplus.com" site_id="281449017215878464" lang="de" xmltv_id="DeluxeLounge.de@HD">Deluxe Lounge HD</channel>
+  <channel site="m.tv.sms.cz" site_id="Deluxe+Lounge+HD" lang="cs" xmltv_id="DeluxeLounge.de@SD">Deluxe Lounge HD</channel>
+  <channel site="sky.com" site_id="DE#5503" lang="de" xmltv_id="DeluxeMusic.de@HD">Deluxe Music HD</channel>
+  <channel site="web.magentatv.de" site_id="25" lang="de" xmltv_id="DeluxeMusic.de@SD">DELUXE MUSIC</channel>
+  <channel site="sky.com" site_id="DE#1449" lang="de" xmltv_id="DeluxeRap.de@SD">Deluxe Rap HD</channel>
+  <channel site="web.magentatv.de" site_id="23" lang="de" xmltv_id="DiscoveryChannel.de@SD">Discovery Channel</channel>
+  <channel site="sky.com" site_id="DE#5500" lang="de" xmltv_id="DisneyChannel.de@HD">Disney Channel HD</channel>
+  <channel site="web.magentatv.de" site_id="27" lang="de" xmltv_id="DisneyChannel.de@SD">Disney Channel</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/us#5ce4475cd43850831ca91ce7" lang="en" xmltv_id="DoctorWhoClassic.us@US">Doctor Who Classic</channel>
+  <channel site="tvprofil.com" site_id="at/tvprogramm#docubox-hd" lang="de" xmltv_id="DocuBoxHD.at">DocuBox HD</channel>
+  <channel site="sky.com" site_id="DE#2029" lang="de" xmltv_id="Dokusat.de@SD">Dokusat</channel>
+  <channel site="tvprofil.com" site_id="ch/tv-programm#etb-basque" lang="de" xmltv_id="ETBBasque.ch">ETB Basque</channel>
+  <channel site="tvprofil.com" site_id="de/tvprogramm#etb-basque" lang="de" xmltv_id="ETBBasque.de">ETB Basque</channel>
+  <channel site="neo.io" site_id="ewtn" lang="de" xmltv_id="EWTN.de@SD">EWTN</channel>
+  <channel site="programtv.onet.pl" site_id="erox-hd-520" lang="de" xmltv_id="EroX.nl@HD">Erox HD</channel>
+  <channel site="programtv.onet.pl" site_id="eroxxx-hd-512" lang="de" xmltv_id="EroXXX.nl@HD">Eroxxx HD</channel>
+  <channel site="web.magentatv.de" site_id="136" lang="de" xmltv_id="EuroD.tr@SD">Euro D</channel>
+  <channel site="web.magentatv.de" site_id="21" lang="de" xmltv_id="EuroStar.tr@SD">Eurostar TV</channel>
+  <channel site="tv.blue.ch" site_id="1635" lang="de" xmltv_id="Eurochannel.uk@SD">Eurochannel D</channel>
+  <channel site="tv.magenta.at" site_id="206969896072" lang="de" xmltv_id="EuronewsGerman.fr@HD">euronews HD</channel>
+  <channel site="web.magentatv.de" site_id="482" lang="de" xmltv_id="EuronewsGerman.fr@SD">Euronews Deutsch</channel>
+  <channel site="web.magentatv.de" site_id="121" lang="de" xmltv_id="EuronewsItalian.fr@SD">Euronews Italiano</channel>
+  <channel site="web.magentatv.de" site_id="475" lang="de" xmltv_id="EuronewsRussian.fr@SD">Euronews Russki</channel>
+  <channel site="web.magentatv.de" site_id="389" lang="de" xmltv_id="Eurosport1.fr@France">Eurosport 1</channel>
+  <channel site="programtv.onet.pl" site_id="eurosport-niem-366" lang="de" xmltv_id="Eurosport1.fr@Germany">Eurosport 1 (niem.)</channel>
+  <channel site="sky.com" site_id="DE#2502" lang="de" xmltv_id="Eurosport1.fr@GermanyHD">Eurosport 1 HD</channel>
+  <channel site="novasports.gr" site_id="Eurosport 1 HD" lang="el" xmltv_id="Eurosport1.fr@Greece">Eurosport 1 HD</channel>
+  <channel site="musor.tv" site_id="EUROSPORT" lang="hu" xmltv_id="Eurosport1.fr@Hungary">Eurosport 1 (HD)</channel>
+  <channel site="guida.tv" site_id="698573/eurosport-italia" lang="it" xmltv_id="Eurosport1.fr@Italy">Eurosport Italia</channel>
+  <channel site="mon-programme-tv.be" site_id="618/programme-television-eurosport-nl" lang="fr" xmltv_id="Eurosport1.fr@Netherlands">EUROSPORT NL</channel>
+  <channel site="pickx.be" site_id="UID50210" lang="nl" xmltv_id="Eurosport1.fr@NetherlandsHD">Eurosp HD N</channel>
+  <channel site="programtv.onet.pl" site_id="eurosport-1-93" lang="pl" xmltv_id="Eurosport1.fr@Poland">Eurosport 1</channel>
+  <channel site="programetv.ro" site_id="eurosport-1" lang="ro" xmltv_id="Eurosport1.fr@Romania">Eurosport 1</channel>
+  <channel site="teliatv.ee" site_id="en#35" lang="en" xmltv_id="Eurosport1.fr@Russia">Eurosport</channel>
+  <channel site="tv.magenta.at" site_id="207381032402" lang="de" xmltv_id="Eurosport1.fr@Serbia">Eurosport 1 Srbija</channel>
+  <channel site="gatotv.com" site_id="eurosport_1_espana" lang="es" xmltv_id="Eurosport1.fr@Spain">Canal Eurosport 1 (España)</channel>
+  <channel site="mytelly.co.uk" site_id="275/eurosport-1" lang="en" xmltv_id="Eurosport1.fr@UK">Eurosport 1</channel>
+  <channel site="mytelly.co.uk" site_id="1434/eurosport-1-hd" lang="en" xmltv_id="Eurosport1.fr@UKHD">Eurosport 1 HD</channel>
+  <channel site="web.magentatv.de" site_id="18" lang="de" xmltv_id="Eurosport2.fr@France">Eurosport 2</channel>
+  <channel site="tv.blue.ch" site_id="170" lang="de" xmltv_id="Eurosport2.fr@Germany">Eurosport 2 D</channel>
+  <channel site="novasports.gr" site_id="Eurosport 2 HD" lang="el" xmltv_id="Eurosport2.fr@Greece">Eurosport 2 HD</channel>
+  <channel site="musor.tv" site_id="EUROSPORT2" lang="hu" xmltv_id="Eurosport2.fr@Hungary">Eurosport 2 (HD)</channel>
+  <channel site="guida.tv" site_id="69857350/eurosport-2-italia" lang="it" xmltv_id="Eurosport2.fr@Italy">Eurosport 2 Italia</channel>
+  <channel site="pickx.be" site_id="UID50269" lang="nl" xmltv_id="Eurosport2.fr@Netherlands">Eurosp2 N</channel>
+  <channel site="pickx.be" site_id="UID2358" lang="nl" xmltv_id="Eurosport2.fr@NetherlandsHD">Eurosp2 HD N</channel>
+  <channel site="programtv.onet.pl" site_id="eurosport-2-76" lang="pl" xmltv_id="Eurosport2.fr@Poland">Eurosport 2</channel>
+  <channel site="programetv.ro" site_id="eurosport-2" lang="ro" xmltv_id="Eurosport2.fr@Romania">Eurosport 2</channel>
+  <channel site="teliatv.ee" site_id="en#51" lang="en" xmltv_id="Eurosport2.fr@Russia">Eurosport 2</channel>
+  <channel site="gatotv.com" site_id="eurosport_2_espana" lang="es" xmltv_id="Eurosport2.fr@Spain">Canal Eurosport 2 (España)</channel>
+  <channel site="mytelly.co.uk" site_id="1076/eurosport-2" lang="en" xmltv_id="Eurosport2.fr@UK">Eurosport 2</channel>
+  <channel site="mytelly.co.uk" site_id="1745/eurosport-2-hd" lang="en" xmltv_id="Eurosport2.fr@UKHD">Eurosport 2 HD</channel>
+  <channel site="shahid.mbc.net" site_id="49923446898171" lang="ar" xmltv_id="FIFAPlus.uk">FIFA+</channel>
+  <channel site="plex.tv" site_id="66628c68346b86608532dbcf" lang="en" xmltv_id="FIFAPlus.uk@English">FIFA+</channel>
+  <channel site="plex.tv" site_id="666340ce76ca410aa18e705b" lang="fr" xmltv_id="FIFAPlus.uk@French">FIFA+</channel>
+  <channel site="plex.tv" site_id="66633b8f76ca410aa18e7057" lang="de" xmltv_id="FIFAPlus.uk@German">FIFA+</channel>
+  <channel site="plex.tv" site_id="66633339ebeb02ee8bd1597c" lang="es" xmltv_id="FIFAPlus.uk@HispanicAmerica">FIFA+</channel>
+  <channel site="plex.tv" site_id="6663446076ca410aa18e7061" lang="it" xmltv_id="FIFAPlus.uk@Italy">FIFA+</channel>
+  <channel site="plex.tv" site_id="66634bd2ca7b22f4c3a2d731" lang="pt" xmltv_id="FIFAPlus.uk@Portuguese">FIFA+</channel>
+  <channel site="watch.whaletvplus.com" site_id="999860001214956577" lang="es" xmltv_id="FIFAPlus.uk@Spain">FIFA+ (ES/MX)</channel>
+  <channel site="plex.tv" site_id="66628d4a8dfc36b8c8a399c4" lang="en" xmltv_id="FIFAPlus.uk@UnitedStates">FIFA+</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/br#5f5141c1605ddf000748eb1b" lang="pt" xmltv_id="FailArmy.us@Brazil">FailArmy</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/fr#5f8ecd9169d2d4000864a974" lang="fr" xmltv_id="FailArmy.us@France">FailArmy</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/it#608014d19a26320007c92ab6" lang="it" xmltv_id="FailArmy.us@Italy">FailArmy</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/es#5f1abf5fafb5ee0007d4d0ca" lang="es" xmltv_id="FailArmy.us@Spain">FailArmy</channel>
+  <channel site="plex.tv" site_id="5f170d62b898490041b4936e" lang="en" xmltv_id="FailArmy.us@UK">FailArmy</channel>
+  <channel site="plex.tv" site_id="5eea605574085f0040ddc791" lang="en" xmltv_id="FailArmy.us@US">FailArmy</channel>
+  <channel site="web.magentatv.de" site_id="5206" lang="de" xmltv_id="FashionTVEurope.fr@SD">Fashion TV</channel>
+  <channel site="tv.magenta.at" site_id="207381032287" lang="de" xmltv_id="FashionTVHD.fr@SD">Fashion-TV HD</channel>
+  <channel site="tv.magenta.at" site_id="229041191972" lang="de" xmltv_id="FilmKlub.rs@SD">Film Klub</channel>
+  <channel site="plex.tv" site_id="65e9d0ad8fe4ef7053c3c876" lang="de" xmltv_id="FilmRiseAnime.us@SD">FilmRise Anime</channel>
+  <channel site="teleboy.ch" site_id="598" lang="de" xmltv_id="Filmgold.de@HD">Filmgold</channel>
+  <channel site="tv.blue.ch" site_id="1792" lang="de" xmltv_id="FixFoxi.de@SD">Fix &amp; Foxi TV</channel>
+  <channel site="watch.whaletvplus.com" site_id="281449946740755859" lang="de" xmltv_id="FocusTV.be@SD">Focus TV</channel>
+  <channel site="teleboy.ch" site_id="532" lang="de" xmltv_id="FolxMusicTelevision.de@SD">Folx TV</channel>
+  <channel site="tv.blue.ch" site_id="1069" lang="de" xmltv_id="Fox.de@SD">Fox</channel>
+  <channel site="sky.com" site_id="DE#6906" lang="de" xmltv_id="France24.fr@English">France 24 (in English)</channel>
+  <channel site="tv.magenta.at" site_id="206969384080" lang="de" xmltv_id="France24.fr@EnglishHD">France 24 HD</channel>
+  <channel site="web.magentatv.de" site_id="5316" lang="de" xmltv_id="France24.fr@French">France 24 francais</channel>
+  <channel site="web.magentatv.de" site_id="238" lang="de" xmltv_id="FrankenFernsehen.de@SD">Franken Fernsehen</channel>
+  <channel site="web.magentatv.de" site_id="4513" lang="de" xmltv_id="FriesischerRundfunkFriedeburg.de@SD">Friesischer Rundfunk</channel>
+  <channel site="tvprofil.com" site_id="at/tvprogramm#fuel-tv" lang="de" xmltv_id="FuelTV.at">Fuel TV</channel>
+  <channel site="tvprofil.com" site_id="ch/tv-programm#fuel-tv" lang="de" xmltv_id="FuelTV.ch">Fuel TV</channel>
+  <channel site="tvprofil.com" site_id="de/tvprogramm#fuel-tv" lang="de" xmltv_id="FuelTV.de">Fuel TV</channel>
+  <channel site="tv.magenta.at" site_id="207381032285" lang="de" xmltv_id="GEOTelevision.de@HD">GEO Television HD</channel>
+  <channel site="web.magentatv.de" site_id="153" lang="de" xmltv_id="GEOTelevision.de@SD">GEO Television</channel>
+  <channel site="tv.blue.ch" site_id="1224" lang="de" xmltv_id="GameTV.ch@SD">Game TV</channel>
+  <channel site="sky.com" site_id="DE#1113" lang="de" xmltv_id="GeniusPlusTV.de@SD">Genius Plus</channel>
+  <channel site="plex.tv" site_id="63f914bffe2c3d32e1a7929f" lang="en" xmltv_id="GloryKickboxing.us@UK">GLORY Kickboxing</channel>
+  <channel site="xumo.tv" site_id="100#99991278" lang="en" xmltv_id="GloryKickboxing.us@US">GLORY Kickboxing</channel>
+  <channel site="tv.blue.ch" site_id="194" lang="de" xmltv_id="GoTV.at@SD">gotv</channel>
+  <channel site="tv.blue.ch" site_id="1786" lang="de" xmltv_id="GoldstarTV.de@Germany">Goldstar TV</channel>
+  <channel site="plex.tv" site_id="63489a771159f6a5ce819b7b" lang="en" xmltv_id="GrjngoWesternMovies.de@SD">Grjngo - Western Movies</channel>
+  <channel site="tv.magenta.at" site_id="207381032316" lang="de" xmltv_id="GuteLauneTV.de@SD">Gute Laune TV</channel>
+  <channel site="sky.com" site_id="DE#9138" lang="de" xmltv_id="HGTV.de@HD">HGTV HD</channel>
+  <channel site="sky.com" site_id="DE#38" lang="de" xmltv_id="HGTV.de@SD">HGTV</channel>
+  <channel site="web.magentatv.de" site_id="3583" lang="de" xmltv_id="HGTV.us@East">HGTV</channel>
+  <channel site="tv.magenta.at" site_id="207382568053" lang="de" xmltv_id="HRT1.hr@HD">HRT TV1 HD</channel>
+  <channel site="sky.com" site_id="DE#1104" lang="de" xmltv_id="HSE.de@HD">HSE HD</channel>
+  <channel site="web.magentatv.de" site_id="451" lang="de" xmltv_id="HSE.de@SD">HSE</channel>
+  <channel site="sky.com" site_id="DE#5501" lang="de" xmltv_id="HSEExtra.de@HD">HSE Extra HD</channel>
+  <channel site="sky.com" site_id="DE#1210" lang="de" xmltv_id="HSEExtra.de@SD">HSE Extra</channel>
+  <channel site="sky.com" site_id="DE#77" lang="de" xmltv_id="HSETrend.de@SD">HSE Trend SD</channel>
+  <channel site="dsmart.com.tr" site_id="66d839a0cfef0b37445c6db1" lang="tr" xmltv_id="HTSporTV.tr@SD">HT Spor</channel>
+  <channel site="web.magentatv.de" site_id="4378" lang="de" xmltv_id="HaberturkTV.tr@SD">Habertürk TV</channel>
+  <channel site="web.magentatv.de" site_id="244" lang="de" xmltv_id="Hamburg1.de@SD">Hamburg 1</channel>
+  <channel site="sky.com" site_id="DE#102" lang="de" xmltv_id="Handystar.de@SD">Handystar TV HD</channel>
+  <channel site="sky.com" site_id="DE#46" lang="de" xmltv_id="Handystar2.de@SD">Handystar TV 2</channel>
+  <channel site="tv.magenta.at" site_id="207381032405" lang="de" xmltv_id="Hayat.ba@SD">Hayat</channel>
+  <channel site="web.magentatv.de" site_id="661" lang="de" xmltv_id="Heimatkanal.de@SD">Heimatkanal</channel>
+  <channel site="teleboy.ch" site_id="528" lang="de" xmltv_id="HelvetiaOneTV.ch@SD">Helvetia One TV</channel>
+  <channel site="plex.tv" site_id="64d79142950759afa2523eed" lang="de" xmltv_id="HighwaytoHeaven.us@UK">Highway to Heaven</channel>
+  <channel site="sky.com" site_id="DE#2013" lang="de" xmltv_id="HipTrips.de@SD">Hip Trips HD</channel>
+  <channel site="sky.com" site_id="DE#113" lang="de" xmltv_id="History.de@HD">HISTORY Channel HD</channel>
+  <channel site="web.magentatv.de" site_id="162" lang="de" xmltv_id="History.de@SD">The HISTORY Channel</channel>
+  <channel site="tv.blue.ch" site_id="1825" lang="de" xmltv_id="HitExpressTV.ch@SD">AW2 TV</channel>
+  <channel site="tv.magenta.at" site_id="224890919986" lang="de" xmltv_id="HitradioO3.at@SD">Hitradio Ö3</channel>
+  <channel site="sky.com" site_id="DE#3227" lang="de" xmltv_id="HopeChannelGerman.de@SD">Hope TV</channel>
+  <channel site="tv.nu" site_id="horse-country-tv" lang="sv" xmltv_id="HorseCountryTV.uk@SD">Horse &amp; Country TV</channel>
+  <channel site="plex.tv" site_id="6674c3c0a9c715b93ca6ca94" lang="de" xmltv_id="INFAST.nl@DE">INFAST</channel>
+  <channel site="sky.com" site_id="DE#5010" lang="de" xmltv_id="INPLUS.nl@SD">INPLUS.</channel>
+  <channel site="web.magentatv.de" site_id="474" lang="de" xmltv_id="ITVNEurope.pl@SD">iTVN</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5ce40f42ba7f7f5ea9518fe1" lang="de" xmltv_id="IcePilots.us@Germany">Ice Pilots</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/es#61b9edc4a4ca6100070bb407" lang="es" xmltv_id="IcePilots.us@Spain">Ice Pilots</channel>
+  <channel site="tv.blue.ch" site_id="2077" lang="de" xmltv_id="ImmaculataTV.ch@SD">I-TV</channel>
+  <channel site="plex.tv" site_id="6674c240f04cf4bb9233c91d" lang="de" xmltv_id="InWonder.nl@DE">INWONDER</channel>
+  <channel site="i.mjh.nz" site_id="Roku/all#5c39abf0f5066308b08d741a5e98671b" lang="en" xmltv_id="InspectorGadget.us@UK">Inspector Gadget</channel>
+  <channel site="web.magentatv.de" site_id="218" lang="de" xmltv_id="Jukebox.de@SD">Jukebox</channel>
+  <channel site="tv.blue.ch" site_id="224" lang="de" xmltv_id="Junior.de@SD">Junior</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/it#6093f48c95132a00075fd859" lang="it" xmltv_id="JustforLaughs.us@Italy">Just for Laughs GAGS</channel>
+  <channel site="watch.whaletvplus.com" site_id="672540845069111078" lang="en" xmltv_id="JustforLaughs.us@UK">Just For Laughs Comedy</channel>
+  <channel site="sky.com" site_id="DE#2616" lang="de" xmltv_id="Juwelo.de@SD">Juwelo TV</channel>
+  <channel site="tv.magenta.at" site_id="206966312329" lang="de" xmltv_id="K19.at@SD">K19</channel>
+  <channel site="tv.magenta.at" site_id="206966824334" lang="de" xmltv_id="KT1.at@SD">KT 1</channel>
+  <channel site="web.magentatv.de" site_id="487" lang="de" xmltv_id="KTV.at@SD">K-TV</channel>
+  <channel site="sky.com" site_id="DE#2601" lang="de" xmltv_id="KTV.de@SD">K-TV</channel>
+  <channel site="web.magentatv.de" site_id="29" lang="de" xmltv_id="Kanal7.tr@SD">Kanal 7</channel>
+  <channel site="teleboy.ch" site_id="313" lang="de" xmltv_id="Kanal9.ch@SD">Kanal9</channel>
+  <channel site="sky.com" site_id="DE#1160" lang="de" xmltv_id="KiKA.de@HD">KiKA HD</channel>
+  <channel site="web.magentatv.de" site_id="387" lang="de" xmltv_id="KiKA.de@SD">KiKA</channel>
+  <channel site="tv.magenta.at" site_id="206969384018" lang="de" xmltv_id="KinoweltTV.de@HD">Kinowelt TV HD</channel>
+  <channel site="web.magentatv.de" site_id="137" lang="de" xmltv_id="KinoweltTV.de@SD">KinoweltTV</channel>
+  <channel site="tv.magenta.at" site_id="207381032407" lang="de" xmltv_id="Klasik.hr@SD">Klasik TV</channel>
+  <channel site="tv.magenta.at" site_id="206964776430" lang="de" xmltv_id="KurierTV.at@SD">Kurier TV</channel>
+  <channel site="web.magentatv.de" site_id="578" lang="de" xmltv_id="LTV.de@SD">L-TV</channel>
+  <channel site="tv.magenta.at" site_id="206970408219" lang="de" xmltv_id="LandleTV.at@HD">Ländle TV HD</channel>
+  <channel site="web.magentatv.de" site_id="4727" lang="de" xmltv_id="Lausitzwelle.de@SD">LAUSITZWELLE</channel>
+  <channel site="tv.blue.ch" site_id="1914" lang="de" xmltv_id="LiloTV.de@SD">Lilo TV</channel>
+  <channel site="tv.blue.ch" site_id="1027" lang="de" xmltv_id="LolyTV.ch@SD">Loly TV</channel>
+  <channel site="plex.tv" site_id="671ffe75769d5ec4bf51d63c" lang="de" xmltv_id="LoveThePlanet.es@DE">Love The Planet</channel>
+  <channel site="watch.whaletvplus.com" site_id="999420644834214639" lang="en" xmltv_id="LoveThePlanet.es@EN">Love The Planet (EN)</channel>
+  <channel site="i.mjh.nz" site_id="Roku/all#8ad68e46b0d35e61a7787b7042b61eb0" lang="en" xmltv_id="LoveThePlanet.es@ES">Love The Planet En Español</channel>
+  <channel site="watch.whaletvplus.com" site_id="999420644834214647" lang="it" xmltv_id="LoveThePlanet.es@IT">Love The Planet (IT)</channel>
+  <channel site="web.magentatv.de" site_id="32" lang="de" xmltv_id="LustPur.de@SD">Lust pur</channel>
+  <channel site="web.magentatv.de" site_id="4888" lang="de" xmltv_id="MDF1.de@SD">MDF.1 Fernsehen</channel>
+  <channel site="sky.com" site_id="DE#651" lang="de" xmltv_id="MDRFernsehen.de@Sachsen">MDR Sachsen HD</channel>
+  <channel site="sky.com" site_id="DE#652" lang="de" xmltv_id="MDRFernsehen.de@SachsenAnhalt">MDR S-Anhalt HD</channel>
+  <channel site="sky.com" site_id="DE#653" lang="de" xmltv_id="MDRFernsehen.de@Thuringen">MDR Thüringen HD</channel>
+  <channel site="plex.tv" site_id="60d4eddbb2fdec002c141133" lang="en" xmltv_id="MST3K.us@US">MST3K</channel>
+  <channel site="sky.com" site_id="DE#829" lang="de" xmltv_id="MTV.de@HD">MTV HD</channel>
+  <channel site="web.magentatv.de" site_id="28" lang="de" xmltv_id="MTV.de@SD">MTV</channel>
+  <channel site="tv.magenta.at" site_id="207382568039" lang="de" xmltv_id="MTV00s.uk@SD">MTV 00s</channel>
+  <channel site="tv.magenta.at" site_id="207382568038" lang="de" xmltv_id="MTV80s.uk@SD">MTV 80s</channel>
+  <channel site="tv.magenta.at" site_id="207382568012" lang="de" xmltv_id="MTV90s.uk@SD">MTV 90s</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5db6a697d5f34a000934cd13" lang="de" xmltv_id="MTVCatfishTVShow.us@Germany">MTV Catfish TV Show</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5caf330ea5068259a32320fd" lang="de" xmltv_id="MTVDating.us@Germany">MTV Dating</channel>
+  <channel site="tv.magenta.at" site_id="207382568011" lang="de" xmltv_id="MTVHitsEurope.uk@SD">MTVhits!</channel>
+  <channel site="tv.magenta.at" site_id="207382568047" lang="de" xmltv_id="MTVLive.uk@SD">MTV live HD</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5caf325764025859afdd6c4d" lang="de" xmltv_id="MTVPlutoTV.de@DACH">MTV Pluto TV</channel>
+  <channel site="pluto.tv" site_id="624edee2d6394a0007efcac4" lang="en" xmltv_id="MTVPlutoTV.de@UK">MTV Pluto TV</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5f9847fd513250000728a9a5" lang="de" xmltv_id="MTVRidiculousness.us@Germany">MTV Ridiculousness</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5cffcf5686dfe15595fb3f56" lang="de" xmltv_id="MTVTeenMom.us@Germany">MTV Teen Mom</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5caf32c2a5068259a32320fc" lang="de" xmltv_id="MTVTheShores.us@Germany">MTV The Shores</channel>
+  <channel site="web.magentatv.de" site_id="5075" lang="de" xmltv_id="MagentaSport.de@SD">MagentaSport</channel>
+  <channel site="web.magentatv.de" site_id="5295" lang="de" xmltv_id="MarcoPoloTV.de@SD">Marco Polo TV</channel>
+  <channel site="sky.com" site_id="DE#775" lang="de" xmltv_id="MediaShopTV.li@SD">MediaShop-Meine Einkaufswelt</channel>
+  <channel site="sky.com" site_id="DE#899" lang="de" xmltv_id="MeinTVShop.de@SD">meinTVshop</channel>
+  <channel site="sky.com" site_id="DE#3317" lang="de" xmltv_id="MelodieTV.at@SD">Melodie TV NEU</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/us#USAJ3504531A" lang="en" xmltv_id="MinecrafTV.us@US">Pluto TV Pixel World</channel>
+  <channel site="web.magentatv.de" site_id="5078" lang="de" xmltv_id="MoreThanSportsTV.de@SD">More Than Sports TV</channel>
+  <channel site="web.magentatv.de" site_id="604" lang="de" xmltv_id="Motorvision.de@SD">Motorvision+</channel>
+  <channel site="tv.magenta.at" site_id="206967336067" lang="de" xmltv_id="MotorvisionPlus.de@HD">Motorvision+ HD</channel>
+  <channel site="neo.io" site_id="motorvision+" lang="de" xmltv_id="MotorvisionPlus.de@SD">Motorvision+</channel>
+  <channel site="plex.tv" site_id="6623c78128a167c6e5b3079c" lang="en" xmltv_id="MovieSphere.us@AU">MOVIESPHERE</channel>
+  <channel site="plex.tv" site_id="6623c836ed4918437ed56ec2" lang="pt" xmltv_id="MovieSphere.us@BR">MOVIESPHERE</channel>
+  <channel site="plex.tv" site_id="6663510e7ce166787145c6a9" lang="en" xmltv_id="MovieSphere.us@CA">MOVIESPHERE</channel>
+  <channel site="plex.tv" site_id="6827bad59beea89c38b6df57" lang="de" xmltv_id="MovieSphere.us@DE">MOVIESPHERE</channel>
+  <channel site="plex.tv" site_id="695d5d279caacd2e64b7a00c" lang="es" xmltv_id="MovieSphere.us@ES">MOVIESPHERE</channel>
+  <channel site="plex.tv" site_id="695d5c1d6e5de3b17595a267" lang="fr" xmltv_id="MovieSphere.us@FR">MOVIESPHERE</channel>
+  <channel site="plex.tv" site_id="6623c8ffed4918437ed56ec4" lang="es" xmltv_id="MovieSphere.us@MX">MOVIESPHERE</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/gb#6401d85a49839300087b116c" lang="en" xmltv_id="MovieSphere.us@SD">Moviesphere</channel>
+  <channel site="plex.tv" site_id="606cbf167e9765002c2a6131" lang="en" xmltv_id="MovieSphere.us@UK">MOVIESPHERE</channel>
+  <channel site="plex.tv" site_id="5fb84bc1b7ad2d002dcb735f" lang="en" xmltv_id="MovieSphere.us@US">MOVIESPHERE</channel>
+  <channel site="plex.tv" site_id="68e940d2572e41763b90a584" lang="de" xmltv_id="Moviedome.us@Germany">Moviedome</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#65a67d572fac9c000835eb3a" lang="de" xmltv_id="MoviepilotTVmitPlutoTV.de@DACH">Moviepilot TV mit Pluto TV</channel>
+  <channel site="web.magentatv.de" site_id="241" lang="de" xmltv_id="MunchenTV.de@SD">münchen.tv</channel>
+  <channel site="tv.blue.ch" site_id="275" lang="de" xmltv_id="Musig24TV.ch@SD">musig24</channel>
+  <channel site="teleboy.ch" site_id="624" lang="de" xmltv_id="MySports2.ch@SD">MySports 2</channel>
+  <channel site="teleboy.ch" site_id="625" lang="de" xmltv_id="MySports3.ch@SD">MySports 3</channel>
+  <channel site="teleboy.ch" site_id="626" lang="de" xmltv_id="MySports4.ch@SD">MySports 4</channel>
+  <channel site="teleboy.ch" site_id="627" lang="de" xmltv_id="MySports5.ch@SD">MySports 5</channel>
+  <channel site="teleboy.ch" site_id="628" lang="de" xmltv_id="MySports6.ch@SD">MySports 6</channel>
+  <channel site="teleboy.ch" site_id="629" lang="de" xmltv_id="MySports7.ch@SD">MySports 7</channel>
+  <channel site="teleboy.ch" site_id="630" lang="de" xmltv_id="MySports8.ch@SD">MySports 8</channel>
+  <channel site="teleboy.ch" site_id="631" lang="de" xmltv_id="MySports9.ch@SD">MySports 9</channel>
+  <channel site="teleboy.ch" site_id="622" lang="de" xmltv_id="MySportsOne.ch@SD">MySports Eins</channel>
+  <channel site="sky.com" site_id="DE#9140" lang="de" xmltv_id="N24Doku.de@HD">N24 Doku HD</channel>
+  <channel site="web.magentatv.de" site_id="553" lang="de" xmltv_id="N24Doku.de@SD">N24 Doku</channel>
+  <channel site="tvim.tv" site_id="NBATV" lang="sq" xmltv_id="NBATVInternational.us@SD">NBA TV</channel>
+  <channel site="sky.com" site_id="DE#632" lang="de" xmltv_id="NDRFernsehen.de@Hamburg">NDR FS HH HD</channel>
+  <channel site="sky.com" site_id="DE#633" lang="de" xmltv_id="NDRFernsehen.de@MecklenburgVorpommern">NDR FS MV HD</channel>
+  <channel site="sky.com" site_id="DE#635" lang="de" xmltv_id="NDRFernsehen.de@Niedersachsen">NDR FS NDS HD</channel>
+  <channel site="sky.com" site_id="DE#636" lang="de" xmltv_id="NDRFernsehen.de@SchleswigHolstein">NDR FS SH HD</channel>
+  <channel site="sky.com" site_id="DE#5021" lang="de" xmltv_id="NHKWorldJapan.jp@SD">NHK WORLD-JPN</channel>
+  <channel site="web.magentatv.de" site_id="3750" lang="de" xmltv_id="NRWision.de@SD">NRWision</channel>
+  <channel site="plex.tv" site_id="693cb30a58076a970420f593" lang="de" xmltv_id="Nachrichten360.de@HD">Nachrichten 360</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/br#5f6df5a173d7340007c559f7" lang="pt" xmltv_id="Naruto.us@Brazil">Naruto</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#65d5fc39a25d5e00082895c4" lang="de" xmltv_id="Naruto.us@Germany">Naruto</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/us#5da0c85bd2c9c10009370984" lang="en" xmltv_id="Naruto.us@US">Naruto</channel>
+  <channel site="web.magentatv.de" site_id="472" lang="de" xmltv_id="NashKinomir.de@SD">Kinomir</channel>
+  <channel site="sky.com" site_id="DE#130" lang="de" xmltv_id="NationalGeographic.de@HD">NatGeo HD</channel>
+  <channel site="web.magentatv.de" site_id="35" lang="de" xmltv_id="NationalGeographic.de@SD">National Geographic</channel>
+  <channel site="sky.com" site_id="DE#2026" lang="de" xmltv_id="NationalGeographicWild.de@HD">NatGeo Wild HD</channel>
+  <channel site="web.magentatv.de" site_id="569" lang="de" xmltv_id="NationalGeographicWild.de@SD">National Geographic Wild</channel>
+  <channel site="tvprofil.com" site_id="at/tvprogramm#nick-comedy-central-plus-1" lang="de" xmltv_id="Nick-ComedyCentral+1.at">Nick - Comedy Central+1</channel>
+  <channel site="tvprofil.com" site_id="de/tvprogramm#nick-comedy-central-plus-1" lang="de" xmltv_id="Nick-ComedyCentral+1.de">Nick - Comedy Central+1</channel>
+  <channel site="sky.com" site_id="DE#8680" lang="de" xmltv_id="NickComedyCentralPlus1.de@SD">NICK / Comedy Central+1</channel>
+  <channel site="web.magentatv.de" site_id="221" lang="de" xmltv_id="NickJr.de@SD">Nick Jr.</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5ede448d3d50590007a4419e" lang="de" xmltv_id="NickPlutoTV.us@Germany">Nickelodeon Toons</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/us#USBA3000158L" lang="en" xmltv_id="NickPlutoTV.us@US">Nick Pluto TV</channel>
+  <channel site="tv.magenta.at" site_id="206969384238" lang="de" xmltv_id="Nickelodeon.de@SD">Nickelodeon</channel>
+  <channel site="tvheute.at" site_id="nick" lang="de" xmltv_id="NickelodeonAustria.at@SD">NICK</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5f0d668b872e4400073acc68" lang="de" xmltv_id="NickelodeonTeen.fr">Nickelodeon Teen</channel>
+  <channel site="tv.blue.ch" site_id="1941" lang="uk" xmltv_id="NickelodeonUkrainePlutoTV.ua@SD">Nickelodeon Ukraine Pluto TV</channel>
+  <channel site="web.magentatv.de" site_id="4405" lang="de" xmltv_id="Nicktoons.de@SD">Nicktoons (Sky)</channel>
+  <channel site="web.magentatv.de" site_id="177" lang="de" xmltv_id="NiederbayernTVDeggendorfStraubing.de@SD">NIEDERBAYERN TV Deggendorf - Straubing</channel>
+  <channel site="web.magentatv.de" site_id="174" lang="de" xmltv_id="NiederbayernTVLandshut.de@SD">NIEDERBAYERN TV Landshut</channel>
+  <channel site="web.magentatv.de" site_id="154" lang="de" xmltv_id="NiederbayernTVPassau.de@SD">NIEDERBAYERN TV Passau</channel>
+  <channel site="sky.com" site_id="DE#5807" lang="de" xmltv_id="NiederbayernTVSatellit.de@SD">NIEDERBAYERN TV HD</channel>
+  <channel site="sky.com" site_id="DE#1951" lang="de" xmltv_id="Nitro.de@HD">NITRO HD</channel>
+  <channel site="web.magentatv.de" site_id="395" lang="de" xmltv_id="Nitro.de@SD">NITRO</channel>
+  <channel site="epg.iptvx.one" site_id="novy-mir" lang="ru" xmltv_id="NovyyMir.ru@SD">Новый мир</channel>
+  <channel site="web.magentatv.de" site_id="546" lang="de" xmltv_id="OFTVOffenbach.de@SD">OF-TV</channel>
+  <channel site="web.magentatv.de" site_id="3045" lang="de" xmltv_id="OK4.de@SD">OK4</channel>
+  <channel site="web.magentatv.de" site_id="663" lang="de" xmltv_id="OK54.de@SD">OK54 Trier</channel>
+  <channel site="web.magentatv.de" site_id="662" lang="de" xmltv_id="OKTVLudwigshafen.de@SD">rheinlOKal</channel>
+  <channel site="web.magentatv.de" site_id="3044" lang="de" xmltv_id="OKTVMainz.de@SD">OK:TV Mainz</channel>
+  <channel site="web.magentatv.de" site_id="3042" lang="de" xmltv_id="OKWeinstrasseNeustadt.de@SD">OK Weinstraße</channel>
+  <channel site="sky.com" site_id="DE#4911" lang="de" xmltv_id="ORF1.at@HD">ORF1 HD</channel>
+  <channel site="horizon.tv" site_id="10115" lang="de" xmltv_id="ORF1.at@SD">ORF 1</channel>
+  <channel site="horizon.tv" site_id="10116" lang="de" xmltv_id="ORF2.at@SD">ORF 2</channel>
+  <channel site="sky.com" site_id="DE#3303" lang="de" xmltv_id="ORF2Burgenland.at@HD">ORF2B HD</channel>
+  <channel site="tv.magenta.at" site_id="206966824308" lang="de" xmltv_id="ORF2Europe.at@SD">ORF 2 EUROPE</channel>
+  <channel site="sky.com" site_id="DE#3302" lang="de" xmltv_id="ORF2Karnten.at@HD">ORF2K HD</channel>
+  <channel site="sky.com" site_id="DE#4916" lang="de" xmltv_id="ORF2NO.at@HD">ORF2N HD</channel>
+  <channel site="sky.com" site_id="DE#3304" lang="de" xmltv_id="ORF2Oberosterreich.at@HD">ORF2O HD</channel>
+  <channel site="sky.com" site_id="DE#3305" lang="de" xmltv_id="ORF2Salzburg.at@HD">ORF2S HD</channel>
+  <channel site="sky.com" site_id="DE#3301" lang="de" xmltv_id="ORF2Steiermark.at@HD">ORF2St HD</channel>
+  <channel site="sky.com" site_id="DE#3306" lang="de" xmltv_id="ORF2Tirol.at@HD">ORF2T HD</channel>
+  <channel site="sky.com" site_id="DE#3307" lang="de" xmltv_id="ORF2Vorarlberg.at@HD">ORF2V HD</channel>
+  <channel site="sky.com" site_id="DE#4912" lang="de" xmltv_id="ORF2Wien.at@HD">ORF2W HD</channel>
+  <channel site="sky.com" site_id="DE#3308" lang="de" xmltv_id="ORFIII.at@HD">ORF III HD</channel>
+  <channel site="horizon.tv" site_id="10117" lang="de" xmltv_id="ORFIII.at@SD">ORF III</channel>
+  <channel site="sky.com" site_id="DE#3309" lang="de" xmltv_id="ORFSportPlus.at@HD">ORF SPORT+ HD</channel>
+  <channel site="tv.blue.ch" site_id="1889" lang="de" xmltv_id="ORFSportPlus.at@SD">ORF Sport +</channel>
+  <channel site="sky.com" site_id="DE#5808" lang="de" xmltv_id="OTVA.de@SD">OTVA HD</channel>
+  <channel site="tv.post.lu" site_id="bf597c90-8d25-11e9-ac99-079f5aa46735" lang="de" xmltv_id="OUTtv.nl@SD">OutTV</channel>
+  <channel site="web.magentatv.de" site_id="141" lang="de" xmltv_id="OberpfalzTV.de@SD">Oberpfalz TV</channel>
+  <channel site="tv.magenta.at" site_id="206966312068" lang="de" xmltv_id="Okto.at@HD">Okto HD</channel>
+  <channel site="sky.com" site_id="DE#605" lang="de" xmltv_id="One.de@HD">ONE HD</channel>
+  <channel site="web.magentatv.de" site_id="402" lang="de" xmltv_id="One.de@SD">ONE</channel>
+  <channel site="neo.io" site_id="one-adria" lang="sl" xmltv_id="OneAdria.de@SD">One Adria</channel>
+  <channel site="tv.blue.ch" site_id="1790" lang="de" xmltv_id="OneMusicTelevision.de@SD">One Music Television</channel>
+  <channel site="web.magentatv.de" site_id="476" lang="de" xmltv_id="OstWest.de@SD">OstWest</channel>
+  <channel site="tv.blue.ch" site_id="2110" lang="de" xmltv_id="Parlamentsfernsehen1.de@SD">Deutscher Bundestag</channel>
+  <channel site="sky.com" site_id="DE#5404" lang="de" xmltv_id="PearlTV.de@SD">pearl.tv HD Shop</channel>
+  <channel site="web.magentatv.de" site_id="228" lang="de" xmltv_id="PenthousePassion.us@SD">Penthouse Passion</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#64eddc3485efec00085b0369" lang="de" xmltv_id="PerryMason.us@SD">Perry Mason</channel>
+  <channel site="tv.magenta.at" site_id="207382568152" lang="de" xmltv_id="PinkExtra.rs@SD">Pink Extra</channel>
+  <channel site="tv.magenta.at" site_id="207382568106" lang="de" xmltv_id="PinkFilm.rs@SD">Pink Film</channel>
+  <channel site="tv.magenta.at" site_id="207381032318" lang="de" xmltv_id="PinkMusic.rs@SD">Pink Music</channel>
+  <channel site="tv.magenta.at" site_id="207382568052" lang="de" xmltv_id="PinkPlus.rs@SD">Pink Plus</channel>
+  <channel site="web.magentatv.de" site_id="34" lang="de" xmltv_id="PlayboyTVEurope.us@SD">Playboy Europe</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#65004605110545000842035d" lang="de" xmltv_id="PlutoTVAction.de@DACH">Pluto TV Action</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5dbfeb961b411c00090b52b3" lang="en" xmltv_id="PlutoTVAction.de@UK">Pluto TV Action</channel>
+  <channel site="pluto.tv" site_id="62794647e3cbcb000757dc65" lang="en" xmltv_id="PlutoTVAction.de@UKPlus">Pluto TV Action+</channel>
+  <channel site="pluto.tv" site_id="64b67593798def00088e506e" lang="en" xmltv_id="PlutoTVAction.de@UKPlus2">Pluto TV Action</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#67f68bd2135aeda9ddf0ef54" lang="de" xmltv_id="PlutoTVAdultAnimation.de@DACH">Pluto TV Adult Animation</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5d767ae7b456c8cf265ce922" lang="de" xmltv_id="PlutoTVAnimals.de@DACH">Pluto TV Animals</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5ddf8ea0d000120009bcad83" lang="en" xmltv_id="PlutoTVAnimals.de@UK">Pluto TV Animals</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#608181d420fc8500075f612a" lang="de" xmltv_id="PlutoTVAnime.de@DACH">Pluto TV Anime</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/es#608035b8d8705f0007260287" lang="es" xmltv_id="PlutoTVAnime.de@ES">Pluto TV Anime</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/it#65b90daed77d450008a43345" lang="it" xmltv_id="PlutoTVAnime.de@IT">Pluto TV Anime</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#677e5a3d7bffa6000808dbf2" lang="de" xmltv_id="PlutoTVBritischeSerien.de@DACH">Pluto TV Britische Serien</channel>
+  <channel site="pluto.tv" site_id="65b917d333ea860008598a05" lang="fi" xmltv_id="PlutoTVBudTerence.de@FI">Pluto TV Bud &amp; Terence</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#69b968ba255fecb01f602257" lang="de" xmltv_id="PlutoTVComedyTherapie.de@DACH">Pluto TV Comedy Therapie</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5e7b6c60fd20c50007910bf5" lang="de" xmltv_id="PlutoTVCrime.de@DACH">Pluto TV Crime</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5d767790d0438aceb41d03ae" lang="en" xmltv_id="PlutoTVCrime.de@UK">Pluto TV Crime</channel>
+  <channel site="pluto.tv" site_id="5bd8371b1843b56328bac33d" lang="en" xmltv_id="PlutoTVCrime.de@UKPlus">Pluto TV Crime+</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#6672f49f61a39900089db68e" lang="de" xmltv_id="PlutoTVDeutscheComedy.de@DACH">Pluto TV Deutsche Comedy</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#67ebc04855de98dc71428538" lang="de" xmltv_id="PlutoTVEmmanuelleFilme.de@DACH">Pluto TV Emmanuelle Filme</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5ad9b8551b95267e225e59c1" lang="de" xmltv_id="PlutoTVExplore.de@DACH">Pluto TV Explore</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#68ada46d5190a45dc9c45af1" lang="de" xmltv_id="PlutoTVFerneGalaxien.de@DACH">Pluto TV Ferne Galaxien</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5dc280c9aa218c0009724b4b" lang="de" xmltv_id="PlutoTVFood.de@DACH">Pluto TV Food</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5ddf930548ff9b00090d5686" lang="en" xmltv_id="PlutoTVFood.de@UK">Pluto TV Food</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#69b968e011fc7b9e27c0d958" lang="de" xmltv_id="PlutoTVFranBesteMamaMomente.de@DACH">Pluto TV Fran: Beste Mama-Momente</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#664f10c4f9992200084a2f47" lang="de" xmltv_id="PlutoTVHeisseNachteRetro.de@DACH">Pluto TV Heiße Nächte Retro</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#68ada3395190a45dc9c445cf" lang="de" xmltv_id="PlutoTVHistorischeSerien.de@DACH">Pluto TV Historische Serien</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5d767b1c126c65d0a307355f" lang="de" xmltv_id="PlutoTVHistory.de@DACH">Pluto TV History</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5d4af1803e7983b391d73b13" lang="en" xmltv_id="PlutoTVHistory.de@UK">Pluto TV History</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#62f4f4b88157cf00075c22db" lang="de" xmltv_id="PlutoTVHorror.de@DACH">Pluto TV Horror</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/es#6267d4d1fb694f0007a6af0e" lang="es" xmltv_id="PlutoTVHorror.de@ES">Pluto TV Horror</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/it#61c09e3ac210ed0007606620" lang="it" xmltv_id="PlutoTVHorror.de@IT">Pluto TV Horror</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/gb#612cda102f5f18000705e0bf" lang="en" xmltv_id="PlutoTVHorror.de@UK">Pluto TV Horror</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#67ff7d9c7fc25e0e72451bc9" lang="de" xmltv_id="PlutoTVHorrorSerien.de@DACH">Pluto TV Horror-Serien</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#66337de656fc840008ff7a65" lang="de" xmltv_id="PlutoTVKultComedies.de@DACH">Pluto TV Kult Comedies</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5dde47b63585b500099f74ec" lang="de" xmltv_id="PlutoTVKultfilme.de@DACH">Pluto TV Kultfilme</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5c5c3b948002db3c3e0b262e" lang="de" xmltv_id="PlutoTVMovies.de@DACH">Pluto TV Movies</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5ad8d3a31b95267e225e4e09" lang="en" xmltv_id="PlutoTVMovies.de@UK">Pluto TV Movies</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#617aad99b68ef100072608cd" lang="de" xmltv_id="PlutoTVMystery.de@DACH">Pluto TV Mystery</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5be1c3f9851dd5632e2c91b2" lang="de" xmltv_id="PlutoTVNature.de@DACH">Pluto TV Nature</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#67d984408d8dc3d7754dccf2" lang="de" xmltv_id="PlutoTVNordicCrime.de@DACH">Pluto TV Nordic Crime</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5f98487036af340008da1e37" lang="de" xmltv_id="PlutoTVParanormal.de@DACH">Pluto TV Paranormal</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/es#612ce5214bb5790007ad3016" lang="es" xmltv_id="PlutoTVParanormal.de@ES">Pluto TV Paranormal</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/fr#5f8ed9461b35690007a0bc3a" lang="fr" xmltv_id="PlutoTVParanormal.de@FR">Pluto TV Paranormal</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/it#66c70033b1a34600087bb09a" lang="it" xmltv_id="PlutoTVParanormal.de@IT">Pluto TV Paranormal</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5d4af2ffa9506ab29cf38c38" lang="en" xmltv_id="PlutoTVParanormal.de@UK">Pluto TV Paranormal</channel>
+  <channel site="pluto.tv" site_id="5f3d279ab48c0200072df9d0" lang="en" xmltv_id="PlutoTVParanormal.de@UKPlus">Pluto TV Paranormal+</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#64be64445dc166000899ce75" lang="de" xmltv_id="PlutoTVPolizeiserien.de@DACH">Pluto TV Polizeiserien</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#67ebc1b6432a0e406f141341" lang="de" xmltv_id="PlutoTVReality.de@DACH">Pluto TV Reality</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/fr#6092544e7639460007d4835e" lang="fr" xmltv_id="PlutoTVReality.de@FR">Pluto TV Pride</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5bd8186d53ed2c6334ea0855" lang="en" xmltv_id="PlutoTVReality.de@UK">Pluto TV Reality</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#68ada3edf84960586ad31c7d" lang="de" xmltv_id="PlutoTVReportagen.de@DACH">Pluto TV Reportagen</channel>
+  <channel site="pluto.tv" site_id="5c45f216e909d90674242965" lang="en" xmltv_id="PlutoTVRomance.de@UKPlus">Pluto TV Romance+</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#67d983d6a1609bdb523f5f9b" lang="de" xmltv_id="PlutoTVSanfteBeruhrungen.de@DACH">Pluto TV Sanfte Berührungen</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#60ed498c4248a400077c0b9d" lang="de" xmltv_id="PlutoTVSciFi.de@DACH">Pluto TV Sci-Fi</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/es#5f6a38eaa5b68b0007a00e7a" lang="es" xmltv_id="PlutoTVSciFi.de@ES">Pluto TV Sci-Fi</channel>
+  <channel site="pluto.tv" site_id="69afe99a69056557a9e8599c" lang="fi" xmltv_id="PlutoTVSciFi.de@FI">Pluto TV Sci-Fi</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/it#61728bb9ee3773000840c1fa" lang="it" xmltv_id="PlutoTVSciFi.de@IT">Pluto TV Sci-Fi</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5dc02a44a9518600094273ac" lang="en" xmltv_id="PlutoTVSciFi.de@UK">Pluto TV Sci-Fi</channel>
+  <channel site="pluto.tv" site_id="64b676a4798def00088e5150" lang="en" xmltv_id="PlutoTVSciFi.de@UKPlus">Pluto TV Sci-Fi</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5d767b4889bca2ce7b73ef2e" lang="de" xmltv_id="PlutoTVScience.de@DACH">Pluto TV Science</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5d9492c77ea6f99188738ff1" lang="en" xmltv_id="PlutoTVScience.de@UK">Pluto TV Science</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5dc190f7bfed110009d934c3" lang="de" xmltv_id="PlutoTVSerie.de@DACH">Pluto TV Serie</channel>
+  <channel site="pluto.tv" site_id="5ddbf866b1862a0009a0648e" lang="de" xmltv_id="PlutoTVSerie.de@DACHPlus">Pluto TV Serie+</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/it#60b9ff2722bfa400072676ef" lang="it" xmltv_id="PlutoTVSerie.de@IT">Pluto TV Serie</channel>
+  <channel site="pluto.tv" site_id="61163de693706b0007f04898" lang="it" xmltv_id="PlutoTVSerie.de@ITPlus">Pluto TV Serie+</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5d767ab2b456c8cf265ce921" lang="de" xmltv_id="PlutoTVSitcoms.de@DACH">Pluto TV Sitcoms</channel>
+  <channel site="pluto.tv" site_id="5cd149f021cb6c55e258bbe8" lang="de" xmltv_id="PlutoTVSitcoms.de@DACHPlus">Pluto TV Sitcoms+</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/gb#62f53dc6ee9a0400071dc22b" lang="en" xmltv_id="PlutoTVSitcoms.de@UK">Pluto TV Sitcoms</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#68ac5543a1ac0c90f2c8943e" lang="de" xmltv_id="PlutoTVSnooker900.de@DACH">Pluto TV Snooker 900</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/es#69148c470155f9b136b5d856" lang="es" xmltv_id="PlutoTVSnooker900.de@ES">Pluto TV Snooker 900</channel>
+  <channel site="pluto.tv" site_id="68b17496a4841127a8ece8b2" lang="fi" xmltv_id="PlutoTVSnooker900.de@FI">Pluto TV Snooker 900</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/fr#66fd35e44ca31f0008060b77" lang="fr" xmltv_id="PlutoTVSnooker900.de@FR">Pluto TV Snooker 900</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/it#69148c76e9dec35c9269a16c" lang="it" xmltv_id="PlutoTVSnooker900.de@IT">Pluto TV Snooker 900</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/gb#655b7cbb2c46f300086f0afa" lang="en" xmltv_id="PlutoTVSnooker900.de@UK">Pluto TV Snooker 900</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#61409f8d6feb30000766b675" lang="de" xmltv_id="PlutoTVSpace.de@DACH">Pluto TV Space</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5dbc2f98777f2e0009934ae7" lang="en" xmltv_id="PlutoTVSpace.de@UK">Pluto TV Space</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#6152ee71bf99590007893a11" lang="de" xmltv_id="PlutoTVStarTrek.de@DACH">Pluto TV Star Trek</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#69492467ae33e24d916e56cf" lang="de" xmltv_id="PlutoTVStarTrekAnimation.de@DACH">Pluto TV Star Trek: Animation</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#615333098185f00008715a56" lang="de" xmltv_id="PlutoTVTrueCrime.de@DACH">Pluto TV True Crime</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/es#64a3f200f238ce0008d47247" lang="es" xmltv_id="PlutoTVTrueCrime.de@ES">Pluto TV True Crime</channel>
+  <channel site="pluto.tv" site_id="66cf15f861dbf00008d9b8e1" lang="fi" xmltv_id="PlutoTVTrueCrime.de@FI">Pluto TV True Crime</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/it#66d9ab4bf0f17500084e9b7e" lang="it" xmltv_id="PlutoTVTrueCrime.de@IT">Pluto TV True Crime</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#630dd3b2605f140007e002f5" lang="de" xmltv_id="PlutoTVWestern.de@DACH">Pluto TV Western</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/es#6385e82900ab2e000768a058" lang="es" xmltv_id="PlutoTVWestern.de@ES">Pluto TV Western</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/it#62e7fb67478a5b0007e6c50c" lang="it" xmltv_id="PlutoTVWestern.de@IT">Pluto TV Western</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#682453215c646751955e1204" lang="de" xmltv_id="PlutoTVWesternSerien.de@DACH">Pluto TV Western Serien</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#69b968ca1c36025fd0a3d92d" lang="de" xmltv_id="PlutoTVWorstofBundy.de@DACH">Pluto TV Worst of Bundy</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#64526a145a0cd50008632bfa" lang="de" xmltv_id="PlutoTVheisseNachte.de@DACH">Pluto TV heiße Nächte</channel>
+  <channel site="tv.blue.ch" site_id="1724" lang="de" xmltv_id="PremiumShoppingTV.ch@SD">Premium Shopping</channel>
+  <channel site="web.magentatv.de" site_id="374" lang="de" xmltv_id="ProSieben.de@SD">ProSieben</channel>
+  <channel site="sky.com" site_id="DE#5301" lang="de" xmltv_id="ProSiebenAustria.at@HD">ProSieben HD Austria</channel>
+  <channel site="sky.com" site_id="DE#581" lang="de" xmltv_id="ProSiebenAustria.at@SD">ProSieben Austria</channel>
+  <channel site="tv.magenta.at" site_id="206966824407" lang="de" xmltv_id="ProSiebenFun.de@HD">ProSieben FUN HD</channel>
+  <channel site="web.magentatv.de" site_id="259" lang="de" xmltv_id="ProSiebenFun.de@SD">ProSieben FUN</channel>
+  <channel site="sky.com" site_id="DE#1304" lang="de" xmltv_id="ProSiebenMaxx.de@HD">Pro7 MAXX HD</channel>
+  <channel site="web.magentatv.de" site_id="396" lang="de" xmltv_id="ProSiebenMaxx.de@SD">ProSieben MAXX</channel>
+  <channel site="sky.com" site_id="DE#1324" lang="de" xmltv_id="ProSiebenMaxxAustria.at@SD">Pro7 MAXX HD Austria</channel>
+  <channel site="teleboy.ch" site_id="354" lang="de" xmltv_id="ProSiebenSchweiz.ch@SD">ProSieben Schweiz</channel>
+  <channel site="sky.com" site_id="DE#5304" lang="de" xmltv_id="Puls24.at@HD">PULS 24 HD</channel>
+  <channel site="tv.blue.ch" site_id="1602" lang="de" xmltv_id="Puls24.at@SD">Puls 24</channel>
+  <channel site="sky.com" site_id="DE#5303" lang="de" xmltv_id="Puls4.at@HD">PULS 4 HD Austria</channel>
+  <channel site="sky.com" site_id="DE#578" lang="de" xmltv_id="Puls4.at@SD">PULS 4 Austria</channel>
+  <channel site="teleboy.ch" site_id="362" lang="de" xmltv_id="PulsAcht.ch@SD">Puls 8</channel>
+  <channel site="teleboy.ch" site_id="388" lang="de" xmltv_id="QS24tv.ch@SD">QS24</channel>
+  <channel site="sky.com" site_id="DE#1103" lang="de" xmltv_id="QVC.de@HD">QVC HD</channel>
+  <channel site="web.magentatv.de" site_id="446" lang="de" xmltv_id="QVC.de@SD">QVC</channel>
+  <channel site="sky.com" site_id="DE#803" lang="de" xmltv_id="QVCStyle.de@SD">QVC STYLE HD</channel>
+  <channel site="sky.com" site_id="DE#5504" lang="de" xmltv_id="QVCZwei.de@HD">QVC ZWEI HD</channel>
+  <channel site="sky.com" site_id="DE#3312" lang="de" xmltv_id="R9.at@HD">R9 Oesterreich HD</channel>
+  <channel site="teleboy.ch" site_id="475" lang="de" xmltv_id="R9.at@SD">R9 Österreich</channel>
+  <channel site="web.magentatv.de" site_id="4723" lang="de" xmltv_id="RFH.de@SD">RFH Regionalfernsehen Harz</channel>
+  <channel site="web.magentatv.de" site_id="143" lang="de" xmltv_id="RFO.de@SD">RFO</channel>
+  <channel site="web.magentatv.de" site_id="246" lang="de" xmltv_id="RNF.de@SD">RNF</channel>
+  <channel site="sky.com" site_id="DE#1911" lang="de" xmltv_id="RTL.de@Austria">RTL HD Austria</channel>
+  <channel site="pickx.be" site_id="UID2482" lang="de" xmltv_id="RTL.de@HD">RTL Deutschland HD</channel>
+  <channel site="web.magentatv.de" site_id="404" lang="de" xmltv_id="RTL.de@SD">RTL</channel>
+  <channel site="nostv.pt" site_id="40" lang="de" xmltv_id="RTL.hr@SD">RTL</channel>
+  <channel site="tv.magenta.at" site_id="207381032332" lang="de" xmltv_id="RTLCrime.de@HD">RTL Crime HD</channel>
+  <channel site="web.magentatv.de" site_id="216" lang="de" xmltv_id="RTLCrime.de@SD">RTL Crime</channel>
+  <channel site="web.magentatv.de" site_id="101" lang="de" xmltv_id="RTLHessen.de@SD">RTL Hessen</channel>
+  <channel site="tv.magenta.at" site_id="207381032331" lang="de" xmltv_id="RTLLiving.de@HD">RTL Living HD</channel>
+  <channel site="web.magentatv.de" site_id="227" lang="de" xmltv_id="RTLLiving.de@SD">RTL Living</channel>
+  <channel site="web.magentatv.de" site_id="102" lang="de" xmltv_id="RTLNordHamburgSchleswigHolstein.de@SD">RTL Hamburg &amp; Schleswig-Holstein</channel>
+  <channel site="web.magentatv.de" site_id="100" lang="de" xmltv_id="RTLNordNiedersachsenBremen.de@SD">RTL Bremen &amp; Niedersachsen</channel>
+  <channel site="tv.magenta.at" site_id="207382568087" lang="de" xmltv_id="RTLPassion.de@HD">RTL Passion HD</channel>
+  <channel site="web.magentatv.de" site_id="209" lang="de" xmltv_id="RTLPassion.de@SD">RTL Passion</channel>
+  <channel site="sky.com" site_id="DE#1931" lang="de" xmltv_id="RTLSuper.de@HD">SUPER RTL HD</channel>
+  <channel site="web.magentatv.de" site_id="403" lang="de" xmltv_id="RTLSuper.de@SD">Super RTL</channel>
+  <channel site="web.magentatv.de" site_id="478" lang="de" xmltv_id="RTLWest.de@SD">RTL Nordrhein-Westfalen</channel>
+  <channel site="sky.com" site_id="DE#1205" lang="de" xmltv_id="RTLZwei.de@HD">RTLZWEI HD</channel>
+  <channel site="web.magentatv.de" site_id="382" lang="de" xmltv_id="RTLZwei.de@SD">RTLZWEI</channel>
+  <channel site="sky.com" site_id="DE#1206" lang="de" xmltv_id="RTLup.de@HD">RTLup HD</channel>
+  <channel site="web.magentatv.de" site_id="542" lang="de" xmltv_id="RTLup.de@SD">RTLup</channel>
+  <channel site="tv.magenta.at" site_id="206969896252" lang="de" xmltv_id="RTSSvet.rs@HD">RTS Svet HD</channel>
+  <channel site="web.magentatv.de" site_id="368" lang="de" xmltv_id="RadioBremenFernsehen.de@SD">Radio Bremen TV</channel>
+  <channel site="tv.blue.ch" site_id="308" lang="de" xmltv_id="RadioPilatusTV.ch@SD">Radio Pilatus TV</channel>
+  <channel site="web.magentatv.de" site_id="43" lang="de" xmltv_id="Rai1.it@SD">Rai 1</channel>
+  <channel site="web.magentatv.de" site_id="46" lang="de" xmltv_id="Rai2.it@SD">Rai 2</channel>
+  <channel site="web.magentatv.de" site_id="210" lang="de" xmltv_id="Rai3.it@HD">Rai 3</channel>
+  <channel site="sky.com" site_id="DE#4216" lang="de" xmltv_id="RaiNews24.it@SD">RAI News 24</channel>
+  <channel site="watch.whaletvplus.com" site_id="979187723418476851" lang="en" xmltv_id="RedBullTV.at@AU">Red Bull TV (AU)</channel>
+  <channel site="watch.whaletvplus.com" site_id="1022040038798139276" lang="pt" xmltv_id="RedBullTV.at@BR">Red Bull TV (BR)</channel>
+  <channel site="watch.whaletvplus.com" site_id="968808735454013034" lang="de" xmltv_id="RedBullTV.at@DE">Red Bull TV (DE)</channel>
+  <channel site="watch.whaletvplus.com" site_id="968808735454013032" lang="es" xmltv_id="RedBullTV.at@ES">Red Bull TV (ES)</channel>
+  <channel site="teleboy.ch" site_id="621" lang="en" xmltv_id="RedBullTV.at@EUMENA">Red Bull TV (engl.)</channel>
+  <channel site="web.magentatv.de" site_id="5027" lang="de" xmltv_id="RedBullTV.at@SD">Red Bull TV</channel>
+  <channel site="watch.whaletvplus.com" site_id="968808735454013033" lang="en" xmltv_id="RedBullTV.at@UK">Red Bull TV (UK)</channel>
+  <channel site="i.mjh.nz" site_id="Roku/all#c5e8a74546771de365652cd053f73351" lang="en" xmltv_id="RedBullTV.at@US">Red Bull TV</channel>
+  <channel site="programtv.onet.pl" site_id="redlight-hd-498" lang="de" xmltv_id="RedlightHD.nl@SD">Redlight HD</channel>
+  <channel site="tv.blue.ch" site_id="904" lang="de" xmltv_id="RegioTVplus.ch@SD">regioTVplus</channel>
+  <channel site="web.magentatv.de" site_id="2609" lang="de" xmltv_id="RennsteigTV.de@SD">Rennsteig.TV</channel>
+  <channel site="programtv.onet.pl" site_id="rheinmaintv-468" lang="pl" xmltv_id="RheinMainTV.de@SD">rheinmaintv</channel>
+  <channel site="tv.blue.ch" site_id="1466" lang="de" xmltv_id="RheinweltenTV.ch@SD">Rheinwelten TV</channel>
+  <channel site="sky.com" site_id="DE#3019" lang="de" xmltv_id="RiC.de@SD">RiC</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/us#58d947b9e420d8656ee101ab" lang="en" xmltv_id="RiffTrax.us@US">RiffTrax</channel>
+  <channel site="sky.com" site_id="DE#160" lang="de" xmltv_id="RockAntenne.de@SD">ROCK ANTENNE</channel>
+  <channel site="sky.com" site_id="DE#518" lang="de" xmltv_id="RomanceTV.de@HD">Romance TV HD</channel>
+  <channel site="web.magentatv.de" site_id="260" lang="de" xmltv_id="RomanceTV.de@SD">Romance TV</channel>
+  <channel site="teleboy.ch" site_id="323" lang="de" xmltv_id="S1.ch@SD">S1</channel>
+  <channel site="tvprofil.com" site_id="de/tvprogramm#sat-1-rheinland-pfalz-and-hessen" lang="de" xmltv_id="SAT.1RheinlandPfalzHessen.de">SAT.1 Rheinland Pfalz &amp; Hessen</channel>
+  <channel site="sky.com" site_id="DE#1300" lang="de" xmltv_id="SAT1.de@HD">SAT.1 HD</channel>
+  <channel site="web.magentatv.de" site_id="381" lang="de" xmltv_id="SAT1.de@SD">SAT.1</channel>
+  <channel site="sky.com" site_id="DE#5300" lang="de" xmltv_id="SAT1Austria.at@HD">SAT.1 HD Austria</channel>
+  <channel site="sky.com" site_id="DE#579" lang="de" xmltv_id="SAT1Austria.at@SD">SAT.1 A</channel>
+  <channel site="sky.com" site_id="DE#2500" lang="de" xmltv_id="SAT1Gold.de@HD">SAT.1 Gold HD</channel>
+  <channel site="web.magentatv.de" site_id="338" lang="de" xmltv_id="SAT1Gold.de@SD">SAT.1 GOLD</channel>
+  <channel site="sky.com" site_id="DE#2520" lang="de" xmltv_id="SAT1GoldAustria.at@SD">SAT.1 Gold HD Austria</channel>
+  <channel site="web.magentatv.de" site_id="251" lang="de" xmltv_id="SAT1NRW.de@SD">SAT.1 Nordrhein-Westfalen</channel>
+  <channel site="tv.magenta.at" site_id="207382568112" lang="de" xmltv_id="SAT1emotions.de@HD">SAT.1 emotions HD</channel>
+  <channel site="web.magentatv.de" site_id="224" lang="de" xmltv_id="SAT1emotions.de@SD">SAT.1 emotions</channel>
+  <channel site="programtv.onet.pl" site_id="srf-1-406" lang="de" xmltv_id="SRF1.ch@SD">SRF 1</channel>
+  <channel site="sky.com" site_id="DE#690" lang="de" xmltv_id="SRFernsehen.de@HD">SR Fernsehen HD</channel>
+  <channel site="web.magentatv.de" site_id="379" lang="de" xmltv_id="SRFernsehen.de@SD">SR Fernsehen</channel>
+  <channel site="tv.magenta.at" site_id="206966824029" lang="de" xmltv_id="SRFinfo.ch@HD">SRF info HD</channel>
+  <channel site="teleboy.ch" site_id="5" lang="de" xmltv_id="SRFinfo.ch@SD">SRF info</channel>
+  <channel site="programtv.onet.pl" site_id="srf-zwei-407" lang="de" xmltv_id="SRFzwei.ch@SD">SRF Zwei</channel>
+  <channel site="web.magentatv.de" site_id="398" lang="de" xmltv_id="SWRFernsehenBadenWurttemberg.de@SD">SWR Fernsehen BW</channel>
+  <channel site="tv.sfr.fr" site_id="182" lang="fr" xmltv_id="SWRFernsehenHD.de@SD">SWR</channel>
+  <channel site="web.magentatv.de" site_id="393" lang="de" xmltv_id="SWRFernsehenRheinlandPfalz.de@SD">SWR Fernsehen RP</channel>
+  <channel site="tv.magenta.at" site_id="206969384001" lang="de" xmltv_id="SYFY.de@HD">Syfy HD</channel>
+  <channel site="web.magentatv.de" site_id="133" lang="de" xmltv_id="SYFY.de@SD">Sky Sci-Fi</channel>
+  <channel site="sky.com" site_id="DE#1308" lang="de" xmltv_id="SachsenEins.de@SD">SACHSEN EINS</channel>
+  <channel site="web.magentatv.de" site_id="2612" lang="de" xmltv_id="SachsenFernsehenChemnitz.de@SD">Chemnitz Fernsehen</channel>
+  <channel site="web.magentatv.de" site_id="2611" lang="de" xmltv_id="SachsenFernsehenDresden.de@SD">Dresden Fernsehen</channel>
+  <channel site="web.magentatv.de" site_id="3179" lang="de" xmltv_id="SachsenFernsehenLeipzig.de@SD">Leipzig Fernsehen</channel>
+  <channel site="web.magentatv.de" site_id="3073" lang="de" xmltv_id="SalveTV.de@SD">salve.tv</channel>
+  <channel site="teleboy.ch" site_id="559" lang="de" xmltv_id="SchaffhauserFernsehen.ch@SD">Schaffhauser Fernsehen</channel>
+  <channel site="sky.com" site_id="DE#35" lang="de" xmltv_id="SchlagerDeluxe.de@SD">Schlager Deluxe</channel>
+  <channel site="tv.blue.ch" site_id="378" lang="de" xmltv_id="Schweiz5.ch@SD">Schweiz 5</channel>
+  <channel site="sky.com" site_id="IT#5240" lang="it" xmltv_id="SenderNeuJerusalem.de@SD">Sender Neu Jerusalem</channel>
+  <channel site="sky.com" site_id="DE#4913" lang="de" xmltv_id="ServusTV.at@HD">ServusTV HD Oesterreich</channel>
+  <channel site="web.magentatv.de" site_id="39" lang="de" xmltv_id="ServusTV.at@SD">DF1</channel>
+  <channel site="tv.post.lu" site_id="a4cb41d0-8094-11e9-b5ca-f345a2ed0fbe" lang="de" xmltv_id="ServusTVDeutschland.de@SD">Servus TV</channel>
+  <channel site="web.magentatv.de" site_id="5172" lang="de" xmltv_id="ShopLC.us@SD">Shop LC</channel>
+  <channel site="sky.com" site_id="DE#1107" lang="de" xmltv_id="ShopLCDeutschland.de@SD">ShopLC HD</channel>
+  <channel site="web.magentatv.de" site_id="3827" lang="de" xmltv_id="ShowMax.tr@SD">Show Max</channel>
+  <channel site="web.magentatv.de" site_id="215" lang="de" xmltv_id="ShowTurk.tr@SD">Show Turk</channel>
+  <channel site="sky.com" site_id="DE#110" lang="de" xmltv_id="SkyAtlantic.de@HD">Sky Atlantic HD</channel>
+  <channel site="web.magentatv.de" site_id="264" lang="de" xmltv_id="SkyAtlantic.de@SD">Sky Atlantic</channel>
+  <channel site="sky.com" site_id="DE#116" lang="de" xmltv_id="SkyCinemaAction.de@HD">Sky Cinema Action HD</channel>
+  <channel site="web.magentatv.de" site_id="40" lang="de" xmltv_id="SkyCinemaAction.de@SD">Sky Cinema Action</channel>
+  <channel site="tv.magenta.at" site_id="207381032336" lang="de" xmltv_id="SkyCinemaBestOf.de@HD">Sky Cinema Best of HD</channel>
+  <channel site="programtv.onet.pl" site_id="sky-hits-365" lang="de" xmltv_id="SkyCinemaBestOf.de@SD">Sky Hits</channel>
+  <channel site="sky.com" site_id="DE#107" lang="de" xmltv_id="SkyCinemaClassics.de@HD">Sky Cinema Classics HD</channel>
+  <channel site="web.magentatv.de" site_id="200" lang="de" xmltv_id="SkyCinemaClassics.de@SD">Sky Cinema Classics</channel>
+  <channel site="web.magentatv.de" site_id="572" lang="de" xmltv_id="SkyCinemaFamily.de@SD">Sky Cinema Family</channel>
+  <channel site="tv.magenta.at" site_id="207382568104" lang="de" xmltv_id="SkyCinemaFun.de@HD">Sky Cinema Fun HD</channel>
+  <channel site="programtv.onet.pl" site_id="sky-comedy-348" lang="de" xmltv_id="SkyCinemaFun.de@SD">Sky Comedy</channel>
+  <channel site="sky.com" site_id="DE#131" lang="de" xmltv_id="SkyCinemaPremieren.de@HD">Sky Cinema Premiere HD</channel>
+  <channel site="tv.post.lu" site_id="9152e1a0-81e6-11e9-b43b-9d7b168e6372" lang="de" xmltv_id="SkyCinemaPremieren.de@Plus24">Sky Cinema Premieren +24 HD</channel>
+  <channel site="sky.com" site_id="DE#400" lang="de" xmltv_id="SkyCinemaPremieren.de@Plus24HD">Sky Cinema Premiere HD +24</channel>
+  <channel site="web.magentatv.de" site_id="195" lang="de" xmltv_id="SkyCinemaPremieren.de@SD">Sky Cinema Premiere</channel>
+  <channel site="programtv.onet.pl" site_id="sky-nostalgie-421" lang="de" xmltv_id="SkyCinemaSpecial.de@SD">Sky Cinema Special</channel>
+  <channel site="tv.magenta.at" site_id="207381032392" lang="de" xmltv_id="SkyCinemaThriller.de@HD">Sky Cinema Thriller HD</channel>
+  <channel site="tv.post.lu" site_id="d6bf8cb0-62e2-11ea-a0c1-655af0e0a92c" lang="de" xmltv_id="SkyCinemaThriller.de@SD">Sky Cinema Thriller HD</channel>
+  <channel site="programtv.onet.pl" site_id="sky-cinema-24-369" lang="de" xmltv_id="SkyCinemaUno.it@Plus24">Sky Cinema + 24</channel>
+  <channel site="tv.blue.ch" site_id="1794" lang="de" xmltv_id="SkyComedy.de@SD">Sky Comedy</channel>
+  <channel site="sky.com" site_id="DE#13" lang="de" xmltv_id="SkyCrime.de@HD">Sky Crime HD</channel>
+  <channel site="web.magentatv.de" site_id="4924" lang="de" xmltv_id="SkyCrime.de@SD">Sky Crime</channel>
+  <channel site="sky.com" site_id="DE#112" lang="de" xmltv_id="SkyDocumentaries.de@HD">Sky Documentaries HD</channel>
+  <channel site="web.magentatv.de" site_id="5143" lang="de" xmltv_id="SkyDocumentaries.de@SD">Sky Documentaries</channel>
+  <channel site="sky.com" site_id="DE#23" lang="de" xmltv_id="SkyKrimi.de@HD">Sky Krimi HD</channel>
+  <channel site="web.magentatv.de" site_id="201" lang="de" xmltv_id="SkyKrimi.de@SD">Sky Krimi</channel>
+  <channel site="sky.com" site_id="DE#118" lang="de" xmltv_id="SkyNature.de@HD">Sky Nature HD</channel>
+  <channel site="web.magentatv.de" site_id="5142" lang="de" xmltv_id="SkyNature.de@SD">Sky Nature</channel>
+  <channel site="sky.com" site_id="DE#7002" lang="de" xmltv_id="SkyNews.uk@SD">Sky News</channel>
+  <channel site="sky.com" site_id="DE#7290" lang="de" xmltv_id="SkyNewsInternational.uk@SD">Sky News Intl</channel>
+  <channel site="sky.com" site_id="DE#147" lang="de" xmltv_id="SkyOne.de@HD">Sky One HD</channel>
+  <channel site="web.magentatv.de" site_id="576" lang="de" xmltv_id="SkyOne.de@SD">Sky One</channel>
+  <channel site="tv.magenta.at" site_id="207382568156" lang="de" xmltv_id="SkyReplay.de@HD">Sky Replay HD</channel>
+  <channel site="tv.post.lu" site_id="44020e80-21b7-11ec-8145-03bbc8fc81cf" lang="de" xmltv_id="SkyReplay.de@SD">Sky Replay HD</channel>
+  <channel site="sky.com" site_id="DE#142" lang="de" xmltv_id="SkyShowcase.de@HD">Sky Showcase HD</channel>
+  <channel site="tv.blue.ch" site_id="1990" lang="de" xmltv_id="SkyShowcase.de@SD">Sky Showcase</channel>
+  <channel site="sky.com" site_id="DE#3001" lang="de" xmltv_id="SkySport.de@UHD">Sky Sport UHD</channel>
+  <channel site="sky.com" site_id="DE#268" lang="de" xmltv_id="SkySport1.de@HD">Sky Sport 1 HD</channel>
+  <channel site="web.magentatv.de" site_id="31" lang="de" xmltv_id="SkySport1.de@SD">Sky Sport Top Event</channel>
+  <channel site="sky.com" site_id="DE#269" lang="de" xmltv_id="SkySport10.de@HD">Sky Sport 10 HD</channel>
+  <channel site="web.magentatv.de" site_id="261" lang="de" xmltv_id="SkySport10.de@SD">Sky Sport 8</channel>
+  <channel site="web.magentatv.de" site_id="187" lang="de" xmltv_id="SkySport11.de@SD">Sky Sport 9</channel>
+  <channel site="sky.com" site_id="DE#278" lang="de" xmltv_id="SkySport2.de@HD">Sky Sport 2 HD</channel>
+  <channel site="web.magentatv.de" site_id="198" lang="de" xmltv_id="SkySport2.de@SD">Sky Sport Tennis</channel>
+  <channel site="sky.com" site_id="DE#288" lang="de" xmltv_id="SkySport3.de@HD">Sky Sport 3 HD</channel>
+  <channel site="web.magentatv.de" site_id="192" lang="de" xmltv_id="SkySport3.de@SD">Sky Sport 1</channel>
+  <channel site="sky.com" site_id="DE#298" lang="de" xmltv_id="SkySport4.de@HD">Sky Sport 4 HD</channel>
+  <channel site="web.magentatv.de" site_id="212" lang="de" xmltv_id="SkySport4.de@SD">Sky Sport 2</channel>
+  <channel site="sky.com" site_id="DE#3006" lang="de" xmltv_id="SkySport5.de@HD">Sky Sport 5 HD</channel>
+  <channel site="web.magentatv.de" site_id="189" lang="de" xmltv_id="SkySport5.de@SD">Sky Sport 3</channel>
+  <channel site="sky.com" site_id="DE#3011" lang="de" xmltv_id="SkySport6.de@HD">Sky Sport 6 HD</channel>
+  <channel site="web.magentatv.de" site_id="111" lang="de" xmltv_id="SkySport6.de@SD">Sky Sport 4</channel>
+  <channel site="sky.com" site_id="DE#3012" lang="de" xmltv_id="SkySport7.de@HD">Sky Sport 7 HD</channel>
+  <channel site="web.magentatv.de" site_id="114" lang="de" xmltv_id="SkySport7.de@SD">Sky Sport 5</channel>
+  <channel site="sky.com" site_id="DE#3013" lang="de" xmltv_id="SkySport8.de@HD">Sky Sport 8 HD</channel>
+  <channel site="web.magentatv.de" site_id="113" lang="de" xmltv_id="SkySport8.de@SD">Sky Sport 6</channel>
+  <channel site="sky.com" site_id="DE#258" lang="de" xmltv_id="SkySport9.de@HD">Sky Sport 9 HD</channel>
+  <channel site="web.magentatv.de" site_id="127" lang="de" xmltv_id="SkySport9.de@SD">Sky Sport 7</channel>
+  <channel site="sky.com" site_id="DE#143" lang="de" xmltv_id="SkySportAustria1.at@HD">Sky Sport Austria 1 HD</channel>
+  <channel site="programtv.onet.pl" site_id="sky-sport-austria-444" lang="de" xmltv_id="SkySportAustria1.at@SD">Sky Sport Austria</channel>
+  <channel site="sky.com" site_id="DE#3037" lang="de" xmltv_id="SkySportAustria2.at@HD">Sky Sport Austria 2 HD</channel>
+  <channel site="sky.com" site_id="DE#3038" lang="de" xmltv_id="SkySportAustria3.at@HD">Sky Sport Austria 3 HD</channel>
+  <channel site="sky.com" site_id="DE#259" lang="de" xmltv_id="SkySportAustria4.at@HD">Sky Sport Austria 4 HD</channel>
+  <channel site="sky.com" site_id="DE#3040" lang="de" xmltv_id="SkySportAustria5.at@HD">Sky Sport Austria 5 HD</channel>
+  <channel site="sky.com" site_id="DE#3041" lang="de" xmltv_id="SkySportAustria6.at@HD">Sky Sport Austria 6 HD</channel>
+  <channel site="sky.com" site_id="DE#261" lang="de" xmltv_id="SkySportAustria7.at@HD">Sky Sport Austria 7 HD</channel>
+  <channel site="sky.com" site_id="DE#262" lang="de" xmltv_id="SkySportAustria8.at@HD">Sky Sport Austria 8 HD</channel>
+  <channel site="sky.com" site_id="DE#105" lang="de" xmltv_id="SkySportBundesliga.de@HD">Sky Sport Bundesliga HD</channel>
+  <channel site="tv.blue.ch" site_id="1962" lang="de" xmltv_id="SkySportBundesliga.de@SD">Sky Sport Bundesliga</channel>
+  <channel site="sky.com" site_id="DE#3016" lang="de" xmltv_id="SkySportBundesliga.de@UHD">Sky Sport Bundesliga UHD</channel>
+  <channel site="sky.com" site_id="DE#267" lang="de" xmltv_id="SkySportBundesliga1.de@HD">Sky Sport Bundesliga 1 HD</channel>
+  <channel site="web.magentatv.de" site_id="42" lang="de" xmltv_id="SkySportBundesliga1.de@SD">Sky Sport Bundesliga</channel>
+  <channel site="sky.com" site_id="DE#271" lang="de" xmltv_id="SkySportBundesliga10.de@HD">Sky Sport Bundesliga 10 HD</channel>
+  <channel site="web.magentatv.de" site_id="237" lang="de" xmltv_id="SkySportBundesliga10.de@SD">Sky Sport Bundesliga 9</channel>
+  <channel site="sky.com" site_id="DE#277" lang="de" xmltv_id="SkySportBundesliga2.de@HD">Sky Sport Bundesliga 2 HD</channel>
+  <channel site="web.magentatv.de" site_id="206" lang="de" xmltv_id="SkySportBundesliga2.de@SD">Sky Sport Bundesliga 1</channel>
+  <channel site="sky.com" site_id="DE#287" lang="de" xmltv_id="SkySportBundesliga3.de@HD">Sky Sport Bundesliga 3 HD</channel>
+  <channel site="web.magentatv.de" site_id="211" lang="de" xmltv_id="SkySportBundesliga3.de@SD">Sky Sport Bundesliga 2</channel>
+  <channel site="sky.com" site_id="DE#297" lang="de" xmltv_id="SkySportBundesliga4.de@HD">Sky Sport Bundesliga 4 HD</channel>
+  <channel site="web.magentatv.de" site_id="199" lang="de" xmltv_id="SkySportBundesliga4.de@SD">Sky Sport Bundesliga 3</channel>
+  <channel site="sky.com" site_id="DE#3024" lang="de" xmltv_id="SkySportBundesliga5.de@HD">Sky Sport Bundesliga 5 HD</channel>
+  <channel site="web.magentatv.de" site_id="232" lang="de" xmltv_id="SkySportBundesliga5.de@SD">Sky Sport Bundesliga 4</channel>
+  <channel site="sky.com" site_id="DE#3025" lang="de" xmltv_id="SkySportBundesliga6.de@HD">Sky Sport Bundesliga 6 HD</channel>
+  <channel site="web.magentatv.de" site_id="234" lang="de" xmltv_id="SkySportBundesliga6.de@SD">Sky Sport Bundesliga 5</channel>
+  <channel site="sky.com" site_id="DE#3026" lang="de" xmltv_id="SkySportBundesliga7.de@HD">Sky Sport Bundesliga 7 HD</channel>
+  <channel site="web.magentatv.de" site_id="231" lang="de" xmltv_id="SkySportBundesliga7.de@SD">Sky Sport Bundesliga 6</channel>
+  <channel site="sky.com" site_id="DE#3033" lang="de" xmltv_id="SkySportBundesliga8.de@HD">Sky Sport Bundesliga 8 HD</channel>
+  <channel site="web.magentatv.de" site_id="258" lang="de" xmltv_id="SkySportBundesliga8.de@SD">Sky Sport Bundesliga 7</channel>
+  <channel site="sky.com" site_id="DE#257" lang="de" xmltv_id="SkySportBundesliga9.de@HD">Sky Sport Bundesliga 9 HD</channel>
+  <channel site="web.magentatv.de" site_id="219" lang="de" xmltv_id="SkySportBundesliga9.de@SD">Sky Sport Bundesliga 8</channel>
+  <channel site="sky.com" site_id="DE#17" lang="de" xmltv_id="SkySportF1.de@HD">Sky Sport F1 HD</channel>
+  <channel site="web.magentatv.de" site_id="4889" lang="de" xmltv_id="SkySportF1.de@SD">Sky Sport F1</channel>
+  <channel site="sky.com" site_id="DE#144" lang="de" xmltv_id="SkySportGolf.de@HD">Sky Sport Golf HD</channel>
+  <channel site="tv.blue.ch" site_id="1959" lang="de" xmltv_id="SkySportGolf.de@SD">Sky Sport Golf</channel>
+  <channel site="sky.com" site_id="DE#141" lang="de" xmltv_id="SkySportMix.de@HD">Sky Sport Mix HD</channel>
+  <channel site="sky.com" site_id="DE#108" lang="de" xmltv_id="SkySportNews.de@HD">Sky Sport News HD</channel>
+  <channel site="web.magentatv.de" site_id="190" lang="de" xmltv_id="SkySportNews.de@SD">Sky Sport News</channel>
+  <channel site="sky.com" site_id="DE#145" lang="de" xmltv_id="SkySportPremierLeague.de@HD">Sky Sport Premier League HD</channel>
+  <channel site="sky.com" site_id="DE#114" lang="de" xmltv_id="SkySportTennis.de@HD">Sky Sport Tennis HD</channel>
+  <channel site="sky.com" site_id="DE#129" lang="de" xmltv_id="SkySportTopEvent.de@HD">Sky Sport Top Event HD</channel>
+  <channel site="web.magentatv.de" site_id="486" lang="de" xmltv_id="SonnenklarTV.de@SD">sonnenklar.TV</channel>
+  <channel site="web.magentatv.de" site_id="188" lang="de" xmltv_id="SonyChannel.de@SD">AXN White</channel>
+  <channel site="chaines-tv.orange.fr" site_id="90221" lang="fr" logo="https://cdn-proxymedia-digicert.tv-fr-cdn.orange.net/api/v1/images/2090%2Flogos%2Fv2%2Flogos%2Flivetv_souvenirsfromearth%2F20151026_092415%2FmobileAppliDark%2Flogo_183x183.png?service=LIVE&amp;amp;device=W_PC" xmltv_id="SouvenirsfromEarthTV.de@SD">SOUVENIRS FROM EARTH</channel>
+  <channel site="tv.magenta.at" site_id="207382568027" lang="de" xmltv_id="SpiegelGeschichte.de@HD">Spiegel Geschichte HD</channel>
+  <channel site="web.magentatv.de" site_id="4406" lang="de" xmltv_id="SpiegelGeschichte.de@SD">Spiegel Geschichte</channel>
+  <channel site="teleboy.ch" site_id="618" lang="de" xmltv_id="SpiegelTV.de@HD">SPIEGEL TV Konflikt</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5d00e8adaab96b5635b2a005" lang="de" xmltv_id="SpongeBobSchwammkopf.us@Germany">SpongeBob Schwammkopf</channel>
+  <channel site="sky.com" site_id="DE#5505" lang="de" xmltv_id="Sport1.de@HD">SPORT1 HD</channel>
+  <channel site="web.magentatv.de" site_id="401" lang="de" xmltv_id="Sport1.de@SD">SPORT1</channel>
+  <channel site="tv.magenta.at" site_id="206967336046" lang="de" xmltv_id="Sport1Plus.de@HD">Sport1+ HD</channel>
+  <channel site="web.magentatv.de" site_id="44" lang="de" xmltv_id="Sport1Plus.de@SD">Sportdigital1+</channel>
+  <channel site="sky.com" site_id="DE#4301" lang="de" xmltv_id="Sportdigital1Plus.de@HD">Sportdigital1+</channel>
+  <channel site="tv.magenta.at" site_id="206967336053" lang="de" xmltv_id="SportdigitalFUSSBALL.de@HD">SPORTDIGITAL FUSSBALL HD</channel>
+  <channel site="web.magentatv.de" site_id="194" lang="de" xmltv_id="SportdigitalFUSSBALL.de@SD">SPORTDIGITAL FUSSBALL</channel>
+  <channel site="tv.blue.ch" site_id="2100" lang="de" xmltv_id="SportdigitalFUSSBALL2.de@HD">SPORTDIGITAL FUSSBALL 2</channel>
+  <channel site="teleboy.ch" site_id="19" lang="de" xmltv_id="StarTV.ch@SD">Star TV</channel>
+  <channel site="sky.com" site_id="DE#3404" lang="de" xmltv_id="StimmungsgartenTV.at@SD">Stimmungsgarten TV</channel>
+  <channel site="tv.magenta.at" site_id="207381032325" lang="de" xmltv_id="StingrayClassica.ca@HD">Stingray Classica HD</channel>
+  <channel site="tv.blue.ch" site_id="102" lang="de" xmltv_id="StingrayClassica.ca@SD">Stingray Classica D</channel>
+  <channel site="tv.magenta.at" site_id="288804392373" lang="de" xmltv_id="Streamstertv.de@SD">Streamster.tv</channel>
+  <channel site="web.magentatv.de" site_id="2616" lang="de" xmltv_id="Studio47.de@SD">Studio 47</channel>
+  <channel site="teleboy.ch" site_id="314" lang="de" xmltv_id="Sudostschweiz.ch@SD">Tele Südostschweiz</channel>
+  <channel site="teleboy.ch" site_id="341" lang="de" xmltv_id="Swiss1.ch@SD">SWISS1</channel>
+  <channel site="teleboy.ch" site_id="594" lang="de" xmltv_id="SwissSportTV.ch@SD">Swiss Sport TV</channel>
+  <channel site="tv.blue.ch" site_id="2127" lang="de" xmltv_id="Sylt1.de@SD">SYLT1</channel>
+  <channel site="sky.com" site_id="DE#5401" lang="de" xmltv_id="TELE5.de@HD">TELE 5 HD</channel>
+  <channel site="web.magentatv.de" site_id="48" lang="de" xmltv_id="TELE5.de@SD">TELE 5</channel>
+  <channel site="sky.com" site_id="DE#5421" lang="de" xmltv_id="TELE5Austria.at@HD">TELE 5 HD Austria</channel>
+  <channel site="sky.com" site_id="DE#9139" lang="de" xmltv_id="TLC.at@HD">TLC Austria HD</channel>
+  <channel site="sky.com" site_id="DE#71" lang="de" xmltv_id="TLC.at@SD">TLC Austria</channel>
+  <channel site="sky.com" site_id="DE#100" lang="de" xmltv_id="TLC.de@HD">TLC HD</channel>
+  <channel site="web.magentatv.de" site_id="383" lang="de" xmltv_id="TLC.de@SD">TLC</channel>
+  <channel site="web.magentatv.de" site_id="601" lang="de" xmltv_id="TOGGOplus.de@SD">TOGGO plus</channel>
+  <channel site="teleboy.ch" site_id="610" lang="de" xmltv_id="TOPSERIEN.de@HD">Top Serien</channel>
+  <channel site="teleboy.ch" site_id="612" lang="de" xmltv_id="TOPTRUECRIME.de@HD">Top True Crime</channel>
+  <channel site="sky.com" site_id="DE#6918" lang="de" xmltv_id="TRTWorld.tr@HD">TRT World HD</channel>
+  <channel site="tv.magenta.at" site_id="206969896262" lang="de" xmltv_id="TRTWorld.tr@SD">TRT World</channel>
+  <channel site="teleboy.ch" site_id="326" lang="de" xmltv_id="TV24.ch@SD">TV24</channel>
+  <channel site="teleboy.ch" site_id="364" lang="de" xmltv_id="TV25.ch@SD">TV25</channel>
+  <channel site="tv.blue.ch" site_id="1269" lang="de" xmltv_id="TV4TNG.ch@SD">TV4TNG</channel>
+  <channel site="sky.com" site_id="DE#6915" lang="de" xmltv_id="TV5MondeEurope.fr@SD">TV5MONDE EUROPE HD</channel>
+  <channel site="web.magentatv.de" site_id="439" lang="de" xmltv_id="TV8int.tr@SD">TV8 Int</channel>
+  <channel site="web.magentatv.de" site_id="171" lang="de" xmltv_id="TVA.de@SD">TVA Ostbayern</channel>
+  <channel site="web.magentatv.de" site_id="599" lang="de" xmltv_id="TVBerlin.de@SD">tv.berlin</channel>
+  <channel site="tv.magenta.at" site_id="207381032397" lang="de" xmltv_id="TVCGMNE.me@SD">MNE</channel>
+  <channel site="web.magentatv.de" site_id="173" lang="de" xmltv_id="TVIngolstadt.de@SD">tv.ingolstadt</channel>
+  <channel site="web.magentatv.de" site_id="156" lang="de" xmltv_id="TVMainfranken.de@SD">TV Mainfranken</channel>
+  <channel site="web.magentatv.de" site_id="581" lang="de" xmltv_id="TVMittelrhein.de@SD">TV Mittelrhein</channel>
+  <channel site="teleboy.ch" site_id="85" lang="de" xmltv_id="TVO.ch@SD">TVO - das Ostschweizer Fernsehen</channel>
+  <channel site="web.magentatv.de" site_id="170" lang="de" xmltv_id="TVOberfranken.de@SD">TV Oberfranken</channel>
+  <channel site="teleboy.ch" site_id="531" lang="de" xmltv_id="TVOberwallis.ch@SD">TV Oberwallis</channel>
+  <channel site="web.magentatv.de" site_id="473" lang="de" xmltv_id="TVPPolonia.pl@SD">TVP Polonia</channel>
+  <channel site="sky.com" site_id="DE#7001" lang="de" xmltv_id="TVRIWorld.id@SD">TVRI WORLD HD</channel>
+  <channel site="tv.blue.ch" site_id="630" lang="de" xmltv_id="TVRheintal.ch@SD">TV Rheintal</channel>
+  <channel site="web.magentatv.de" site_id="2610" lang="de" xmltv_id="TVWestsachsen.de@SD">TV Westsachsen</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#6054a9f4bc8a5f000771504c" lang="de" xmltv_id="TakeshisCastle.us@Germany">Takeshi's Castle</channel>
+  <channel site="plex.tv" site_id="65cd52e626388de8e0b08273" lang="en" xmltv_id="Tastemade.us@Australia">Tastemade</channel>
+  <channel site="plex.tv" site_id="66311c41707bae70101ec755" lang="en" xmltv_id="Tastemade.us@UK">Tastemade</channel>
+  <channel site="plex.tv" site_id="5ef51c802ddee5003f1c0225" lang="en" xmltv_id="Tastemade.us@US">Tastemade</channel>
+  <channel site="tvguide.com" site_id="9200006974" lang="en" xmltv_id="TeenNick.us@East">TeenNick</channel>
+  <channel site="teleboy.ch" site_id="84" lang="de" xmltv_id="Tele1.ch@SD">Tele 1</channel>
+  <channel site="teleboy.ch" site_id="22" lang="de" xmltv_id="TeleBarn.ch@SD">TeleBärn</channel>
+  <channel site="teleboy.ch" site_id="298" lang="de" xmltv_id="TeleBielingue.ch@SD">TeleBielingue</channel>
+  <channel site="teleboy.ch" site_id="560" lang="de" xmltv_id="TeleD.ch@SD">Tele D</channel>
+  <channel site="sky.com" site_id="DE#1460" lang="de" xmltv_id="TeleGold.de@SD">TELEGOLD</channel>
+  <channel site="teleboy.ch" site_id="20" lang="de" xmltv_id="TeleM1.ch@SD">Tele M1</channel>
+  <channel site="teleboy.ch" site_id="274" lang="de" xmltv_id="TeleTop.ch@SD">Tele Top</channel>
+  <channel site="teleboy.ch" site_id="519" lang="de" xmltv_id="TeleZ.ch@SD">Tele Z</channel>
+  <channel site="tv.blue.ch" site_id="584" lang="de" xmltv_id="TeleZentralschweiz.ch@SD">Tele Zentralschweiz</channel>
+  <channel site="teleboy.ch" site_id="72" lang="de" xmltv_id="TeleZuri.ch@SD">TeleZüri</channel>
+  <channel site="teleboy.ch" site_id="21" lang="de" xmltv_id="Telebasel.ch@SD">Telebasel</channel>
+  <channel site="web.magentatv.de" site_id="483" lang="de" xmltv_id="TelebomTeledom.de@SD">TeleBom/TeleDom</channel>
+  <channel site="tv.blue.ch" site_id="1468" lang="de" xmltv_id="Televista.ch@SD">Televista</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#6870c9333ffa5e0c914e9205" lang="de" xmltv_id="TennisChannel.us@SD">Tennis Channel</channel>
+  <channel site="watch.whaletvplus.com" site_id="931186243466302960" lang="en" xmltv_id="TerraMaterWILD.de@English">Terra Mater Wild (EN)</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#65b923f90cb1a100088a03ab" lang="de" xmltv_id="TerraMaterWILD.de@German">Terra Mater WILD</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/fr#5f8ece1a89d79800072510e6" lang="fr" xmltv_id="TheAsylum.us@France">The Asylum</channel>
+  <channel site="i.mjh.nz" site_id="Roku/all#7e202ec14b17515a8e732f662aec155d" lang="en" xmltv_id="TheAsylum.us@US">The Asylum</channel>
+  <channel site="plex.tv" site_id="68dcbb869beaa3a402966dba" lang="en" xmltv_id="TheGrahamNortonShow.uk@SD">The Graham Norton Show</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/br#5f515ebac01c0f00080e8439" lang="pt" xmltv_id="ThePetCollective.us@Brazil">The Pet Collective</channel>
+  <channel site="plex.tv" site_id="5f170d61b898490041b49369" lang="en" xmltv_id="ThePetCollective.us@UK">The Pet Collective</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/us#5bb1ad55268cae539bcedb08" lang="en" xmltv_id="ThePetCollective.us@US">The Pet Collective</channel>
+  <channel site="tv.magenta.at" site_id="206969895972" lang="de" xmltv_id="TirolTV.at@HD">Tirol TV HD</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5d6792bd6be2998ad0ccce30" lang="de" xmltv_id="TotallyTurtles.us@Germany">Totally Turtles</channel>
+  <channel site="tv.magenta.at" site_id="229041703980" lang="de" xmltv_id="ToxicTV.rs@HD">Toxic TV HD</channel>
+  <channel site="watch.whaletvplus.com" site_id="999420644834214629" lang="de" xmltv_id="Trailers.es@DE">Trailers (DE)</channel>
+  <channel site="watch.whaletvplus.com" site_id="999420644834214637" lang="es" xmltv_id="Trailers.es@ES">Trailers (ES)</channel>
+  <channel site="plex.tv" site_id="6720049929bcfe7b69d4feff" lang="fr" xmltv_id="Trailers.es@FR">TRAILERS</channel>
+  <channel site="plex.tv" site_id="6720032c29bcfe7b69d4fefd" lang="it" xmltv_id="Trailers.es@IT">TRAILERS</channel>
+  <channel site="watch.whaletvplus.com" site_id="999420644834214632" lang="en" xmltv_id="Trailers.es@UK">Trailers (EN)</channel>
+  <channel site="watch.whaletvplus.com" site_id="757373387357554524" lang="de" xmltv_id="Travelxp.in@DE">Travelxp (DE)</channel>
+  <channel site="tv.blue.ch" site_id="669" lang="de" xmltv_id="UHD1.lu@SD">UHD1 by ASTRA</channel>
+  <channel site="web.magentatv.de" site_id="236" lang="de" xmltv_id="UlkeTV.tr@SD">ÜLKE TV</channel>
+  <channel site="sky.com" site_id="DE#101" lang="de" xmltv_id="UniversalTV.de@HD">Universal TV HD</channel>
+  <channel site="web.magentatv.de" site_id="185" lang="de" xmltv_id="UniversalTV.de@SD">Universal TV</channel>
+  <channel site="sky.com" site_id="DE#1921" lang="de" xmltv_id="VOX.at@HD">VOX HD Austria</channel>
+  <channel site="sky.com" site_id="DE#8805" lang="de" xmltv_id="VOX.at@SD">VOX Austria</channel>
+  <channel site="sky.com" site_id="DE#1201" lang="de" xmltv_id="VOX.de@HD">VOX HD</channel>
+  <channel site="web.magentatv.de" site_id="385" lang="de" xmltv_id="VOX.de@SD">VOX</channel>
+  <channel site="tv.magenta.at" site_id="229039144336" lang="de" xmltv_id="Vesti.rs@SD">VESTI</channel>
+  <channel site="programtv.onet.pl" site_id="vivid-touch-636" lang="de" xmltv_id="VividTouch.uk@SD">Vivid Touch</channel>
+  <channel site="sky.com" site_id="DE#3018" lang="de" xmltv_id="VolksmusikTV.de@SD">Volksmusik.TV</channel>
+  <channel site="web.magentatv.de" site_id="3930" lang="de" xmltv_id="Voxup.de@SD">VOXup</channel>
+  <channel site="tv.magenta.at" site_id="206965288149" lang="de" xmltv_id="W24.at@HD">W24 HD</channel>
+  <channel site="tv.magenta.at" site_id="206969384250" lang="de" xmltv_id="W24.at@SD">W24</channel>
+  <channel site="sky.com" site_id="DE#1429" lang="de" xmltv_id="WDR1Live.de@SD">1LIVE</channel>
+  <channel site="tv.blue.ch" site_id="654" lang="de" xmltv_id="WDRFernsehen.de">WDR</channel>
+  <channel site="sky.com" site_id="DE#8333" lang="de" xmltv_id="WDRFernsehen.de@Aachen">WDR HD Aachen</channel>
+  <channel site="sky.com" site_id="DE#8334" lang="de" xmltv_id="WDRFernsehen.de@Bielefeld">WDR HD Bielefeld</channel>
+  <channel site="sky.com" site_id="DE#8335" lang="de" xmltv_id="WDRFernsehen.de@Bonn">WDR HD Bonn</channel>
+  <channel site="sky.com" site_id="DE#8336" lang="de" xmltv_id="WDRFernsehen.de@Dortmund">WDR HD Dortmund</channel>
+  <channel site="sky.com" site_id="DE#8337" lang="de" xmltv_id="WDRFernsehen.de@Duisburg">WDR HD Duisburg</channel>
+  <channel site="sky.com" site_id="DE#8338" lang="de" xmltv_id="WDRFernsehen.de@Dusseldorf">WDR HD Düsseldorf</channel>
+  <channel site="sky.com" site_id="DE#8339" lang="de" xmltv_id="WDRFernsehen.de@Essen">WDR HD Essen</channel>
+  <channel site="sky.com" site_id="DE#8332" lang="de" xmltv_id="WDRFernsehen.de@Koln">WDR HD Köln</channel>
+  <channel site="sky.com" site_id="DE#8340" lang="de" xmltv_id="WDRFernsehen.de@Munster">WDR HD Münster</channel>
+  <channel site="sky.com" site_id="DE#8341" lang="de" xmltv_id="WDRFernsehen.de@Siegen">WDR HD Siegen</channel>
+  <channel site="sky.com" site_id="DE#8342" lang="de" xmltv_id="WDRFernsehen.de@Wuppertal">WDR HD Wuppertal</channel>
+  <channel site="web.magentatv.de" site_id="375" lang="de" xmltv_id="WELT.de@SD">WELT</channel>
+  <channel site="sky.com" site_id="DE#4304" lang="de" xmltv_id="Waidwerk.de@SD">WAIDWERK</channel>
+  <channel site="sky.com" site_id="DE#136" lang="de" xmltv_id="WarnerTVComedy.de@HD">Warner TV Comedy HD</channel>
+  <channel site="web.magentatv.de" site_id="181" lang="de" xmltv_id="WarnerTVComedy.de@SD">Warner TV Comedy</channel>
+  <channel site="sky.com" site_id="DE#140" lang="de" xmltv_id="WarnerTVFilm.de@HD">Warner TV Film HD</channel>
+  <channel site="web.magentatv.de" site_id="184" lang="de" xmltv_id="WarnerTVFilm.de@SD">Warner TV Film</channel>
+  <channel site="sky.com" site_id="DE#123" lang="de" xmltv_id="WarnerTVSerie.de@HD">Warner TV Serie HD</channel>
+  <channel site="web.magentatv.de" site_id="53" lang="de" xmltv_id="WarnerTVSerie.de@SD">Warner TV Serie</channel>
+  <channel site="teleboy.ch" site_id="609" lang="de" xmltv_id="WedoBigStories.ch@SD">Wedo Big Stories</channel>
+  <channel site="web.magentatv.de" site_id="60" lang="de" xmltv_id="WeltderWunderTV.de@SD">Welt der Wunder</channel>
+  <channel site="web.magentatv.de" site_id="571" lang="de" xmltv_id="WettercomTV.de@SD">wetter.com TV</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5ad9b7aae738977e2c312132" lang="de" xmltv_id="WorldPokerTour.us@Germany">World Poker Tour</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/it#608016e446d73500075ea7e0" lang="it" xmltv_id="WorldPokerTour.us@Italy">World Poker Tour</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/es#6080381ab7c9ea00074ec64c" lang="es" xmltv_id="WorldPokerTour.us@Spain">World Poker Tour</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5ad8d796e738977e2c31094a" lang="en" xmltv_id="WorldPokerTour.us@UK">World Poker Tour</channel>
+  <channel site="distro.tv" site_id="37684" lang="en" xmltv_id="WorldPokerTour.us@US">World Poker Tour</channel>
+  <channel site="teleboy.ch" site_id="595" lang="de" xmltv_id="WorldofFreesports.de@SD">World of Freesports</channel>
+  <channel site="plex.tv" site_id="68965c76e4a79cd0c3f845da" lang="de" xmltv_id="XITEHits.nl@Germany">XITE Hits</channel>
+  <channel site="plex.tv" site_id="69271b367faaeed71b910ac0" lang="en" xmltv_id="XITEHits.nl@NL">XITE Hits</channel>
+  <channel site="plex.tv" site_id="68965bb7e4a79cd0c3f845d8" lang="en" xmltv_id="XITEHits.nl@UK">XITE Hits</channel>
+  <channel site="plex.tv" site_id="688002cd996f1a2fb393a6e3" lang="en" xmltv_id="XITEHits.nl@US">XITE Hits</channel>
+  <channel site="sky.com" site_id="DE#2002" lang="de" xmltv_id="Xplore.de@SD">XPLORE</channel>
+  <channel site="pickx.be" site_id="UID2379" lang="de" xmltv_id="ZDF.de@HD">ZDF HD</channel>
+  <channel site="web.magentatv.de" site_id="408" lang="de" xmltv_id="ZDF.de@SD">ZDF</channel>
+  <channel site="sky.com" site_id="DE#1170" lang="de" xmltv_id="ZDFinfo.de@HD">ZDFinfo HD</channel>
+  <channel site="web.magentatv.de" site_id="378" lang="de" xmltv_id="ZDFinfo.de@SD">ZDFinfo</channel>
+  <channel site="sky.com" site_id="DE#1130" lang="de" xmltv_id="ZDFneo.de@HD">zdf_neo HD</channel>
+  <channel site="web.magentatv.de" site_id="391" lang="de" xmltv_id="ZDFneo.de@SD">ZDFneo</channel>
+  <channel site="zee5.com" site_id="0-9-9z5829362" lang="en" xmltv_id="ZeeOne.uk@French">Zee One French</channel>
+  <channel site="tv.blue.ch" site_id="1031" lang="de" xmltv_id="ZeeOne.uk@German">Zee One</channel>
+  <channel site="zee5.com" site_id="0-9-9z5825786" lang="en" xmltv_id="ZeeOne.uk@UK">Zee One</channel>
+  <channel site="zee5.com" site_id="0-9-9z5898964" lang="en" xmltv_id="ZeeTVUK.uk@DACH">Zee TV DE</channel>
+  <channel site="sky.com" site_id="GB#1016" lang="en" xmltv_id="ZeeTVUK.uk@HD">Zee TV HD</channel>
+  <channel site="meo.pt" site_id="ZEETV" lang="pt" xmltv_id="ZeeTVUK.uk@SD">Zee TV</channel>
+  <channel site="sky.com" site_id="DE#774" lang="de" xmltv_id="ZweiMusicTelevision.de@SD">Zwei Music Television</channel>
+  <channel site="sky.com" site_id="DE#604" lang="de" xmltv_id="arte.de@HD">arte HD</channel>
+  <channel site="web.magentatv.de" site_id="394" lang="de" xmltv_id="arte.de@SD">ARTE</channel>
+  <channel site="teliatv.ee" site_id="en#24" lang="de" xmltv_id="arte.fr@SD">Arte</channel>
+  <channel site="tv.magenta.at" site_id="206966824192" lang="de" xmltv_id="automotorundsportchannel.de@HD">auto motor und sport channel HD</channel>
+  <channel site="web.magentatv.de" site_id="108" lang="de" xmltv_id="automotorundsportchannel.de@SD">auto motor und sport</channel>
+  <channel site="tv.magenta.at" site_id="207382568164" lang="de" xmltv_id="automotorundsportchannel.de@UHD">auto motor und sport channel UHD</channel>
+  <channel site="web.magentatv.de" site_id="3826" lang="de" xmltv_id="beINIZ.tr@SD">beIN iZ</channel>
+  <channel site="web.magentatv.de" site_id="440" lang="de" xmltv_id="beINMoviesTurk.tr@SD">beIN Movies Turk</channel>
+  <channel site="tv.blue.ch" site_id="1626" lang="de" xmltv_id="ducktv.sk@SD">ducktv</channel>
+  <channel site="tv.magenta.at" site_id="206967848043" lang="de" xmltv_id="eSports1.de@HD">eSports1 HD</channel>
+  <channel site="web.magentatv.de" site_id="191" lang="de" xmltv_id="eSports1.de@SD">eSportsONE</channel>
+  <channel site="tv.magenta.at" site_id="234851368438" lang="de" xmltv_id="eXXpressTV.at@SD">eXXpressTV</channel>
+  <channel site="web.magentatv.de" site_id="4380" lang="de" xmltv_id="emsTVLingen.de@SD">ems TV</channel>
+  <channel site="sky.com" site_id="DE#650" lang="de" xmltv_id="hrfernsehen.de@HD">hr-fernsehen HD</channel>
+  <channel site="web.magentatv.de" site_id="386" lang="de" xmltv_id="hrfernsehen.de@SD">hr-fernsehen</channel>
+  <channel site="i.mjh.nz" site_id="PlutoTV/de#5e8b580a233dc90007f0cb9d" lang="de" xmltv_id="iCarly.us@Germany">iCarly</channel>
+  <channel site="web.magentatv.de" site_id="405" lang="de" xmltv_id="kabeleins.de@SD">Kabel Eins</channel>
+  <channel site="sky.com" site_id="DE#5302" lang="de" xmltv_id="kabeleinsAustria.at@HD">kabel eins HD Austria</channel>
+  <channel site="sky.com" site_id="DE#787" lang="de" xmltv_id="kabeleinsAustria.at@SD">Kabel 1 Austria</channel>
+  <channel site="tv.magenta.at" site_id="207382568111" lang="de" xmltv_id="kabeleinsClassics.de@HD">kabel eins CLASSICS HD</channel>
+  <channel site="web.magentatv.de" site_id="157" lang="de" xmltv_id="kabeleinsClassics.de@SD">Kabel Eins CLASSICS</channel>
+  <channel site="sky.com" site_id="DE#1306" lang="de" xmltv_id="kabeleinsDoku.de@HD">Kabel Eins Doku HD</channel>
+  <channel site="web.magentatv.de" site_id="573" lang="de" xmltv_id="kabeleinsDoku.de@SD">Kabel Eins Doku</channel>
+  <channel site="sky.com" site_id="DE#1325" lang="de" xmltv_id="kabeleinsDokuAustria.at@SD">Kabel 1 Doku HD Austria</channel>
+  <channel site="tv.magenta.at" site_id="206966312058" lang="de" xmltv_id="kronetv.at@HD">krone.tv HD</channel>
+  <channel site="sky.com" site_id="DE#3313" lang="de" xmltv_id="kronetv.at@SD">krone.tv</channel>
+  <channel site="sky.com" site_id="DE#9148" lang="de" xmltv_id="ntv.at@HD">ntv Austria HD</channel>
+  <channel site="sky.com" site_id="DE#3021" lang="de" xmltv_id="ntv.at@SD">ntv Austria</channel>
+  <channel site="web.magentatv.de" site_id="376" lang="de" xmltv_id="ntv.de@SD">ntv</channel>
+  <channel site="sky.com" site_id="DE#3314" lang="de" xmltv_id="oe24TV.at@HD">oe24.TV HD</channel>
+  <channel site="tv.magenta.at" site_id="206968872008" lang="de" xmltv_id="oe24TV.at@SD">oe24.TV</channel>
+  <channel site="web.magentatv.de" site_id="371" lang="de" xmltv_id="phoenix.de@HD">phoenix</channel>
+  <channel site="sky.com" site_id="DE#654" lang="de" xmltv_id="rbbFernsehen.de@Berlin">rbb Berlin HD</channel>
+  <channel site="sky.com" site_id="DE#655" lang="de" xmltv_id="rbbFernsehen.de@Brandenburg">rbb Brandenburg HD</channel>
+  <channel site="teleboy.ch" site_id="486" lang="de" xmltv_id="rbbFernsehen.de@SD">rbb Berlin</channel>
+  <channel site="tv.blue.ch" site_id="1784" lang="de" xmltv_id="rrotv.ch@SD">rrotv</channel>
+  <channel site="sky.com" site_id="DE#1303" lang="de" xmltv_id="sixx.de@HD">SIXX HD</channel>
+  <channel site="web.magentatv.de" site_id="380" lang="de" xmltv_id="sixx.de@SD">sixx</channel>
+  <channel site="sky.com" site_id="DE#1323" lang="de" xmltv_id="sixxAustria.at@HD">sixx HD Austria</channel>
+  <channel site="sky.com" site_id="DE#5309" lang="de" xmltv_id="sixxAustria.at@SD">sixx AUSTRIA</channel>
+  <channel site="sky.com" site_id="DE#734" lang="de" xmltv_id="tagesschau24.de@HD">tagesschau24 HD</channel>
+  <channel site="web.magentatv.de" site_id="400" lang="de" xmltv_id="tagesschau24.de@SD">tagesschau24</channel>
+</channels>
