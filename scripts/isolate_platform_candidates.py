@@ -115,7 +115,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description="Inject and isolate FAST platform channels so their schedules cannot overwrite linear channels."
     )
-    parser.add_argument("--epg-root", required=True, type=Path)
+    parser.add_argument("--epg-root", type=Path, default=Path("upstream/epg"))
     parser.add_argument("--candidates", required=True, type=Path)
     parser.add_argument("--config", required=True, type=Path)
     parser.add_argument("--channels", required=True, type=Path)
@@ -131,7 +131,6 @@ def main() -> int:
     if not isinstance(platform_rules, list) or not platform_rules:
         raise ValueError("platform isolation config must contain a non-empty 'platforms' list")
 
-    # Remove platform candidates already collected under shared/global XMLTV IDs.
     removed = 0
     for original_id in list(channels):
         candidates = channels.get(original_id, [])
@@ -146,7 +145,6 @@ def main() -> int:
         else:
             channels.pop(original_id, None)
 
-    # Re-scan upstream directly so unresolved empty-ID platform channels are included too.
     isolated: dict[str, list[dict[str, Any]]] = {}
     collisions: dict[str, tuple[str, str]] = {}
     scanned_entries = matched_entries = 0
