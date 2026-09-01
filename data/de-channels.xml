@@ -87,7 +87,6 @@
   <channel site="epgshare01.online" site_id="CH1#AUTOMOTO.ch" lang="de" xmltv_id="Automotolachaine.fr@SD">AUTOMOTO</channel>
   <channel site="epgshare01.online" site_id="CH1#B1.TV.ch" lang="de" xmltv_id="B1.ro@SD">B1 TV</channel>
   <channel site="tv.magenta.at" site_id="207382568056" lang="de" xmltv_id="BBCEntertainment.uk@SD">BBC Entertainment</channel>
-  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE2900002Z8" lang="de" xmltv_id="BBCFood.us@SD">BBC Food</channel>
   <channel site="epgshare01.online" site_id="CH1#BBC.Four.ch" lang="de" xmltv_id="BBCFour.uk@UK">BBC Four</channel>
   <channel site="web.magentatv.de" site_id="454" lang="de" xmltv_id="BBCNews.uk@Europe">BBC News</channel>
   <channel site="epgshare01.online" site_id="CH1#BBC.One.ch" lang="de" xmltv_id="BBCOne.uk@London">BBC One</channel>
@@ -217,7 +216,7 @@
   <channel site="tv.magenta.at" site_id="207382568024" lang="de" xmltv_id="CrimePlusInvestigation.de@HD">Crime + Investigation HD</channel>
   <channel site="web.magentatv.de" site_id="106" lang="de" xmltv_id="CrimePlusInvestigation.de@SD">Crime+Investigation</channel>
   <channel site="tvprofil.com" site_id="at/tvprogramm#crime-investigation" lang="de" xmltv_id="CrimePlusInvestigation.uk@SD">Crime &amp; Investigation Channel</channel>
-  <channel site="sky.com" site_id="DE#2009" lang="de" xmltv_id="CrimeTime.us@SD">Crime Time</channel>
+  <channel site="sky.com" site_id="DE#2009" lang="de" xmltv_id="CrimeTime.de@SD">Crime Time</channel>
   <channel site="web.magentatv.de" site_id="186" lang="de" xmltv_id="CuriosityChannel.de@SD">Curiosity Channel</channel>
   <channel site="plex.tv" site_id="654bc54830d2712ab098fc9b" lang="de" xmltv_id="CuriosityNOW.de@DE">Curiosity Now</channel>
   <channel site="plex.tv" site_id="64831c8be3541c909e96d240" lang="en" xmltv_id="CuriosityNOW.de@EN">Curiosity NOW</channel>
@@ -472,7 +471,6 @@
   <channel site="web.magentatv.de" site_id="6685" lang="de" xmltv_id="Juwelo.it@SD">Juwelo</channel>
   <channel site="tv.magenta.at" site_id="206966312329" lang="de" xmltv_id="K19.at@SD">K19</channel>
   <channel site="epgshare01.online" site_id="CH1#K2.ch" lang="de" xmltv_id="K2.it@SD">K2</channel>
-  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD4100002H1" lang="de" xmltv_id="KDrama.id@SD">K-Drama+</channel>
   <channel site="tv.magenta.at" site_id="206966824334" lang="de" xmltv_id="KT1.at@SD">KT 1</channel>
   <channel site="epgshare01.online" site_id="CH1#KTO.ch" lang="de" xmltv_id="KTO.fr@SD">KTO</channel>
   <channel site="web.magentatv.de" site_id="487" lang="de" xmltv_id="KTV.at@SD">K-TV</channel>
@@ -601,7 +599,6 @@
   <channel site="sky.com" site_id="DE#633" lang="de" xmltv_id="NDRFernsehen.de@MecklenburgVorpommern">NDR FS MV HD</channel>
   <channel site="sky.com" site_id="DE#635" lang="de" xmltv_id="NDRFernsehen.de@Niedersachsen">NDR FS NDS HD</channel>
   <channel site="sky.com" site_id="DE#636" lang="de" xmltv_id="NDRFernsehen.de@SchleswigHolstein">NDR FS SH HD</channel>
-  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE17000032I" lang="de" xmltv_id="NEWKPOP.us@SD">NEW KPOP</channel>
   <channel site="dazn.com" site_id="r0kudpubxdhq1pg22sywrz2w3" lang="de" logo="https://image.discovery.indazn.com/eu/v3/linear-channel/none/Logo_LTV_NFL-Network/contain/center/center/none/80/68/56/png/image?brand=dazn" xmltv_id="NFLNetwork.us@SD">NFL Network</channel>
   <channel site="sky.com" site_id="DE#5021" lang="de" xmltv_id="NHKWorldJapan.jp@SD">NHK WORLD-JPN</channel>
   <channel site="epgshare01.online" site_id="CH1#Now.90s.ch" lang="de" xmltv_id="NOWRock.uk@SD">Now 90s</channel>
@@ -620,7 +617,6 @@
   <channel site="sky.com" site_id="DE#2026" lang="de" xmltv_id="NationalGeographicWild.de@HD">NatGeo Wild HD</channel>
   <channel site="web.magentatv.de" site_id="569" lang="de" xmltv_id="NationalGeographicWild.de@SD">National Geographic Wild</channel>
   <channel site="epgshare01.online" site_id="CH1#National.Geographic.Wild.F.ch" lang="de" xmltv_id="NationalGeographicWild.fr@SD">National Geographic Wild F</channel>
-  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE21000013K" lang="de" xmltv_id="NatureTime.es@SD">NatureTime</channel>
   <channel site="tvprofil.com" site_id="at/tvprogramm#nick-comedy-central-plus-1" lang="de" xmltv_id="Nick-ComedyCentral+1.at">Nick - Comedy Central+1</channel>
   <channel site="tvprofil.com" site_id="de/tvprogramm#nick-comedy-central-plus-1" lang="de" xmltv_id="Nick-ComedyCentral+1.de">Nick - Comedy Central+1</channel>
   <channel site="sky.com" site_id="DE#8680" lang="de" xmltv_id="NickComedyCentralPlus1.de@SD">NICK / Comedy Central+1</channel>
@@ -694,7 +690,6 @@
   <channel site="tv.blue.ch" site_id="2110" lang="de" xmltv_id="Parlamentsfernsehen1.de@SD">Deutscher Bundestag</channel>
   <channel site="sky.com" site_id="DE#5404" lang="de" xmltv_id="PearlTV.de@SD">pearl.tv HD Shop</channel>
   <channel site="web.magentatv.de" site_id="228" lang="de" xmltv_id="PenthousePassion.us@SD">Penthouse Passion</channel>
-  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA1000001YK" lang="de" xmltv_id="PeopleAreAwesome.us@SD">People Are Awesome</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#64eddc3485efec00085b0369" lang="de" xmltv_id="PerryMason.us@SD">Perry Mason</channel>
   <channel site="epgshare01.online" site_id="CH1#Phoenix.Info.News.ch" lang="de" xmltv_id="PhoenixInfoNewsChannel.hk@SD">Phoenix Info News</channel>
   <channel site="epgshare01.online" site_id="CH1#Pink.Extra.ch" lang="de" xmltv_id="PinkExtra.rs@SD">Pink Extra</channel>
@@ -709,6 +704,209 @@
   <channel site="epgshare01.online" site_id="CH1#Pink.World.ch" lang="de" xmltv_id="PinkWorld.rs@SD">Pink World</channel>
   <channel site="epgshare01.online" site_id="CH1#Piwi+.ch" lang="de" xmltv_id="PiwiPlus.fr@SD">Piwi+</channel>
   <channel site="web.magentatv.de" site_id="34" lang="de" xmltv_id="PlayboyTVEurope.us@SD">Playboy Europe</channel>
+  <channel site="pluto.tv" site_id="5ad9b7aae738977e2c312132" lang="de" xmltv_id="PlutoTV.de.5ad9b7aae738977e2c312132">World Poker Tour [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5ad9b8551b95267e225e59c1" lang="de" xmltv_id="PlutoTV.de.5ad9b8551b95267e225e59c1">Pluto TV Explore [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5be1c3f9851dd5632e2c91b2" lang="de" xmltv_id="PlutoTV.de.5be1c3f9851dd5632e2c91b2">Pluto TV Nature [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5c5c3b948002db3c3e0b262e" lang="de" xmltv_id="PlutoTV.de.5c5c3b948002db3c3e0b262e">Pluto TV Movies [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5caf325764025859afdd6c4d" lang="de" xmltv_id="PlutoTV.de.5caf325764025859afdd6c4d">MTV Pluto TV [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5caf32c2a5068259a32320fc" lang="de" xmltv_id="PlutoTV.de.5caf32c2a5068259a32320fc">MTV The Shores [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5caf330ea5068259a32320fd" lang="de" xmltv_id="PlutoTV.de.5caf330ea5068259a32320fd">MTV Dating [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5cb5cfe5caf83414128f209e" lang="de" xmltv_id="PlutoTV.de.5cb5cfe5caf83414128f209e">KultKrimi [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5cb5d043a461406ffe3fb2de" lang="de" xmltv_id="PlutoTV.de.5cb5d043a461406ffe3fb2de">Telenovela ZDF [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5cd149f021cb6c55e258bbe8" lang="de" xmltv_id="PlutoTV.de.5cd149f021cb6c55e258bbe8">Pluto TV Sitcoms+ [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5ce40f42ba7f7f5ea9518fe1" lang="de" xmltv_id="PlutoTV.de.5ce40f42ba7f7f5ea9518fe1">Ice Pilots [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5cffcf5686dfe15595fb3f56" lang="de" xmltv_id="PlutoTV.de.5cffcf5686dfe15595fb3f56">MTV Teen Mom [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5d00e8adaab96b5635b2a005" lang="de" xmltv_id="PlutoTV.de.5d00e8adaab96b5635b2a005">SpongeBob Schwammkopf [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5d4947590ba40f75dc29c26b" lang="de" xmltv_id="PlutoTV.de.5d4947590ba40f75dc29c26b">CC Pluto TV [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5d6792bd6be2998ad0ccce30" lang="de" xmltv_id="PlutoTV.de.5d6792bd6be2998ad0ccce30">Totally Turtles [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5d767ab2b456c8cf265ce921" lang="de" xmltv_id="PlutoTV.de.5d767ab2b456c8cf265ce921">Pluto TV Sitcoms [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5d767ae7b456c8cf265ce922" lang="de" xmltv_id="PlutoTV.de.5d767ae7b456c8cf265ce922">Pluto TV Animals [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5d767b1c126c65d0a307355f" lang="de" xmltv_id="PlutoTV.de.5d767b1c126c65d0a307355f">Pluto TV History [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5d767b4889bca2ce7b73ef2e" lang="de" xmltv_id="PlutoTV.de.5d767b4889bca2ce7b73ef2e">Pluto TV Science [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5db6a697d5f34a000934cd13" lang="de" xmltv_id="PlutoTV.de.5db6a697d5f34a000934cd13">MTV Catfish TV Show [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5dc190f7bfed110009d934c3" lang="de" xmltv_id="PlutoTV.de.5dc190f7bfed110009d934c3">Pluto TV Serie [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5dc280c9aa218c0009724b4b" lang="de" xmltv_id="PlutoTV.de.5dc280c9aa218c0009724b4b">Pluto TV Food [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5dc287ce3086a20009f5024c" lang="de" xmltv_id="PlutoTV.de.5dc287ce3086a20009f5024c">Pluto TV Romance [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5ddbf866b1862a0009a0648e" lang="de" xmltv_id="PlutoTV.de.5ddbf866b1862a0009a0648e">Pluto TV Serie+ [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5dde47b63585b500099f74ec" lang="de" xmltv_id="PlutoTV.de.5dde47b63585b500099f74ec">Pluto TV Kultfilme [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5e7b6c60fd20c50007910bf5" lang="de" xmltv_id="PlutoTV.de.5e7b6c60fd20c50007910bf5">Pluto TV Crime [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5e7cb84a172a0f0007da69e4" lang="de" xmltv_id="PlutoTV.de.5e7cb84a172a0f0007da69e4">Red Bull TV [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5e8b580a233dc90007f0cb9d" lang="de" xmltv_id="PlutoTV.de.5e8b580a233dc90007f0cb9d">iCarly [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5ede448d3d50590007a4419e" lang="de" xmltv_id="PlutoTV.de.5ede448d3d50590007a4419e">Nickelodeon Toons [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5ede45d077746000072be0fe" lang="de" xmltv_id="PlutoTV.de.5ede45d077746000072be0fe">Auction Hunters [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5f0d668b872e4400073acc68" lang="de" xmltv_id="PlutoTV.de.5f0d668b872e4400073acc68">Nickelodeon Teen [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5f760c3d41aa2d0007bfde19" lang="de" xmltv_id="PlutoTV.de.5f760c3d41aa2d0007bfde19">Auto Motor Sport [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5f9847fd513250000728a9a5" lang="de" xmltv_id="PlutoTV.de.5f9847fd513250000728a9a5">MTV Ridiculousness [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="5f98487036af340008da1e37" lang="de" xmltv_id="PlutoTV.de.5f98487036af340008da1e37">Pluto TV Paranormal [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="60080e8a4bf36000076a81b1" lang="de" xmltv_id="PlutoTV.de.60080e8a4bf36000076a81b1">N24 Doku [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6054a9f4bc8a5f000771504c" lang="de" xmltv_id="PlutoTV.de.6054a9f4bc8a5f000771504c">Takeshi's Castle [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="608181d420fc8500075f612a" lang="de" xmltv_id="PlutoTV.de.608181d420fc8500075f612a">Pluto TV Anime [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="60afb576053df900076fa2f0" lang="de" xmltv_id="PlutoTV.de.60afb576053df900076fa2f0">Beverly Hills 90210 [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="60afbad343e3840007164348" lang="de" xmltv_id="PlutoTV.de.60afbad343e3840007164348">Chaos City [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="60c716084d842c00085f6e64" lang="de" xmltv_id="PlutoTV.de.60c716084d842c00085f6e64">Comedy Central South Park [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="60e4519e6873180007d3cddb" lang="de" xmltv_id="PlutoTV.de.60e4519e6873180007d3cddb">BBC Travel [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="60ed498c4248a400077c0b9d" lang="de" xmltv_id="PlutoTV.de.60ed498c4248a400077c0b9d">Pluto TV Sci-Fi [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="611e7f224676bf00076a4d8d" lang="de" xmltv_id="PlutoTV.de.611e7f224676bf00076a4d8d">Cheers [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="61409f8d6feb30000766b675" lang="de" xmltv_id="PlutoTV.de.61409f8d6feb30000766b675">Pluto TV Space [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6152ee71bf99590007893a11" lang="de" xmltv_id="PlutoTV.de.6152ee71bf99590007893a11">Pluto TV Star Trek [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="615333098185f00008715a56" lang="de" xmltv_id="PlutoTV.de.615333098185f00008715a56">Pluto TV True Crime [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="615c1e5ce3039400070a0547" lang="de" xmltv_id="PlutoTV.de.615c1e5ce3039400070a0547">MOVIEDOME [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="617aad99b68ef100072608cd" lang="de" xmltv_id="PlutoTV.de.617aad99b68ef100072608cd">Pluto TV Mystery [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="61b33085897b9d000702b72e" lang="de" xmltv_id="PlutoTV.de.61b33085897b9d000702b72e">Just.fishing [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="622f40c901d4b70007ad7609" lang="de" xmltv_id="PlutoTV.de.622f40c901d4b70007ad7609">Sabrina - Total verhext! [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="622f487722d9d400075f74dd" lang="de" xmltv_id="PlutoTV.de.622f487722d9d400075f74dd">Ein Engel auf Erden [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="622f6e1e2792150007e0b2ff" lang="de" xmltv_id="PlutoTV.de.622f6e1e2792150007e0b2ff">Alle hassen Chris [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="622f6faf65be650007f57aab" lang="de" xmltv_id="PlutoTV.de.622f6faf65be650007f57aab">Hausmeister Krause [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="62441d6ded1827000763dcda" lang="de" xmltv_id="PlutoTV.de.62441d6ded1827000763dcda">CBS News 24/7 [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6270ea4345f5bc0007823048" lang="de" xmltv_id="PlutoTV.de.6270ea4345f5bc0007823048">Fury [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="62a0b2aff4cf470007e47e29" lang="de" xmltv_id="PlutoTV.de.62a0b2aff4cf470007e47e29">Fluss-Monster [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="62bc1784120ba80007935aaa" lang="de" xmltv_id="PlutoTV.de.62bc1784120ba80007935aaa">Awkward [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="62cebd7302478b00073a6b71" lang="de" xmltv_id="PlutoTV.de.62cebd7302478b00073a6b71">Der Denver-Clan [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="62cebf042ffc6d0007c4e59a" lang="de" xmltv_id="PlutoTV.de.62cebf042ffc6d0007c4e59a">Frasier [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="62f4f4b88157cf00075c22db" lang="de" xmltv_id="PlutoTV.de.62f4f4b88157cf00075c22db">Pluto TV Horror [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="630348a54c48ce00077eb6c7" lang="de" xmltv_id="PlutoTV.de.630348a54c48ce00077eb6c7">Becker [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6305ca798bd95300072d2f93" lang="de" xmltv_id="PlutoTV.de.6305ca798bd95300072d2f93">Filmgold [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="630dd3b2605f140007e002f5" lang="de" xmltv_id="PlutoTV.de.630dd3b2605f140007e002f5">Pluto TV Western [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="634fe5afece2e60007c9d8b8" lang="de" xmltv_id="PlutoTV.de.634fe5afece2e60007c9d8b8">Mission Impossible [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="638f2983dcd9100008c2374d" lang="de" xmltv_id="PlutoTV.de.638f2983dcd9100008c2374d">Rawhide - Tausend Meilen Staub [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="638f2bc7bc363100072f02dd" lang="de" xmltv_id="PlutoTV.de.638f2bc7bc363100072f02dd">Rauchende Colts [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="642abea1283aa4000805bb5b" lang="de" xmltv_id="PlutoTV.de.642abea1283aa4000805bb5b">Täterjagd [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="642ad072283aa4000806148c" lang="de" xmltv_id="PlutoTV.de.642ad072283aa4000806148c">Pluto TV Weihnachten im Sommer [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="642ad2127ef83900085f8910" lang="de" xmltv_id="PlutoTV.de.642ad2127ef83900085f8910">Mork vom Ork [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="642d4493aa2d690008f0a03f" lang="de" xmltv_id="PlutoTV.de.642d4493aa2d690008f0a03f">Yu-Gi-Oh! [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="642d7e029189ce0008958af5" lang="de" xmltv_id="PlutoTV.de.642d7e029189ce0008958af5">X-Factor: Das Unfassbare [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="644257fe7cb4b100081ed874" lang="de" xmltv_id="PlutoTV.de.644257fe7cb4b100081ed874">Hell's Kitchen [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6447dea7e94c380008dba94c" lang="de" xmltv_id="PlutoTV.de.6447dea7e94c380008dba94c">Germany Shore [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="64526a145a0cd50008632bfa" lang="de" xmltv_id="PlutoTV.de.64526a145a0cd50008632bfa">Pluto TV heiße Nächte [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="645a0ddfe1979c00086d83ff" lang="de" xmltv_id="PlutoTV.de.645a0ddfe1979c00086d83ff">Red Shoe Diaries [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="646b1404ee6a2f00082b5d66" lang="de" xmltv_id="PlutoTV.de.646b1404ee6a2f00082b5d66">South Park: Kenny Collection [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="646b1438e94c3800082a8cff" lang="de" xmltv_id="PlutoTV.de.646b1438e94c3800082a8cff">South Park: Stan Collection [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="646b14747cb4b1000875724d" lang="de" xmltv_id="PlutoTV.de.646b14747cb4b1000875724d">South Park: Cartman Collection [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="646b14a0e94c3800082a8d3a" lang="de" xmltv_id="PlutoTV.de.646b14a0e94c3800082a8d3a">South Park: Butters Collection [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="646b14d0e1979c0008915a09" lang="de" xmltv_id="PlutoTV.de.646b14d0e1979c0008915a09">South Park: Kyle Collection [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="646b150a15939400089e2702" lang="en" xmltv_id="PlutoTV.de.646b150a15939400089e2702">South Park: Original Version [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="64afe50c5dc16600087f3227" lang="de" xmltv_id="PlutoTV.de.64afe50c5dc16600087f3227">DAZN Heldinnen x Pluto TV [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="64b67f0424ade50008a3be17" lang="de" xmltv_id="PlutoTV.de.64b67f0424ade50008a3be17">DAZN Darts x Pluto TV [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="64be635a40962900080aaca5" lang="de" xmltv_id="PlutoTV.de.64be635a40962900080aaca5">Rules of Engagement [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="64be64445dc166000899ce75" lang="de" xmltv_id="PlutoTV.de.64be64445dc166000899ce75">Pluto TV Polizeiserien [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="64be7398e4391c0008cdedfe" lang="de" xmltv_id="PlutoTV.de.64be7398e4391c0008cdedfe">Pluto TV Bud &amp; Terence [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="64be745340962900080b55e7" lang="de" xmltv_id="PlutoTV.de.64be745340962900080b55e7">Melrose Place [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="64c109735dc1660008a4a2dc" lang="de" xmltv_id="PlutoTV.de.64c109735dc1660008a4a2dc">Top Gear [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="64eddc3485efec00085b0369" lang="de" xmltv_id="PlutoTV.de.64eddc3485efec00085b0369">Perry Mason [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="64eddce19001910008df22b8" lang="de" xmltv_id="PlutoTV.de.64eddce19001910008df22b8">F.B.I. Files [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="65004605110545000842035d" lang="de" xmltv_id="PlutoTV.de.65004605110545000842035d">Pluto TV Action [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="650adc3198020f000862eed4" lang="de" xmltv_id="PlutoTV.de.650adc3198020f000862eed4">Unentdeckt – Mörder unter uns [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="65253d66c52b3600083d8dd2" lang="de" xmltv_id="PlutoTV.de.65253d66c52b3600083d8dd2">Wicked Tuna [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="655ca3d1fbc15b00081f1186" lang="de" xmltv_id="PlutoTV.de.655ca3d1fbc15b00081f1186">Love Boat [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="655ca57e4261ca00080b3a04" lang="de" xmltv_id="PlutoTV.de.655ca57e4261ca00080b3a04">Anger Management [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6576c20fb3801200084786c9" lang="de" xmltv_id="PlutoTV.de.6576c20fb3801200084786c9">SPIEGEL TV [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="65a67c494a10d800085cab06" lang="de" xmltv_id="PlutoTV.de.65a67c494a10d800085cab06">Drake &amp; Josh [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="65a67d572fac9c000835eb3a" lang="de" xmltv_id="PlutoTV.de.65a67d572fac9c000835eb3a">Moviepilot TV mit Pluto TV [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="65a67dd13af63d0008257f17" lang="de" xmltv_id="PlutoTV.de.65a67dd13af63d0008257f17">90210 [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="65a7d99f4a10d800086083a9" lang="de" xmltv_id="PlutoTV.de.65a7d99f4a10d800086083a9">Assassination Classroom [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="65b923f90cb1a100088a03ab" lang="de" xmltv_id="PlutoTV.de.65b923f90cb1a100088a03ab">Terra Mater WILD [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="65b9268fc798e800085add89" lang="de" xmltv_id="PlutoTV.de.65b9268fc798e800085add89">SPIEGEL TV Konflikte [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="65d5fc39a25d5e00082895c4" lang="de" xmltv_id="PlutoTV.de.65d5fc39a25d5e00082895c4">Naruto [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="65dde5848145cb00083277f6" lang="de" xmltv_id="PlutoTV.de.65dde5848145cb00083277f6">KultKrimi: Derrick [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="65dde5ef28730900089af7cf" lang="de" xmltv_id="PlutoTV.de.65dde5ef28730900089af7cf">KultKrimi: Der Alte [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="65dde626ec9fda0008b3dc89" lang="de" xmltv_id="PlutoTV.de.65dde626ec9fda0008b3dc89">KultKrimi: Der Kommissar [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="660bfc032433010008def35a" lang="de" xmltv_id="PlutoTV.de.660bfc032433010008def35a">FIFA+ [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="660c010ce8fba800084f0697" lang="de" xmltv_id="PlutoTV.de.660c010ce8fba800084f0697">South Park Armageddon [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="661801e871e8c30008a73f7b" lang="de" xmltv_id="PlutoTV.de.661801e871e8c30008a73f7b">Pluto TV Camp [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6628e513cee0d90008639b46" lang="de" xmltv_id="PlutoTV.de.6628e513cee0d90008639b46">RoboCop [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="66337de656fc840008ff7a65" lang="de" xmltv_id="PlutoTV.de.66337de656fc840008ff7a65">Pluto TV Kult Comedies [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="66337e365a402e00087eccaf" lang="de" xmltv_id="PlutoTV.de.66337e365a402e00087eccaf">CNN Headlines International [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="66337e6ba0a74e000889563b" lang="de" xmltv_id="PlutoTV.de.66337e6ba0a74e000889563b">MODUS Super Series Darts [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="66337ea1307fa300082c28a0" lang="de" xmltv_id="PlutoTV.de.66337ea1307fa300082c28a0">BVB-Frauen [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6639d7d4b18d700008da5316" lang="de" xmltv_id="PlutoTV.de.6639d7d4b18d700008da5316">Euronews [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="663a15d7cb3ea10008edac88" lang="de" xmltv_id="PlutoTV.de.663a15d7cb3ea10008edac88">Farmland TV [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="663a163f8ea5560008a3f234" lang="de" xmltv_id="PlutoTV.de.663a163f8ea5560008a3f234">Andromeda [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="663e09b341af640008c1b68c" lang="de" xmltv_id="PlutoTV.de.663e09b341af640008c1b68c">Stand-up Comedy [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="663e09e4b18d700008e48dcf" lang="de" xmltv_id="PlutoTV.de.663e09e4b18d700008e48dcf">BIG BROTHER CLASSIC [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="664f0d373d173b0008164948" lang="de" xmltv_id="PlutoTV.de.664f0d373d173b0008164948">South Park: Stars &amp; Sternchen [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="664f10c4f9992200084a2f47" lang="de" xmltv_id="PlutoTV.de.664f10c4f9992200084a2f47">Pluto TV Heiße Nächte Retro [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="664f12bb3d173b0008168c1f" lang="de" xmltv_id="PlutoTV.de.664f12bb3d173b0008168c1f">South Park Rocks! [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="666fe4768768aa0008c31ddf" lang="de" xmltv_id="PlutoTV.de.666fe4768768aa0008c31ddf">Saving Hope [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6672f49f61a39900089db68e" lang="de" xmltv_id="PlutoTV.de.6672f49f61a39900089db68e">Pluto TV Deutsche Comedy [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="667d3534ca74680008696051" lang="de" xmltv_id="PlutoTV.de.667d3534ca74680008696051">Ladykracher [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="667d63d236a2f90008f72269" lang="de" xmltv_id="PlutoTV.de.667d63d236a2f90008f72269">Axel! [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6683f7fe36a2f9000804940c" lang="de" xmltv_id="PlutoTV.de.6683f7fe36a2f9000804940c">DAZN Handball x Pluto TV [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="66a10384d5125900089dfd04" lang="de" xmltv_id="PlutoTV.de.66a10384d5125900089dfd04">Top Gear Challenge [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="66a244d5cd0d3100083b1e47" lang="de" xmltv_id="PlutoTV.de.66a244d5cd0d3100083b1e47">Eine himmlische Familie [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="66c45b1803e3b20008d8c200" lang="de" xmltv_id="PlutoTV.de.66c45b1803e3b20008d8c200">CNNi [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="66c6fc06489bab0008b6f9da" lang="de" xmltv_id="PlutoTV.de.66c6fc06489bab0008b6f9da">Die Nanny [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="66c6fcfc6838ee00085beb1a" lang="de" xmltv_id="PlutoTV.de.66c6fcfc6838ee00085beb1a">McLeods Töchter [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="677e5a3d7bffa6000808dbf2" lang="de" xmltv_id="PlutoTV.de.677e5a3d7bffa6000808dbf2">Pluto TV Britische Serien [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="677fafd91da79bfe4fb0b4ec" lang="de" xmltv_id="PlutoTV.de.677fafd91da79bfe4fb0b4ec">Quantum Leap [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="677fb0231da79bfe4fb0bf4e" lang="de" xmltv_id="PlutoTV.de.677fb0231da79bfe4fb0bf4e">The Real Housewives [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="677fb078a4af36ad50111032" lang="de" xmltv_id="PlutoTV.de.677fb078a4af36ad50111032">Die Sieben-Millionen-Dollar-Frau [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6790fa9e1cfc4aa96dfadcef" lang="de" xmltv_id="PlutoTV.de.6790fa9e1cfc4aa96dfadcef">Frasier: Berühmte Gäste [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="67a324d221af380008105d6f" lang="de" xmltv_id="PlutoTV.de.67a324d221af380008105d6f">Eine schrecklich nette Familie [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="67b481cc1a5ca760801c6c5e" lang="de" xmltv_id="PlutoTV.de.67b481cc1a5ca760801c6c5e">The Last Flight [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="67d983d6a1609bdb523f5f9b" lang="de" xmltv_id="PlutoTV.de.67d983d6a1609bdb523f5f9b">Pluto TV Sanfte Berührungen [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="67d984408d8dc3d7754dccf2" lang="de" xmltv_id="PlutoTV.de.67d984408d8dc3d7754dccf2">Pluto TV Nordic Crime [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="67d984c989788ef7f058b084" lang="de" xmltv_id="PlutoTV.de.67d984c989788ef7f058b084">Profiling Paris [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="67dc21ce5a15c0759a07ee19" lang="de" xmltv_id="PlutoTV.de.67dc21ce5a15c0759a07ee19">Der Chef [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="67ebbdced2832b463faa1e79" lang="de" xmltv_id="PlutoTV.de.67ebbdced2832b463faa1e79">KultKrimi: Küstenwache [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="67ebc04855de98dc71428538" lang="en" xmltv_id="PlutoTV.de.67ebc04855de98dc71428538">Pluto TV Emmanuelle Filme [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="67ebc1b6432a0e406f141341" lang="de" xmltv_id="PlutoTV.de.67ebc1b6432a0e406f141341">Pluto TV Reality [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="67ed0c86f7c5d70b90889a51" lang="de" xmltv_id="PlutoTV.de.67ed0c86f7c5d70b90889a51">KultKrimi: Die Rettungsflieger [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="67f3eb1c443f0671bc03ece8" lang="de" xmltv_id="PlutoTV.de.67f3eb1c443f0671bc03ece8">Nick Jr. Club [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="67f3eb800a1beb98767ca748" lang="de" xmltv_id="PlutoTV.de.67f3eb800a1beb98767ca748">Nickelodeon Classics [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="67f68bd2135aeda9ddf0ef54" lang="de" xmltv_id="PlutoTV.de.67f68bd2135aeda9ddf0ef54">Pluto TV Adult Animation [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="67fe498f9ebfe4142424c55d" lang="de" xmltv_id="PlutoTV.de.67fe498f9ebfe4142424c55d">Beelzebub [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="67ff7d9c7fc25e0e72451bc9" lang="de" xmltv_id="PlutoTV.de.67ff7d9c7fc25e0e72451bc9">Pluto TV Horror-Serien [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="67ff7dd84906b1acfad97330" lang="de" xmltv_id="PlutoTV.de.67ff7dd84906b1acfad97330">Blue Mountain State [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="680f375e6798ccd1185b58f9" lang="de" xmltv_id="PlutoTV.de.680f375e6798ccd1185b58f9">Heartland [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="680f462556ff83bcd6ba2816" lang="de" xmltv_id="PlutoTV.de.680f462556ff83bcd6ba2816">Rookie Blue [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="682453215c646751955e1204" lang="de" xmltv_id="PlutoTV.de.682453215c646751955e1204">Pluto TV Western Serien [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6824539e1295f98347e95242" lang="de" xmltv_id="PlutoTV.de.6824539e1295f98347e95242">Missions [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="684ac10236c9361b1977f7bc" lang="de" xmltv_id="PlutoTV.de.684ac10236c9361b1977f7bc">Bronco [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="685136fb33a52de120bbb086" lang="de" xmltv_id="PlutoTV.de.685136fb33a52de120bbb086">MTV Pride [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="68590366010ddd78ef837d29" lang="de" xmltv_id="PlutoTV.de.68590366010ddd78ef837d29">KultKrimi: Ein Fall für zwei [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="685aaec481c345899e4458bb" lang="de" xmltv_id="PlutoTV.de.685aaec481c345899e4458bb">Dominance FC TV [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6864e8f264d94c1425fb4563" lang="de" xmltv_id="PlutoTV.de.6864e8f264d94c1425fb4563">Merhaba Türkische Serien [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6866525c8a412a0e95c438b4" lang="de" xmltv_id="PlutoTV.de.6866525c8a412a0e95c438b4">Dyn Sport Mix [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="686cfef52704ca31d85c4bf1" lang="de" xmltv_id="PlutoTV.de.686cfef52704ca31d85c4bf1">Pastewka [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="686cff3224918d4300fa542b" lang="de" xmltv_id="PlutoTV.de.686cff3224918d4300fa542b">Stromberg [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="686cffbf3ffa5e0c91cdcfb3" lang="de" xmltv_id="PlutoTV.de.686cffbf3ffa5e0c91cdcfb3">21 Jump Street [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="686d004094a028da3aac8cb0" lang="de" xmltv_id="PlutoTV.de.686d004094a028da3aac8cb0">Don Matteo [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6870c9333ffa5e0c914e9205" lang="de" xmltv_id="PlutoTV.de.6870c9333ffa5e0c914e9205">Tennis Channel [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="688734b9035d6ef9c34aac16" lang="de" xmltv_id="PlutoTV.de.688734b9035d6ef9c34aac16">Die fliegenden Ärzte [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="688735087b2cf33d01a2d411" lang="de" xmltv_id="PlutoTV.de.688735087b2cf33d01a2d411">Sea Patrol [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="68ac5543a1ac0c90f2c8943e" lang="de" xmltv_id="PlutoTV.de.68ac5543a1ac0c90f2c8943e">Pluto TV Snooker 900 [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="68ad90673efb41cd97c95825" lang="de" xmltv_id="PlutoTV.de.68ad90673efb41cd97c95825">The Outer Limits [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="68ada3395190a45dc9c445cf" lang="de" xmltv_id="PlutoTV.de.68ada3395190a45dc9c445cf">Pluto TV Historische Serien [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="68ada3edf84960586ad31c7d" lang="de" xmltv_id="PlutoTV.de.68ada3edf84960586ad31c7d">Pluto TV Reportagen [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="68ada46d5190a45dc9c45af1" lang="de" xmltv_id="PlutoTV.de.68ada46d5190a45dc9c45af1">Pluto TV Ferne Galaxien [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="68d27437e6767bdeb23f0336" lang="de" xmltv_id="PlutoTV.de.68d27437e6767bdeb23f0336">Gigolos [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="68d2759a59fd82da3226492d" lang="de" xmltv_id="PlutoTV.de.68d2759a59fd82da3226492d">The L Word – Wenn Frauen lieben [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="68d276ce59fd82da32267d0d" lang="de" xmltv_id="PlutoTV.de.68d276ce59fd82da32267d0d">Liebe Sünde [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="68d277fb12bf71eaaed3e9f1" lang="de" xmltv_id="PlutoTV.de.68d277fb12bf71eaaed3e9f1">Flipper [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="68d669f9508ba507f075b5fe" lang="de" xmltv_id="PlutoTV.de.68d669f9508ba507f075b5fe">SUMO Paris 2026 [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6914913274601d957ae35565" lang="de" xmltv_id="PlutoTV.de.6914913274601d957ae35565">Ax Men - Die Holzfäller [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="691491c6bb69fb3258c3524a" lang="de" xmltv_id="PlutoTV.de.691491c6bb69fb3258c3524a">Swamp People [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="691b2b690d121b44ad4a53ef" lang="de" xmltv_id="PlutoTV.de.691b2b690d121b44ad4a53ef">Dating hinter Gittern [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="69492467ae33e24d916e56cf" lang="de" xmltv_id="PlutoTV.de.69492467ae33e24d916e56cf">Pluto TV Star Trek: Animation [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="69776b58036e883f39e5ab8a" lang="de" xmltv_id="PlutoTV.de.69776b58036e883f39e5ab8a">Star Trek: The Original Series [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="69776ce979545c21a1220bff" lang="de" xmltv_id="PlutoTV.de.69776ce979545c21a1220bff">Star Trek: The Next Generation [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="69776f2b2c00406316a01945" lang="de" xmltv_id="PlutoTV.de.69776f2b2c00406316a01945">Call My Agent! [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="697a0577f9c3aa5a215a4ef8" lang="de" xmltv_id="PlutoTV.de.697a0577f9c3aa5a215a4ef8">Will&amp;Grace [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6989b64839dd847194cadcd7" lang="de" xmltv_id="PlutoTV.de.6989b64839dd847194cadcd7">The Librarians [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="6996f0335452cb4f0a2c4153" lang="de" xmltv_id="PlutoTV.de.6996f0335452cb4f0a2c4153">The Nanny &amp; Mr Sheffield - A Fine Romance [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="69a554179a3f3bb488c7d2be" lang="de" xmltv_id="PlutoTV.de.69a554179a3f3bb488c7d2be">Pluto TV Laughs in Spanish [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="69a554497ed3b3fff0b9ca80" lang="de" xmltv_id="PlutoTV.de.69a554497ed3b3fff0b9ca80">Space Live [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="69b015c5d29cc97de7da4af8" lang="de" xmltv_id="PlutoTV.de.69b015c5d29cc97de7da4af8">Pluto TV Haialarm [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="69b0160da9b840a456a11b4a" lang="de" xmltv_id="PlutoTV.de.69b0160da9b840a456a11b4a">Vier Frauen und ein Todesfall [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="69b01641a9b840a456a11c18" lang="de" xmltv_id="PlutoTV.de.69b01641a9b840a456a11c18">Schlosshotel Orth [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="69b0167477cdde1f05c8a625" lang="de" xmltv_id="PlutoTV.de.69b0167477cdde1f05c8a625">Der Bergdoktor [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="69b14863dd687227e1e4b6b2" lang="de" xmltv_id="PlutoTV.de.69b14863dd687227e1e4b6b2">Seaquest [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="69b968a58323ef2714d1aa36" lang="de" xmltv_id="PlutoTV.de.69b968a58323ef2714d1aa36">Schnell ermittelt [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="69b968ba255fecb01f602257" lang="de" xmltv_id="PlutoTV.de.69b968ba255fecb01f602257">Pluto TV Comedy Therapie [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="69b968ca1c36025fd0a3d92d" lang="de" xmltv_id="PlutoTV.de.69b968ca1c36025fd0a3d92d">Pluto TV Worst of Bundy [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="69b968e011fc7b9e27c0d958" lang="de" xmltv_id="PlutoTV.de.69b968e011fc7b9e27c0d958">Pluto TV Fran: Beste Mama-Momente [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="69c2ac2b14c0213702da7a29" lang="de" xmltv_id="PlutoTV.de.69c2ac2b14c0213702da7a29">Die glorreichen Sieben [Pluto TV]</channel>
+  <channel site="pluto.tv" site_id="69f209cd0ed14e790bddeb46" lang="de" xmltv_id="PlutoTV.de.69f209cd0ed14e790bddeb46">Pluto TV Pride [Pluto TV]</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#65004605110545000842035d" lang="de" xmltv_id="PlutoTVAction.de@DACH">Pluto TV Action</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/gb#5dbfeb961b411c00090b52b3" lang="en" xmltv_id="PlutoTVAction.de@UK">Pluto TV Action</channel>
   <channel site="pluto.tv" site_id="62794647e3cbcb000757dc65" lang="en" xmltv_id="PlutoTVAction.de@UKPlus">Pluto TV Action+</channel>
@@ -770,11 +968,9 @@
   <channel site="i.mjh.nz" site_id="PlutoTV/de#5d767b4889bca2ce7b73ef2e" lang="de" xmltv_id="PlutoTVScience.de@DACH">Pluto TV Science</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/gb#5d9492c77ea6f99188738ff1" lang="en" xmltv_id="PlutoTVScience.de@UK">Pluto TV Science</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#5dc190f7bfed110009d934c3" lang="de" xmltv_id="PlutoTVSerie.de@DACH">Pluto TV Serie</channel>
-  <channel site="pluto.tv" site_id="5ddbf866b1862a0009a0648e" lang="de" xmltv_id="PlutoTVSerie.de@DACHPlus">Pluto TV Serie+</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/it#60b9ff2722bfa400072676ef" lang="it" xmltv_id="PlutoTVSerie.de@IT">Pluto TV Serie</channel>
   <channel site="pluto.tv" site_id="61163de693706b0007f04898" lang="it" xmltv_id="PlutoTVSerie.de@ITPlus">Pluto TV Serie+</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#5d767ab2b456c8cf265ce921" lang="de" xmltv_id="PlutoTVSitcoms.de@DACH">Pluto TV Sitcoms</channel>
-  <channel site="pluto.tv" site_id="5cd149f021cb6c55e258bbe8" lang="de" xmltv_id="PlutoTVSitcoms.de@DACHPlus">Pluto TV Sitcoms+</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/gb#62f53dc6ee9a0400071dc22b" lang="en" xmltv_id="PlutoTVSitcoms.de@UK">Pluto TV Sitcoms</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#68ac5543a1ac0c90f2c8943e" lang="de" xmltv_id="PlutoTVSnooker900.de@DACH">Pluto TV Snooker 900</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/es#69148c470155f9b136b5d856" lang="es" xmltv_id="PlutoTVSnooker900.de@ES">Pluto TV Snooker 900</channel>
@@ -843,7 +1039,7 @@
   <channel site="web.magentatv.de" site_id="143" lang="de" xmltv_id="RFO.de@SD">RFO</channel>
   <channel site="epgshare01.online" site_id="CH1#RIK.Sat.ch" lang="de" xmltv_id="RIKSat.cy@SD">RIK Sat</channel>
   <channel site="epgshare01.online" site_id="CH1#RMC.Découverte.ch" lang="de" xmltv_id="RMCDecouverte.fr@SD">RMC Découverte</channel>
-  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH40000020D" lang="de" xmltv_id="RMCLife.fr@SD">RMC Life</channel>
+  <channel site="tvprofil.com" site_id="ch/tv-programm#cherie-25" lang="de" xmltv_id="RMCLife.fr@SD">RMC Life</channel>
   <channel site="epgshare01.online" site_id="CH1#RMC.Story.ch" lang="de" xmltv_id="RMCStory.fr@SD">RMC Story</channel>
   <channel site="web.magentatv.de" site_id="246" lang="de" xmltv_id="RNF.de@SD">RNF</channel>
   <channel site="epgshare01.online" site_id="CH1#RSI.La.1.ch" lang="de" xmltv_id="RSILa1.ch@SD">RSI La 1</channel>
@@ -944,6 +1140,494 @@
   <channel site="web.magentatv.de" site_id="2611" lang="de" xmltv_id="SachsenFernsehenDresden.de@SD">Dresden Fernsehen</channel>
   <channel site="web.magentatv.de" site_id="3179" lang="de" xmltv_id="SachsenFernsehenLeipzig.de@SD">Leipzig Fernsehen</channel>
   <channel site="web.magentatv.de" site_id="3073" lang="de" xmltv_id="SalveTV.de@SD">salve.tv</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT1100001B5" lang="de" xmltv_id="SamsungTVPlus.at.AT1100001B5">Landlust TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT1100003X6" lang="de" xmltv_id="SamsungTVPlus.at.AT1100003X6">Top Barça [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT1100004SR" lang="de" xmltv_id="SamsungTVPlus.at.AT1100004SR">Sky News International [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT12000011L" lang="de" xmltv_id="SamsungTVPlus.at.AT12000011L">Free Comedy [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT1400001YL" lang="de" xmltv_id="SamsungTVPlus.at.AT1400001YL">Zee TV HD DE [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT15000015I" lang="de" xmltv_id="SamsungTVPlus.at.AT15000015I">KultKrimi [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT1500002N1" lang="de" xmltv_id="SamsungTVPlus.at.AT1500002N1">Telenovela ZDF [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT1500003M7" lang="de" xmltv_id="SamsungTVPlus.at.AT1500003M7">Herzfrequenz [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT19000012X" lang="de" xmltv_id="SamsungTVPlus.at.AT19000012X">Himmlisches Kino [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT1900003VW" lang="de" xmltv_id="SamsungTVPlus.at.AT1900003VW">CAR CITY ADVENTURES [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT2000029T" lang="de" xmltv_id="SamsungTVPlus.at.AT2000029T">The Jamie Oliver Channel [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT2100002QM" lang="de" xmltv_id="SamsungTVPlus.at.AT2100002QM">Sony One Comedy TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT2100004P1" lang="de" xmltv_id="SamsungTVPlus.at.AT2100004P1">BBC Series [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT22000019A" lang="de" xmltv_id="SamsungTVPlus.at.AT22000019A">Fireplace Vibes [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT2200004OF" lang="de" xmltv_id="SamsungTVPlus.at.AT2200004OF">Welt [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT23000017K" lang="de" xmltv_id="SamsungTVPlus.at.AT23000017K">Deluxe Dance By Kontor [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT230000238" lang="de" xmltv_id="SamsungTVPlus.at.AT230000238">Top Sci-Fi [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT2300003IC" lang="de" xmltv_id="SamsungTVPlus.at.AT2300003IC">Beyblade [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT2400001WV" lang="de" xmltv_id="SamsungTVPlus.at.AT2400001WV">DDR TV-Archiv [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT2600002KW" lang="de" xmltv_id="SamsungTVPlus.at.AT2600002KW">Euronews LIVE [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT260000326" lang="de" xmltv_id="SamsungTVPlus.at.AT260000326">Top Filme - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT2600004LH" lang="de" xmltv_id="SamsungTVPlus.at.AT2600004LH">Drama Filme - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT26000054S" lang="de" xmltv_id="SamsungTVPlus.at.AT26000054S">Actionfilme - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT260000634" lang="de" xmltv_id="SamsungTVPlus.at.AT260000634">Crime Serien - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT2600007N2" lang="de" xmltv_id="SamsungTVPlus.at.AT2600007N2">Family - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT2600009ON" lang="de" xmltv_id="SamsungTVPlus.at.AT2600009ON">Komödien - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT2800001N5" lang="de" xmltv_id="SamsungTVPlus.at.AT2800001N5">Big Brother Classics [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT300000183" lang="de" xmltv_id="SamsungTVPlus.at.AT300000183">Deutsches Kino - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT30000053R" lang="de" xmltv_id="SamsungTVPlus.at.AT30000053R">Dating hinter Gittern [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT3000006M1" lang="de" xmltv_id="SamsungTVPlus.at.AT3000006M1">AMC Stories [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT3000009D6" lang="de" xmltv_id="SamsungTVPlus.at.AT3000009D6">INTER 24/7 [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT300007S8" lang="de" xmltv_id="SamsungTVPlus.at.AT300007S8">Sony One Action HITS [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT300008JS" lang="de" xmltv_id="SamsungTVPlus.at.AT300008JS">Sony One Comedy Hits [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT300009BI" lang="de" xmltv_id="SamsungTVPlus.at.AT300009BI">Alarm für Cobra 11 / Balko [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT300044H2" lang="de" xmltv_id="SamsungTVPlus.at.AT300044H2">Vera [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT300045YS" lang="de" xmltv_id="SamsungTVPlus.at.AT300045YS">Poldark [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT3200001DJ" lang="de" xmltv_id="SamsungTVPlus.at.AT3200001DJ">StoryZoo &amp;amp; Friends [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT32000109U" lang="de" xmltv_id="SamsungTVPlus.at.AT32000109U">Ladykracher [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT3200011S4" lang="de" xmltv_id="SamsungTVPlus.at.AT3200011S4">Pastewka [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT3200012MN" lang="de" xmltv_id="SamsungTVPlus.at.AT3200012MN">Stromberg [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT3300001K9" lang="de" xmltv_id="SamsungTVPlus.at.AT3300001K9">Lindenstraße [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT3300002K2" lang="de" xmltv_id="SamsungTVPlus.at.AT3300002K2">LAOLA1 FAST [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT33000033D" lang="de" xmltv_id="SamsungTVPlus.at.AT33000033D">Hochspannung [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT3400004QH" lang="de" xmltv_id="SamsungTVPlus.at.AT3400004QH">Comedy &amp;amp; Shows [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT3400006VA" lang="de" xmltv_id="SamsungTVPlus.at.AT3400006VA">Abschnitt 40 / GSG9 [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT3400007C0" lang="de" xmltv_id="SamsungTVPlus.at.AT3400007C0">Deluxe Summertime [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT3700004SR" lang="de" xmltv_id="SamsungTVPlus.at.AT3700004SR">Komissar Montalbano [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT3700005NP" lang="de" xmltv_id="SamsungTVPlus.at.AT3700005NP">Saving Hope [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT3700006RS" lang="de" xmltv_id="SamsungTVPlus.at.AT3700006RS">The Good Wife [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT3800001SY" lang="de" xmltv_id="SamsungTVPlus.at.AT3800001SY">Dhar Mann TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT400001GG" lang="de" xmltv_id="SamsungTVPlus.at.AT400001GG">LooLoo Kids [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT4100001P2" lang="de" xmltv_id="SamsungTVPlus.at.AT4100001P2">Mark Rober TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT4100002MY" lang="de" xmltv_id="SamsungTVPlus.at.AT4100002MY">Rabbids Invasion [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT430000288" lang="de" xmltv_id="SamsungTVPlus.at.AT430000288">Sparkle Movies [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT4400002IB" lang="de" xmltv_id="SamsungTVPlus.at.AT4400002IB">Andromeda [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT4400003Z1" lang="de" xmltv_id="SamsungTVPlus.at.AT4400003Z1">Don Matteo [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT4400004GQ" lang="de" xmltv_id="SamsungTVPlus.at.AT4400004GQ">Schlosshotel Orth [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT4400005XG" lang="de" xmltv_id="SamsungTVPlus.at.AT4400005XG">Vier Frauen &amp;amp; ein Todesfall [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT4400006FA" lang="de" xmltv_id="SamsungTVPlus.at.AT4400006FA">Schnell ermittelt &amp;amp; Cop stories [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT4500001S1" lang="de" xmltv_id="SamsungTVPlus.at.AT4500001S1">Crime Time [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT4600002H5" lang="de" xmltv_id="SamsungTVPlus.at.AT4600002H5">Fluss Monsters [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT48000012I" lang="de" xmltv_id="SamsungTVPlus.at.AT48000012I">Hochzeit auf den ersten Blick [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT4800002G5" lang="de" xmltv_id="SamsungTVPlus.at.AT4800002G5">Hudson &amp;amp; Rex [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT5000002QB" lang="de" xmltv_id="SamsungTVPlus.at.AT5000002QB">Teletubbies [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT500002TW" lang="de" xmltv_id="SamsungTVPlus.at.AT500002TW">The Graham Norton Show [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT5100001HE" lang="de" xmltv_id="SamsungTVPlus.at.AT5100001HE">Rally.TV FAST+ [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT70000595" lang="de" xmltv_id="SamsungTVPlus.at.AT70000595">Yu-Gi-Oh! [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT80000194" lang="de" xmltv_id="SamsungTVPlus.at.AT80000194">H2O &amp;amp; Friends [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT900003TU" lang="de" xmltv_id="SamsungTVPlus.at.AT900003TU">Crimify [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT900005FB" lang="de" xmltv_id="SamsungTVPlus.at.AT900005FB">Spiegel TV action + crime [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ0500413A" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ0500413A">Deluxe Lounge HD [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ0500422A" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ0500422A">Netzkino [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ0500427A" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ0500427A">Tierwelt [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ0500428A" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ0500428A">Xplore [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ0500431A" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ0500431A">just.fishing [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ0500433A" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ0500433A">Sportdigital Free [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ0500443A" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ0500443A">Just Cooking [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ0500445A" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ0500445A">SPIEGEL TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ0500451A" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ0500451A">GoldStar TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ0500454A" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ0500454A">Artflix [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ0500455A" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ0500455A">Grjngo [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ0500456A" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ0500456A">Tempora [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ0500458A" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ0500458A">auto motor und sport [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ32000027V" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ32000027V">FailArmy [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ3200003W3" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ3200003W3">The Pet Collective [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ700002OG" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ700002OG">MTV Pluto TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ7000037N" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ7000037N">Nickelodeon Toons [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ700004UZ" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ700004UZ">Teen Nick [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ700005T3" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ700005T3">SpongeBob Schwammkopf [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ7000065Y" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ7000065Y">iCarly [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ70000741" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ70000741">Pluto TV Serie [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ70000866" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ70000866">Pluto TV Paranormal [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ700009X4" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ700009X4">Ice Pilots [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAJ7000105F" lang="de" xmltv_id="SamsungTVPlus.at.ATAJ7000105F">MTV Teen Mom [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAK3504500A" lang="de" xmltv_id="SamsungTVPlus.at.ATAK3504500A">Pluto TV Animals [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAK3504501A" lang="de" xmltv_id="SamsungTVPlus.at.ATAK3504501A">Pluto TV Food [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAK3504503A" lang="de" xmltv_id="SamsungTVPlus.at.ATAK3504503A">Pluto TV Science [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAK3504505A" lang="de" xmltv_id="SamsungTVPlus.at.ATAK3504505A">Pluto TV Sitcoms [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAK3504506A" lang="de" xmltv_id="SamsungTVPlus.at.ATAK3504506A">Pluto TV - Star Trek [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAK3504510A" lang="de" xmltv_id="SamsungTVPlus.at.ATAK3504510A">Comedy Central Pluto TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAK3504514A" lang="de" xmltv_id="SamsungTVPlus.at.ATAK3504514A">Pluto TV Movies [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATAK3504517A" lang="de" xmltv_id="SamsungTVPlus.at.ATAK3504517A">MTV Catfish [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA1000001YK" lang="de" xmltv_id="SamsungTVPlus.at.ATBA1000001YK">People Are Awesome [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA15000088F" lang="de" xmltv_id="SamsungTVPlus.at.ATBA15000088F">Moconomy [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA1500010H3" lang="de" xmltv_id="SamsungTVPlus.at.ATBA1500010H3">Fantasja [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA1500012BI" lang="de" xmltv_id="SamsungTVPlus.at.ATBA1500012BI">Fabella [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA1500021SL" lang="de" xmltv_id="SamsungTVPlus.at.ATBA1500021SL">One Terra [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA1500028F9" lang="de" xmltv_id="SamsungTVPlus.at.ATBA1500028F9">Höhenrausch [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA1500029H6" lang="de" xmltv_id="SamsungTVPlus.at.ATBA1500029H6">Deluxe Deutschpop [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA2200008XN" lang="de" xmltv_id="SamsungTVPlus.at.ATBA2200008XN">Tennis Channel [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA3300006WH" lang="de" xmltv_id="SamsungTVPlus.at.ATBA3300006WH">Zee One [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA3300007PT" lang="de" xmltv_id="SamsungTVPlus.at.ATBA3300007PT">FIFA+ [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA3300008ZT" lang="de" xmltv_id="SamsungTVPlus.at.ATBA3300008ZT">CURIOSITY Now [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA3300009MF" lang="de" xmltv_id="SamsungTVPlus.at.ATBA3300009MF">SPIEGEL TV Konflikte [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA3300010PU" lang="de" xmltv_id="SamsungTVPlus.at.ATBA3300010PU">Strongman Champions League [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA3300018K1" lang="de" xmltv_id="SamsungTVPlus.at.ATBA3300018K1">Bloomberg TV+ [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA3300021BW" lang="de" xmltv_id="SamsungTVPlus.at.ATBA3300021BW">MyTime Movie Network [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA3300023X4" lang="de" xmltv_id="SamsungTVPlus.at.ATBA3300023X4">wedo movies [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA33000270C" lang="de" xmltv_id="SamsungTVPlus.at.ATBA33000270C">Top Serien [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA33000280A" lang="de" xmltv_id="SamsungTVPlus.at.ATBA33000280A">Moviedome [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA330002946" lang="de" xmltv_id="SamsungTVPlus.at.ATBA330002946">Moviedome Family [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA3300031VR" lang="de" xmltv_id="SamsungTVPlus.at.ATBA3300031VR">Wilder Planet [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBC300000551" lang="de" xmltv_id="SamsungTVPlus.at.ATBC300000551">Filmgold [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBC3900001W3" lang="de" xmltv_id="SamsungTVPlus.at.ATBC3900001W3">The Wicked Tuna Channel [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBC3900002PV" lang="de" xmltv_id="SamsungTVPlus.at.ATBC3900002PV">Naruto [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBC4700001JX" lang="de" xmltv_id="SamsungTVPlus.at.ATBC4700001JX">DAZN FAST+ [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD1100002TA" lang="de" xmltv_id="SamsungTVPlus.at.ATBD1100002TA">FRANCE 24 FAST [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD1500003ES" lang="de" xmltv_id="SamsungTVPlus.at.ATBD1500003ES">Red Bull TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD190000101" lang="de" xmltv_id="SamsungTVPlus.at.ATBD190000101">CNN Headlines International [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD2300001PY" lang="de" xmltv_id="SamsungTVPlus.at.ATBD2300001PY">Sport 1 Motor [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD2500001A8" lang="de" xmltv_id="SamsungTVPlus.at.ATBD2500001A8">PR1DE free [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD2600001QK" lang="de" xmltv_id="SamsungTVPlus.at.ATBD2600001QK">Hell's Kitchen [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD2600009FE" lang="de" xmltv_id="SamsungTVPlus.at.ATBD2600009FE">More than Sports TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD2600010EC" lang="de" xmltv_id="SamsungTVPlus.at.ATBD2600010EC">Motorvision Classic [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD2600011EO" lang="de" xmltv_id="SamsungTVPlus.at.ATBD2600011EO">Motorvision [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD26000124P" lang="de" xmltv_id="SamsungTVPlus.at.ATBD26000124P">Scooore [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD2700001KY" lang="de" xmltv_id="SamsungTVPlus.at.ATBD2700001KY">Terra Mater WILD [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD2700004VR" lang="de" xmltv_id="SamsungTVPlus.at.ATBD2700004VR">Royalworld - Adel &amp;amp; Dynastien [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD290000127" lang="de" xmltv_id="SamsungTVPlus.at.ATBD290000127">World Poker Tour [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD3800001SY" lang="de" xmltv_id="SamsungTVPlus.at.ATBD3800001SY">DELUXE RAP [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD390000167" lang="de" xmltv_id="SamsungTVPlus.at.ATBD390000167">Aniverse TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD41000046O" lang="de" xmltv_id="SamsungTVPlus.at.ATBD41000046O">Comedy Mix [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD5000001SF" lang="de" xmltv_id="SamsungTVPlus.at.ATBD5000001SF">Top Filme [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD5000002B1" lang="de" xmltv_id="SamsungTVPlus.at.ATBD5000002B1">World of Freesports - WoF [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD700001VF" lang="de" xmltv_id="SamsungTVPlus.at.ATBD700001VF">DAZN Rise [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBD800001VA" lang="de" xmltv_id="SamsungTVPlus.at.ATBD800001VA">CNN [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH1100002FH" lang="de" xmltv_id="SamsungTVPlus.ch.CH1100002FH">Top Barça [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH1400001FA" lang="de" xmltv_id="SamsungTVPlus.ch.CH1400001FA">Zee TV HD DE [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH20000288" lang="de" xmltv_id="SamsungTVPlus.ch.CH20000288">The Jamie Oliver Channel [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH2000332L" lang="de" xmltv_id="SamsungTVPlus.ch.CH2000332L">Vera [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH2100003MU" lang="de" xmltv_id="SamsungTVPlus.ch.CH2100003MU">BBC Series [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH220000164" lang="de" xmltv_id="SamsungTVPlus.ch.CH220000164">Fireplace Vibes [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH2200006VD" lang="de" xmltv_id="SamsungTVPlus.ch.CH2200006VD">Welt [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH2300001O9" lang="de" xmltv_id="SamsungTVPlus.ch.CH2300001O9">Deluxe Dance By Kontor [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH2300002MI" lang="de" xmltv_id="SamsungTVPlus.ch.CH2300002MI">Himmlisches Kino [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH23000031M" lang="de" xmltv_id="SamsungTVPlus.ch.CH23000031M">Top Sci-Fi [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH230000401" lang="de" xmltv_id="SamsungTVPlus.ch.CH230000401">Beyblade [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH2600001UH" lang="de" xmltv_id="SamsungTVPlus.ch.CH2600001UH">Komödien - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH2600002VE" lang="de" xmltv_id="SamsungTVPlus.ch.CH2600002VE">Drama Filme - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH26000037F" lang="de" xmltv_id="SamsungTVPlus.ch.CH26000037F">Euronews LIVE [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH2600004R1" lang="de" xmltv_id="SamsungTVPlus.ch.CH2600004R1">Actionfilme - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH26000056O" lang="de" xmltv_id="SamsungTVPlus.ch.CH26000056O">Family - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH2600006TR" lang="de" xmltv_id="SamsungTVPlus.ch.CH2600006TR">Top Filme - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH2600007IJ" lang="de" xmltv_id="SamsungTVPlus.ch.CH2600007IJ">Crime Serien - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH28000014U" lang="de" xmltv_id="SamsungTVPlus.ch.CH28000014U">Big Brother Classics [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH3000001PT" lang="de" xmltv_id="SamsungTVPlus.ch.CH3000001PT">Deutsches Kino - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH3000003NM" lang="de" xmltv_id="SamsungTVPlus.ch.CH3000003NM">Dating hinter Gittern [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH300006UT" lang="de" xmltv_id="SamsungTVPlus.ch.CH300006UT">Alarm für Cobra 11 / Balko [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH300042FH" lang="de" xmltv_id="SamsungTVPlus.ch.CH300042FH">Poldark [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH3100001XL" lang="de" xmltv_id="SamsungTVPlus.ch.CH3100001XL">INTER 24/7 [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH3200009XW" lang="de" xmltv_id="SamsungTVPlus.ch.CH3200009XW">Ladykracher [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH3200010F6" lang="de" xmltv_id="SamsungTVPlus.ch.CH3200010F6">Pastewka [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH3200011YH" lang="de" xmltv_id="SamsungTVPlus.ch.CH3200011YH">Stromberg [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH330000132" lang="de" xmltv_id="SamsungTVPlus.ch.CH330000132">Faites entrer l'accusé [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH3300002MN" lang="de" xmltv_id="SamsungTVPlus.ch.CH3300002MN">Hochspannung [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH34000014Q" lang="de" xmltv_id="SamsungTVPlus.ch.CH34000014Q">Sky News International [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH340000286" lang="de" xmltv_id="SamsungTVPlus.ch.CH340000286">Comedy &amp;amp; Shows [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH3400004AF" lang="de" xmltv_id="SamsungTVPlus.ch.CH3400004AF">Abschnitt 40 / GSG9 [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH3400005S4" lang="de" xmltv_id="SamsungTVPlus.ch.CH3400005S4">Deluxe Summertime [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH3600001HH" lang="de" xmltv_id="SamsungTVPlus.ch.CH3600001HH">Alerte Cobra [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH37000043J" lang="de" xmltv_id="SamsungTVPlus.ch.CH37000043J">Komissar Montalbano [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH37000057T" lang="de" xmltv_id="SamsungTVPlus.ch.CH37000057T">Saving Hope [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH3700006B9" lang="de" xmltv_id="SamsungTVPlus.ch.CH3700006B9">The Good Wife [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH3800001TJ" lang="de" xmltv_id="SamsungTVPlus.ch.CH3800001TJ">Dhar Mann TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH3900001DB" lang="de" xmltv_id="SamsungTVPlus.ch.CH3900001DB">Landlust TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH40000020D" lang="de" xmltv_id="SamsungTVPlus.ch.CH40000020D">RMC Life [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH4100001ZY" lang="de" xmltv_id="SamsungTVPlus.ch.CH4100001ZY">Mark Rober TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH41000023N" lang="de" xmltv_id="SamsungTVPlus.ch.CH41000023N">Les Lapins Crétins [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH4300002NC" lang="de" xmltv_id="SamsungTVPlus.ch.CH4300002NC">Sparkle Movies [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH4400002F5" lang="de" xmltv_id="SamsungTVPlus.ch.CH4400002F5">Andromeda [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH4400003WV" lang="de" xmltv_id="SamsungTVPlus.ch.CH4400003WV">Don Matteo [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH4400004DK" lang="de" xmltv_id="SamsungTVPlus.ch.CH4400004DK">Schlosshotel Orth [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH4400005U9" lang="de" xmltv_id="SamsungTVPlus.ch.CH4400005U9">Vier Frauen &amp;amp; ein Todesfall [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH4400006BZ" lang="de" xmltv_id="SamsungTVPlus.ch.CH4400006BZ">Schnell ermittelt &amp;amp; Cop stories [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH4600001X9" lang="de" xmltv_id="SamsungTVPlus.ch.CH4600001X9">Lindenstraße [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH4700001E1" lang="de" xmltv_id="SamsungTVPlus.ch.CH4700001E1">Redbull TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH4800001LT" lang="de" xmltv_id="SamsungTVPlus.ch.CH4800001LT">Hochzeit auf den ersten Blick [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH48000025D" lang="de" xmltv_id="SamsungTVPlus.ch.CH48000025D">Hudson &amp;amp; Rex [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH500000481" lang="de" xmltv_id="SamsungTVPlus.ch.CH500000481">Teletubbies [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH500001V2" lang="de" xmltv_id="SamsungTVPlus.ch.CH500001V2">BFM TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH500002H2" lang="de" xmltv_id="SamsungTVPlus.ch.CH500002H2">RMC Story [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH500003EH" lang="de" xmltv_id="SamsungTVPlus.ch.CH500003EH">RMC Découverte [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH5100001XI" lang="de" xmltv_id="SamsungTVPlus.ch.CH5100001XI">Rally.TV FAST+ [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH700003RV" lang="de" xmltv_id="SamsungTVPlus.ch.CH700003RV">Yu-Gi-Oh! [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH800001RT" lang="de" xmltv_id="SamsungTVPlus.ch.CH800001RT">H2O &amp;amp; Friends [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH900001R9" lang="de" xmltv_id="SamsungTVPlus.ch.CH900001R9">Spiegel TV action + crime [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CH900002UF" lang="de" xmltv_id="SamsungTVPlus.ch.CH900002UF">Crimify [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ0500413A" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ0500413A">Deluxe Lounge HD [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ0500422A" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ0500422A">Netzkino [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ0500427A" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ0500427A">Tierwelt [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ0500433A" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ0500433A">Sportdigital Free [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ0500443A" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ0500443A">Just Cooking [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ0500445A" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ0500445A">SPIEGEL TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ0500455A" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ0500455A">Artflix [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ0500456A" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ0500456A">Grjngo [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ0500457A" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ0500457A">Tempora [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ0500459A" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ0500459A">auto motor und sport [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ32000026J" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ32000026J">FailArmy [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ3200003RF" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ3200003RF">The Pet Collective [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ3500001Z8" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ3500001Z8">CineWestern [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ700002UB" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ700002UB">MTV Pluto TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ700003CV" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ700003CV">Nickelodeon Toons [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ700004GX" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ700004GX">Teen Nick [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ7000057P" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ7000057P">SpongeBob Schwammkopf [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ700006QR" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ700006QR">iCarly [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ700007XE" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ700007XE">Pluto TV Serie [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ7000084D" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ7000084D">Pluto TV Paranormal [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ700009UV" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ700009UV">Ice Pilots [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAJ700010NR" lang="de" xmltv_id="SamsungTVPlus.ch.CHAJ700010NR">MTV Teen Mom [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAK3504500A" lang="de" xmltv_id="SamsungTVPlus.ch.CHAK3504500A">Pluto TV Animals [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAK3504501A" lang="de" xmltv_id="SamsungTVPlus.ch.CHAK3504501A">Pluto TV Food [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAK3504503A" lang="de" xmltv_id="SamsungTVPlus.ch.CHAK3504503A">Pluto TV Science [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAK3504505A" lang="de" xmltv_id="SamsungTVPlus.ch.CHAK3504505A">Pluto TV Sitcoms [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAK3504510A" lang="de" xmltv_id="SamsungTVPlus.ch.CHAK3504510A">Comedy Central Pluto TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAK3504514A" lang="de" xmltv_id="SamsungTVPlus.ch.CHAK3504514A">Pluto TV Movies [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHAK3504517A" lang="de" xmltv_id="SamsungTVPlus.ch.CHAK3504517A">MTV Catfish [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBA1000004IU" lang="de" xmltv_id="SamsungTVPlus.ch.CHBA1000004IU">People Are Awesome [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBA150001090" lang="de" xmltv_id="SamsungTVPlus.ch.CHBA150001090">Fantasja [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBA1500012K9" lang="de" xmltv_id="SamsungTVPlus.ch.CHBA1500012K9">Fabella [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBA1500021M5" lang="de" xmltv_id="SamsungTVPlus.ch.CHBA1500021M5">One Terra [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBA1500028KP" lang="de" xmltv_id="SamsungTVPlus.ch.CHBA1500028KP">Höhenrausch [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBA1500029TL" lang="de" xmltv_id="SamsungTVPlus.ch.CHBA1500029TL">Deluxe Deutschpop [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBA22000080G" lang="de" xmltv_id="SamsungTVPlus.ch.CHBA22000080G">Tennis Channel [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBA3300008LD" lang="de" xmltv_id="SamsungTVPlus.ch.CHBA3300008LD">SportOutdoor.tv [IT] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBA3300010UC" lang="de" xmltv_id="SamsungTVPlus.ch.CHBA3300010UC">FIFA+ [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBA3300011A6" lang="de" xmltv_id="SamsungTVPlus.ch.CHBA3300011A6">Strongman Champions League [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBA3300016BA" lang="de" xmltv_id="SamsungTVPlus.ch.CHBA3300016BA">Alberto Sordi &amp;amp; Co [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBA3300018TD" lang="de" xmltv_id="SamsungTVPlus.ch.CHBA3300018TD">Bloomberg TV+ [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBA3300023SN" lang="de" xmltv_id="SamsungTVPlus.ch.CHBA3300023SN">wedo movies [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBA3300026CA" lang="de" xmltv_id="SamsungTVPlus.ch.CHBA3300026CA">Top Serien [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBA3300028G3" lang="de" xmltv_id="SamsungTVPlus.ch.CHBA3300028G3">Wilder Planet [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBA330002991" lang="de" xmltv_id="SamsungTVPlus.ch.CHBA330002991">Moviedome [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBA3300030AJ" lang="de" xmltv_id="SamsungTVPlus.ch.CHBA3300030AJ">Moviedome Family [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBB3400001IU" lang="de" xmltv_id="SamsungTVPlus.ch.CHBB3400001IU">Emotion'L [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBB3900006JN" lang="de" xmltv_id="SamsungTVPlus.ch.CHBB3900006JN">Chefclub TV [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBB3900007I2" lang="de" xmltv_id="SamsungTVPlus.ch.CHBB3900007I2">Ciné Nanar [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBB46000021V" lang="de" xmltv_id="SamsungTVPlus.ch.CHBB46000021V">Scream'IN [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBB49000023B" lang="de" xmltv_id="SamsungTVPlus.ch.CHBB49000023B">Y'a que la vérité qui compte [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBC3500001NJ" lang="de" xmltv_id="SamsungTVPlus.ch.CHBC3500001NJ">Enquêtes de Choc [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBC3500004YJ" lang="de" xmltv_id="SamsungTVPlus.ch.CHBC3500004YJ">Filmgold [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBC40000011Y" lang="de" xmltv_id="SamsungTVPlus.ch.CHBC40000011Y">The Wicked Tuna Channel [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBC40000027S" lang="de" xmltv_id="SamsungTVPlus.ch.CHBC40000027S">Echappées belles &amp;amp; co [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBC4000003K9" lang="de" xmltv_id="SamsungTVPlus.ch.CHBC4000003K9">Homicide [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBC40000040J" lang="de" xmltv_id="SamsungTVPlus.ch.CHBC40000040J">wedotv Big Stories [IT] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBC4000005PW" lang="de" xmltv_id="SamsungTVPlus.ch.CHBC4000005PW">Naruto [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBC4000006ZD" lang="de" xmltv_id="SamsungTVPlus.ch.CHBC4000006ZD">Destination Nature [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBC800001N2" lang="de" xmltv_id="SamsungTVPlus.ch.CHBC800001N2">MyTime Movie Network [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBC800003LH" lang="de" xmltv_id="SamsungTVPlus.ch.CHBC800003LH">Trace Latina [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBC80000437" lang="de" xmltv_id="SamsungTVPlus.ch.CHBC80000437">NatureTime [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBC800006EP" lang="de" xmltv_id="SamsungTVPlus.ch.CHBC800006EP">Fréquence Novelas [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD1100003CW" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD1100003CW">FRANCE 24 FAST [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD1400001NP" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD1400001NP">CURIOSITY Now [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD1400002AK" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD1400002AK">SPIEGEL TV Konflikte [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD1900001JB" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD1900001JB">CNN Headlines International [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD2000023S" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD2000023S">Alerte à Malibu [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD200003G1" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD200003G1">Génération Sitcoms [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD200004J8" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD200004J8">Les filles d'à côté [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD2300001ZB" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD2300001ZB">Sport 1 Motor [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD2500001SY" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD2500001SY">PR1DE free [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD26000017A" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD26000017A">Hell's Kitchen [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD2600011YG" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD2600011YG">More than Sports TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD2600012Y6" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD2600012Y6">Motorvision Classic [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD26000130C" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD26000130C">Motorvision [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD2600014C0" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD2600014C0">Scooore [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD27000011N" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD27000011N">Zee One [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD2700002B7" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD2700002B7">Terra Mater WILD [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD2900001LI" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD2900001LI">World Poker Tour [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD3700002F2" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD3700002F2">Plus belle la vie [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD38000019N" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD38000019N">DELUXE RAP [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD39000015L" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD39000015L">Aniverse TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD41000043H" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD41000043H">Comedy Mix [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD4700001DY" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD4700001DY">LooLoo Kids [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD5000001T0" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD5000001T0">World of Freesports - WoF [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD5000002CB" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD5000002CB">Top Filme [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD5100001EF" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD5100001EF">ADN [FR] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD600003EI" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD600003EI">Film Al Femminile - Wedo Movies [IT] [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/ch#CHBD800001D0" lang="de" xmltv_id="SamsungTVPlus.ch.CHBD800001D0">CNN [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE1000001CT" lang="de" xmltv_id="SamsungTVPlus.de.DE1000001CT">Herzfrequenz [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE1000002V4" lang="de" xmltv_id="SamsungTVPlus.de.DE1000002V4">SMTOWN [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE1100001CQ" lang="de" xmltv_id="SamsungTVPlus.de.DE1100001CQ">Landlust TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE1100003YR" lang="de" xmltv_id="SamsungTVPlus.de.DE1100003YR">Top Barça [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE1200001JW" lang="de" xmltv_id="SamsungTVPlus.de.DE1200001JW">Free Comedy [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE1300001XL" lang="de" xmltv_id="SamsungTVPlus.de.DE1300001XL">XITE R&amp;amp;B Classic Jams [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE1400001OB" lang="de" xmltv_id="SamsungTVPlus.de.DE1400001OB">Beyblade [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE1400002W0" lang="de" xmltv_id="SamsungTVPlus.de.DE1400002W0">Zee TV HD DE [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE1400003DP" lang="de" xmltv_id="SamsungTVPlus.de.DE1400003DP">Spiegel TV action+crime [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE16000042J" lang="de" xmltv_id="SamsungTVPlus.de.DE16000042J">All Romance [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE1600005LU" lang="de" xmltv_id="SamsungTVPlus.de.DE1600005LU">Crimify [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE160000644" lang="de" xmltv_id="SamsungTVPlus.de.DE160000644">Bob Ross: Die Freude am Malen [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE17000032I" lang="de" xmltv_id="SamsungTVPlus.de.DE17000032I">NEW KPOP [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE1900001NT" lang="de" xmltv_id="SamsungTVPlus.de.DE1900001NT">Himmlisches Kino [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE2000004BG" lang="de" xmltv_id="SamsungTVPlus.de.DE2000004BG">CAR CITY ADVENTURES [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE2000007B5" lang="de" xmltv_id="SamsungTVPlus.de.DE2000007B5">Tennis+ [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE200003PX" lang="de" xmltv_id="SamsungTVPlus.de.DE200003PX">The Jamie Oliver Channel [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE200044MH" lang="de" xmltv_id="SamsungTVPlus.de.DE200044MH">Vera [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE21000013K" lang="de" xmltv_id="SamsungTVPlus.de.DE21000013K">NatureTime [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE21000031Z" lang="de" xmltv_id="SamsungTVPlus.de.DE21000031Z">BBC Series [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE22000012Y" lang="de" xmltv_id="SamsungTVPlus.de.DE22000012Y">Fireplace Vibes [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE2200005GX" lang="de" xmltv_id="SamsungTVPlus.de.DE2200005GX">Welt [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE23000015Y" lang="de" xmltv_id="SamsungTVPlus.de.DE23000015Y">Deluxe Dance By Kontor [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE2300002KX" lang="de" xmltv_id="SamsungTVPlus.de.DE2300002KX">Top Sci-Fi [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE2400001DK" lang="de" xmltv_id="SamsungTVPlus.de.DE2400001DK">DDR TV-Archiv [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE2400002VA" lang="de" xmltv_id="SamsungTVPlus.de.DE2400002VA">Top Gear [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE2500001DO" lang="de" xmltv_id="SamsungTVPlus.de.DE2500001DO">Cool Summer Channel [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE2600003TR" lang="de" xmltv_id="SamsungTVPlus.de.DE2600003TR">Euronews LIVE [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE2600004U3" lang="de" xmltv_id="SamsungTVPlus.de.DE2600004U3">Crime Serien - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE2600005XA" lang="de" xmltv_id="SamsungTVPlus.de.DE2600005XA">Actionfilme - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE2600006H2" lang="de" xmltv_id="SamsungTVPlus.de.DE2600006H2">Komödien - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE2600007ET" lang="de" xmltv_id="SamsungTVPlus.de.DE2600007ET">Drama Filme - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE26000085Y" lang="de" xmltv_id="SamsungTVPlus.de.DE26000085Y">Family - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE26000096S" lang="de" xmltv_id="SamsungTVPlus.de.DE26000096S">Top Filme - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE2800002LK" lang="de" xmltv_id="SamsungTVPlus.de.DE2800002LK">Big Brother Classics [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE2900001W0" lang="de" xmltv_id="SamsungTVPlus.de.DE2900001W0">BBC Travel [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE2900002Z8" lang="de" xmltv_id="SamsungTVPlus.de.DE2900002Z8">BBC Food [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE2900003ED" lang="de" xmltv_id="SamsungTVPlus.de.DE2900003ED">BBC History [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE30000067I" lang="de" xmltv_id="SamsungTVPlus.de.DE30000067I">Deutsches Kino - Rakuten TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3000008RT" lang="de" xmltv_id="SamsungTVPlus.de.DE3000008RT">Dating hinter Gittern [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3000009SE" lang="de" xmltv_id="SamsungTVPlus.de.DE3000009SE">AMC Stories [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3000016Q" lang="de" xmltv_id="SamsungTVPlus.de.DE3000016Q">Sony One Comedy TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE300002CL" lang="de" xmltv_id="SamsungTVPlus.de.DE300002CL">Sony One Comedy HITS [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE300003AV" lang="de" xmltv_id="SamsungTVPlus.de.DE300003AV">Sony One Thriller TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE30000489" lang="de" xmltv_id="SamsungTVPlus.de.DE30000489">Sony One Action HITS [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE300005NB" lang="de" xmltv_id="SamsungTVPlus.de.DE300005NB">Sony One Best Of [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE300020D3" lang="de" xmltv_id="SamsungTVPlus.de.DE300020D3">Alarm für Cobra 11 / Balko [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE300061W7" lang="de" xmltv_id="SamsungTVPlus.de.DE300061W7">Poldark [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE310000218" lang="de" xmltv_id="SamsungTVPlus.de.DE310000218">INTER 24/7 [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3100005JK" lang="de" xmltv_id="SamsungTVPlus.de.DE3100005JK">Merhaba Amour [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3200001RI" lang="de" xmltv_id="SamsungTVPlus.de.DE3200001RI">BBC Earth [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3200003U8" lang="de" xmltv_id="SamsungTVPlus.de.DE3200003U8">StoryZoo &amp;amp; Friends [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE32000079E" lang="de" xmltv_id="SamsungTVPlus.de.DE32000079E">Red Bull TV Motorsport [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3200015MJ" lang="de" xmltv_id="SamsungTVPlus.de.DE3200015MJ">Ladykracher [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3200016QF" lang="de" xmltv_id="SamsungTVPlus.de.DE3200016QF">Pastewka [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE32000175T" lang="de" xmltv_id="SamsungTVPlus.de.DE32000175T">Stromberg [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE33000013J" lang="de" xmltv_id="SamsungTVPlus.de.DE33000013J">Lindenstraße [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE33000025Y" lang="de" xmltv_id="SamsungTVPlus.de.DE33000025Y">Hochspannung [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE33000032K" lang="de" xmltv_id="SamsungTVPlus.de.DE33000032K">Spooks (MI-5) [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3400001N1" lang="de" xmltv_id="SamsungTVPlus.de.DE3400001N1">Sky News International [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3400003PW" lang="de" xmltv_id="SamsungTVPlus.de.DE3400003PW">Comedy &amp;amp; Shows [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3400005QJ" lang="de" xmltv_id="SamsungTVPlus.de.DE3400005QJ">Abschnitt 40 / GSG9 [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE340000678" lang="de" xmltv_id="SamsungTVPlus.de.DE340000678">Deluxe Summertime [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3700001F7" lang="de" xmltv_id="SamsungTVPlus.de.DE3700001F7">Fluss Monsters [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE37000038D" lang="de" xmltv_id="SamsungTVPlus.de.DE37000038D">ZDF zu Hause [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3700006DB" lang="de" xmltv_id="SamsungTVPlus.de.DE3700006DB">Komissar Montalbano [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3700007RY" lang="de" xmltv_id="SamsungTVPlus.de.DE3700007RY">Saving Hope [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3700008VR" lang="de" xmltv_id="SamsungTVPlus.de.DE3700008VR">The Good Wife [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3800001CR" lang="de" xmltv_id="SamsungTVPlus.de.DE3800001CR">Horror Comedy [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3800002J1" lang="de" xmltv_id="SamsungTVPlus.de.DE3800002J1">Mascha und der Bär [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3800003CU" lang="de" xmltv_id="SamsungTVPlus.de.DE3800003CU">Dhar Mann TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3900001WX" lang="de" xmltv_id="SamsungTVPlus.de.DE3900001WX">Emily Erdbeer [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3900002R1" lang="de" xmltv_id="SamsungTVPlus.de.DE3900002R1">K-POP by CJ ENM [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE3900004ZH" lang="de" xmltv_id="SamsungTVPlus.de.DE3900004ZH">Merhaba Türkische Filme [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE4000002I3" lang="de" xmltv_id="SamsungTVPlus.de.DE4000002I3">Moviesphere by Lionsgate [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE40000191" lang="de" xmltv_id="SamsungTVPlus.de.DE40000191">The Graham Norton Show [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE400010IF" lang="de" xmltv_id="SamsungTVPlus.de.DE400010IF">DF1 [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE400011F2" lang="de" xmltv_id="SamsungTVPlus.de.DE400011F2">Telenovela ZDF [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE400012YD" lang="de" xmltv_id="SamsungTVPlus.de.DE400012YD">KultKrimi [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE4100001GN" lang="de" xmltv_id="SamsungTVPlus.de.DE4100001GN">Mark Rober TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE4100002KC" lang="de" xmltv_id="SamsungTVPlus.de.DE4100002KC">Rabbids Invasion [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE4300001HK" lang="de" xmltv_id="SamsungTVPlus.de.DE4300001HK">ARD Plus Krimi [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE4300003MR" lang="de" xmltv_id="SamsungTVPlus.de.DE4300003MR">Nachrichten 360 [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE43000043H" lang="de" xmltv_id="SamsungTVPlus.de.DE43000043H">Sparkle Movies [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE4400002AE" lang="de" xmltv_id="SamsungTVPlus.de.DE4400002AE">Andromeda [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE4400003R3" lang="de" xmltv_id="SamsungTVPlus.de.DE4400003R3">Don Matteo [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE44000048T" lang="de" xmltv_id="SamsungTVPlus.de.DE44000048T">Schlosshotel Orth [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE4400005PI" lang="de" xmltv_id="SamsungTVPlus.de.DE4400005PI">Vier Frauen &amp;amp; ein Todesfall [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE4400006F5" lang="de" xmltv_id="SamsungTVPlus.de.DE4400006F5">Schnell ermittelt &amp;amp; Cop stories [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE46000025H" lang="de" xmltv_id="SamsungTVPlus.de.DE46000025H">Ax Men - Die Holzfäller [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE4600003OS" lang="de" xmltv_id="SamsungTVPlus.de.DE4600003OS">Swamp People - überleben im sumpf [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE4800001Y8" lang="de" xmltv_id="SamsungTVPlus.de.DE4800001Y8">Teletubbies [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE4800002GM" lang="de" xmltv_id="SamsungTVPlus.de.DE4800002GM">Hudson &amp;amp; Rex [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE4800003M6" lang="de" xmltv_id="SamsungTVPlus.de.DE4800003M6">Hochzeit auf den ersten Blick [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE500002LD" lang="de" xmltv_id="SamsungTVPlus.de.DE500002LD">H2O &amp;amp; Friends [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE5100001TC" lang="de" xmltv_id="SamsungTVPlus.de.DE5100001TC">Rally.TV FAST+ [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE700001BN" lang="de" xmltv_id="SamsungTVPlus.de.DE700001BN">Pocoyo [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DE7000038K" lang="de" xmltv_id="SamsungTVPlus.de.DE7000038K">Yu-Gi-Oh! [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAH3904006A" lang="de" xmltv_id="SamsungTVPlus.de.DEAH3904006A">Deluxe Lounge HD [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ0500419A" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ0500419A">Netzkino [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ0500422A" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ0500422A">Xplore [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ0500423A" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ0500423A">Tierwelt [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ0500428A" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ0500428A">just.fishing [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ0500429A" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ0500429A">Sportdigital Free [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ2900001NG" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ2900001NG">SPIEGEL TV Konflikte [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ2900003CN" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ2900003CN">Zee One [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ32000012H" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ32000012H">Terra Mater WILD [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ3200004UF" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ3200004UF">FailArmy [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ3200005JH" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ3200005JH">The Pet Collective [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ3500005RK" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ3500005RK">People Are Awesome [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ700002N8" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ700002N8">Nickelodeon Toons [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ7000033P" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ7000033P">MTV Pluto TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ700004BT" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ700004BT">Teen Nick [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ70000561" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ70000561">SpongeBob Schwammkopf [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ700006MR" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ700006MR">iCarly [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ700007OT" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ700007OT">Pluto TV Serie [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ700008WL" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ700008WL">Pluto TV Paranormal [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ7000096L" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ7000096L">Ice Pilots [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAJ7000105I" lang="de" xmltv_id="SamsungTVPlus.de.DEAJ7000105I">MTV Teen Mom [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAK0500439A" lang="de" xmltv_id="SamsungTVPlus.de.DEAK0500439A">Just Cooking [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAK0500441A" lang="de" xmltv_id="SamsungTVPlus.de.DEAK0500441A">SPIEGEL TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAK0500445A" lang="de" xmltv_id="SamsungTVPlus.de.DEAK0500445A">GoldStar TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAK0500448A" lang="de" xmltv_id="SamsungTVPlus.de.DEAK0500448A">Artflix [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAK0500449A" lang="de" xmltv_id="SamsungTVPlus.de.DEAK0500449A">Grjngo [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAK0500450A" lang="de" xmltv_id="SamsungTVPlus.de.DEAK0500450A">Tempora [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAK0500452A" lang="de" xmltv_id="SamsungTVPlus.de.DEAK0500452A">auto motor und sport [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAK3504500A" lang="de" xmltv_id="SamsungTVPlus.de.DEAK3504500A">Comedy Central Pluto TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAK3504502A" lang="de" xmltv_id="SamsungTVPlus.de.DEAK3504502A">MTV Catfish [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAK3504503A" lang="de" xmltv_id="SamsungTVPlus.de.DEAK3504503A">Pluto TV Animals [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAK3504506A" lang="de" xmltv_id="SamsungTVPlus.de.DEAK3504506A">Pluto TV Science [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAK3504508A" lang="de" xmltv_id="SamsungTVPlus.de.DEAK3504508A">Pluto TV Sitcoms [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEAK3504517A" lang="de" xmltv_id="SamsungTVPlus.de.DEAK3504517A">Pluto TV Movies [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA1500009ZY" lang="de" xmltv_id="SamsungTVPlus.de.DEBA1500009ZY">Moconomy [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA1500011RJ" lang="de" xmltv_id="SamsungTVPlus.de.DEBA1500011RJ">Fantasja [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA15000130L" lang="de" xmltv_id="SamsungTVPlus.de.DEBA15000130L">Fabella [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA15000227H" lang="de" xmltv_id="SamsungTVPlus.de.DEBA15000227H">One Terra [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA15000298V" lang="de" xmltv_id="SamsungTVPlus.de.DEBA15000298V">Höhenrausch [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA150003050" lang="de" xmltv_id="SamsungTVPlus.de.DEBA150003050">Deluxe Deutschpop [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA2200007V6" lang="de" xmltv_id="SamsungTVPlus.de.DEBA2200007V6">XITE Hits [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA2200008NL" lang="de" xmltv_id="SamsungTVPlus.de.DEBA2200008NL">Tennis Channel Deutschland [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA3300001L9" lang="de" xmltv_id="SamsungTVPlus.de.DEBA3300001L9">Pluto TV Food [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA33000038I" lang="de" xmltv_id="SamsungTVPlus.de.DEBA33000038I">Pluto TV - Star Trek [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA3300014CV" lang="de" xmltv_id="SamsungTVPlus.de.DEBA3300014CV">CURIOSITY Now [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA3300016EV" lang="de" xmltv_id="SamsungTVPlus.de.DEBA3300016EV">Strongman Champions League [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA3300019EB" lang="de" xmltv_id="SamsungTVPlus.de.DEBA3300019EB">FIFA+ [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA3300027ZJ" lang="de" xmltv_id="SamsungTVPlus.de.DEBA3300027ZJ">Bloomberg TV+ [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA3300030O1" lang="de" xmltv_id="SamsungTVPlus.de.DEBA3300030O1">Trace Urban [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA3300032UV" lang="de" xmltv_id="SamsungTVPlus.de.DEBA3300032UV">MyTime Movie Network [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA3300034HH" lang="de" xmltv_id="SamsungTVPlus.de.DEBA3300034HH">wedo movies [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA3300038NO" lang="de" xmltv_id="SamsungTVPlus.de.DEBA3300038NO">Top Serien [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA3300039TT" lang="de" xmltv_id="SamsungTVPlus.de.DEBA3300039TT">Moviedome [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA3300040CR" lang="de" xmltv_id="SamsungTVPlus.de.DEBA3300040CR">Moviedome Family [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBA3300042XG" lang="de" xmltv_id="SamsungTVPlus.de.DEBA3300042XG">Wilder Planet [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBC2100001ZJ" lang="de" xmltv_id="SamsungTVPlus.de.DEBC2100001ZJ">Vevo Pop [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBC21000022L" lang="de" xmltv_id="SamsungTVPlus.de.DEBC21000022L">Vevo Schlager Pop [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBC220000422" lang="de" xmltv_id="SamsungTVPlus.de.DEBC220000422">The Wicked Tuna Channel [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBC2300001EU" lang="de" xmltv_id="SamsungTVPlus.de.DEBC2300001EU">Red Bull TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBC3000002Z5" lang="de" xmltv_id="SamsungTVPlus.de.DEBC3000002Z5">Comedy Mix [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBC3000003IG" lang="de" xmltv_id="SamsungTVPlus.de.DEBC3000003IG">Terra X [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBC35000020P" lang="de" xmltv_id="SamsungTVPlus.de.DEBC35000020P">Filmgold [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBC470000128" lang="de" xmltv_id="SamsungTVPlus.de.DEBC470000128">DAZN FAST+ [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBC4700002Z2" lang="de" xmltv_id="SamsungTVPlus.de.DEBC4700002Z2">Entertainment Mix [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBC4700004VZ" lang="de" xmltv_id="SamsungTVPlus.de.DEBC4700004VZ">Love the Planet [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBC47000055Z" lang="de" xmltv_id="SamsungTVPlus.de.DEBC47000055Z">Hell's Kitchen [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBC4700007JV" lang="de" xmltv_id="SamsungTVPlus.de.DEBC4700007JV">duckTV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD11000019M" lang="de" xmltv_id="SamsungTVPlus.de.DEBD11000019M">Naruto [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD1100002II" lang="de" xmltv_id="SamsungTVPlus.de.DEBD1100002II">FRANCE 24 FAST [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD19000012M" lang="de" xmltv_id="SamsungTVPlus.de.DEBD19000012M">CNN Headlines International [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD1900002CB" lang="de" xmltv_id="SamsungTVPlus.de.DEBD1900002CB">Crime Time [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD2300001ND" lang="de" xmltv_id="SamsungTVPlus.de.DEBD2300001ND">Sport 1 Motor [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD2400001PC" lang="de" xmltv_id="SamsungTVPlus.de.DEBD2400001PC">PR1DE free [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD26000034M" lang="de" xmltv_id="SamsungTVPlus.de.DEBD26000034M">More than Sports TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD2600004U7" lang="de" xmltv_id="SamsungTVPlus.de.DEBD2600004U7">Motorvision Classic [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD2600005U6" lang="de" xmltv_id="SamsungTVPlus.de.DEBD2600005U6">Motorvision [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD260000692" lang="de" xmltv_id="SamsungTVPlus.de.DEBD260000692">Scooore [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD2700001ID" lang="de" xmltv_id="SamsungTVPlus.de.DEBD2700001ID">DEFA TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD2700003W5" lang="de" xmltv_id="SamsungTVPlus.de.DEBD2700003W5">Royalworld - Adel &amp;amp; Dynastien [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD29000013S" lang="de" xmltv_id="SamsungTVPlus.de.DEBD29000013S">World Poker Tour [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD30000014M" lang="de" xmltv_id="SamsungTVPlus.de.DEBD30000014M">Bares für Rares [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD3700002HO" lang="de" xmltv_id="SamsungTVPlus.de.DEBD3700002HO">ZDF kocht! [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD3800001QD" lang="de" xmltv_id="SamsungTVPlus.de.DEBD3800001QD">DELUXE RAP [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD390000181" lang="de" xmltv_id="SamsungTVPlus.de.DEBD390000181">Aniverse TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD4100001ZB" lang="de" xmltv_id="SamsungTVPlus.de.DEBD4100001ZB">Merhaba Türkische Serien [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD4100002H1" lang="de" xmltv_id="SamsungTVPlus.de.DEBD4100002H1">K-Drama+ [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD4700001UN" lang="de" xmltv_id="SamsungTVPlus.de.DEBD4700001UN">LooLoo Kids [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD4900001QV" lang="de" xmltv_id="SamsungTVPlus.de.DEBD4900001QV">Reuters [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD5000001VL" lang="de" xmltv_id="SamsungTVPlus.de.DEBD5000001VL">Top Filme [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD5000002EW" lang="de" xmltv_id="SamsungTVPlus.de.DEBD5000002EW">World of Freesports - WoF [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD5100001XP" lang="de" xmltv_id="SamsungTVPlus.de.DEBD5100001XP">SuperToons TV [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD700001C5" lang="de" xmltv_id="SamsungTVPlus.de.DEBD700001C5">DAZN Rise [Samsung TV Plus]</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBD800001S4" lang="de" xmltv_id="SamsungTVPlus.de.DEBD800001S4">CNN [Samsung TV Plus]</channel>
   <channel site="epgshare01.online" site_id="CH1#San.Marino.RTV.ch" lang="de" xmltv_id="SanMarinoRTV.sm@SD">San Marino RTV</channel>
   <channel site="epgshare01.online" site_id="CH1#SHf.-.Schaffhauser.Fernsehen.ch" lang="de" xmltv_id="SchaffhauserFernsehen.ch@SD">SHf - Schaffhauser Fernsehen</channel>
   <channel site="web.magentatv.de" site_id="5505" lang="de" xmltv_id="SchlagerDeluxe.de@SD">SCHLAGER DELUXE</channel>
@@ -1096,7 +1780,6 @@
   <channel site="web.magentatv.de" site_id="5398" lang="de" xmltv_id="StingrayiConcerts.ca@SD">Stingray iConcerts</channel>
   <channel site="tvprofil.com" site_id="at/tvprogramm#stopklatka" lang="de" xmltv_id="StopklatkaTV.pl@SD">Stopklatka</channel>
   <channel site="tv.magenta.at" site_id="288804392373" lang="de" xmltv_id="Streamstertv.de@SD">Streamster.tv</channel>
-  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#ATBA3300010PU" lang="de" xmltv_id="StrongmanChampionsLeague.uk@SD">Strongman Champions League</channel>
   <channel site="web.magentatv.de" site_id="2616" lang="de" xmltv_id="Studio47.de@SD">Studio 47</channel>
   <channel site="epgshare01.online" site_id="CH1#TV.Südostschweiz.ch" lang="de" xmltv_id="Sudostschweiz.ch@SD">TV Südostschweiz</channel>
   <channel site="epgshare01.online" site_id="CH1#SuperTennis.TV.ch" lang="de" xmltv_id="SuperTennis.it@SD">SuperTennis TV</channel>
@@ -1120,7 +1803,6 @@
   <channel site="web.magentatv.de" site_id="383" lang="de" xmltv_id="TLC.de@SD">TLC</channel>
   <channel site="epgshare01.online" site_id="CH1#TMC.ch" lang="de" xmltv_id="TMC.fr@SD">TMC</channel>
   <channel site="web.magentatv.de" site_id="601" lang="de" xmltv_id="TOGGOplus.de@SD">TOGGO plus</channel>
-  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT1100003X6" lang="de" xmltv_id="TOPBarca.pl@SD">Top Barça</channel>
   <channel site="web.magentatv.de" site_id="5394" lang="de" xmltv_id="TOPSERIEN.de@HD">TOP SERIEN</channel>
   <channel site="www.magenta.tv" site_id="754137640066" lang="de" xmltv_id="TOPTRUECRIME.de@HD">TOP TRUE CRIME</channel>
   <channel site="tvprofil.com" site_id="ch/tv-programm#trt-1" lang="de" xmltv_id="TRT1.tr@SD">TRT 1</channel>
@@ -1214,7 +1896,6 @@
   <channel site="epgshare01.online" site_id="CH1#Telenova.ch" lang="de" xmltv_id="Telenova.it@SD">Telenova</channel>
   <channel site="epgshare01.online" site_id="CH1#teleSUR.ch" lang="de" xmltv_id="Telesur.ve@SD">teleSUR</channel>
   <channel site="epgshare01.online" site_id="CH1#Teletoon+1.ch" lang="de" xmltv_id="TeletoonPlus.fr@1">Teletoon+1</channel>
-  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT5000002QB" lang="de" xmltv_id="Teletubbies.uk@SD">Teletubbies</channel>
   <channel site="epgshare01.online" site_id="CH1#Televista.ch" lang="de" xmltv_id="Televista.ch@SD">Televista</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#6870c9333ffa5e0c914e9205" lang="de" xmltv_id="TennisChannel.us@SD">Tennis Channel</channel>
   <channel site="watch.whaletvplus.com" site_id="931186243466302960" lang="en" xmltv_id="TerraMaterWILD.de@English">Terra Mater Wild (EN)</channel>
@@ -1226,7 +1907,6 @@
   <channel site="epgshare01.online" site_id="CH1#The.Box.ch" lang="de" xmltv_id="TheBox.uk@SD">The Box</channel>
   <channel site="plex.tv" site_id="68dcbb869beaa3a402966dba" lang="en" xmltv_id="TheGrahamNortonShow.uk@SD">The Graham Norton Show</channel>
   <channel site="epgshare01.online" site_id="CH1#The.Israeli.Network.ch" lang="de" xmltv_id="TheIsraeliNetwork.il@SD">The Israeli Network</channel>
-  <channel site="i.mjh.nz" site_id="SamsungTVPlus/at#AT2000029T" lang="de" xmltv_id="TheJamieOliverChannel.us@SD">The Jamie Oliver Channel</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/br#5f515ebac01c0f00080e8439" lang="pt" xmltv_id="ThePetCollective.us@Brazil">The Pet Collective</channel>
   <channel site="plex.tv" site_id="5f170d61b898490041b49369" lang="en" xmltv_id="ThePetCollective.us@UK">The Pet Collective</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/us#5bb1ad55268cae539bcedb08" lang="en" xmltv_id="ThePetCollective.us@US">The Pet Collective</channel>
@@ -1265,7 +1945,6 @@
   <channel site="sky.com" site_id="DE#1201" lang="de" xmltv_id="VOX.de@HD">VOX HD</channel>
   <channel site="web.magentatv.de" site_id="385" lang="de" xmltv_id="VOX.de@SD">VOX</channel>
   <channel site="tv.magenta.at" site_id="229039144336" lang="de" xmltv_id="Vesti.rs@SD">VESTI</channel>
-  <channel site="i.mjh.nz" site_id="SamsungTVPlus/de#DEBC2100001ZJ" lang="de" xmltv_id="VevoPop.us@SD">Vevo Pop</channel>
   <channel site="tvprofil.com" site_id="de/tvprogramm#vivid-red" lang="de" xmltv_id="VividRedHD.us@SD">Vivid Red</channel>
   <channel site="tvprofil.com" site_id="at/tvprogramm#vivid-tv" lang="de" xmltv_id="VividTVEurope.uk@SD">Vivid TV</channel>
   <channel site="programtv.onet.pl" site_id="vivid-touch-636" lang="de" xmltv_id="VividTouch.uk@SD">Vivid Touch</channel>
