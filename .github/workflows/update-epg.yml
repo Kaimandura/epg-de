@@ -258,13 +258,9 @@ jobs:
 
             git add -A -- \
               data/de-channels.xml \
-              epg/de.xml \
               epg/de.xml.gz \
-              epg/samsung.xml \
               epg/samsung.xml.gz \
-              epg/pluto.xml \
               epg/pluto.xml.gz \
-              epg/amazon.xml \
               epg/amazon.xml.gz \
               reports/coverage.csv \
               reports/platform-coverage.csv \
