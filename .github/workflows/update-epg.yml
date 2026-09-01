@@ -164,14 +164,27 @@ jobs:
 
           python scripts/validate_epg.py "${args[@]}"
 
+      - name: Export platform EPG subsets
+        run: |
+          python scripts/export_platform_epgs.py \
+            --master build/publish/de.xml \
+            --candidates build/candidates.json \
+            --config config/platforms.json \
+            --output-dir build/publish/platforms \
+            --report build/publish/platform-coverage.csv
+
       - name: Promote validated build (Last Known Good)
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p epg reports
-          rm -f epg/de.xml
+          rm -f epg/de.xml epg/samsung.xml epg/pluto.xml epg/amazon.xml
           cp build/publish/de.xml.gz epg/de.xml.gz
+          cp build/publish/platforms/samsung.xml.gz epg/samsung.xml.gz
+          cp build/publish/platforms/pluto.xml.gz epg/pluto.xml.gz
+          cp build/publish/platforms/amazon.xml.gz epg/amazon.xml.gz
           cp build/publish/coverage.csv reports/coverage.csv
+          cp build/publish/platform-coverage.csv reports/platform-coverage.csv
           cp build/unmapped-de-channels.csv reports/unmapped-de-channels.csv
 
       - name: Publish generated files
@@ -190,10 +203,22 @@ jobs:
 
           cp data/de-channels.xml "$publish_tmp/de-channels.xml"
           cp epg/de.xml.gz "$publish_tmp/de.xml.gz"
+          cp epg/samsung.xml.gz "$publish_tmp/samsung.xml.gz"
+          cp epg/pluto.xml.gz "$publish_tmp/pluto.xml.gz"
+          cp epg/amazon.xml.gz "$publish_tmp/amazon.xml.gz"
           cp reports/coverage.csv "$publish_tmp/coverage.csv"
+          cp reports/platform-coverage.csv "$publish_tmp/platform-coverage.csv"
           cp reports/unmapped-de-channels.csv "$publish_tmp/unmapped-de-channels.csv"
 
-          for file in "$publish_tmp/de-channels.xml" "$publish_tmp/de.xml.gz" "$publish_tmp/coverage.csv" "$publish_tmp/unmapped-de-channels.csv"; do
+          for file in \
+            "$publish_tmp/de-channels.xml" \
+            "$publish_tmp/de.xml.gz" \
+            "$publish_tmp/samsung.xml.gz" \
+            "$publish_tmp/pluto.xml.gz" \
+            "$publish_tmp/amazon.xml.gz" \
+            "$publish_tmp/coverage.csv" \
+            "$publish_tmp/platform-coverage.csv" \
+            "$publish_tmp/unmapped-de-channels.csv"; do
             size="$(stat -c%s "$file")"
             if (( size >= 100 * 1024 * 1024 )); then
               echo "Refusing publication: $file is ${size} bytes and exceeds GitHub's 100 MiB limit."
@@ -221,17 +246,28 @@ jobs:
 
             git reset --hard "$remote_sha"
             mkdir -p data epg reports
-            rm -f epg/de.xml
+            rm -f epg/de.xml epg/samsung.xml epg/pluto.xml epg/amazon.xml
             cp "$publish_tmp/de-channels.xml" data/de-channels.xml
             cp "$publish_tmp/de.xml.gz" epg/de.xml.gz
+            cp "$publish_tmp/samsung.xml.gz" epg/samsung.xml.gz
+            cp "$publish_tmp/pluto.xml.gz" epg/pluto.xml.gz
+            cp "$publish_tmp/amazon.xml.gz" epg/amazon.xml.gz
             cp "$publish_tmp/coverage.csv" reports/coverage.csv
+            cp "$publish_tmp/platform-coverage.csv" reports/platform-coverage.csv
             cp "$publish_tmp/unmapped-de-channels.csv" reports/unmapped-de-channels.csv
 
             git add -A -- \
               data/de-channels.xml \
               epg/de.xml \
               epg/de.xml.gz \
+              epg/samsung.xml \
+              epg/samsung.xml.gz \
+              epg/pluto.xml \
+              epg/pluto.xml.gz \
+              epg/amazon.xml \
+              epg/amazon.xml.gz \
               reports/coverage.csv \
+              reports/platform-coverage.csv \
               reports/unmapped-de-channels.csv
 
             if git diff --cached --quiet; then
