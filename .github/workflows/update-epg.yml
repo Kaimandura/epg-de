@@ -62,7 +62,7 @@ jobs:
             grab_timeout=420
             overall_timeout=12600
           else
-            rounds=2
+            rounds=3
             workers=3
             batch_size=40
             grab_timeout=180
@@ -114,6 +114,8 @@ jobs:
             --feeds-csv upstream/database/data/feeds.csv \
             --playlist upstream/de.m3u \
             --priority-file config/source-priority.txt \
+            --override-file config/channel-overrides.json \
+            --unmapped-report build/unmapped-de-channels.csv \
             --candidates build/candidates.json \
             --channels data/de-channels.xml
 
@@ -161,6 +163,7 @@ jobs:
           cp build/publish/de.xml epg/de.xml
           cp build/publish/de.xml.gz epg/de.xml.gz
           cp build/publish/coverage.csv reports/coverage.csv
+          cp build/unmapped-de-channels.csv reports/unmapped-de-channels.csv
 
       - name: Publish generated files
         shell: bash
@@ -180,6 +183,7 @@ jobs:
           cp epg/de.xml "$publish_tmp/de.xml"
           cp epg/de.xml.gz "$publish_tmp/de.xml.gz"
           cp reports/coverage.csv "$publish_tmp/coverage.csv"
+          cp reports/unmapped-de-channels.csv "$publish_tmp/unmapped-de-channels.csv"
 
           for attempt in 1 2 3; do
             echo "Publish attempt $attempt/3"
@@ -205,8 +209,15 @@ jobs:
             cp "$publish_tmp/de.xml" epg/de.xml
             cp "$publish_tmp/de.xml.gz" epg/de.xml.gz
             cp "$publish_tmp/coverage.csv" reports/coverage.csv
+            cp "$publish_tmp/unmapped-de-channels.csv" reports/unmapped-de-channels.csv
 
-            git add data/de-channels.xml epg/de.xml epg/de.xml.gz reports/coverage.csv
+            git add \
+              data/de-channels.xml \
+              epg/de.xml \
+              epg/de.xml.gz \
+              reports/coverage.csv \
+              reports/unmapped-de-channels.csv
+
             if git diff --cached --quiet; then
               echo "No generated changes."
               exit 0
