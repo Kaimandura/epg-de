@@ -1,0 +1,93 @@
+name: Update Germany EPG
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 2 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/update-epg.yml"
+      - "scripts/**"
+      - "config/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: epg-de-update
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Fetch current iptv-org sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf upstream
+          mkdir -p upstream build data epg reports
+          git clone --depth 1 https://github.com/iptv-org/epg.git upstream/epg
+          git clone --depth 1 https://github.com/iptv-org/database.git upstream/database
+          curl --retry 3 --connect-timeout 15 --max-time 60 -fsSL \
+            https://iptv-org.github.io/iptv/countries/de.m3u \
+            -o upstream/de.m3u || true
+
+      - name: Install epg grabber
+        working-directory: upstream/epg
+        run: npm ci
+
+      - name: Collect German and Germany-available channels
+        run: |
+          python scripts/collect_channels.py \
+            --epg-root upstream/epg \
+            --feeds-csv upstream/database/data/feeds.csv \
+            --playlist upstream/de.m3u \
+            --priority-file config/source-priority.txt \
+            --candidates build/candidates.json \
+            --channels data/de-channels.xml
+
+      - name: Build guide with source fallback
+        run: |
+          python scripts/build_epg.py \
+            --epg-root upstream/epg \
+            --candidates build/candidates.json \
+            --output epg/de.xml \
+            --coverage reports/coverage.csv \
+            --days 7 \
+            --rounds 4 \
+            --min-programmes 4
+
+      - name: Validate XMLTV
+        run: python scripts/validate_epg.py epg/de.xml
+
+      - name: Publish generated files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "epg-de bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/de-channels.xml epg/de.xml epg/de.xml.gz reports/coverage.csv
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+            exit 0
+          fi
+          git commit -m "chore: update Germany EPG"
+          git push

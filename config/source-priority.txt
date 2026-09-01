@@ -1,0 +1,3 @@
+# Niedrigere Zeile = höhere Priorität
+web.magentatv.de
+plex.tv
