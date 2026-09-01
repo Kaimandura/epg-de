@@ -1,3 +1,4 @@
 # Niedrigere Zeile = höhere Priorität
+# Build-Trigger: initialer EPG-Lauf
 web.magentatv.de
 plex.tv
