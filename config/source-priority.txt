@@ -1,4 +1,10 @@
-# Niedrigere Zeile = höhere Priorität
-# Build-Trigger: initialer EPG-Lauf
+# Oben = höhere Priorität
+# Deutsche Provider zuerst, danach hochwertige Fallback-Quellen
 web.magentatv.de
+www.magenta.tv
+sky.com
+epgshare01.online
 plex.tv
+tv.blue.ch
+tvheute.at
+tv.magenta.at
