@@ -5,7 +5,8 @@
     "SerienPlus.de@HD",
     "SerienPlus.de@SD",
     "OneTerra.de@SD",
-    "CrimeTime.de@SD"
+    "CrimeTime.de@SD",
+    "DFBTV.de@HD"
   ],
   "fallback": {
     "min_programmes": 1,
@@ -20,6 +21,7 @@
     "SerienPlus.de@HD",
     "SerienPlus.de@SD",
     "OneTerra.de@SD",
-    "CrimeTime.de@SD"
+    "CrimeTime.de@SD",
+    "DFBTV.de@HD"
   ]
 }
