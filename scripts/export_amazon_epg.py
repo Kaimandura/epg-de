@@ -54,7 +54,6 @@ def choose_source(
     channels_by_id: dict[str, ET.Element],
     programmes_by_channel: dict[str, list[ET.Element]],
 ) -> tuple[str | None, int]:
-    # Explicit IDs are authoritative and ordered by preference.
     explicit_ids = as_list(definition.get("source_ids"))
     for source_id in explicit_ids:
         if source_id in channels_by_id and programmes_by_channel.get(source_id):
@@ -99,8 +98,6 @@ def choose_source(
     if not candidates:
         return None, 0
 
-    # Prefer the candidate with the richest current schedule. This is deterministic
-    # and avoids selecting an otherwise valid alias with sparse guide data.
     candidates.sort(
         key=lambda channel_id: (-len(programmes_by_channel[channel_id]), channel_id)
     )
@@ -146,6 +143,58 @@ def validate_roundtrip(xml_path: Path, gzip_path: Path) -> tuple[int, int, int]:
     return len(channels), len(active_ids), len(programmes)
 
 
+def update_platform_report(
+    report_path: Path,
+    channel_count: int,
+    active_count: int,
+    programme_count: int,
+) -> None:
+    if not report_path.exists():
+        raise SystemExit(f"Platform coverage report is missing: {report_path}")
+
+    with report_path.open("r", encoding="utf-8", newline="") as handle:
+        reader = csv.DictReader(handle)
+        fieldnames = reader.fieldnames or []
+        rows = list(reader)
+
+    required_fields = [
+        "platform",
+        "output",
+        "matched_xmltv_ids",
+        "channel_count",
+        "active_channel_count",
+        "programme_count",
+    ]
+    if fieldnames != required_fields:
+        raise SystemExit(
+            f"Unexpected platform coverage columns: {fieldnames!r}; expected {required_fields!r}"
+        )
+
+    replacement = {
+        "platform": "amazon",
+        "output": "amazon.xml.gz",
+        "matched_xmltv_ids": str(channel_count),
+        "channel_count": str(channel_count),
+        "active_channel_count": str(active_count),
+        "programme_count": str(programme_count),
+    }
+
+    found = False
+    for index, row in enumerate(rows):
+        if row.get("platform") == "amazon":
+            rows[index] = replacement
+            found = True
+            break
+    if not found:
+        rows.append(replacement)
+
+    rows.sort(key=lambda row: row.get("platform", ""))
+    with report_path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=required_fields)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Export an isolated Prime Video Germany XMLTV guide from the validated master EPG."
@@ -154,6 +203,7 @@ def main() -> int:
     parser.add_argument("--config", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--report", required=True, type=Path)
+    parser.add_argument("--platform-report", required=True, type=Path)
     args = parser.parse_args()
 
     master_root = ET.parse(args.master).getroot()
@@ -179,7 +229,9 @@ def main() -> int:
         if channel_id:
             programmes_by_channel[channel_id].append(programme)
 
-    output_root = ET.Element("tv", {"generator-info-name": "Kaimandura/epg-de Prime Video"})
+    output_root = ET.Element(
+        "tv", {"generator-info-name": "Kaimandura/epg-de Prime Video"}
+    )
     report_rows: list[list[Any]] = []
     selected: list[tuple[str, str, str, list[ET.Element]]] = []
     output_ids: set[str] = set()
@@ -200,9 +252,13 @@ def main() -> int:
         )
         if source_id is None:
             status = "MISSING_REQUIRED" if required else "MISSING_OPTIONAL"
-            report_rows.append([amazon_id, name, status, "", "", 0, candidate_count])
+            report_rows.append(
+                [amazon_id, name, status, "", "", 0, candidate_count]
+            )
             if required:
-                raise SystemExit(f"Required Prime Video channel cannot be mapped: {name}")
+                raise SystemExit(
+                    f"Required Prime Video channel cannot be mapped: {name}"
+                )
             print(f"Amazon optional channel not mapped: {name}")
             continue
 
@@ -210,7 +266,9 @@ def main() -> int:
         source_programmes = programmes_by_channel[source_id]
         if not source_programmes:
             if required:
-                raise SystemExit(f"Required Prime Video channel has no programmes: {name}")
+                raise SystemExit(
+                    f"Required Prime Video channel has no programmes: {name}"
+                )
             report_rows.append(
                 [amazon_id, name, "NO_EPG", source_id, "", 0, candidate_count]
             )
@@ -228,7 +286,8 @@ def main() -> int:
         output_root.append(channel)
         output_ids.add(amazon_id)
         selected.append((amazon_id, source_id, name, source_programmes))
-        source_name = display_names(source_channel)[0] if display_names(source_channel) else source_id
+        names = display_names(source_channel)
+        source_name = names[0] if names else source_id
         report_rows.append(
             [
                 amazon_id,
@@ -280,7 +339,9 @@ def main() -> int:
         )
         writer.writerows(report_rows)
 
-    channel_count, active_count, programme_count = validate_roundtrip(args.output, gzip_path)
+    channel_count, active_count, programme_count = validate_roundtrip(
+        args.output, gzip_path
+    )
     min_channels = int(config.get("min_channels", 1))
     min_active = int(config.get("min_active_channels", min_channels))
     min_programmes = int(config.get("min_programmes", 1))
@@ -298,6 +359,9 @@ def main() -> int:
             f"Amazon release gate failed: {programme_count} programmes < {min_programmes} required."
         )
 
+    update_platform_report(
+        args.platform_report, channel_count, active_count, programme_count
+    )
     print(
         "Amazon validation OK: "
         f"{channel_count} channels, {active_count} active, {programme_count} programmes."
