@@ -17,6 +17,7 @@ MASTER_PRESERVE_IDS = {
     "SerienPlus.de@SD",
     "OneTerra.de@SD",
     "CrimeTime.de@SD",
+    "DFBTV.de@HD",
 }
 
 
@@ -179,6 +180,17 @@ def main() -> int:
         if signature in seen:
             raise SystemExit(f"Duplicate programme found: {signature}")
         seen.add(signature)
+
+    if args.xml.name == "de.xml" and "publish" in args.xml.parts:
+        for required_id in sorted(MASTER_PRESERVE_IDS):
+            if required_id not in channel_by_id:
+                raise SystemExit(f"Required master channel missing: {required_id}")
+            count = programme_counts.get(required_id, 0)
+            if count < 1:
+                raise SystemExit(f"Required master channel has no programmes: {required_id}")
+            if not channel_display_names(channel_by_id[required_id]):
+                raise SystemExit(f"Required master channel has no display-name: {required_id}")
+            print(f"Required master channel OK: {required_id} ({count} programmes)")
 
     for required_id in args.required_active_channel:
         required_id = required_id.strip()
