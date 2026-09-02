@@ -1,8 +1,5 @@
 {
-  "drop_prefixes_from_master": [
-    "SamsungTVPlus.",
-    "PlutoTV."
-  ],
+  "drop_prefixes_from_master": [],
   "critical_fallback_ids": [
     "Silverline.de",
     "SerienPlus.de@HD",
