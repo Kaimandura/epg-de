@@ -68,6 +68,11 @@ def main() -> int:
         help="Require every channel to have at least one non-empty display-name.",
     )
     parser.add_argument(
+        "--require-all-channels-active",
+        action="store_true",
+        help="Reject any channel that has no programme entries.",
+    )
+    parser.add_argument(
         "--required-active-channel",
         action="append",
         default=[],
@@ -105,6 +110,15 @@ def main() -> int:
         raise SystemExit(f"Too few programmes: {len(programmes)} < {args.min_programmes}")
     if len(channel_nodes) != len(channel_ids):
         raise SystemExit("Duplicate or empty channel IDs found.")
+
+    if args.require_all_channels_active:
+        inactive_channels = sorted(channel_ids - active_channels)
+        if inactive_channels:
+            preview = ", ".join(inactive_channels[:20])
+            raise SystemExit(
+                "Channels without programmes found: "
+                f"{preview}" + (" ..." if len(inactive_channels) > 20 else "")
+            )
 
     if args.require_display_names:
         missing_display_names = [
