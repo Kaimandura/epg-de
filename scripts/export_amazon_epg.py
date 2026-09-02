@@ -7,6 +7,8 @@ import gzip
 import json
 import re
 import shutil
+import subprocess
+import sys
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 from copy import deepcopy
@@ -195,6 +197,32 @@ def update_platform_report(
         writer.writerows(rows)
 
 
+def finalize_master(master_path: Path) -> None:
+    repo_root = Path(__file__).resolve().parents[1]
+    command = [
+        sys.executable,
+        str(repo_root / "scripts" / "finalize_master_epg.py"),
+        "--input",
+        str(master_path),
+        "--output",
+        str(master_path),
+        "--config",
+        str(repo_root / "config" / "master-cleanup.json"),
+        "--report",
+        str(master_path.parent / "master-cleanup.csv"),
+    ]
+
+    baseline_gzip = repo_root / "epg" / "de.xml.gz"
+    baseline_xml = repo_root / "epg" / "de.xml"
+    if baseline_gzip.exists():
+        command.extend(["--baseline", str(baseline_gzip)])
+    elif baseline_xml.exists():
+        command.extend(["--baseline", str(baseline_xml)])
+
+    print("Finalizing master EPG after platform exports...")
+    subprocess.run(command, check=True)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Export an isolated Prime Video Germany XMLTV guide from the validated master EPG."
@@ -366,6 +394,8 @@ def main() -> int:
         "Amazon validation OK: "
         f"{channel_count} channels, {active_count} active, {programme_count} programmes."
     )
+
+    finalize_master(args.master)
     return 0
 
 
