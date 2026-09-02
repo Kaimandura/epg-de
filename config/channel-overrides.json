@@ -48,6 +48,13 @@
       "site": "sky.com",
       "site_id": "DE#2009",
       "lang": "de"
+    },
+    {
+      "xmltv_id": "DFBTV.de@HD",
+      "name": "DFB.TV",
+      "site": "sky.com",
+      "site_id": "DE#124",
+      "lang": "de"
     }
   ]
 }
