@@ -8,6 +8,36 @@ import xml.etree.ElementTree as ET
 from collections import Counter
 from pathlib import Path
 
+from cleanup_published_epgs import clean_file
+
+
+MASTER_PRESERVE_IDS = {
+    "Silverline.de",
+    "SerienPlus.de@HD",
+    "SerienPlus.de@SD",
+    "OneTerra.de@SD",
+    "CrimeTime.de@SD",
+}
+
+
+def cleanup_before_validation(path: Path) -> None:
+    if not path.exists():
+        return
+
+    preserve = MASTER_PRESERVE_IDS if path.name == "de.xml" else set()
+    rows, channels, active, programmes = clean_file(
+        label=f"validate:{path.stem}",
+        path=path,
+        preserve=preserve,
+        min_overlap=0.92,
+        min_jaccard=0.80,
+        min_shared=8,
+    )
+    print(
+        f"Pre-validation cleanup: {path} channels={channels} active={active} "
+        f"programmes={programmes} removed={len(rows)}"
+    )
+
 
 def load_xml(path: Path) -> ET.Element:
     try:
@@ -95,6 +125,7 @@ def main() -> int:
         if not 0.0 <= value <= 1.0:
             parser.error(f"{name} must be between 0.0 and 1.0")
 
+    cleanup_before_validation(args.xml)
     root = load_xml(args.xml)
     channel_nodes = root.findall("channel")
     channel_ids, programmes, active_channels = counts(root)
@@ -111,14 +142,13 @@ def main() -> int:
     if len(channel_nodes) != len(channel_ids):
         raise SystemExit("Duplicate or empty channel IDs found.")
 
-    if args.require_all_channels_active:
-        inactive_channels = sorted(channel_ids - active_channels)
-        if inactive_channels:
-            preview = ", ".join(inactive_channels[:20])
-            raise SystemExit(
-                "Channels without programmes found: "
-                f"{preview}" + (" ..." if len(inactive_channels) > 20 else "")
-            )
+    inactive_channels = sorted(channel_ids - active_channels)
+    if inactive_channels:
+        preview = ", ".join(inactive_channels[:20])
+        raise SystemExit(
+            "Channels without programmes found after cleanup: "
+            f"{preview}" + (" ..." if len(inactive_channels) > 20 else "")
+        )
 
     if args.require_display_names:
         missing_display_names = [
@@ -194,6 +224,7 @@ def main() -> int:
         raise SystemExit("Gzip payload does not exactly match the staged XML file.")
 
     if args.baseline and args.baseline.exists():
+        cleanup_before_validation(args.baseline)
         baseline_root = load_xml(args.baseline)
         _, baseline_programmes, baseline_active_channels = counts(baseline_root)
 
