@@ -240,6 +240,7 @@
   <channel site="i.mjh.nz" site_id="PlutoTV/de#6683f7fe36a2f9000804940c" lang="de" xmltv_id="DAZNHandballxPlutoTV.de@DACH">DAZN Handball x Pluto TV</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#64afe50c5dc16600087f3227" lang="de" xmltv_id="DAZNHeldinnenxPlutoTV.de@DACH">DAZN Heldinnen x Pluto TV</channel>
   <channel site="sky.com" site_id="DE#4914" lang="de" xmltv_id="DF1.de@SD">DF1 HD</channel>
+  <channel site="sky.com" site_id="DE#124" lang="de" xmltv_id="DFBTV.de@HD">DFB.TV</channel>
   <channel site="sky.com" site_id="DE#5402" lang="de" xmltv_id="DMAX.de@HD">DMAX HD</channel>
   <channel site="web.magentatv.de" site_id="429" lang="de" xmltv_id="DMAX.de@SD">DMAX</channel>
   <channel site="epgshare01.online" site_id="CH1#DMAX.Italia.ch" lang="de" xmltv_id="DMAX.it@SD">DMAX Italia</channel>
