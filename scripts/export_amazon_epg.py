@@ -15,6 +15,8 @@ from copy import deepcopy
 from pathlib import Path
 from typing import Any
 
+DE_ALIAS_PREFIX = "DE - "
+
 
 def as_list(value: Any) -> list[str]:
     if value is None:
@@ -29,6 +31,12 @@ def safe_token(value: str) -> str:
     if not token:
         raise ValueError(f"Cannot create XMLTV ID token from {value!r}")
     return token
+
+
+def clean_de_base_name(value: str) -> str:
+    value = value.strip()
+    value = re.sub(r"^DE\s*(?:-|:|\|)\s*", "", value, flags=re.IGNORECASE)
+    return value.strip()
 
 
 def display_names(channel: ET.Element) -> list[str]:
@@ -130,6 +138,20 @@ def validate_roundtrip(xml_path: Path, gzip_path: Path) -> tuple[int, int, int]:
     channel_ids = [node.attrib.get("id", "") for node in channels]
     if not all(channel_ids) or len(channel_ids) != len(set(channel_ids)):
         raise SystemExit("Amazon XMLTV contains empty or duplicate channel IDs.")
+
+    missing_de_alias = [
+        channel.attrib.get("id", "")
+        for channel in channels
+        if not any(
+            (node.text or "").strip().casefold().startswith(DE_ALIAS_PREFIX.casefold())
+            for node in channel.findall("display-name")
+        )
+    ]
+    if missing_de_alias:
+        raise SystemExit(
+            "Amazon XMLTV channels without DE compatibility alias: "
+            + ", ".join(missing_de_alias[:20])
+        )
 
     known_ids = set(channel_ids)
     programmes = root.findall("programme")
@@ -306,6 +328,7 @@ def main() -> int:
         seen_names: set[str] = set()
         add_display_name(channel, f"{name} [{label}]", seen_names)
         add_display_name(channel, name, seen_names)
+        add_display_name(channel, f"{DE_ALIAS_PREFIX}{clean_de_base_name(name)}", seen_names)
         for alias in as_list(definition.get("aliases")):
             add_display_name(channel, alias, seen_names)
         for source_name in display_names(source_channel):
