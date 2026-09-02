@@ -1,0 +1,28 @@
+{
+  "drop_prefixes_from_master": [
+    "SamsungTVPlus.",
+    "PlutoTV."
+  ],
+  "critical_fallback_ids": [
+    "Silverline.de",
+    "SerienPlus.de@HD",
+    "SerienPlus.de@SD",
+    "OneTerra.de@SD",
+    "CrimeTime.de@SD"
+  ],
+  "fallback": {
+    "min_programmes": 1,
+    "min_future_hours": 24
+  },
+  "icon_overrides": {
+    "CrimeTime.de@SD": "https://astra.de/sites/default/files/2023-07/astra_23_website_channel-factory_logo_crime-time_color_800x640px.png"
+  },
+  "deduplicate_exact_schedules": true,
+  "dedupe_preserve_ids": [
+    "Silverline.de",
+    "SerienPlus.de@HD",
+    "SerienPlus.de@SD",
+    "OneTerra.de@SD",
+    "CrimeTime.de@SD"
+  ]
+}
