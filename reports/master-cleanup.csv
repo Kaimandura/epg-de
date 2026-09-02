@@ -1,0 +1,14 @@
+action,xmltv_id,kept_xmltv_id,name,programme_count,details
+RESTORE_LAST_KNOWN_GOOD,Silverline.de,Silverline.de,Silverline,44,latest_stop=2026-09-05T01:00:00+00:00
+ICON_OVERRIDE,CrimeTime.de@SD,CrimeTime.de@SD,Crime Time,199,https://astra.de/sites/default/files/2023-07/astra_23_website_channel-factory_logo_crime-time_color_800x640px.png
+DEDUPE_IDENTICAL_SCHEDULE,AlJazeera.qa@EnglishHD,AlJazeera.qa@English,Al Jazeera English HD,266,normalized_name=al jazeera english;aliases_added=1
+DEDUPE_IDENTICAL_SCHEDULE,DAZN1.uk@FranceHD,DAZN1.uk@France,DAZN 1 F HD,153,normalized_name=dazn 1 f;aliases_added=1
+DEDUPE_IDENTICAL_SCHEDULE,DAZN1.uk@NetherlandsHD,DAZN1.uk@Netherlands,DAZN 1 N HD,156,normalized_name=dazn 1 n;aliases_added=1
+DEDUPE_IDENTICAL_SCHEDULE,DAZN2.uk@FranceHD,DAZN2.uk@France,DAZN 2 F HD,172,normalized_name=dazn 2 f;aliases_added=1
+DEDUPE_IDENTICAL_SCHEDULE,DAZN2.uk@NetherlandsHD,DAZN2.uk@Netherlands,DAZN 2 N HD,170,normalized_name=dazn 2 n;aliases_added=1
+DEDUPE_IDENTICAL_SCHEDULE,Eurosport2.fr@NetherlandsHD,Eurosport2.fr@Netherlands,Eurosp2 HD N,106,normalized_name=eurosp2 n;aliases_added=1
+DEDUPE_IDENTICAL_SCHEDULE,HSEExtra.de@SD,HSEExtra.de@HD,HSE Extra,168,normalized_name=hse extra;aliases_added=1
+DEDUPE_IDENTICAL_SCHEDULE,ProSiebenAustria.at@SD,ProSiebenAustria.at@HD,ProSieben Austria,230,normalized_name=prosieben austria;aliases_added=1
+DEDUPE_IDENTICAL_SCHEDULE,Puls4.at@SD,Puls4.at@HD,PULS 4 Austria,165,normalized_name=puls 4 austria;aliases_added=1
+DEDUPE_IDENTICAL_SCHEDULE,TLC.at@SD,TLC.at@HD,TLC Austria,210,normalized_name=tlc austria;aliases_added=1
+DEDUPE_IDENTICAL_SCHEDULE,VOX.at@SD,VOX.at@HD,VOX Austria,185,normalized_name=vox austria;aliases_added=1
