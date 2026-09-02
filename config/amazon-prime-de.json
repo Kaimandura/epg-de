@@ -1,0 +1,116 @@
+{
+  "namespace": "AmazonPrime.de",
+  "label": "Prime Video",
+  "min_channels": 10,
+  "min_active_channels": 10,
+  "min_programmes": 1500,
+  "channels": [
+    {
+      "key": "das-erste",
+      "name": "Das Erste",
+      "source_ids": ["DasErste.de@HD", "DasErste.de@SD"],
+      "aliases": ["Das Erste HD"],
+      "required": true
+    },
+    {
+      "key": "zdf",
+      "name": "ZDF",
+      "source_ids": ["ZDF.de@HD", "ZDF.de@SD"],
+      "aliases": ["ZDF HD"],
+      "required": true
+    },
+    {
+      "key": "ndr-niedersachsen",
+      "name": "NDR Fernsehen NDS",
+      "source_ids": ["NDRFernsehen.de@Niedersachsen"],
+      "aliases": ["NDR FS NDS HD", "NDR Niedersachsen"],
+      "required": true
+    },
+    {
+      "key": "br-sued",
+      "name": "BR Fernsehen Süd",
+      "source_ids": ["BRFernsehen.de@Sud"],
+      "aliases": ["BR Fernsehen Süd HD"],
+      "required": true
+    },
+    {
+      "key": "wdr-koeln",
+      "name": "WDR Köln",
+      "source_ids": ["WDRFernsehen.de@Koln"],
+      "aliases": ["WDR HD Köln", "WDR Fernsehen Köln"],
+      "required": true
+    },
+    {
+      "key": "hr",
+      "name": "hr-fernsehen",
+      "source_ids": ["hrfernsehen.de@HD", "hrfernsehen.de@SD"],
+      "aliases": ["hr-fernsehen HD"],
+      "required": true
+    },
+    {
+      "key": "rbb-berlin",
+      "name": "rbb Berlin Fernsehen",
+      "source_ids": ["rbbFernsehen.de@Berlin", "rbbFernsehen.de@SD"],
+      "aliases": ["rbb Berlin HD", "RBB Fernsehen Berlin"],
+      "required": true
+    },
+    {
+      "key": "mdr-sachsen",
+      "name": "MDR Sachsen",
+      "source_ids": ["MDRFernsehen.de@Sachsen"],
+      "aliases": ["MDR Sachsen HD", "MDR-Fernsehen Sachsen"],
+      "required": true
+    },
+    {
+      "key": "swr-bw",
+      "name": "SWR Fernsehen BW",
+      "source_ids": ["SWRFernsehenBadenWurttemberg.de@SD"],
+      "aliases": ["SWR Baden-Württemberg"],
+      "required": true
+    },
+    {
+      "key": "radio-bremen-tv",
+      "name": "Radio Bremen",
+      "source_ids": ["RadioBremenFernsehen.de@SD"],
+      "aliases": ["Radio Bremen TV"],
+      "required": true
+    },
+    {
+      "key": "sr-fernsehen",
+      "name": "SR Fernsehen",
+      "source_ids": ["SRFernsehen.de@HD", "SRFernsehen.de@SD"],
+      "aliases": ["SR Fernsehen HD"],
+      "required": true
+    },
+    {
+      "key": "welt",
+      "name": "Welt HD",
+      "source_ids": ["Welt.de@HD", "Welt.de@SD"],
+      "aliases": ["WELT", "Welt"],
+      "required": false
+    },
+    {
+      "key": "all-romance",
+      "name": "All Romance",
+      "match_names": ["All Romance"],
+      "prefer_prefixes": ["SamsungTVPlus.de."],
+      "aliases": ["Rakuten All Romance"],
+      "required": false
+    },
+    {
+      "key": "21-jump-street",
+      "name": "21 Jump Street",
+      "match_names": ["21 Jump Street"],
+      "prefer_prefixes": ["PlutoTV.de."],
+      "aliases": ["Rakuten 21 Jump Street"],
+      "required": false
+    },
+    {
+      "key": "planet-action",
+      "name": "Planet Action",
+      "match_names": ["Planet Action", "Action Planet"],
+      "aliases": ["Rakuten Planet Action"],
+      "required": false
+    }
+  ]
+}
