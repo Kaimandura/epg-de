@@ -157,7 +157,7 @@ jobs:
             --output-dir build/publish/platforms \
             --report build/publish/platform-coverage.csv
 
-      - name: Build Prime Video Germany EPG
+      - name: Build Prime Video Germany EPG and finalize master
         run: |
           python scripts/export_amazon_epg.py \
             --master build/publish/de.xml \
@@ -191,11 +191,23 @@ jobs:
           )
 
           baseline=""
-          if [[ -f epg/de.xml ]]; then
-            baseline="epg/de.xml"
-          elif [[ -f epg/de.xml.gz ]]; then
+          if [[ -f epg/de.xml.gz ]]; then
             mkdir -p build/baseline
-            gzip -dc epg/de.xml.gz > build/baseline/de.xml
+            python scripts/finalize_master_epg.py \
+              --input epg/de.xml.gz \
+              --output build/baseline/de.xml \
+              --config config/master-cleanup.json \
+              --report build/baseline/master-cleanup.csv \
+              --skip-fallback
+            baseline="build/baseline/de.xml"
+          elif [[ -f epg/de.xml ]]; then
+            mkdir -p build/baseline
+            python scripts/finalize_master_epg.py \
+              --input epg/de.xml \
+              --output build/baseline/de.xml \
+              --config config/master-cleanup.json \
+              --report build/baseline/master-cleanup.csv \
+              --skip-fallback
             baseline="build/baseline/de.xml"
           fi
 
@@ -282,6 +294,7 @@ jobs:
           cp build/publish/coverage.csv reports/coverage.csv
           cp build/publish/platform-coverage.csv reports/platform-coverage.csv
           cp build/publish/amazon-coverage.csv reports/amazon-coverage.csv
+          cp build/publish/master-cleanup.csv reports/master-cleanup.csv
           cp build/unmapped-de-channels.csv reports/unmapped-de-channels.csv
 
       - name: Publish generated files
@@ -306,6 +319,7 @@ jobs:
           cp reports/coverage.csv "$publish_tmp/coverage.csv"
           cp reports/platform-coverage.csv "$publish_tmp/platform-coverage.csv"
           cp reports/amazon-coverage.csv "$publish_tmp/amazon-coverage.csv"
+          cp reports/master-cleanup.csv "$publish_tmp/master-cleanup.csv"
           cp reports/unmapped-de-channels.csv "$publish_tmp/unmapped-de-channels.csv"
 
           for file in \
@@ -317,6 +331,7 @@ jobs:
             "$publish_tmp/coverage.csv" \
             "$publish_tmp/platform-coverage.csv" \
             "$publish_tmp/amazon-coverage.csv" \
+            "$publish_tmp/master-cleanup.csv" \
             "$publish_tmp/unmapped-de-channels.csv"; do
             size="$(stat -c%s "$file")"
             if (( size >= 100 * 1024 * 1024 )); then
@@ -354,6 +369,7 @@ jobs:
             cp "$publish_tmp/coverage.csv" reports/coverage.csv
             cp "$publish_tmp/platform-coverage.csv" reports/platform-coverage.csv
             cp "$publish_tmp/amazon-coverage.csv" reports/amazon-coverage.csv
+            cp "$publish_tmp/master-cleanup.csv" reports/master-cleanup.csv
             cp "$publish_tmp/unmapped-de-channels.csv" reports/unmapped-de-channels.csv
 
             git add -A -- \
@@ -365,6 +381,7 @@ jobs:
               reports/coverage.csv \
               reports/platform-coverage.csv \
               reports/amazon-coverage.csv \
+              reports/master-cleanup.csv \
               reports/unmapped-de-channels.csv
 
             if git diff --cached --quiet; then
