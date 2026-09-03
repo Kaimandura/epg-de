@@ -222,6 +222,38 @@ def ensure_master_display_names(
     return added_names, added_de_aliases
 
 
+def prune_empty_channels(root: ET.Element) -> int:
+    active_ids = {
+        programme.attrib.get("channel", "").strip()
+        for programme in root.findall("programme")
+        if programme.attrib.get("channel", "").strip()
+    }
+    removed = 0
+    for channel in list(root.findall("channel")):
+        channel_id = channel.attrib.get("id", "").strip()
+        if channel_id and channel_id in active_ids:
+            continue
+        root.remove(channel)
+        removed += 1
+
+    remaining_ids = {
+        channel.attrib.get("id", "").strip()
+        for channel in root.findall("channel")
+        if channel.attrib.get("id", "").strip()
+    }
+    orphan_programmes = {
+        programme.attrib.get("channel", "").strip()
+        for programme in root.findall("programme")
+        if programme.attrib.get("channel", "").strip() not in remaining_ids
+    }
+    if orphan_programmes:
+        raise ValueError(
+            "Pruning created programme references to missing channels: "
+            + ", ".join(sorted(orphan_programmes)[:20])
+        )
+    return removed
+
+
 def write_xml_and_gzip(root: ET.Element, xml_path: Path) -> None:
     xml_path.parent.mkdir(parents=True, exist_ok=True)
     tree = ET.ElementTree(root)
@@ -252,19 +284,19 @@ def write_subset(
         if channel_id:
             programmes_by_channel.setdefault(channel_id, []).append(programme)
 
-    selected_ids = sorted(wanted_ids & set(channels_by_id))
+    selected_ids = sorted(
+        channel_id
+        for channel_id in (wanted_ids & set(channels_by_id))
+        if programmes_by_channel.get(channel_id)
+    )
     root = ET.Element("tv", {"generator-info-name": "Kaimandura/epg-de"})
 
     for channel_id in selected_ids:
         root.append(deepcopy(channels_by_id[channel_id]))
 
     programme_count = 0
-    active_channels = 0
     for channel_id in selected_ids:
-        programmes = programmes_by_channel.get(channel_id, [])
-        if programmes:
-            active_channels += 1
-        for programme in programmes:
+        for programme in programmes_by_channel[channel_id]:
             root.append(deepcopy(programme))
             programme_count += 1
 
@@ -274,14 +306,20 @@ def write_subset(
     with gzip.open(gzip_path, "rb") as handle:
         roundtrip_root = ET.fromstring(handle.read())
     known = {node.attrib.get("id", "") for node in roundtrip_root.findall("channel")}
-    unknown_refs = {
+    active = {
         node.attrib.get("channel", "")
         for node in roundtrip_root.findall("programme")
-        if node.attrib.get("channel", "") not in known
+        if node.attrib.get("channel", "")
     }
+    unknown_refs = active - known
     if unknown_refs:
         raise ValueError(
             f"{gzip_path}: programme references unknown channel IDs: {sorted(unknown_refs)[:10]}"
+        )
+    empty_channels = known - active
+    if empty_channels:
+        raise ValueError(
+            f"{gzip_path}: empty channels must not be published: {sorted(empty_channels)[:10]}"
         )
 
     missing_de_alias = [
@@ -297,7 +335,7 @@ def write_subset(
             f"{gzip_path}: channels without DE compatibility alias: {missing_de_alias[:10]}"
         )
 
-    return len(selected_ids), active_channels, programme_count
+    return len(selected_ids), len(active), programme_count
 
 
 def main() -> int:
@@ -319,10 +357,12 @@ def main() -> int:
     candidate_data: dict[str, list[dict[str, Any]]] = candidate_payload["channels"]
 
     added_names, added_de_aliases = ensure_master_display_names(master_root, candidate_data)
+    pruned_master_channels = prune_empty_channels(master_root)
     write_xml_and_gzip(master_root, args.master)
     print(
         "Master display-name normalization: "
-        f"added={added_names} de_aliases_added={added_de_aliases}"
+        f"added={added_names} de_aliases_added={added_de_aliases} "
+        f"empty_channels_removed={pruned_master_channels}"
     )
 
     config_payload = json.loads(args.config.read_text(encoding="utf-8"))
@@ -352,9 +392,11 @@ def main() -> int:
         rows.append(
             [platform, output_name, len(wanted), channel_count, active_channel_count, programme_count]
         )
+        skipped_no_epg = max(0, len(wanted) - channel_count)
         print(
             f"Platform {platform}: matched={len(wanted)} channels={channel_count} "
-            f"active={active_channel_count} programmes={programme_count}"
+            f"active={active_channel_count} programmes={programme_count} "
+            f"skipped_no_epg={skipped_no_epg}"
         )
 
     with args.report.open("w", encoding="utf-8", newline="") as handle:
