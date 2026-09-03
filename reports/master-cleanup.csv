@@ -1,13 +1,661 @@
 action,xmltv_id,kept_xmltv_id,name,programme_count,details
 ICON_OVERRIDE,CrimeTime.de@SD,CrimeTime.de@SD,Crime Time,200,https://astra.de/sites/default/files/2023-07/astra_23_website_channel-factory_logo_crime-time_color_800x640px.png
-DEDUPE_IDENTICAL_SCHEDULE,AlJazeera.qa@EnglishHD,AlJazeera.qa@English,Al Jazeera English HD,266,normalized_name=al jazeera english;aliases_added=2
-DEDUPE_IDENTICAL_SCHEDULE,DAZN1.uk@FranceHD,DAZN1.uk@France,DAZN 1 F HD,147,normalized_name=dazn 1 f;aliases_added=2
-DEDUPE_IDENTICAL_SCHEDULE,DAZN1.uk@NetherlandsHD,DAZN1.uk@Netherlands,DAZN 1 N HD,150,normalized_name=dazn 1 n;aliases_added=2
-DEDUPE_IDENTICAL_SCHEDULE,DAZN2.uk@FranceHD,DAZN2.uk@France,DAZN 2 F HD,168,normalized_name=dazn 2 f;aliases_added=2
-DEDUPE_IDENTICAL_SCHEDULE,DAZN2.uk@NetherlandsHD,DAZN2.uk@Netherlands,DAZN 2 N HD,166,normalized_name=dazn 2 n;aliases_added=2
-DEDUPE_IDENTICAL_SCHEDULE,Eurosport2.fr@NetherlandsHD,Eurosport2.fr@Netherlands,Eurosp2 HD N,105,normalized_name=eurosp2 n;aliases_added=2
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5ad9b7aae738977e2c312132,,World Poker Tour,23,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5ad9b8551b95267e225e59c1,,Pluto TV Explore,40,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5be1c3f9851dd5632e2c91b2,,Pluto TV Nature,36,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5c5c3b948002db3c3e0b262e,,Pluto TV Movies,21,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5caf325764025859afdd6c4d,,MTV Pluto TV,48,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5caf330ea5068259a32320fd,,MTV Dating,60,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5cb5cfe5caf83414128f209e,,KultKrimi,32,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5cb5d043a461406ffe3fb2de,,Telenovela ZDF,39,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5cd149f021cb6c55e258bbe8,,Pluto TV Sitcoms Plus [Pluto TV],55,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5ce40f42ba7f7f5ea9518fe1,,Ice Pilots,38,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5cffcf5686dfe15595fb3f56,,MTV Teen Mom,59,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5d00e8adaab96b5635b2a005,,SpongeBob Schwammkopf,59,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5d4947590ba40f75dc29c26b,,CC Pluto TV,69,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5d6792bd6be2998ad0ccce30,,Totally Turtles,67,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5d767ab2b456c8cf265ce921,,Pluto TV Sitcoms,71,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5d767ae7b456c8cf265ce922,,Pluto TV Animals,35,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5d767b1c126c65d0a307355f,,Pluto TV History,37,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5d767b4889bca2ce7b73ef2e,,Pluto TV Science,39,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5db6a697d5f34a000934cd13,,MTV Catfish TV Show,59,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5dc190f7bfed110009d934c3,,Pluto TV Serie,39,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5dc280c9aa218c0009724b4b,,Pluto TV Food,45,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5dc287ce3086a20009f5024c,,Pluto TV Romance,23,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5ddbf866b1862a0009a0648e,,Pluto TV Serie Plus [Pluto TV],32,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5dde47b63585b500099f74ec,,Pluto TV Kultfilme,22,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5e7b6c60fd20c50007910bf5,,Pluto TV Crime,34,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5e7cb84a172a0f0007da69e4,,Red Bull TV,49,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5e8b580a233dc90007f0cb9d,,iCarly,68,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5ede448d3d50590007a4419e,,Nickelodeon Toons,59,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5ede45d077746000072be0fe,,Auction Hunters,76,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5f0d668b872e4400073acc68,,Nickelodeon Teen,59,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5f760c3d41aa2d0007bfde19,,Auto Motor Sport,36,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5f9847fd513250000728a9a5,,MTV Ridiculousness,60,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.5f98487036af340008da1e37,,Pluto TV Paranormal,36,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.60080e8a4bf36000076a81b1,,N24 Doku,33,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.6054a9f4bc8a5f000771504c,,Takeshi's Castle,69,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.608181d420fc8500075f612a,,Pluto TV Anime,70,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.60afb576053df900076fa2f0,,Beverly Hills 90210,37,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.60afbad343e3840007164348,,Chaos City,66,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.60c716084d842c00085f6e64,,Comedy Central South Park,65,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.60e4519e6873180007d3cddb,,BBC Travel,59,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.60ed498c4248a400077c0b9d,,Pluto TV Sci-Fi,31,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.611e7f224676bf00076a4d8d,,Cheers,61,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.61409f8d6feb30000766b675,,Pluto TV Space,47,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.6152ee71bf99590007893a11,,Pluto TV Star Trek,36,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.615333098185f00008715a56,,Pluto TV True Crime,39,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.615c1e5ce3039400070a0547,,MOVIEDOME,23,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.617aad99b68ef100072608cd,,Pluto TV Mystery,36,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.61b33085897b9d000702b72e,,Just.fishing,46,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.622f40c901d4b70007ad7609,,Sabrina - Total verhext!,67,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.622f487722d9d400075f74dd,,Ein Engel auf Erden,36,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.622f6e1e2792150007e0b2ff,,Alle hassen Chris,71,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.622f6faf65be650007f57aab,,Hausmeister Krause,61,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.62441d6ded1827000763dcda,,CBS News 24/7,37,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.6270ea4345f5bc0007823048,,Fury,63,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.62a0b2aff4cf470007e47e29,,Fluss-Monster,38,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.62bc1784120ba80007935aaa,,Awkward,69,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.62cebd7302478b00073a6b71,,Der Denver-Clan,37,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.62cebf042ffc6d0007c4e59a,,Frasier,67,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.62f4f4b88157cf00075c22db,,Pluto TV Horror,61,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.630348a54c48ce00077eb6c7,,Becker,64,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.6305ca798bd95300072d2f93,,Filmgold,28,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.630dd3b2605f140007e002f5,,Pluto TV Western,24,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.634fe5afece2e60007c9d8b8,,Mission Impossible,37,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.638f2983dcd9100008c2374d,,Rawhide - Tausend Meilen Staub,35,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.638f2bc7bc363100072f02dd,,Rauchende Colts,36,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.642abea1283aa4000805bb5b,,Täterjagd,38,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.642ad072283aa4000806148c,,Pluto TV Weihnachten im Sommer,25,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.642ad2127ef83900085f8910,,Mork vom Ork,62,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.642d4493aa2d690008f0a03f,,Yu-Gi-Oh!,62,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.642d7e029189ce0008958af5,,X-Factor: Das Unfassbare,36,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.644257fe7cb4b100081ed874,,Hell's Kitchen,38,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.6447dea7e94c380008dba94c,,Germany Shore,54,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.64526a145a0cd50008632bfa,,Pluto TV heiße Nächte,46,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.645a0ddfe1979c00086d83ff,,Red Shoe Diaries,63,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.646b1404ee6a2f00082b5d66,,South Park: Kenny Collection,64,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.646b1438e94c3800082a8cff,,South Park: Stan Collection,65,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.646b14747cb4b1000875724d,,South Park: Cartman Collection,64,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.646b14a0e94c3800082a8d3a,,South Park: Butters Collection,65,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.646b14d0e1979c0008915a09,,South Park: Kyle Collection,64,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.646b150a15939400089e2702,,South Park: Original Version,68,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.64afe50c5dc16600087f3227,,DAZN Heldinnen x Pluto TV,32,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.64b67f0424ade50008a3be17,,DAZN Darts x Pluto TV,17,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.64be635a40962900080aaca5,,Rules of Engagement,70,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.64be64445dc166000899ce75,,Pluto TV Polizeiserien,31,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.64be7398e4391c0008cdedfe,,Pluto TV Bud & Terence,22,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.64be745340962900080b55e7,,Melrose Place,35,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.64c109735dc1660008a4a2dc,,Top Gear,35,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.64eddc3485efec00085b0369,,Perry Mason,34,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.64eddce19001910008df22b8,,F.B.I. Files,33,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.65004605110545000842035d,,Pluto TV Action,23,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.650adc3198020f000862eed4,,Unentdeckt – Mörder unter uns,64,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.65253d66c52b3600083d8dd2,,Wicked Tuna,36,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.655ca3d1fbc15b00081f1186,,Love Boat,35,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.655ca57e4261ca00080b3a04,,Anger Management,66,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.6576c20fb3801200084786c9,,SPIEGEL TV,60,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.65a67c494a10d800085cab06,,Drake & Josh,65,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.65a67dd13af63d0008257f17,,90210,39,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.65b923f90cb1a100088a03ab,,Terra Mater WILD,60,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.65b9268fc798e800085add89,,SPIEGEL TV Konflikte,60,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.65d5fc39a25d5e00082895c4,,Naruto,60,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.65dde5848145cb00083277f6,,KultKrimi: Derrick,31,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.65dde5ef28730900089af7cf,,KultKrimi: Der Alte,30,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.65dde626ec9fda0008b3dc89,,KultKrimi: Der Kommissar,31,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.660bfc032433010008def35a,,FIFA Plus [Pluto TV],24,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.66337de656fc840008ff7a65,,Pluto TV Kult Comedies,23,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.66337e365a402e00087eccaf,,CNN Headlines International,35,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.66337e6ba0a74e000889563b,,MODUS Super Series Darts,31,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.66337ea1307fa300082c28a0,,BVB-Frauen,59,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.6639d7d4b18d700008da5316,,Euronews,60,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.663a15d7cb3ea10008edac88,,Farmland TV,37,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.663a163f8ea5560008a3f234,,Andromeda,39,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.663e09b341af640008c1b68c,,Stand-up Comedy,60,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.663e09e4b18d700008e48dcf,,BIG BROTHER CLASSIC,33,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.664f10c4f9992200084a2f47,,Pluto TV Heiße Nächte Retro,48,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.666fe4768768aa0008c31ddf,,Saving Hope,59,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.6672f49f61a39900089db68e,,Pluto TV Deutsche Comedy,54,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.667d3534ca74680008696051,,Ladykracher,61,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.667d63d236a2f90008f72269,,Axel!,64,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.66a244d5cd0d3100083b1e47,,Eine himmlische Familie,38,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.66c45b1803e3b20008d8c200,,CNNi,40,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.66c6fc06489bab0008b6f9da,,Die Nanny,62,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.66c6fcfc6838ee00085beb1a,,McLeods Töchter,37,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.677e5a3d7bffa6000808dbf2,,Pluto TV Britische Serien,52,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.677fafd91da79bfe4fb0b4ec,,Quantum Leap,37,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.677fb0231da79bfe4fb0bf4e,,The Real Housewives,38,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.677fb078a4af36ad50111032,,Die Sieben-Millionen-Dollar-Frau,36,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.6790fa9e1cfc4aa96dfadcef,,Frasier: Berühmte Gäste,66,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.67a324d221af380008105d6f,,Eine schrecklich nette Familie,64,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.67d983d6a1609bdb523f5f9b,,Pluto TV Sanfte Berührungen,53,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.67d984408d8dc3d7754dccf2,,Pluto TV Nordic Crime,34,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.67d984c989788ef7f058b084,,Profiling Paris,34,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.67dc21ce5a15c0759a07ee19,,Der Chef,36,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.67ebbdced2832b463faa1e79,,KultKrimi: Küstenwache,37,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.67ebc04855de98dc71428538,,Pluto TV Emmanuelle Filme,49,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.67ed0c86f7c5d70b90889a51,,KultKrimi: Die Rettungsflieger,37,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.67f3eb1c443f0671bc03ece8,,Nick Jr. Club,75,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.67f3eb800a1beb98767ca748,,Nickelodeon Classics,60,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.67f68bd2135aeda9ddf0ef54,,Pluto TV Adult Animation,67,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.67ff7d9c7fc25e0e72451bc9,,Pluto TV Horror-Serien,52,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.67ff7dd84906b1acfad97330,,Blue Mountain State,75,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.682453215c646751955e1204,,Pluto TV Western Serien,43,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.6824539e1295f98347e95242,,Missions,65,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.684ac10236c9361b1977f7bc,,Bronco,30,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.685136fb33a52de120bbb086,,MTV Pride,60,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.68590366010ddd78ef837d29,,KultKrimi: Ein Fall für zwei,30,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.685aaec481c345899e4458bb,,Dominance FC TV,51,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.6864e8f264d94c1425fb4563,,Merhaba Türkische Serien,60,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.6866525c8a412a0e95c438b4,,Dyn Sport Mix,18,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.686cfef52704ca31d85c4bf1,,Pastewka,54,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.686cff3224918d4300fa542b,,Stromberg,55,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.686cffbf3ffa5e0c91cdcfb3,,21 Jump Street,36,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.686d004094a028da3aac8cb0,,Don Matteo,60,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.6870c9333ffa5e0c914e9205,,Tennis Channel,60,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.688734b9035d6ef9c34aac16,,Die fliegenden Ärzte,36,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.688735087b2cf33d01a2d411,,Sea Patrol,37,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.68ac5543a1ac0c90f2c8943e,,Pluto TV Snooker 900,17,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.68ad90673efb41cd97c95825,,The Outer Limits,39,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.68ada3395190a45dc9c445cf,,Pluto TV Historische Serien,29,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.68ada3edf84960586ad31c7d,,Pluto TV Reportagen,28,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.68d27437e6767bdeb23f0336,,Gigolos,59,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.68d2759a59fd82da3226492d,,The L Word – Wenn Frauen lieben,52,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.68d276ce59fd82da32267d0d,,Liebe Sünde,54,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.68d277fb12bf71eaaed3e9f1,,Flipper,58,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.6914913274601d957ae35565,,Ax Men - Die Holzfäller,38,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.691491c6bb69fb3258c3524a,,Swamp People,38,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.691b2b690d121b44ad4a53ef,,Dating hinter Gittern,39,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.69492467ae33e24d916e56cf,,Pluto TV Star Trek: Animation,63,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.69776b58036e883f39e5ab8a,,Star Trek: The Original Series,34,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.69776ce979545c21a1220bff,,Star Trek: The Next Generation,37,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.69776f2b2c00406316a01945,,Call My Agent!,32,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.697a0577f9c3aa5a215a4ef8,,Will&Grace,69,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.6989b64839dd847194cadcd7,,The Librarians,40,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.69a554497ed3b3fff0b9ca80,,Space Live,59,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.69b015c5d29cc97de7da4af8,,Pluto TV Haialarm,33,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.69b0160da9b840a456a11b4a,,Vier Frauen und ein Todesfall,35,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.69b01641a9b840a456a11c18,,Schlosshotel Orth,36,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.69b0167477cdde1f05c8a625,,Der Bergdoktor,34,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.69b14863dd687227e1e4b6b2,,Seaquest,38,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.69b968a58323ef2714d1aa36,,Schnell ermittelt,36,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,PlutoTV.de.69c2ac2b14c0213702da7a29,,Die glorreichen Sieben,35,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT1100001B5,,Landlust TV,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT1100003X6,,Top Barça,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT1100004SR,,Sky News International,9,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT12000011L,,Free Comedy,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT1400001YL,,Zee TV HD DE,10,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT15000015I,,KultKrimi,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT1500002N1,,Telenovela ZDF,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT1500003M7,,Herzfrequenz,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT19000012X,,Himmlisches Kino,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT1900003VW,,CAR CITY ADVENTURES,9,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT2000029T,,The Jamie Oliver Channel,9,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT2100002QM,,Sony One Comedy TV,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT2100004P1,,BBC Series,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT22000019A,,Fireplace Vibes,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT2200004OF,,Welt,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT23000017K,,Deluxe Dance By Kontor,2,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT230000238,,Top Sci-Fi,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT2300003IC,,Beyblade,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT2400001WV,,DDR TV-Archiv,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT2600002KW,,Euronews LIVE,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT260000326,,Top Filme - Rakuten TV,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT2600004LH,,Drama Filme - Rakuten TV,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT26000054S,,Actionfilme - Rakuten TV,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT260000634,,Crime Serien - Rakuten TV,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT2600007N2,,Family - Rakuten TV,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT2600009ON,,Komödien - Rakuten TV,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT2800001N5,,Big Brother Classics,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT300000183,,Deutsches Kino - Rakuten TV,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT30000053R,,Dating hinter Gittern,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT3000006M1,,AMC Stories,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT3000009D6,,INTER 24/7,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT300007S8,,Sony One Action HITS,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT300008JS,,Sony One Comedy Hits,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT300009BI,,Alarm für Cobra 11 / Balko,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT300044H2,,Vera,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT300045YS,,Poldark,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT32000109U,,Ladykracher,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT3200011S4,,Pastewka,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT3200012MN,,Stromberg,10,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT3300001K9,,Lindenstraße,10,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT3300002K2,,LAOLA1 FAST,15,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT33000033D,,Hochspannung,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT3400004QH,,Comedy &amp; Shows,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT3400006VA,,Abschnitt 40 / GSG9,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT3400007C0,,Deluxe Summertime,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT3700004SR,,Komissar Montalbano,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT3700005NP,,Saving Hope,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT3800001SY,,Dhar Mann TV,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT400001GG,,LooLoo Kids,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT4100001P2,,Mark Rober TV,2,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT4100002MY,,Rabbids Invasion,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT430000288,,Sparkle Movies,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT4400002IB,,Andromeda,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT4400003Z1,,Don Matteo,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT4400004GQ,,Schlosshotel Orth,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT4400005XG,,Vier Frauen &amp; ein Todesfall,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT4400006FA,,Schnell ermittelt &amp; Cop stories,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT4500001S1,,Crime Time,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT4600002H5,,Fluss Monsters,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT48000012I,,Hochzeit auf den ersten Blick,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT4800002G5,,Hudson &amp; Rex,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT5000002QB,,Teletubbies,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT500002TW,,The Graham Norton Show,9,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT5100001HE,,Rally.TV FAST Plus [Samsung TV Plus],6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT70000595,,Yu-Gi-Oh!,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT900003TU,,Crimify,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.AT900005FB,,Spiegel TV action  Plus crime [Samsung TV Plus],18,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ0500413A,,Deluxe Lounge HD,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ0500422A,,Netzkino,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ0500427A,,Tierwelt,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ0500428A,,Xplore,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ0500431A,,just.fishing,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ0500433A,,Sportdigital Free,2,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ0500443A,,Just Cooking,15,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ0500445A,,SPIEGEL TV,25,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ0500451A,,GoldStar TV,2,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ0500454A,,Artflix,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ0500455A,,Grjngo,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ0500456A,,Tempora,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ0500458A,,auto motor und sport,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ32000027V,,FailArmy,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ3200003W3,,The Pet Collective,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ700002OG,,MTV Pluto TV,9,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ7000037N,,Nickelodeon Toons,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ700004UZ,,Teen Nick,12,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ700005T3,,SpongeBob Schwammkopf,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ7000065Y,,iCarly,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ70000741,,Pluto TV Serie,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ70000866,,Pluto TV Paranormal,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ700009X4,,Ice Pilots,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAJ7000105F,,MTV Teen Mom,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAK3504500A,,Pluto TV Animals,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAK3504501A,,Pluto TV Food,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAK3504503A,,Pluto TV Science,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAK3504505A,,Pluto TV Sitcoms,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAK3504506A,,Pluto TV - Star Trek,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAK3504510A,,Comedy Central Pluto TV,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAK3504514A,,Pluto TV Movies,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATAK3504517A,,MTV Catfish,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA1000001YK,,People Are Awesome,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA15000088F,,Moconomy,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA1500010H3,,Fantasja,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA1500012BI,,Fabella,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA1500021SL,,One Terra,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA1500028F9,,Höhenrausch,9,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA1500029H6,,Deluxe Deutschpop,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA2200008XN,,Tennis Channel,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA3300006WH,,Zee One,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA3300007PT,,FIFA Plus [Samsung TV Plus],4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA3300008ZT,,CURIOSITY Now,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA3300009MF,,SPIEGEL TV Konflikte,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA3300010PU,,Strongman Champions League,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA3300018K1,,Bloomberg TV Plus [Samsung TV Plus],3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA3300021BW,,MyTime Movie Network,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA3300023X4,,wedo movies,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA33000270C,,Top Serien,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA33000280A,,Moviedome,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA330002946,,Moviedome Family,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBA3300031VR,,Wilder Planet,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBC300000551,,Filmgold,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBC3900001W3,,The Wicked Tuna Channel,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBC3900002PV,,Naruto,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBC4700001JX,,DAZN FAST Plus [Samsung TV Plus],8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD1100002TA,,FRANCE 24 FAST,24,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD1500003ES,,Red Bull TV,10,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD190000101,,CNN Headlines International,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD2300001PY,,Sport 1 Motor,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD2500001A8,,PR1DE free,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD2600001QK,,Hell's Kitchen,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD2600009FE,,More than Sports TV,12,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD2600010EC,,Motorvision Classic,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD2600011EO,,Motorvision,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD26000124P,,Scooore,2,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD2700001KY,,Terra Mater WILD,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD2700004VR,,Royalworld - Adel &amp; Dynastien,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD290000127,,World Poker Tour,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD3800001SY,,DELUXE RAP,1,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD390000167,,Aniverse TV,12,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD5000001SF,,Top Filme,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD5000002B1,,World of Freesports - WoF,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD700001VF,,DAZN Rise,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.at.ATBD800001VA,,CNN,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH1100002FH,,Top Barça,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH1400001FA,,Zee TV HD DE,10,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH20000288,,The Jamie Oliver Channel,9,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH2000332L,,Vera,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH2100003MU,,BBC Series,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH220000164,,Fireplace Vibes,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH2200006VD,,Welt,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH2300001O9,,Deluxe Dance By Kontor,2,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH2300002MI,,Himmlisches Kino,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH23000031M,,Top Sci-Fi,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH230000401,,Beyblade,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH2600001UH,,Komödien - Rakuten TV,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH2600002VE,,Drama Filme - Rakuten TV,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH26000037F,,Euronews LIVE,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH2600004R1,,Actionfilme - Rakuten TV,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH26000056O,,Family - Rakuten TV,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH2600006TR,,Top Filme - Rakuten TV,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH2600007IJ,,Crime Serien - Rakuten TV,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH28000014U,,Big Brother Classics,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH3000001PT,,Deutsches Kino - Rakuten TV,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH3000003NM,,Dating hinter Gittern,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH300006UT,,Alarm für Cobra 11 / Balko,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH300042FH,,Poldark,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH3100001XL,,INTER 24/7,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH3200009XW,,Ladykracher,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH3200010F6,,Pastewka,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH3200011YH,,Stromberg,10,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH330000132,,Faites entrer l'accusé [FR],3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH3300002MN,,Hochspannung,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH34000014Q,,Sky News International,9,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH340000286,,Comedy &amp; Shows,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH3400004AF,,Abschnitt 40 / GSG9,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH3400005S4,,Deluxe Summertime,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH3600001HH,,Alerte Cobra,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH37000043J,,Komissar Montalbano,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH37000057T,,Saving Hope,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH3800001TJ,,Dhar Mann TV,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH3900001DB,,Landlust TV,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH40000020D,,RMC Life,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH4100001ZY,,Mark Rober TV,2,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH41000023N,,Les Lapins Crétins,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH4300002NC,,Sparkle Movies,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH4400002F5,,Andromeda,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH4400003WV,,Don Matteo,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH4400005U9,,Vier Frauen &amp; ein Todesfall,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH4400006BZ,,Schnell ermittelt &amp; Cop stories,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH4600001X9,,Lindenstraße,10,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH4700001E1,,Redbull TV,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH4800001LT,,Hochzeit auf den ersten Blick,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH48000025D,,Hudson &amp; Rex,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH500000481,,Teletubbies,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH500001V2,,BFM TV,1,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH500002H2,,RMC Story,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH500003EH,,RMC Découverte,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH5100001XI,,Rally.TV FAST Plus [Samsung TV Plus],6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH700003RV,,Yu-Gi-Oh!,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH900001R9,,Spiegel TV action  Plus crime [Samsung TV Plus],18,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CH900002UF,,Crimify,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ0500413A,,Deluxe Lounge HD,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ0500422A,,Netzkino,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ0500427A,,Tierwelt,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ0500433A,,Sportdigital Free,2,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ0500443A,,Just Cooking,15,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ0500445A,,SPIEGEL TV,25,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ0500455A,,Artflix,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ0500456A,,Grjngo,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ0500457A,,Tempora,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ0500459A,,auto motor und sport,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ32000026J,,FailArmy,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ3200003RF,,The Pet Collective,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ3500001Z8,,CineWestern,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ700002UB,,MTV Pluto TV,9,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ700003CV,,Nickelodeon Toons,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ700004GX,,Teen Nick,12,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ7000057P,,SpongeBob Schwammkopf,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ700006QR,,iCarly,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ700007XE,,Pluto TV Serie,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ7000084D,,Pluto TV Paranormal,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ700009UV,,Ice Pilots,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAJ700010NR,,MTV Teen Mom,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAK3504500A,,Pluto TV Animals,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAK3504501A,,Pluto TV Food,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAK3504503A,,Pluto TV Science,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAK3504505A,,Pluto TV Sitcoms,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAK3504510A,,Comedy Central Pluto TV,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAK3504514A,,Pluto TV Movies,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHAK3504517A,,MTV Catfish,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBA1000004IU,,People Are Awesome,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBA150001090,,Fantasja,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBA1500012K9,,Fabella,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBA1500021M5,,One Terra,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBA1500028KP,,Höhenrausch,9,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBA1500029TL,,Deluxe Deutschpop,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBA22000080G,,Tennis Channel,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBA3300008LD,,SportOutdoor.tv [IT],10,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBA3300010UC,,FIFA Plus [Samsung TV Plus],4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBA3300011A6,,Strongman Champions League,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBA3300016BA,,Alberto Sordi &amp; Co,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBA3300018TD,,Bloomberg TV Plus [Samsung TV Plus],3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBA3300023SN,,wedo movies,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBA3300026CA,,Top Serien,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBA3300028G3,,Wilder Planet,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBA330002991,,Moviedome,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBA3300030AJ,,Moviedome Family,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBB3400001IU,,Emotion'L [FR],3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBB3900007I2,,Ciné Nanar [FR],2,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBB46000021V,,Scream'IN [FR],3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBB49000023B,,Y'a que la vérité qui compte [FR],3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBC3500001NJ,,Enquêtes de Choc [FR],4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBC3500004YJ,,Filmgold,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBC40000011Y,,The Wicked Tuna Channel,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBC40000027S,,Echappées belles &amp; co [FR],5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBC4000003K9,,Homicide [FR],7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBC40000040J,,wedotv Big Stories [IT],7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBC4000005PW,,Naruto,12,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBC4000006ZD,,Destination Nature [FR],6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBC800001N2,,MyTime Movie Network,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBC800003LH,,Trace Latina [FR],5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBC80000437,,NatureTime [FR],6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBC800006EP,,Fréquence Novelas [FR],7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD1100003CW,,FRANCE 24 FAST,22,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD1400001NP,,CURIOSITY Now,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD1400002AK,,SPIEGEL TV Konflikte,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD1900001JB,,CNN Headlines International,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD2000023S,,Alerte à Malibu [FR],8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD200003G1,,Génération Sitcoms [FR],10,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD200004J8,,Les filles d'à côté [FR],13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD2300001ZB,,Sport 1 Motor,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD2500001SY,,PR1DE free,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD26000017A,,Hell's Kitchen,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD2600011YG,,More than Sports TV,12,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD2600012Y6,,Motorvision Classic,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD26000130C,,Motorvision,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD2600014C0,,Scooore,2,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD27000011N,,Zee One,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD2700002B7,,Terra Mater WILD,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD2900001LI,,World Poker Tour,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD3700002F2,,Plus belle la vie [FR],12,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD38000019N,,DELUXE RAP,1,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD39000015L,,Aniverse TV,12,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD4700001DY,,LooLoo Kids,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD5000001T0,,World of Freesports - WoF,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD5000002CB,,Top Filme,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD5100001EF,,ADN [FR],13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD600003EI,,Film Al Femminile - Wedo Movies [IT],4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.ch.CHBD800001D0,,CNN,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE1000001CT,,Herzfrequenz,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE1000002V4,,SMTOWN,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE1100001CQ,,Landlust TV,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE1100003YR,,Top Barça,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE1200001JW,,Free Comedy,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE1300001XL,,XITE R&amp;B Classic Jams,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE1400001OB,,Beyblade,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE1400002W0,,Zee TV HD DE,10,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE1400003DP,,Spiegel TV action Pluscrime [Samsung TV Plus],18,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE16000042J,,All Romance,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE1600005LU,,Crimify,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE160000644,,Bob Ross: Die Freude am Malen,9,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE17000032I,,NEW KPOP,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE1900001NT,,Himmlisches Kino,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE2000004BG,,CAR CITY ADVENTURES,9,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE2000007B5,,Tennis Plus [Samsung TV Plus],2,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE200003PX,,The Jamie Oliver Channel,9,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE200044MH,,Vera,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE21000013K,,NatureTime,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE21000031Z,,BBC Series,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE22000012Y,,Fireplace Vibes,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE2200005GX,,Welt,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE23000015Y,,Deluxe Dance By Kontor,2,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE2300002KX,,Top Sci-Fi,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE2400001DK,,DDR TV-Archiv,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE2400002VA,,Top Gear,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE2500001DO,,Cool Summer Channel,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE2600003TR,,Euronews LIVE,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE2600004U3,,Crime Serien - Rakuten TV,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE2600005XA,,Actionfilme - Rakuten TV,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE2600006H2,,Komödien - Rakuten TV,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE2600007ET,,Drama Filme - Rakuten TV,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE26000085Y,,Family - Rakuten TV,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE26000096S,,Top Filme - Rakuten TV,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE2800002LK,,Big Brother Classics,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE2900001W0,,BBC Travel,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE2900002Z8,,BBC Food,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE2900003ED,,BBC History,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE30000067I,,Deutsches Kino - Rakuten TV,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE3000008RT,,Dating hinter Gittern,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE3000009SE,,AMC Stories,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE3000016Q,,Sony One Comedy TV,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE300002CL,,Sony One Comedy HITS,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE300003AV,,Sony One Thriller TV,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE30000489,,Sony One Action HITS,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE300005NB,,Sony One Best Of,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE300020D3,,Alarm für Cobra 11 / Balko,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE300061W7,,Poldark,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE310000218,,INTER 24/7,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE3200001RI,,BBC Earth,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE32000079E,,Red Bull TV Motorsport,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE3200015MJ,,Ladykracher,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE3200016QF,,Pastewka,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE32000175T,,Stromberg,10,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE33000013J,,Lindenstraße,10,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE33000025Y,,Hochspannung,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE33000032K,,Spooks (MI-5),5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE3400001N1,,Sky News International,9,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE3400003PW,,Comedy &amp; Shows,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE3400005QJ,,Abschnitt 40 / GSG9,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE3700001F7,,Fluss Monsters,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE3700006DB,,Komissar Montalbano,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE3700007RY,,Saving Hope,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE3800001CR,,Horror Comedy,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE3800003CU,,Dhar Mann TV,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE3900001WX,,Emily Erdbeer,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE3900002R1,,K-POP by CJ ENM,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE3900004ZH,,Merhaba Türkische Filme,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE4000002I3,,Moviesphere by Lionsgate,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE40000191,,The Graham Norton Show,9,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE400010IF,,DF1,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE400011F2,,Telenovela ZDF,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE400012YD,,KultKrimi,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE4100001GN,,Mark Rober TV,2,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE4100002KC,,Rabbids Invasion,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE4300001HK,,ARD Plus Krimi,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE4300003MR,,Nachrichten 360,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE43000043H,,Sparkle Movies,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE4400002AE,,Andromeda,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE4400003R3,,Don Matteo,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE44000048T,,Schlosshotel Orth,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE4400006F5,,Schnell ermittelt &amp; Cop stories,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE46000025H,,Ax Men - Die Holzfäller,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE4600003OS,,Swamp People - überleben im sumpf,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE4800001Y8,,Teletubbies,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE4800002GM,,Hudson &amp; Rex,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE4800003M6,,Hochzeit auf den ersten Blick,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE5100001TC,,Rally.TV FAST Plus [Samsung TV Plus],6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE700001BN,,Pocoyo,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DE7000038K,,Yu-Gi-Oh!,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAH3904006A,,Deluxe Lounge HD,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ0500419A,,Netzkino,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ0500422A,,Xplore,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ0500423A,,Tierwelt,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ0500428A,,just.fishing,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ0500429A,,Sportdigital Free,2,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ2900001NG,,SPIEGEL TV Konflikte,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ2900003CN,,Zee One,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ32000012H,,Terra Mater WILD,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ3200004UF,,FailArmy,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ3200005JH,,The Pet Collective,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ3500005RK,,People Are Awesome,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ700002N8,,Nickelodeon Toons,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ7000033P,,MTV Pluto TV,9,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ700004BT,,Teen Nick,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ70000561,,SpongeBob Schwammkopf,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ700006MR,,iCarly,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ700007OT,,Pluto TV Serie,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ700008WL,,Pluto TV Paranormal,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ7000096L,,Ice Pilots,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAJ7000105I,,MTV Teen Mom,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAK0500439A,,Just Cooking,15,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAK0500441A,,SPIEGEL TV,25,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAK0500445A,,GoldStar TV,2,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAK0500448A,,Artflix,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAK0500449A,,Grjngo,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAK0500450A,,Tempora,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAK0500452A,,auto motor und sport,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAK3504500A,,Comedy Central Pluto TV,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAK3504502A,,MTV Catfish,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAK3504503A,,Pluto TV Animals,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAK3504506A,,Pluto TV Science,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAK3504508A,,Pluto TV Sitcoms,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEAK3504517A,,Pluto TV Movies,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA1500009ZY,,Moconomy,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA1500011RJ,,Fantasja,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA15000130L,,Fabella,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA15000227H,,One Terra,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA15000298V,,Höhenrausch,9,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA150003050,,Deluxe Deutschpop,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA2200007V6,,XITE Hits,1,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA2200008NL,,Tennis Channel Deutschland,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA3300001L9,,Pluto TV Food,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA33000038I,,Pluto TV - Star Trek,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA3300014CV,,CURIOSITY Now,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA3300016EV,,Strongman Champions League,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA3300019EB,,FIFA Plus [Samsung TV Plus],4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA3300027ZJ,,Bloomberg TV Plus [Samsung TV Plus],3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA3300030O1,,Trace Urban,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA3300032UV,,MyTime Movie Network,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA3300034HH,,wedo movies,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA3300038NO,,Top Serien,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA3300039TT,,Moviedome,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA3300040CR,,Moviedome Family,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBA3300042XG,,Wilder Planet,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBC2100001ZJ,,Vevo Pop,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBC21000022L,,Vevo Schlager Pop,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBC220000422,,The Wicked Tuna Channel,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBC2300001EU,,Red Bull TV,10,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBC3000003IG,,Terra X,7,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBC35000020P,,Filmgold,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBC470000128,,DAZN FAST Plus [Samsung TV Plus],8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBC4700002Z2,,Entertainment Mix,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBC4700004VZ,,Love the Planet,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBC47000055Z,,Hell's Kitchen,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBC4700007JV,,duckTV,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD11000019M,,Naruto,12,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD1100002II,,FRANCE 24 FAST,24,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD19000012M,,CNN Headlines International,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD1900002CB,,Crime Time,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD2300001ND,,Sport 1 Motor,6,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD2400001PC,,PR1DE free,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD26000034M,,More than Sports TV,12,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD2600004U7,,Motorvision Classic,13,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD2600005U6,,Motorvision,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD260000692,,Scooore,2,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD2700001ID,,DEFA TV,5,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD2700003W5,,Royalworld - Adel &amp; Dynastien,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD29000013S,,World Poker Tour,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD30000014M,,Bares für Rares,11,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD3800001QD,,DELUXE RAP,1,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD390000181,,Aniverse TV,12,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD4100002H1,,K-Drama Plus [Samsung TV Plus],4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD4700001UN,,LooLoo Kids,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD4900001QV,,Reuters,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD5000001VL,,Top Filme,4,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD5000002EW,,World of Freesports - WoF,8,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD5100001XP,,SuperToons TV,52,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD700001C5,,DAZN Rise,3,dedicated platform EPG retained
+DROP_PLATFORM_DUPLICATE_FROM_MASTER,SamsungTVPlus.de.DEBD800001S4,,CNN,6,dedicated platform EPG retained
+DEDUPE_IDENTICAL_SCHEDULE,AlJazeera.qa@EnglishHD,AlJazeera.qa@English,Al Jazeera English HD,265,normalized_name=al jazeera english;aliases_added=2
+DEDUPE_IDENTICAL_SCHEDULE,DAZN1.uk@FranceHD,DAZN1.uk@France,DAZN 1 F HD,156,normalized_name=dazn 1 f;aliases_added=2
+DEDUPE_IDENTICAL_SCHEDULE,DAZN1.uk@NetherlandsHD,DAZN1.uk@Netherlands,DAZN 1 N HD,156,normalized_name=dazn 1 n;aliases_added=2
+DEDUPE_IDENTICAL_SCHEDULE,DAZN2.uk@FranceHD,DAZN2.uk@France,DAZN 2 F HD,177,normalized_name=dazn 2 f;aliases_added=2
+DEDUPE_IDENTICAL_SCHEDULE,DAZN2.uk@NetherlandsHD,DAZN2.uk@Netherlands,DAZN 2 N HD,176,normalized_name=dazn 2 n;aliases_added=2
+DEDUPE_IDENTICAL_SCHEDULE,Eurosport2.fr@NetherlandsHD,Eurosport2.fr@Netherlands,Eurosp2 HD N,107,normalized_name=eurosp2 n;aliases_added=2
 DEDUPE_IDENTICAL_SCHEDULE,HSEExtra.de@SD,HSEExtra.de@HD,HSE Extra,168,normalized_name=hse extra;aliases_added=2
 DEDUPE_IDENTICAL_SCHEDULE,ProSiebenAustria.at@SD,ProSiebenAustria.at@HD,ProSieben Austria,232,normalized_name=prosieben austria;aliases_added=2
 DEDUPE_IDENTICAL_SCHEDULE,Puls4.at@SD,Puls4.at@HD,PULS 4 Austria,172,normalized_name=puls 4 austria;aliases_added=2
 DEDUPE_IDENTICAL_SCHEDULE,TLC.at@SD,TLC.at@HD,TLC Austria,211,normalized_name=tlc austria;aliases_added=2
-DEDUPE_IDENTICAL_SCHEDULE,VOX.at@SD,VOX.at@HD,VOX Austria,182,normalized_name=vox austria;aliases_added=2
+DEDUPE_IDENTICAL_SCHEDULE,VOX.at@SD,VOX.at@HD,VOX Austria,183,normalized_name=vox austria;aliases_added=2
