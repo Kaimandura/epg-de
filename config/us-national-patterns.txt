@@ -1,0 +1,123 @@
+# Regex patterns matched case-insensitively against XMLTV display-name.
+# Only channels matching one of these patterns stay in usa.xml.
+# Everything else from the non-sports/non-FAST pool is moved to usa-local.xml.
+
+^ABC(?:\s+(?:East|West|Network))?$
+^CBS(?:\s+(?:East|West|Network))?$
+^NBC(?:\s+(?:East|West|Network))?$
+^FOX(?:\s+(?:East|West|Network))?$
+^The CW(?:\s+(?:East|West|Network))?$
+^PBS$
+^A&E(?:\s+(?:East|West))?$
+^AMC(?:\s+(?:East|West))?$
+^American Heroes Channel
+^Animal Planet
+^BBC America
+^BET(?:\s+(?:East|West))?$
+^BET Her
+^Bloomberg Television
+^Boomerang
+^Bravo(?:\s+(?:East|West))?$
+^Cartoon Network
+^CMT(?:\s+(?:East|West))?$
+^CNBC
+^CNN(?:\s+(?:US|USA|East|West))?$
+^Comedy Central
+^Cooking Channel
+^C-SPAN(?:\s*[123])?$
+^Destination America
+^Discovery Channel
+^Discovery Family
+^Disney Channel
+^Disney Junior
+^Disney XD
+^E!$
+^Food Network
+^Freeform
+^FX(?:\s+(?:East|West))?$
+^FXX(?:\s+(?:East|West))?$
+^FXM
+^Game Show Network
+^GSN$
+^Hallmark Channel
+^Hallmark Family
+^Hallmark Mystery
+^HGTV
+^History(?:\s+(?:East|West))?$
+^HLN
+^IFC
+^Investigation Discovery
+^ID(?:\s+(?:East|West))?$
+^Lifetime(?:\s+(?:East|West))?$
+^LMN
+^Magnolia Network
+^MotorTrend
+^MSNBC
+^MTV(?:\s+(?:East|West))?$
+^MTV2
+^National Geographic(?:\s+(?:East|West))?$
+^Nat Geo Wild
+^NewsNation
+^Nickelodeon
+^Nick Jr\.?$
+^Nicktoons
+^OWN(?:\s+(?:East|West))?$
+^Oxygen
+^Paramount Network
+^Pop TV
+^Reelz
+^Science Channel
+^Smithsonian Channel
+^SundanceTV
+^Syfy
+^TBS(?:\s+(?:East|West))?$
+^TCM(?:\s+(?:East|West))?$
+^TeenNick
+^The Weather Channel
+^TLC(?:\s+(?:East|West))?$
+^TNT(?:\s+(?:East|West))?$
+^Travel Channel
+^truTV
+^TV Land
+^Universal Kids
+^USA Network(?:\s+(?:East|West))?$
+^VH1(?:\s+(?:East|West))?$
+^WE tv
+^WE TV
+^Fox News(?: Channel)?
+^Fox Business(?: Network)?
+^HBO(?:\s+(?:East|West))?$
+^HBO 2
+^HBO2
+^HBO Family
+^HBO Signature
+^HBO Comedy
+^HBO Zone
+^HBO Latino
+^Cinemax(?:\s+(?:East|West))?$
+^MoreMax
+^ActionMax
+^ThrillerMax
+^MovieMax
+^5StarMax
+^OuterMax
+^Starz(?:\s+(?:East|West))?$
+^Starz Cinema
+^Starz Comedy
+^Starz Edge
+^Starz Encore
+^Starz In Black
+^Starz Kids & Family
+^Paramount\+ with SHOWTIME
+^SHOWTIME(?:\s+(?:East|West))?$
+^SHOWTIME 2
+^SHO2
+^SHOxBET
+^Showcase
+^The Movie Channel
+^TMC(?:\s+(?:East|West))?$
+^Flix
+^MGM\+(?:\s+(?:East|West))?$
+^MGM\+ Hits
+^MGM\+ Marquee
+^MGM\+ Drive-In
