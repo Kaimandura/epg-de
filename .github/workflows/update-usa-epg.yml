@@ -10,7 +10,9 @@ on:
     paths:
       - ".github/workflows/update-usa-epg.yml"
       - "scripts/build_us_epgs.py"
+      - "scripts/reclassify_us_main_local.py"
       - "config/us-epg.json"
+      - "config/us-national-patterns.txt"
 
 permissions:
   contents: write
@@ -66,6 +68,13 @@ jobs:
             --output-dir build/usa/output \
             --report build/usa/usa-coverage.csv \
             --work-dir build/usa/work
+
+      - name: Curate national versus local USA channels
+        run: |
+          python scripts/reclassify_us_main_local.py \
+            --main build/usa/output/usa.xml \
+            --local build/usa/output/usa-local.xml \
+            --patterns config/us-national-patterns.txt
 
       - name: Validate USA XMLTV outputs and Last Known Good
         shell: bash
@@ -155,7 +164,9 @@ jobs:
                 git diff --name-only "$START_SHA" "$remote_sha" -- \
                   .github/workflows/update-usa-epg.yml \
                   scripts/build_us_epgs.py \
-                  config/us-epg.json || true
+                  scripts/reclassify_us_main_local.py \
+                  config/us-epg.json \
+                  config/us-national-patterns.txt || true
               )"
               if [[ -n "$pipeline_changes" ]]; then
                 echo "A newer USA pipeline revision is already on main:"
