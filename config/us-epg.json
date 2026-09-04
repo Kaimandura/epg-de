@@ -1,39 +1,27 @@
 {
-  "guide_group_prefix": "us",
-  "allowed_host": "iptv-org.github.io",
-  "request_timeout_seconds": 90,
+  "source_urls": [
+    "https://iptv-epg.org/files/epg-us.xml.gz"
+  ],
+  "request_timeout_seconds": 180,
   "download_retries": 3,
-  "max_guide_bytes": 157286400,
+  "max_source_bytes": 536870912,
   "max_output_gzip_bytes": 94371840,
-  "min_programmes_per_channel": 1,
   "programme_past_hours": 12,
-  "programme_future_days": 7,
-  "source_priority": [
-    "nhl.com",
-    "dazn.com",
-    "tvtv.us",
-    "directv.com",
-    "tvguide.com",
-    "ontvtonight.com",
-    "gatotv.com",
-    "beinsports.com",
-    "i.mjh.nz"
-  ],
-  "fast_group_markers": [
-    "pluto",
-    "samsung",
-    "plex",
-    "roku",
-    "fast",
-    "xumo",
-    "freevee"
-  ],
+  "programme_future_days": {
+    "main": 7,
+    "sports": 7,
+    "local": 3,
+    "fast": 3
+  },
   "sports_name_patterns": [
     "\\bESPN\\b",
+    "ESPN\\+",
+    "ESPN PLUS",
     "\\bESPN2\\b",
     "\\bESPNEWS\\b",
     "\\bESPNU\\b",
     "\\bNHL\\b",
+    "NHL POWER PLAY",
     "\\bNFL\\b",
     "\\bNBA\\b",
     "\\bMLB\\b",
@@ -50,6 +38,15 @@
     "BEIN SPORTS",
     "DAZN",
     "PPV"
+  ],
+  "fast_name_patterns": [
+    "PLUTO TV",
+    "SAMSUNG TV PLUS",
+    "THE ROKU CHANNEL",
+    "ROKU CHANNEL",
+    "PLEX",
+    "XUMO",
+    "FREEVEE"
   ],
   "deduplicate_exact_schedules": true,
   "outputs": {

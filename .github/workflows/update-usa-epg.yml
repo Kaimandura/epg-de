@@ -33,15 +33,13 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Fetch current USA guide index and channel metadata
+      - name: Fetch current USA metadata and FAST identity lists
         shell: bash
         run: |
           set -euo pipefail
           rm -rf build/usa build/usa-baseline
-          mkdir -p build/usa/input build/usa/output
-          curl --retry 3 --connect-timeout 15 --max-time 120 -fsSL \
-            https://iptv-org.github.io/api/guides.json \
-            -o build/usa/input/guides.json
+          mkdir -p build/usa/input/fast build/usa/output build/usa/work
+
           curl --retry 3 --connect-timeout 15 --max-time 120 -fsSL \
             https://raw.githubusercontent.com/iptv-org/database/master/data/channels.csv \
             -o build/usa/input/channels.csv
@@ -49,15 +47,25 @@ jobs:
             https://raw.githubusercontent.com/iptv-org/database/master/data/logos.csv \
             -o build/usa/input/logos.csv
 
+          for name in us_pluto us_samsung us_plex us_roku us_xumo; do
+            url="https://raw.githubusercontent.com/iptv-org/iptv/master/streams/${name}.m3u"
+            out="build/usa/input/fast/${name}.m3u"
+            if ! curl --retry 2 --connect-timeout 10 --max-time 60 -fsSL "$url" -o "$out"; then
+              rm -f "$out"
+              echo "Optional FAST identity list unavailable: ${name}.m3u"
+            fi
+          done
+
       - name: Build compact active-only USA guides
         run: |
           python scripts/build_us_epgs.py \
-            --guides-index build/usa/input/guides.json \
             --channels-csv build/usa/input/channels.csv \
             --logos-csv build/usa/input/logos.csv \
+            --fast-playlist-dir build/usa/input/fast \
             --config config/us-epg.json \
             --output-dir build/usa/output \
-            --report build/usa/usa-coverage.csv
+            --report build/usa/usa-coverage.csv \
+            --work-dir build/usa/work
 
       - name: Validate USA XMLTV outputs and Last Known Good
         shell: bash
