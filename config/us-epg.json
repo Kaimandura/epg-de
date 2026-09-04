@@ -1,0 +1,58 @@
+{
+  "guide_group_prefix": "us",
+  "allowed_host": "iptv-org.github.io",
+  "request_timeout_seconds": 90,
+  "download_retries": 3,
+  "max_guide_bytes": 157286400,
+  "min_programmes_per_channel": 1,
+  "source_priority": [
+    "nhl.com",
+    "dazn.com",
+    "tvtv.us",
+    "directv.com",
+    "tvguide.com",
+    "ontvtonight.com",
+    "gatotv.com",
+    "beinsports.com",
+    "i.mjh.nz"
+  ],
+  "fast_group_markers": [
+    "pluto",
+    "samsung",
+    "plex",
+    "roku",
+    "fast",
+    "xumo",
+    "freevee"
+  ],
+  "sports_name_patterns": [
+    "\\bESPN\\b",
+    "\\bESPN2\\b",
+    "\\bESPNEWS\\b",
+    "\\bESPNU\\b",
+    "\\bNHL\\b",
+    "\\bNFL\\b",
+    "\\bNBA\\b",
+    "\\bMLB\\b",
+    "FOX SPORTS",
+    "\\bFS1\\b",
+    "\\bFS2\\b",
+    "CBS SPORTS",
+    "NBC SPORTS",
+    "BIG TEN",
+    "SEC NETWORK",
+    "ACC NETWORK",
+    "GOLF CHANNEL",
+    "TENNIS CHANNEL",
+    "BEIN SPORTS",
+    "DAZN",
+    "PPV"
+  ],
+  "deduplicate_exact_schedules": true,
+  "outputs": {
+    "main": "usa.xml",
+    "sports": "usa-sports.xml",
+    "local": "usa-local.xml",
+    "fast": "usa-fast.xml"
+  }
+}
