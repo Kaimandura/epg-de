@@ -4,7 +4,10 @@
   "request_timeout_seconds": 90,
   "download_retries": 3,
   "max_guide_bytes": 157286400,
+  "max_output_gzip_bytes": 94371840,
   "min_programmes_per_channel": 1,
+  "programme_past_hours": 12,
+  "programme_future_days": 7,
   "source_priority": [
     "nhl.com",
     "dazn.com",
