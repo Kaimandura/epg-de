@@ -1,16 +1,16 @@
 amazon_xmltv_id,name,status,source_xmltv_id,source_display_name,programme_count,candidate_count
-AmazonPrime.de.das-erste,Das Erste,OK,DasErste.de@HD,Das Erste HD,247,1
-AmazonPrime.de.zdf,ZDF,OK,ZDF.de@HD,ZDF HD,219,1
-AmazonPrime.de.ndr-niedersachsen,NDR Fernsehen NDS,OK,NDRFernsehen.de@Niedersachsen,NDR FS NDS HD,271,1
-AmazonPrime.de.br-sued,BR Fernsehen Süd,OK,BRFernsehen.de@Sud,BR Fernsehen Süd,247,1
-AmazonPrime.de.wdr-koeln,WDR Köln,OK,WDRFernsehen.de@Koln,WDR HD Köln,261,1
-AmazonPrime.de.hr,hr-fernsehen,OK,hrfernsehen.de@HD,hr-fernsehen HD,273,1
-AmazonPrime.de.rbb-berlin,rbb Berlin Fernsehen,OK,rbbFernsehen.de@Berlin,rbb Berlin HD,241,1
-AmazonPrime.de.mdr-sachsen,MDR Sachsen,OK,MDRFernsehen.de@Sachsen,MDR Sachsen HD,268,1
-AmazonPrime.de.swr-bw,SWR Fernsehen BW,OK,SWRFernsehenBadenWurttemberg.de@SD,SWR Fernsehen BW,231,1
+AmazonPrime.de.das-erste,Das Erste,OK,DasErste.de@HD,Das Erste HD,246,1
+AmazonPrime.de.zdf,ZDF,OK,ZDF.de@HD,ZDF HD,193,1
+AmazonPrime.de.ndr-niedersachsen,NDR Fernsehen NDS,OK,NDRFernsehen.de@Niedersachsen,NDR FS NDS HD,272,1
+AmazonPrime.de.br-sued,BR Fernsehen Süd,OK,BRFernsehen.de@Sud,BR Fernsehen Süd,242,1
+AmazonPrime.de.wdr-koeln,WDR Köln,OK,WDRFernsehen.de@Koln,WDR HD Köln,259,1
+AmazonPrime.de.hr,hr-fernsehen,OK,hrfernsehen.de@HD,hr-fernsehen HD,272,1
+AmazonPrime.de.rbb-berlin,rbb Berlin Fernsehen,OK,rbbFernsehen.de@Berlin,rbb Berlin HD,246,1
+AmazonPrime.de.mdr-sachsen,MDR Sachsen,OK,MDRFernsehen.de@Sachsen,MDR Sachsen HD,267,1
+AmazonPrime.de.swr-bw,SWR Fernsehen BW,OK,SWRFernsehenBadenWurttemberg.de@SD,SWR Fernsehen BW,229,1
 AmazonPrime.de.radio-bremen-tv,Radio Bremen,OK,RadioBremenFernsehen.de@SD,Radio Bremen TV,290,1
-AmazonPrime.de.sr-fernsehen,SR Fernsehen,OK,SRFernsehen.de@HD,SR Fernsehen HD,257,1
-AmazonPrime.de.welt,Welt HD,OK,WELT.de@SD,WELT,464,4
-AmazonPrime.de.all-romance,All Romance,OK,SamsungTVPlus.de.DE16000042J,All Romance,5,1
+AmazonPrime.de.sr-fernsehen,SR Fernsehen,OK,SRFernsehen.de@HD,SR Fernsehen HD,255,1
+AmazonPrime.de.welt,Welt HD,OK,WELT.de@SD,WELT,474,4
+AmazonPrime.de.all-romance,All Romance,OK,SamsungTVPlus.de.DE16000042J,All Romance,4,1
 AmazonPrime.de.21-jump-street,21 Jump Street,OK,PlutoTV.de.686cffbf3ffa5e0c91cdcfb3,21 Jump Street,36,1
 AmazonPrime.de.planet-action,Planet Action,MISSING_OPTIONAL,,,0,0

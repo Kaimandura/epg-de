@@ -1,4 +1,4 @@
 platform,output,matched_xmltv_ids,channel_count,active_channel_count,programme_count
-amazon,amazon.xml.gz,14,14,14,3310
-pluto,pluto.xml.gz,203,180,180,8350
-samsung,samsung.xml.gz,488,468,468,3289
+amazon,amazon.xml.gz,14,14,14,3285
+pluto,pluto.xml.gz,203,180,180,8306
+samsung,samsung.xml.gz,488,470,470,2706
