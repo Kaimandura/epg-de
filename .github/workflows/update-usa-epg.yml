@@ -1,0 +1,190 @@
+name: Update USA EPG
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/update-usa-epg.yml"
+      - "scripts/build_us_epgs.py"
+      - "config/us-epg.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: epg-usa-update-v1
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Fetch current USA guide index and channel metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf build/usa build/usa-baseline
+          mkdir -p build/usa/input build/usa/output
+          curl --retry 3 --connect-timeout 15 --max-time 120 -fsSL \
+            https://iptv-org.github.io/api/guides.json \
+            -o build/usa/input/guides.json
+          curl --retry 3 --connect-timeout 15 --max-time 120 -fsSL \
+            https://raw.githubusercontent.com/iptv-org/database/master/data/channels.csv \
+            -o build/usa/input/channels.csv
+          curl --retry 3 --connect-timeout 15 --max-time 120 -fsSL \
+            https://raw.githubusercontent.com/iptv-org/database/master/data/logos.csv \
+            -o build/usa/input/logos.csv
+
+      - name: Build compact active-only USA guides
+        run: |
+          python scripts/build_us_epgs.py \
+            --guides-index build/usa/input/guides.json \
+            --channels-csv build/usa/input/channels.csv \
+            --logos-csv build/usa/input/logos.csv \
+            --config config/us-epg.json \
+            --output-dir build/usa/output \
+            --report build/usa/usa-coverage.csv
+
+      - name: Validate USA XMLTV outputs and Last Known Good
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build/usa-baseline
+
+          validate_one() {
+            local stem="$1"
+            local min_channels="$2"
+            local min_programmes="$3"
+            local xml="build/usa/output/${stem}.xml"
+            local gz="${xml}.gz"
+            local baseline_gz="epg/${stem}.xml.gz"
+            local baseline_xml="build/usa-baseline/${stem}.xml"
+
+            args=(
+              "$xml"
+              --gzip "$gz"
+              --min-channels "$min_channels"
+              --min-programmes "$min_programmes"
+              --require-display-names
+            )
+
+            if [[ -f "$baseline_gz" ]]; then
+              gzip -dc "$baseline_gz" > "$baseline_xml"
+              args+=(
+                --baseline "$baseline_xml"
+                --min-baseline-programme-ratio 0.55
+                --min-baseline-active-channel-ratio 0.65
+              )
+            fi
+
+            python scripts/validate_epg.py "${args[@]}"
+          }
+
+          validate_one usa 20 200
+          validate_one usa-sports 5 50
+          validate_one usa-local 20 200
+          validate_one usa-fast 10 100
+
+      - name: Promote validated USA build
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p epg reports
+          cp build/usa/output/usa.xml.gz epg/usa.xml.gz
+          cp build/usa/output/usa-sports.xml.gz epg/usa-sports.xml.gz
+          cp build/usa/output/usa-local.xml.gz epg/usa-local.xml.gz
+          cp build/usa/output/usa-fast.xml.gz epg/usa-fast.xml.gz
+          cp build/usa/usa-coverage.csv reports/usa-coverage.csv
+
+      - name: Publish USA EPG files
+        shell: bash
+        env:
+          START_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+
+          git config user.name "epg-de bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          publish_tmp="$(mktemp -d)"
+          trap 'rm -rf "$publish_tmp"' EXIT
+
+          cp epg/usa.xml.gz "$publish_tmp/usa.xml.gz"
+          cp epg/usa-sports.xml.gz "$publish_tmp/usa-sports.xml.gz"
+          cp epg/usa-local.xml.gz "$publish_tmp/usa-local.xml.gz"
+          cp epg/usa-fast.xml.gz "$publish_tmp/usa-fast.xml.gz"
+          cp reports/usa-coverage.csv "$publish_tmp/usa-coverage.csv"
+
+          for file in "$publish_tmp"/*.gz; do
+            size="$(stat -c%s "$file")"
+            if (( size >= 100 * 1024 * 1024 )); then
+              echo "Refusing publication: $file is ${size} bytes and exceeds GitHub's 100 MiB limit."
+              exit 1
+            fi
+          done
+
+          for attempt in 1 2 3; do
+            echo "USA publish attempt $attempt/3"
+            git fetch origin main --depth=1
+            remote_sha="$(git rev-parse origin/main)"
+
+            if [[ "$remote_sha" != "$START_SHA" ]]; then
+              pipeline_changes="$(
+                git diff --name-only "$START_SHA" "$remote_sha" -- \
+                  .github/workflows/update-usa-epg.yml \
+                  scripts/build_us_epgs.py \
+                  config/us-epg.json || true
+              )"
+              if [[ -n "$pipeline_changes" ]]; then
+                echo "A newer USA pipeline revision is already on main:"
+                echo "$pipeline_changes"
+                echo "This run is superseded; preserving current Last Known Good files."
+                exit 0
+              fi
+            fi
+
+            git reset --hard "$remote_sha"
+            mkdir -p epg reports
+            cp "$publish_tmp/usa.xml.gz" epg/usa.xml.gz
+            cp "$publish_tmp/usa-sports.xml.gz" epg/usa-sports.xml.gz
+            cp "$publish_tmp/usa-local.xml.gz" epg/usa-local.xml.gz
+            cp "$publish_tmp/usa-fast.xml.gz" epg/usa-fast.xml.gz
+            cp "$publish_tmp/usa-coverage.csv" reports/usa-coverage.csv
+
+            git add -A -- \
+              epg/usa.xml.gz \
+              epg/usa-sports.xml.gz \
+              epg/usa-local.xml.gz \
+              epg/usa-fast.xml.gz \
+              reports/usa-coverage.csv
+
+            if git diff --cached --quiet; then
+              echo "No USA generated changes."
+              exit 0
+            fi
+
+            git commit -m "chore: update USA EPG"
+            if git push origin HEAD:main; then
+              echo "USA publication succeeded."
+              exit 0
+            fi
+
+            echo "Remote main moved during USA publication; retrying safely."
+          done
+
+          echo "USA publication failed after 3 race-safe attempts."
+          exit 1
