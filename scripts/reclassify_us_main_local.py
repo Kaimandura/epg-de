@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import gzip
 import re
 import xml.etree.ElementTree as ET
@@ -162,11 +163,73 @@ def write_xml_and_gzip(root: ET.Element, xml_path: Path) -> tuple[int, int]:
     return channels, programmes
 
 
+def refresh_report(
+    report_path: Path,
+    main_xml: Path,
+    local_xml: Path,
+    main_channels: int,
+    main_programmes: int,
+    local_channels: int,
+    local_programmes: int,
+) -> None:
+    if not report_path.exists():
+        raise RuntimeError(f"USA coverage report missing: {report_path}")
+
+    with report_path.open("r", encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        fieldnames = list(reader.fieldnames or [])
+        rows = [dict(row) for row in reader]
+
+    required = {"category", "channel_count", "programme_count", "gzip_bytes"}
+    if not required.issubset(fieldnames):
+        raise RuntimeError(f"USA coverage report has unexpected columns: {fieldnames}")
+
+    values = {
+        "main": (
+            main_channels,
+            main_programmes,
+            Path(str(main_xml) + ".gz").stat().st_size,
+        ),
+        "local": (
+            local_channels,
+            local_programmes,
+            Path(str(local_xml) + ".gz").stat().st_size,
+        ),
+    }
+
+    seen: set[str] = set()
+    for row in rows:
+        category = (row.get("category") or "").strip()
+        if category not in values:
+            continue
+        channels, programmes, gzip_bytes = values[category]
+        row["channel_count"] = str(channels)
+        row["programme_count"] = str(programmes)
+        row["gzip_bytes"] = str(gzip_bytes)
+        seen.add(category)
+
+    missing = set(values) - seen
+    if missing:
+        raise RuntimeError(f"USA coverage report missing categories after reclassification: {sorted(missing)}")
+
+    with report_path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(rows)
+
+    print(
+        "USA coverage report refreshed after reclassification: "
+        f"main={main_channels}/{main_programmes} "
+        f"local={local_channels}/{local_programmes}"
+    )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--main", required=True, type=Path)
     parser.add_argument("--local", required=True, type=Path)
     parser.add_argument("--patterns", required=True, type=Path)
+    parser.add_argument("--report", type=Path)
     args = parser.parse_args()
 
     patterns = load_patterns(args.patterns)
@@ -209,6 +272,17 @@ def main() -> None:
         raise RuntimeError("USA main reclassification produced an empty guide")
     if local_channels_count == 0 or local_programmes_count == 0:
         raise RuntimeError("USA local reclassification produced an empty guide")
+
+    if args.report is not None:
+        refresh_report(
+            args.report,
+            args.main,
+            args.local,
+            main_channels_count,
+            main_programmes_count,
+            local_channels_count,
+            local_programmes_count,
+        )
 
     print(
         "USA reclassification complete: "
