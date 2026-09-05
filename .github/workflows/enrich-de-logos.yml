@@ -22,7 +22,7 @@ concurrency:
 
 jobs:
   enrich:
-    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, 'chore: enrich Germany EPG logos') }}
+    if: "${{ github.event_name != 'push' || !contains(github.event.head_commit.message, 'chore: enrich Germany EPG logos') }}"
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
