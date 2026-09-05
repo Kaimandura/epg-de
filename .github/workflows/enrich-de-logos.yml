@@ -1,0 +1,158 @@
+name: Enrich Germany EPG Logos
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "epg/de.xml.gz"
+      - "epg/samsung.xml.gz"
+      - "epg/pluto.xml.gz"
+      - "epg/amazon.xml.gz"
+      - "scripts/enrich_epg_logos.py"
+      - ".github/workflows/enrich-de-logos.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: epg-de-logo-enrichment-v1
+  cancel-in-progress: true
+
+jobs:
+  enrich:
+    if: ${{ github.event_name != 'push' || !contains(github.event.head_commit.message, 'chore: enrich Germany EPG logos') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Fetch current logo database
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf build/logo upstream/logo-database
+          mkdir -p build/logo
+          git clone --depth 1 https://github.com/iptv-org/database.git upstream/logo-database
+
+      - name: Prepare published German EPGs
+        shell: bash
+        run: |
+          set -euo pipefail
+          for stem in de samsung pluto amazon; do
+            test -s "epg/${stem}.xml.gz"
+            gzip -dc "epg/${stem}.xml.gz" > "build/logo/${stem}.xml"
+          done
+
+      - name: Enrich missing channel logos
+        run: |
+          python scripts/enrich_epg_logos.py \
+            --channels-csv upstream/logo-database/data/channels.csv \
+            --logos-csv upstream/logo-database/data/logos.csv \
+            --report build/logo/logo-coverage.csv \
+            build/logo/de.xml \
+            build/logo/samsung.xml \
+            build/logo/pluto.xml \
+            build/logo/amazon.xml
+
+      - name: Validate enriched EPGs
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/validate_epg.py build/logo/de.xml \
+            --gzip build/logo/de.xml.gz \
+            --min-channels 25 \
+            --min-programmes 100 \
+            --require-display-names
+          python scripts/validate_epg.py build/logo/samsung.xml \
+            --gzip build/logo/samsung.xml.gz \
+            --min-channels 20 \
+            --min-programmes 1000 \
+            --require-display-names
+          python scripts/validate_epg.py build/logo/pluto.xml \
+            --gzip build/logo/pluto.xml.gz \
+            --min-channels 50 \
+            --min-programmes 1000 \
+            --require-display-names
+          python scripts/validate_epg.py build/logo/amazon.xml \
+            --gzip build/logo/amazon.xml.gz \
+            --min-channels 10 \
+            --min-programmes 1500 \
+            --require-display-names
+
+      - name: Publish enriched logos safely
+        shell: bash
+        env:
+          START_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          git config user.name "epg-de bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          publish_tmp="$(mktemp -d)"
+          trap 'rm -rf "$publish_tmp"' EXIT
+          cp build/logo/de.xml.gz "$publish_tmp/de.xml.gz"
+          cp build/logo/samsung.xml.gz "$publish_tmp/samsung.xml.gz"
+          cp build/logo/pluto.xml.gz "$publish_tmp/pluto.xml.gz"
+          cp build/logo/amazon.xml.gz "$publish_tmp/amazon.xml.gz"
+          cp build/logo/logo-coverage.csv "$publish_tmp/logo-coverage.csv"
+
+          for attempt in 1 2 3; do
+            echo "Logo publish attempt $attempt/3"
+            git fetch origin main --depth=1
+            remote_sha="$(git rev-parse origin/main)"
+
+            if [[ "$remote_sha" != "$START_SHA" ]]; then
+              relevant_changes="$(
+                git diff --name-only "$START_SHA" "$remote_sha" -- \
+                  epg/de.xml.gz \
+                  epg/samsung.xml.gz \
+                  epg/pluto.xml.gz \
+                  epg/amazon.xml.gz \
+                  scripts/enrich_epg_logos.py \
+                  .github/workflows/enrich-de-logos.yml || true
+              )"
+              if [[ -n "$relevant_changes" ]]; then
+                echo "Newer Germany EPG/logo revision detected; this enrichment run is superseded:"
+                echo "$relevant_changes"
+                exit 0
+              fi
+            fi
+
+            git reset --hard "$remote_sha"
+            mkdir -p epg reports
+            cp "$publish_tmp/de.xml.gz" epg/de.xml.gz
+            cp "$publish_tmp/samsung.xml.gz" epg/samsung.xml.gz
+            cp "$publish_tmp/pluto.xml.gz" epg/pluto.xml.gz
+            cp "$publish_tmp/amazon.xml.gz" epg/amazon.xml.gz
+            cp "$publish_tmp/logo-coverage.csv" reports/logo-coverage.csv
+
+            git add -A -- \
+              epg/de.xml.gz \
+              epg/samsung.xml.gz \
+              epg/pluto.xml.gz \
+              epg/amazon.xml.gz \
+              reports/logo-coverage.csv
+
+            if git diff --cached --quiet; then
+              echo "No logo enrichment changes."
+              exit 0
+            fi
+
+            git commit -m "chore: enrich Germany EPG logos"
+            if git push origin HEAD:main; then
+              echo "Logo enrichment publication succeeded."
+              exit 0
+            fi
+          done
+
+          echo "Logo enrichment publication failed after 3 attempts."
+          exit 1
