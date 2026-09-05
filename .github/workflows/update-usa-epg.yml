@@ -74,7 +74,8 @@ jobs:
           python scripts/reclassify_us_main_local.py \
             --main build/usa/output/usa.xml \
             --local build/usa/output/usa-local.xml \
-            --patterns config/us-national-patterns.txt
+            --patterns config/us-national-patterns.txt \
+            --report build/usa/usa-coverage.csv
 
       - name: Validate USA XMLTV outputs and Last Known Good
         shell: bash
