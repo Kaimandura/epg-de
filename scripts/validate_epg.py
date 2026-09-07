@@ -4,6 +4,8 @@ from __future__ import annotations
 import argparse
 import gzip
 import math
+import subprocess
+import sys
 import xml.etree.ElementTree as ET
 from collections import Counter
 from pathlib import Path
@@ -80,6 +82,42 @@ def parse_required_display_name(spec: str) -> tuple[str, str]:
             f"got: {spec!r}"
         )
     return xmltv_id, expected_name
+
+
+def run_master_quality_gate(xml_path: Path) -> None:
+    if xml_path.name != "de.xml" or "publish" not in xml_path.parts:
+        return
+
+    coverage = xml_path.parent / "coverage.csv"
+    if not coverage.exists():
+        raise SystemExit(f"Missing master coverage report for quality gate: {coverage}")
+
+    audit_script = Path(__file__).with_name("audit_epg_quality.py")
+    report = xml_path.parent / "quality-audit.csv"
+    summary = xml_path.parent / "quality-audit.json"
+    command = [
+        sys.executable,
+        str(audit_script),
+        "--xml",
+        str(xml_path),
+        "--coverage",
+        str(coverage),
+        "--report",
+        str(report),
+        "--summary",
+        str(summary),
+        "--max-hard-errors",
+        "0",
+        "--stale-hours",
+        "12",
+        "--large-gap-hours",
+        "6",
+    ]
+    print("Running master EPG quality gate...")
+    try:
+        subprocess.run(command, check=True)
+    except subprocess.CalledProcessError as exc:
+        raise SystemExit(f"Master EPG quality gate failed with exit code {exc.returncode}.") from exc
 
 
 def main() -> int:
@@ -269,6 +307,8 @@ def main() -> int:
             f"{len(active_channels)} active channels / {len(programmes)} programmes "
             f"vs {len(baseline_active_channels)} / {len(baseline_programmes)}."
         )
+
+    run_master_quality_gate(args.xml)
 
     print(
         f"Validation OK: {len(channel_ids)} channels, "
