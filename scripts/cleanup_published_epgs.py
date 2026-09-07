@@ -56,23 +56,26 @@ def normalized_name(value: str) -> str:
 
 
 def parse_xmltv_datetime(value: str) -> datetime | None:
-    match = re.match(r"^(\d{12}|\d{14})(?:\s*([+-]\d{4}))?", value.strip())
+    match = re.match(r"^(\d{14}|\d{12})(?:\s*([+-]\d{4}))?", value.strip())
     if not match:
         return None
     raw = match.group(1)
     fmt = "%Y%m%d%H%M%S" if len(raw) == 14 else "%Y%m%d%H%M"
-    dt = datetime.strptime(raw, fmt)
-    offset = match.group(2)
-    if offset:
-        sign = 1 if offset[0] == "+" else -1
-        hours = int(offset[1:3])
-        minutes = int(offset[3:5])
-        dt = dt.replace(
-            tzinfo=timezone(sign * timedelta(hours=hours, minutes=minutes))
-        )
-    else:
-        dt = dt.replace(tzinfo=timezone.utc)
-    return dt.astimezone(timezone.utc)
+    try:
+        dt = datetime.strptime(raw, fmt)
+        offset = match.group(2)
+        if offset:
+            sign = 1 if offset[0] == "+" else -1
+            hours = int(offset[1:3])
+            minutes = int(offset[3:5])
+            dt = dt.replace(
+                tzinfo=timezone(sign * timedelta(hours=hours, minutes=minutes))
+            )
+        else:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc)
+    except (TypeError, ValueError):
+        return None
 
 
 def canonical_time(value: str) -> str:
@@ -183,13 +186,59 @@ def clean_file(
     if len(channels) != len(root.findall("channel")):
         raise SystemExit(f"{path}: duplicate or empty channel IDs before cleanup")
 
-    programmes_by_channel: dict[str, list[ET.Element]] = defaultdict(list)
-    for programme in root.findall("programme"):
-        channel_id = programme.attrib.get("channel", "")
-        if channel_id:
-            programmes_by_channel[channel_id].append(programme)
-
     rows: list[list[str | int | float]] = []
+    programmes_by_channel: dict[str, list[ET.Element]] = defaultdict(list)
+    valid_programme_ids: set[int] = set()
+    seen_programmes: set[tuple[str, str, str, str]] = set()
+
+    # Reject unusable source records before channel cleanup. We intentionally do
+    # not invent titles or programme durations: bad records are dropped and
+    # recorded in the cleanup report.
+    for programme in root.findall("programme"):
+        channel_id = (programme.attrib.get("channel") or "").strip()
+        title = (programme.findtext("title") or "").strip()
+        start_raw = (programme.attrib.get("start") or "").strip()
+        stop_raw = (programme.attrib.get("stop") or "").strip()
+
+        reasons: list[str] = []
+        if not channel_id or channel_id not in channels:
+            reasons.append("unknown_channel")
+        if not title:
+            reasons.append("missing_title")
+
+        start = parse_xmltv_datetime(start_raw)
+        stop = parse_xmltv_datetime(stop_raw)
+        if start is None:
+            reasons.append("invalid_start")
+        if stop is None:
+            reasons.append("invalid_stop")
+        if start is not None and stop is not None and stop <= start:
+            reasons.append("non_positive_duration")
+
+        signature = (channel_id, start_raw, stop_raw, title)
+        if not reasons and signature in seen_programmes:
+            reasons.append("duplicate_programme")
+
+        if reasons:
+            channel = channels.get(channel_id)
+            rows.append(
+                [
+                    label,
+                    "DROP_INVALID_PROGRAMME",
+                    channel_id,
+                    "",
+                    primary_name(channel) if channel is not None else "",
+                    1,
+                    ";".join(reasons)
+                    + f";start={start_raw or '<empty>'};stop={stop_raw or '<empty>'}",
+                ]
+            )
+            continue
+
+        seen_programmes.add(signature)
+        programmes_by_channel[channel_id].append(programme)
+        valid_programme_ids.add(id(programme))
+
     removed_ids: set[str] = set()
 
     for channel_id, channel in list(channels.items()):
@@ -204,7 +253,7 @@ def clean_file(
                 "",
                 primary_name(channel),
                 0,
-                "no programme entries",
+                "no valid programme entries after sanitization",
             ]
         )
 
@@ -284,7 +333,10 @@ def clean_file(
             output_root.append(deepcopy(channels[channel_id]))
 
     for child in root.findall("programme"):
-        if child.attrib.get("channel", "") in kept_ids:
+        if (
+            id(child) in valid_programme_ids
+            and child.attrib.get("channel", "") in kept_ids
+        ):
             output_root.append(deepcopy(child))
 
     active_ids = {
@@ -339,8 +391,8 @@ def update_platform_report(
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
-            "Remove channels without programmes and merge same-name channels "
-            "with effectively identical schedules."
+            "Remove invalid programme entries, channels without programmes, "
+            "and merge same-name channels with effectively identical schedules."
         )
     )
     parser.add_argument(
