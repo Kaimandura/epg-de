@@ -1,5 +1,5 @@
-category,channel_count,programme_count,gzip_bytes,source,exact_schedule_deduped_total
-main,43,6915,52386,https://iptv-epg.org/files/epg-us.xml.gz,1
-sports,2573,102639,377145,https://iptv-epg.org/files/epg-us.xml.gz,1
-local,10167,805580,4768306,https://iptv-epg.org/files/epg-us.xml.gz,1
-fast,12,522,4663,https://iptv-epg.org/files/epg-us.xml.gz,1
+category,channel_count,programme_count,gzip_bytes,source,exact_schedule_deduped_total,official_playlist_total,official_playlist_mapped_active,rejected_malformed_programmes
+main,203,35196,3657436,https://iptv-epg.org/files/epg-us.xml.gz,1,1468,588,10
+sports,3383,145684,1556168,https://iptv-epg.org/files/epg-us.xml.gz,1,1468,588,10
+local,9096,438927,26105885,https://iptv-epg.org/files/epg-us.xml.gz,1,1468,588,10
+fast,728,27533,1691350,https://iptv-epg.org/files/epg-us.xml.gz,1,1468,588,10

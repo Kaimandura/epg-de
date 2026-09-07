@@ -1,0 +1,589 @@
+xmltv_id,display_name,category,source_id,source_display_name,match_method,programme_count
+00sReplay.us@SD,00s Replay,fast,00sReplay.pluto,PLUTO - 00s Replay,normalized-base-id,12
+48Hours.us@US,48 Hours,fast,48Hours.pluto,PLUTO - 48 Hours,normalized-base-id,20
+50CentAction.us@SD,50 Cent Action,fast,50CentAction.us,50 Cent Action,base-id,46
+70sCinema.us@SD,70s Cinema,fast,70sCinema.pluto,PLUTO - 70s Cinema,normalized-base-id,13
+80sRewind.us@SD,80s Rewind,fast,80sRewind.pluto,PLUTO - 80s Rewind,normalized-base-id,14
+90sKidsTV2.us@SD,90s Kids TV 2,fast,90sKidsTV2.pluto,PLUTO - 90s Kids TV 2,normalized-base-id,38
+90sThrowback.us@SD,90s Throwback,fast,90sThrowback.pluto,PLUTO - 90s Throwback,normalized-base-id,13
+ABC.us@East,ABC,local,ABCEast_WABC.us,ABC East WABC,regional-feed-id,93
+ABC.us@KAAL,ABC 6 Austin TX (KAAL),local,ABCKAAL.us,ABC KAAL Rochester MN,base-feed-id,97
+ABC.us@KATC,KATC 3.1,local,ABCKATC.us,ABC KATC Lafayette LA,base-feed-id,104
+ABC.us@KEROTV,ABC 23 Bakersfield CA (KERO),local,ABCKERO.us,ABC KERO Bakersfield CA,base-feed-id,103
+ABC.us@KGTV,ABC 10 San Diego CA (KGTV),local,ABCKGTV.us,ABC KGTV San Diego CA,base-feed-id,104
+ABC.us@KGUNTV,ABC 9 Tucson AZ (KGUN),local,ABCKGUN.us,ABC KGUN Tucson AZ,base-feed-id,115
+ABC.us@KITV,KITV 4 Island News,local,ABCKITV.us,ABC KITV Honolulu HI,base-feed-id,107
+ABC.us@KMGHTV,ABC 7 Denver CO (KMGH),local,ABCKMGH.us,ABC KMGH Denver CO,base-feed-id,119
+ABC.us@KOATTV,ABC 7 Albuquerque NM (KOAT),local,ABCKOAT.us,ABC KOAT Albuquerque NM,base-feed-id,96
+ABC.us@KRGVTV,ABC 5,local,ABCKRGV.us,ABC KRGV McAllen Harlingen Brownsville Weslaco TX,base-feed-id,106
+ABC.us@KSTPTV,ABC 5 St. Paul MN (KSTP),local,ABCKSTP.us,ABC KSTP Minneapolis Saint Paul MN,base-feed-id,102
+ABC.us@KXXV,ABC 25 News Central Texas,local,ABCKXXV.us,ABC KXXV Waco Bryan TX,base-feed-id,105
+ABC.us@WBBJTV,WBBJ (Jackson TN),local,ABCWBBJ.us,ABC WBBJ Memphis Jackson TN,base-feed-id,104
+ABC.us@WBRZTV,WBRZ Weather Channel Baton Rouge LA,local,ABCWBRZ.us,ABC WBRZ Baton Rouge LA,base-feed-id,93
+ABC.us@WDIODT,ABC 10 Duluth MN (WDIO),local,ABCWDIO.us,ABC WDIO Duluth MN,base-feed-id,82
+ABC.us@West,ABC West,local,ABCWest_KABC.us,ABC West KABC,regional-feed-id,103
+ABC.us@WFTV,ABC 9 Orlando FL (WFTV),local,ABCWFTV.us,ABC WFTV Orlando FL,base-feed-id,115
+ABC.us@WISNTV,ABC 12 Milwaukee WI (WISN),local,ABCWISN.us,ABC WISN Milwaukee WI,base-feed-id,100
+ABC.us@WJLATV,ABC 7 Washington DC (WJLA),local,ABCWJLA.us,ABC WJLA Washington DC,base-feed-id,106
+ABC.us@WLOS,ABC 13 Asheville NC (WLOS),local,ABCWLOS.us,ABC WLOS Asheville NC,base-feed-id,117
+ABC.us@WMARTV,ABC 2 Baltimore MD (WMAR),local,ABCWMAR.us,ABC WMAR Baltimore MD,base-feed-id,123
+ABC.us@WMURTV,ABC 9 Manchester NH (WMUR-TV),local,ABCWMUR.us,ABC WMUR Manchester NH,base-feed-id,99
+ABC.us@WPDETV,ABC 15 Myrtle Beach FL (WPDE),local,ABCWPDE.us,ABC WPDE Florence SC,base-feed-id,99
+ABC.us@WSOCTV,WSOC-DT1,fast,ABCWSOC.us,ABC WSOC Charlotte NC,base-feed-id,113
+ABC.us@WSYX,ABC 6 Columbus OH (WSYX),local,ABCWSYX.us,ABC WSYX Columbus OH,base-feed-id,106
+ABC.us@WTNH,WTNH-DT1,local,ABCWTNH.us,ABC WTNH New Haven Hartford CT,base-feed-id,108
+ABC.us@WTVQDT,WTVQ ABC 36 News (Lexington KY),local,ABCWTVQ.us,ABC WTVQ Lexington KY,base-feed-id,116
+ABC.us@WTXLTV,ABC 27 Tallahassee FL (WTXL),local,ABCWTXL.us,ABC WTXL Tallahassee FL,base-feed-id,114
+ABC.us@WWAY,ABC WWAY 3,local,ABCWWAY.us,ABC WWAY Wilmington,base-feed-id,111
+AcapulcoShore.us@US,Acapulco Shore,fast,AcapulcoShore.pluto,PLUTO - Acapulco Shore,normalized-base-id,20
+ACCDigitalNetwork.us@SD,ACCDN,fast,ACCDigitalNetwork.us,ACC Digital Network,base-id,31
+ACCNetwork.us@SD,ACC Network,sports,ACCNetwork.us,ACC Network,base-id,148
+AceTV.us@SD,Ace TV,local,ACEtv.us,ACE TV,base-id,96
+AKCTV.us@SD,AKC TV,local,ACKTV.us,AKC TV,playlist-name,11
+ALLBLKGems.us@SD,ALLBLK Gems,fast,ALLBLKGems.us,ALLBLK Gems,base-id,107
+AllRealitybyWEtv.us@SD,All Reality WE tv,fast,AllRealityWEtv.us,All Reality WE tv,playlist-name,98
+AMC.us@East,AMC East,main,AMC.us,AMC,base-id,103
+AMC.us@EastHD,AMC,main,AMC.us,AMC,base-id,103
+AMGTV.us@SD,AMG TV,local,AMGTV.us,AMG TV,base-id,101
+AngerManagementChannel.us@SD,Anger Management Channel,local,AngerManagement.us,Anger Management,metadata-name,197
+AnimationPlus.us@SD,Animation+,fast,Animation+.us,Animation+,normalized-base-id,160
+AnimexHIDIVE.us@SD,ANIME x HIDIVE,fast,ANIMExHIDIVE.pluto,PLUTO - ANIME x HIDIVE,normalized-base-id,39
+AntiquesRoadshowUK.us@SD,Antiques Roadshow UK,fast,AntiquesRoadshowUK.us,Antiques Roadshow UK,base-id,82
+AntiquesRoadTrip.us@SD,PBS Antiques Road Trip,fast,AntiquesRoadTrip.pluto,PLUTO - Antiques Road Trip,normalized-base-id,21
+AreWeThereYet.us@SD,Are We There Yet?,local,AreWeThereYet?.us,Are We There Yet?,normalized-base-id,187
+AsianCrush.us@SD,AsianCrush,local,AsianCrush.us,AsianCrush,base-id,65
+AtHomewithFamilyHandyman.us@SD,At Home with Family Handyman,fast,AtHomewithFamilyHandyman.us,At Home with Family Handyman,base-id,110
+AWE.us@SD,AWE,local,AWE.us,AWE,base-id,144
+AWEPlus.us@SD,AWE Plus,local,AWEPlus.us,AWE Plus,base-id,127
+AXSTV.us@SD,AXS TV,local,AXSTV.us,AXS TV,base-id,125
+BabyFirst.us@US,BabyFirst,local,BabyFirst.us,BabyFirst,base-id,167
+BabySharkTV.us@SD,Baby Shark TV,fast,BabySharkTV.pluto,PLUTO - Baby Shark TV,normalized-base-id,34
+BarRescue.us@SD,Bar Rescue,fast,BarRescue.pluto,PLUTO - Bar Rescue,normalized-base-id,21
+BBCAmerica.us@East,BBC America,main,BBCAmerica.us,BBC America,base-id,110
+BBCEarth.uk@US,BBC Earth,fast,BBCEarth.us,BBC Earth,playlist-name,84
+BBCHomeGarden.us@SD,BBC Home & Garden,fast,BBCHomAndGarden.us,BBC Home & Garden,playlist-name,22
+beINSPORTSXTRA.us@SD,beIN SPORTS XTRA,fast,beINSportsXtra.us,beIN Sports Xtra,base-id,84
+BellatorMMA.us@SD,Bellator MMA,fast,BellatorMMA.pluto,PLUTO - Bellator MMA,normalized-base-id,15
+BestofDrPhil.us@SD,Best of Dr. Phil,fast,BestofDr.Phil.pluto,PHIL - Best of Dr. Phil,normalized-base-id,22
+BETCinema.us@SD,BET Cinema,fast,BETCinema.pluto,PLUTO - BET Cinema,normalized-base-id,12
+BETComedyMovies.us@SD,BET Comedy Movies,fast,BETComedyMovies.pluto,PLUTO - BET Comedy Movies,normalized-base-id,12
+BETPlutoTV.us@US,BET Pluto TV,fast,BETPlutoTV.pluto,PLUTO - BET Pluto TV,normalized-base-id,24
+BETThrowbacks.us@SD,BET Throwbacks,fast,BETThrowbacks.pluto,PLUTO - BET Throwbacks,normalized-base-id,39
+BETVisionaries.us@SD,BET Visionaries,fast,BETVisionaries.pluto,PLUTO - BET Visionaries,normalized-base-id,13
+BeverlyHillbillies.us@US,Beverly Hillbillies,fast,BeverlyHillbillies.pluto,PLUTO - Beverly Hillbillies,normalized-base-id,39
+BeverlyHills90210.us@SD,Beverly Hills 90210,fast,BeverlyHills90210.pluto,PLUTO - Beverly Hills 90210,normalized-base-id,20
+BeyondtheGates.us@SD,Beyond the Gates,fast,BeyondtheGates.pluto,PLUTO - Beyond the Gates,normalized-base-id,27
+BigBrother.us@SD,Big Brother,fast,BigBrother.pluto,PLUTO - Big Brother,normalized-base-id,19
+BigTenNetwork.us@SD,Big Ten Network,sports,BigTen.us,Big Ten Network,playlist-name,149
+BilliardTV.us@SD,Billiard TV,fast,BilliardTV.us,Billiard TV,base-id,62
+BlackFamilySitcoms.us@SD,Black Family Sitcoms,fast,BlackFamilySitcoms.pluto,PLUTO - Black Family Sitcoms,normalized-base-id,39
+BlackInkCrew.us@SD,Black Ink Crew,fast,BlackInkCrew.pluto,PLUTO - Black Ink Crew,normalized-base-id,21
+BlazeLive.us@SD,Blaze Live,fast,BlazeLive.pluto,PLUTO - Blaze Live,normalized-base-id,15
+BloombergOriginals.us@SD,Bloomberg Originals,local,BloombergOriginals.us,Bloomberg Originals,base-id,119
+BloombergOriginals.us@US,Bloomberg Originals,fast,BloombergOriginals.us,Bloomberg Originals,base-id,119
+BlueBloods.us@SD,Blue Bloods,fast,BlueBloods.pluto,PLUTO - Blue Bloods,normalized-base-id,21
+Bonanza.us@SD,Bonanza,fast,Bonanza.pluto,PLUTO - Bonanza,normalized-base-id,21
+bonappetit.us@SD,bon appétit,fast,BonAppetit.us,Bon Appetit,base-id,85
+BounceXL.us@SD,Bounce XL,fast,BounceXL.us,Bounce XL,base-id,110
+BratTV.us@SD,Brat TV,fast,BratTV.us,Brat TV,base-id,129
+Bravo.us@East,Bravo,main,Bravo.us,Bravo,base-id,146
+BritBoxMysteries.us@SD,BritBox Mysteries,fast,BritBoxMysteries.pluto,PLUTO - BritBox Mysteries,normalized-base-id,23
+Buzzr.us@SD,Buzzr,fast,BUZZR.us,BUZZR,base-id,150
+BYUTV.us@SD,BYUtv,fast,BYUtv.us,BYU Brigham Young University TV,base-id,107
+CarChase.us@SD,Car Chase,fast,CarChase.us,Car Chase,base-id,85
+CatholicTV.us@SD,Catholic TV,local,CatholicTV.us,Catholic TV,base-id,164
+CBNNews.us@SD,CBN News Channel,local,CBNNews.us,CBN News,base-id,139
+CBS.us@East,CBS,local,CBSEast_WCBS.us,CBS East WCBS,regional-feed-id,119
+CBS.us@KCCI,CBS 8 Des Moines IA (KCCI),local,CBSKCCI.us,CBS KCCI Des Moines-Ames IA,base-feed-id,101
+CBS.us@KDBCTV,CBS 4 El Paso TX (KDBC),local,CBSKDBC.us,CBS KDBC El Paso TX,base-feed-id,103
+CBS.us@KEYETV,CBS 42 Austin TX (KEYE),local,CBSKEYE.us,CBS KEYE Austin TX,base-feed-id,105
+CBS.us@KIROTV,KIRO-DT1,local,CBSKIRO.us,CBS KIRO Seatle Tacoma WA,base-feed-id,112
+CBS.us@KMTVTV,CBS 3 Omaha NE (KMTV),local,CBSKMTV.us,CBS KMTV Omaha NE,base-feed-id,104
+CBS.us@KUTV,CBS 2 Salt Lake City UT (KUTV),local,CBSKUTV.us,CBS KUTV Salt Lake City UT,base-feed-id,112
+CBS.us@KWTVDT,CBS 9 Oklahoma City OK (KWTV-DT1),local,CBSKWTV.us,CBS KWTV Oklahoma City OK,base-feed-id,100
+CBS.us@KZTV,KZTV-DT1,local,CBSKZTV.us,CBS KZTV Corpus Christi TX,base-feed-id,105
+CBS.us@WCBITV,WCBI (Columbus MI),local,CBSWCBI.us,CBS WCBI Columbus MS,base-feed-id,106
+CBS.us@WDEFTV,WDEF-TV News Chattanooga TN,local,CBSWDEF.us,CBS WDEF Chattanooga TN,base-feed-id,112
+CBS.us@WHIOTV,WHIO-DT1,local,CBSWHIO.us,CBS WHIO Dayton OH,base-feed-id,115
+CBS.us@WJAXTV,WJAX-DT1,local,CBSWJAX.us,CBS WJAX Jacksonville FL,base-feed-id,115
+CBS.us@WKRCTV,CBS 12 Cincinnati OH (WKRC),local,CBSWKRC.us,CBS WKRC Cincinnati OH,base-feed-id,98
+CBS.us@WPEC,CBS 12 West Palm Beach FL (WPEC),local,CBSWPEC.us,CBS WPEC West Palm Beach FL,base-feed-id,115
+CBS.us@WTVRTV,CBS 6 Richmond VA (WTVR),local,CBSWTVR.us,CBS WTVR Richmond VA,base-feed-id,105
+CBS.us@WWMT,CBS 3 Kalamazoo MI (WWMT),local,CBSWWMT.us,CBS WWMT Grand Rapids Kalamazoo MI,base-feed-id,104
+CBSenespanol.us@SD,CBS en español,fast,CBSenespañol.pluto,PLUTO - CBS en español,normalized-base-id,21
+CBSNews247.us@SD,CBS News 24/7,fast,CBSNews24/7.pluto,PLUTO - CBS News 24/7,normalized-base-id,22
+CBSNewsBaltimore.us@SD,CBS News Baltimore,fast,CBSNewsBaltimore.pluto,PLUTO - CBS News Baltimore,normalized-base-id,23
+CBSNewsBayArea.us@SD,CBS News Bay Area,fast,CBSNewsBayArea.us,CBS News Bay Area,base-id,117
+CBSNewsBoston.us@SD,CBS News Boston,fast,CBSNewsBoston.pluto,PLUTO - CBS News Boston,normalized-base-id,22
+CBSNewsChicago.us@SD,CBS News Chicago,fast,CBSNewsChicago.pluto,PLUTO - CBS News Chicago,normalized-base-id,22
+CBSNewsColorado.us@SD,CBS News Colorado,fast,CBSNewsColorado.pluto,PLUTO - CBS News Colorado,normalized-base-id,23
+CBSNewsDetroit.us@SD,CBS News Detroit,fast,CBSNewsDetroit.pluto,PLUTO - CBS News Detroit,normalized-base-id,27
+CBSNewsLosAngeles.us@SD,CBS News Los Angeles,fast,CBSNewsLosAngeles.pluto,PLUTO - CBS News Los Angeles,normalized-base-id,28
+CBSNewsMiami.us@SD,CBS News Miami,fast,CBSNewsMiami.pluto,PLUTO - CBS News Miami,normalized-base-id,27
+CBSNewsMinnesota.us@SD,CBS News Minnesota,fast,CBSNewsMinnesota.pluto,PLUTO - CBS News Minnesota,normalized-base-id,23
+CBSNewsNewYork.us@SD,CBS News New York,fast,CBSNewsNewYork.pluto,PLUTO - CBS News New York,normalized-base-id,21
+CBSNewsPittsburgh.us@SD,CBS News Pittsburgh,fast,CBSNewsPittsburgh.us,CBS News Pittsburgh,base-id,120
+CBSNewsSacramento.us@SD,CBS News Sacramento,fast,CBSNewsSacramento.pluto,PLUTO - CBS News Sacramento,normalized-base-id,20
+CBSSportsGolazoNetwork.us@SD,CBS Sports Golazo Network,sports,CBSSportsGolazoNetwork.us,CBS Sports Golazo Network,base-id,97
+CBSSportsHQ.us@SD,CBS Sports HQ,fast,CBSSportsHQ.us,CBS Sports HQ,base-id,25
+Charge.us@SD,Charge!,local,Charge!.us,Charge!,normalized-base-id,106
+CheersPlusFrasier.us@SD,Cheers + Frasier,fast,Cheers+Frasier.pluto,PLUTO - Cheers + Frasier,normalized-base-id,39
+Choppertown.us@SD,Choppertown,fast,Choppertown.us,Choppertown,base-id,192
+CineAdrenalina.us@SD,Cine adrenalina,fast,Cineadrenalina.pluto,PLUTO - Cine adrenalina,normalized-base-id,12
+CineAmor.us@SD,Cine Amor,fast,CineAmor.pluto,PLUTO - Cine Amor,normalized-base-id,14
+Cineaventura.us@SD,Cine aventura,fast,Cineaventura.pluto,PLUTO - Cine aventura,normalized-base-id,12
+Cineenespanol.us@SD,Cine en español,fast,Cineenespañol.pluto,PLUTO - Cine en español,normalized-base-id,12
+CinemaxClassics.us@East,Cinemax Classics,local,CinemaxClassics.us,Cinemax Classics,base-id,51
+CinemaxHits.us@East,Cinemax Hits,local,CinemaxHits.us,Cinemax Hits,base-id,47
+CinePremiere.us@SD,Cine Premiere,fast,CinePremiere.pluto,PLUTO - Cine Premiere,normalized-base-id,12
+CineSony.us@SD,Cine Sony,local,CineSONY.us,CINE SONY,base-id,50
+CineTerror.us@US,Cine terror,fast,Cineterror.pluto,PLUTO - Cine terror,normalized-base-id,12
+CinevaultWesterns.us@SD,Cinevault Westerns,fast,CINEVAULTWesterns.us,CINEVAULT Westerns,base-id,53
+Classica.us@SD,Classica,fast,Classica.pluto,PLUTO - Classica,normalized-base-id,17
+ClassicCinema.us@SD,Classic Cinema,local,ClassicCinema.us,Classic Cinema,base-id,37
+ClassicMoviesChannel.us@SD,Classic Movies Channel,fast,ClassicMoviesChannel.pluto,PLUTO - Classic Movies Channel,normalized-base-id,12
+ClassicMovieWesterns.us@SD,Classic Movie Westerns,fast,ClassicMovieWesterns.pluto,PLUTO - Classic Movie Westerns,normalized-base-id,14
+ClassicTVComedy.us@SD,Classic TV Comedy,fast,ClassicTVComedy.pluto,PLUTO - Classic TV Comedy,normalized-base-id,38
+ClassicTVCrimeDrama.us@SD,Classic TV Crime Drama,fast,ClassicTVCrimeDrama.pluto,PLUTO - Classic TV Crime Drama,normalized-base-id,21
+ClassicTVDrama.us@SD,Classic TV Drama,fast,ClassicTVDrama.pluto,PLUTO - Classic TV Drama,normalized-base-id,21
+ClassicTVFamilies.us@US,Classic TV: Families,fast,ClassicTV:Families.pluto,PLUTO - Classic TV: Families,normalized-base-id,39
+CMT.us@East,CMT,main,CMT.us,CMT,base-id,238
+CMTEqualPlay.us@SD,CMT Equal Play,fast,CMTEqualPlay.pluto,PLUTO - CMT Equal Play,normalized-base-id,21
+CNBC.us@SD,CNBC,main,CNBC.us,CNBC,base-id,144
+ComedyCentral.us@East,Comedy Central,main,ComedyCentral.us,Comedy Central,base-id,284
+ComedyCentralenEspanol.us@SD,Comedy Central en español,fast,ComedyCentralenespañol.pluto,PLUTO - Comedy Central en español,normalized-base-id,24
+ComedyCentralPlutoTV.us@US,Comedy Central Pluto TV,fast,ComedyCentralPlutoTV.pluto,PLUTO - Comedy Central Pluto TV,normalized-base-id,38
+ComedyDynamics.us@SD,Comedy Dynamics,fast,ComedyDynamics.us,Comedy Dynamics,base-id,70
+Comet.us@SD,Comet,local,Comet.us,Comet,base-id,89
+Cops.us@SD,Cops,fast,COPS.pluto,PLUTO - COPS,normalized-base-id,39
+CornerstoneTV.us@SD,Cornerstone TV,local,CornerstoneTV.us,Cornerstone TV,base-id,155
+CourtTV.us@SD,Court TV,fast,CourtTV.us,Court TV,base-id,91
+CrimenesImperfectos.us@SD,Crímenes imperfectos,fast,Crímenesimperfectos.pluto,PLUTO - Crímenes imperfectos,normalized-base-id,39
+CrimePlusInvestigation.us@SD,Crime + Investigation,local,CrimeandInvestigationNetwork.us,CRIME + INVESTIGATION,playlist-name,96
+Crunchyroll.us@SD,Crunchyroll,fast,Crunchyroll.us,Crunchyroll,base-id,169
+CSI.us@SD,CSI,fast,CSI.pluto,PLUTO - CSI,normalized-base-id,21
+CSIenespanol.us@SD,CSI en Español,fast,CSIenEspañol.pluto,PLUTO - CSI en Español,normalized-base-id,21
+CSIMiami.us@SD,CSI: Miami,fast,CSI:Miami.pluto,PLUTO - CSI: Miami,normalized-base-id,21
+CSIMiamienespanol.us@SD,CSI: Miami en español,fast,CSI:Miamienespañol.pluto,PLUTO - CSI: Miami en español,normalized-base-id,21
+CSINY.us@SD,CSI: NY,fast,CSI:NY.pluto,PLUTO - CSI: NY,normalized-base-id,21
+CSINYenespanol.us@SD,CSI: NY en español,fast,CSI:NYenespañol.pluto,PLUTO - CSI: NY en español,normalized-base-id,21
+CTN.us@SD,CTN,local,CTN.us,CTN,base-id,143
+CuriosityNOW.de@EN,Curiosity Now,local,CuriosityNOW.us,Curiosity NOW,playlist-name,125
+DangerTV.us@SD,DangerTV,fast,DangerTV.us,Danger TV,base-id,115
+Dateline247.us@SD,Dateline 24/7,fast,Dateline24/7.pluto,PLUTO - Dateline 24/7,normalized-base-id,18
+DatingDisasters.us@SD,Dating Disasters,fast,DatingDisasters.pluto,PLUTO - Dating Disasters,normalized-base-id,21
+DCCMakingtheTeam.us@SD,DCC: Making the Team,fast,DCC:MakingtheTeam.pluto,PLUTO - DCC: Making the Team,normalized-base-id,28
+DealorNoDeal.us@SD,Deal or No Deal,fast,DealorNoDeal.us,Deal or No Deal,base-id,130
+Degrassi.us@US,Degrassi,fast,Degrassi.pluto,PLUTO - Degrassi,normalized-base-id,39
+DisneyChannel.us@East,Disney Channel,main,DisneyChannel.us,Disney Channel,base-id,286
+DisneyJunior.us@East,Disney Junior,main,DisneyJunior.us,Disney Junior,base-id,363
+DisneyXD.us@East,Disney XD,main,DisneyXD.us,Disney XD,base-id,316
+DoctorWhoClassic.us@US,BBC Doctor Who Classic,fast,DoctorWhoClassic.pluto,PLUTO - Doctor Who Classic,normalized-base-id,41
+DocumentaryPlus.us@US,Documentary+,fast,Documentary+.us,Documentary+,normalized-base-id,70
+DogtheBountyHunter.us@US,Dog the Bounty Hunter,fast,DogtheBountyHunter.pluto,PLUTO - Dog the Bounty Hunter,normalized-base-id,32
+DoveChannel.us@SD,Dove Channel,fast,DoveChannel.us,Dove Channel,base-id,54
+DraftKingsNetwork.us@SD,DraftKings Network,fast,DraftKingsNetwork.us,DraftKings Network,base-id,61
+Dynasty.us@SD,Dynasty,fast,Dynasty.pluto,PLUTO - Dynasty,normalized-base-id,21
+EbonyTVbyLionsgate.us@SD,Ebony TV by Lionsgate,fast,EbonyTVbyLionsgate.us,Ebony TV by Lionsgate,base-id,134
+EKeepingUp.us@SD,E! Keeping Up,fast,EKeepingUp.us,E! Keeping Up,base-id,119
+ElectricNow.us@SD,Electric Now,fast,ElectricNow.us,Electric Now,base-id,84
+ESPNDeportes.us@HD,ESPN Deportes HD,sports,ESPNDeportes.us,ESPN Deportes,base-id,120
+ESPNews.us@SD,ESPNews,sports,ESPNEWS.us,ESPNEWS,base-id,178
+ESPNU.us@HD,ESPNU HD,sports,ESPNU.us,ESPNU,base-id,114
+ESPNU.us@SD,ESPNU,sports,ESPNU.us,ESPNU,base-id,114
+EstrellaNews.us@SD,Estrella News,fast,EstrellaNews.pluto,PLUTO - Estrella News,normalized-base-id,39
+EstrellaTV.us@SD,Estrella TV,fast,EstrellaTV.us,Estrella TV,base-id,102
+EWTN.us@English,EWTN,local,EWTN.us,EWTN,base-id,135
+F1Channel.ie@US,F1 Channel,sports,F1Channel.us,F1 Channel,playlist-name,110
+FailArmy.us@US,Failarmy International,fast,FailArmy.us,FailArmy,base-id,161
+FamilyTies.us@SD,Family Ties,fast,FamilyTies.pluto,PLUTO - Family Ties,normalized-base-id,37
+FearFactor.us@US,Fear Factor,fast,FearFactor.us,Fear Factor,base-id,89
+FeelGoodDrama.us@SD,Feel Good Drama,fast,FeelGoodDrama.pluto,PLUTO - Feel Good Drama,normalized-base-id,21
+FIFAPlus.uk@UnitedStates,FIFA+ United States,fast,FIFA+.us,FIFA+,metadata-name,69
+FilmRiseAnime.us@SD,FilmRise Anime,fast,FilmRiseAnime.us,FilmRise Anime,base-id,175
+FilmRiseClassicTV.us@SD,FilmRise Classic TV,local,FilmRiseClassicTV.us,FilmRise Classic TV,base-id,154
+FilmRiseWestern.us@SD,FilmRise Westerns,fast,FilmRiseWestern.us,FilmRise Western,base-id,157
+FITE247.us@SD,FITE 24/7,sports,FITE247.us,FITE 24/7,base-id,12
+FlicksofFury.us@SD,Flicks of Fury,fast,FlicksofFury.pluto,PLUTO - Flicks of Fury,normalized-base-id,11
+ForensicFiles.us@SD,Forensic Files,fast,ForensicFiles.pluto,PLUTO - Forensic Files,normalized-base-id,39
+ForeverKids.us@SD,Forever Kids,fast,ForeverKids.pluto,PLUTO - Forever Kids,normalized-base-id,38
+Fox.us@East,Fox,local,FoxEast_WNYW.us,Fox East WNYW,regional-feed-id,106
+Fox.us@KBSI,FOX 23 Cape Girardeau MO (KBSI-DT1),local,FOXKBSI.us,FOX KBSI Paducah KY,base-feed-id,128
+Fox.us@KCPQ,FOX 13 Seattle WA (KCPQ),local,FOXKCPQ.us,FOX KCPQ Seatle Tacoma WA,base-feed-id,106
+Fox.us@KDFW,KDFW-DT1,local,FOXKDFW.us,FOX KDFW Dallas FORT WORTH TX,base-feed-id,108
+Fox.us@KMPHTV,FOX 26 Visalia CA (KMPH),local,FOXKMPH.us,FOX KMPH Merced-Mariposa CA,base-feed-id,111
+Fox.us@KOKHTV,FOX 25 Oklahoma City OK (KOKH),local,FOXKOKH.us,FOX KOKH Oklahoma City OK,base-feed-id,108
+Fox.us@KRIV,KRIV-DT1,local,FOXKRIV.us,FOX KRIV HOUSTON TX,base-feed-id,101
+Fox.us@KSAZTV,KSAZ-DT1,local,FOXKSAZ.us,FOX KSAZ Phoenix AZ,base-feed-id,120
+Fox.us@KTBC,KTBC-DT1,local,FOXKTBC.us,FOX KTBC Austin TX,base-feed-id,96
+Fox.us@KTTV,KTTV-DT1,local,FOXKTTV.us,FOX KTTV Los Angeles CA,base-feed-id,110
+Fox.us@WBFF,FOX 45 Baltimore MD (WBFF),local,FOXWBFF.us,FOX WBFF Baltimore MD Baltimore MD,base-feed-id,111
+Fox.us@West,Fox West,local,FOXWest_KTTV.us,FOX West KTTV,regional-feed-id,110
+Fox.us@WFTXTV,WFTX News Fort Myers FL,local,FOXWFTX.us,FOX WFTX Cape Coral Ft. Meyers FL,base-feed-id,121
+Fox.us@WFXT,Fox 25 Boston (WFXT-TV),local,FOXWFXT.us,FOX WFXT Boston MA,base-feed-id,98
+Fox.us@WHBQTV,WHBQ-DT1,local,FOXWHBQ.us,FOX WHBQ Memphis Jackson TN,base-feed-id,123
+Fox.us@WITI,WITI-DT1,local,FOXWITI.us,FOX WITI Milwaukee WI,base-feed-id,104
+Fox.us@WJBK,WJBK-DT1,local,FOXWJBK.us,FOX WJBK Detroit MI,base-feed-id,74
+Fox.us@WNYW,WNYW-DT1,local,FOXWNYW.us,FOX WNYW NYC NY,base-feed-id,106
+Fox.us@WTTG,WTTG-DT1,local,FOXWTTG.us,FOX WTTG Washington DC,base-feed-id,105
+Fox.us@WTVT,WTVT-DT1,local,FOXWTVT.us,FOX WTVT Tampa FL,base-feed-id,124
+Fox.us@WTXFTV,WTXF-DT1,local,FOXWTXF.us,FOX WTXF Philadelphia PA,base-feed-id,108
+Fox.us@WXXVTV,WXXV-TV News (Biloxi MS),local,FOXWXXV.us,FOX WXXV Biloxi Gulfport MS,base-feed-id,122
+FoxBusinessNetwork.us@SD,Fox Business Network,main,FoxBusiness.us,Fox Business,metadata-name,210
+FoxDeportes.us@SD,Fox Deportes,sports,FoxDeportes.us,Fox Deportes,base-id,155
+FoxNewsChannel.us@SD,Fox News Channel,main,FoxNewsChannel.us,Fox News Channel,base-id,154
+FoxSoul.us@SD,Fox Soul,local,FOXSOUL.us,FOX SOUL,base-id,113
+FoxSports1.us@HD,Fox Sports 1,sports,FoxSports1.us,Fox Sports 1,base-id,104
+FoxSports2.us@HD,Fox Sports 2,sports,FoxSports2.us,Fox Sports 2,base-id,102
+FoxWeather.us@SD,Fox Weather,fast,FOXWeather.us,FOX Weather,base-id,26
+Freeform.us@East,Freeform,main,Freeform.us,Freeform,base-id,157
+FreeSpeechTV.us@SD,Free Speech TV,local,FreeSpeechTV.us,Free Speech TV,base-id,65
+FTFSports.us@SD,FTF Sports,sports,FTFSports.us,FTF Sports,base-id,72
+FuboSportsNetwork.us@SD,fubo Sports Network,fast,fuboSportsNetwork.us,fubo Sports Network,base-id,65
+FunnyAF.us@SD,Funny AF,fast,FunnyAF.pluto,PLUTO - Funny AF,normalized-base-id,25
+Fuse.us@East,Fuse,local,Fuse.us,Fuse,base-id,121
+FX.us@East,FX,main,FX.us,FX,base-id,103
+FXX.us@East,FXX,main,FXX.us,FXX,base-id,281
+GameShowCentral.us@SD,Game Show Central,fast,GameShowCentral.us,Game Show Central,base-id,183
+GameShowNetwork.us@East,Game Show Network East,main,GameShowNetwork.us,Game Show Network,base-id,282
+GarfieldandFriends.us@US,Garfield and Friends,fast,GarfieldandFriends.pluto,PLUTO - Garfield and Friends,normalized-base-id,38
+GemShoppingNetwork.us@SD,Gem Shopping Network,local,GEMShoppingNetwork.us,GEM SHOPPING NETWORK,base-id,15
+GolazoNetwork.us@SD,Golazo Network,fast,GolazoNetwork.pluto,PLUTO - Golazo Network,normalized-base-id,18
+GoTraveler.us@SD,GoTraveler,local,GoTraveler.us,GoTraveler,base-id,148
+GoUSATV.us@SD,Go USA TV,local,GoUSATV.us,GoUSA TV,base-id,22
+GravitasMovies.us@SD,Gravitas Movies,fast,GravitasMovies.us,Gravitas Movies,base-id,50
+GreatEntertainmentTelevision.us@SD,Great Entertainment Television,local,GreatEntertainmentTelevision.us,Great Entertainment Television,base-id,106
+GritXtra.us@SD,Grit Xtra,fast,GritXtra.us,Grit Xtra,base-id,104
+Gunsmoke.us@SD,Gunsmoke,fast,Gunsmoke.pluto,PLUTO - Gunsmoke,normalized-base-id,23
+HallmarkChannel.us@East,Hallmark Channel,main,HallmarkChannel.us,Hallmark Channel,base-id,213
+HallmarkMoviesMore.us@SD,Hallmark Movies & More,fast,HallmarkMoviesandMore.us,Hallmark Movies & More,playlist-name,62
+HappyDays.us@SD,Happy Days,fast,HappyDays.pluto,PLUTO - Happy Days,normalized-base-id,39
+HasbroLegends.us@SD,Hasbro Legends,local,HasbroLegends.us,Hasbro Legends,base-id,190
+HauntTV.ca@SD,Haunt TV,fast,HauntTV.us,HauntTV,playlist-name,124
+HBOHits.us@East,HBO Hits,local,HBOHits.us,HBO Hits,base-id,57
+HBOHits.us@EastHD,HBO Hits East HD,local,HBOHits.us,HBO Hits,base-id,57
+HBOMovies.us@East,HBO Movies,local,HBOMovies.us,HBO Movies,base-id,47
+History.us@East,History,main,History.us,History,base-id,156
+HistoryHit.uk@SD,History Hit,fast,HistoryHit.us,History Hit,playlist-name,92
+HiYAH.us@SD,Hi-YAH!,fast,HI-YAH.us,HI-YAH!,normalized-base-id,39
+Homeful.ca@US,Homeful,fast,HOMEFUL.us,HOMEFUL,playlist-name,104
+HomeMadeNation.us@SD,Home.Made.Nation,fast,HomeMadeNation.us,Home.Made.Nation,base-id,119
+HotBench.us@SD,Hot Bench,fast,HotBench.pluto,PLUTO - Hot Bench,normalized-base-id,39
+HSN.us@East,HSN,fast,HSN.us,HSN,base-id,85
+HSN.us@West,HSN West,local,HSN.us,HSN,base-id,85
+HSN2.us@SD,HSN2,local,HSN2.us,HSN2,base-id,85
+IFC.us@East,IFC,main,IFC.us,IFC,base-id,208
+ILoveLucy.us@SD,I Love Lucy,fast,ILoveLucy.pluto,PLUTO - I Love Lucy,normalized-base-id,39
+ImpactNetwork.us@SD,Impact Network,local,ImpactNetwork.us,Impact Network,base-id,152
+ImpossibleQuizShow.us@SD,Impossible Quiz Show,fast,ImpossibleQuizShow.us,Impossible Quiz Show,base-id,101
+INFAST.nl@SD,INFAST,local,INFAST.us,INFAST,playlist-name,139
+InfoWars.us@SD,InfoWars Network,local,InfoWars.us,InfoWars,base-id,169
+InkMaster.us@SD,Ink Master,fast,InkMaster.pluto,PLUTO - Ink Master,normalized-base-id,21
+Investiga.us@US,Investiga,fast,Investiga.pluto,PLUTO - Investiga,normalized-base-id,21
+IONPlus.us@East,ION Plus,fast,IONPlus.us,ION Plus,base-id,78
+IONTV.us@East,ION TV,fast,IonTV.us,ION TV,base-id,97
+JBS.us@SD,JBS,local,JBS.us,JBS,base-id,110
+JerseyShore.us@SD,Jersey Shore,fast,JerseyShore.pluto,PLUTO - Jersey Shore,normalized-base-id,21
+JewelryTV.us@SD,Jewelry Television,local,JewelryTelevision.us,Jewelry Television,playlist-name,55
+JohnnyCarsonTV.us@SD,The Johnny Carson Show,fast,JohnnyCarsonTV.us,Johnny Carson TV,base-id,81
+Journy.us@SD,JOURNY TV,fast,Journy.us,Journy,base-id,148
+JudgeNosey.us@US,Judge Nosey,fast,JudgeNosey.us,Judge Nosey,base-id,163
+KartoonChannel.us@SD,Kartoon Channel,fast,KartoonChannel!.pluto,PLUTO - Kartoon Channel!,normalized-base-id,38
+KevinHartsLOLNetwork.us@SD,LOL! Network,fast,LOLNetwork.us,LOL Network,playlist-name,66
+Laff.us@SD,Laff,local,Laff.us,Laff,base-id,168
+LawCrime.us@SD,Law & Crime,fast,LawAndCrime.us,Law & Crime,playlist-name,110
+LEGOKidsTV.us@SD,LEGO Kids TV,fast,LEGOKidsTV.pluto,PLUTO - LEGO Kids TV,normalized-base-id,43
+Lifetime.us@East,Lifetime,main,Lifetime.us,Lifetime,base-id,179
+LittleStarsUniverse.us@SD,Little Stars Universe,fast,LittleStarsUniverse.pluto,PLUTO - Little Stars Universe,normalized-base-id,39
+LiveMusic.us@SD,Live Music,fast,LiveMusic.pluto,PLUTO - Live Music,normalized-base-id,19
+LiveNOWfromFOX.us@SD,LiveNOW from FOX,fast,LiveNOWfromFOX.us,LiveNOW from FOX,base-id,22
+LIVExLIVE.us@SD,LiveXLive,local,LiveXLive.us,LIVEXLIVE,base-id,112
+LogoPlutoTV.us@SD,Logo Pluto TV,fast,LogoPlutoTV.pluto,PLUTO - Logo Pluto TV,normalized-base-id,21
+MadeInHollywood.us@SD,Made in Hollywood,local,MadeInHollywood.us,Made In Hollywood,base-id,169
+Masadrenalina.us@SD,Más adrenalina,fast,Másadrenalina.pluto,PLUTO - Más adrenalina,normalized-base-id,12
+Matlock.us@SD,Matlock,fast,Matlock.pluto,PLUTO - Matlock,normalized-base-id,21
+MaverickBlackCinema.us@SD,Maverick Black Cinema,fast,MaverickBlackCinema.us,Maverick Black Cinema,base-id,54
+MeTV.us@SD,MeTV,local,MeTV.us,MeTV,base-id,123
+MidnightPulp.us@SD,Midnight Pulp,fast,MidnightPulp.us,Midnight Pulp,base-id,43
+MidsomerMurders.us@SD,Midsomer Murders,fast,MidsomerMurders.pluto,PLUTO - Midsomer Murders,normalized-base-id,15
+MissionImpossible.us@SD,Mission Impossible,fast,MissionImpossible.pluto,PLUTO - Mission Impossible,normalized-base-id,21
+Misteriossinresolver.us@SD,Misterios sin Resolver,fast,Misteriossinresolver.pluto,PLUTO - Misterios sin resolver,normalized-base-id,20
+MLB.us@SD,MLB,fast,MLB.pluto,PLUTO - MLB,normalized-base-id,19
+MLBNetwork.us@SD,MLB Network,sports,MLBNetwork.us,MLB Network,base-id,118
+MLBStrikeZone.us@SD,MLB Strike Zone,sports,MLBStrikeZone.us,MLB Strike Zone,base-id,45
+MoreTrueCrime.us@SD,More True Crime,fast,MoreTrueCrime.pluto,PLUTO - More True Crime,normalized-base-id,21
+MoreTVDrama.us@SD,More TV Drama,fast,MoreTVDrama.pluto,PLUTO - More TV Drama,normalized-base-id,19
+MoreTVSitcoms.us@SD,More TV Sitcoms,fast,MoreTVSitcoms.pluto,PLUTO - More TV Sitcoms,normalized-base-id,39
+Movies.us@SD,Movies!,local,Movies!.us,MOVIES!,normalized-base-id,37
+MovieSphere.us@US,MovieSphere,fast,MOVIESPHERE.us,MOVIESPHERE,base-id,41
+MSNOW.us@SD,MS NOW,local,MSNOW.us,MS NOW,base-id,62
+MST3K.us@US,MST3K,fast,MST3K.pluto,PLUTO - MST3K,normalized-base-id,21
+MTV.us@East,MTV,main,MTV.us,MTV,base-id,265
+MTV2.us@East,MTV2,main,MTV2.us,MTV2,base-id,260
+MTVBiggestPop.us@US,MTV Biggest Pop,fast,MTVBiggestPop.pluto,PLUTO - MTV Biggest Pop,normalized-base-id,21
+MTVenEspanol.us@SD,MTV en español,fast,MTVenespañol.pluto,PLUTO - MTV en español,normalized-base-id,20
+MTVFlowLatino.us@SD,MTV Flow Latino,fast,MTVFlowLatino.pluto,PLUTO - MTV Flow Latino,normalized-base-id,21
+MTVLive.us@SD,MTV Live,local,MTVLive.us,MTV Live,base-id,89
+MTVPlutoTV.us@US,MTV Pluto TV,fast,MTVPlutoTV.pluto,PLUTO - MTV Pluto TV,normalized-base-id,33
+MysteryScienceTheater3000.us@SD,Mystery Science Theater 3000,fast,MysteryScienceTheater3000.us,Mystery Science Theater 3000,base-id,42
+MyTimeMovieNetworkEast.us@SD,MyTime Movie Network,fast,MyTimeMovieNetwork.us,MyTime Movie Network,playlist-name,49
+Naruto.us@US,Naruto,fast,Naruto.pluto,PLUTO - Naruto,normalized-base-id,39
+NashBridges.us@SD,Nash Bridges,fast,NashBridges.pluto,PLUTO - Nash Bridges,normalized-base-id,22
+NationalGeographic.us@East,National Geographic,main,NationalGeographic.us,National Geographic,base-id,181
+NBATV.us@SD,NBA TV,fast,NBAtv.us,NBA TV,base-id,71
+NBC.us@East,NBC,local,NBCEast_WNBC.us,NBC East WNBC,regional-feed-id,105
+NBC.us@KNTV,KNTV-DT1,local,NBCKNTV.us,NBC KNTV San Francisco Oakland San Jose CA,base-feed-id,101
+NBC.us@KRISTV,KRIS-DT1,local,NBCKRIS.us,NBC KRIS Corpus Christi TX,base-feed-id,109
+NBC.us@KSBW,NBC 8 Salinas CA (KSBW),local,NBCKSBW.us,NBC KSBW Salinas CA,base-feed-id,105
+NBC.us@KSBY,NBC 6 Santa Barbara CA (KSBY),local,NBCKSBY.us,NBC KSBY San Luis Obispo CA,base-feed-id,106
+NBC.us@KSHBTV,KSHB 41 (Kansas City MO),local,NBCKSHB.us,NBC KSHB Kansas City MO,base-feed-id,104
+NBC.us@KSNV,NBC 3 Las Vegas NV (KSNV),local,NBCKSNV.us,NBC KSNV Las Vegas NV,base-feed-id,103
+NBC.us@KXASTV,KXAS-DT1,local,NBCKXAS.us,NBC KXAS Dallas FORT WORTH TX,base-feed-id,106
+NBC.us@WBALTV,NBC 11 Baltimore MD (WBAL),local,NBCWBAL.us,NBC WBAL Baltimore MD,base-feed-id,98
+NBC.us@WBTSCD,WBTS-CD1,local,NBCWBTS.us,NBC WBTS Boston MA,base-feed-id,105
+NBC.us@West,NBC West,local,NBCWest_KNBC.us,NBC West KNBC,regional-feed-id,105
+NBC.us@WGAL,NBC 8 Lancaster PA (WGAL),local,NBCWGAL.us,NBC WGAL Harrisburg Lancaster York PA,base-feed-id,101
+NBC.us@WGBATV,NBC 26 Green Bay WI (WGBA),local,NBCWGBA.us,NBC WGBA Green Bay WI,base-feed-id,100
+NBC.us@WHECTV,NBC 10 Rochester NY (WHEC),local,NBCWHEC.us,NBC WHEC Rochester NY,base-feed-id,101
+NBC.us@WJACTV,NBC 6 Johnstown PA (WJAC),local,NBCWJAC.us,NBC WJAC Altoona Johnstown PA,base-feed-id,120
+NBC.us@WJAR,NBC 10 Providence MA,local,NBCWJAR.us,NBC WJAR Providence RI,base-feed-id,107
+NBC.us@WLIO,NBC 8 Lima OH (WLIO-DT1),local,NBCWLIO.us,NBC WLIO Lima OH,base-feed-id,114
+NBC.us@WMAQTV,NBC 5 Chicago Live News,local,NBCWMAQ.us,NBC WMAQ Chicago IL,base-feed-id,105
+NBC.us@WMGTTV,WMGT-TV News (Macon GA),local,NBCWMGT.us,NBC WMGT Macon GA,base-feed-id,101
+NBC.us@WNYT,NBC 13 Albany NY (WNYT),local,NBCWNYT.us,NBC WNYT Albany NY,base-feed-id,109
+NBC.us@WOAITV,NBC 4 San Antonio TX (WOAI),local,NBCWOAI.us,NBC WOAI San Antonio TX,base-feed-id,105
+NBC.us@WPTVTV,WPTV News West Palm Beach FL,local,NBCWPTV.us,NBC WPTV West Palm Beach FL,base-feed-id,105
+NBC.us@WPXI,WPXI-DT1,local,NBCWPXI.us,NBC WPXI Pittsburgh PA,base-feed-id,107
+NBC.us@WRDELD,CoastTV NBC (WRDE-LD),local,NBCWRDE.us,NBC WRDE Salisbury MD,base-feed-id,112
+NBC.us@WTMJTV,NBC 4 Milwaukee WI (WTMJ),local,NBCWTMJ.us,NBC WTMJ Milwaukee WI,base-feed-id,99
+NBC.us@WTOVTV,NBC 9 Steubenville OH (WTOV),local,NBCWTOV.us,NBC WTOV Steubenville OH,base-feed-id,97
+NBC.us@WTVJ,WTVJ-DT1,local,NBCWTVJ.us,NBC WTVJ Miami FL,base-feed-id,102
+NBC.us@WVIT,WVIT-DT1,local,NBCWVIT.us,NBC WVIT New Britain CT,base-feed-id,106
+NBCNewsNOW.us@SD,NBC News NOW,fast,NBCNewsNow.us,NBC News NOW,base-id,86
+NBCSportsBayArea.us@SD,NBC Sports Bay Area,sports,NBCSportsBayArea.us,NBC Sports Bay Area,base-id,212
+NBCSportsNOW.us@SD,NBC Sports NOW,fast,NBCSportsNOW.pluto,PLUTO - NBC Sports NOW,normalized-base-id,10
+NBCSportsPhiladelphia.us@SD,NBC Sports Philadelphia,sports,NBCSportsPhiladelphia.us,NBC Sports Philadelphia,base-id,139
+News12Bronx.us@SD,News12 Bronx,local,News12Bronx.us,News12 Bronx,base-id,169
+News12Brooklyn.us@SD,News12 Brooklyn,local,News12Brooklyn.us,News12 Brooklyn,base-id,169
+News12HudsonValley.us@SD,News12 Hudson Valley,local,News12HudsonValley.us,News12 Hudson Valley,base-id,169
+News12NewYork.us@SD,News 12 New York,fast,News12NewYork.pluto,PLUTO - News 12 New York,normalized-base-id,39
+News12Westchester.us@SD,News12 Westchester,local,News12Westchester.us,News12 Westchester,base-id,97
+Newsmax2.us@SD,Newsmax 2,fast,Newsmax2.us,Newsmax 2,base-id,82
+NewsmaxTV.us@SD,Newsmax TV,local,NewsmaxTV.us,Newsmax TV,base-id,70
+NFLChannel.us@SD,NFL Channel,fast,NFLChannel.us,NFL Channel,base-id,76
+NFLNetwork.us@SD,NFL Network,sports,NFLNetwork.us,NFL Network,base-id,92
+NHLNetwork.us@SD,NHL Network,sports,NHLNetwork.us,NHL Network,base-id,112
+NHRATV.us@SD,NHRA TV,fast,NHRATV.us,NHRA TV,base-id,59
+Nickelodeon.us@East,Nickelodeon,main,Nickelodeon.us,Nickelodeon,base-id,268
+Nickelodeonenespanol.us@SD,Nickelodeon en español,fast,Nickelodeonenespañol.pluto,PLUTO - Nickelodeon en español,normalized-base-id,39
+NickelodeonPlutoTV.us@SD,Nickelodeon Pluto TV,fast,NickelodeonPlutoTV.pluto,PLUTO - Nickelodeon Pluto TV,normalized-base-id,45
+NickJr.us@East,Nick Jr.,main,NickJr.us,Nick Jr.,base-id,318
+NickJrPlutoTV.us@US,Nick Jr. Pluto TV,fast,NickJr.PlutoTV.pluto,PLUTOTV - Nick Jr. Pluto TV,normalized-base-id,46
+Nicktoons.us@East,Nicktoons,main,Nicktoons.us,Nicktoons,base-id,370
+Nosey.us@US,Nosey,fast,Nosey.us,Nosey,base-id,113
+NOST.us@SD,NOST,local,NOST.us,NOST,base-id,70
+NRBTV.us@SD,NRBTV,local,NRBTV.us,NRBTV,base-id,126
+OANPlus.us@SD,OANPlus,fast,OANPlus.us,OAN Plus,base-id,85
+OneAmericaNewsNetwork.us@SD,One America News Network,local,OneAmericaNewsNetwork.us,One America News Network,base-id,87
+OnePiece.us@US,One Piece,fast,OnePiece.pluto,PLUTO - One Piece,normalized-base-id,39
+OutdoorAmerica.us@SD,Outdoor America,fast,OutdoorAmerica.us,Outdoor America,base-id,22
+OutdoorChannel.us@HD,Outdoor Channel HD,local,OutdoorChannel.us,Outdoor Channel,base-id,167
+OutdoorChannel.us@SD,Outdoor Channel,local,OutdoorChannel.us,Outdoor Channel,base-id,167
+OuterSphere.us@SD,OuterSphere,fast,OuterSphereByLionsgate.us,OuterSphere by Lionsgate,metadata-name,41
+Oxygen.us@East,Oxygen,main,Oxygen.us,Oxygen,base-id,139
+ParamountMovieChannel.us@SD,Paramount Movie Channel,fast,ParamountMovieChannel.pluto,PLUTO - Paramount Movie Channel,normalized-base-id,14
+ParamountPlusPicks.us@SD,Paramount+ Picks,fast,Paramount+Picks.pluto,PLUTO - Paramount+ Picks,normalized-base-id,25
+PBRRidePass.us@SD,PBR RidePass,fast,PBRRidePass.us,PBR RidePass,base-id,60
+PBS.us@East,PBS National East,main,PBS.us,PBS,base-id,226
+PBS.us@KETS,Arkansas PBS,local,PBSKETS.us,PBS KETS Little Rock AR,base-feed-id,127
+PBS.us@KHET,PBS Honolulu HI (KHET),local,PBSKHET.us,PBS Hawaii KHET Honolulu HI,base-feed-id,139
+PBS.us@KMOSTV,PBS Sedalia British Columbia MO (KMOS),local,PBSKMOS.us,PBS KMOS Columbia Jefferson City MO,base-feed-id,120
+PBS.us@KQED,KQED-DT2,local,PBSKQED.us,PBS KQED San Francisco CA,base-feed-id,119
+PBS.us@KUONTV,PBS Lincoln NE (KUON),local,PBSKUON.us,PBS KUON NEBRASKA NE,base-feed-id,121
+PBS.us@KVIE,KVIE-DT2,local,PBSKVIE.us,PBS KVIE Sacramento CA,base-feed-id,114
+PBS.us@WNJT,PBS New Jersey NJ (WNJT),local,PBSWNJT.us,PBS WNJT New Jersey NJ,base-feed-id,139
+PBSAntiquesRoadshow.us@SD,Antiques Roadshow PBS,fast,PBSAntiquesRoadshow.pluto,PLUTO - PBS Antiques Roadshow,normalized-base-id,19
+PBSNature.us@SD,PBS Nature,fast,PBSNature.pluto,PLUTO - PBS Nature,normalized-base-id,21
+PeopleAreAwesome.us@SD,People Are Awesome,local,PeopleAreAwesome.us,People Are Awesome,base-id,160
+PeppaPig.us@SD,Peppa Pig,fast,PeppaPig.pluto,PLUTO - Peppa Pig,normalized-base-id,40
+PerryMason.us@SD,Perry Mason,fast,PerryMason.pluto,PLUTO - Perry Mason,normalized-base-id,21
+PGATour.us@SD,PGA Tour,fast,PGATOUR.pluto,PLUTO - PGA TOUR,normalized-base-id,22
+PlutoTVAction.us@US,Pluto TV Action,fast,PlutoTVAction.pluto,PLUTO - Pluto TV Action,normalized-base-id,11
+PlutoTVAnime.us@US,Pluto TV Anime,fast,PlutoTVAnime.pluto,PLUTO - Pluto TV Anime,normalized-base-id,39
+PlutoTVAnimeMovies.us@SD,Pluto TV Anime Movies,fast,PlutoTVAnimeMovies.pluto,PLUTO - Pluto TV Anime Movies,normalized-base-id,14
+PlutoTVBackcountry.us@SD,Pluto TV Backcountry,fast,PlutoTVBackcountry.pluto,PLUTO - Pluto TV Backcountry,normalized-base-id,35
+PlutoTVCars.us@SD,Pluto TV Cars,fast,PlutoTVCars.pluto,PLUTO - Pluto TV Cars,normalized-base-id,36
+PlutoTVComedy.us@US,Pluto TV Comedy,fast,PlutoTVComedy.pluto,PLUTO - Pluto TV Comedy,normalized-base-id,12
+PlutoTVCompetition.us@SD,Pluto TV Competition,fast,PlutoTVCompetition.pluto,PLUTO - Pluto TV Competition,normalized-base-id,27
+PlutoTVCrimeDrama.us@SD,Pluto TV Crime Drama,fast,PlutoTVCrimeDrama.pluto,PLUTO - Pluto TV Crime Drama,normalized-base-id,21
+PlutoTVCrimeMovies.us@SD,Pluto TV Crime Movies,fast,PlutoTVCrimeMovies.pluto,PLUTO - Pluto TV Crime Movies,normalized-base-id,11
+PlutoTVCultFilms.us@US,Pluto TV Cult Films,fast,PlutoTVCultFilms.pluto,PLUTO - Pluto TV Cult Films,normalized-base-id,10
+PlutoTVDrama.us@US,Pluto TV Drama,fast,PlutoTVDrama.pluto,PLUTO - Pluto TV Drama,normalized-base-id,11
+PlutoTVFantastic.us@SD,Pluto TV Fantastic,fast,PlutoTVFantastic.pluto,PLUTO - Pluto TV Fantastic,normalized-base-id,11
+PlutoTVGameShows.us@SD,Pluto TV Game Shows,fast,PlutoTVGameShows.pluto,PLUTO - Pluto TV Game Shows,normalized-base-id,37
+PlutoTVHistory.us@US,Pluto TV History,fast,PlutoTVHistory.pluto,PLUTO - Pluto TV History,normalized-base-id,27
+PlutoTVHorror.us@US,Pluto TV Horror,fast,PlutoTVHorror.pluto,PLUTO - Pluto TV Horror,normalized-base-id,14
+PlutoTVIcons.us@SD,Pluto TV Icons,fast,PlutoTVIcons.pluto,PLUTO - Pluto TV Icons,normalized-base-id,12
+PlutoTVLives.us@US,Pluto TV Lives,fast,PlutoTVLives.pluto,PLUTO - Pluto TV Lives,normalized-base-id,22
+PlutoTVMilitary.us@SD,Pluto TV Military,fast,PlutoTVMilitary.pluto,PLUTO - Pluto TV Military,normalized-base-id,28
+PlutoTVNovelas.us@US,Pluto TV Novelas,fast,PlutoTVNovelas.pluto,PLUTO - Pluto TV Novelas,normalized-base-id,23
+PlutoTVParanormal.us@US,Pluto TV Paranormal,fast,PlutoTVParanormal.pluto,PLUTO - Pluto TV Paranormal,normalized-base-id,24
+PlutoTVReaction.us@SD,Pluto TV Reaction,fast,PlutoTVReaction.pluto,PLUTO - Pluto TV Reaction,normalized-base-id,12
+PlutoTVReality.us@US,Pluto TV Pride,fast,PlutoTVReality.pluto,PLUTO - Pluto TV Reality,normalized-base-id,33
+PlutoTVRomance.us@US,Pluto TV Romance,fast,PlutoTVRomance.pluto,PLUTO - Pluto TV Romance,normalized-base-id,10
+PlutoTVScience.us@US,Pluto TV Science,fast,PlutoTVScience.pluto,PLUTO - Pluto TV Science,normalized-base-id,38
+PlutoTVSciFi.us@US,Pluto TV Sci-Fi,fast,PlutoTVSci-Fi.pluto,PLUTO - Pluto TV Sci-Fi,normalized-base-id,20
+PlutoTVSpotlight.us@SD,Pluto TV Spotlight,fast,PlutoTVSpotlight.us,Pluto TV Spotlight,base-id,22
+PlutoTVStaffPicks.us@SD,Pluto TV Staff Picks,fast,PlutoTVStaffPicks.pluto,PLUTO - Pluto TV Staff Picks,normalized-base-id,14
+PlutoTVTerror.us@SD,Pluto TV Terror,fast,PlutoTVTerror.pluto,PLUTO - Pluto TV Terror,normalized-base-id,12
+PlutoTVThrillers.us@US,Pluto TV Thrillers,fast,PlutoTVThrillers.pluto,PLUTO - Pluto TV Thrillers,normalized-base-id,12
+PlutoTVTrendingNow.us@SD,Pluto TV Trending Now,fast,PlutoTVTrendingNow.pluto,PLUTO - Pluto TV Trending Now,normalized-base-id,13
+PlutoTVTrueCrime.us@US,Pluto TV True Crime,fast,PlutoTVTrueCrime.pluto,PLUTO - Pluto TV True Crime,normalized-base-id,25
+PlutoTVWesterns.us@US,Pluto TV Westerns,fast,PlutoTVWesterns.pluto,PLUTO - Pluto TV Westerns,normalized-base-id,11
+pocketwatch.us@SD,pocket.watch Game On,fast,pocketwatch.us,pocket.watch,base-id,85
+PokerGo.us@US,PokerGO,fast,PokerGO.us,PokerGO,base-id,58
+PopstarTV.us@SD,Popstar! TV,fast,Popstar!TV.us,Popstar! TV,normalized-base-id,72
+Portlandia.us@SD,Portlandia,fast,Portlandia.us,Portlandia,base-id,192
+PowerNationTV.us@SD,PowerNation,fast,POWERNATION.us,POWERNATION,playlist-name,193
+PursuitChannel.us@SD,Pursuit Channel,local,PursuitChannel.us,Pursuit Channel,base-id,165
+QVC.us@SD,QVC,fast,QVC.us,QVC,base-id,65
+QVC2.us@SD,QVC 2,fast,QVC2.us,QVC2,base-id,57
+QVC3.us@SD,QVC 3,local,QVC3.us,QVC3,base-id,85
+Rawhide.us@SD,Rawhide,fast,Rawhide.pluto,PLUTO - Rawhide,normalized-base-id,21
+RedBullTV.at@US,Red Bull TV US,sports,RedbullTV.us,Redbull TV,metadata-name,82
+RetroTV.us@East,Retro TV,local,RetroTV.us,Retro TV,base-id,110
+ReutersTV.us@SD,Reuters,fast,ReutersTV.us,Reuters TV,base-id,43
+Revolt.us@SD,Revolt,local,Revolt.us,Revolt,base-id,100
+Revry.us@SD,Revry,fast,Revry.us,Revry,base-id,113
+RevryNews.us@SD,Revry News,fast,RevryNews.us,Revry News,base-id,22
+RFDTV.us@SD,RFD-TV,local,RFDTV.us,RFD-TV,base-id,114
+Ridiculousness.us@SD,Ridiculousness,fast,Ridiculousness.pluto,PLUTO - Ridiculousness,normalized-base-id,39
+RiffTrax.us@US,RiffTrax,fast,RiffTrax.pluto,PLUTO - RiffTrax,normalized-base-id,17
+Roar.us@SD,Roar,local,Roar.us,Roar,base-id,117
+RVTV.us@HD,RVTV,local,RVTV.us,RVTV,base-id,132
+RyanandFriends.us@SD,Ryan and Friends,fast,RyanAndFriends.us,RYAN AND FRIENDS,base-id,98
+SalemNewsChannel.us@SD,Salem News Channel,fast,SalemNewsChannel.pluto,PLUTO - Salem News Channel,normalized-base-id,10
+SBNTV.us@SD,SBN TV,local,SBNtv.us,SBN,base-id,77
+ScientologyNetwork.us@SD,Scientology Network,local,ScientologyNetwork.us,Scientology Network,base-id,131
+ScrippsNews.us@SD,Scripps News,fast,ScrippsNews.us,Scripps News,base-id,93
+SECNetwork.us@SD,SEC Network,sports,SECNetwork.us,SEC Network,base-id,92
+ShopLC.us@SD,Shop LC,fast,ShopLC.us,Shop LC,base-id,85
+ShoutFactoryTV.us@SD,Shout! TV,fast,ShoutTV.us,Shout! TV,playlist-name,135
+ShowtimeFamilyZone.us@East,Showtime Family Zone,local,ShowtimeFamilyzone.us,SHOWTIME FAMILY,base-id,51
+SitcomLegends.us@SD,Sitcom Legends,fast,SitcomLegends.pluto,PLUTO - Sitcom Legends,normalized-base-id,39
+SketchyAF.us@SD,Sketchy AF,fast,SketchyAF.pluto,PLUTO - Sketchy AF,normalized-base-id,33
+SmithsonianChannelSelects.us@SD,Smithsonian Channel Selects,fast,SmithsonianChannelSelects.pluto,PLUTO - Smithsonian Channel Selects,normalized-base-id,20
+SpikeOutdoors.us@SD,Spike Outdoors,fast,SpikeOutdoors.pluto,PLUTO - Spike Outdoors,normalized-base-id,27
+SpikePlutoTV.us@SD,Spike Pluto TV,fast,SpikePlutoTV.pluto,PLUTO - Spike Pluto TV,normalized-base-id,35
+SportsGrid.us@SD,SportsGrid,fast,SportsGrid.us,SportsGrid,base-id,86
+Stadium.us@SD,Stadium,fast,Stadium.us,Stadium,base-id,45
+StarTrek.us@US,Star Trek,fast,StarTrek.pluto,PLUTO - Star Trek,normalized-base-id,21
+StarTrekDeepSpaceNine.us@SD,Star Trek: Deep Space Nine,fast,StarTrek:DeepSpaceNine.pluto,PLUTO - Star Trek: Deep Space Nine,normalized-base-id,21
+StarTrekTheNextGeneration.us@SD,Star Trek: The Next Generation,fast,StarTrek:TheNextGeneration.pluto,PLUTO - Star Trek: The Next Generation,normalized-base-id,21
+StarTrekVoyager.us@SD,Star Trek: Voyager,fast,StarTrek:Voyager.pluto,PLUTO - Star Trek: Voyager,normalized-base-id,21
+Starz.us@East,Starz,main,Starz.us,Starz,base-id,99
+StarzCinema.us@East,Starz Cinema,main,StarzCinema.us,Starz Cinema,base-id,94
+StarzComedy.us@East,Starz Comedy,main,StarzComedy.us,Starz Comedy,base-id,95
+StarzEdge.us@East,Starz Edge,main,StarzEdge.us,Starz Edge,base-id,96
+StarzEncoreSpanish.us@East,Starz Encore Spanish,main,StarzEncoreEspanol.us,STARZ ENCORE ESPANOL,metadata-name,99
+StarzKidsFamily.us@East,Starz Kids & Family,main,StarzKids.us,STARZ KIDS & FAMILY,playlist-name,106
+StoriesbyAMC.us@SD,Stories by AMC,fast,StoriesbyAMC.us,Stories by AMC,base-id,92
+SupernaturalDrama.us@SD,Supernatural Drama,fast,SupernaturalDrama.pluto,PLUTO - Supernatural Drama,normalized-base-id,21
+Survivor.us@SD,Survivor,fast,Survivor.pluto,PLUTO - Survivor,normalized-base-id,20
+SwerveCombat.us@SD,Swerve Combat,fast,SwerveCombat.us,Swerve Combat,base-id,53
+SYFY.us@East,SYFY,main,Syfy.us,Syfy,base-id,94
+Tastemade.us@US,Tastemade,fast,Tastemade.us,Tastemade,base-id,136
+TastemadeTravel.us@SD,Tastemade Travel,fast,TastemadeTravel.us,Tastemade Travel,base-id,120
+TBN.us@East,TBN,local,TBN.us,TBN,base-id,150
+TED.us@SD,TED,fast,TED.us,TED,base-id,85
+TeenMom.us@SD,Teen Mom,fast,TeenMom.pluto,PLUTO - Teen Mom,normalized-base-id,20
+TeenNick.us@East,TeenNick,main,TeenNick.us,TeenNick,base-id,344
+Telemundo.us@East,Telemundo,local,Telemundo.us,Telemundo,base-id,90
+Telemundo.us@EastHD,Telemundo East HD,local,Telemundo.us,Telemundo,base-id,90
+Telemundo.us@West,Telemundo West,local,Telemundo.us,Telemundo,base-id,90
+Telemundo.us@WestHD,Telemundo West HD,local,Telemundo.us,Telemundo,base-id,90
+Telemundo.us@WTMOCD,WTMO-CD 31.1,local,TelemundoWTMO.us,Telemundo WTMO Orlando FL,base-feed-id,110
+TelemundoTelenovelasClasicas.us@SD,Telemundo telenovelas clásicas,fast,Telemundotelenovelasclásicas.pluto,PLUTO - Telemundo telenovelas clásicas,normalized-base-id,21
+TennisChannel.us@Plus2,TennisChannel 2,fast,TennisChannelPlus2.us,Tennis Channel Plus 2,base-feed-id,72
+TennisChannel.us@SD,Tennis Channel,sports,TennisChannel.us,Tennis Channel,base-id,61
+TGJunior.us@SD,Toon Goggles Junior,fast,TGJunior.us,TG Junior,base-id,22
+TheAddamsFamily.us@SD,The Addams Family,fast,TheAddamsFamily.pluto,PLUTO - The Addams Family,normalized-base-id,39
+TheAmazingRace.us@SD,The Amazing Race,fast,TheAmazingRace.pluto,PLUTO - The Amazing Race,normalized-base-id,21
+TheAndyGriffithShow.us@SD,The Andy Griffith Show,fast,TheAndyGriffithShow.pluto,PLUTO - The Andy Griffith Show,normalized-base-id,39
+TheArchive.us@SD,The Archive,local,TheArchive.us,The Archive,base-id,45
+TheBobRossChannel.us@SD,The Bob Ross Channel,fast,TheBobRossChannel.us,The Bob Ross Channel,base-id,145
+TheChallenge.us@SD,The Challenge,fast,TheChallenge.us,The Challenge,base-id,121
+TheCountryNetwork.us@SD,The Country Network,local,TheCountryNetwork.us,The Country Network,base-id,85
+TheDesignNetwork.us@SD,The Design Network,fast,TheDesignNetwork.us,The Design Network,base-id,161
+TheFilmDetective.us@SD,The Film Detective,local,TheFilmDetective.us,The Film Detective,base-id,125
+TheJamieOliverChannel.us@SD,The Jamie Oliver Channel,fast,TheJamieOliverChannel.pluto,PLUTO - The Jamie Oliver Channel,normalized-base-id,36
+TheJudgeJudyChannel.us@SD,The Judge Judy Channel,fast,TheJudgeJudyChannel.pluto,PLUTO - The Judge Judy Channel,normalized-base-id,39
+TheLoveBoat.us@SD,The Love Boat,fast,TheLoveBoat.pluto,PLUTO - The Love Boat,normalized-base-id,20
+TheNest.us@SD,The Nest,local,TheNest.us,The Nest,base-id,106
+TheNewDetectives.us@US,The New Detectives,fast,TheNewDetectives.pluto,PLUTO - The New Detectives,normalized-base-id,21
+ThePetCollective.us@US,The Pet Collective International,fast,ThePetCollective.us,The Pet Collective,base-id,158
+ThePriceIsRight.us@HD,The Price Is Right,fast,ThePriceIsRight.pluto,PLUTO - The Price Is Right,normalized-base-id,21
+ThePriceIsRightTheBarkerEra.us@SD,The Price is Right: The Barker Era,fast,ThePriceIsRight:TheBarkerEra.pluto,PLUTO - The Price Is Right: The Barker Era,normalized-base-id,21
+TheRifleman.us@SD,The Rifleman,fast,TheRifleman.pluto,PLUTO - The Rifleman,normalized-base-id,39
+TheWalkingDeadenEspanol.us@SD,The Walking Dead en español,fast,TheWalkingDeadenespañol.pluto,PLUTO - The Walking Dead en español,normalized-base-id,23
+TheWalkingDeadUniverse.us@SD,The Walking Dead Universe,fast,TheWalkingDeadUniverse.us,The Walking Dead Universe,base-id,91
+TheWildWildWest.us@SD,The Wild Wild West,fast,TheWildWildWest.pluto,PLUTO - The Wild Wild West,normalized-base-id,21
+TheWordNetwork.us@SD,The Word Network,local,TheWordNetwork.us,The Word Network,base-id,163
+ThisOldHouse.us@SD,This Old House,fast,ThisOldHouse.us,This Old House,base-id,169
+TinyHouseNation.us@SD,Tiny House Nation,fast,TinyHouseNation.us,Tiny House Nation,base-id,123
+TMZ.us@SD,TMZ,fast,TMZ.us,TMZ,base-id,113
+TODAYAllDay.us@SD,TODAY All Day,fast,TODAYAllDay.pluto,PLUTO - TODAY All Day,normalized-base-id,39
+ToonamiAftermath.us@East,Toonami Aftermath East,local,ToonamiAftermath.us,Toonami Aftermath,base-id,178
+ToonGoggles.us@SD,ToonGoggles,fast,ToonGoggles.us,ToonGoggles,base-id,22
+Tosh0.us@SD,Tosh.0,fast,Tosh.0.pluto,0 - Tosh.0,normalized-base-id,39
+TotallyTurtles.us@US,TOTALLY TURTLES,fast,TOTALLYTURTLES.pluto,PLUTO - TOTALLY TURTLES,normalized-base-id,40
+ToughJobs.us@SD,Tough Jobs,fast,ToughJobs.pluto,PLUTO - Tough Jobs,normalized-base-id,25
+TransformersTV.us@SD,Transformers TV,fast,TransformersTV.pluto,PLUTO - Transformers TV,normalized-base-id,72
+TribecaChannel.us@SD,Tribeca Channel,fast,TribecaChannel.us,Tribeca Channel,base-id,61
+TrueCrimeNetwork.us@SD,True Crime Network+,local,TrueCrimeNetwork.us,True Crime Network,base-id,87
+TrueCrimeNow.us@SD,True Crime Now,local,TrueCrimeNow.us,True Crime Now,base-id,81
+TUDN.us@SD,TUDN,local,TUDN.us,TUDN,base-id,80
+TVLandDrama.us@SD,TV Land Drama,fast,TVLandDrama.pluto,PLUTO - TV Land Drama,normalized-base-id,18
+TVLandSitcoms.us@SD,TV Land Sitcoms,fast,TVLandSitcoms.us,TV Land Sitcoms,base-id,169
+TVQuisqueya.us@SD,TV QUISQUEYA,local,TVQuisqueya.us,TV Quisqueya,base-id,80
+Unidentified.us@SD,Unidentified,fast,Unidentified.us,Unidentified,base-id,76
+UniMas.us@KFTRDT,KFTR-DT1,local,UniMasKFTR.us,UniMas KFTR Los Angeles CA,base-feed-id,100
+UniMas.us@WFUTDT,WFUT-DT1,local,UniMasWFUT.us,UniMas WFUT NEWARK NYC NY NJ,base-feed-id,103
+UniversalCrime.us@East,"like Gecko) Chrome/124.0.0.0 Safari/537.36"" group-title=""Series"",Universal Crime",fast,UniversalCrime.pluto,PLUTO - Universal Crime,normalized-base-id,15
+Univision.us@East,Univision,local,Univision.us,Univision,base-id,94
+Univision.us@EastHD,Univision East HD,local,Univision.us,Univision,base-id,94
+Univision.us@KMEXDT,KMEX-DT1,local,UnivisionKMEX.us,Univision KMEX Los Angeles CA,base-feed-id,89
+Univision.us@WGBODT,WGBO-DT 66.1,local,UnivisionWGBO.us,Univision WGBO Joliet Chicago IL,base-feed-id,95
+Univision.us@WLTVDT,WLTV-DT 23.1,local,UnivisionWLTV.us,Univision WLTV Miami FL,base-feed-id,87
+UnivisionTlnovelas.us@SD,Univision Tlnovelas,local,UnivisionTLnovelas.us,Tlnovelas,base-id,101
+UnsolvedMysteries.us@US,Unsolved Mysteries,fast,UnsolvedMysteries.us,Unsolved Mysteries,base-id,98
+USANetwork.us@East,USA Network,sports,USANetwork.us,USA Network,base-id,154
+Vevo2K.us@SD,Vevo 2K,fast,Vevo2K.pluto,PLUTO - Vevo 2K,normalized-base-id,18
+VevoCountry.us@SD,Vevo Country,fast,VevoCountry.pluto,PLUTO - Vevo Country,normalized-base-id,17
+VevoPop.us@SD,Vevo Pop,fast,VevoPop.pluto,PLUTO - Vevo Pop,normalized-base-id,19
+VevoTrueSchoolHipHop.us@SD,Vevo True School Hip-Hop,fast,VevoTrueSchoolHip-Hop.pluto,PLUTO - Vevo True School Hip-Hop,normalized-base-id,21
+VH1QueensofReality.us@SD,VH1 Queens of Reality,fast,VH1QueensofReality.pluto,PLUTO - VH1 Queens of Reality,normalized-base-id,20
+VSiN.us@SD,VSiN,local,VSIN.us,VSIN Vegas Sports & Information Network,base-id,85
+WaypointTV.us@SD,Waypoint TV,fast,WaypointTV.us,Waypoint TV,base-id,185
+WeatherNation.us@SD,WeatherNation,fast,WeatherNation.pluto,PLUTO - WeatherNation,normalized-base-id,72
+WeatherSpy.us@SD,WeatherSpy,fast,WeatherSpy.us,WeatherSpy,base-id,160
+WesternTV.us@SD,Western TV,fast,WesternTV.pluto,PLUTO - Western TV,normalized-base-id,38
+WeTV.us@East,We TV,local,WeTV.us,We TV,base-id,101
+Willow.us@SD,Willow,sports,Willow.us,Willow,base-id,159
+WillowSports.us@SD,Willow Sports,fast,WillowSports.us,Willow Sports,base-id,100
+WipeoutXtra.us@SD,Wipeout Xtra,fast,WipeoutXtra.us,Wipeout Xtra,base-id,74
+Wired2FishTV.us@SD,Wired2Fish,local,Wired2Fish.us,Wired2Fish,playlist-name,159
+WorldPokerTour.us@US,World Poker Tour,fast,WorldPokerTour.us,World Poker Tour,base-id,58
+WuTangCollection.us@SD,Wu Tang Collection,local,WuTangCollection.us,Wu Tang Collection,base-id,49
+XITE90sThrowback.us@SD,XITE 90's Throwback,local,XITE90sThrowback.us,XITE 90's Throwback,base-id,32
+XITEClassicCountry.nl@SD,XITE Classic Country,fast,XiteClassicCountry.us,Xite Classic Country,playlist-name,32
+XITEJustChill.nl@US,XITE Just Chill,fast,XITEJustChill.us,XITE Just Chill,playlist-name,32
+XITENuevoLatino.us@SD,XITE Nuevo Latino,local,XITENuevoLatino.us,XITE Nuevo Latino,base-id,32
+XITEReggaeVibes.nl@HD,XITE Reggae Vibes,fast,XITEReggaeVibes.us,XITE Reggae Vibes,playlist-name,29
+XITERockxMetal.nl@US,XITE Rock x Metal,fast,XITERockxMetal.us,XITE Rock x Metal,playlist-name,32
+XITESiempreLatino.us@SD,XITE Siempre Latino,local,XITESiempreLatino.us,XITE Siempre Latino,base-id,35
+XploreTV.us@SD,Xplore,fast,Xplore.us,Xplore,playlist-name,214
+YahooFinance.us@SD,Yahoo! Finance,fast,YahooFinance.us,Yahoo! Finance,base-id,149
+YesNetwork.us@SD,Yes Network,local,YesNetwork.us,Yes Network,base-id,64
+YoMTV.us@SD,Yo! MTV,fast,Yo!MTV.pluto,PLUTO - Yo! MTV,normalized-base-id,21
+YuGiOh.us@SD,Yu-Gi-Oh!,fast,Yu-Gi-Oh!.pluto,PLUTO - Yu-Gi-Oh!,normalized-base-id,38
