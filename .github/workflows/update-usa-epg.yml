@@ -10,7 +10,8 @@ on:
     paths:
       - ".github/workflows/update-usa-epg.yml"
       - "scripts/build_us_epgs.py"
-      - "scripts/reclassify_us_main_local.py"
+      - "scripts/audit_usa_epgs.py"
+      - "scripts/validate_epg.py"
       - "config/us-epg.json"
       - "config/us-national-patterns.txt"
 
@@ -48,6 +49,9 @@ jobs:
           curl --retry 3 --connect-timeout 15 --max-time 120 -fsSL \
             https://raw.githubusercontent.com/iptv-org/database/master/data/logos.csv \
             -o build/usa/input/logos.csv
+          curl --retry 3 --connect-timeout 15 --max-time 120 -fsSL \
+            https://iptv-org.github.io/iptv/countries/us.m3u \
+            -o build/usa/input/us.m3u
 
           for name in us_pluto us_samsung us_plex us_roku us_xumo; do
             url="https://raw.githubusercontent.com/iptv-org/iptv/master/streams/${name}.m3u"
@@ -63,19 +67,15 @@ jobs:
           python scripts/build_us_epgs.py \
             --channels-csv build/usa/input/channels.csv \
             --logos-csv build/usa/input/logos.csv \
+            --country-playlist build/usa/input/us.m3u \
+            --national-patterns config/us-national-patterns.txt \
             --fast-playlist-dir build/usa/input/fast \
             --config config/us-epg.json \
             --output-dir build/usa/output \
             --report build/usa/usa-coverage.csv \
+            --mapping-report build/usa/usa-channel-mapping.csv \
+            --unmapped-report build/usa/usa-unmapped-channels.csv \
             --work-dir build/usa/work
-
-      - name: Curate national versus local USA channels
-        run: |
-          python scripts/reclassify_us_main_local.py \
-            --main build/usa/output/usa.xml \
-            --local build/usa/output/usa-local.xml \
-            --patterns config/us-national-patterns.txt \
-            --report build/usa/usa-coverage.csv
 
       - name: Validate USA XMLTV outputs and Last Known Good
         shell: bash
@@ -98,6 +98,9 @@ jobs:
               --min-channels "$min_channels"
               --min-programmes "$min_programmes"
               --require-display-names
+              --require-programme-titles
+              --reject-empty-icons
+              --skip-pre-validation-cleanup
             )
 
             if [[ -f "$baseline_gz" ]]; then
@@ -112,10 +115,23 @@ jobs:
             python scripts/validate_epg.py "${args[@]}"
           }
 
-          validate_one usa 20 200
-          validate_one usa-sports 5 50
-          validate_one usa-local 20 200
-          validate_one usa-fast 10 100
+          validate_one usa 100 5000
+          validate_one usa-sports 100 5000
+          validate_one usa-local 1000 100000
+          validate_one usa-fast 100 5000
+
+      - name: Run USA cross-file quality and mapping gate
+        run: |
+          python scripts/audit_usa_epgs.py \
+            --main build/usa/output/usa.xml \
+            --sports build/usa/output/usa-sports.xml \
+            --local build/usa/output/usa-local.xml \
+            --fast build/usa/output/usa-fast.xml \
+            --coverage build/usa/usa-coverage.csv \
+            --mapping build/usa/usa-channel-mapping.csv \
+            --playlist build/usa/input/us.m3u \
+            --summary build/usa/usa-quality-audit.json \
+            --min-playlist-mapped 400
 
       - name: Promote validated USA build
         shell: bash
@@ -127,6 +143,9 @@ jobs:
           cp build/usa/output/usa-local.xml.gz epg/usa-local.xml.gz
           cp build/usa/output/usa-fast.xml.gz epg/usa-fast.xml.gz
           cp build/usa/usa-coverage.csv reports/usa-coverage.csv
+          cp build/usa/usa-channel-mapping.csv reports/usa-channel-mapping.csv
+          cp build/usa/usa-unmapped-channels.csv reports/usa-unmapped-channels.csv
+          cp build/usa/usa-quality-audit.json reports/usa-quality-audit.json
 
       - name: Publish USA EPG files
         shell: bash
@@ -146,6 +165,9 @@ jobs:
           cp epg/usa-local.xml.gz "$publish_tmp/usa-local.xml.gz"
           cp epg/usa-fast.xml.gz "$publish_tmp/usa-fast.xml.gz"
           cp reports/usa-coverage.csv "$publish_tmp/usa-coverage.csv"
+          cp reports/usa-channel-mapping.csv "$publish_tmp/usa-channel-mapping.csv"
+          cp reports/usa-unmapped-channels.csv "$publish_tmp/usa-unmapped-channels.csv"
+          cp reports/usa-quality-audit.json "$publish_tmp/usa-quality-audit.json"
 
           for file in "$publish_tmp"/*.gz; do
             size="$(stat -c%s "$file")"
@@ -165,7 +187,8 @@ jobs:
                 git diff --name-only "$START_SHA" "$remote_sha" -- \
                   .github/workflows/update-usa-epg.yml \
                   scripts/build_us_epgs.py \
-                  scripts/reclassify_us_main_local.py \
+                  scripts/audit_usa_epgs.py \
+                  scripts/validate_epg.py \
                   config/us-epg.json \
                   config/us-national-patterns.txt || true
               )"
@@ -184,13 +207,19 @@ jobs:
             cp "$publish_tmp/usa-local.xml.gz" epg/usa-local.xml.gz
             cp "$publish_tmp/usa-fast.xml.gz" epg/usa-fast.xml.gz
             cp "$publish_tmp/usa-coverage.csv" reports/usa-coverage.csv
+            cp "$publish_tmp/usa-channel-mapping.csv" reports/usa-channel-mapping.csv
+            cp "$publish_tmp/usa-unmapped-channels.csv" reports/usa-unmapped-channels.csv
+            cp "$publish_tmp/usa-quality-audit.json" reports/usa-quality-audit.json
 
             git add -A -- \
               epg/usa.xml.gz \
               epg/usa-sports.xml.gz \
               epg/usa-local.xml.gz \
               epg/usa-fast.xml.gz \
-              reports/usa-coverage.csv
+              reports/usa-coverage.csv \
+              reports/usa-channel-mapping.csv \
+              reports/usa-unmapped-channels.csv \
+              reports/usa-quality-audit.json
 
             if git diff --cached --quiet; then
               echo "No USA generated changes."

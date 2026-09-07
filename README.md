@@ -4,26 +4,29 @@ Automatisch erzeugter XMLTV-EPG für **deutschsprachige Sender** und **Sender/Fe
 
 ## TiviMate
 
-Die Hauptquelle enthält den vollständigen Deutschland-Guide:
+Für TiviMate stehen kurze, eindeutig benannte Adressen bereit. Dadurch bleibt auch in der gekürzten Quellenanzeige erkennbar, welcher Guide hinterlegt ist.
+
+### Deutschland
 
 ```text
-https://raw.githubusercontent.com/Kaimandura/epg-de/main/epg/de.xml.gz
+Master:  https://kaimandura.github.io/epg-de/DE-MASTER.xml.gz
+Samsung: https://kaimandura.github.io/epg-de/DE-SAMSUNG.xml.gz
+Pluto:   https://kaimandura.github.io/epg-de/DE-PLUTO.xml.gz
+Amazon:  https://kaimandura.github.io/epg-de/DE-AMAZON.xml.gz
 ```
 
-Zusätzlich werden aus derselben validierten Datenbasis automatisch Plattform-EPGs erzeugt:
+### USA
 
 ```text
-Samsung TV Plus:
-https://raw.githubusercontent.com/Kaimandura/epg-de/main/epg/samsung.xml.gz
-
-Pluto TV Deutschland:
-https://raw.githubusercontent.com/Kaimandura/epg-de/main/epg/pluto.xml.gz
-
-Amazon / Freevee / Prime Video Channels:
-https://raw.githubusercontent.com/Kaimandura/epg-de/main/epg/amazon.xml.gz
+Master: https://kaimandura.github.io/epg-de/USA-MASTER.xml.gz
+FAST:   https://kaimandura.github.io/epg-de/USA-FAST.xml.gz
+Local:  https://kaimandura.github.io/epg-de/USA-LOCAL.xml.gz
+Sports: https://kaimandura.github.io/epg-de/USA-SPORTS.xml.gz
 ```
 
-Die Plattform-Dateien sind Teilmengen der Hauptquelle. Sie starten **keine zusätzlichen Grabber-Läufe** und können in TiviMate gezielt einer Plattform-Playlist zugewiesen werden. Für den normalen Betrieb reicht weiterhin `de.xml.gz`.
+Die bisherigen `raw.githubusercontent.com`-Adressen bleiben kompatibel. Die Deutschland-Plattform-Dateien sind Teilmengen der Hauptquelle und starten **keine zusätzlichen Grabber-Läufe**.
+
+Der USA-Build gleicht aktive Programme zusätzlich mit der aktuellen USA-Playlist von iptv-org ab. Eindeutige Treffer werden auch unter der exakten, feed-qualifizierten `tvg-id` veröffentlicht; unsichere Zuordnungen bleiben im Unmapped-Report statt automatisch falsch verknüpft zu werden.
 
 ## Auswahl
 
@@ -76,6 +79,13 @@ Der finale XMLTV-Guide enthält pro `xmltv_id` nur einen Programmdatensatz.
 - `reports/coverage.csv` – Abdeckung, gewählte Quelle und Programmanzahl je XMLTV-ID
 - `reports/platform-coverage.csv` – Sender- und Programmabdeckung je Plattform-Datei
 - `reports/unmapped-de-channels.csv` – noch nicht eindeutig zuordenbare deutsche Upstream-Einträge
+- `epg/usa.xml.gz` – nationale USA-Sender
+- `epg/usa-fast.xml.gz` – FAST-/Plattform-Sender der USA
+- `epg/usa-local.xml.gz` – lokale und regionale USA-Sender
+- `epg/usa-sports.xml.gz` – USA-Sport- und Event-Sender
+- `reports/usa-channel-mapping.csv` – aktive, exakte iptv-org-Zuordnungen mit Match-Methode
+- `reports/usa-unmapped-channels.csv` – aktuelle USA-Playlist-IDs ohne sichere Programmzuordnung
+- `reports/usa-quality-audit.json` – harter, dateiübergreifender USA-Qualitätsstatus
 
 Die unkomprimierte `de.xml` wird nur während des Builds erzeugt und validiert. Sie wird wegen der GitHub-Dateigrößenbegrenzung nicht im Repository veröffentlicht.
 

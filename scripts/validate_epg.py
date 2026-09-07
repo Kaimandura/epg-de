@@ -137,6 +137,21 @@ def main() -> int:
         help="Require every channel to have at least one non-empty display-name.",
     )
     parser.add_argument(
+        "--require-programme-titles",
+        action="store_true",
+        help="Require every programme to have at least one non-empty title.",
+    )
+    parser.add_argument(
+        "--reject-empty-icons",
+        action="store_true",
+        help="Reject channel or programme icon elements without a non-empty src attribute.",
+    )
+    parser.add_argument(
+        "--skip-pre-validation-cleanup",
+        action="store_true",
+        help="Validate the staged file without rewriting/deduplicating it first.",
+    )
+    parser.add_argument(
         "--require-all-channels-active",
         action="store_true",
         help="Reject any channel that has no programme entries.",
@@ -164,7 +179,8 @@ def main() -> int:
         if not 0.0 <= value <= 1.0:
             parser.error(f"{name} must be between 0.0 and 1.0")
 
-    cleanup_before_validation(args.xml)
+    if not args.skip_pre_validation_cleanup:
+        cleanup_before_validation(args.xml)
     root = load_xml(args.xml)
     channel_nodes = root.findall("channel")
     channel_ids, programmes, active_channels = counts(root)
@@ -208,6 +224,13 @@ def main() -> int:
         channel_id = programme.attrib.get("channel", "")
         if channel_id not in channel_ids:
             raise SystemExit(f"Programme references unknown channel: {channel_id}")
+        if args.require_programme_titles and not any(
+            (node.text or "").strip() for node in programme.findall("title")
+        ):
+            raise SystemExit(
+                "Programme without title found: "
+                f"channel={channel_id} start={programme.attrib.get('start', '')}"
+            )
         programme_counts[channel_id] += 1
         signature = (
             channel_id,
@@ -218,6 +241,20 @@ def main() -> int:
         if signature in seen:
             raise SystemExit(f"Duplicate programme found: {signature}")
         seen.add(signature)
+
+    if args.reject_empty_icons:
+        empty_icons = [
+            (node.tag, node.attrib.get("id") or node.attrib.get("channel") or "")
+            for node in [*channel_nodes, *programmes]
+            for icon in node.findall("icon")
+            if not (icon.attrib.get("src") or "").strip()
+        ]
+        if empty_icons:
+            preview = ", ".join(f"{tag}:{identity}" for tag, identity in empty_icons[:20])
+            raise SystemExit(
+                "Empty icon src attributes found: "
+                f"{preview}" + (" ..." if len(empty_icons) > 20 else "")
+            )
 
     if args.xml.name == "de.xml" and "publish" in args.xml.parts:
         for required_id in sorted(MASTER_PRESERVE_IDS):
@@ -274,11 +311,21 @@ def main() -> int:
         raise SystemExit("Gzip payload does not exactly match the staged XML file.")
 
     if args.baseline and args.baseline.exists():
-        cleanup_before_validation(args.baseline)
+        if not args.skip_pre_validation_cleanup:
+            cleanup_before_validation(args.baseline)
         baseline_root = load_xml(args.baseline)
         _, baseline_programmes, baseline_active_channels = counts(baseline_root)
+        baseline_has_empty_titles = args.require_programme_titles and any(
+            not any((node.text or "").strip() for node in programme.findall("title"))
+            for programme in baseline_programmes
+        )
 
-        if baseline_programmes and args.min_baseline_programme_ratio > 0:
+        if baseline_has_empty_titles:
+            print(
+                "Baseline ratio gates skipped: Last Known Good contains empty "
+                "programme titles and predates the USA XML sanitization gate."
+            )
+        elif baseline_programmes and args.min_baseline_programme_ratio > 0:
             required_programmes = math.ceil(
                 len(baseline_programmes) * args.min_baseline_programme_ratio
             )
@@ -290,7 +337,11 @@ def main() -> int:
                     f"{len(baseline_programmes)})."
                 )
 
-        if baseline_active_channels and args.min_baseline_active_channel_ratio > 0:
+        if (
+            not baseline_has_empty_titles
+            and baseline_active_channels
+            and args.min_baseline_active_channel_ratio > 0
+        ):
             required_active = math.ceil(
                 len(baseline_active_channels) * args.min_baseline_active_channel_ratio
             )
@@ -302,11 +353,12 @@ def main() -> int:
                     f"{len(baseline_active_channels)})."
                 )
 
-        print(
-            "Baseline gate OK: "
-            f"{len(active_channels)} active channels / {len(programmes)} programmes "
-            f"vs {len(baseline_active_channels)} / {len(baseline_programmes)}."
-        )
+        if not baseline_has_empty_titles:
+            print(
+                "Baseline gate OK: "
+                f"{len(active_channels)} active channels / {len(programmes)} programmes "
+                f"vs {len(baseline_active_channels)} / {len(baseline_programmes)}."
+            )
 
     run_master_quality_gate(args.xml)
 

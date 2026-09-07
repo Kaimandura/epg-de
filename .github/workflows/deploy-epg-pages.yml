@@ -1,0 +1,70 @@
+name: Deploy readable EPG URLs
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "47 6 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/deploy-epg-pages.yml"
+      - "epg/*.xml.gz"
+  workflow_run:
+    workflows:
+      - Update Germany EPG
+      - Update USA EPG
+      - Enrich Germany EPG Logos
+    types:
+      - completed
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: epg-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout latest published guides
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Stage short descriptive addresses
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build/pages
+          touch build/pages/.nojekyll
+
+          cp epg/de.xml.gz build/pages/DE-MASTER.xml.gz
+          cp epg/samsung.xml.gz build/pages/DE-SAMSUNG.xml.gz
+          cp epg/pluto.xml.gz build/pages/DE-PLUTO.xml.gz
+          cp epg/amazon.xml.gz build/pages/DE-AMAZON.xml.gz
+
+          cp epg/usa.xml.gz build/pages/USA-MASTER.xml.gz
+          cp epg/usa-sports.xml.gz build/pages/USA-SPORTS.xml.gz
+          cp epg/usa-local.xml.gz build/pages/USA-LOCAL.xml.gz
+          cp epg/usa-fast.xml.gz build/pages/USA-FAST.xml.gz
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: build/pages
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

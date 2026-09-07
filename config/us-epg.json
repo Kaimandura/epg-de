@@ -40,13 +40,13 @@
     "PPV"
   ],
   "fast_name_patterns": [
-    "PLUTO TV",
+    "\\bPLUTO\\b",
     "SAMSUNG TV PLUS",
-    "THE ROKU CHANNEL",
-    "ROKU CHANNEL",
-    "PLEX",
-    "XUMO",
-    "FREEVEE"
+    "\\bSAMSUNG\\b.*\\bTV\\s*PLUS\\b",
+    "\\bROKU\\b",
+    "\\bPLEX\\b",
+    "\\bXUMO\\b",
+    "\\bFREEVEE\\b"
   ],
   "deduplicate_exact_schedules": true,
   "outputs": {
