@@ -10,6 +10,7 @@ on:
     paths:
       - ".github/workflows/update-usa-epg.yml"
       - "scripts/build_us_epgs.py"
+      - "scripts/normalize_tivimate_xmltv.py"
       - "scripts/audit_usa_epgs.py"
       - "scripts/validate_epg.py"
       - "config/us-epg.json"
@@ -76,6 +77,15 @@ jobs:
             --mapping-report build/usa/usa-channel-mapping.csv \
             --unmapped-report build/usa/usa-unmapped-channels.csv \
             --work-dir build/usa/work
+
+      - name: Normalize USA XMLTV for TiviMate
+        run: |
+          python scripts/normalize_tivimate_xmltv.py \
+            --coverage build/usa/usa-coverage.csv \
+            build/usa/output/usa.xml \
+            build/usa/output/usa-sports.xml \
+            build/usa/output/usa-local.xml \
+            build/usa/output/usa-fast.xml
 
       - name: Validate USA XMLTV outputs and Last Known Good
         shell: bash
@@ -187,6 +197,7 @@ jobs:
                 git diff --name-only "$START_SHA" "$remote_sha" -- \
                   .github/workflows/update-usa-epg.yml \
                   scripts/build_us_epgs.py \
+                  scripts/normalize_tivimate_xmltv.py \
                   scripts/audit_usa_epgs.py \
                   scripts/validate_epg.py \
                   config/us-epg.json \
