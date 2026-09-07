@@ -15,7 +15,7 @@ from typing import Iterable
 TARGET_COUNTRIES = {"de", "at", "ch"}
 AVAILABILITY_REASONS = {"broadcast_area=DE", "iptv-country=DE", "manual_override"}
 COUNTRY_RE = re.compile(r"\.([a-z]{2})(?:@|$)", re.IGNORECASE)
-XMLTV_TIME_RE = re.compile(r"^(\d{14})(?:\s*([+-]\d{4}))?")
+XMLTV_TIME_RE = re.compile(r"^(\d{12}|\d{14})(?:\s*([+-]\d{4}))?")
 
 
 def parse_xmltv_time(value: str) -> datetime | None:
@@ -24,17 +24,18 @@ def parse_xmltv_time(value: str) -> datetime | None:
     if not match:
         return None
     stamp, offset = match.groups()
+    fmt = "%Y%m%d%H%M%S" if len(stamp) == 14 else "%Y%m%d%H%M"
     try:
-        dt = datetime.strptime(stamp, "%Y%m%d%H%M%S")
-    except ValueError:
+        dt = datetime.strptime(stamp, fmt)
+        if offset:
+            sign = 1 if offset[0] == "+" else -1
+            hours = int(offset[1:3])
+            minutes = int(offset[3:5])
+            tz = timezone(sign * timedelta(hours=hours, minutes=minutes))
+            return dt.replace(tzinfo=tz).astimezone(timezone.utc)
+        return dt.replace(tzinfo=timezone.utc)
+    except (TypeError, ValueError):
         return None
-    if offset:
-        sign = 1 if offset[0] == "+" else -1
-        hours = int(offset[1:3])
-        minutes = int(offset[3:5])
-        tz = timezone(sign * timedelta(hours=hours, minutes=minutes))
-        return dt.replace(tzinfo=tz).astimezone(timezone.utc)
-    return dt.replace(tzinfo=timezone.utc)
 
 
 def display_name(node: ET.Element) -> str:
@@ -204,11 +205,21 @@ def main() -> int:
                 add("REVIEW", "foreign_language_only_selection", channel_id, name, country, "No explicit DE/AT/CH availability evidence in coverage reasons")
 
     hard_errors = counters["severity_error"]
+    hard_error_breakdown = dict(
+        sorted(
+            Counter(
+                issue["check"]
+                for issue in issues
+                if issue["severity"] == "ERROR"
+            ).items()
+        )
+    )
     summary = {
         "generated_at_utc": now.isoformat(),
         "channels": len(channels),
         "programmes": sum(programme_counts.values()),
         "hard_errors": hard_errors,
+        "hard_error_breakdown": hard_error_breakdown,
         "warnings": counters["severity_warning"],
         "review_items": counters["severity_review"],
         "missing_icons": counters["check_missing_icon"],
@@ -227,6 +238,15 @@ def main() -> int:
     print("EPG quality audit:")
     for key, value in summary.items():
         print(f"  {key}: {value}")
+
+    if hard_errors:
+        print("Hard error details (first 50):")
+        for issue in [item for item in issues if item["severity"] == "ERROR"][:50]:
+            print(
+                "  "
+                f"{issue['check']} | {issue['xmltv_id']} | {issue['name']} | "
+                f"{issue['value']} | {issue['details']}"
+            )
 
     if hard_errors > args.max_hard_errors:
         print(f"QUALITY GATE FAILED: {hard_errors} hard error(s) > allowed {args.max_hard_errors}.", file=sys.stderr)
