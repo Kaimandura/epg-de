@@ -57,6 +57,54 @@ jobs:
           cp epg/usa-local.xml.gz build/pages/USA-LOCAL.xml.gz
           cp epg/usa-fast.xml.gz build/pages/USA-FAST.xml.gz
 
+      - name: Stage source-specific USA guides
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          fetch_guide() {
+            local url="$1"
+            local output="$2"
+            echo "Fetching ${output} from ${url}"
+            curl --retry 3 --retry-delay 2 --connect-timeout 15 --max-time 240 -fsSL \
+              "$url" -o "build/pages/${output}"
+            test -s "build/pages/${output}"
+            gzip -t "build/pages/${output}"
+          }
+
+          fetch_guide \
+            "https://iptv-epg.org/files/epg-us.xml.gz" \
+            "USA-SOURCE-IPTV-EPG.xml.gz"
+          fetch_guide \
+            "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz" \
+            "USA-SOURCE-EPGSHARE-US2.xml.gz"
+          fetch_guide \
+            "https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz" \
+            "USA-SOURCE-EPGSHARE-LOCALS.xml.gz"
+          fetch_guide \
+            "https://epgshare01.online/epgshare01/epg_ripper_US_SPORTS1.xml.gz" \
+            "USA-SOURCE-EPGSHARE-SPORTS.xml.gz"
+
+          cat > build/pages/USA-SOURCES.txt <<'EOF'
+          Kaimandura/epg-de USA source-specific guides
+
+          IPTV-EPG:
+          USA-SOURCE-IPTV-EPG.xml.gz
+
+          EPGshare US2:
+          USA-SOURCE-EPGSHARE-US2.xml.gz
+
+          EPGshare US Locals:
+          USA-SOURCE-EPGSHARE-LOCALS.xml.gz
+
+          EPGshare US Sports:
+          USA-SOURCE-EPGSHARE-SPORTS.xml.gz
+
+          The existing USA-MASTER, USA-FAST, USA-LOCAL and USA-SPORTS files remain
+          Kaimandura-generated/validated outputs. The USA-SOURCE-* files preserve the
+          individual upstream XMLTV source identity for separate use in TiviMate.
+          EOF
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
