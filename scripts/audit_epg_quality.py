@@ -15,7 +15,7 @@ from typing import Iterable
 TARGET_COUNTRIES = {"de", "at", "ch"}
 AVAILABILITY_REASONS = {"broadcast_area=DE", "iptv-country=DE", "manual_override"}
 COUNTRY_RE = re.compile(r"\.([a-z]{2})(?:@|$)", re.IGNORECASE)
-XMLTV_TIME_RE = re.compile(r"^(\d{12}|\d{14})(?:\s*([+-]\d{4}))?")
+XMLTV_TIME_RE = re.compile(r"^(\d{14}|\d{12})(?:\s*([+-]\d{4}))?")
 
 
 def parse_xmltv_time(value: str) -> datetime | None:
