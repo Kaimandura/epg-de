@@ -11,37 +11,41 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-
-CANONICAL_XMLTV_TIME = re.compile(r"^\d{14} [+-]\d{4}$")
+TIME_RE = re.compile(r"(?P<stamp>\d{14}|\d{12})(?:\s*(?P<offset>[+-]\d{4}))?")
+STRICT_TIME_RE = re.compile(r"\d{14} [+-]\d{4}")
 CATEGORY_BY_STEM = {
     "usa": "main",
     "usa-sports": "sports",
     "usa-local": "local",
     "usa-fast": "fast",
 }
+TEXT_TAGS = {"title", "sub-title", "desc", "category", "keyword", "country", "date"}
 
 
 def local_name(tag: str) -> str:
     return tag.rsplit("}", 1)[-1]
 
 
-def parse_xmltv_datetime(value: str) -> datetime | None:
-    value = (value or "").strip()
-    match = re.match(r"^(\d{12}|\d{14})(?:\s*([+-]\d{4}))?", value)
+def text(value: str | None) -> str:
+    return (value or "").strip()
+
+
+def parse_time(value: str) -> datetime | None:
+    match = TIME_RE.fullmatch(text(value))
     if not match:
         return None
-    raw = match.group(1)
-    fmt = "%Y%m%d%H%M%S" if len(raw) == 14 else "%Y%m%d%H%M"
+
+    stamp = match.group("stamp")
     try:
-        dt = datetime.strptime(raw, fmt)
-        offset = match.group(2)
+        dt = datetime.strptime(
+            stamp,
+            "%Y%m%d%H%M%S" if len(stamp) == 14 else "%Y%m%d%H%M",
+        )
+        offset = match.group("offset")
         if offset:
             sign = 1 if offset[0] == "+" else -1
-            hours = int(offset[1:3])
-            minutes = int(offset[3:5])
-            dt = dt.replace(
-                tzinfo=timezone(sign * timedelta(hours=hours, minutes=minutes))
-            )
+            delta = timedelta(hours=int(offset[1:3]), minutes=int(offset[3:5]))
+            dt = dt.replace(tzinfo=timezone(sign * delta))
         else:
             dt = dt.replace(tzinfo=timezone.utc)
     except (ValueError, OverflowError):
@@ -50,167 +54,172 @@ def parse_xmltv_datetime(value: str) -> datetime | None:
 
 
 def canonical_time(value: str) -> str | None:
-    dt = parse_xmltv_datetime(value)
-    if dt is None:
-        return None
-    return dt.strftime("%Y%m%d%H%M%S +0000")
+    parsed = parse_time(value)
+    return parsed.strftime("%Y%m%d%H%M%S +0000") if parsed else None
 
 
-def clean_text(value: str | None) -> str:
-    return (value or "").strip()
-
-
-def copy_lang(source: ET.Element, target: ET.Element) -> None:
-    lang = clean_text(source.attrib.get("lang"))
-    if lang:
-        target.attrib["lang"] = lang
-
-
-def safe_channel(source: ET.Element) -> ET.Element | None:
-    channel_id = clean_text(source.attrib.get("id"))
+def clean_channel(source: ET.Element) -> ET.Element | None:
+    channel_id = text(source.attrib.get("id"))
     if not channel_id:
         return None
 
     target = ET.Element("channel", {"id": channel_id})
-    seen_names: set[tuple[str, str]] = set()
+    seen: set[tuple[str, str]] = set()
 
-    for child in list(source):
+    for child in source:
         if local_name(child.tag) != "display-name":
             continue
-        text = clean_text(child.text)
-        if not text:
+        value = text(child.text)
+        lang = text(child.attrib.get("lang"))
+        key = (value.casefold(), lang.casefold())
+        if not value or key in seen:
             continue
-        lang = clean_text(child.attrib.get("lang"))
-        key = (text.casefold(), lang.casefold())
-        if key in seen_names:
-            continue
-        seen_names.add(key)
-        node = ET.SubElement(target, "display-name")
-        node.text = text
-        if lang:
-            node.attrib["lang"] = lang
+        seen.add(key)
+        attrs = {"lang": lang} if lang else {}
+        node = ET.SubElement(target, "display-name", attrs)
+        node.text = value
 
-    if not seen_names:
-        node = ET.SubElement(target, "display-name")
-        node.text = channel_id
+    if not seen:
+        ET.SubElement(target, "display-name").text = channel_id
 
-    for child in list(source):
-        if local_name(child.tag) != "icon":
-            continue
-        src = clean_text(child.attrib.get("src"))
-        if src:
-            ET.SubElement(target, "icon", {"src": src})
-            break
+    for child in source:
+        if local_name(child.tag) == "icon":
+            src = text(child.attrib.get("src"))
+            if src:
+                ET.SubElement(target, "icon", {"src": src})
+                break
 
     return target
 
 
-def safe_rating(source: ET.Element) -> ET.Element | None:
-    value = ""
-    icon_src = ""
-    for child in list(source):
-        tag = local_name(child.tag)
-        if tag == "value" and not value:
-            value = clean_text(child.text)
-        elif tag == "icon" and not icon_src:
-            icon_src = clean_text(child.attrib.get("src"))
-    if not value and not icon_src:
-        return None
-
+def copy_text_node(source: ET.Element, target: ET.Element, tag: str) -> bool:
+    value = text(source.text)
+    if not value:
+        return False
     attrs: dict[str, str] = {}
-    system = clean_text(source.attrib.get("system"))
+    lang = text(source.attrib.get("lang"))
+    if lang:
+        attrs["lang"] = lang
+    if tag == "episode-num":
+        system = text(source.attrib.get("system"))
+        if system:
+            attrs["system"] = system
+    node = ET.SubElement(target, tag, attrs)
+    node.text = value
+    return True
+
+
+def copy_rating(source: ET.Element, target: ET.Element) -> None:
+    value = ""
+    icon = ""
+    for child in source:
+        child_tag = local_name(child.tag)
+        if child_tag == "value" and not value:
+            value = text(child.text)
+        elif child_tag == "icon" and not icon:
+            icon = text(child.attrib.get("src"))
+    if not value and not icon:
+        return
+    attrs: dict[str, str] = {}
+    system = text(source.attrib.get("system"))
     if system:
         attrs["system"] = system
-    target = ET.Element("rating", attrs)
+    rating = ET.SubElement(target, "rating", attrs)
     if value:
-        node = ET.SubElement(target, "value")
-        node.text = value
-    if icon_src:
-        ET.SubElement(target, "icon", {"src": icon_src})
-    return target
+        ET.SubElement(rating, "value").text = value
+    if icon:
+        ET.SubElement(rating, "icon", {"src": icon})
 
 
-def safe_programme(source: ET.Element) -> ET.Element | None:
-    channel_id = clean_text(source.attrib.get("channel"))
-    start = canonical_time(clean_text(source.attrib.get("start")))
+def clean_programme(source: ET.Element) -> ET.Element | None:
+    channel_id = text(source.attrib.get("channel"))
+    start = canonical_time(text(source.attrib.get("start")))
     if not channel_id or start is None:
         return None
 
     attrs = {"start": start, "channel": channel_id}
-    stop_raw = clean_text(source.attrib.get("stop"))
+    stop_raw = text(source.attrib.get("stop"))
     if stop_raw:
         stop = canonical_time(stop_raw)
-        if stop is not None:
+        if stop:
             attrs["stop"] = stop
 
     target = ET.Element("programme", attrs)
     has_title = False
 
-    for child in list(source):
+    for child in source:
         tag = local_name(child.tag)
-
-        if tag in {"title", "sub-title", "desc", "category", "keyword", "country"}:
-            text = clean_text(child.text)
-            if not text:
-                continue
-            node = ET.SubElement(target, tag)
-            node.text = text
-            copy_lang(child, node)
-            if tag == "title":
+        if tag in TEXT_TAGS or tag == "episode-num":
+            copied = copy_text_node(child, target, tag)
+            if tag == "title" and copied:
                 has_title = True
-            continue
-
-        if tag == "date":
-            text = clean_text(child.text)
-            if text:
-                node = ET.SubElement(target, "date")
-                node.text = text
-            continue
-
-        if tag == "episode-num":
-            text = clean_text(child.text)
-            if not text:
-                continue
-            attrs_episode: dict[str, str] = {}
-            system = clean_text(child.attrib.get("system"))
-            if system:
-                attrs_episode["system"] = system
-            node = ET.SubElement(target, "episode-num", attrs_episode)
-            node.text = text
-            continue
-
-        if tag == "icon":
-            src = clean_text(child.attrib.get("src"))
+        elif tag == "icon":
+            src = text(child.attrib.get("src"))
             if src:
                 ET.SubElement(target, "icon", {"src": src})
-            continue
+        elif tag == "rating":
+            copy_rating(child, target)
 
-        if tag == "rating":
-            rating = safe_rating(child)
-            if rating is not None:
-                target.append(rating)
-            continue
-
-    if not has_title:
-        return None
-    return target
+    return target if has_title else None
 
 
-def serialize(element: ET.Element) -> str:
-    return ET.tostring(
-        element,
-        encoding="unicode",
-        short_empty_elements=True,
-    )
+def xml(element: ET.Element) -> str:
+    return ET.tostring(element, encoding="unicode", short_empty_elements=True)
 
 
-def normalize_one(path: Path) -> tuple[int, int, int]:
-    if not path.exists():
+def verify(path: Path, channel_ids: set[str], expected_programmes: int) -> None:
+    parsed_channels = 0
+    parsed_programmes = 0
+
+    for _event, element in ET.iterparse(path, events=("end",)):
+        tag = local_name(element.tag)
+        if tag == "channel":
+            if element.tag != "channel":
+                raise RuntimeError(f"{path}: namespaced channel in normalized output")
+            channel_id = text(element.attrib.get("id"))
+            if not channel_id:
+                raise RuntimeError(f"{path}: channel without id")
+            if not any(
+                text(child.text)
+                for child in element
+                if local_name(child.tag) == "display-name"
+            ):
+                raise RuntimeError(f"{path}: {channel_id} has no display-name")
+            parsed_channels += 1
+            element.clear()
+        elif tag == "programme":
+            if element.tag != "programme":
+                raise RuntimeError(f"{path}: namespaced programme in normalized output")
+            channel_id = text(element.attrib.get("channel"))
+            start = text(element.attrib.get("start"))
+            stop = text(element.attrib.get("stop"))
+            if channel_id not in channel_ids:
+                raise RuntimeError(f"{path}: programme references unknown channel {channel_id}")
+            if not STRICT_TIME_RE.fullmatch(start):
+                raise RuntimeError(f"{path}: non-canonical start {start!r}")
+            if stop and not STRICT_TIME_RE.fullmatch(stop):
+                raise RuntimeError(f"{path}: non-canonical stop {stop!r}")
+            parsed_programmes += 1
+            element.clear()
+
+    if parsed_channels != len(channel_ids):
+        raise RuntimeError(
+            f"{path}: channel verification mismatch {parsed_channels}/{len(channel_ids)}"
+        )
+    if parsed_programmes != expected_programmes:
+        raise RuntimeError(
+            f"{path}: programme verification mismatch "
+            f"{parsed_programmes}/{expected_programmes}"
+        )
+
+
+def normalize(path: Path) -> tuple[int, int, int]:
+    if not path.is_file():
         raise RuntimeError(f"missing XMLTV file: {path}")
 
     channel_ids: set[str] = set()
-    programme_count = 0
-    rejected_programmes = 0
+    programmes = 0
+    rejected = 0
 
     with tempfile.NamedTemporaryFile(
         mode="w",
@@ -220,98 +229,50 @@ def normalize_one(path: Path) -> tuple[int, int, int]:
         prefix=f".{path.name}.",
         suffix=".tmp",
         delete=False,
-    ) as out:
-        tmp_path = Path(out.name)
-        out.write('<?xml version="1.0" encoding="UTF-8"?>\n')
-        out.write('<tv generator-info-name="Kaimandura/epg-de">\n')
+    ) as handle:
+        tmp = Path(handle.name)
+        handle.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        handle.write('<tv generator-info-name="Kaimandura/epg-de">\n')
 
         try:
             for _event, element in ET.iterparse(path, events=("end",)):
                 tag = local_name(element.tag)
-
                 if tag == "channel":
-                    channel = safe_channel(element)
+                    channel = clean_channel(element)
                     if channel is not None:
                         channel_id = channel.attrib["id"]
                         if channel_id not in channel_ids:
                             channel_ids.add(channel_id)
-                            out.write("  ")
-                            out.write(serialize(channel))
-                            out.write("\n")
+                            handle.write(f"  {xml(channel)}\n")
                     element.clear()
-                    continue
-
-                if tag == "programme":
-                    programme = safe_programme(element)
+                elif tag == "programme":
+                    programme = clean_programme(element)
                     if programme is None:
-                        rejected_programmes += 1
-                        element.clear()
-                        continue
-                    channel_id = programme.attrib["channel"]
-                    if channel_id not in channel_ids:
-                        raise RuntimeError(
-                            f"{path}: programme references undeclared channel {channel_id!r}"
-                        )
-                    out.write("  ")
-                    out.write(serialize(programme))
-                    out.write("\n")
-                    programme_count += 1
+                        rejected += 1
+                    else:
+                        channel_id = programme.attrib["channel"]
+                        if channel_id not in channel_ids:
+                            raise RuntimeError(
+                                f"{path}: programme references undeclared channel {channel_id}"
+                            )
+                        handle.write(f"  {xml(programme)}\n")
+                        programmes += 1
                     element.clear()
-
-            out.write("</tv>\n")
+            handle.write("</tv>\n")
         except Exception:
-            tmp_path.unlink(missing_ok=True)
+            tmp.unlink(missing_ok=True)
             raise
 
-    if not channel_ids:
-        tmp_path.unlink(missing_ok=True)
-        raise RuntimeError(f"{path}: no channels after TiviMate normalization")
-    if programme_count == 0:
-        tmp_path.unlink(missing_ok=True)
-        raise RuntimeError(f"{path}: no programmes after TiviMate normalization")
-
-    ET.parse(tmp_path)
-
-    strict_channels = 0
-    strict_programmes = 0
-    for _event, element in ET.iterparse(tmp_path, events=("end",)):
-        tag = local_name(element.tag)
-        if tag == "channel":
-            if element.tag != "channel":
-                raise RuntimeError(f"{path}: namespaced channel survived normalization")
-            if not clean_text(element.attrib.get("id")):
-                raise RuntimeError(f"{path}: channel without id")
-            names = [
-                clean_text(child.text)
-                for child in list(element)
-                if local_name(child.tag) == "display-name"
-            ]
-            if not any(names):
-                raise RuntimeError(f"{path}: channel without display-name")
-            strict_channels += 1
-            element.clear()
-        elif tag == "programme":
-            if element.tag != "programme":
-                raise RuntimeError(f"{path}: namespaced programme survived normalization")
-            start = clean_text(element.attrib.get("start"))
-            stop = clean_text(element.attrib.get("stop"))
-            if not CANONICAL_XMLTV_TIME.fullmatch(start):
-                raise RuntimeError(f"{path}: non-canonical start timestamp {start!r}")
-            if stop and not CANONICAL_XMLTV_TIME.fullmatch(stop):
-                raise RuntimeError(f"{path}: non-canonical stop timestamp {stop!r}")
-            if clean_text(element.attrib.get("channel")) not in channel_ids:
-                raise RuntimeError(f"{path}: programme channel not declared")
-            strict_programmes += 1
-            element.clear()
-
-    if strict_channels != len(channel_ids) or strict_programmes != programme_count:
+    if not channel_ids or not programmes:
+        tmp.unlink(missing_ok=True)
         raise RuntimeError(
-            f"{path}: strict verification mismatch "
-            f"channels={strict_channels}/{len(channel_ids)} "
-            f"programmes={strict_programmes}/{programme_count}"
+            f"{path}: invalid normalized output channels={len(channel_ids)} "
+            f"programmes={programmes}"
         )
 
-    tmp_path.replace(path)
+    ET.parse(tmp)
+    verify(tmp, channel_ids, programmes)
+    tmp.replace(path)
 
     gzip_path = path.with_suffix(path.suffix + ".gz")
     with path.open("rb") as source, gzip_path.open("wb") as raw:
@@ -319,26 +280,31 @@ def normalize_one(path: Path) -> tuple[int, int, int]:
             shutil.copyfileobj(source, target)
 
     with gzip.open(gzip_path, "rb") as check:
-        prefix = check.read(128)
-        if b"<tv " not in prefix and b"<tv>" not in prefix:
-            raise RuntimeError(f"{gzip_path}: invalid XMLTV prefix after gzip")
+        prefix = check.read(160)
+        if b'<?xml version="1.0" encoding="UTF-8"?>' not in prefix or b"<tv " not in prefix:
+            raise RuntimeError(f"{gzip_path}: gzip/XMLTV header verification failed")
 
-    return len(channel_ids), programme_count, rejected_programmes
+    return len(channel_ids), programmes, rejected
 
 
-def update_coverage(path: Path, stats: dict[str, tuple[int, int, int]]) -> None:
-    if not path.exists():
+def update_coverage(
+    coverage: Path,
+    stats: dict[str, tuple[int, int, int]],
+) -> None:
+    if not coverage.is_file():
         return
-    with path.open("r", encoding="utf-8-sig", newline="") as handle:
-        rows = list(csv.DictReader(handle))
-        fields = list(rows[0].keys()) if rows else []
+
+    with coverage.open("r", encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        rows = list(reader)
+        fields = reader.fieldnames or []
 
     required = {"category", "channel_count", "programme_count", "gzip_bytes"}
     if not rows or not required.issubset(fields):
-        raise RuntimeError(f"{path}: unsupported USA coverage report")
+        raise RuntimeError(f"{coverage}: unsupported coverage report")
 
     for row in rows:
-        category = clean_text(row.get("category"))
+        category = text(row.get("category"))
         if category not in stats:
             continue
         channels, programmes, gzip_bytes = stats[category]
@@ -346,7 +312,7 @@ def update_coverage(path: Path, stats: dict[str, tuple[int, int, int]]) -> None:
         row["programme_count"] = str(programmes)
         row["gzip_bytes"] = str(gzip_bytes)
 
-    with path.open("w", encoding="utf-8", newline="") as handle:
+    with coverage.open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
@@ -355,8 +321,8 @@ def update_coverage(path: Path, stats: dict[str, tuple[int, int, int]]) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
-            "Rewrite generated USA XMLTV files to a conservative TiviMate-safe "
-            "subset with canonical timestamps and no XML namespaces."
+            "Normalize generated USA XMLTV files to a conservative "
+            "TiviMate-compatible XMLTV subset."
         )
     )
     parser.add_argument("xml", nargs="+", type=Path)
@@ -365,7 +331,7 @@ def main() -> int:
 
     coverage_stats: dict[str, tuple[int, int, int]] = {}
     for path in args.xml:
-        channels, programmes, rejected = normalize_one(path)
+        channels, programmes, rejected = normalize(path)
         gzip_path = path.with_suffix(path.suffix + ".gz")
         category = CATEGORY_BY_STEM.get(path.stem)
         if category:
@@ -375,14 +341,12 @@ def main() -> int:
                 gzip_path.stat().st_size,
             )
         print(
-            f"TiviMate normalized {path}: channels={channels} "
-            f"programmes={programmes} rejected={rejected} "
-            f"gzip={gzip_path.stat().st_size}"
+            f"TiviMate-safe {path}: channels={channels} programmes={programmes} "
+            f"rejected={rejected} gzip={gzip_path.stat().st_size}"
         )
 
     if args.coverage:
         update_coverage(args.coverage, coverage_stats)
-
     return 0
 
 
