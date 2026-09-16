@@ -1,5 +1,5 @@
 file,channel_count,with_logo_before,logos_added_exact,logos_added_unique_name,with_logo_after,missing_logo_after,coverage_percent
-de.xml,816,800,0,4,804,12,98.53
-samsung.xml,396,0,0,107,107,289,27.02
+de.xml,814,798,0,4,802,12,98.53
+samsung.xml,392,0,0,108,108,284,27.55
 pluto.xml,179,0,0,59,59,120,32.96
 amazon.xml,14,0,0,8,8,6,57.14
