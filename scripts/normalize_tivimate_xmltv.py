@@ -20,6 +20,7 @@ CATEGORY_BY_STEM = {
     "usa-fast": "fast",
 }
 TEXT_TAGS = {"title", "sub-title", "desc", "category", "keyword", "country", "date"}
+USA_DISPLAY_PREFIX = "USA: "
 
 
 def local_name(tag: str) -> str:
@@ -28,6 +29,15 @@ def local_name(tag: str) -> str:
 
 def text(value: str | None) -> str:
     return (value or "").strip()
+
+
+def prefixed_display_name(value: str) -> str:
+    value = text(value)
+    if not value:
+        return value
+    if value.casefold().startswith(USA_DISPLAY_PREFIX.casefold()):
+        return value
+    return f"{USA_DISPLAY_PREFIX}{value}"
 
 
 def parse_time(value: str) -> datetime | None:
@@ -69,7 +79,7 @@ def clean_channel(source: ET.Element) -> ET.Element | None:
     for child in source:
         if local_name(child.tag) != "display-name":
             continue
-        value = text(child.text)
+        value = prefixed_display_name(text(child.text))
         lang = text(child.attrib.get("lang"))
         key = (value.casefold(), lang.casefold())
         if not value or key in seen:
@@ -80,7 +90,7 @@ def clean_channel(source: ET.Element) -> ET.Element | None:
         node.text = value
 
     if not seen:
-        ET.SubElement(target, "display-name").text = channel_id
+        ET.SubElement(target, "display-name").text = prefixed_display_name(channel_id)
 
     for child in source:
         if local_name(child.tag) == "icon":
@@ -179,12 +189,15 @@ def verify(path: Path, channel_ids: set[str], expected_programmes: int) -> None:
             channel_id = text(element.attrib.get("id"))
             if not channel_id:
                 raise RuntimeError(f"{path}: channel without id")
-            if not any(
+            display_names = [
                 text(child.text)
                 for child in element
-                if local_name(child.tag) == "display-name"
-            ):
+                if local_name(child.tag) == "display-name" and text(child.text)
+            ]
+            if not display_names:
                 raise RuntimeError(f"{path}: {channel_id} has no display-name")
+            if any(not name.casefold().startswith(USA_DISPLAY_PREFIX.casefold()) for name in display_names):
+                raise RuntimeError(f"{path}: {channel_id} has unprefixed USA display-name")
             parsed_channels += 1
             element.clear()
         elif tag == "programme":
