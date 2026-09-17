@@ -11,7 +11,7 @@
     "main": 7,
     "sports": 7,
     "local": 3,
-    "fast": 3
+    "fast": 4
   },
   "sports_name_patterns": [
     "\\bESPN\\b",
