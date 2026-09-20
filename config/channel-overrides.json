@@ -55,6 +55,27 @@
       "site": "sky.com",
       "site_id": "DE#124",
       "lang": "de"
+    },
+    {
+      "xmltv_id": "AXNWhite.de@SD",
+      "name": "AXN White",
+      "site": "web.magentatv.de",
+      "site_id": "188",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "AXNWhite.de@SD",
+      "name": "AXN White",
+      "site": "epgshare01.online",
+      "site_id": "DE1#AXN.White.de",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "AXNBlack.de@SD",
+      "name": "AXN Black",
+      "site": "epgshare01.online",
+      "site_id": "DE1#AXN.Black.de",
+      "lang": "de"
     }
   ]
 }
