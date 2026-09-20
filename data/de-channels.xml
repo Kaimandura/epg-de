@@ -1656,7 +1656,7 @@
   <channel site="programtv.onet.pl" site_id="sky-hits-365" lang="de" xmltv_id="SkyCinemaBestOf.de@SD">Sky Hits</channel>
   <channel site="sky.com" site_id="DE#107" lang="de" xmltv_id="SkyCinemaClassics.de@HD">Sky Cinema Classics HD</channel>
   <channel site="web.magentatv.de" site_id="200" lang="de" xmltv_id="SkyCinemaClassics.de@SD">Sky Cinema Classics</channel>
-  <channel site="web.magentatv.de" site_id="572" lang="de" xmltv_id="SkyCinemaFamily.de@SD">Sky Cinema Family</channel>
+  <channel site="web.magentatv.de" site_id="572" lang="de" xmltv_id="SkyCinemaFeelgood.de@SD">Sky Cinema Feelgood</channel>
   <channel site="tv.magenta.at" site_id="207382568104" lang="de" xmltv_id="SkyCinemaFun.de@HD">Sky Cinema Fun HD</channel>
   <channel site="sky.com" site_id="DE#8" lang="de" xmltv_id="SkyCinemaFun.de@SD">Sky Cinema Fun</channel>
   <channel site="sky.com" site_id="DE#131" lang="de" xmltv_id="SkyCinemaPremieren.de@HD">Sky Cinema Premiere HD</channel>
