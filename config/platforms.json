@@ -13,6 +13,17 @@
         }
       ]
     },
+    "magenta": {
+      "output": "magenta.xml.gz",
+      "rules": [
+        {
+          "site": "web.magentatv.de"
+        },
+        {
+          "site": "www.magenta.tv"
+        }
+      ]
+    },
     "pluto": {
       "output": "pluto.xml.gz",
       "rules": [
