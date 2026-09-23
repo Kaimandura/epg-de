@@ -534,7 +534,6 @@
   <channel site="tv.magenta.at" site_id="207382568011" lang="de" xmltv_id="MTVHitsEurope.uk@SD">MTVhits!</channel>
   <channel site="tv.magenta.at" site_id="207382568047" lang="de" xmltv_id="MTVLive.uk@SD">MTV live HD</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#5caf325764025859afdd6c4d" lang="de" xmltv_id="MTVPlutoTV.de@DACH">MTV Pluto TV</channel>
-  <channel site="pluto.tv" site_id="624edee2d6394a0007efcac4" lang="en" xmltv_id="MTVPlutoTV.de@UK">MTV Pluto TV</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#685136fb33a52de120bbb086" lang="de" xmltv_id="MTVRealities.us@Spain">MTV Pride</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#5f9847fd513250000728a9a5" lang="de" xmltv_id="MTVRidiculousness.us@Germany">MTV Ridiculousness</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#5cffcf5686dfe15595fb3f56" lang="de" xmltv_id="MTVTeenMom.us@Germany">MTV Teen Mom</channel>
@@ -910,15 +909,10 @@
   <channel site="pluto.tv" site_id="69c2ac2b14c0213702da7a29" lang="de" xmltv_id="PlutoTV.de.69c2ac2b14c0213702da7a29">Die glorreichen Sieben [Pluto TV]</channel>
   <channel site="pluto.tv" site_id="69f209cd0ed14e790bddeb46" lang="de" xmltv_id="PlutoTV.de.69f209cd0ed14e790bddeb46">Pluto TV Pride [Pluto TV]</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#65004605110545000842035d" lang="de" xmltv_id="PlutoTVAction.de@DACH">Pluto TV Action</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5dbfeb961b411c00090b52b3" lang="en" xmltv_id="PlutoTVAction.de@UK">Pluto TV Action</channel>
-  <channel site="pluto.tv" site_id="62794647e3cbcb000757dc65" lang="en" xmltv_id="PlutoTVAction.de@UKPlus">Pluto TV Action+</channel>
-  <channel site="pluto.tv" site_id="64b67593798def00088e506e" lang="en" xmltv_id="PlutoTVAction.de@UKPlus2">Pluto TV Action</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#67f68bd2135aeda9ddf0ef54" lang="de" xmltv_id="PlutoTVAdultAnimation.de@DACH">Pluto TV Adult Animation</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#5d767ae7b456c8cf265ce922" lang="de" xmltv_id="PlutoTVAnimals.de@DACH">Pluto TV Animals</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/gb#5ddf8ea0d000120009bcad83" lang="en" xmltv_id="PlutoTVAnimals.de@UK">Pluto TV Animals</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#608181d420fc8500075f612a" lang="de" xmltv_id="PlutoTVAnime.de@DACH">Pluto TV Anime</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/es#608035b8d8705f0007260287" lang="es" xmltv_id="PlutoTVAnime.de@ES">Pluto TV Anime</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/it#65b90daed77d450008a43345" lang="it" xmltv_id="PlutoTVAnime.de@IT">Pluto TV Anime</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#677e5a3d7bffa6000808dbf2" lang="de" xmltv_id="PlutoTVBritischeSerien.de@DACH">Pluto TV Britische Serien</channel>
   <channel site="pluto.tv" site_id="65b917d333ea860008598a05" lang="fi" xmltv_id="PlutoTVBudTerence.de@FI">Pluto TV Bud &amp; Terence</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#69b968ba255fecb01f602257" lang="de" xmltv_id="PlutoTVComedyTherapie.de@DACH">Pluto TV Comedy Therapie</channel>
@@ -935,11 +929,7 @@
   <channel site="i.mjh.nz" site_id="PlutoTV/de#664f10c4f9992200084a2f47" lang="de" xmltv_id="PlutoTVHeisseNachteRetro.de@DACH">Pluto TV Heiße Nächte Retro</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#68ada3395190a45dc9c445cf" lang="de" xmltv_id="PlutoTVHistorischeSerien.de@DACH">Pluto TV Historische Serien</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#5d767b1c126c65d0a307355f" lang="de" xmltv_id="PlutoTVHistory.de@DACH">Pluto TV History</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5d4af1803e7983b391d73b13" lang="en" xmltv_id="PlutoTVHistory.de@UK">Pluto TV History</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#62f4f4b88157cf00075c22db" lang="de" xmltv_id="PlutoTVHorror.de@DACH">Pluto TV Horror</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/es#6267d4d1fb694f0007a6af0e" lang="es" xmltv_id="PlutoTVHorror.de@ES">Pluto TV Horror</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/it#61c09e3ac210ed0007606620" lang="it" xmltv_id="PlutoTVHorror.de@IT">Pluto TV Horror</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/gb#612cda102f5f18000705e0bf" lang="en" xmltv_id="PlutoTVHorror.de@UK">Pluto TV Horror</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#67ff7d9c7fc25e0e72451bc9" lang="de" xmltv_id="PlutoTVHorrorSerien.de@DACH">Pluto TV Horror-Serien</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#66337de656fc840008ff7a65" lang="de" xmltv_id="PlutoTVKultComedies.de@DACH">Pluto TV Kult Comedies</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#5dde47b63585b500099f74ec" lang="de" xmltv_id="PlutoTVKultfilme.de@DACH">Pluto TV Kultfilme</channel>
