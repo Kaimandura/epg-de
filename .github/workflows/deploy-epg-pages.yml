@@ -51,6 +51,7 @@ jobs:
           cp epg/samsung.xml.gz build/pages/DE-SAMSUNG.xml.gz
           cp epg/pluto.xml.gz build/pages/DE-PLUTO.xml.gz
           cp epg/amazon.xml.gz build/pages/DE-AMAZON.xml.gz
+          cp epg/magenta.xml.gz build/pages/DE-MAGENTA.xml.gz
 
           cp epg/usa.xml.gz build/pages/USA-MASTER.xml.gz
           cp epg/usa-sports.xml.gz build/pages/USA-SPORTS.xml.gz
