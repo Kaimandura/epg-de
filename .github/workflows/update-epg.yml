@@ -249,6 +249,25 @@ jobs:
             build/publish/platforms/pluto.xml \
             --require-prefix PlutoTV.
 
+          magenta_args=(
+            build/publish/platforms/magenta.xml
+            --gzip build/publish/platforms/magenta.xml.gz
+            --min-channels 150
+            --min-programmes 10000
+            --require-display-names
+            --required-active-channel MagentaSport.de@SD
+          )
+          if [[ -f epg/magenta.xml.gz ]]; then
+            mkdir -p build/baseline
+            gzip -dc epg/magenta.xml.gz > build/baseline/magenta.xml
+            magenta_args+=(
+              --baseline build/baseline/magenta.xml
+              --min-baseline-programme-ratio 0.60
+              --min-baseline-active-channel-ratio 0.70
+            )
+          fi
+          python scripts/validate_epg.py "${magenta_args[@]}"
+
           amazon_args=(
             build/publish/platforms/amazon.xml
             --gzip build/publish/platforms/amazon.xml.gz
@@ -286,11 +305,12 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p epg reports
-          rm -f epg/de.xml epg/samsung.xml epg/pluto.xml epg/amazon.xml
+          rm -f epg/de.xml epg/samsung.xml epg/pluto.xml epg/amazon.xml epg/magenta.xml
           cp build/publish/de.xml.gz epg/de.xml.gz
           cp build/publish/platforms/samsung.xml.gz epg/samsung.xml.gz
           cp build/publish/platforms/pluto.xml.gz epg/pluto.xml.gz
           cp build/publish/platforms/amazon.xml.gz epg/amazon.xml.gz
+          cp build/publish/platforms/magenta.xml.gz epg/magenta.xml.gz
           cp build/publish/coverage.csv reports/coverage.csv
           cp build/publish/platform-coverage.csv reports/platform-coverage.csv
           cp build/publish/amazon-coverage.csv reports/amazon-coverage.csv
@@ -316,6 +336,7 @@ jobs:
           cp epg/samsung.xml.gz "$publish_tmp/samsung.xml.gz"
           cp epg/pluto.xml.gz "$publish_tmp/pluto.xml.gz"
           cp epg/amazon.xml.gz "$publish_tmp/amazon.xml.gz"
+          cp epg/magenta.xml.gz "$publish_tmp/magenta.xml.gz"
           cp reports/coverage.csv "$publish_tmp/coverage.csv"
           cp reports/platform-coverage.csv "$publish_tmp/platform-coverage.csv"
           cp reports/amazon-coverage.csv "$publish_tmp/amazon-coverage.csv"
@@ -328,6 +349,7 @@ jobs:
             "$publish_tmp/samsung.xml.gz" \
             "$publish_tmp/pluto.xml.gz" \
             "$publish_tmp/amazon.xml.gz" \
+            "$publish_tmp/magenta.xml.gz" \
             "$publish_tmp/coverage.csv" \
             "$publish_tmp/platform-coverage.csv" \
             "$publish_tmp/amazon-coverage.csv" \
@@ -366,6 +388,7 @@ jobs:
             cp "$publish_tmp/samsung.xml.gz" epg/samsung.xml.gz
             cp "$publish_tmp/pluto.xml.gz" epg/pluto.xml.gz
             cp "$publish_tmp/amazon.xml.gz" epg/amazon.xml.gz
+            cp "$publish_tmp/magenta.xml.gz" epg/magenta.xml.gz
             cp "$publish_tmp/coverage.csv" reports/coverage.csv
             cp "$publish_tmp/platform-coverage.csv" reports/platform-coverage.csv
             cp "$publish_tmp/amazon-coverage.csv" reports/amazon-coverage.csv
@@ -378,6 +401,7 @@ jobs:
               epg/samsung.xml.gz \
               epg/pluto.xml.gz \
               epg/amazon.xml.gz \
+              epg/magenta.xml.gz \
               reports/coverage.csv \
               reports/platform-coverage.csv \
               reports/amazon-coverage.csv \
