@@ -157,6 +157,19 @@ jobs:
             --output-dir build/publish/platforms \
             --report build/publish/platform-coverage.csv
 
+      - name: Enrich complete Magenta sports lineup
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --retry 4 --retry-all-errors --connect-timeout 20 --max-time 180 -fsSL \\
+            https://iptv-epg.org/files/epg-de.xml.gz \\
+            -o build/iptv-epg-de.xml.gz
+          gzip -t build/iptv-epg-de.xml.gz
+          python scripts/enrich_magenta_sports.py \\
+            --target build/publish/platforms/magenta.xml \\
+            --source build/iptv-epg-de.xml.gz \\
+            --config config/magenta-sports.json
+
       - name: Build Prime Video Germany EPG and finalize master
         run: |
           python scripts/export_amazon_epg.py \
@@ -256,6 +269,26 @@ jobs:
             --min-programmes 10000
             --require-display-names
             --required-active-channel MagentaSport.de@SD
+            --required-active-channel MagentaTV.de@MyTeamTVSport01
+            --required-active-channel MagentaTV.de@MyTeamTVSport02
+            --required-active-channel MagentaTV.de@MyTeamTVSport03
+            --required-active-channel MagentaTV.de@MyTeamTVSport04
+            --required-active-channel MagentaTV.de@MyTeamTVSport05
+            --required-active-channel MagentaTV.de@MyTeamTVSport06
+            --required-active-channel MagentaTV.de@MyTeamTVSport07
+            --required-active-channel MagentaTV.de@MyTeamTVSport08
+            --required-active-channel MagentaTV.de@MyTeamTVSport09
+            --required-active-channel MagentaTV.de@MyTeamTVSport10
+            --required-active-channel MagentaTV.de@MyTeamTVSport11
+            --required-active-channel MagentaTV.de@MyTeamTVSport12
+            --required-active-channel MagentaTV.de@MyTeamTVSport13
+            --required-active-channel MagentaTV.de@MyTeamTVSport14
+            --required-active-channel MagentaTV.de@MyTeamTVSport15
+            --required-active-channel MagentaTV.de@MyTeamTVSport16
+            --required-active-channel MagentaTV.de@MyTeamTVSport17
+            --required-active-channel MagentaTV.de@MyTeamTVSport18
+            --required-active-channel MagentaTV.de@MSSport
+            --required-active-channel MagentaTV.de@SkySportKompakt1
           )
           if [[ -f epg/magenta.xml.gz ]]; then
             mkdir -p build/baseline
