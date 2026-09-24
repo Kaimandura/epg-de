@@ -76,6 +76,188 @@
       "site": "epgshare01.online",
       "site_id": "DE1#AXN.Black.de",
       "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport01",
+      "name": "Sport 1 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "550",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport02",
+      "name": "Sport 2 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "548",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport03",
+      "name": "Sport 3 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "549",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport04",
+      "name": "Sport 4 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "648",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport05",
+      "name": "Sport 5 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "645",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport06",
+      "name": "Sport 6 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "647",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport07",
+      "name": "Sport 7 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "646",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport08",
+      "name": "Sport 8 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "623",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport09",
+      "name": "Sport 9 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "626",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport10",
+      "name": "Sport 10 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "624",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport11",
+      "name": "Sport 11 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "625",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport12",
+      "name": "Sport 12 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "627",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport13",
+      "name": "Sport 13 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "629",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport14",
+      "name": "Sport 14 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "628",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport15",
+      "name": "Sport 15 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "367",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport16",
+      "name": "Sport 16 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "366",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport17",
+      "name": "Sport 17 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "369",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport18",
+      "name": "Sport 18 - myTeamTV",
+      "site": "web.magentatv.de",
+      "site_id": "3686",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@MSSport",
+      "name": "MS Sport",
+      "site": "web.magentatv.de",
+      "site_id": "3757",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@SkySportKompakt1",
+      "name": "Sky Sport Kompakt 1",
+      "site": "web.magentatv.de",
+      "site_id": "637",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@SkySport10",
+      "name": "Sky Sport 10",
+      "site": "web.magentatv.de",
+      "site_id": "5554",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@SkySportPremierLeague",
+      "name": "Sky Sport Premier League",
+      "site": "web.magentatv.de",
+      "site_id": "5555",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@SkySportMix",
+      "name": "Sky Sport Mix",
+      "site": "web.magentatv.de",
+      "site_id": "5556",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@SkySportBundesliga10",
+      "name": "Sky Sport Bundesliga 10",
+      "site": "web.magentatv.de",
+      "site_id": "5557",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@SkySportGolf",
+      "name": "Sky Sport Golf",
+      "site": "web.magentatv.de",
+      "site_id": "5558",
+      "lang": "de"
+    },
+    {
+      "xmltv_id": "MagentaTV.de@RedBullTVMotorsport",
+      "name": "Red Bull TV Motorsport",
+      "site": "web.magentatv.de",
+      "site_id": "5026",
+      "lang": "de"
     }
   ]
 }
