@@ -1,0 +1,164 @@
+{
+  "channels": [
+    {
+      "name": "MS Sport",
+      "xmltv_id": "MagentaTV.de@MSSport",
+      "source_names": [
+        "MS Sport",
+        "DE - MS Sport"
+      ]
+    },
+    {
+      "name": "Sport 1 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport01",
+      "source_names": [
+        "Sport 1 - myTeamTV",
+        "DE - Sport 1 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sport 2 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport02",
+      "source_names": [
+        "Sport 2 - myTeamTV",
+        "DE - Sport 2 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sport 3 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport03",
+      "source_names": [
+        "Sport 3 - myTeamTV",
+        "DE - Sport 3 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sport 4 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport04",
+      "source_names": [
+        "Sport 4 - myTeamTV",
+        "DE - Sport 4 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sport 5 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport05",
+      "source_names": [
+        "Sport 5 - myTeamTV",
+        "DE - Sport 5 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sport 6 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport06",
+      "source_names": [
+        "Sport 6 - myTeamTV",
+        "DE - Sport 6 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sport 7 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport07",
+      "source_names": [
+        "Sport 7 - myTeamTV",
+        "DE - Sport 7 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sport 8 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport08",
+      "source_names": [
+        "Sport 8 - myTeamTV",
+        "DE - Sport 8 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sport 9 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport09",
+      "source_names": [
+        "Sport 9 - myTeamTV",
+        "DE - Sport 9 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sport 10 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport10",
+      "source_names": [
+        "Sport 10 - myTeamTV",
+        "DE - Sport 10 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sport 11 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport11",
+      "source_names": [
+        "Sport 11 - myTeamTV",
+        "DE - Sport 11 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sport 12 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport12",
+      "source_names": [
+        "Sport 12 - myTeamTV",
+        "DE - Sport 12 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sport 13 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport13",
+      "source_names": [
+        "Sport 13 - myTeamTV",
+        "DE - Sport 13 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sport 14 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport14",
+      "source_names": [
+        "Sport 14 - myTeamTV",
+        "DE - Sport 14 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sport 15 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport15",
+      "source_names": [
+        "Sport 15 - myTeamTV",
+        "DE - Sport 15 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sport 16 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport16",
+      "source_names": [
+        "Sport 16 - myTeamTV",
+        "DE - Sport 16 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sport 17 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport17",
+      "source_names": [
+        "Sport 17 - myTeamTV",
+        "DE - Sport 17 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sport 18 - myTeamTV",
+      "xmltv_id": "MagentaTV.de@MyTeamTVSport18",
+      "source_names": [
+        "Sport 18 - myTeamTV",
+        "DE - Sport 18 - myTeamTV"
+      ]
+    },
+    {
+      "name": "Sky Sport Kompakt 1",
+      "xmltv_id": "MagentaTV.de@SkySportKompakt1",
+      "source_names": [
+        "Sky Sport Kompakt 1",
+        "DE - Sky Sport Kompakt 1"
+      ]
+    }
+  ]
+}
