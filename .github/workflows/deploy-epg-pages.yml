@@ -58,6 +58,33 @@ jobs:
           cp epg/usa-local.xml.gz build/pages/USA-LOCAL.xml.gz
           cp epg/usa-fast.xml.gz build/pages/USA-FAST.xml.gz
 
+      - name: Final audit of published EPGs
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/audit_published_epgs.py \
+            build/pages/DE-MASTER.xml.gz \
+            build/pages/DE-SAMSUNG.xml.gz \
+            build/pages/DE-PLUTO.xml.gz \
+            build/pages/DE-AMAZON.xml.gz \
+            build/pages/DE-MAGENTA.xml.gz \
+            build/pages/USA-MASTER.xml.gz \
+            build/pages/USA-SPORTS.xml.gz \
+            build/pages/USA-LOCAL.xml.gz \
+            build/pages/USA-FAST.xml.gz
+
+          cat > build/pages/epg-urls.txt <<'EOF'
+          https://kaimandura.github.io/epg-de/DE-MASTER.xml.gz
+          https://kaimandura.github.io/epg-de/DE-SAMSUNG.xml.gz
+          https://kaimandura.github.io/epg-de/DE-PLUTO.xml.gz
+          https://kaimandura.github.io/epg-de/DE-AMAZON.xml.gz
+          https://kaimandura.github.io/epg-de/DE-MAGENTA.xml.gz
+          https://kaimandura.github.io/epg-de/USA-MASTER.xml.gz
+          https://kaimandura.github.io/epg-de/USA-SPORTS.xml.gz
+          https://kaimandura.github.io/epg-de/USA-LOCAL.xml.gz
+          https://kaimandura.github.io/epg-de/USA-FAST.xml.gz
+          EOF
+
       - name: Stage source-specific USA guides
         shell: bash
         run: |
