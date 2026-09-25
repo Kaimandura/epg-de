@@ -62,7 +62,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python scripts/audit_published_epgs.py \
+          python scripts/audit_published_epgs.py --require-magenta-sports \
             build/pages/DE-MASTER.xml.gz \
             build/pages/DE-SAMSUNG.xml.gz \
             build/pages/DE-PLUTO.xml.gz \
