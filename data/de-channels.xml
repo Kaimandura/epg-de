@@ -539,6 +539,32 @@
   <channel site="i.mjh.nz" site_id="PlutoTV/de#5cffcf5686dfe15595fb3f56" lang="de" xmltv_id="MTVTeenMom.us@Germany">MTV Teen Mom</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#5caf32c2a5068259a32320fc" lang="de" xmltv_id="MTVTheShores.us@Germany">MTV The Shores</channel>
   <channel site="web.magentatv.de" site_id="5075" lang="de" xmltv_id="MagentaSport.de@SD">MagentaSport</channel>
+  <channel site="web.magentatv.de" site_id="3757" lang="de" xmltv_id="MagentaTV.de@MSSport">MS Sport</channel>
+  <channel site="web.magentatv.de" site_id="550" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport01">Sport 1 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="548" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport02">Sport 2 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="549" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport03">Sport 3 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="648" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport04">Sport 4 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="645" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport05">Sport 5 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="647" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport06">Sport 6 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="646" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport07">Sport 7 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="623" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport08">Sport 8 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="626" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport09">Sport 9 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="624" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport10">Sport 10 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="625" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport11">Sport 11 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="627" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport12">Sport 12 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="629" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport13">Sport 13 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="628" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport14">Sport 14 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="367" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport15">Sport 15 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="366" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport16">Sport 16 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="369" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport17">Sport 17 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="3686" lang="de" xmltv_id="MagentaTV.de@MyTeamTVSport18">Sport 18 - myTeamTV</channel>
+  <channel site="web.magentatv.de" site_id="5026" lang="de" xmltv_id="MagentaTV.de@RedBullTVMotorsport">Red Bull TV Motorsport</channel>
+  <channel site="web.magentatv.de" site_id="5554" lang="de" xmltv_id="MagentaTV.de@SkySport10">Sky Sport 10</channel>
+  <channel site="web.magentatv.de" site_id="5557" lang="de" xmltv_id="MagentaTV.de@SkySportBundesliga10">Sky Sport Bundesliga 10</channel>
+  <channel site="web.magentatv.de" site_id="5558" lang="de" xmltv_id="MagentaTV.de@SkySportGolf">Sky Sport Golf</channel>
+  <channel site="web.magentatv.de" site_id="637" lang="de" xmltv_id="MagentaTV.de@SkySportKompakt1">Sky Sport Kompakt 1</channel>
+  <channel site="web.magentatv.de" site_id="5556" lang="de" xmltv_id="MagentaTV.de@SkySportMix">Sky Sport Mix</channel>
+  <channel site="web.magentatv.de" site_id="5555" lang="de" xmltv_id="MagentaTV.de@SkySportPremierLeague">Sky Sport Premier League</channel>
   <channel site="epgshare01.online" site_id="CH1#Mangas.ch" lang="de" xmltv_id="Mangas.fr@SD">Mangas</channel>
   <channel site="web.magentatv.de" site_id="5295" lang="de" xmltv_id="MarcoPoloTV.de@SD">Marco Polo TV</channel>
   <channel site="epgshare01.online" site_id="CH1#Max.TV.ch" lang="de" xmltv_id="MaxTV.ch@SD">Max TV</channel>
@@ -1740,7 +1766,7 @@
   <channel site="sky.com" site_id="DE#108" lang="de" xmltv_id="SkySportNews.de@HD">Sky Sport News HD</channel>
   <channel site="web.magentatv.de" site_id="190" lang="de" xmltv_id="SkySportNews.de@SD">Sky Sport News</channel>
   <channel site="sky.com" site_id="DE#145" lang="de" xmltv_id="SkySportPremierLeague.de@HD">Sky Sport Premier League HD</channel>
-  <channel site="web.magentatv.de" site_id="5555" lang="de" xmltv_id="SkySportPremierLeague.nz@SD">Sky Sport Premier League</channel>
+  <channel site="www.magenta.tv" site_id="389263912232" lang="de" xmltv_id="SkySportPremierLeague.nz@SD">Sky Sport Premier League</channel>
   <channel site="sky.com" site_id="DE#114" lang="de" xmltv_id="SkySportTennis.de@HD">Sky Sport Tennis HD</channel>
   <channel site="sky.com" site_id="DE#129" lang="de" xmltv_id="SkySportTopEvent.de@HD">Sky Sport Top Event HD</channel>
   <channel site="tvprofil.com" site_id="ch/tv-programm#sky-tg24-hd" lang="de" xmltv_id="SkyTG24.it@HD">Sky TG24 HD</channel>
