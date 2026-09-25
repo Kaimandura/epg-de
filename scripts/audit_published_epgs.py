@@ -14,6 +14,7 @@ MAGENTA_REQUIRED = [
 parser = argparse.ArgumentParser()
 parser.add_argument("files", nargs="+")
 parser.add_argument("--require-magenta-sports", action="store_true")
+parser.add_argument("--require-all-channels-active", action="store_true")
 args = parser.parse_args()
 
 failed = False
