@@ -22,6 +22,29 @@
         {
           "site": "www.magenta.tv"
         }
+      ],
+      "explicit_xmltv_ids": [
+        "MagentaSport.de@SD",
+        "MagentaTV.de@MSSport",
+        "MagentaTV.de@MyTeamTVSport01",
+        "MagentaTV.de@MyTeamTVSport02",
+        "MagentaTV.de@MyTeamTVSport03",
+        "MagentaTV.de@MyTeamTVSport04",
+        "MagentaTV.de@MyTeamTVSport05",
+        "MagentaTV.de@MyTeamTVSport06",
+        "MagentaTV.de@MyTeamTVSport07",
+        "MagentaTV.de@MyTeamTVSport08",
+        "MagentaTV.de@MyTeamTVSport09",
+        "MagentaTV.de@MyTeamTVSport10",
+        "MagentaTV.de@MyTeamTVSport11",
+        "MagentaTV.de@MyTeamTVSport12",
+        "MagentaTV.de@MyTeamTVSport13",
+        "MagentaTV.de@MyTeamTVSport14",
+        "MagentaTV.de@MyTeamTVSport15",
+        "MagentaTV.de@MyTeamTVSport16",
+        "MagentaTV.de@MyTeamTVSport17",
+        "MagentaTV.de@MyTeamTVSport18",
+        "MagentaTV.de@SkySportKompakt1"
       ]
     },
     "pluto": {
