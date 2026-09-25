@@ -157,19 +157,6 @@ jobs:
             --output-dir build/publish/platforms \
             --report build/publish/platform-coverage.csv
 
-      - name: Enrich complete Magenta sports lineup
-        shell: bash
-        run: |
-          set -euo pipefail
-          curl --retry 4 --retry-all-errors --connect-timeout 20 --max-time 180 -fsSL \
-            https://iptv-epg.org/files/epg-de.xml.gz \
-            -o build/iptv-epg-de.xml.gz
-          gzip -t build/iptv-epg-de.xml.gz
-          python scripts/enrich_magenta_sports.py \
-            --target build/publish/platforms/magenta.xml \
-            --source build/iptv-epg-de.xml.gz \
-            --config config/magenta-sports.json
-
       - name: Build Prime Video Germany EPG and finalize master
         run: |
           python scripts/export_amazon_epg.py \
