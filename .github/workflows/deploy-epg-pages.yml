@@ -4,12 +4,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "47 6 * * *"
-  push:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/deploy-epg-pages.yml"
-      - "epg/*.xml.gz"
   workflow_run:
     workflows:
       - Update Germany EPG
@@ -17,6 +11,10 @@ on:
       - Enrich Germany EPG Logos
     types:
       - completed
+
+# Fail-closed publication policy:
+# New guides reach TiviMate only after their producer workflow completed successfully.
+# Direct pushes of epg/*.xml.gz never publish unverified output.
 
 permissions:
   contents: read
