@@ -21,7 +21,6 @@ xmltv_id,display_name,groups
 3ABNPraiseHimMusicNetwork.us@SD,3ABN Praise Him Music Network,Music;Religious
 3ABNProclaimNetwork.us@SD,3ABN Proclaim! Network,Religious
 90sKids.us@SD,90's Kids,Kids
-ABC.us@KRCA,ABC KRCA,General
 ABCNewsLive1.us@SD,ABC News Live 1,News
 ABCNewsLive10.us@SD,ABC News Live 10,News
 ABCNewsLive2.us@SD,ABC News Live 2,News
@@ -283,6 +282,7 @@ ElSembradorNuevaEvangelizacionESNE.us@SD,El Sembrador Nueva Evangelizacion ESNE,
 EntertainmentTonight.us@SD,Entertainment Tonight,Entertainment;News
 EntrepreneurTV.us@SD,EntrepreneurTV,Business
 EscambiaCountyTV.us@SD,Escambia County TV,Legislative
+ESNETV.us@SD,ESNE TV,Religious
 EstrellaGames.us@SD,Estrella Games,Entertainment;Family
 EstrellaTV.us@WMBCTV,Estrella TV WMBC-TV,Entertainment
 EWTN.us@Spanish,EWTN (United States) Spanish,Religious
@@ -298,7 +298,6 @@ FGTV.us@SD,FGTV (United States),Legislative
 FierroaFondoTV.us@SD,Fierro a Fondo TV,Auto
 FilAmTVNetwork.us@HD,FilAmTV Network,General
 FilmRiseForensicFiles.us@SD,FilmRise Forensic Files,Movies
-FITE247.us@SD,FITE 24/7,Sports
 FlowersTVUSA.us@SD,Flowers TV USA,Culture
 FMHKids.us@SD,FMH Kids,Kids
 FMHMovies.us@SD,FMH Movies,Movies
@@ -678,7 +677,6 @@ Shabakeh7.us@SD,Shabakeh 7,Entertainment
 ShalomAmerica.us@SD,Shalom America,Religious
 ShemarooBollywood.us@SD,Shemaroo Bollywood,Undefined
 ShoutFactoryTV.us@SD,Shout! Factory TV,General
-Showtime.us@East,Showtime,Undefined
 SKPop.us@HD,S KPop!,Kids;Music
 SkwadPlay.us@SD,Skwad Play,Kids
 SLOCountyChannel21.us@SD,SLO County Channel 21,Undefined
