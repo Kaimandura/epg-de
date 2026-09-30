@@ -80,7 +80,10 @@ back to repository output.
 * Preserve/merge complete valid programme records when reconciling the 81
   provider/master differences. Do not discard the shorter or different schedule
   based only on a similarity threshold.
-* Resolve invalid USA durations with recorded source-level diagnostics.
+* Rebuild USA with the updated normalizer: invalid explicit stop dates and
+  non-positive durations are rejected and their original XML records retained
+  in a separate diagnostic artifact. Optional XMLTV stop times remain optional.
+  The existing committed snapshot still contains the 201 invalid records.
 * Run both real producers, validate their artifacts and verify deployed public
   bytes against `release.json`. Unit tests are not that production proof.
 

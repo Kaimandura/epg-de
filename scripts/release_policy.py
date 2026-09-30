@@ -16,6 +16,7 @@ import xml.etree.ElementTree as ET
 from collections import defaultdict
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
+from functools import lru_cache
 from pathlib import Path
 
 FILES = {
@@ -38,6 +39,7 @@ def name_key(value):
     return " ".join(re.findall(r"\w+|\+", value))
 
 
+@lru_cache(maxsize=100000)
 def timestamp(value):
     if not re.fullmatch(r"\d{14} [+-]\d{4}", value):
         raise ValueError(f"invalid XMLTV timestamp: {value!r}")
@@ -112,10 +114,10 @@ def inspect(path, label=None, require_active=True):
                 else:
                     try:
                         start = timestamp(node.get("start", ""))
-                        stop = timestamp(node.get("stop", ""))
-                        if stop <= start:
+                        stop = timestamp(node.get("stop")) if node.get("stop") else None
+                        if stop is not None and stop <= start:
                             raise ValueError("non-positive programme duration")
-                        signature = (start.isoformat(), stop.isoformat(), title.casefold())
+                        signature = (start.isoformat(), stop.isoformat() if stop else "", title.casefold())
                         channel = channels[cid]
                         if signature in channel.slots:
                             errors.append(f"{label}: {cid}: duplicate programme {signature}")
@@ -168,7 +170,7 @@ def identity_groups(channels, aliases=()):
         # DE and USA contain different regional products, never conflate by name.
         region = c.file.split("-", 1)[0]
         ids[(region, c.id.casefold())].append(i)
-        for name in c.names:
+        for name in sorted(c.names):
             names[(region, name)].append(i)
     for bucket in ids.values():
         for i in bucket[1:]:

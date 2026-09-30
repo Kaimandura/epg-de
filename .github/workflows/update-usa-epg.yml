@@ -84,6 +84,15 @@ jobs:
             build/usa/output/usa-local.xml \
             build/usa/output/usa-fast.xml
 
+      - name: Preserve rejected normalization records for diagnosis
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: usa-normalization-diagnostics-${{ github.run_id }}-${{ github.run_attempt }}
+          path: build/usa/output/*.rejected.jsonl
+          if-no-files-found: warn
+          retention-days: 30
+
       - name: Validate USA XMLTV outputs and Last Known Good
         shell: bash
         run: |
