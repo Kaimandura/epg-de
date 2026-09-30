@@ -31,6 +31,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 300
 
@@ -165,6 +166,18 @@ jobs:
             --output build/publish/platforms/amazon.xml \
             --report build/publish/amazon-coverage.csv \
             --platform-report build/publish/platform-coverage.csv
+
+      - name: Enrich logos inside the Germany producer transaction
+        run: |
+          python scripts/enrich_epg_logos.py \
+            --channels-csv upstream/database/data/channels.csv \
+            --logos-csv upstream/database/data/logos.csv \
+            --report build/publish/logo-coverage.csv \
+            build/publish/de.xml \
+            build/publish/platforms/samsung.xml \
+            build/publish/platforms/pluto.xml \
+            build/publish/platforms/amazon.xml \
+            build/publish/platforms/magenta.xml
 
       - name: Validate final XMLTV, critical channels and Last Known Good
         shell: bash
@@ -320,6 +333,24 @@ jobs:
             build/publish/platforms/amazon.xml \
             --require-prefix AmazonPrime.de.
 
+      - name: Seal Germany producer release after all validation
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build/release-input-de
+          cp build/publish/de.xml.gz build/release-input-de/
+          cp build/publish/platforms/{samsung,pluto,amazon,magenta}.xml.gz build/release-input-de/
+          python scripts/release_bundle.py --region DE --source build/release-input-de --output build/release-de
+
+      - name: Upload immutable Germany producer artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: epg-de-${{ github.run_id }}-${{ github.run_attempt }}
+          path: build/release-de/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 90
+
       - name: Promote validated build (Last Known Good)
         shell: bash
         run: |
@@ -390,7 +421,7 @@ jobs:
             if [[ "$remote_sha" != "$START_SHA" ]]; then
               pipeline_changes="$(
                 git diff --name-only "$START_SHA" "$remote_sha" -- \
-                  .github/workflows/update-epg.yml scripts config || true
+                  .github/workflows/update-epg.yml scripts config
               )"
               if [[ -n "$pipeline_changes" ]]; then
                 echo "A newer pipeline/config revision is already on main:"

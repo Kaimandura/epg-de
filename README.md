@@ -12,6 +12,7 @@ Für TiviMate stehen kurze, eindeutig benannte Adressen bereit. Dadurch bleibt a
 DE Master:  https://kaimandura.github.io/epg-de/DE-MASTER.xml.gz
 DE Samsung: https://kaimandura.github.io/epg-de/DE-SAMSUNG.xml.gz
 DE Pluto:   https://kaimandura.github.io/epg-de/DE-PLUTO.xml.gz
+DE Magenta: https://kaimandura.github.io/epg-de/DE-MAGENTA.xml.gz
 DE Amazon:  https://kaimandura.github.io/epg-de/DE-AMAZON.xml.gz
 ```
 
@@ -24,18 +25,7 @@ USA Local:  https://kaimandura.github.io/epg-de/USA-LOCAL.xml.gz
 USA Sports: https://kaimandura.github.io/epg-de/USA-SPORTS.xml.gz
 ```
 
-### USA – einzelne Upstream-Quellen
-
-Diese Adressen erhalten die Herkunft bewusst im Dateinamen, damit sie in TiviMate getrennt erkennbar und einzeln zuordenbar bleiben.
-
-```text
-USA Source IPTV-EPG:         https://kaimandura.github.io/epg-de/USA-SOURCE-IPTV-EPG.xml.gz
-USA Source EPGshare US2:     https://kaimandura.github.io/epg-de/USA-SOURCE-EPGSHARE-US2.xml.gz
-USA Source EPGshare Locals:  https://kaimandura.github.io/epg-de/USA-SOURCE-EPGSHARE-LOCALS.xml.gz
-USA Source EPGshare Sports:  https://kaimandura.github.io/epg-de/USA-SOURCE-EPGSHARE-SPORTS.xml.gz
-```
-
-Die `USA-MASTER`, `USA-FAST`, `USA-LOCAL` und `USA-SPORTS` Dateien bleiben die von diesem Repository erzeugten und validierten Ausgaben. Die `USA-SOURCE-*` Dateien bewahren dagegen die einzelne Upstream-Quelle für eine getrennte Nutzung in TiviMate.
+Die externen `USA-SOURCE-*`-Feeds sind keine Produkt-Ausgaben und werden nicht mehr veröffentlicht. Upstream-Quellen bleiben ausschließlich Eingaben des kontrollierten USA-Builds.
 
 Die bisherigen `raw.githubusercontent.com`-Adressen bleiben kompatibel. Die Deutschland-Plattform-Dateien sind Teilmengen der Hauptquelle und starten **keine zusätzlichen Grabber-Läufe**.
 

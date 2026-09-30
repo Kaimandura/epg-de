@@ -9,12 +9,8 @@ on:
       - main
     paths:
       - ".github/workflows/update-usa-epg.yml"
-      - "scripts/build_us_epgs.py"
-      - "scripts/normalize_tivimate_xmltv.py"
-      - "scripts/audit_usa_epgs.py"
-      - "scripts/validate_epg.py"
-      - "config/us-epg.json"
-      - "config/us-national-patterns.txt"
+      - "scripts/**"
+      - "config/**"
 
 permissions:
   contents: write
@@ -25,6 +21,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 90
 
@@ -143,6 +140,18 @@ jobs:
             --summary build/usa/usa-quality-audit.json \
             --min-playlist-mapped 400
 
+      - name: Seal USA producer release after all validation
+        run: python scripts/release_bundle.py --region USA --source build/usa/output --output build/release-usa --mapping build/usa/usa-channel-mapping.csv
+
+      - name: Upload immutable USA producer artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: epg-usa-${{ github.run_id }}-${{ github.run_attempt }}
+          path: build/release-usa/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 90
+
       - name: Promote validated USA build
         shell: bash
         run: |
@@ -196,12 +205,7 @@ jobs:
               pipeline_changes="$(
                 git diff --name-only "$START_SHA" "$remote_sha" -- \
                   .github/workflows/update-usa-epg.yml \
-                  scripts/build_us_epgs.py \
-                  scripts/normalize_tivimate_xmltv.py \
-                  scripts/audit_usa_epgs.py \
-                  scripts/validate_epg.py \
-                  config/us-epg.json \
-                  config/us-national-patterns.txt || true
+                  scripts config
               )"
               if [[ -n "$pipeline_changes" ]]; then
                 echo "A newer USA pipeline revision is already on main:"

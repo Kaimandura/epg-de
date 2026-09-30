@@ -8,6 +8,7 @@ import json
 import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from normalize_tivimate_xmltv import parse_time
 
 
 TIMESTAMP_RE = re.compile(r"^(?:\d{12}|\d{14})(?:\s+[+-]\d{4})?$")
@@ -79,6 +80,13 @@ def audit_xml(path: Path) -> tuple[dict[str, int], set[str], list[str]]:
                 errors.append(f"invalid programme start: {channel_id} {start!r}")
             if stop and not TIMESTAMP_RE.fullmatch(stop):
                 errors.append(f"invalid programme stop: {channel_id} {stop!r}")
+            start_time, stop_time = parse_time(start), parse_time(stop)
+            if start_time is None:
+                errors.append(f"invalid programme start date: {channel_id} {start!r}")
+            if stop and stop_time is None:
+                errors.append(f"invalid programme stop date: {channel_id} {stop!r}")
+            if start_time is not None and stop_time is not None and stop_time <= start_time:
+                errors.append(f"non-positive programme duration: {channel_id} {start} {stop}")
             if any(
                 not (node.attrib.get("src") or "").strip()
                 for node in element.findall("icon")
@@ -142,7 +150,7 @@ def main() -> int:
         summary, channel_ids, file_errors = audit_xml(path)
         summaries[category] = summary
         ids_by_category[category] = channel_ids
-        errors.extend(f"{category}: {message}" for message in file_errors[:100])
+        errors.extend(f"{category}: {message}" for message in file_errors)
 
     categories = list(paths)
     for index, left in enumerate(categories):

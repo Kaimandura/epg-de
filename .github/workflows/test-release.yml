@@ -1,0 +1,44 @@
+name: Release regression tests
+on:
+  pull_request:
+  push:
+    branches: [main, codex/validated-provider-release]
+    paths: ["scripts/**", "config/**", "tests/**", ".github/workflows/**"]
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: python -m unittest discover -s tests -v
+  production-snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Audit committed production snapshot without modifying it
+        run: >-
+          python scripts/audit_published_epgs.py
+          --require-magenta-sports --require-all-channels-active
+          --mapping reports/usa-channel-mapping.csv
+          --report build/production-snapshot-audit.json
+          epg/de.xml.gz epg/magenta.xml.gz epg/samsung.xml.gz
+          epg/pluto.xml.gz epg/amazon.xml.gz epg/usa.xml.gz
+          epg/usa-local.xml.gz epg/usa-fast.xml.gz epg/usa-sports.xml.gz
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: production-snapshot-audit
+          path: build/production-snapshot-audit.json
+          if-no-files-found: error
