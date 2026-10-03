@@ -17,6 +17,7 @@ on:
   push:
     branches:
       - main
+      - codex/validated-provider-release
     paths:
       - ".github/workflows/update-epg.yml"
       - "scripts/**"
@@ -31,7 +32,7 @@ concurrency:
 
 jobs:
   build:
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/codex/validated-provider-release'
     runs-on: ubuntu-latest
     timeout-minutes: 300
 
@@ -232,7 +233,7 @@ jobs:
             )
           fi
 
-          python scripts/validate_epg.py "${args[@]}"
+          python scripts/validate_epg.py --skip-pre-validation-cleanup "${args[@]}"
           python scripts/validate_channel_namespace.py \
             build/publish/de.xml \
             --forbid-id CrimeTime.us@SD
@@ -242,7 +243,7 @@ jobs:
         run: |
           set -euo pipefail
 
-          python scripts/validate_epg.py \
+          python scripts/validate_epg.py --skip-pre-validation-cleanup \
             build/publish/platforms/samsung.xml \
             --gzip build/publish/platforms/samsung.xml.gz \
             --min-channels 20 \
@@ -252,7 +253,7 @@ jobs:
             build/publish/platforms/samsung.xml \
             --require-prefix SamsungTVPlus.
 
-          python scripts/validate_epg.py \
+          python scripts/validate_epg.py --skip-pre-validation-cleanup \
             build/publish/platforms/pluto.xml \
             --gzip build/publish/platforms/pluto.xml.gz \
             --min-channels 50 \
@@ -299,7 +300,7 @@ jobs:
               --min-baseline-active-channel-ratio 0.70
             )
           fi
-          python scripts/validate_epg.py "${magenta_args[@]}"
+          python scripts/validate_epg.py --skip-pre-validation-cleanup "${magenta_args[@]}"
 
           amazon_args=(
             build/publish/platforms/amazon.xml
@@ -328,19 +329,33 @@ jobs:
               --min-baseline-active-channel-ratio 0.70
             )
           fi
-          python scripts/validate_epg.py "${amazon_args[@]}"
+          python scripts/validate_epg.py --skip-pre-validation-cleanup "${amazon_args[@]}"
           python scripts/validate_channel_namespace.py \
             build/publish/platforms/amazon.xml \
             --require-prefix AmazonPrime.de.
 
-      - name: Seal Germany producer release after all validation
+      - name: Reconcile Germany ownership and canonical Last Known Good
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p build/release-input-de
           cp build/publish/de.xml.gz build/release-input-de/
           cp build/publish/platforms/{samsung,pluto,amazon,magenta}.xml.gz build/release-input-de/
-          python scripts/release_bundle.py --region DE --source build/release-input-de --output build/release-de
+          python scripts/reconcile_release.py --region DE --source build/release-input-de --output build/reconciled-de --baseline epg
+          test_args=()
+          if [[ "$GITHUB_REF" != "refs/heads/main" ]]; then test_args=(--test-build); fi
+          python scripts/release_bundle.py "${test_args[@]}" --region DE --source build/reconciled-de --output build/release-de
+
+      - name: Preserve Germany reconciliation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: de-reconciliation-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            build/reconciled-de/*.json
+            build/reconciled-de/*.jsonl
+          if-no-files-found: warn
+          retention-days: 90
 
       - name: Upload immutable Germany producer artifact
         uses: actions/upload-artifact@v4
@@ -356,12 +371,10 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p epg reports
+          rm -f epg/amazon.xml.gz
+          cp build/reconciled-de/*.xml.gz epg/
+          cp build/reconciled-de/reconciliation.json reports/de-reconciliation.json
           rm -f epg/de.xml epg/samsung.xml epg/pluto.xml epg/amazon.xml epg/magenta.xml
-          cp build/publish/de.xml.gz epg/de.xml.gz
-          cp build/publish/platforms/samsung.xml.gz epg/samsung.xml.gz
-          cp build/publish/platforms/pluto.xml.gz epg/pluto.xml.gz
-          cp build/publish/platforms/amazon.xml.gz epg/amazon.xml.gz
-          cp build/publish/platforms/magenta.xml.gz epg/magenta.xml.gz
           cp build/publish/coverage.csv reports/coverage.csv
           cp build/publish/platform-coverage.csv reports/platform-coverage.csv
           cp build/publish/amazon-coverage.csv reports/amazon-coverage.csv
@@ -369,6 +382,7 @@ jobs:
           cp build/unmapped-de-channels.csv reports/unmapped-de-channels.csv
 
       - name: Publish generated files
+        if: github.ref == 'refs/heads/main'
         shell: bash
         env:
           START_SHA: ${{ github.sha }}
@@ -386,12 +400,13 @@ jobs:
           cp epg/de.xml.gz "$publish_tmp/de.xml.gz"
           cp epg/samsung.xml.gz "$publish_tmp/samsung.xml.gz"
           cp epg/pluto.xml.gz "$publish_tmp/pluto.xml.gz"
-          cp epg/amazon.xml.gz "$publish_tmp/amazon.xml.gz"
+          if [[ -f epg/amazon.xml.gz ]]; then cp epg/amazon.xml.gz "$publish_tmp/amazon.xml.gz"; fi
           cp epg/magenta.xml.gz "$publish_tmp/magenta.xml.gz"
           cp reports/coverage.csv "$publish_tmp/coverage.csv"
           cp reports/platform-coverage.csv "$publish_tmp/platform-coverage.csv"
           cp reports/amazon-coverage.csv "$publish_tmp/amazon-coverage.csv"
           cp reports/master-cleanup.csv "$publish_tmp/master-cleanup.csv"
+          cp reports/de-reconciliation.json "$publish_tmp/de-reconciliation.json"
           cp reports/unmapped-de-channels.csv "$publish_tmp/unmapped-de-channels.csv"
 
           for file in \
@@ -406,6 +421,7 @@ jobs:
             "$publish_tmp/amazon-coverage.csv" \
             "$publish_tmp/master-cleanup.csv" \
             "$publish_tmp/unmapped-de-channels.csv"; do
+            if [[ "$file" == "$publish_tmp/amazon.xml.gz" && ! -f "$file" ]]; then continue; fi
             size="$(stat -c%s "$file")"
             if (( size >= 100 * 1024 * 1024 )); then
               echo "Refusing publication: $file is ${size} bytes and exceeds GitHub's 100 MiB limit."
@@ -438,26 +454,17 @@ jobs:
             cp "$publish_tmp/de.xml.gz" epg/de.xml.gz
             cp "$publish_tmp/samsung.xml.gz" epg/samsung.xml.gz
             cp "$publish_tmp/pluto.xml.gz" epg/pluto.xml.gz
-            cp "$publish_tmp/amazon.xml.gz" epg/amazon.xml.gz
+            rm -f epg/amazon.xml.gz
+            if [[ -f "$publish_tmp/amazon.xml.gz" ]]; then cp "$publish_tmp/amazon.xml.gz" epg/amazon.xml.gz; fi
             cp "$publish_tmp/magenta.xml.gz" epg/magenta.xml.gz
             cp "$publish_tmp/coverage.csv" reports/coverage.csv
             cp "$publish_tmp/platform-coverage.csv" reports/platform-coverage.csv
             cp "$publish_tmp/amazon-coverage.csv" reports/amazon-coverage.csv
             cp "$publish_tmp/master-cleanup.csv" reports/master-cleanup.csv
+            cp "$publish_tmp/de-reconciliation.json" reports/de-reconciliation.json
             cp "$publish_tmp/unmapped-de-channels.csv" reports/unmapped-de-channels.csv
 
-            git add -A -- \
-              data/de-channels.xml \
-              epg/de.xml.gz \
-              epg/samsung.xml.gz \
-              epg/pluto.xml.gz \
-              epg/amazon.xml.gz \
-              epg/magenta.xml.gz \
-              reports/coverage.csv \
-              reports/platform-coverage.csv \
-              reports/amazon-coverage.csv \
-              reports/master-cleanup.csv \
-              reports/unmapped-de-channels.csv
+            git add -A -- epg reports data/de-channels.xml
 
             if git diff --cached --quiet; then
               echo "No generated changes."

@@ -42,7 +42,7 @@ class ReleaseTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.root = Path(self.temp.name)
         self.provenance = {"repository": "owner/repo", "source_sha": "a" * 40,
-                           "run_id": 1, "run_attempt": 1, "policy_sha256": "b" * 64}
+                           "run_id": 1, "run_attempt": 1, "policy_sha256": "b" * 64, 'test_only':False}
 
     def tearDown(self):
         self.temp.cleanup()

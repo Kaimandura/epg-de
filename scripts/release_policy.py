@@ -26,6 +26,14 @@ FILES = {
     "USA": {"USA-MASTER.xml.gz": "usa.xml.gz", "USA-LOCAL.xml.gz": "usa-local.xml.gz",
             "USA-FAST.xml.gz": "usa-fast.xml.gz", "USA-SPORTS.xml.gz": "usa-sports.xml.gz"},
 }
+OPTIONAL_FILES = {'DE-AMAZON.xml.gz'}
+
+
+def validate_file_set(names, region, extra=()):
+    allowed = set(FILES[region]) | set(extra)
+    required = allowed - OPTIONAL_FILES
+    if not required <= set(names) <= allowed:
+        raise ValueError(f'{region}: missing or unexpected release files: {sorted(set(names) ^ required)}')
 MAGENTA_REQUIRED = ["MagentaSport.de@SD", "MagentaTV.de@MSSport",
                     *[f"MagentaTV.de@MyTeamTVSport{i:02d}" for i in range(1, 19)],
                     "MagentaTV.de@SkySportKompakt1"]
@@ -53,7 +61,7 @@ def configured_aliases(root=None, mapping=None):
                for c in definitions["channels"] if c.get("source_ids")]
     if mapping:
         with Path(mapping).open(encoding="utf-8-sig", newline="") as stream:
-            aliases.extend({"region": "USA", "ids": [r["xmltv_id"], r["source_id"]]} for r in csv.DictReader(stream))
+            aliases.extend({"region": "USA", "ids": list(dict.fromkeys([r["xmltv_id"], r["source_id"], r.get('canonical_xmltv_id') or r['xmltv_id']]))} for r in csv.DictReader(stream))
     return aliases
 
 
@@ -65,8 +73,14 @@ IDs (including US callsigns) are otherwise left intact.
 """
     suffix = cid.partition("@")[2].casefold()
     suffix = re.sub(r"(?:uhd|fhd|hd|sd|4k)$", "", suffix)
-    if cid.startswith("SamsungTVPlus."):
+    suffix = {'dach':'de','germany':'de','german':'de','deutsch':'de'}.get(suffix,suffix)
+    if cid.startswith(("SamsungTVPlus.", "PlutoTV.", "AmazonPrime.")):
         return cid.split(".")[1].casefold()
+    # Affiliate callsigns and subchannels are distinct even while simulcasting
+    # the same network programme. Name/schedule similarity cannot erase them.
+    station = re.match(r'^([KW][A-Z]{2,4}(?:[.-]?(?:DT|TV))?(?:[.-]?\d+)?)\.(?:us|ca)(?:@|$)', cid)
+    if station:
+        return 'station:' + station.group(1).casefold() + (':' + suffix if suffix else '')
     return suffix
 
 
@@ -194,7 +208,8 @@ def identity_groups(channels, aliases=()):
                 shared = len(left.slots & right.slots)
                 minimum = min(len(left.slots), len(right.slots))
                 # Titles and UTC instants both have to agree. Timing alone is unsafe.
-                if shared >= 3 and minimum and shared / minimum >= .9:
+                varied_titles = len({slot[2] for slot in left.slots & right.slots}) >= 2
+                if shared >= 3 and varied_titles and minimum and shared / minimum >= .9:
                     join(a, b, "name-and-schedule")
     groups = defaultdict(list)
     for i, channel in enumerate(channels):

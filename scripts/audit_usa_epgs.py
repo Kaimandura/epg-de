@@ -191,7 +191,8 @@ def main() -> int:
     unexpected = sorted(set(mapped_ids) - official_ids)
     if unexpected:
         errors.append("mapping report contains non-playlist IDs: " + ", ".join(unexpected[:20]))
-    missing_outputs = sorted(set(mapped_ids) - all_output_ids)
+    canonical_ids = {(row.get('canonical_xmltv_id') or row.get('xmltv_id') or '').strip() for row in mapping_rows}
+    missing_outputs = sorted(canonical_ids - all_output_ids)
     if missing_outputs:
         errors.append("mapped IDs missing from outputs: " + ", ".join(missing_outputs[:20]))
     if len(mapped_ids) < args.min_playlist_mapped:
@@ -200,6 +201,10 @@ def main() -> int:
             f"{args.min_playlist_mapped}"
         )
     for row in mapping_rows:
+        canonical = (row.get('canonical_xmltv_id') or row.get('xmltv_id') or '').strip()
+        category = (row.get('category') or '').strip()
+        if canonical not in ids_by_category.get(category,set()):
+            errors.append(f'mapping category mismatch: {row.get("xmltv_id")} -> {canonical} in {category}')
         try:
             programme_count = int(row.get("programme_count") or 0)
         except ValueError:

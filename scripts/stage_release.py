@@ -17,7 +17,7 @@ import zipfile
 from pathlib import Path
 
 from release_bundle import policy_digest, verify
-from release_policy import FILES, audit
+from release_policy import FILES, audit, validate_file_set
 
 WORKFLOWS = {"DE": "update-epg.yml", "USA": "update-usa-epg.yml"}
 
@@ -62,10 +62,11 @@ class API:
 
 
 def extract_bundle(data, destination, region):
-    wanted = set(FILES[region]) | {"manifest.json", "audit.json"}
     with zipfile.ZipFile(io.BytesIO(data)) as archive:
         entries = archive.infolist()
-        if len(entries) != len(wanted) or {e.filename for e in entries} != wanted:
+        names = {e.filename for e in entries}
+        validate_file_set(names,region,extra={'manifest.json','audit.json','migration.json'})
+        if len(entries) != len(names):
             raise ValueError("artifact contains unexpected, duplicate, or missing paths")
         if sum(e.file_size for e in entries) > 1024 * 1024 * 1024:
             raise ValueError("artifact exceeds extraction size limit")
@@ -77,18 +78,26 @@ def extract_bundle(data, destination, region):
                 shutil.copyfileobj(source, target)
 
 
-def stage(api, repository, output, workspace, policy_hash):
+def stage(api, repository, output, workspace, policy_hash, snapshot_run=None):
     if output.exists() or workspace.exists():
         raise ValueError("staging destinations must be new")
     manifests = {}
     paths = {}
     aliases = []
     # Snapshot both selections first; no mutable latest-main files are read.
-    runs = {region: select_run(api.get(f"/actions/workflows/{workflow}/runs?branch=main&status=success&per_page=100")["workflow_runs"],
-                               repository, workflow) for region, workflow in WORKFLOWS.items()}
+    if snapshot_run is None:
+        runs = {region: select_run(api.get(f"/actions/workflows/{workflow}/runs?branch=main&status=success&per_page=100")["workflow_runs"],
+                                   repository, workflow) for region, workflow in WORKFLOWS.items()}
+    else:
+        run=api.get(f'/actions/runs/{snapshot_run}')
+        if (run.get('path')!='.github/workflows/test-release.yml' or run.get('repository',{}).get('full_name')!=repository
+                or run.get('head_repository',{}).get('full_name')!=repository or run.get('event')!='push'):
+            raise ValueError('untrusted snapshot verification run')
+        runs={region:run for region in WORKFLOWS}
     for region, run in runs.items():
         artifacts = api.get(f"/actions/runs/{run['id']}/artifacts?per_page=100")["artifacts"]
-        name = f"epg-{region.lower()}-{run['id']}-{run['run_attempt']}"
+        prefix='epg-test' if snapshot_run is not None else 'epg'
+        name = f"{prefix}-{region.lower()}-{run['id']}-{run['run_attempt']}"
         matches = [a for a in artifacts if a["name"] == name and not a["expired"]]
         if len(matches) != 1:
             raise ValueError(f"missing/ambiguous validated artifact {name}")
@@ -101,16 +110,18 @@ def stage(api, repository, output, workspace, policy_hash):
         extract_bundle(data, bundle, region)
         manifest = verify(bundle, region, {"repository": repository, "source_sha": run["head_sha"],
                                           "run_id": run["id"], "run_attempt": run["run_attempt"],
-                                          "policy_sha256": policy_hash})
+                                          "policy_sha256": policy_hash, 'test_only':snapshot_run is not None})
         manifests[region] = {**manifest, "artifact_id": artifact["id"], "artifact_digest": digest}
         aliases.extend(json.loads((bundle / "audit.json").read_text(encoding="utf-8"))["aliases"])
-        paths.update({filename: bundle / filename for filename in FILES[region]})
+        paths.update({filename: bundle / filename for filename in FILES[region] if filename in manifest['files']})
     result = audit(paths, aliases)
     if result["status"] != "passed":
         raise ValueError("combined Pages release audit failed: " + json.dumps(result)[:5000])
     output.mkdir(parents=True)
     for name, path in paths.items():
         shutil.copyfile(path, output / name)
+    for region in runs:
+        shutil.copyfile(workspace/region/'migration.json',output/f'{region}-migration.json')
     (output / ".nojekyll").touch()
     (output / "release.json").write_text(json.dumps({"schema": 1, "producers": manifests,
                                                    "audit": result}, indent=2, sort_keys=True) + "\n", encoding="utf-8")
@@ -122,9 +133,10 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--workspace", type=Path, required=True)
+    parser.add_argument('--snapshot-run',type=int,help='Verification only: test artifacts are never selected by the Pages workflow')
     args = parser.parse_args()
     repository = os.environ["GITHUB_REPOSITORY"]
-    stage(API(repository, os.environ["GH_TOKEN"]), repository, args.output, args.workspace, policy_digest(Path.cwd()))
+    stage(API(repository, os.environ["GH_TOKEN"]), repository, args.output, args.workspace, policy_digest(Path.cwd()),args.snapshot_run)
 
 
 if __name__ == "__main__":
