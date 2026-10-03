@@ -1,76 +1,40 @@
 #!/usr/bin/env python3
+"""Central read-only published release audit (never rewrites EPG data)."""
 import argparse
-import gzip
+import json
 from pathlib import Path
-import xml.etree.ElementTree as ET
+from release_policy import FILES, audit, configured_aliases
 
-MAGENTA_REQUIRED = [
-    "MagentaSport.de@SD",
-    "MagentaTV.de@MSSport",
-    *[f"MagentaTV.de@MyTeamTVSport{i:02d}" for i in range(1, 19)],
-    "MagentaTV.de@SkySportKompakt1",
-]
 
-parser = argparse.ArgumentParser()
-parser.add_argument("files", nargs="+")
-parser.add_argument("--require-magenta-sports", action="store_true")
-parser.add_argument("--require-all-channels-active", action="store_true")
-args = parser.parse_args()
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('files', nargs='+', type=Path)
+    parser.add_argument('--require-magenta-sports', action='store_true', help='Always enforced when DE-MAGENTA is present')
+    parser.add_argument('--require-all-channels-active', action='store_true', help='Active channels are always required')
+    parser.add_argument('--mapping', type=Path, help='USA producer alias provenance CSV')
+    parser.add_argument('--report', type=Path)
+    args = parser.parse_args()
+    if len({p.name for p in args.files}) != len(args.files):
+        parser.error('duplicate input filenames')
+    labels = {stem: name for region in FILES.values() for name, stem in region.items()}
+    paths = {labels.get(p.name, p.name): p for p in args.files}
+    if len(paths) != len(args.files):
+        parser.error('duplicate release targets')
+    if args.require_magenta_sports and 'DE-MAGENTA.xml.gz' not in paths:
+        parser.error('--require-magenta-sports requires DE-MAGENTA')
+    result = audit(paths, configured_aliases(mapping=args.mapping))
+    if args.report:
+        args.report.parent.mkdir(parents=True, exist_ok=True)
+        args.report.write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+    for label, counts in result['outputs'].items():
+        print(f"{label}: {counts}")
+    for message in result['errors'][:30]:
+        print('FAIL:', message)
+    for item in result['identity_violations'][:30]:
+        print('FAIL:', item)
+    print(f"Release audit {result['status']}: {len(result['errors'])} errors, {len(result['identity_violations'])} identity violations")
+    return 0 if result['status'] == 'passed' else 1
 
-failed = False
-for path_arg in args.files:
-    path = Path(path_arg)
-    try:
-        if not path.is_file() or path.stat().st_size == 0:
-            raise ValueError("missing or empty file")
-        with gzip.open(path, "rb") as fh:
-            root = ET.parse(fh).getroot()
-        if root.tag != "tv":
-            raise ValueError(f"root element is {root.tag!r}, expected 'tv'")
-        channels = root.findall("channel")
-        programmes = root.findall("programme")
-        if not channels:
-            raise ValueError("no channels")
-        if not programmes:
-            raise ValueError("no programmes")
-        channel_ids = [c.get("id") for c in channels]
-        if any(not x for x in channel_ids):
-            raise ValueError("channel without id")
-        if len(channel_ids) != len(set(channel_ids)):
-            raise ValueError("duplicate channel ids")
-        known = set(channel_ids)
-        programme_counts = {}
-        bad_refs = 0
-        missing_titles = 0
-        for p in programmes:
-            channel_id = p.get("channel")
-            if not channel_id or channel_id not in known:
-                bad_refs += 1
-            else:
-                programme_counts[channel_id] = programme_counts.get(channel_id, 0) + 1
-            title = p.find("title")
-            if title is None or not (title.text or "").strip():
-                missing_titles += 1
-        if bad_refs:
-            raise ValueError(f"{bad_refs} programmes reference unknown/missing channels")
-        if missing_titles:
-            raise ValueError(f"{missing_titles} programmes have no title")
 
-        if args.require_magenta_sports and path.name == "DE-MAGENTA.xml.gz":
-            missing = [x for x in MAGENTA_REQUIRED if x not in known]
-            inactive = [x for x in MAGENTA_REQUIRED if programme_counts.get(x, 0) == 0]
-            if missing:
-                raise ValueError("missing required Magenta sport channels: " + ", ".join(missing))
-            if inactive:
-                raise ValueError("required Magenta sport channels without programmes: " + ", ".join(inactive))
-            print("OK Magenta sports: " + ", ".join(
-                f"{x}={programme_counts[x]}" for x in MAGENTA_REQUIRED
-            ))
-
-        print(f"OK {path.name}: channels={len(channels)} programmes={len(programmes)}")
-    except Exception as exc:
-        failed = True
-        print(f"FAIL {path}: {exc}", file=__import__("sys").stderr)
-
-if failed:
-    raise SystemExit(1)
+if __name__ == '__main__':
+    raise SystemExit(main())

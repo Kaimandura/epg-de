@@ -1,0 +1,77 @@
+name: Release regression tests
+on:
+  pull_request:
+  push:
+    branches: [main, codex/validated-provider-release]
+    paths: ["scripts/**", "config/**", "tests/**", ".github/workflows/**"]
+permissions:
+  contents: read
+  actions: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: python -m unittest discover -s tests -v
+  production-snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Reconcile and audit the proposed release from the pinned snapshot
+        run: python scripts/validate_release_snapshot.py --output build/snapshot
+      - uses: actions/upload-artifact@v4
+        with:
+          name: epg-test-de-${{ github.run_id }}-${{ github.run_attempt }}
+          path: build/snapshot/bundle-DE/
+          compression-level: 0
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        with:
+          name: epg-test-usa-${{ github.run_id }}-${{ github.run_attempt }}
+          path: build/snapshot/bundle-USA/
+          compression-level: 0
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: production-snapshot-evidence
+          path: |
+            build/snapshot/*.json
+            build/snapshot/DE/*.json
+            build/snapshot/DE/*.jsonl
+            build/snapshot/USA/*.json
+            build/snapshot/USA/*.jsonl
+          if-no-files-found: error
+  artifact-roundtrip:
+    if: github.event_name == 'push'
+    needs: [tests, production-snapshot]
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Download exact GitHub artifacts and exercise the Pages verifier
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/stage_release.py --snapshot-run ${{ github.run_id }} --output build/pages --workspace build/downloaded
+      - uses: actions/upload-artifact@v4
+        with:
+          name: verified-pages-snapshot
+          path: build/pages/
+          if-no-files-found: error
+          compression-level: 0
