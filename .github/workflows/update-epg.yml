@@ -180,13 +180,33 @@ jobs:
             build/publish/platforms/amazon.xml \
             build/publish/platforms/magenta.xml
 
+      - name: Quarantine invalid upstream records without changing valid metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/quarantine_invalid_programmes.py --source build/publish/de.xml --output build/validated-input-de/de.xml
+          for provider in samsung pluto amazon magenta; do
+            python scripts/quarantine_invalid_programmes.py --source "build/publish/platforms/$provider.xml" --output "build/validated-input-de/$provider.xml"
+          done
+
+      - name: Preserve original invalid upstream records
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: de-source-quarantine-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            build/validated-input-de/*.json
+            build/validated-input-de/*.jsonl
+          if-no-files-found: warn
+          retention-days: 90
+
       - name: Validate final XMLTV, critical channels and Last Known Good
         shell: bash
         run: |
           set -euo pipefail
           args=(
-            build/publish/de.xml
-            --gzip build/publish/de.xml.gz
+            build/validated-input-de/de.xml
+            --gzip build/validated-input-de/de.xml.gz
             --min-channels 25
             --min-programmes 100
             --require-display-names
@@ -235,7 +255,7 @@ jobs:
 
           python scripts/validate_epg.py --skip-pre-validation-cleanup "${args[@]}"
           python scripts/validate_channel_namespace.py \
-            build/publish/de.xml \
+            build/validated-input-de/de.xml \
             --forbid-id CrimeTime.us@SD
 
       - name: Validate platform XMLTV subsets
@@ -244,28 +264,28 @@ jobs:
           set -euo pipefail
 
           python scripts/validate_epg.py --skip-pre-validation-cleanup \
-            build/publish/platforms/samsung.xml \
-            --gzip build/publish/platforms/samsung.xml.gz \
+            build/validated-input-de/samsung.xml \
+            --gzip build/validated-input-de/samsung.xml.gz \
             --min-channels 20 \
             --min-programmes 1000 \
             --require-display-names
           python scripts/validate_channel_namespace.py \
-            build/publish/platforms/samsung.xml \
+            build/validated-input-de/samsung.xml \
             --require-prefix SamsungTVPlus.
 
           python scripts/validate_epg.py --skip-pre-validation-cleanup \
-            build/publish/platforms/pluto.xml \
-            --gzip build/publish/platforms/pluto.xml.gz \
+            build/validated-input-de/pluto.xml \
+            --gzip build/validated-input-de/pluto.xml.gz \
             --min-channels 50 \
             --min-programmes 1000 \
             --require-display-names
           python scripts/validate_channel_namespace.py \
-            build/publish/platforms/pluto.xml \
+            build/validated-input-de/pluto.xml \
             --require-prefix PlutoTV.
 
           magenta_args=(
-            build/publish/platforms/magenta.xml
-            --gzip build/publish/platforms/magenta.xml.gz
+            build/validated-input-de/magenta.xml
+            --gzip build/validated-input-de/magenta.xml.gz
             --min-channels 150
             --min-programmes 10000
             --require-display-names
@@ -303,8 +323,8 @@ jobs:
           python scripts/validate_epg.py --skip-pre-validation-cleanup "${magenta_args[@]}"
 
           amazon_args=(
-            build/publish/platforms/amazon.xml
-            --gzip build/publish/platforms/amazon.xml.gz
+            build/validated-input-de/amazon.xml
+            --gzip build/validated-input-de/amazon.xml.gz
             --min-channels 10
             --min-programmes 1500
             --require-display-names
@@ -331,7 +351,7 @@ jobs:
           fi
           python scripts/validate_epg.py --skip-pre-validation-cleanup "${amazon_args[@]}"
           python scripts/validate_channel_namespace.py \
-            build/publish/platforms/amazon.xml \
+            build/validated-input-de/amazon.xml \
             --require-prefix AmazonPrime.de.
 
       - name: Reconcile Germany ownership and canonical Last Known Good
@@ -339,8 +359,8 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p build/release-input-de
-          cp build/publish/de.xml.gz build/release-input-de/
-          cp build/publish/platforms/{samsung,pluto,amazon,magenta}.xml.gz build/release-input-de/
+          cp build/validated-input-de/de.xml.gz build/release-input-de/
+          cp build/validated-input-de/{samsung,pluto,amazon,magenta}.xml.gz build/release-input-de/
           python scripts/reconcile_release.py --region DE --source build/release-input-de --output build/reconciled-de --baseline epg
           test_args=()
           if [[ "$GITHUB_REF" != "refs/heads/main" ]]; then test_args=(--test-build); fi
