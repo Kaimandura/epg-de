@@ -27,7 +27,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: epg-de-update-v2
+  group: epg-de-update-v2-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:

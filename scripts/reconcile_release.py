@@ -32,14 +32,16 @@ def elements(path):
                 root.remove(node)
 
 
+def normalize(node):
+    node.tail = None
+    if node.text:
+        node.text = node.text.strip()
+    for child in node:
+        normalize(child)
+
+
 def merge_metadata(target, source):
     """Retain every distinct XML subtree. Never replace richer descriptions."""
-    def normalize(node):
-        node.tail = None
-        if node.text:
-            node.text = node.text.strip()
-        for child in node:
-            normalize(child)
     normalize(target)
     normalize(source)
     keys = {ET.tostring(child) for child in target}
@@ -91,11 +93,12 @@ def reconcile(paths, output, region, mapping=None):
             raise ValueError('\n'.join(fatal[:20]))
         channels.extend(rows)
     groups, evidence = identity_groups(channels, aliases)
-    plan, destinations, canonical = {}, {}, {}
+    plan, destinations, canonical, owners = {}, {}, {}, {}
     for number, group in enumerate(groups):
         winner, targets = choose(group, region, official)
         destinations[number] = targets
         canonical[number] = winner.id
+        owners[number] = (winner.file, winner.id)
         for c in group:
             plan[(c.file, c.id)] = number
     output.mkdir(parents=True)
@@ -110,57 +113,66 @@ def reconcile(paths, output, region, mapping=None):
     conflicts = []
     with (output / 'quarantine.jsonl').open('w', encoding='utf-8') as quarantine, (output / 'schedule-alternatives.jsonl').open('w', encoding='utf-8') as alternatives:
         ranked_paths = sorted(paths.items(), key=lambda item: {'DE-MAGENTA.xml.gz':0,'DE-PLUTO.xml.gz':1,'DE-MASTER.xml.gz':2,'DE-SAMSUNG.xml.gz':3,'DE-AMAZON.xml.gz':4}.get(item[0],10))
-        for label, path in ranked_paths:
-            for node in elements(path):
-                cid = node.get('id') if node.tag == 'channel' else node.get('channel')
-                identity = plan[(label, cid)]
-                if node.tag == 'channel':
-                    node.set('id', canonical[identity])
-                    if identity in channel_nodes:
-                        merge_metadata(channel_nodes[identity], node)
-                    else:
-                        channel_nodes[identity] = ET.fromstring(ET.tostring(node))
-                    continue
-                input_programmes += 1
-                original_xml = ET.tostring(node,encoding='unicode')
-                start = timestamp(node.get('start'))
-                stop = timestamp(node.get('stop')) if node.get('stop') else None
-                if stop is not None and stop <= start:
-                    quarantine.write(json.dumps({'file': label, 'reason': 'non-positive duration',
-                                                  'source_xml': original_xml}) + '\n')
-                    quarantined += 1
-                    continue
-                start_key = start.strftime('%Y%m%d%H%M%S +0000')
-                stop_key = stop.strftime('%Y%m%d%H%M%S +0000') if stop else ''
-                title = (node.findtext('title') or '').strip().casefold()
-                node.set('channel', canonical[identity])
-                node.set('start', start_key)
-                if stop:
-                    node.set('stop', stop_key)
-                key = (identity, start_key, stop_key)
-                origin = label + ':' + cid
-                prior = connection.execute('SELECT xml,origin,title FROM programmes WHERE identity=? AND start=? AND stop=?', key).fetchone()
-                if prior:
-                    merged += 1
-                    node = merge_metadata(ET.fromstring(prior[0]), node)
-                    origin, title = prior[1], prior[2]
+        def ordered_records():
+            # Establish each chosen owner's entire schedule before considering
+            # secondary aliases, including aliases in the same provider file.
+            for owner_pass in (True, False):
+                for label, path in ranked_paths:
+                    for node in elements(path):
+                        cid = node.get('id') if node.tag == 'channel' else node.get('channel')
+                        if ((label,cid) == owners[plan[(label,cid)]]) == owner_pass:
+                            yield label,node
+        for label, node in ordered_records():
+            normalize(node)
+            cid = node.get('id') if node.tag == 'channel' else node.get('channel')
+            identity = plan[(label, cid)]
+            if node.tag == 'channel':
+                node.set('id', canonical[identity])
+                if identity in channel_nodes:
+                    merge_metadata(channel_nodes[identity], node)
                 else:
-                    # An authoritative owner keeps its own timed schedule. A
-                    # secondary copy can supplement gaps, not change an occupied
-                    # time slot. Preserve the complete alternative record and
-                    # its chosen source in the migration evidence.
-                    other = connection.execute('SELECT start,stop,title,origin FROM programmes WHERE identity=? AND start<? AND stop>? AND origin!=?', (identity, stop_key or start_key, start_key, origin)).fetchall()
-                    for existing in other:
-                        conflicts.append({'id': canonical[identity], 'new': [label,cid,start_key,stop_key,title], 'existing': list(existing)})
-                    if other:
-                        alternatives_count += 1
-                        alternatives.write(json.dumps({'canonical_id':canonical[identity], 'source_file':label,'source_id':cid,
-                                                       'reason':'owner schedule has priority for overlapping interval',
-                                                       'retained_intervals':other, 'source_xml':original_xml},ensure_ascii=False)+'\n')
-                        continue
-                payload = ET.tostring(node, encoding='utf-8')
-                connection.execute('INSERT OR REPLACE INTO programmes VALUES(?,?,?,?,?,?)', (*key,title,payload,origin))
-            connection.commit()
+                    channel_nodes[identity] = ET.fromstring(ET.tostring(node))
+                continue
+            input_programmes += 1
+            original_xml = ET.tostring(node,encoding='unicode')
+            start = timestamp(node.get('start'))
+            stop = timestamp(node.get('stop')) if node.get('stop') else None
+            if stop is not None and stop <= start:
+                quarantine.write(json.dumps({'file': label, 'reason': 'non-positive duration',
+                                              'source_xml': original_xml}) + '\n')
+                quarantined += 1
+                continue
+            start_key = start.strftime('%Y%m%d%H%M%S +0000')
+            stop_key = stop.strftime('%Y%m%d%H%M%S +0000') if stop else ''
+            title = (node.findtext('title') or '').strip().casefold()
+            node.set('channel', canonical[identity])
+            node.set('start', start_key)
+            if stop:
+                node.set('stop', stop_key)
+            key = (identity, start_key, stop_key)
+            origin = label + ':' + cid
+            prior = connection.execute('SELECT xml,origin,title FROM programmes WHERE identity=? AND start=? AND stop=?', key).fetchone()
+            if prior:
+                merged += 1
+                node = merge_metadata(ET.fromstring(prior[0]), node)
+                origin, title = prior[1], prior[2]
+            else:
+                # An authoritative owner keeps its own timed schedule. A
+                # secondary copy can supplement gaps, not change an occupied
+                # time slot. Preserve the complete alternative record and
+                # its chosen source in the migration evidence.
+                other = connection.execute('SELECT start,stop,title,origin FROM programmes WHERE identity=? AND start<? AND stop>? AND origin!=?', (identity, stop_key or start_key, start_key, origin)).fetchall()
+                for existing in other:
+                    conflicts.append({'id': canonical[identity], 'new': [label,cid,start_key,stop_key,title], 'existing': list(existing)})
+                if other:
+                    alternatives_count += 1
+                    alternatives.write(json.dumps({'canonical_id':canonical[identity], 'source_file':label,'source_id':cid,
+                                                   'reason':'owner schedule has priority for overlapping interval',
+                                                   'retained_intervals':other, 'source_xml':original_xml},ensure_ascii=False)+'\n')
+                    continue
+            payload = ET.tostring(node, encoding='utf-8')
+            connection.execute('INSERT OR REPLACE INTO programmes VALUES(?,?,?,?,?,?)', (*key,title,payload,origin))
+        connection.commit()
     kept = connection.execute('SELECT COUNT(*) FROM programmes').fetchone()[0]
     if input_programmes != kept + merged + quarantined + alternatives_count:
         raise ValueError('programme conservation accounting failed')

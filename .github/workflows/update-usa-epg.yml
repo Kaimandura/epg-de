@@ -17,7 +17,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: epg-usa-update-v1
+  group: epg-usa-update-${{ github.ref }}-v1
   cancel-in-progress: true
 
 jobs:

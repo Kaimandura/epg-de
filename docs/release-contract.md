@@ -31,15 +31,27 @@ real channels. USA's four existing categories remain disjoint.
 
 Evidence consists of identical IDs, explicit Amazon source mappings, producer
 USA playlist mappings, or normalized names together with at least three matching
-UTC start/stop/title records covering 90% of the shorter schedule. Names alone
+UTC start/stop/title records with at least two distinct titles, covering 90% of the shorter schedule. Names alone
 and timing without titles are insufficient. Explicit regional/language suffixes
 are protected from name-based merging, including transitive generic-ID bridges.
 HD/SD is not a different schedule identity. Provider namespaces are checked.
 An optional MASTER copy must carry the same complete programme record set.
 
-The audit is read-only. Conflicts stop the producer before promotion. There is no
-new automatic cleanup that drops valid programmes. Existing cleanup routines
-have not yet been replaced by a reviewed identity migration.
+The audit is read-only. Reconciliation runs separately in a new staging directory.
+The approved precedence is Magenta for linear channels, Pluto for Pluto originals,
+then the original native provider. Amazon is optional and omitted when it has no
+independent channels. USA uses one canonical ID per identity, preferring an exact
+official playlist ID. `canonical_xmltv_id` retains the playlist-to-output mapping.
+
+The owner supplies the schedule. Equivalent intervals merge all distinct metadata;
+secondary sources can supplement gaps. Conflicting secondary intervals are stored
+in full in `schedule-alternatives.jsonl`. Invalid non-positive intervals are stored
+in `quarantine.jsonl`. Every input record is accounted for as retained, merged,
+quarantined or preserved as an alternative. The original inputs are never edited.
+`migration.json` publishes ownership mappings, counts and input/output/evidence
+hashes; the separate diagnostic artifact retains full alternative records for 90
+days. Required feeds cannot disappear. Raw and preceding LKG data are reconciled
+under the same policy before regression thresholds are applied.
 
 ## Producer and Pages boundaries
 
@@ -69,24 +81,17 @@ deployment reselects both producers; concurrency does not cancel a running atomi
 deployment. Artifact retention is 90 days; expiration is never permission to fall
 back to repository output.
 
-## Outstanding migration decisions / release blockers
+## Validation and rollout
 
-* Amazon currently copies linear channels also present in Magenta/MASTER, plus
-  Samsung/Pluto content. Assign one owner before adjusting provider minimums.
-  Preferring original providers can leave Amazon without independent content.
-* USA exact playlist aliases currently duplicate source identities. Choose and
-  document canonical public IDs with a migration mapping; retaining all copied
-  aliases contradicts the one-owner rule.
-* Preserve/merge complete valid programme records when reconciling the 81
-  provider/master differences. Do not discard the shorter or different schedule
-  based only on a similarity threshold.
-* Rebuild USA with the updated normalizer: invalid explicit stop dates and
-  non-positive durations are rejected and their original XML records retained
-  in a separate diagnostic artifact. Optional XMLTV stop times remain optional.
-  The existing committed snapshot still contains the 201 invalid records.
-* Run both real producers, validate their artifacts and verify deployed public
-  bytes against `release.json`. Unit tests are not that production proof.
+Branch producer runs perform the full live-source build and LKG gates but cannot
+publish to main. Their artifacts carry `test_only: true`; production Pages rejects
+them. Branch and main producer concurrency groups are separate. Snapshot CI tests
+the pinned committed source data, its conservation accounting, the complete USA
+audit, and an actual upload/download through the same Pages verifier. Snapshot
+verification does not substitute for both successful live-source producer runs.
 
-The PR is intentionally draft and its production-snapshot check must remain red
-until these data-contract issues have been resolved. Do not merge this migration
-as a finished release or bypass its gates.
+After deployment, `verify_deployed_release.py` compares the public manifest and
+all product files byte-for-byte to the uploaded tree and checks retired external
+URLs (and empty Amazon) return 404. The verification result is retained separately.
+The PR stays draft until the producer and artifact gates pass. Completion also
+requires successful main producer runs and public deployment verification.

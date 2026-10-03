@@ -54,3 +54,13 @@ jobs:
       - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify public release bytes and retired URLs
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python scripts/verify_deployed_release.py --source build/pages --url "$PAGE_URL" --report build/public-verification.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-release-verification-${{ github.run_id }}
+          path: build/public-verification.json
+          if-no-files-found: error
+          retention-days: 90
