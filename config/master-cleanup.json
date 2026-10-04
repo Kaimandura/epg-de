@@ -19,7 +19,7 @@
   "icon_overrides": {
     "CrimeTime.de@SD": "https://astra.de/sites/default/files/2023-07/astra_23_website_channel-factory_logo_crime-time_color_800x640px.png"
   },
-  "deduplicate_exact_schedules": true,
+  "deduplicate_exact_schedules": false,
   "dedupe_preserve_ids": [
     "Silverline.de",
     "SerienPlus.de@HD",

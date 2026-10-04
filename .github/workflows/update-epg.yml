@@ -17,6 +17,7 @@ on:
   push:
     branches:
       - main
+      - codex/validated-provider-release
     paths:
       - ".github/workflows/update-epg.yml"
       - "scripts/**"
@@ -26,11 +27,12 @@ permissions:
   contents: write
 
 concurrency:
-  group: epg-de-update-v2
+  group: epg-de-update-v2-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   build:
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/codex/validated-provider-release'
     runs-on: ubuntu-latest
     timeout-minutes: 300
 
@@ -166,13 +168,45 @@ jobs:
             --report build/publish/amazon-coverage.csv \
             --platform-report build/publish/platform-coverage.csv
 
+      - name: Enrich logos inside the Germany producer transaction
+        run: |
+          python scripts/enrich_epg_logos.py \
+            --channels-csv upstream/database/data/channels.csv \
+            --logos-csv upstream/database/data/logos.csv \
+            --report build/publish/logo-coverage.csv \
+            build/publish/de.xml \
+            build/publish/platforms/samsung.xml \
+            build/publish/platforms/pluto.xml \
+            build/publish/platforms/amazon.xml \
+            build/publish/platforms/magenta.xml
+
+      - name: Quarantine invalid upstream records without changing valid metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/quarantine_invalid_programmes.py --source build/publish/de.xml --output build/validated-input-de/de.xml
+          for provider in samsung pluto amazon magenta; do
+            python scripts/quarantine_invalid_programmes.py --source "build/publish/platforms/$provider.xml" --output "build/validated-input-de/$provider.xml"
+          done
+
+      - name: Preserve original invalid upstream records
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: de-source-quarantine-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            build/validated-input-de/*.json
+            build/validated-input-de/*.jsonl
+          if-no-files-found: warn
+          retention-days: 90
+
       - name: Validate final XMLTV, critical channels and Last Known Good
         shell: bash
         run: |
           set -euo pipefail
           args=(
-            build/publish/de.xml
-            --gzip build/publish/de.xml.gz
+            build/validated-input-de/de.xml
+            --gzip build/validated-input-de/de.xml.gz
             --min-channels 25
             --min-programmes 100
             --require-display-names
@@ -219,9 +253,9 @@ jobs:
             )
           fi
 
-          python scripts/validate_epg.py "${args[@]}"
+          python scripts/validate_epg.py --skip-pre-validation-cleanup "${args[@]}"
           python scripts/validate_channel_namespace.py \
-            build/publish/de.xml \
+            build/validated-input-de/de.xml \
             --forbid-id CrimeTime.us@SD
 
       - name: Validate platform XMLTV subsets
@@ -229,29 +263,29 @@ jobs:
         run: |
           set -euo pipefail
 
-          python scripts/validate_epg.py \
-            build/publish/platforms/samsung.xml \
-            --gzip build/publish/platforms/samsung.xml.gz \
+          python scripts/validate_epg.py --skip-pre-validation-cleanup \
+            build/validated-input-de/samsung.xml \
+            --gzip build/validated-input-de/samsung.xml.gz \
             --min-channels 20 \
             --min-programmes 1000 \
             --require-display-names
           python scripts/validate_channel_namespace.py \
-            build/publish/platforms/samsung.xml \
+            build/validated-input-de/samsung.xml \
             --require-prefix SamsungTVPlus.
 
-          python scripts/validate_epg.py \
-            build/publish/platforms/pluto.xml \
-            --gzip build/publish/platforms/pluto.xml.gz \
+          python scripts/validate_epg.py --skip-pre-validation-cleanup \
+            build/validated-input-de/pluto.xml \
+            --gzip build/validated-input-de/pluto.xml.gz \
             --min-channels 50 \
             --min-programmes 1000 \
             --require-display-names
           python scripts/validate_channel_namespace.py \
-            build/publish/platforms/pluto.xml \
+            build/validated-input-de/pluto.xml \
             --require-prefix PlutoTV.
 
           magenta_args=(
-            build/publish/platforms/magenta.xml
-            --gzip build/publish/platforms/magenta.xml.gz
+            build/validated-input-de/magenta.xml
+            --gzip build/validated-input-de/magenta.xml.gz
             --min-channels 150
             --min-programmes 10000
             --require-display-names
@@ -286,11 +320,11 @@ jobs:
               --min-baseline-active-channel-ratio 0.70
             )
           fi
-          python scripts/validate_epg.py "${magenta_args[@]}"
+          python scripts/validate_epg.py --skip-pre-validation-cleanup "${magenta_args[@]}"
 
           amazon_args=(
-            build/publish/platforms/amazon.xml
-            --gzip build/publish/platforms/amazon.xml.gz
+            build/validated-input-de/amazon.xml
+            --gzip build/validated-input-de/amazon.xml.gz
             --min-channels 10
             --min-programmes 1500
             --require-display-names
@@ -315,22 +349,52 @@ jobs:
               --min-baseline-active-channel-ratio 0.70
             )
           fi
-          python scripts/validate_epg.py "${amazon_args[@]}"
+          python scripts/validate_epg.py --skip-pre-validation-cleanup "${amazon_args[@]}"
           python scripts/validate_channel_namespace.py \
-            build/publish/platforms/amazon.xml \
+            build/validated-input-de/amazon.xml \
             --require-prefix AmazonPrime.de.
+
+      - name: Reconcile Germany ownership and canonical Last Known Good
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build/release-input-de
+          cp build/validated-input-de/de.xml.gz build/release-input-de/
+          cp build/validated-input-de/{samsung,pluto,amazon,magenta}.xml.gz build/release-input-de/
+          python scripts/reconcile_release.py --region DE --source build/release-input-de --output build/reconciled-de --baseline epg
+          test_args=()
+          if [[ "$GITHUB_REF" != "refs/heads/main" ]]; then test_args=(--test-build); fi
+          python scripts/release_bundle.py "${test_args[@]}" --region DE --source build/reconciled-de --output build/release-de
+
+      - name: Preserve Germany reconciliation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: de-reconciliation-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            build/reconciled-de/*.json
+            build/reconciled-de/*.jsonl
+          if-no-files-found: warn
+          retention-days: 90
+
+      - name: Upload immutable Germany producer artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: epg-de-${{ github.run_id }}-${{ github.run_attempt }}
+          path: build/release-de/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 90
 
       - name: Promote validated build (Last Known Good)
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p epg reports
+          rm -f epg/amazon.xml.gz
+          cp build/reconciled-de/*.xml.gz epg/
+          cp build/reconciled-de/reconciliation.json reports/de-reconciliation.json
           rm -f epg/de.xml epg/samsung.xml epg/pluto.xml epg/amazon.xml epg/magenta.xml
-          cp build/publish/de.xml.gz epg/de.xml.gz
-          cp build/publish/platforms/samsung.xml.gz epg/samsung.xml.gz
-          cp build/publish/platforms/pluto.xml.gz epg/pluto.xml.gz
-          cp build/publish/platforms/amazon.xml.gz epg/amazon.xml.gz
-          cp build/publish/platforms/magenta.xml.gz epg/magenta.xml.gz
           cp build/publish/coverage.csv reports/coverage.csv
           cp build/publish/platform-coverage.csv reports/platform-coverage.csv
           cp build/publish/amazon-coverage.csv reports/amazon-coverage.csv
@@ -338,6 +402,7 @@ jobs:
           cp build/unmapped-de-channels.csv reports/unmapped-de-channels.csv
 
       - name: Publish generated files
+        if: github.ref == 'refs/heads/main'
         shell: bash
         env:
           START_SHA: ${{ github.sha }}
@@ -355,12 +420,13 @@ jobs:
           cp epg/de.xml.gz "$publish_tmp/de.xml.gz"
           cp epg/samsung.xml.gz "$publish_tmp/samsung.xml.gz"
           cp epg/pluto.xml.gz "$publish_tmp/pluto.xml.gz"
-          cp epg/amazon.xml.gz "$publish_tmp/amazon.xml.gz"
+          if [[ -f epg/amazon.xml.gz ]]; then cp epg/amazon.xml.gz "$publish_tmp/amazon.xml.gz"; fi
           cp epg/magenta.xml.gz "$publish_tmp/magenta.xml.gz"
           cp reports/coverage.csv "$publish_tmp/coverage.csv"
           cp reports/platform-coverage.csv "$publish_tmp/platform-coverage.csv"
           cp reports/amazon-coverage.csv "$publish_tmp/amazon-coverage.csv"
           cp reports/master-cleanup.csv "$publish_tmp/master-cleanup.csv"
+          cp reports/de-reconciliation.json "$publish_tmp/de-reconciliation.json"
           cp reports/unmapped-de-channels.csv "$publish_tmp/unmapped-de-channels.csv"
 
           for file in \
@@ -375,6 +441,7 @@ jobs:
             "$publish_tmp/amazon-coverage.csv" \
             "$publish_tmp/master-cleanup.csv" \
             "$publish_tmp/unmapped-de-channels.csv"; do
+            if [[ "$file" == "$publish_tmp/amazon.xml.gz" && ! -f "$file" ]]; then continue; fi
             size="$(stat -c%s "$file")"
             if (( size >= 100 * 1024 * 1024 )); then
               echo "Refusing publication: $file is ${size} bytes and exceeds GitHub's 100 MiB limit."
@@ -390,7 +457,7 @@ jobs:
             if [[ "$remote_sha" != "$START_SHA" ]]; then
               pipeline_changes="$(
                 git diff --name-only "$START_SHA" "$remote_sha" -- \
-                  .github/workflows/update-epg.yml scripts config || true
+                  .github/workflows/update-epg.yml scripts config
               )"
               if [[ -n "$pipeline_changes" ]]; then
                 echo "A newer pipeline/config revision is already on main:"
@@ -407,26 +474,17 @@ jobs:
             cp "$publish_tmp/de.xml.gz" epg/de.xml.gz
             cp "$publish_tmp/samsung.xml.gz" epg/samsung.xml.gz
             cp "$publish_tmp/pluto.xml.gz" epg/pluto.xml.gz
-            cp "$publish_tmp/amazon.xml.gz" epg/amazon.xml.gz
+            rm -f epg/amazon.xml.gz
+            if [[ -f "$publish_tmp/amazon.xml.gz" ]]; then cp "$publish_tmp/amazon.xml.gz" epg/amazon.xml.gz; fi
             cp "$publish_tmp/magenta.xml.gz" epg/magenta.xml.gz
             cp "$publish_tmp/coverage.csv" reports/coverage.csv
             cp "$publish_tmp/platform-coverage.csv" reports/platform-coverage.csv
             cp "$publish_tmp/amazon-coverage.csv" reports/amazon-coverage.csv
             cp "$publish_tmp/master-cleanup.csv" reports/master-cleanup.csv
+            cp "$publish_tmp/de-reconciliation.json" reports/de-reconciliation.json
             cp "$publish_tmp/unmapped-de-channels.csv" reports/unmapped-de-channels.csv
 
-            git add -A -- \
-              data/de-channels.xml \
-              epg/de.xml.gz \
-              epg/samsung.xml.gz \
-              epg/pluto.xml.gz \
-              epg/amazon.xml.gz \
-              epg/magenta.xml.gz \
-              reports/coverage.csv \
-              reports/platform-coverage.csv \
-              reports/amazon-coverage.csv \
-              reports/master-cleanup.csv \
-              reports/unmapped-de-channels.csv
+            git add -A -- epg reports data/de-channels.xml
 
             if git diff --cached --quiet; then
               echo "No generated changes."

@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import csv
 import gzip
+import json
 import re
 import shutil
 import tempfile
@@ -151,8 +152,9 @@ def clean_programme(source: ET.Element) -> ET.Element | None:
     stop_raw = text(source.attrib.get("stop"))
     if stop_raw:
         stop = canonical_time(stop_raw)
-        if stop:
-            attrs["stop"] = stop
+        if stop is None or parse_time(stop) <= parse_time(start):
+            return None
+        attrs["stop"] = stop
 
     target = ET.Element("programme", attrs)
     has_title = False
@@ -234,7 +236,9 @@ def normalize(path: Path) -> tuple[int, int, int]:
     programmes = 0
     rejected = 0
 
-    with tempfile.NamedTemporaryFile(
+    # Retain rejected source records for diagnosis; never invent a duration.
+    rejection_path = path.with_suffix(path.suffix + ".rejected.jsonl")
+    with rejection_path.open("w", encoding="utf-8") as rejection_log, tempfile.NamedTemporaryFile(
         mode="w",
         encoding="utf-8",
         newline="\n",
@@ -262,6 +266,9 @@ def normalize(path: Path) -> tuple[int, int, int]:
                     programme = clean_programme(element)
                     if programme is None:
                         rejected += 1
+                        rejection_log.write(json.dumps({"channel": element.get("channel"),
+                                                       "start": element.get("start"), "stop": element.get("stop"),
+                                                       "source_xml": xml(element)}, ensure_ascii=False) + "\n")
                     else:
                         channel_id = programme.attrib["channel"]
                         if channel_id not in channel_ids:

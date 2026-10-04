@@ -5,140 +5,62 @@ on:
   schedule:
     - cron: "47 6 * * *"
   workflow_run:
-    workflows:
-      - Update Germany EPG
-      - Update USA EPG
-      - Enrich Germany EPG Logos
-    types:
-      - completed
-
-# Fail-closed publication policy:
-# New guides reach TiviMate only after their producer workflow completed successfully.
-# Direct pushes of epg/*.xml.gz never publish unverified output.
+    workflows: [Update Germany EPG, Update USA EPG]
+    types: [completed]
 
 permissions:
   contents: read
+  actions: read
   pages: write
   id-token: write
 
+# Complete the atomic deployment. Each queued run selects both producers afresh.
 concurrency:
   group: epg-pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (github.event_name != 'workflow_run' ||
+       (github.event.workflow_run.conclusion == 'success' &&
+        github.event.workflow_run.head_branch == 'main' &&
+        github.event.workflow_run.head_repository.full_name == github.repository))
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
-      - name: Checkout latest published guides
+      - name: Checkout verifier at this workflow revision
         uses: actions/checkout@v7
         with:
-          ref: main
-
-      - name: Stage short descriptive addresses
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p build/pages
-          touch build/pages/.nojekyll
-
-          cp epg/de.xml.gz build/pages/DE-MASTER.xml.gz
-          cp epg/samsung.xml.gz build/pages/DE-SAMSUNG.xml.gz
-          cp epg/pluto.xml.gz build/pages/DE-PLUTO.xml.gz
-          cp epg/amazon.xml.gz build/pages/DE-AMAZON.xml.gz
-          cp epg/magenta.xml.gz build/pages/DE-MAGENTA.xml.gz
-
-          cp epg/usa.xml.gz build/pages/USA-MASTER.xml.gz
-          cp epg/usa-sports.xml.gz build/pages/USA-SPORTS.xml.gz
-          cp epg/usa-local.xml.gz build/pages/USA-LOCAL.xml.gz
-          cp epg/usa-fast.xml.gz build/pages/USA-FAST.xml.gz
-
-      - name: Final audit of published EPGs
-        shell: bash
-        run: |
-          set -euo pipefail
-          python scripts/audit_published_epgs.py --require-magenta-sports \
-            build/pages/DE-MASTER.xml.gz \
-            build/pages/DE-SAMSUNG.xml.gz \
-            build/pages/DE-PLUTO.xml.gz \
-            build/pages/DE-AMAZON.xml.gz \
-            build/pages/DE-MAGENTA.xml.gz \
-            build/pages/USA-MASTER.xml.gz \
-            build/pages/USA-SPORTS.xml.gz \
-            build/pages/USA-LOCAL.xml.gz \
-            build/pages/USA-FAST.xml.gz
-
-          cat > build/pages/epg-urls.txt <<'EOF'
-          https://kaimandura.github.io/epg-de/DE-MASTER.xml.gz
-          https://kaimandura.github.io/epg-de/DE-SAMSUNG.xml.gz
-          https://kaimandura.github.io/epg-de/DE-PLUTO.xml.gz
-          https://kaimandura.github.io/epg-de/DE-AMAZON.xml.gz
-          https://kaimandura.github.io/epg-de/DE-MAGENTA.xml.gz
-          https://kaimandura.github.io/epg-de/USA-MASTER.xml.gz
-          https://kaimandura.github.io/epg-de/USA-SPORTS.xml.gz
-          https://kaimandura.github.io/epg-de/USA-LOCAL.xml.gz
-          https://kaimandura.github.io/epg-de/USA-FAST.xml.gz
-          EOF
-
-      - name: Stage source-specific USA guides
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          fetch_guide() {
-            local url="$1"
-            local output="$2"
-            echo "Fetching ${output} from ${url}"
-            curl --retry 3 --retry-delay 2 --connect-timeout 15 --max-time 240 -fsSL \
-              "$url" -o "build/pages/${output}"
-            test -s "build/pages/${output}"
-            gzip -t "build/pages/${output}"
-          }
-
-          fetch_guide \
-            "https://iptv-epg.org/files/epg-us.xml.gz" \
-            "USA-SOURCE-IPTV-EPG.xml.gz"
-          fetch_guide \
-            "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz" \
-            "USA-SOURCE-EPGSHARE-US2.xml.gz"
-          fetch_guide \
-            "https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz" \
-            "USA-SOURCE-EPGSHARE-LOCALS.xml.gz"
-          fetch_guide \
-            "https://epgshare01.online/epgshare01/epg_ripper_US_SPORTS1.xml.gz" \
-            "USA-SOURCE-EPGSHARE-SPORTS.xml.gz"
-
-          cat > build/pages/USA-SOURCES.txt <<'EOF'
-          Kaimandura/epg-de USA source-specific guides
-
-          IPTV-EPG:
-          USA-SOURCE-IPTV-EPG.xml.gz
-
-          EPGshare US2:
-          USA-SOURCE-EPGSHARE-US2.xml.gz
-
-          EPGshare US Locals:
-          USA-SOURCE-EPGSHARE-LOCALS.xml.gz
-
-          EPGshare US Sports:
-          USA-SOURCE-EPGSHARE-SPORTS.xml.gz
-
-          The existing USA-MASTER, USA-FAST, USA-LOCAL and USA-SPORTS files remain
-          Kaimandura-generated/validated outputs. The USA-SOURCE-* files preserve the
-          individual upstream XMLTV source identity for separate use in TiviMate.
-          EOF
-
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Verify producer provenance, hashes and combined release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/stage_release.py --output build/pages --workspace build/producer-artifacts
       - name: Configure Pages
         uses: actions/configure-pages@v5
-
-      - name: Upload Pages artifact
+      - name: Upload exact audited Pages tree
         uses: actions/upload-pages-artifact@v4
         with:
           path: build/pages
-
       - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify public release bytes and retired URLs
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python scripts/verify_deployed_release.py --source build/pages --url "$PAGE_URL" --report build/public-verification.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-release-verification-${{ github.run_id }}
+          path: build/public-verification.json
+          if-no-files-found: error
+          retention-days: 90
