@@ -36,8 +36,19 @@ placeholder titles; they are not automatic deletion orders.
   not programme art. Legacy USA .pluto joins additionally require both a matching
   ID stem and one unique US provider name.
 - GET every proposed new asset. Reject HTML, invalid URLs, insecure redirects,
-  unsupported images and failed downloads. Preserve final URL and content hash.
+  unsupported images, empty SVGs, one-pixel PNGs and failed downloads. Preserve final URL and content hash.
   Leave unknown/ambiguous logos missing rather than using a placeholder.
+- Correct 23 exact Magenta source identities using current contentId/name pairs
+  and a unique active German catalog identity: DF1, Motorvision+ and renamed
+  or renumbered Sky Sport/Bundesliga feeds. Other candidates, including the real
+  Austrian ServusTV source, remain in their original source groups.
+- Verify and, where necessary, refresh existing native-provider logos only with
+  both the exact native ID and the matching current provider name. Preserve old
+  icon URLs in the correction evidence. This corrects stale branding such as
+  Sony Channel artwork for the source-confirmed AXN White identity.
+- Preserve the country component of catalog IDs during identity reconciliation.
+  Generic HD/SD suffixes cannot bridge German, Austrian and Swiss native feeds.
+  Country-equivalent copies can still merge with conservation evidence.
 - Stream large XMLTV inputs. Check unchanged sender IDs and the complete ordered
   programme XML digest around logo-only enrichment and gzip output.
 - Refresh native provider schedules in the existing platform exporter. Validate
@@ -66,6 +77,15 @@ findings must be resolved using concrete source evidence before a 100% claim.
 After merge, both matching main producer artifacts and public byte verification
 are still required. Existing Pages stays LKG during incompatible or failed builds.
 No main EPG bytes are directly rewritten by this branch.
+
+Regression coverage comprises 53 tests, including native rebranding, unsuccessful
+asset replacement, source-specific Sky renumbering, preservation of Austrian
+ServusTV and repeated reconciliation of DE/AT/CH variants. On the first branch
+commit, both regression runs, the pinned snapshot and the Actions artifact
+roundtrip pass; the USA live producer passes with 12984 sender entries and
+632724 programmes. Its four final files still have 279 missing logo entries.
+These earlier-head results do not validate subsequent changes: the final branch
+head requires new producer and regression runs before integration.
 
 ## Reproduce
 

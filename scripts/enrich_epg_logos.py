@@ -194,7 +194,7 @@ def verify_logo(url: str) -> dict:
         fmt = ""
         if data.startswith(b"\x89PNG\r\n\x1a\n") and len(data) >= 33:
             width, height = struct.unpack(">II", data[16:24])
-            if not width or not height or data[12:16] != b"IHDR" or b"IEND" not in data[-32:]:
+            if width <= 1 or height <= 1 or data[12:16] != b"IHDR" or b"IEND" not in data[-32:]:
                 raise ValueError("invalid/incomplete PNG")
             fmt = "PNG"
         elif data.startswith(b"\xff\xd8\xff") and data.rstrip().endswith(b"\xff\xd9"):
@@ -208,7 +208,9 @@ def verify_logo(url: str) -> dict:
         else:
             # SVG is a logo asset only, never rendered or executed here.
             node = ET.fromstring(data)
-            if node.tag.rsplit("}", 1)[-1] == "svg":
+            shapes = {"path", "polyline", "polygon", "circle", "ellipse", "rect", "line", "text", "image", "use"}
+            if (node.tag.rsplit("}", 1)[-1] == "svg"
+                    and any(child.tag.rsplit("}", 1)[-1] in shapes for child in node.iter())):
                 fmt = "SVG"
         if not fmt or content_type in {"text/html", "application/json"}:
             raise ValueError("response is not a supported image")
@@ -314,7 +316,8 @@ def magenta_logo_records(records: list[dict], definitions: Path) -> dict[str, Lo
         cid = node.get("xmltv_id")
         if cid and valid_logo_url(original):
             result[cid] = LogoCandidate(cid, "", original, 120, 48, "PNG",
-                                       "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#" + str(row["contentId"]))
+                                       "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#" + str(row["contentId"]),
+                                       (row.get("name", ""),))
     return result
 
 
@@ -402,6 +405,8 @@ def enrich_file(
     before = 0
     exact_added = 0
     name_added = 0
+    replaced = 0
+    existing_verified = 0
     assignments = {}
     for channel in channels:
         existing = [
@@ -409,12 +414,16 @@ def enrich_file(
             for node in channel.findall("icon")
             if node.attrib.get("src", "").strip()
         ]
-        if existing:
-            before += 1
-            continue
-
         xmltv_id = (channel.attrib.get("id") or "").strip()
         candidate = provider_logos.get(xmltv_id)
+        if existing:
+            before += 1
+            # Rebranding corrections require the exact native ID AND a
+            # current provider name. A catalog name or shared logo URL alone
+            # never authorizes replacing an existing sender's artwork.
+            provider_names = {normalized_name(n) for n in candidate.names} if candidate else set()
+            if not provider_names.intersection(normalized_name(n) for n in display_names(channel)):
+                continue
         method = "native-provider-id"
         matched_id = xmltv_id
         if not candidate:
@@ -433,15 +442,25 @@ def enrich_file(
                 method = "unique-database-name"
         if logo_url:
             assignments[xmltv_id] = {"url": logo_url, "method": method, "matched_id": matched_id,
-                                     "source": candidate.source if candidate else "iptv-org/database/data/logos.csv"}
+                                     "source": candidate.source if candidate else "iptv-org/database/data/logos.csv",
+                                     "action": ("verify-existing" if existing == [logo_url] else
+                                                "replace-native-provider-logo") if existing else "add",
+                                     "previous_icons": existing}
     pending = sorted({row["url"] for row in assignments.values()} - verification.keys())
     with ThreadPoolExecutor(max_workers=8) as pool:
         verification.update(zip(pending, pool.map(probe, pending)))
-    additions = {}
+    additions, replacements = {}, {}
     for cid, row in assignments.items():
         transport = verification[row["url"]]
         evidence_rows.append({"file": path.name, "xmltv_id": cid, **row, "transport": transport})
         if transport.get("status") != "passed":
+            continue
+        if row["action"] == "verify-existing":
+            existing_verified += 1
+            continue
+        if row["action"] == "replace-native-provider-logo":
+            replacements[cid] = row["url"]
+            replaced += 1
             continue
         additions[cid] = row["url"]
         if row["method"] in {"unique-database-name", "unique-native-provider-name-and-id-stem"}:
@@ -451,7 +470,7 @@ def enrich_file(
     after = before + len(additions)
     missing = len(channels) - after
     coverage = round((after / len(channels) * 100.0), 2) if channels else 0.0
-    if additions:
+    if additions or replacements:
         temporary = path.with_name(path.name + ".logos.tmp")
         with path.open("rb") as stream:
             _, root = next(ET.iterparse(stream, events=("start",)))
@@ -459,8 +478,13 @@ def enrich_file(
         with temporary.open("wb") as target:
             target.write(b'<?xml version="1.0" encoding="utf-8"?>\n' + opening + b"\n")
             for node in read_nodes(path):
-                if node.tag == "channel" and node.get("id") in additions:
-                    node.append(ET.Element("icon", {"src": additions[node.get("id")]}))
+                if node.tag == "channel":
+                    cid = node.get("id")
+                    if cid in replacements:
+                        for old in node.findall("icon"):
+                            node.remove(old)
+                    if cid in additions or cid in replacements:
+                        node.append(ET.Element("icon", {"src": (additions | replacements)[cid]}))
                 node.tail = None
                 target.write(ET.tostring(node, encoding="utf-8") + b"\n")
             target.write(b"</tv>\n")
@@ -481,6 +505,8 @@ def enrich_file(
         "with_logo_before": before,
         "logos_added_exact": exact_added,
         "logos_added_unique_name": name_added,
+        "logos_replaced_native": replaced,
+        "existing_native_logos_verified": existing_verified,
         "with_logo_after": after,
         "missing_logo_after": missing,
         "coverage_percent": coverage,
@@ -537,6 +563,8 @@ def main() -> int:
         "with_logo_before",
         "logos_added_exact",
         "logos_added_unique_name",
+        "logos_replaced_native",
+        "existing_native_logos_verified",
         "with_logo_after",
         "missing_logo_after",
         "coverage_percent",
@@ -548,7 +576,10 @@ def main() -> int:
 
     evidence_path = args.evidence_report or args.report.with_suffix(".json")
     evidence_path.parent.mkdir(parents=True, exist_ok=True)
-    evidence_path.write_text(json.dumps({"provider_sources": source_evidence, "additions": evidence,
+    evidence_path.write_text(json.dumps({"provider_sources": source_evidence,
+                                        "additions": [r for r in evidence if r["action"] == "add"],
+                                        "native_corrections": [r for r in evidence if r["action"] == "replace-native-provider-logo"],
+                                        "existing_native_verifications": [r for r in evidence if r["action"] == "verify-existing"],
                                         "image_probes": verification,
                                         "coverage": rows, "existing_logos_reverified": False},
                                        ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

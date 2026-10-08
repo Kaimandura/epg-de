@@ -81,7 +81,11 @@ IDs (including US callsigns) are otherwise left intact.
     station = re.match(r'^([KW][A-Z]{2,4}(?:[.-]?(?:DT|TV))?(?:[.-]?\d+)?)\.(?:us|ca)(?:@|$)', cid)
     if station:
         return 'station:' + station.group(1).casefold() + (':' + suffix if suffix else '')
-    return suffix
+    # The country in a catalog ID remains regional evidence even when a
+    # generic HD/SD suffix is removed. Losing it permits a German ID to
+    # bridge native Austrian and Swiss products after reconciliation.
+    country = re.search(r'\.([a-z]{2})(?:@|$)', cid, re.IGNORECASE)
+    return suffix or (country.group(1).casefold() if country else '')
 
 
 @dataclass

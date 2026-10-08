@@ -126,6 +126,44 @@ class QualityTests(unittest.TestCase):
         self.assertEqual(before, programme_digest(path.with_suffix(".xml.gz")))
         self.assertEqual(evidence[0]["matched_id"], "A.de")
 
+    def test_native_rebranding_preserves_programmes_and_original_logo_evidence(self):
+        old = "https://images.test/old-brand.png"
+        path, _ = self.guide(icon=old)
+        before = programme_digest(path)
+        native = LogoCandidate("A.de", "", "https://images.test/current.png", 10, 10,
+                               "PNG", "https://provider.test/channels#42", ("A",))
+        evidence = []
+        row = enrich_file(path, set(), {}, {}, {"A.de": native}, evidence_rows=evidence,
+                          probe=lambda u: {"status": "passed"})
+        self.assertEqual(row["logos_replaced_native"], 1)
+        self.assertEqual(row["with_logo_after"], 1)
+        self.assertEqual(ET.parse(path).getroot().find("channel/icon").get("src"), native.url)
+        self.assertEqual(evidence[0]["previous_icons"], [old])
+        self.assertEqual(programme_digest(path), before)
+        self.assertEqual(programme_digest(path.with_suffix(".xml.gz")), before)
+
+    def test_native_name_mismatch_cannot_replace_existing_logo(self):
+        old = "https://images.test/old.png"
+        path, _ = self.guide(icon=old)
+        before = path.read_bytes()
+        native = LogoCandidate("A.de", "", "https://images.test/new.png", 10, 10,
+                               "PNG", "https://provider.test/channels#42", ("Different sender",))
+        probe = unittest.mock.Mock(return_value={"status": "passed"})
+        row = enrich_file(path, set(), {}, {}, {"A.de": native}, probe=probe)
+        self.assertEqual(row["logos_replaced_native"], 0)
+        self.assertEqual(path.read_bytes(), before)
+        probe.assert_not_called()
+
+    def test_failed_native_replacement_preserves_existing_asset(self):
+        path, _ = self.guide(icon="https://images.test/old.png")
+        before = path.read_bytes()
+        native = LogoCandidate("A.de", "", "https://images.test/new.png", 10, 10,
+                               "PNG", "https://provider.test/channels#42", ("A",))
+        row = enrich_file(path, set(), {}, {}, {"A.de": native},
+                          probe=lambda u: {"status": "failed"})
+        self.assertEqual(row["logos_replaced_native"], 0)
+        self.assertEqual(path.read_bytes(), before)
+
     def test_provider_ids_remain_region_specific_and_interleaved_are_supported(self):
         config = self.root / "platforms.json"
         config.write_text(json.dumps({"platforms": {"samsung": {"logo_sources": [
@@ -166,6 +204,11 @@ class QualityTests(unittest.TestCase):
             def read(self, limit): return b"<html><body>Not found</body></html>"
         with patch("enrich_epg_logos.urllib.request.urlopen", return_value=Response()):
             self.assertEqual(verify_logo("https://img.test/a.png")["status"], "failed")
+        class EmptySVG(Response):
+            def read(self, limit): return b'<svg xmlns="http://www.w3.org/2000/svg"/>'
+            headers = type("Headers", (), {"get_content_type": lambda s: "image/svg+xml"})()
+        with patch("enrich_epg_logos.urllib.request.urlopen", return_value=EmptySVG()):
+            self.assertEqual(verify_logo("https://img.test/a.svg")["status"], "failed")
         self.assertFalse(valid_logo_url("https://user:password@img.test/a.png"))
         self.assertFalse(valid_logo_url("http://img.test/a.png"))
 
