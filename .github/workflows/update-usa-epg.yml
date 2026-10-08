@@ -8,6 +8,7 @@ on:
     branches:
       - main
       - codex/validated-provider-release
+      - codex/epg-quality-20261008
     paths:
       - ".github/workflows/update-usa-epg.yml"
       - "scripts/**"
@@ -22,7 +23,7 @@ concurrency:
 
 jobs:
   build:
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/codex/validated-provider-release'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/codex/validated-provider-release' || github.ref == 'refs/heads/codex/epg-quality-20261008'
     runs-on: ubuntu-latest
     timeout-minutes: 90
 
@@ -84,6 +85,18 @@ jobs:
             build/usa/output/usa-sports.xml \
             build/usa/output/usa-local.xml \
             build/usa/output/usa-fast.xml
+
+      - name: Fill verified missing USA logos inside the producer transaction
+        run: |
+          python scripts/enrich_epg_logos.py \
+            --channels-csv build/usa/input/channels.csv \
+            --logos-csv build/usa/input/logos.csv \
+            --platform-config config/platforms.json \
+            --provider-cache build/usa/logo-sources \
+            --report build/usa/logo-coverage.csv \
+            --evidence-report build/usa/logo-evidence.json \
+            build/usa/output/usa.xml build/usa/output/usa-fast.xml \
+            build/usa/output/usa-local.xml build/usa/output/usa-sports.xml
 
       - name: Preserve rejected normalization records for diagnosis
         if: always()
@@ -173,6 +186,29 @@ jobs:
           test_args=()
           if [[ "$GITHUB_REF" != "refs/heads/main" ]]; then test_args=(--test-build); fi
           python scripts/release_bundle.py "${test_args[@]}" --region USA --source build/reconciled-usa --output build/release-usa --mapping build/usa/usa-channel-mapping.csv
+
+      - name: Measure final USA quality separately from integrity
+        run: |
+          python scripts/audit_epg_quality.py \
+            --xml build/reconciled-usa/*.xml.gz \
+            --logos-csv build/usa/input/logos.csv \
+            --channels-csv build/usa/input/channels.csv \
+            --logo-probes build/usa/logo-evidence.json \
+            --report build/usa-final-quality.csv \
+            --summary build/usa-final-quality.json \
+            --channel-report build/usa-final-channel-quality.csv
+
+      - name: Preserve final USA quality and logo evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: usa-final-quality-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            build/usa-final-*.csv
+            build/usa-final-*.json
+            build/usa/logo-evidence.json
+          if-no-files-found: warn
+          retention-days: 90
 
       - name: Upload immutable USA producer artifact
         uses: actions/upload-artifact@v4
