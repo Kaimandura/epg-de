@@ -12,12 +12,14 @@ on:
           - fast
           - deep
   schedule:
-    - cron: "17 2 * * *"
+    # Samsung's native guide contains about six hours, so a daily update expires.
+    - cron: "17 2,5,8,11,14,17,20,23 * * *"
     - cron: "47 3 * * 0"
   push:
     branches:
       - main
       - codex/validated-provider-release
+      - codex/epg-quality-20261008
     paths:
       - ".github/workflows/update-epg.yml"
       - "scripts/**"
@@ -32,7 +34,7 @@ concurrency:
 
 jobs:
   build:
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/codex/validated-provider-release'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/codex/validated-provider-release' || github.ref == 'refs/heads/codex/epg-quality-20261008'
     runs-on: ubuntu-latest
     timeout-minutes: 300
 
@@ -157,6 +159,7 @@ jobs:
             --candidates build/candidates.json \
             --config config/platforms.json \
             --output-dir build/publish/platforms \
+            --provider-cache build/logo-sources \
             --report build/publish/platform-coverage.csv
 
       - name: Build Prime Video Germany EPG and finalize master
@@ -173,6 +176,10 @@ jobs:
           python scripts/enrich_epg_logos.py \
             --channels-csv upstream/database/data/channels.csv \
             --logos-csv upstream/database/data/logos.csv \
+            --platform-config config/platforms.json \
+            --provider-cache build/logo-sources \
+            --channel-definitions data/de-channels.xml \
+            --evidence-report build/publish/logo-evidence.json \
             --report build/publish/logo-coverage.csv \
             build/publish/de.xml \
             build/publish/platforms/samsung.xml \
@@ -374,6 +381,32 @@ jobs:
           path: |
             build/reconciled-de/*.json
             build/reconciled-de/*.jsonl
+            build/publish/*.refresh.json
+            build/publish/*.alternatives.jsonl
+            build/publish/logo-evidence.json
+          if-no-files-found: warn
+          retention-days: 90
+
+      - name: Measure final Germany quality separately from integrity
+        run: |
+          python scripts/audit_epg_quality.py \
+            --xml build/reconciled-de/*.xml.gz \
+            --logos-csv upstream/database/data/logos.csv \
+            --channels-csv upstream/database/data/channels.csv \
+            --logo-probes build/publish/logo-evidence.json \
+            --file-future-hours samsung.xml.gz=3 \
+            --report build/de-final-quality.csv \
+            --summary build/de-final-quality.json \
+            --channel-report build/de-final-channel-quality.csv
+
+      - name: Preserve final Germany quality measurements
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: de-final-quality-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            build/de-final-*.csv
+            build/de-final-*.json
           if-no-files-found: warn
           retention-days: 90
 

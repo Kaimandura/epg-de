@@ -49,6 +49,10 @@
     },
     "pluto": {
       "output": "pluto.xml.gz",
+      "logo_sources": [
+        {"namespace": "PlutoTV", "region": "de", "url": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/de.xml.gz"},
+        {"namespace": "PlutoTV", "region": "us", "url": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/us.xml.gz"}
+      ],
       "rules": [
         {
           "site": "pluto.tv",
@@ -58,6 +62,11 @@
     },
     "samsung": {
       "output": "samsung.xml.gz",
+      "logo_sources": [
+        {"namespace": "SamsungTVPlus", "region": "de", "url": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/de.xml.gz"},
+        {"namespace": "SamsungTVPlus", "region": "at", "url": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/at.xml.gz"},
+        {"namespace": "SamsungTVPlus", "region": "ch", "url": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/ch.xml.gz"}
+      ],
       "rules": [
         {
           "site": "i.mjh.nz",

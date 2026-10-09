@@ -3,16 +3,103 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import gzip
 import json
 import re
 import shutil
 import xml.etree.ElementTree as ET
 from copy import deepcopy
+from datetime import datetime, timezone
 from pathlib import Path
+from collections import defaultdict
 from typing import Any
+from enrich_epg_logos import load_provider_logos, read_nodes
+from release_policy import timestamp
 
 DE_ALIAS_PREFIX = "DE - "
+
+
+def refresh_provider_schedules(root, platforms, cache_dir, evidence_path, now=None):
+    """Refresh proven native IDs from provider guides inside the DE transaction.
+
+    Only the interval actually covered by a valid fresh source is replaced.
+    Retain historical/complementary records outside that window. Preserve each
+    superseded original XML record in full; never infer titles or stretch times.
+    """
+    now = now or datetime.now(timezone.utc)
+    known = {node.get("id") for node in root.findall("channel")}
+    incoming = defaultdict(list)
+    sources = {}
+    for definition in platforms.values():
+        for source in definition.get("logo_sources", []):
+            namespace, region = source["namespace"], source["region"]
+            path = cache_dir / f"{namespace}-{region}.xml.gz"
+            if not path.exists():
+                continue
+            digest = hashlib.sha256(path.read_bytes()).hexdigest()
+            for node in read_nodes(path):
+                if node.tag != "programme":
+                    continue
+                cid = f"{namespace}.{region}.{node.get('channel', '')}"
+                if cid not in known:
+                    continue
+                copied = deepcopy(node)
+                copied.set("channel", cid)
+                incoming[cid].append(copied)
+                sources[cid] = {"url": source["url"], "sha256": digest}
+    accepted, skipped, windows = {}, [], {}
+    for cid, records in incoming.items():
+        try:
+            slots = sorted((timestamp(n.get("start")), timestamp(n.get("stop")), i)
+                           for i, n in enumerate(records))
+            if any(stop <= start or not (records[i].findtext("title") or "").strip()
+                   for start, stop, i in slots):
+                raise ValueError("invalid source programme")
+            if any(slots[i][0] < slots[i-1][1] for i in range(1, len(slots))):
+                raise ValueError("source schedule overlaps")
+            if slots[-1][1] <= now:
+                raise ValueError("source has no future coverage")
+            accepted[cid] = [records[i] for _, _, i in slots]
+            windows[cid] = [(start, stop) for start, stop, _ in slots]
+        except (TypeError, ValueError, IndexError) as exc:
+            skipped.append({"xmltv_id": cid, "reason": str(exc)})
+    original = list(root.findall("programme"))
+    superseded = 0
+    retained = 0
+    evidence_path.parent.mkdir(parents=True, exist_ok=True)
+    with evidence_path.open("w", encoding="utf-8") as alternatives:
+        for node in original:
+            cid = node.get("channel")
+            replace = False
+            if cid in windows:
+                try:
+                    start, stop = timestamp(node.get("start")), timestamp(node.get("stop"))
+                    replace = any(start < last and stop > first for first, last in windows[cid])
+                except (TypeError, ValueError):
+                    # Existing quarantine owns invalid input; no hidden cleanup.
+                    pass
+            if replace:
+                alternatives.write(json.dumps({"xmltv_id": cid, "reason": "fresh native provider schedule",
+                    "source": sources[cid], "original_xml": ET.tostring(node, encoding="unicode")},
+                    ensure_ascii=False) + "\n")
+                root.remove(node)
+                superseded += 1
+            else:
+                retained += 1
+    added = sum(len(records) for records in accepted.values())
+    for cid in sorted(accepted):
+        root.extend(accepted[cid])
+    if len(original) != retained + superseded:
+        raise ValueError("provider refresh conservation accounting failed")
+    return {"input_programmes": len(original), "retained_originals": retained,
+            "preserved_alternatives": superseded, "source_programmes_added": added,
+            "output_programmes": retained + added, "refreshed_channels": len(accepted),
+            "unrefreshed_native_channels": sorted(cid for cid in known
+                if cid.startswith(("SamsungTVPlus.", "PlutoTV.")) and cid not in accepted),
+            "skipped_source_schedules": skipped, "sources": sources,
+            "alternatives_file": evidence_path.name,
+            "alternatives_sha256": hashlib.sha256(evidence_path.read_bytes()).hexdigest()}
 
 
 def as_list(value: Any) -> list[str]:
@@ -343,15 +430,36 @@ def main() -> int:
         description="Export platform-specific XMLTV subsets from the validated Germany master guide."
     )
     parser.add_argument("--master", required=True, type=Path)
-    parser.add_argument("--candidates", required=True, type=Path)
+    parser.add_argument("--candidates", type=Path)
     parser.add_argument("--config", required=True, type=Path)
     parser.add_argument("--output-dir", required=True, type=Path)
     parser.add_argument("--report", required=True, type=Path)
+    parser.add_argument("--provider-cache", type=Path, help="Refresh native platform schedules from exact provider IDs")
+    parser.add_argument("--refresh-only", action="store_true", help="Refresh an existing staged XML file without exporting new subsets")
     args = parser.parse_args()
 
     master_root = ET.parse(args.master).getroot()
     if master_root.tag != "tv":
         raise ValueError(f"{args.master}: expected <tv> root")
+
+    config_payload = json.loads(args.config.read_text(encoding="utf-8"))
+    platforms = config_payload.get("platforms", {})
+    if args.provider_cache:
+        _, downloads = load_provider_logos(args.config, args.provider_cache)
+        refresh = refresh_provider_schedules(master_root, platforms, args.provider_cache,
+                                             args.report.with_suffix(".alternatives.jsonl"))
+        refresh["provider_downloads"] = downloads
+        args.report.parent.mkdir(parents=True, exist_ok=True)
+        args.report.with_suffix(".refresh.json").write_text(json.dumps(refresh, indent=2)+"\n", encoding="utf-8")
+        print(f"Native provider refresh: channels={refresh['refreshed_channels']} "
+              f"preserved_alternatives={refresh['preserved_alternatives']}", flush=True)
+    if args.refresh_only:
+        if not args.provider_cache:
+            parser.error("--refresh-only requires --provider-cache")
+        write_xml_and_gzip(master_root, args.master)
+        return 0
+    if args.candidates is None:
+        parser.error("normal export requires --candidates")
 
     candidate_payload = json.loads(args.candidates.read_text(encoding="utf-8"))
     candidate_data: dict[str, list[dict[str, Any]]] = candidate_payload["channels"]
@@ -365,8 +473,6 @@ def main() -> int:
         f"empty_channels_removed={pruned_master_channels}"
     )
 
-    config_payload = json.loads(args.config.read_text(encoding="utf-8"))
-    platforms = config_payload.get("platforms", {})
     if not isinstance(platforms, dict) or not platforms:
         raise ValueError("platform config must contain a non-empty 'platforms' object")
 

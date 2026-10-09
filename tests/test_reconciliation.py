@@ -86,6 +86,41 @@ class ReconciliationTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'missing'):
                 reconcile({'USA-MASTER.xml.gz':path},Path(directory)/'out','USA')
 
+    def test_catalog_country_survives_native_regional_reconciliation(self):
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            paths = {}
+            for label, stem in FILES['DE'].items():
+                ids = MAGENTA_REQUIRED if 'MAGENTA' in label else [label]
+                guide(base/stem, ids)
+                paths[label] = base/stem
+            guide(paths['DE-MASTER.xml.gz'], ['DeluxeDance.de@SD'], 'Deluxe Dance')
+            guide(paths['DE-SAMSUNG.xml.gz'],
+                  ['SamsungTVPlus.at.AT123', 'SamsungTVPlus.ch.CH123'], 'Deluxe Dance')
+            report = reconcile(paths, base/'out', 'DE')
+            self.assertEqual(report['status'], 'passed')
+            self.assertEqual(report['outputs']['DE-SAMSUNG.xml.gz']['channels'], 2)
+            self.assertEqual(report['metadata_merged_records'], 0)
+            canonical = {label:base/'out'/stem for label,stem in FILES['DE'].items()}
+            second = reconcile(canonical, base/'second', 'DE')
+            self.assertEqual(report['output_sha256'], second['output_sha256'])
+
+    def test_same_country_catalog_and_native_identity_still_merges(self):
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            paths = {}
+            for label, stem in FILES['DE'].items():
+                ids = MAGENTA_REQUIRED if 'MAGENTA' in label else [label]
+                guide(base/stem, ids)
+                paths[label] = base/stem
+            guide(paths['DE-MASTER.xml.gz'], ['DeluxeDance.de@SD'], 'Deluxe Dance')
+            guide(paths['DE-SAMSUNG.xml.gz'],
+                  ['SamsungTVPlus.de.DE123', 'SamsungTVPlus.at.AT123'], 'Deluxe Dance')
+            report = reconcile(paths, base/'out', 'DE')
+            self.assertEqual(report['status'], 'passed')
+            self.assertEqual(report['outputs']['DE-SAMSUNG.xml.gz']['channels'], 1)
+            self.assertEqual(report['metadata_merged_records'], 3)
+
 
 if __name__=='__main__':
     unittest.main()

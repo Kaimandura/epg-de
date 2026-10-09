@@ -2,7 +2,7 @@ name: Release regression tests
 on:
   pull_request:
   push:
-    branches: [main, codex/validated-provider-release]
+    branches: [main, codex/validated-provider-release, codex/epg-quality-20261008]
     paths: ["scripts/**", "config/**", "tests/**", ".github/workflows/**"]
 permissions:
   contents: read
