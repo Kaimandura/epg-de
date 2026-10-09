@@ -65,7 +65,6 @@ AKCTVPuppies.us@SD,AKC TV Puppies,Outdoor
 AlabamaWeatherNetwork.us@SD,Alabama Weather Network,Weather
 AlFadyTV.us@SD,Al-Fady TV,Religious
 AlHorreyaTV.us@SD,Al Horreya TV,Religious
-AlhurraIraq.us@SD,Alhurra Iraq,News
 AlientoVision.us@SD,Aliento Vision,Religious
 AlkarmaTVAustralia.us@SD,Alkarma TV Australia,Religious
 AlkarmaTVFamily.us@SD,Alkarma TV Family,Religious
@@ -213,6 +212,7 @@ CMAPChannel19.us@SD,CMAP Channel 19,Undefined
 CMAPChannel20.us@SD,CMAP Channel 20,General
 CMCUSACountryMusicChannel.us@SD,CMC-USA Country Music Channel,Music
 CMTV.us@SD,CMTV,General
+CNNChile.cl@SD,CNN Chile,News
 ColdCaseFiles.us@SD,Cold Case Files,Series
 CollierTV.us@SD,Collier TV,Legislative
 ComedyCentralAnimation.us@SD,Comedy Central Animation,Comedy
@@ -466,8 +466,8 @@ Maxcine2.us@HD,Maxcine 2,Movies
 MaxcineComedy.us@HD,Maxcine Comedy,Movies
 MaxcineFamily.us@HD,Maxcine Family,Movies
 MaxcineKids.us@HD,Maxcine Kids,Movies
-MBC1USA.us@SD,"like Gecko) Chrome/154.0.0.0 Safari/537.36"" group-title=""General"",MBC 1 USA",General
-MBC3USA.us@SD,"like Gecko) Chrome/154.0.0.0 Safari/537.36"" group-title=""Kids"",MBC 3 USA",Kids
+MBC1USA.us@SD,MBC 1 USA,General
+MBC3USA.us@SD,MBC 3 USA,Kids
 MBCAmerica.us@SD,MBC America,Culture;Entertainment;Music
 MBCDramaUSA.us@SD,MBC Drama USA,Series
 MBCMasrUSA.us@SD,MBC Masr USA,General
@@ -646,6 +646,7 @@ RockyHillChannel16.us@SD,Rocky Hill Channel 16,Legislative
 RTenEspanol.ru@SD,RT en Espanol,News
 RTHTV1.us@SD,RTH-TV1,General
 RTN.us@SD,RTN (United States),Undefined
+RTNChicago.us@SD,RTN Chicago,Religious
 RTRPlaneta.ru@US,RTR-Planeta US,General
 RTViUS.us@SD,RTVi US,General
 Runtime.us@SD,Runtime,Movies
