@@ -213,6 +213,7 @@ CMAPChannel20.us@SD,CMAP Channel 20,General
 CMCUSACountryMusicChannel.us@SD,CMC-USA Country Music Channel,Music
 CMTV.us@SD,CMTV,General
 CNNChile.cl@SD,CNN Chile,News
+CNNenEspanol.us@SD,CNN en Espanol,News
 ColdCaseFiles.us@SD,Cold Case Files,Series
 CollierTV.us@SD,Collier TV,Legislative
 ComedyCentralAnimation.us@SD,Comedy Central Animation,Comedy
@@ -670,14 +671,12 @@ SFCommons29.us@SD,SF Commons 29,General
 SFCommons76.us@SD,SF Commons 76,General
 SFGovTV.us@SD,SFGovTV,Legislative
 SFGovTV2.us@SD,SFGovTV2,General
-SFree.us@HD,S Free!,General
 SGTN49.us@SD,SGTN-49,General
 SGTV.us@SD,SGTV,Legislative
 Shabakeh7.us@SD,Shabakeh 7,Entertainment
 ShalomAmerica.us@SD,Shalom America,Religious
 ShemarooBollywood.us@SD,Shemaroo Bollywood,Undefined
 ShoutFactoryTV.us@SD,Shout! Factory TV,General
-SKPop.us@HD,S KPop!,Kids;Music
 SkwadPlay.us@SD,Skwad Play,Kids
 SLOCountyChannel21.us@SD,SLO County Channel 21,Undefined
 SlopesTV.us@SD,Slopes TV,Sports
@@ -694,7 +693,6 @@ SonyKALHindi.us@SD,Sony KAL Hindi,Undefined
 SoundViewCommunityMedia.us@SD,Sound View Community Media,General
 SpiritTV.us@SD,Spirit TV,Music;Religious
 SPlayEvent.us@HD,S Play Event,Kids
-SPremium.us@HD,S Premium! HD,General
 SPTV.us@SD,SPTV,Legislative
 StarChannelInternational.gr@HD,Star Channel International,Entertainment
 StingrayGreatestHolidayHits.us@SD,Stingray Greatest Holiday Hits,Music
@@ -703,7 +701,6 @@ StocktonGovTV.us@SD,Stockton Gov TV,Legislative
 StoryTelevision.us@KPVMLD,Story Television KPVM-LD,Undefined
 StoryTelevision.us@WCIUTV,Story Television WCIU-TV,Undefined
 StrykTV.us@HD,Stryk TV,Music
-STV.us@HD,STV (United States),General
 SUMtvEnglish.us@SD,SUMtv English,Religious
 SUMtvLatino.us@SD,SUMtv Latino,Religious
 SuperSimpleSongs.us@SD,Super Simple Songs,Kids
