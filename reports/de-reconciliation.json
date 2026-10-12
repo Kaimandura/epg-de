@@ -1,10 +1,10 @@
 {
   "region": "DE",
-  "input_programmes": 219971,
+  "input_programmes": 221868,
   "quarantined": 0,
-  "unique_retained_programmes": 153174,
-  "metadata_merged_records": 66708,
-  "preserved_alternative_records": 89,
+  "unique_retained_programmes": 153248,
+  "metadata_merged_records": 68535,
+  "preserved_alternative_records": 85,
   "identity_evidence": [
     {
       "left": [
@@ -3298,11 +3298,22 @@
     {
       "left": [
         "DE-MASTER.xml.gz",
-        "MagentaTV.de@SkySportGolf"
+        "LoveThePlanet.es@DE"
+      ],
+      "right": [
+        "DE-SAMSUNG.xml.gz",
+        "SamsungTVPlus.de.DEBC4700004VZ"
+      ],
+      "reason": "name-and-schedule"
+    },
+    {
+      "left": [
+        "DE-MASTER.xml.gz",
+        "MagentaTV.de@SkySport10"
       ],
       "right": [
         "DE-MASTER.xml.gz",
-        "SkySportGolf.de@HD"
+        "SkySport10.de@HD"
       ],
       "reason": "name-and-schedule"
     },
@@ -3485,33 +3496,11 @@
     {
       "left": [
         "DE-MASTER.xml.gz",
-        "PlutoTVKultComedies.de@DACH"
-      ],
-      "right": [
-        "DE-PLUTO.xml.gz",
-        "PlutoTV.de.66337de656fc840008ff7a65"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
         "PlutoTVKultfilme.de@DACH"
       ],
       "right": [
         "DE-PLUTO.xml.gz",
         "PlutoTV.de.5dde47b63585b500099f74ec"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
-        "PlutoTVMovies.de@DACH"
-      ],
-      "right": [
-        "DE-SAMSUNG.xml.gz",
-        "SamsungTVPlus.de.DEAK3504517A"
       ],
       "reason": "name-and-schedule"
     },
@@ -3716,11 +3705,33 @@
     {
       "left": [
         "DE-MASTER.xml.gz",
+        "ProSiebenAustria.at@HD"
+      ],
+      "right": [
+        "DE-MASTER.xml.gz",
+        "ProSiebenAustria.at@SD"
+      ],
+      "reason": "name-and-schedule"
+    },
+    {
+      "left": [
+        "DE-MASTER.xml.gz",
         "Puls4.at@HD"
       ],
       "right": [
         "DE-MASTER.xml.gz",
         "Puls4.at@SD"
+      ],
+      "reason": "name-and-schedule"
+    },
+    {
+      "left": [
+        "DE-MASTER.xml.gz",
+        "RTLZwei.de@HD"
+      ],
+      "right": [
+        "DE-MASTER.xml.gz",
+        "RTLZwei.de@SD"
       ],
       "reason": "name-and-schedule"
     },
@@ -3738,6 +3749,17 @@
     {
       "left": [
         "DE-MASTER.xml.gz",
+        "RomanceTV.de@HD"
+      ],
+      "right": [
+        "DE-MASTER.xml.gz",
+        "RomanceTV.de@SD"
+      ],
+      "reason": "name-and-schedule"
+    },
+    {
+      "left": [
+        "DE-MASTER.xml.gz",
         "SerienPlus.de@HD"
       ],
       "right": [
@@ -3749,44 +3771,11 @@
     {
       "left": [
         "DE-MASTER.xml.gz",
-        "SkySport1.de@HD"
-      ],
-      "right": [
-        "DE-MASTER.xml.gz",
-        "SkySport3.de@SD"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
         "SkySport1.de@SD"
       ],
       "right": [
         "DE-MASTER.xml.gz",
         "SkySportTopEvent.de@HD"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
-        "SkySport10.de@SD"
-      ],
-      "right": [
-        "DE-MASTER.xml.gz",
-        "SkySport8.de@HD"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
-        "SkySport11.de@SD"
-      ],
-      "right": [
-        "DE-MASTER.xml.gz",
-        "SkySport9.de@HD"
       ],
       "reason": "name-and-schedule"
     },
@@ -3815,17 +3804,6 @@
     {
       "left": [
         "DE-MASTER.xml.gz",
-        "SkySport4.de@HD"
-      ],
-      "right": [
-        "DE-MASTER.xml.gz",
-        "SkySport6.de@SD"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
         "SkySport5.de@HD"
       ],
       "right": [
@@ -3837,22 +3815,11 @@
     {
       "left": [
         "DE-MASTER.xml.gz",
-        "SkySport6.de@HD"
+        "SkySportBundesliga.de@HD"
       ],
       "right": [
         "DE-MASTER.xml.gz",
-        "SkySport8.de@SD"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
-        "SkySport7.de@HD"
-      ],
-      "right": [
-        "DE-MASTER.xml.gz",
-        "SkySport9.de@SD"
+        "SkySportBundesliga.de@SD"
       ],
       "reason": "name-and-schedule"
     },
@@ -3870,55 +3837,11 @@
     {
       "left": [
         "DE-MASTER.xml.gz",
-        "SkySportBundesliga1.de@HD"
-      ],
-      "right": [
-        "DE-MASTER.xml.gz",
-        "SkySportBundesliga2.de@SD"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
         "SkySportBundesliga2.de@HD"
       ],
       "right": [
         "DE-MASTER.xml.gz",
         "SkySportBundesliga3.de@SD"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
-        "SkySportBundesliga3.de@HD"
-      ],
-      "right": [
-        "DE-MASTER.xml.gz",
-        "SkySportBundesliga4.de@SD"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
-        "SkySportBundesliga4.de@HD"
-      ],
-      "right": [
-        "DE-MASTER.xml.gz",
-        "SkySportBundesliga5.de@SD"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
-        "SkySportBundesliga5.de@HD"
-      ],
-      "right": [
-        "DE-MASTER.xml.gz",
-        "SkySportBundesliga6.de@SD"
       ],
       "reason": "name-and-schedule"
     },
@@ -3947,33 +3870,22 @@
     {
       "left": [
         "DE-MASTER.xml.gz",
-        "SkySportF1.de@HD"
-      ],
-      "right": [
-        "DE-MASTER.xml.gz",
-        "SkySportF1.de@SD"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
-        "SkySportNews.de@HD"
-      ],
-      "right": [
-        "DE-MASTER.xml.gz",
-        "SkySportNews.de@SD"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
         "TLC.at@HD"
       ],
       "right": [
         "DE-MASTER.xml.gz",
         "TLC.at@SD"
+      ],
+      "reason": "name-and-schedule"
+    },
+    {
+      "left": [
+        "DE-MASTER.xml.gz",
+        "TakeshisCastle.us@Germany"
+      ],
+      "right": [
+        "DE-PLUTO.xml.gz",
+        "PlutoTV.de.6054a9f4bc8a5f000771504c"
       ],
       "reason": "name-and-schedule"
     },
@@ -4024,22 +3936,11 @@
     {
       "left": [
         "DE-MASTER.xml.gz",
-        "WorldPokerTour.us@Germany"
+        "YuGiOh.us@SD"
       ],
       "right": [
         "DE-PLUTO.xml.gz",
-        "PlutoTV.de.5ad9b7aae738977e2c312132"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
-        "XITEHits.nl@Germany"
-      ],
-      "right": [
-        "DE-SAMSUNG.xml.gz",
-        "SamsungTVPlus.de.DEBA2200007V6"
+        "PlutoTV.de.642d4493aa2d690008f0a03f"
       ],
       "reason": "name-and-schedule"
     },
@@ -4116,14 +4017,14 @@
       "new": [
         "DE-MASTER.xml.gz",
         "DF1.de@SD",
-        "20261009095000 +0000",
-        "20261009110000 +0000",
-        "luckybacon - kochen, jammen, quatschen"
+        "20261017135000 +0000",
+        "20261017141000 +0000",
+        "fast vergessen"
       ],
       "existing": [
-        "20261009095000 +0000",
-        "20261009105000 +0000",
-        "luckybacon - kochen, jammen, quatschen",
+        "20261017135000 +0000",
+        "20261017141500 +0000",
+        "fast vergessen",
         "DE-MAGENTA.xml.gz:ServusTV.at@SD"
       ]
     },
@@ -4132,14 +4033,30 @@
       "new": [
         "DE-MASTER.xml.gz",
         "DF1.de@SD",
-        "20261009095000 +0000",
-        "20261009110000 +0000",
-        "luckybacon - kochen, jammen, quatschen"
+        "20261017141000 +0000",
+        "20261017145500 +0000",
+        "das k\u00fcstenrevier"
       ],
       "existing": [
-        "20261009105000 +0000",
-        "20261009110000 +0000",
-        "horizont",
+        "20261017135000 +0000",
+        "20261017141500 +0000",
+        "fast vergessen",
+        "DE-MAGENTA.xml.gz:ServusTV.at@SD"
+      ]
+    },
+    {
+      "id": "ServusTV.at@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "DF1.de@SD",
+        "20261017141000 +0000",
+        "20261017145500 +0000",
+        "das k\u00fcstenrevier"
+      ],
+      "existing": [
+        "20261017141500 +0000",
+        "20261017145500 +0000",
+        "das k\u00fcstenrevier",
         "DE-MAGENTA.xml.gz:ServusTV.at@SD"
       ]
     },
@@ -4148,14 +4065,14 @@
       "new": [
         "DE-MASTER.xml.gz",
         "DeluxeMusic.de@HD",
-        "20261009140000 +0000",
-        "20261009150000 +0000",
-        "update deluxe classics"
+        "20261012120000 +0000",
+        "20261012140000 +0000",
+        "top 25"
       ],
       "existing": [
-        "20261009140000 +0000",
-        "20261009143900 +0000",
-        "mia. special",
+        "20261012120000 +0000",
+        "20261012135900 +0000",
+        "top 25",
         "DE-MAGENTA.xml.gz:DeluxeMusic.de@SD"
       ]
     },
@@ -4164,13 +4081,13 @@
       "new": [
         "DE-MASTER.xml.gz",
         "DeluxeMusic.de@HD",
-        "20261009140000 +0000",
-        "20261009150000 +0000",
-        "update deluxe classics"
+        "20261012120000 +0000",
+        "20261012140000 +0000",
+        "top 25"
       ],
       "existing": [
-        "20261009143900 +0000",
-        "20261009150000 +0000",
+        "20261012135900 +0000",
+        "20261012150000 +0000",
         "update deluxe classics",
         "DE-MAGENTA.xml.gz:DeluxeMusic.de@SD"
       ]
@@ -4180,13 +4097,29 @@
       "new": [
         "DE-MASTER.xml.gz",
         "DeluxeMusic.de@HD",
-        "20261011160000 +0000",
-        "20261011200000 +0000",
+        "20261012140000 +0000",
+        "20261012150000 +0000",
+        "update deluxe classics"
+      ],
+      "existing": [
+        "20261012135900 +0000",
+        "20261012150000 +0000",
+        "update deluxe classics",
+        "DE-MAGENTA.xml.gz:DeluxeMusic.de@SD"
+      ]
+    },
+    {
+      "id": "DeluxeMusic.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "DeluxeMusic.de@HD",
+        "20261018160000 +0000",
+        "20261018200000 +0000",
         "best of you deluxe"
       ],
       "existing": [
-        "20261011160000 +0000",
-        "20261011180000 +0000",
+        "20261018160000 +0000",
+        "20261018180000 +0000",
         "best of you deluxe",
         "DE-MAGENTA.xml.gz:DeluxeMusic.de@SD"
       ]
@@ -4196,13 +4129,13 @@
       "new": [
         "DE-MASTER.xml.gz",
         "DeluxeMusic.de@HD",
-        "20261011160000 +0000",
-        "20261011200000 +0000",
+        "20261018160000 +0000",
+        "20261018200000 +0000",
         "best of you deluxe"
       ],
       "existing": [
-        "20261011180000 +0000",
-        "20261011200000 +0000",
+        "20261018180000 +0000",
+        "20261018200000 +0000",
         "#wagnerdesignlab",
         "DE-MAGENTA.xml.gz:DeluxeMusic.de@SD"
       ]
@@ -4212,13 +4145,13 @@
       "new": [
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
-        "20261009055000 +0000",
-        "20261009075000 +0000",
+        "20261012055500 +0000",
+        "20261012075500 +0000",
         "infomercial"
       ],
       "existing": [
-        "20261009055000 +0000",
-        "20261009062000 +0000",
+        "20261012055500 +0000",
+        "20261012062500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -4228,13 +4161,13 @@
       "new": [
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
-        "20261009055000 +0000",
-        "20261009075000 +0000",
+        "20261012055500 +0000",
+        "20261012075500 +0000",
         "infomercial"
       ],
       "existing": [
-        "20261009062000 +0000",
-        "20261009065000 +0000",
+        "20261012062500 +0000",
+        "20261012065500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -4244,13 +4177,13 @@
       "new": [
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
-        "20261009055000 +0000",
-        "20261009075000 +0000",
+        "20261012055500 +0000",
+        "20261012075500 +0000",
         "infomercial"
       ],
       "existing": [
-        "20261009065000 +0000",
-        "20261009072000 +0000",
+        "20261012065500 +0000",
+        "20261012072500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -4260,541 +4193,13 @@
       "new": [
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
-        "20261009055000 +0000",
-        "20261009075000 +0000",
+        "20261012055500 +0000",
+        "20261012075500 +0000",
         "infomercial"
       ],
       "existing": [
-        "20261009072000 +0000",
-        "20261009075000 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261010055000 +0000",
-        "20261010075500 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261010055000 +0000",
-        "20261010062500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261010055000 +0000",
-        "20261010075500 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261010062500 +0000",
-        "20261010065500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261010055000 +0000",
-        "20261010075500 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261010065500 +0000",
-        "20261010072500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261010055000 +0000",
-        "20261010075500 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261010072500 +0000",
-        "20261010075500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261011055000 +0000",
-        "20261011075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261011055000 +0000",
-        "20261011062500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261011055000 +0000",
-        "20261011075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261011062500 +0000",
-        "20261011065500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261011055000 +0000",
-        "20261011075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261011065500 +0000",
-        "20261011072500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261011055000 +0000",
-        "20261011075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261011072500 +0000",
-        "20261011075500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261011075000 +0000",
-        "20261011082500 +0000",
-        "house hunters australien"
-      ],
-      "existing": [
-        "20261011072500 +0000",
-        "20261011075500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261011075000 +0000",
-        "20261011082500 +0000",
-        "house hunters australien"
-      ],
-      "existing": [
-        "20261011075500 +0000",
-        "20261011082000 +0000",
-        "house hunters australien",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261011075000 +0000",
-        "20261011082500 +0000",
-        "house hunters australien"
-      ],
-      "existing": [
-        "20261011082000 +0000",
-        "20261011092000 +0000",
-        "property brothers - traumhaus f\u00fcr immer!",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261011082500 +0000",
-        "20261011092000 +0000",
-        "property brothers - traumhaus f\u00fcr immer!"
-      ],
-      "existing": [
-        "20261011082000 +0000",
-        "20261011092000 +0000",
-        "property brothers - traumhaus f\u00fcr immer!",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261011190500 +0000",
-        "20261011200000 +0000",
-        "fixer upper: umbauen, einrichten, einziehen!"
-      ],
-      "existing": [
-        "20261011190500 +0000",
-        "20261011200500 +0000",
-        "fixer upper - umbauen, einrichten, einziehen!",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261011200000 +0000",
-        "20261011210000 +0000",
-        "mein kleinstadt-traumhaus - wir renovieren eine stadt!"
-      ],
-      "existing": [
-        "20261011190500 +0000",
-        "20261011200500 +0000",
-        "fixer upper - umbauen, einrichten, einziehen!",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261011200000 +0000",
-        "20261011210000 +0000",
-        "mein kleinstadt-traumhaus - wir renovieren eine stadt!"
-      ],
-      "existing": [
-        "20261011200500 +0000",
-        "20261011210000 +0000",
-        "mein kleinstadt-traumhaus - wir renovieren eine stadt!",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261011230000 +0000",
-        "20261011234500 +0000",
-        "chateau impossible"
-      ],
-      "existing": [
-        "20261011230000 +0000",
-        "20261011234000 +0000",
-        "chateau impossible",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261011230000 +0000",
-        "20261011234500 +0000",
-        "chateau impossible"
-      ],
-      "existing": [
-        "20261011234000 +0000",
-        "20261012002500 +0000",
-        "chateau impossible",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261011234500 +0000",
-        "20261012003000 +0000",
-        "chateau impossible"
-      ],
-      "existing": [
-        "20261011234000 +0000",
-        "20261012002500 +0000",
-        "chateau impossible",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261011234500 +0000",
-        "20261012003000 +0000",
-        "chateau impossible"
-      ],
-      "existing": [
-        "20261012002500 +0000",
-        "20261012005000 +0000",
-        "homes gone wild - wundersame wohntr\u00e4ume",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261012003000 +0000",
-        "20261012005000 +0000",
-        "homes gone wild - wundersame wohntr\u00e4ume"
-      ],
-      "existing": [
-        "20261012002500 +0000",
-        "20261012005000 +0000",
-        "homes gone wild - wundersame wohntr\u00e4ume",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261012032000 +0000",
-        "20261012034000 +0000",
-        "caribbean life - traumhaus gesucht"
-      ],
-      "existing": [
-        "20261012032000 +0000",
-        "20261012034500 +0000",
-        "caribbean life - traumhaus gesucht",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261012034000 +0000",
-        "20261012040000 +0000",
-        "caribbean life - traumhaus gesucht"
-      ],
-      "existing": [
-        "20261012032000 +0000",
-        "20261012034500 +0000",
-        "caribbean life - traumhaus gesucht",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261012034000 +0000",
-        "20261012040000 +0000",
-        "caribbean life - traumhaus gesucht"
-      ],
-      "existing": [
-        "20261012034500 +0000",
-        "20261012040500 +0000",
-        "caribbean life - traumhaus gesucht",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261012040000 +0000",
-        "20261012042500 +0000",
-        "fixer upper: kochen mit joanna"
-      ],
-      "existing": [
-        "20261012034500 +0000",
-        "20261012040500 +0000",
-        "caribbean life - traumhaus gesucht",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261012040000 +0000",
-        "20261012042500 +0000",
-        "fixer upper: kochen mit joanna"
-      ],
-      "existing": [
-        "20261012040500 +0000",
-        "20261012042500 +0000",
-        "fixer upper: kochen mit joanna",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261012055000 +0000",
-        "20261012075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261012055000 +0000",
-        "20261012060500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261012055000 +0000",
-        "20261012075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261012060500 +0000",
-        "20261012062000 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261012055000 +0000",
-        "20261012075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261012062000 +0000",
-        "20261012063500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261012055000 +0000",
-        "20261012075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261012063500 +0000",
-        "20261012065000 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261012055000 +0000",
-        "20261012075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261012065000 +0000",
-        "20261012070500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261012055000 +0000",
-        "20261012075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261012070500 +0000",
-        "20261012072000 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261012055000 +0000",
-        "20261012075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261012072000 +0000",
-        "20261012073500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261012055000 +0000",
-        "20261012075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261012073500 +0000",
-        "20261012075000 +0000",
+        "20261012072500 +0000",
+        "20261012075500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -4805,28 +4210,12 @@
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
         "20261013055000 +0000",
-        "20261013075000 +0000",
+        "20261013075500 +0000",
         "infomercial"
       ],
       "existing": [
         "20261013055000 +0000",
-        "20261013060500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261013055000 +0000",
-        "20261013075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261013060500 +0000",
-        "20261013062000 +0000",
+        "20261013062500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -4837,12 +4226,12 @@
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
         "20261013055000 +0000",
-        "20261013075000 +0000",
+        "20261013075500 +0000",
         "infomercial"
       ],
       "existing": [
-        "20261013062000 +0000",
-        "20261013063500 +0000",
+        "20261013062500 +0000",
+        "20261013065500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -4853,12 +4242,12 @@
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
         "20261013055000 +0000",
-        "20261013075000 +0000",
+        "20261013075500 +0000",
         "infomercial"
       ],
       "existing": [
-        "20261013063500 +0000",
-        "20261013065000 +0000",
+        "20261013065500 +0000",
+        "20261013072500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -4869,60 +4258,12 @@
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
         "20261013055000 +0000",
-        "20261013075000 +0000",
+        "20261013075500 +0000",
         "infomercial"
       ],
       "existing": [
-        "20261013065000 +0000",
-        "20261013070500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261013055000 +0000",
-        "20261013075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261013070500 +0000",
-        "20261013072000 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261013055000 +0000",
-        "20261013075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261013072000 +0000",
-        "20261013073500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261013055000 +0000",
-        "20261013075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261013073500 +0000",
-        "20261013075000 +0000",
+        "20261013072500 +0000",
+        "20261013075500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -4933,28 +4274,12 @@
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
         "20261014055000 +0000",
-        "20261014075000 +0000",
+        "20261014075500 +0000",
         "infomercial"
       ],
       "existing": [
         "20261014055000 +0000",
-        "20261014060500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261014055000 +0000",
-        "20261014075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261014060500 +0000",
-        "20261014062000 +0000",
+        "20261014062500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -4965,12 +4290,12 @@
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
         "20261014055000 +0000",
-        "20261014075000 +0000",
+        "20261014075500 +0000",
         "infomercial"
       ],
       "existing": [
-        "20261014062000 +0000",
-        "20261014063500 +0000",
+        "20261014062500 +0000",
+        "20261014065500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -4981,12 +4306,12 @@
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
         "20261014055000 +0000",
-        "20261014075000 +0000",
+        "20261014075500 +0000",
         "infomercial"
       ],
       "existing": [
-        "20261014063500 +0000",
-        "20261014065000 +0000",
+        "20261014065500 +0000",
+        "20261014072500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -4997,60 +4322,12 @@
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
         "20261014055000 +0000",
-        "20261014075000 +0000",
+        "20261014075500 +0000",
         "infomercial"
       ],
       "existing": [
-        "20261014065000 +0000",
-        "20261014070500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261014055000 +0000",
-        "20261014075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261014070500 +0000",
-        "20261014072000 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261014055000 +0000",
-        "20261014075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261014072000 +0000",
-        "20261014073500 +0000",
-        "infomercial",
-        "DE-MASTER.xml.gz:HGTV.de@HD"
-      ]
-    },
-    {
-      "id": "HGTV.de@HD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "HGTV.de@SD",
-        "20261014055000 +0000",
-        "20261014075000 +0000",
-        "infomercial"
-      ],
-      "existing": [
-        "20261014073500 +0000",
-        "20261014075000 +0000",
+        "20261014072500 +0000",
+        "20261014075500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -5061,12 +4338,12 @@
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
         "20261015055000 +0000",
-        "20261015075000 +0000",
+        "20261015075500 +0000",
         "infomercial"
       ],
       "existing": [
         "20261015055000 +0000",
-        "20261015060500 +0000",
+        "20261015062500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -5077,12 +4354,12 @@
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
         "20261015055000 +0000",
-        "20261015075000 +0000",
+        "20261015075500 +0000",
         "infomercial"
       ],
       "existing": [
-        "20261015060500 +0000",
-        "20261015062000 +0000",
+        "20261015062500 +0000",
+        "20261015065500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -5093,12 +4370,12 @@
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
         "20261015055000 +0000",
-        "20261015075000 +0000",
+        "20261015075500 +0000",
         "infomercial"
       ],
       "existing": [
-        "20261015062000 +0000",
-        "20261015063500 +0000",
+        "20261015065500 +0000",
+        "20261015072500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -5109,12 +4386,12 @@
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
         "20261015055000 +0000",
-        "20261015075000 +0000",
+        "20261015075500 +0000",
         "infomercial"
       ],
       "existing": [
-        "20261015063500 +0000",
-        "20261015065000 +0000",
+        "20261015072500 +0000",
+        "20261015075500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -5124,13 +4401,13 @@
       "new": [
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
-        "20261015055000 +0000",
-        "20261015075000 +0000",
+        "20261016055000 +0000",
+        "20261016075000 +0000",
         "infomercial"
       ],
       "existing": [
-        "20261015065000 +0000",
-        "20261015070500 +0000",
+        "20261016055000 +0000",
+        "20261016060500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -5140,13 +4417,13 @@
       "new": [
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
-        "20261015055000 +0000",
-        "20261015075000 +0000",
+        "20261016055000 +0000",
+        "20261016075000 +0000",
         "infomercial"
       ],
       "existing": [
-        "20261015070500 +0000",
-        "20261015072000 +0000",
+        "20261016060500 +0000",
+        "20261016062000 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -5156,13 +4433,13 @@
       "new": [
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
-        "20261015055000 +0000",
-        "20261015075000 +0000",
+        "20261016055000 +0000",
+        "20261016075000 +0000",
         "infomercial"
       ],
       "existing": [
-        "20261015072000 +0000",
-        "20261015073500 +0000",
+        "20261016062000 +0000",
+        "20261016063500 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
@@ -5172,111 +4449,495 @@
       "new": [
         "DE-MASTER.xml.gz",
         "HGTV.de@SD",
-        "20261015055000 +0000",
-        "20261015075000 +0000",
+        "20261016055000 +0000",
+        "20261016075000 +0000",
         "infomercial"
       ],
       "existing": [
-        "20261015073500 +0000",
-        "20261015075000 +0000",
+        "20261016063500 +0000",
+        "20261016065000 +0000",
         "infomercial",
         "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
     },
     {
-      "id": "SRFernsehen.de@SD",
+      "id": "HGTV.de@HD",
       "new": [
         "DE-MASTER.xml.gz",
-        "SRFernsehen.de@HD",
-        "20261009140000 +0000",
-        "20261009140400 +0000",
-        "sr info"
+        "HGTV.de@SD",
+        "20261016055000 +0000",
+        "20261016075000 +0000",
+        "infomercial"
       ],
       "existing": [
-        "20261009140000 +0000",
-        "20261009140500 +0000",
-        "sr info",
-        "DE-MAGENTA.xml.gz:SRFernsehen.de@SD"
+        "20261016065000 +0000",
+        "20261016070500 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
     },
     {
-      "id": "SRFernsehen.de@SD",
+      "id": "HGTV.de@HD",
       "new": [
         "DE-MASTER.xml.gz",
-        "SRFernsehen.de@HD",
-        "20261009140400 +0000",
-        "20261009140500 +0000",
-        "baden-w\u00fcrttemberg wetter"
+        "HGTV.de@SD",
+        "20261016055000 +0000",
+        "20261016075000 +0000",
+        "infomercial"
       ],
       "existing": [
-        "20261009140000 +0000",
-        "20261009140500 +0000",
-        "sr info",
-        "DE-MAGENTA.xml.gz:SRFernsehen.de@SD"
+        "20261016070500 +0000",
+        "20261016072000 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
     },
     {
-      "id": "SRFernsehen.de@SD",
+      "id": "HGTV.de@HD",
       "new": [
         "DE-MASTER.xml.gz",
-        "SRFernsehen.de@HD",
-        "20261009222500 +0000",
-        "20261010004500 +0000",
-        "anatomie eines falls"
+        "HGTV.de@SD",
+        "20261016055000 +0000",
+        "20261016075000 +0000",
+        "infomercial"
       ],
       "existing": [
-        "20261009222500 +0000",
-        "20261010011000 +0000",
-        "anatomie eines falls",
-        "DE-MAGENTA.xml.gz:SRFernsehen.de@SD"
+        "20261016072000 +0000",
+        "20261016073500 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
     },
     {
-      "id": "SRFernsehen.de@SD",
+      "id": "HGTV.de@HD",
       "new": [
         "DE-MASTER.xml.gz",
-        "SRFernsehen.de@HD",
-        "20261010004500 +0000",
-        "20261010011000 +0000",
-        "wandern auf dem donauberglandweg"
+        "HGTV.de@SD",
+        "20261016055000 +0000",
+        "20261016075000 +0000",
+        "infomercial"
       ],
       "existing": [
-        "20261009222500 +0000",
-        "20261010011000 +0000",
-        "anatomie eines falls",
-        "DE-MAGENTA.xml.gz:SRFernsehen.de@SD"
+        "20261016073500 +0000",
+        "20261016075000 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
     },
     {
-      "id": "SRFernsehen.de@SD",
+      "id": "HGTV.de@HD",
       "new": [
         "DE-MASTER.xml.gz",
-        "SRFernsehen.de@HD",
-        "20261011053000 +0000",
-        "20261011060000 +0000",
-        "panoramablick - das wetter im s\u00fcdwesten"
+        "HGTV.de@SD",
+        "20261017055000 +0000",
+        "20261017075000 +0000",
+        "infomercial"
       ],
       "existing": [
-        "20261011053000 +0000",
-        "20261011065500 +0000",
-        "panoramablick - das wetter im s\u00fcdwesten",
-        "DE-MAGENTA.xml.gz:SRFernsehen.de@SD"
+        "20261017055000 +0000",
+        "20261017060500 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
       ]
     },
     {
-      "id": "SRFernsehen.de@SD",
+      "id": "HGTV.de@HD",
       "new": [
         "DE-MASTER.xml.gz",
-        "SRFernsehen.de@HD",
-        "20261011060000 +0000",
-        "20261011065500 +0000",
-        "panoramablick"
+        "HGTV.de@SD",
+        "20261017055000 +0000",
+        "20261017075000 +0000",
+        "infomercial"
       ],
       "existing": [
-        "20261011053000 +0000",
-        "20261011065500 +0000",
-        "panoramablick - das wetter im s\u00fcdwesten",
-        "DE-MAGENTA.xml.gz:SRFernsehen.de@SD"
+        "20261017060500 +0000",
+        "20261017062000 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
+      ]
+    },
+    {
+      "id": "HGTV.de@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "HGTV.de@SD",
+        "20261017055000 +0000",
+        "20261017075000 +0000",
+        "infomercial"
+      ],
+      "existing": [
+        "20261017062000 +0000",
+        "20261017063500 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
+      ]
+    },
+    {
+      "id": "HGTV.de@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "HGTV.de@SD",
+        "20261017055000 +0000",
+        "20261017075000 +0000",
+        "infomercial"
+      ],
+      "existing": [
+        "20261017063500 +0000",
+        "20261017065000 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
+      ]
+    },
+    {
+      "id": "HGTV.de@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "HGTV.de@SD",
+        "20261017055000 +0000",
+        "20261017075000 +0000",
+        "infomercial"
+      ],
+      "existing": [
+        "20261017065000 +0000",
+        "20261017070500 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
+      ]
+    },
+    {
+      "id": "HGTV.de@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "HGTV.de@SD",
+        "20261017055000 +0000",
+        "20261017075000 +0000",
+        "infomercial"
+      ],
+      "existing": [
+        "20261017070500 +0000",
+        "20261017072000 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
+      ]
+    },
+    {
+      "id": "HGTV.de@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "HGTV.de@SD",
+        "20261017055000 +0000",
+        "20261017075000 +0000",
+        "infomercial"
+      ],
+      "existing": [
+        "20261017072000 +0000",
+        "20261017073500 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
+      ]
+    },
+    {
+      "id": "HGTV.de@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "HGTV.de@SD",
+        "20261017055000 +0000",
+        "20261017075000 +0000",
+        "infomercial"
+      ],
+      "existing": [
+        "20261017073500 +0000",
+        "20261017075000 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
+      ]
+    },
+    {
+      "id": "HGTV.de@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "HGTV.de@SD",
+        "20261018055000 +0000",
+        "20261018075000 +0000",
+        "infomercial"
+      ],
+      "existing": [
+        "20261018055000 +0000",
+        "20261018060500 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
+      ]
+    },
+    {
+      "id": "HGTV.de@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "HGTV.de@SD",
+        "20261018055000 +0000",
+        "20261018075000 +0000",
+        "infomercial"
+      ],
+      "existing": [
+        "20261018060500 +0000",
+        "20261018062000 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
+      ]
+    },
+    {
+      "id": "HGTV.de@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "HGTV.de@SD",
+        "20261018055000 +0000",
+        "20261018075000 +0000",
+        "infomercial"
+      ],
+      "existing": [
+        "20261018062000 +0000",
+        "20261018063500 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
+      ]
+    },
+    {
+      "id": "HGTV.de@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "HGTV.de@SD",
+        "20261018055000 +0000",
+        "20261018075000 +0000",
+        "infomercial"
+      ],
+      "existing": [
+        "20261018063500 +0000",
+        "20261018065000 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
+      ]
+    },
+    {
+      "id": "HGTV.de@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "HGTV.de@SD",
+        "20261018055000 +0000",
+        "20261018075000 +0000",
+        "infomercial"
+      ],
+      "existing": [
+        "20261018065000 +0000",
+        "20261018070500 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
+      ]
+    },
+    {
+      "id": "HGTV.de@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "HGTV.de@SD",
+        "20261018055000 +0000",
+        "20261018075000 +0000",
+        "infomercial"
+      ],
+      "existing": [
+        "20261018070500 +0000",
+        "20261018072000 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
+      ]
+    },
+    {
+      "id": "HGTV.de@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "HGTV.de@SD",
+        "20261018055000 +0000",
+        "20261018075000 +0000",
+        "infomercial"
+      ],
+      "existing": [
+        "20261018072000 +0000",
+        "20261018073500 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
+      ]
+    },
+    {
+      "id": "HGTV.de@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "HGTV.de@SD",
+        "20261018055000 +0000",
+        "20261018075000 +0000",
+        "infomercial"
+      ],
+      "existing": [
+        "20261018073500 +0000",
+        "20261018075000 +0000",
+        "infomercial",
+        "DE-MASTER.xml.gz:HGTV.de@HD"
+      ]
+    },
+    {
+      "id": "RTLup.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "RTLup.de@HD",
+        "20261017031500 +0000",
+        "20261017035500 +0000",
+        "das jugendgericht"
+      ],
+      "existing": [
+        "20261017031500 +0000",
+        "20261017040500 +0000",
+        "das jugendgericht",
+        "DE-MAGENTA.xml.gz:RTLup.de@SD"
+      ]
+    },
+    {
+      "id": "RTLup.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "RTLup.de@HD",
+        "20261017035500 +0000",
+        "20261017043500 +0000",
+        "das familiengericht"
+      ],
+      "existing": [
+        "20261017031500 +0000",
+        "20261017040500 +0000",
+        "das jugendgericht",
+        "DE-MAGENTA.xml.gz:RTLup.de@SD"
+      ]
+    },
+    {
+      "id": "RTLup.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "RTLup.de@HD",
+        "20261017035500 +0000",
+        "20261017043500 +0000",
+        "das familiengericht"
+      ],
+      "existing": [
+        "20261017040500 +0000",
+        "20261017043500 +0000",
+        "das familiengericht",
+        "DE-MAGENTA.xml.gz:RTLup.de@SD"
+      ]
+    },
+    {
+      "id": "RomanceTV.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "RomanceTV.de@HD",
+        "20261012024000 +0000",
+        "20261012032500 +0000",
+        "die kanzlei"
+      ],
+      "existing": [
+        "20261012024000 +0000",
+        "20261012033000 +0000",
+        "die kanzlei",
+        "DE-MAGENTA.xml.gz:RomanceTV.de@SD"
+      ]
+    },
+    {
+      "id": "RomanceTV.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "RomanceTV.de@HD",
+        "20261012032500 +0000",
+        "20261012033000 +0000",
+        "paare"
+      ],
+      "existing": [
+        "20261012024000 +0000",
+        "20261012033000 +0000",
+        "die kanzlei",
+        "DE-MAGENTA.xml.gz:RomanceTV.de@SD"
+      ]
+    },
+    {
+      "id": "RomanceTV.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "RomanceTV.de@HD",
+        "20261012033000 +0000",
+        "20261012033500 +0000",
+        "paare"
+      ],
+      "existing": [
+        "20261012033000 +0000",
+        "20261012033200 +0000",
+        "paare",
+        "DE-MAGENTA.xml.gz:RomanceTV.de@SD"
+      ]
+    },
+    {
+      "id": "RomanceTV.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "RomanceTV.de@HD",
+        "20261012033000 +0000",
+        "20261012033500 +0000",
+        "paare"
+      ],
+      "existing": [
+        "20261012033200 +0000",
+        "20261012033500 +0000",
+        "paare",
+        "DE-MAGENTA.xml.gz:RomanceTV.de@SD"
+      ]
+    },
+    {
+      "id": "RomanceTV.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "RomanceTV.de@HD",
+        "20261014181500 +0000",
+        "20261014194500 +0000",
+        "meine mutter... gibt es doppelt"
+      ],
+      "existing": [
+        "20261014181500 +0000",
+        "20261014195000 +0000",
+        "meine mutter... gibt es doppelt",
+        "DE-MAGENTA.xml.gz:RomanceTV.de@SD"
+      ]
+    },
+    {
+      "id": "RomanceTV.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "RomanceTV.de@HD",
+        "20261014194500 +0000",
+        "20261014212000 +0000",
+        "meine mutter... raubt die braut"
+      ],
+      "existing": [
+        "20261014181500 +0000",
+        "20261014195000 +0000",
+        "meine mutter... gibt es doppelt",
+        "DE-MAGENTA.xml.gz:RomanceTV.de@SD"
+      ]
+    },
+    {
+      "id": "RomanceTV.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "RomanceTV.de@HD",
+        "20261014194500 +0000",
+        "20261014212000 +0000",
+        "meine mutter... raubt die braut"
+      ],
+      "existing": [
+        "20261014195000 +0000",
+        "20261014212000 +0000",
+        "meine mutter... raubt die braut",
+        "DE-MAGENTA.xml.gz:RomanceTV.de@SD"
       ]
     },
     {
@@ -5408,435 +5069,515 @@
       ]
     },
     {
-      "id": "SkySport3.de@SD",
+      "id": "SRFernsehen.de@SD",
       "new": [
         "DE-MASTER.xml.gz",
-        "SkySport1.de@HD",
-        "20261008230000 +0000",
-        "20261009021500 +0000",
-        "live nhl: utah mammoth @ boston bruins"
+        "SRFernsehen.de@HD",
+        "20261016140000 +0000",
+        "20261016140400 +0000",
+        "sr info"
       ],
       "existing": [
-        "20261008230000 +0000",
-        "20261009040000 +0000",
-        "live nhl: utah mammoth @ boston bruins",
-        "DE-MAGENTA.xml.gz:SkySport3.de@SD"
+        "20261016140000 +0000",
+        "20261016140500 +0000",
+        "sr info",
+        "DE-MAGENTA.xml.gz:SRFernsehen.de@SD"
       ]
     },
     {
-      "id": "SkySport3.de@SD",
+      "id": "SRFernsehen.de@SD",
       "new": [
         "DE-MASTER.xml.gz",
-        "SkySport1.de@HD",
-        "20261009021500 +0000",
-        "20261009064000 +0000",
+        "SRFernsehen.de@HD",
+        "20261016140400 +0000",
+        "20261016140500 +0000",
+        "baden-w\u00fcrttemberg wetter"
+      ],
+      "existing": [
+        "20261016140000 +0000",
+        "20261016140500 +0000",
+        "sr info",
+        "DE-MAGENTA.xml.gz:SRFernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "MagentaTV.de@SkySport10",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySport10.de@HD",
+        "20261017040000 +0000",
+        "20261017100000 +0000",
         "sendepause"
       ],
       "existing": [
-        "20261008230000 +0000",
-        "20261009040000 +0000",
-        "live nhl: utah mammoth @ boston bruins",
-        "DE-MAGENTA.xml.gz:SkySport3.de@SD"
+        "20261017040000 +0000",
+        "20261017094000 +0000",
+        "sendepause",
+        "DE-MAGENTA.xml.gz:MagentaTV.de@SkySport10"
       ]
     },
     {
-      "id": "SkySport3.de@SD",
+      "id": "MagentaTV.de@SkySport10",
       "new": [
         "DE-MASTER.xml.gz",
-        "SkySport1.de@HD",
-        "20261009021500 +0000",
-        "20261009064000 +0000",
+        "SkySport10.de@HD",
+        "20261017040000 +0000",
+        "20261017100000 +0000",
         "sendepause"
       ],
       "existing": [
-        "20261009040000 +0000",
-        "20261009064000 +0000",
-        "sendepause",
-        "DE-MAGENTA.xml.gz:SkySport3.de@SD"
+        "20261017094000 +0000",
+        "20261017100000 +0000",
+        "es folgt: live wta",
+        "DE-MAGENTA.xml.gz:MagentaTV.de@SkySport10"
       ]
     },
     {
-      "id": "SkySport6.de@SD",
+      "id": "SkySportBundesliga3.de@SD",
       "new": [
         "DE-MASTER.xml.gz",
-        "SkySport4.de@HD",
-        "20261011040000 +0000",
-        "20261011144000 +0000",
+        "SkySportBundesliga2.de@HD",
+        "20261018040000 +0000",
+        "20261018110000 +0000",
         "sendepause"
       ],
       "existing": [
-        "20261011040000 +0000",
-        "20261012040000 +0000",
+        "20261018040000 +0000",
+        "20261018104000 +0000",
         "sendepause",
-        "DE-MAGENTA.xml.gz:SkySport6.de@SD"
+        "DE-MAGENTA.xml.gz:SkySportBundesliga3.de@SD"
       ]
     },
     {
-      "id": "SkySport6.de@SD",
+      "id": "SkySportBundesliga3.de@SD",
       "new": [
         "DE-MASTER.xml.gz",
-        "SkySport4.de@HD",
-        "20261011144000 +0000",
-        "20261011150000 +0000",
-        "es folgt: live premier league"
-      ],
-      "existing": [
-        "20261011040000 +0000",
-        "20261012040000 +0000",
-        "sendepause",
-        "DE-MAGENTA.xml.gz:SkySport6.de@SD"
-      ]
-    },
-    {
-      "id": "SkySport6.de@SD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "SkySport4.de@HD",
-        "20261011150000 +0000",
-        "20261011173000 +0000",
-        "live pl: pl xtra: liv - mci, 6. spieltag"
-      ],
-      "existing": [
-        "20261011040000 +0000",
-        "20261012040000 +0000",
-        "sendepause",
-        "DE-MAGENTA.xml.gz:SkySport6.de@SD"
-      ]
-    },
-    {
-      "id": "SkySport6.de@SD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "SkySport4.de@HD",
-        "20261011173000 +0000",
-        "20261011180000 +0000",
-        "live pl: match of the week: die analyse, liv - mci, 6. spieltag"
-      ],
-      "existing": [
-        "20261011040000 +0000",
-        "20261012040000 +0000",
-        "sendepause",
-        "DE-MAGENTA.xml.gz:SkySport6.de@SD"
-      ]
-    },
-    {
-      "id": "SkySport6.de@SD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "SkySport4.de@HD",
-        "20261011180000 +0000",
-        "20261011183000 +0000",
-        "live pl: all goals: die highlight-show"
-      ],
-      "existing": [
-        "20261011040000 +0000",
-        "20261012040000 +0000",
-        "sendepause",
-        "DE-MAGENTA.xml.gz:SkySport6.de@SD"
-      ]
-    },
-    {
-      "id": "SkySport6.de@SD",
-      "new": [
-        "DE-MASTER.xml.gz",
-        "SkySport4.de@HD",
-        "20261011183000 +0000",
-        "20261012040000 +0000",
+        "SkySportBundesliga2.de@HD",
+        "20261018040000 +0000",
+        "20261018110000 +0000",
         "sendepause"
       ],
       "existing": [
-        "20261011040000 +0000",
-        "20261012040000 +0000",
+        "20261018104000 +0000",
+        "20261018110000 +0000",
+        "es folgt: live 2. bl:",
+        "DE-MAGENTA.xml.gz:SkySportBundesliga3.de@SD"
+      ]
+    },
+    {
+      "id": "SkySportBundesliga3.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportBundesliga2.de@HD",
+        "20261018133000 +0000",
+        "20261018153000 +0000",
+        "sendepause"
+      ],
+      "existing": [
+        "20261018133000 +0000",
+        "20261018151000 +0000",
         "sendepause",
-        "DE-MAGENTA.xml.gz:SkySport6.de@SD"
+        "DE-MAGENTA.xml.gz:SkySportBundesliga3.de@SD"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "SkySportBundesliga3.de@SD",
       "new": [
         "DE-MASTER.xml.gz",
-        "ZDF.de@HD",
-        "20261008231500 +0000",
-        "20261009010000 +0000",
-        "air - der grosse wurf"
+        "SkySportBundesliga2.de@HD",
+        "20261018133000 +0000",
+        "20261018153000 +0000",
+        "sendepause"
       ],
       "existing": [
-        "20261008232000 +0000",
-        "20261009010500 +0000",
-        "air - der grosse wurf",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261018151000 +0000",
+        "20261018153000 +0000",
+        "es folgt: bl",
+        "DE-MAGENTA.xml.gz:SkySportBundesliga3.de@SD"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "SkySportBundesliga7.de@SD",
       "new": [
         "DE-MASTER.xml.gz",
-        "ZDF.de@HD",
-        "20261009010000 +0000",
-        "20261009022500 +0000",
-        "borderline - grenzenlose verbrechen"
+        "SkySportBundesliga6.de@HD",
+        "20261017040000 +0000",
+        "20261017103000 +0000",
+        "sendepause"
       ],
       "existing": [
-        "20261008232000 +0000",
-        "20261009010500 +0000",
-        "air - der grosse wurf",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261017040000 +0000",
+        "20261017101000 +0000",
+        "sendepause",
+        "DE-MAGENTA.xml.gz:SkySportBundesliga7.de@SD"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "SkySportBundesliga7.de@SD",
       "new": [
         "DE-MASTER.xml.gz",
-        "ZDF.de@HD",
-        "20261009010000 +0000",
-        "20261009022500 +0000",
-        "borderline - grenzenlose verbrechen"
+        "SkySportBundesliga6.de@HD",
+        "20261017040000 +0000",
+        "20261017103000 +0000",
+        "sendepause"
       ],
       "existing": [
-        "20261009010500 +0000",
-        "20261009022500 +0000",
-        "borderline - grenzenlose verbrechen",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261017101000 +0000",
+        "20261017103000 +0000",
+        "es folgt: live 2. bl:",
+        "DE-MAGENTA.xml.gz:SkySportBundesliga7.de@SD"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "SkySportBundesliga8.de@SD",
       "new": [
         "DE-MASTER.xml.gz",
-        "ZDF.de@HD",
-        "20261009022500 +0000",
-        "20261009031000 +0000",
-        "trigger point"
+        "SkySportBundesliga7.de@HD",
+        "20261017040000 +0000",
+        "20261017103000 +0000",
+        "sendepause"
       ],
       "existing": [
-        "20261009022500 +0000",
-        "20261009031500 +0000",
-        "trigger point",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261017040000 +0000",
+        "20261017101000 +0000",
+        "sendepause",
+        "DE-MAGENTA.xml.gz:SkySportBundesliga8.de@SD"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "SkySportBundesliga8.de@SD",
       "new": [
         "DE-MASTER.xml.gz",
-        "ZDF.de@HD",
-        "20261009031000 +0000",
-        "20261009033000 +0000",
-        "hallo deutschland"
+        "SkySportBundesliga7.de@HD",
+        "20261017040000 +0000",
+        "20261017103000 +0000",
+        "sendepause"
       ],
       "existing": [
-        "20261009022500 +0000",
-        "20261009031500 +0000",
-        "trigger point",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261017101000 +0000",
+        "20261017103000 +0000",
+        "es folgt: live 2. bl",
+        "DE-MAGENTA.xml.gz:SkySportBundesliga8.de@SD"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "MagentaTV.de@SkySportMix",
       "new": [
         "DE-MASTER.xml.gz",
-        "ZDF.de@HD",
-        "20261009031000 +0000",
-        "20261009033000 +0000",
-        "hallo deutschland"
+        "SkySportMix.de@HD",
+        "20261012000000 +0000",
+        "20261012010000 +0000",
+        "3. liga: alle spiele, alle tore, 8. spieltag komplett"
       ],
       "existing": [
-        "20261009031500 +0000",
-        "20261009033000 +0000",
-        "bares f\u00fcr rares - lieblingsst\u00fccke",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261012000000 +0000",
+        "20261012003000 +0000",
+        "3. liga: alle spiele, alle tore, 8. spieltag komplett",
+        "DE-MAGENTA.xml.gz:MagentaTV.de@SkySportMix"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "MagentaTV.de@SkySportMix",
       "new": [
         "DE-MASTER.xml.gz",
-        "ZDF.de@HD",
-        "20261009181500 +0000",
-        "20261009203500 +0000",
-        "fussball: testspiel der frauen"
+        "SkySportMix.de@HD",
+        "20261012000000 +0000",
+        "20261012010000 +0000",
+        "3. liga: alle spiele, alle tore, 8. spieltag komplett"
       ],
       "existing": [
-        "20261009181500 +0000",
-        "20261009191500 +0000",
-        "fussball-l\u00e4nderspiel der frauen",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261012003000 +0000",
+        "20261012004500 +0000",
+        "nhl: highlights det@mtl",
+        "DE-MAGENTA.xml.gz:MagentaTV.de@SkySportMix"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "MagentaTV.de@SkySportMix",
       "new": [
         "DE-MASTER.xml.gz",
-        "ZDF.de@HD",
-        "20261009181500 +0000",
-        "20261009203500 +0000",
-        "fussball: testspiel der frauen"
+        "SkySportMix.de@HD",
+        "20261012000000 +0000",
+        "20261012010000 +0000",
+        "3. liga: alle spiele, alle tore, 8. spieltag komplett"
       ],
       "existing": [
-        "20261009191500 +0000",
-        "20261009192500 +0000",
-        "heute journal",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261012004500 +0000",
+        "20261012010000 +0000",
+        "nhl: highlights nsh@ott",
+        "DE-MAGENTA.xml.gz:MagentaTV.de@SkySportMix"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "MagentaTV.de@SkySportMix",
       "new": [
         "DE-MASTER.xml.gz",
-        "ZDF.de@HD",
-        "20261009181500 +0000",
-        "20261009203500 +0000",
-        "fussball: testspiel der frauen"
+        "SkySportMix.de@HD",
+        "20261017103000 +0000",
+        "20261017110000 +0000",
+        "fim worldwcr: superpole - gp spanien"
       ],
       "existing": [
-        "20261009192500 +0000",
-        "20261009203500 +0000",
-        "fussball-l\u00e4nderspiel der frauen",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261017103000 +0000",
+        "20261017113000 +0000",
+        "motogp: highlights: gp indonesien",
+        "DE-MAGENTA.xml.gz:MagentaTV.de@SkySportMix"
       ]
     },
     {
-      "id": "hrfernsehen.de@SD",
+      "id": "MagentaTV.de@SkySportMix",
       "new": [
         "DE-MASTER.xml.gz",
-        "hrfernsehen.de@HD",
-        "20261011035000 +0000",
-        "20261011042000 +0000",
-        "phil und das traurigsein"
+        "SkySportMix.de@HD",
+        "20261017110000 +0000",
+        "20261017120000 +0000",
+        "fim worldwcr: 1. rennen - gp spanien"
       ],
       "existing": [
-        "20261011035000 +0000",
-        "20261011041500 +0000",
-        "phil und das traurigsein",
-        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+        "20261017103000 +0000",
+        "20261017113000 +0000",
+        "motogp: highlights: gp indonesien",
+        "DE-MAGENTA.xml.gz:MagentaTV.de@SkySportMix"
       ]
     },
     {
-      "id": "hrfernsehen.de@SD",
+      "id": "MagentaTV.de@SkySportMix",
       "new": [
         "DE-MASTER.xml.gz",
-        "hrfernsehen.de@HD",
-        "20261011035000 +0000",
-        "20261011042000 +0000",
-        "phil und das traurigsein"
+        "SkySportMix.de@HD",
+        "20261017110000 +0000",
+        "20261017120000 +0000",
+        "fim worldwcr: 1. rennen - gp spanien"
       ],
       "existing": [
-        "20261011041500 +0000",
-        "20261011042000 +0000",
-        "bilder aus hessen",
-        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+        "20261017113000 +0000",
+        "20261017120000 +0000",
+        "fim worldwcr: superpole - gp spanien",
+        "DE-MAGENTA.xml.gz:MagentaTV.de@SkySportMix"
       ]
     },
     {
-      "id": "ntv.at@HD",
+      "id": "MagentaTV.de@SkySportMix",
       "new": [
         "DE-MASTER.xml.gz",
-        "ntv.at@SD",
-        "20261008235500 +0000",
-        "20261009003500 +0000",
-        "das kriegsende in farbe"
+        "SkySportMix.de@HD",
+        "20261017120000 +0000",
+        "20261017122500 +0000",
+        "nhl: on the fly"
       ],
       "existing": [
-        "20261009000000 +0000",
-        "20261009004500 +0000",
-        "das kriegsende in farbe",
-        "DE-MASTER.xml.gz:ntv.at@HD"
+        "20261017120000 +0000",
+        "20261017125500 +0000",
+        "fim worldwcr: 1. rennen - gp spanien",
+        "DE-MAGENTA.xml.gz:MagentaTV.de@SkySportMix"
       ]
     },
     {
-      "id": "ntv.at@HD",
+      "id": "MagentaTV.de@SkySportMix",
       "new": [
         "DE-MASTER.xml.gz",
-        "ntv.at@SD",
-        "20261009003500 +0000",
-        "20261009012000 +0000",
-        "das kriegsende in farbe"
+        "SkySportMix.de@HD",
+        "20261017122500 +0000",
+        "20261017132000 +0000",
+        "motogp: highlights: gp indonesien"
       ],
       "existing": [
-        "20261009000000 +0000",
-        "20261009004500 +0000",
-        "das kriegsende in farbe",
-        "DE-MASTER.xml.gz:ntv.at@HD"
+        "20261017120000 +0000",
+        "20261017125500 +0000",
+        "fim worldwcr: 1. rennen - gp spanien",
+        "DE-MAGENTA.xml.gz:MagentaTV.de@SkySportMix"
       ]
     },
     {
-      "id": "ntv.at@HD",
+      "id": "MagentaTV.de@SkySportMix",
       "new": [
         "DE-MASTER.xml.gz",
-        "ntv.at@SD",
-        "20261009003500 +0000",
-        "20261009012000 +0000",
-        "das kriegsende in farbe"
+        "SkySportMix.de@HD",
+        "20261017122500 +0000",
+        "20261017132000 +0000",
+        "motogp: highlights: gp indonesien"
       ],
       "existing": [
-        "20261009004500 +0000",
-        "20261009013000 +0000",
-        "das kriegsende in farbe",
-        "DE-MASTER.xml.gz:ntv.at@HD"
+        "20261017125500 +0000",
+        "20261017132000 +0000",
+        "nhl: on the fly",
+        "DE-MAGENTA.xml.gz:MagentaTV.de@SkySportMix"
       ]
     },
     {
-      "id": "ntv.at@HD",
+      "id": "MagentaTV.de@SkySportMix",
       "new": [
         "DE-MASTER.xml.gz",
-        "ntv.at@SD",
-        "20261009012000 +0000",
-        "20261009020500 +0000",
-        "hitlers dna - das letzte geheimnis des diktators"
+        "SkySportMix.de@HD",
+        "20261018161500 +0000",
+        "20261018170000 +0000",
+        "live nfl: guten abend football"
       ],
       "existing": [
-        "20261009004500 +0000",
-        "20261009013000 +0000",
-        "das kriegsende in farbe",
-        "DE-MASTER.xml.gz:ntv.at@HD"
+        "20261018161500 +0000",
+        "20261018165500 +0000",
+        "live nfl: guten abend football",
+        "DE-MAGENTA.xml.gz:MagentaTV.de@SkySportMix"
       ]
     },
     {
-      "id": "ntv.at@HD",
+      "id": "MagentaTV.de@SkySportMix",
       "new": [
         "DE-MASTER.xml.gz",
-        "ntv.at@SD",
-        "20261009012000 +0000",
-        "20261009020500 +0000",
-        "hitlers dna - das letzte geheimnis des diktators"
+        "SkySportMix.de@HD",
+        "20261018161500 +0000",
+        "20261018170000 +0000",
+        "live nfl: guten abend football"
       ],
       "existing": [
-        "20261009013000 +0000",
-        "20261009021500 +0000",
-        "hitlers dna - das letzte geheimnis des diktators",
-        "DE-MASTER.xml.gz:ntv.at@HD"
+        "20261018165500 +0000",
+        "20261018233000 +0000",
+        "live nfl: konferenz, week 6",
+        "DE-MAGENTA.xml.gz:MagentaTV.de@SkySportMix"
       ]
     },
     {
-      "id": "ntv.at@HD",
+      "id": "MagentaTV.de@SkySportMix",
       "new": [
         "DE-MASTER.xml.gz",
-        "ntv.at@SD",
-        "20261009020500 +0000",
-        "20261009025500 +0000",
-        "hitlers dna - das letzte geheimnis des diktators"
+        "SkySportMix.de@HD",
+        "20261018170000 +0000",
+        "20261018233000 +0000",
+        "live nfl: konferenz, week 6"
       ],
       "existing": [
-        "20261009013000 +0000",
-        "20261009021500 +0000",
-        "hitlers dna - das letzte geheimnis des diktators",
-        "DE-MASTER.xml.gz:ntv.at@HD"
+        "20261018165500 +0000",
+        "20261018233000 +0000",
+        "live nfl: konferenz, week 6",
+        "DE-MAGENTA.xml.gz:MagentaTV.de@SkySportMix"
       ]
     },
     {
-      "id": "ntv.at@HD",
+      "id": "SkySport2.de@SD",
       "new": [
         "DE-MASTER.xml.gz",
-        "ntv.at@SD",
-        "20261009020500 +0000",
-        "20261009025500 +0000",
-        "hitlers dna - das letzte geheimnis des diktators"
+        "SkySportTennis.de@HD",
+        "20261012030000 +0000",
+        "20261012153000 +0000",
+        "live atp & wta: konferenz atp rolex shanghai masters & wta masters wuhan open"
       ],
       "existing": [
-        "20261009021500 +0000",
-        "20261009025500 +0000",
-        "hitlers dna - das letzte geheimnis des diktators",
-        "DE-MASTER.xml.gz:ntv.at@HD"
+        "20261012030000 +0000",
+        "20261012090000 +0000",
+        "-",
+        "DE-MAGENTA.xml.gz:SkySport2.de@SD"
+      ]
+    },
+    {
+      "id": "SkySport2.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportTennis.de@HD",
+        "20261012030000 +0000",
+        "20261012153000 +0000",
+        "live atp & wta: konferenz atp rolex shanghai masters & wta masters wuhan open"
+      ],
+      "existing": [
+        "20261012090000 +0000",
+        "20261012150000 +0000",
+        "-",
+        "DE-MAGENTA.xml.gz:SkySport2.de@SD"
+      ]
+    },
+    {
+      "id": "SkySport2.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportTennis.de@HD",
+        "20261012030000 +0000",
+        "20261012153000 +0000",
+        "live atp & wta: konferenz atp rolex shanghai masters & wta masters wuhan open"
+      ],
+      "existing": [
+        "20261012150000 +0000",
+        "20261012153000 +0000",
+        "-",
+        "DE-MAGENTA.xml.gz:SkySport2.de@SD"
+      ]
+    },
+    {
+      "id": "SkySport2.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportTennis.de@HD",
+        "20261013030000 +0000",
+        "20261013150000 +0000",
+        "live atp & wta: konferenz atp rolex shanghai masters & wta masters wuhan open"
+      ],
+      "existing": [
+        "20261013030000 +0000",
+        "20261013090000 +0000",
+        "-",
+        "DE-MAGENTA.xml.gz:SkySport2.de@SD"
+      ]
+    },
+    {
+      "id": "SkySport2.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportTennis.de@HD",
+        "20261013030000 +0000",
+        "20261013150000 +0000",
+        "live atp & wta: konferenz atp rolex shanghai masters & wta masters wuhan open"
+      ],
+      "existing": [
+        "20261013090000 +0000",
+        "20261013150000 +0000",
+        "-",
+        "DE-MAGENTA.xml.gz:SkySport2.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261012211500 +0000",
+        "20261012222000 +0000",
+        "goodbye deutschland! die auswanderer"
+      ],
+      "existing": [
+        "20261012211500 +0000",
+        "20261012221000 +0000",
+        "goodbye deutschland! die auswanderer",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261012211500 +0000",
+        "20261012222000 +0000",
+        "goodbye deutschland! die auswanderer"
+      ],
+      "existing": [
+        "20261012221000 +0000",
+        "20261012223000 +0000",
+        "vox nachrichten",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261012222000 +0000",
+        "20261012223000 +0000",
+        "vox nachrichten"
+      ],
+      "existing": [
+        "20261012221000 +0000",
+        "20261012223000 +0000",
+        "vox nachrichten",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
       ]
     },
     {
@@ -6096,355 +5837,419 @@
       ]
     },
     {
-      "id": "tagesschau24.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
         "DE-MASTER.xml.gz",
-        "tagesschau24.de@HD",
-        "20261009000300 +0000",
-        "20261009003000 +0000",
-        "die \u00e4rzte der \u00e4g\u00e4is"
+        "sixxAustria.at@SD",
+        "20261013035000 +0000",
+        "20261013044000 +0000",
+        "fixer upper - umbauen, einrichten, einziehen!"
       ],
       "existing": [
-        "20261009000300 +0000",
-        "20261009003300 +0000",
-        "die \u00e4rzte der \u00e4g\u00e4is",
-        "DE-MAGENTA.xml.gz:tagesschau24.de@SD"
+        "20261013035000 +0000",
+        "20261013080000 +0000",
+        "mediashop",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "tagesschau24.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
         "DE-MASTER.xml.gz",
-        "tagesschau24.de@HD",
-        "20261009003000 +0000",
-        "20261009010000 +0000",
-        "mdr th\u00fcringen journal"
+        "sixxAustria.at@SD",
+        "20261013044000 +0000",
+        "20261013053000 +0000",
+        "fixer upper - umbauen, einrichten, einziehen!"
       ],
       "existing": [
-        "20261009000300 +0000",
-        "20261009003300 +0000",
-        "die \u00e4rzte der \u00e4g\u00e4is",
-        "DE-MAGENTA.xml.gz:tagesschau24.de@SD"
+        "20261013035000 +0000",
+        "20261013080000 +0000",
+        "mediashop",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "tagesschau24.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
         "DE-MASTER.xml.gz",
-        "tagesschau24.de@HD",
-        "20261009003000 +0000",
-        "20261009010000 +0000",
-        "mdr th\u00fcringen journal"
+        "sixxAustria.at@SD",
+        "20261013053000 +0000",
+        "20261013061500 +0000",
+        "charmed"
       ],
       "existing": [
-        "20261009003300 +0000",
-        "20261009005000 +0000",
-        "nationalparks: naturparadiese unter feuer",
-        "DE-MAGENTA.xml.gz:tagesschau24.de@SD"
+        "20261013035000 +0000",
+        "20261013080000 +0000",
+        "mediashop",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "tagesschau24.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
         "DE-MASTER.xml.gz",
-        "tagesschau24.de@HD",
-        "20261009003000 +0000",
-        "20261009010000 +0000",
-        "mdr th\u00fcringen journal"
+        "sixxAustria.at@SD",
+        "20261013061500 +0000",
+        "20261013070000 +0000",
+        "charmed"
       ],
       "existing": [
-        "20261009005000 +0000",
-        "20261009010000 +0000",
-        "extra",
-        "DE-MAGENTA.xml.gz:tagesschau24.de@SD"
+        "20261013035000 +0000",
+        "20261013080000 +0000",
+        "mediashop",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "tagesschau24.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
         "DE-MASTER.xml.gz",
-        "tagesschau24.de@HD",
-        "20261009010300 +0000",
-        "20261009014800 +0000",
-        "aktuelle stunde"
+        "sixxAustria.at@SD",
+        "20261013070000 +0000",
+        "20261013080000 +0000",
+        "grey's anatomy - die jungen \u00e4rzte"
       ],
       "existing": [
-        "20261009010300 +0000",
-        "20261009015500 +0000",
-        "risiko extremwetter - gewitter, hagel und starkregen",
-        "DE-MAGENTA.xml.gz:tagesschau24.de@SD"
+        "20261013035000 +0000",
+        "20261013080000 +0000",
+        "mediashop",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "tagesschau24.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
         "DE-MASTER.xml.gz",
-        "tagesschau24.de@HD",
-        "20261009014800 +0000",
-        "20261009020000 +0000",
-        "extra"
+        "sixxAustria.at@SD",
+        "20261013080000 +0000",
+        "20261013090000 +0000",
+        "grey's anatomy - die jungen \u00e4rzte"
       ],
       "existing": [
-        "20261009010300 +0000",
-        "20261009015500 +0000",
-        "risiko extremwetter - gewitter, hagel und starkregen",
-        "DE-MAGENTA.xml.gz:tagesschau24.de@SD"
+        "20261013080000 +0000",
+        "20261013085500 +0000",
+        "grey's anatomy - die jungen \u00e4rzte",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "tagesschau24.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
         "DE-MASTER.xml.gz",
-        "tagesschau24.de@HD",
-        "20261009014800 +0000",
-        "20261009020000 +0000",
-        "extra"
+        "sixxAustria.at@SD",
+        "20261013080000 +0000",
+        "20261013090000 +0000",
+        "grey's anatomy - die jungen \u00e4rzte"
       ],
       "existing": [
-        "20261009015500 +0000",
-        "20261009020000 +0000",
-        "extra",
-        "DE-MAGENTA.xml.gz:tagesschau24.de@SD"
+        "20261013085500 +0000",
+        "20261013095500 +0000",
+        "gilmore girls",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "tagesschau24.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
         "DE-MASTER.xml.gz",
-        "tagesschau24.de@HD",
-        "20261009020300 +0000",
-        "20261009032500 +0000",
-        "landesschau baden-w\u00fcrttemberg"
+        "sixxAustria.at@SD",
+        "20261013090000 +0000",
+        "20261013095500 +0000",
+        "gilmore girls"
       ],
       "existing": [
-        "20261009020300 +0000",
-        "20261009025000 +0000",
-        "gemeinsam das klima retten",
-        "DE-MAGENTA.xml.gz:tagesschau24.de@SD"
+        "20261013085500 +0000",
+        "20261013095500 +0000",
+        "gilmore girls",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "tagesschau24.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
         "DE-MASTER.xml.gz",
-        "tagesschau24.de@HD",
-        "20261009020300 +0000",
-        "20261009032500 +0000",
-        "landesschau baden-w\u00fcrttemberg"
+        "sixxAustria.at@SD",
+        "20261013184500 +0000",
+        "20261013191500 +0000",
+        "fixer upper: behind the design"
       ],
       "existing": [
-        "20261009025000 +0000",
-        "20261009032000 +0000",
-        "lang lebe der adel?!",
-        "DE-MAGENTA.xml.gz:tagesschau24.de@SD"
+        "20261013184500 +0000",
+        "20261013191000 +0000",
+        "fixer upper: behind the design",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "tagesschau24.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
         "DE-MASTER.xml.gz",
-        "tagesschau24.de@HD",
-        "20261009020300 +0000",
-        "20261009032500 +0000",
-        "landesschau baden-w\u00fcrttemberg"
+        "sixxAustria.at@SD",
+        "20261013184500 +0000",
+        "20261013191500 +0000",
+        "fixer upper: behind the design"
       ],
       "existing": [
-        "20261009032000 +0000",
-        "20261009033000 +0000",
-        "extra",
-        "DE-MAGENTA.xml.gz:tagesschau24.de@SD"
+        "20261013191000 +0000",
+        "20261013201000 +0000",
+        "fixer upper - umbauen, einrichten, einziehen!",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "tagesschau24.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
         "DE-MASTER.xml.gz",
-        "tagesschau24.de@HD",
-        "20261009032500 +0000",
-        "20261009033000 +0000",
-        "extra"
+        "sixxAustria.at@SD",
+        "20261013191500 +0000",
+        "20261013201000 +0000",
+        "fixer upper - umbauen, einrichten, einziehen!"
       ],
       "existing": [
-        "20261009032000 +0000",
-        "20261009033000 +0000",
-        "extra",
-        "DE-MAGENTA.xml.gz:tagesschau24.de@SD"
+        "20261013191000 +0000",
+        "20261013201000 +0000",
+        "fixer upper - umbauen, einrichten, einziehen!",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
-        "DE-AMAZON.xml.gz",
-        "AmazonPrime.de.zdf",
-        "20261008231500 +0000",
-        "20261009010000 +0000",
-        "air - der grosse wurf"
+        "DE-MASTER.xml.gz",
+        "sixxAustria.at@SD",
+        "20261013201000 +0000",
+        "20261013211000 +0000",
+        "fixer upper - umbauen, einrichten, einziehen!"
       ],
       "existing": [
-        "20261008232000 +0000",
-        "20261009010500 +0000",
-        "air - der grosse wurf",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261013201000 +0000",
+        "20261013210500 +0000",
+        "fixer upper - umbauen, einrichten, einziehen!",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
-        "DE-AMAZON.xml.gz",
-        "AmazonPrime.de.zdf",
-        "20261009010000 +0000",
-        "20261009022500 +0000",
-        "borderline - grenzenlose verbrechen"
+        "DE-MASTER.xml.gz",
+        "sixxAustria.at@SD",
+        "20261013201000 +0000",
+        "20261013211000 +0000",
+        "fixer upper - umbauen, einrichten, einziehen!"
       ],
       "existing": [
-        "20261008232000 +0000",
-        "20261009010500 +0000",
-        "air - der grosse wurf",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261013210500 +0000",
+        "20261013213500 +0000",
+        "fixer upper: behind the design",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
-        "DE-AMAZON.xml.gz",
-        "AmazonPrime.de.zdf",
-        "20261009010000 +0000",
-        "20261009022500 +0000",
-        "borderline - grenzenlose verbrechen"
+        "DE-MASTER.xml.gz",
+        "sixxAustria.at@SD",
+        "20261013211000 +0000",
+        "20261013213500 +0000",
+        "fixer upper: behind the design"
       ],
       "existing": [
-        "20261009010500 +0000",
-        "20261009022500 +0000",
-        "borderline - grenzenlose verbrechen",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261013210500 +0000",
+        "20261013213500 +0000",
+        "fixer upper: behind the design",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
-        "DE-AMAZON.xml.gz",
-        "AmazonPrime.de.zdf",
-        "20261009022500 +0000",
-        "20261009031000 +0000",
-        "trigger point"
+        "DE-MASTER.xml.gz",
+        "sixxAustria.at@SD",
+        "20261013213500 +0000",
+        "20261013220500 +0000",
+        "fixer upper: behind the design"
       ],
       "existing": [
-        "20261009022500 +0000",
-        "20261009031500 +0000",
-        "trigger point",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261013213500 +0000",
+        "20261013220000 +0000",
+        "fixer upper: behind the design",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
-        "DE-AMAZON.xml.gz",
-        "AmazonPrime.de.zdf",
-        "20261009031000 +0000",
-        "20261009033000 +0000",
-        "hallo deutschland"
+        "DE-MASTER.xml.gz",
+        "sixxAustria.at@SD",
+        "20261013213500 +0000",
+        "20261013220500 +0000",
+        "fixer upper: behind the design"
       ],
       "existing": [
-        "20261009022500 +0000",
-        "20261009031500 +0000",
-        "trigger point",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261013220000 +0000",
+        "20261013225500 +0000",
+        "second chance homes - neuer glanz f\u00fcr verlassene h\u00e4user",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
-        "DE-AMAZON.xml.gz",
-        "AmazonPrime.de.zdf",
-        "20261009031000 +0000",
-        "20261009033000 +0000",
-        "hallo deutschland"
+        "DE-MASTER.xml.gz",
+        "sixxAustria.at@SD",
+        "20261013220500 +0000",
+        "20261013230000 +0000",
+        "second chance homes - neuer glanz f\u00fcr verlassene h\u00e4user"
       ],
       "existing": [
-        "20261009031500 +0000",
-        "20261009033000 +0000",
-        "bares f\u00fcr rares - lieblingsst\u00fccke",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261013220000 +0000",
+        "20261013225500 +0000",
+        "second chance homes - neuer glanz f\u00fcr verlassene h\u00e4user",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
-        "DE-AMAZON.xml.gz",
-        "AmazonPrime.de.zdf",
-        "20261009181500 +0000",
-        "20261009203500 +0000",
-        "fussball: testspiel der frauen"
+        "DE-MASTER.xml.gz",
+        "sixxAustria.at@SD",
+        "20261013220500 +0000",
+        "20261013230000 +0000",
+        "second chance homes - neuer glanz f\u00fcr verlassene h\u00e4user"
       ],
       "existing": [
-        "20261009181500 +0000",
-        "20261009191500 +0000",
-        "fussball-l\u00e4nderspiel der frauen",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261013225500 +0000",
+        "20261013234000 +0000",
+        "second chance homes - neuer glanz f\u00fcr verlassene h\u00e4user",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
-        "DE-AMAZON.xml.gz",
-        "AmazonPrime.de.zdf",
-        "20261009181500 +0000",
-        "20261009203500 +0000",
-        "fussball: testspiel der frauen"
+        "DE-MASTER.xml.gz",
+        "sixxAustria.at@SD",
+        "20261013230000 +0000",
+        "20261013234000 +0000",
+        "second chance homes - neuer glanz f\u00fcr verlassene h\u00e4user"
       ],
       "existing": [
-        "20261009191500 +0000",
-        "20261009192500 +0000",
-        "heute journal",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261013225500 +0000",
+        "20261013234000 +0000",
+        "second chance homes - neuer glanz f\u00fcr verlassene h\u00e4user",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "ZDF.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
-        "DE-AMAZON.xml.gz",
-        "AmazonPrime.de.zdf",
-        "20261009181500 +0000",
-        "20261009203500 +0000",
-        "fussball: testspiel der frauen"
+        "DE-MASTER.xml.gz",
+        "sixxAustria.at@SD",
+        "20261013234000 +0000",
+        "20261014002500 +0000",
+        "fixer upper - umbauen, einrichten, einziehen!"
       ],
       "existing": [
-        "20261009192500 +0000",
-        "20261009203500 +0000",
-        "fussball-l\u00e4nderspiel der frauen",
-        "DE-MAGENTA.xml.gz:ZDF.de@SD"
+        "20261013234000 +0000",
+        "20261014002000 +0000",
+        "fixer upper - umbauen, einrichten, einziehen!",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "hrfernsehen.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
-        "DE-AMAZON.xml.gz",
-        "AmazonPrime.de.hr",
-        "20261011035000 +0000",
-        "20261011042000 +0000",
-        "phil und das traurigsein"
+        "DE-MASTER.xml.gz",
+        "sixxAustria.at@SD",
+        "20261013234000 +0000",
+        "20261014002500 +0000",
+        "fixer upper - umbauen, einrichten, einziehen!"
       ],
       "existing": [
-        "20261011035000 +0000",
-        "20261011041500 +0000",
-        "phil und das traurigsein",
-        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+        "20261014002000 +0000",
+        "20261014010000 +0000",
+        "fixer upper - umbauen, einrichten, einziehen!",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
-      "id": "hrfernsehen.de@SD",
+      "id": "sixxAustria.at@HD",
       "new": [
-        "DE-AMAZON.xml.gz",
-        "AmazonPrime.de.hr",
-        "20261011035000 +0000",
-        "20261011042000 +0000",
-        "phil und das traurigsein"
+        "DE-MASTER.xml.gz",
+        "sixxAustria.at@SD",
+        "20261014002500 +0000",
+        "20261014010500 +0000",
+        "fixer upper - umbauen, einrichten, einziehen!"
       ],
       "existing": [
-        "20261011041500 +0000",
-        "20261011042000 +0000",
-        "bilder aus hessen",
-        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+        "20261014002000 +0000",
+        "20261014010000 +0000",
+        "fixer upper - umbauen, einrichten, einziehen!",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
+      ]
+    },
+    {
+      "id": "sixxAustria.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "sixxAustria.at@SD",
+        "20261014002500 +0000",
+        "20261014010500 +0000",
+        "fixer upper - umbauen, einrichten, einziehen!"
+      ],
+      "existing": [
+        "20261014010000 +0000",
+        "20261014012500 +0000",
+        "modern home design - neu gedacht, neu gemacht",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
+      ]
+    },
+    {
+      "id": "sixxAustria.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "sixxAustria.at@SD",
+        "20261014010500 +0000",
+        "20261014012500 +0000",
+        "modern home design - neu gedacht, neu gemacht"
+      ],
+      "existing": [
+        "20261014010000 +0000",
+        "20261014012500 +0000",
+        "modern home design - neu gedacht, neu gemacht",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
+      ]
+    },
+    {
+      "id": "sixxAustria.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "sixxAustria.at@SD",
+        "20261014021500 +0000",
+        "20261014022000 +0000",
+        "tagesfrau"
+      ],
+      "existing": [
+        "20261014021500 +0000",
+        "20261014022500 +0000",
+        "tagesfrau",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
+      ]
+    },
+    {
+      "id": "sixxAustria.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "sixxAustria.at@SD",
+        "20261014022000 +0000",
+        "20261014022500 +0000",
+        "tagesfrau"
+      ],
+      "existing": [
+        "20261014021500 +0000",
+        "20261014022500 +0000",
+        "tagesfrau",
+        "DE-MASTER.xml.gz:sixxAustria.at@HD"
       ]
     },
     {
@@ -6484,102 +6289,6 @@
       "new": [
         "DE-AMAZON.xml.gz",
         "AmazonPrime.de.sr-fernsehen",
-        "20261009140000 +0000",
-        "20261009140400 +0000",
-        "sr info"
-      ],
-      "existing": [
-        "20261009140000 +0000",
-        "20261009140500 +0000",
-        "sr info",
-        "DE-MAGENTA.xml.gz:SRFernsehen.de@SD"
-      ]
-    },
-    {
-      "id": "SRFernsehen.de@SD",
-      "new": [
-        "DE-AMAZON.xml.gz",
-        "AmazonPrime.de.sr-fernsehen",
-        "20261009140400 +0000",
-        "20261009140500 +0000",
-        "baden-w\u00fcrttemberg wetter"
-      ],
-      "existing": [
-        "20261009140000 +0000",
-        "20261009140500 +0000",
-        "sr info",
-        "DE-MAGENTA.xml.gz:SRFernsehen.de@SD"
-      ]
-    },
-    {
-      "id": "SRFernsehen.de@SD",
-      "new": [
-        "DE-AMAZON.xml.gz",
-        "AmazonPrime.de.sr-fernsehen",
-        "20261009222500 +0000",
-        "20261010004500 +0000",
-        "anatomie eines falls"
-      ],
-      "existing": [
-        "20261009222500 +0000",
-        "20261010011000 +0000",
-        "anatomie eines falls",
-        "DE-MAGENTA.xml.gz:SRFernsehen.de@SD"
-      ]
-    },
-    {
-      "id": "SRFernsehen.de@SD",
-      "new": [
-        "DE-AMAZON.xml.gz",
-        "AmazonPrime.de.sr-fernsehen",
-        "20261010004500 +0000",
-        "20261010011000 +0000",
-        "wandern auf dem donauberglandweg"
-      ],
-      "existing": [
-        "20261009222500 +0000",
-        "20261010011000 +0000",
-        "anatomie eines falls",
-        "DE-MAGENTA.xml.gz:SRFernsehen.de@SD"
-      ]
-    },
-    {
-      "id": "SRFernsehen.de@SD",
-      "new": [
-        "DE-AMAZON.xml.gz",
-        "AmazonPrime.de.sr-fernsehen",
-        "20261011053000 +0000",
-        "20261011060000 +0000",
-        "panoramablick - das wetter im s\u00fcdwesten"
-      ],
-      "existing": [
-        "20261011053000 +0000",
-        "20261011065500 +0000",
-        "panoramablick - das wetter im s\u00fcdwesten",
-        "DE-MAGENTA.xml.gz:SRFernsehen.de@SD"
-      ]
-    },
-    {
-      "id": "SRFernsehen.de@SD",
-      "new": [
-        "DE-AMAZON.xml.gz",
-        "AmazonPrime.de.sr-fernsehen",
-        "20261011060000 +0000",
-        "20261011065500 +0000",
-        "panoramablick"
-      ],
-      "existing": [
-        "20261011053000 +0000",
-        "20261011065500 +0000",
-        "panoramablick - das wetter im s\u00fcdwesten",
-        "DE-MAGENTA.xml.gz:SRFernsehen.de@SD"
-      ]
-    },
-    {
-      "id": "SRFernsehen.de@SD",
-      "new": [
-        "DE-AMAZON.xml.gz",
-        "AmazonPrime.de.sr-fernsehen",
         "20261012140000 +0000",
         "20261012140400 +0000",
         "sr info"
@@ -6699,6 +6408,38 @@
       "existing": [
         "20261015140000 +0000",
         "20261015140500 +0000",
+        "sr info",
+        "DE-MAGENTA.xml.gz:SRFernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "SRFernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.sr-fernsehen",
+        "20261016140000 +0000",
+        "20261016140400 +0000",
+        "sr info"
+      ],
+      "existing": [
+        "20261016140000 +0000",
+        "20261016140500 +0000",
+        "sr info",
+        "DE-MAGENTA.xml.gz:SRFernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "SRFernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.sr-fernsehen",
+        "20261016140400 +0000",
+        "20261016140500 +0000",
+        "baden-w\u00fcrttemberg wetter"
+      ],
+      "existing": [
+        "20261016140000 +0000",
+        "20261016140500 +0000",
         "sr info",
         "DE-MAGENTA.xml.gz:SRFernsehen.de@SD"
       ]
@@ -9167,12 +8908,6 @@
     },
     {
       "source_file": "DE-MASTER.xml.gz",
-      "source_id": "ClubbingTV.us@Russia",
-      "canonical_id": "ClubbingTV.us@Russia",
-      "owner": "DE-MASTER.xml.gz"
-    },
-    {
-      "source_file": "DE-MASTER.xml.gz",
       "source_id": "ClublandTV.uk@SD",
       "canonical_id": "ClublandTV.uk@SD",
       "owner": "DE-MASTER.xml.gz"
@@ -11076,8 +10811,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "PlutoTVKultComedies.de@DACH",
-      "canonical_id": "PlutoTV.de.66337de656fc840008ff7a65",
-      "owner": "DE-PLUTO.xml.gz"
+      "canonical_id": "PlutoTVKultComedies.de@DACH",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -11400,7 +11135,7 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "ProSiebenAustria.at@SD",
-      "canonical_id": "ProSiebenAustria.at@SD",
+      "canonical_id": "ProSiebenAustria.at@HD",
       "owner": "DE-MASTER.xml.gz"
     },
     {
@@ -11610,8 +11345,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "RTLZwei.de@HD",
-      "canonical_id": "RTLZwei.de@HD",
-      "owner": "DE-MASTER.xml.gz"
+      "canonical_id": "RTLZwei.de@SD",
+      "owner": "DE-MAGENTA.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -11784,8 +11519,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "RomanceTV.de@HD",
-      "canonical_id": "RomanceTV.de@HD",
-      "owner": "DE-MASTER.xml.gz"
+      "canonical_id": "RomanceTV.de@SD",
+      "owner": "DE-MAGENTA.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -12198,8 +11933,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySport1.de@HD",
-      "canonical_id": "SkySport3.de@SD",
-      "owner": "DE-MAGENTA.xml.gz"
+      "canonical_id": "SkySport1.de@HD",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -12210,8 +11945,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySport10.de@HD",
-      "canonical_id": "SkySport10.de@HD",
-      "owner": "DE-MASTER.xml.gz"
+      "canonical_id": "MagentaTV.de@SkySport10",
+      "owner": "DE-MAGENTA.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -12252,8 +11987,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySport4.de@HD",
-      "canonical_id": "SkySport6.de@SD",
-      "owner": "DE-MAGENTA.xml.gz"
+      "canonical_id": "SkySport4.de@HD",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -12276,8 +12011,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySport6.de@HD",
-      "canonical_id": "SkySport8.de@SD",
-      "owner": "DE-MAGENTA.xml.gz"
+      "canonical_id": "SkySport6.de@HD",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -12288,8 +12023,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySport7.de@HD",
-      "canonical_id": "SkySport9.de@SD",
-      "owner": "DE-MAGENTA.xml.gz"
+      "canonical_id": "SkySport7.de@HD",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -12300,8 +12035,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySport8.de@HD",
-      "canonical_id": "SkySport10.de@SD",
-      "owner": "DE-MAGENTA.xml.gz"
+      "canonical_id": "SkySport8.de@HD",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -12312,8 +12047,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySport9.de@HD",
-      "canonical_id": "SkySport11.de@SD",
-      "owner": "DE-MAGENTA.xml.gz"
+      "canonical_id": "SkySport9.de@HD",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -12384,8 +12119,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySportBundesliga.de@SD",
-      "canonical_id": "SkySportBundesliga.de@SD",
-      "owner": "DE-MASTER.xml.gz"
+      "canonical_id": "SkySportBundesliga1.de@SD",
+      "owner": "DE-MAGENTA.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -12396,8 +12131,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySportBundesliga1.de@HD",
-      "canonical_id": "SkySportBundesliga2.de@SD",
-      "owner": "DE-MAGENTA.xml.gz"
+      "canonical_id": "SkySportBundesliga1.de@HD",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -12432,8 +12167,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySportBundesliga3.de@HD",
-      "canonical_id": "SkySportBundesliga4.de@SD",
-      "owner": "DE-MAGENTA.xml.gz"
+      "canonical_id": "SkySportBundesliga3.de@HD",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -12444,8 +12179,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySportBundesliga4.de@HD",
-      "canonical_id": "SkySportBundesliga5.de@SD",
-      "owner": "DE-MAGENTA.xml.gz"
+      "canonical_id": "SkySportBundesliga4.de@HD",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -12456,8 +12191,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySportBundesliga5.de@HD",
-      "canonical_id": "SkySportBundesliga6.de@SD",
-      "owner": "DE-MAGENTA.xml.gz"
+      "canonical_id": "SkySportBundesliga5.de@HD",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -12516,8 +12251,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySportF1.de@HD",
-      "canonical_id": "SkySportF1.de@SD",
-      "owner": "DE-MAGENTA.xml.gz"
+      "canonical_id": "SkySportF1.de@HD",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -12528,8 +12263,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySportGolf.de@HD",
-      "canonical_id": "MagentaTV.de@SkySportGolf",
-      "owner": "DE-MAGENTA.xml.gz"
+      "canonical_id": "SkySportGolf.de@HD",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -12546,8 +12281,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySportNews.de@HD",
-      "canonical_id": "SkySportNews.de@SD",
-      "owner": "DE-MAGENTA.xml.gz"
+      "canonical_id": "SkySportNews.de@HD",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -13020,8 +12755,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "TakeshisCastle.us@Germany",
-      "canonical_id": "TakeshisCastle.us@Germany",
-      "owner": "DE-MASTER.xml.gz"
+      "canonical_id": "PlutoTV.de.6054a9f4bc8a5f000771504c",
+      "owner": "DE-PLUTO.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -13231,12 +12966,6 @@
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "Trailers.es@FR",
       "canonical_id": "Trailers.es@FR",
-      "owner": "DE-MASTER.xml.gz"
-    },
-    {
-      "source_file": "DE-MASTER.xml.gz",
-      "source_id": "Trailers.es@IT",
-      "canonical_id": "Trailers.es@IT",
       "owner": "DE-MASTER.xml.gz"
     },
     {
@@ -13476,8 +13205,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "WorldPokerTour.us@Germany",
-      "canonical_id": "PlutoTV.de.5ad9b7aae738977e2c312132",
-      "owner": "DE-PLUTO.xml.gz"
+      "canonical_id": "WorldPokerTour.us@Germany",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -13542,8 +13271,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "YuGiOh.us@SD",
-      "canonical_id": "YuGiOh.us@SD",
-      "owner": "DE-MASTER.xml.gz"
+      "canonical_id": "PlutoTV.de.642d4493aa2d690008f0a03f",
+      "owner": "DE-PLUTO.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -17394,8 +17123,8 @@
     {
       "source_file": "DE-SAMSUNG.xml.gz",
       "source_id": "SamsungTVPlus.de.DEAK3504517A",
-      "canonical_id": "PlutoTV.de.5c5c3b948002db3c3e0b262e",
-      "owner": "DE-PLUTO.xml.gz"
+      "canonical_id": "SamsungTVPlus.de.DEAK3504517A",
+      "owner": "DE-SAMSUNG.xml.gz"
     },
     {
       "source_file": "DE-SAMSUNG.xml.gz",
@@ -17436,8 +17165,8 @@
     {
       "source_file": "DE-SAMSUNG.xml.gz",
       "source_id": "SamsungTVPlus.de.DEBA2200007V6",
-      "canonical_id": "XITEHits.nl@Germany",
-      "owner": "DE-MASTER.xml.gz"
+      "canonical_id": "SamsungTVPlus.de.DEBA2200007V6",
+      "owner": "DE-SAMSUNG.xml.gz"
     },
     {
       "source_file": "DE-SAMSUNG.xml.gz",
@@ -17574,8 +17303,8 @@
     {
       "source_file": "DE-SAMSUNG.xml.gz",
       "source_id": "SamsungTVPlus.de.DEBC4700004VZ",
-      "canonical_id": "SamsungTVPlus.de.DEBC4700004VZ",
-      "owner": "DE-SAMSUNG.xml.gz"
+      "canonical_id": "LoveThePlanet.es@DE",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-SAMSUNG.xml.gz",
@@ -17736,43 +17465,43 @@
   ],
   "outputs": {
     "DE-MASTER.xml.gz": {
-      "channels": 854,
-      "programmes": 142840
+      "channels": 860,
+      "programmes": 143166
     },
     "DE-MAGENTA.xml.gz": {
       "channels": 267,
-      "programmes": 54151
+      "programmes": 55845
     },
     "DE-SAMSUNG.xml.gz": {
-      "channels": 467,
-      "programmes": 3447
+      "channels": 468,
+      "programmes": 3217
     },
     "DE-PLUTO.xml.gz": {
       "channels": 178,
-      "programmes": 8211
+      "programmes": 8306
     },
     "DE-AMAZON.xml.gz": {
       "channels": 1,
-      "programmes": 36
+      "programmes": 37
     }
   },
   "input_sha256": {
-    "DE-MASTER.xml.gz": "64b4ba3a1cf140c44450422d63699df4aba72960040411b0f5de818b6c7874c0",
-    "DE-MAGENTA.xml.gz": "61f6601e3e9bd64544f8cf68363dc6303746567e1c7cc08ea77c9f85f3ef11fd",
-    "DE-SAMSUNG.xml.gz": "96f08a782ce1b99d2ccd2ad76ba54cd26ef6d03a0eaa3a781c14220e6c480876",
-    "DE-PLUTO.xml.gz": "e6d31200fe10ba99d8a85a7ee48cac8a08717be19d2a0b7f5be60ffce6e085db",
-    "DE-AMAZON.xml.gz": "aece927de639a8261bfa021a2dab9c2fb0fcc7bfbc9af3ddbaae22b05d42a061"
+    "DE-MASTER.xml.gz": "504c53ee0ab272bc2222cc6254c496207b7929d0ac467a845d7104c464095651",
+    "DE-MAGENTA.xml.gz": "fbdeffd11bba51c4b683e1020a12f6a0f2abd5c1c9a349ee35bc3d8c050ac7a1",
+    "DE-SAMSUNG.xml.gz": "260404b7cc11f6e3862d3329a95bcbf822eb01ed0e13792d3820d0dad9b8e547",
+    "DE-PLUTO.xml.gz": "04bd2926fbae355969aed33fd592ddf9420a96308805c33eee771e78ed1dc861",
+    "DE-AMAZON.xml.gz": "341f73554cfaebff2d5cade38ee2f8f2a58be46b4863fdcc261f27afff8bea50"
   },
   "output_sha256": {
-    "DE-MASTER.xml.gz": "b85c568ce1494d64351d5e121b2da4542d3a6f7b79bd42e5d12349066a4d2515",
-    "DE-MAGENTA.xml.gz": "1b58f1ab9be5b3be551aec06dbe0106563af64290daea01599c999aeb018498d",
-    "DE-SAMSUNG.xml.gz": "53233be4b3488185ecbe09d8adc75b28cee20bbf3b2a9da897372325a36359d6",
-    "DE-PLUTO.xml.gz": "28b14cddbff5eae81dcf01a2b58588c770e6bb5bae7769973cbde159fd74cd09",
-    "DE-AMAZON.xml.gz": "b8327bc52e4a99b62f6ffc8da618a2934fc9d154a438dec013b5998bf871fdda"
+    "DE-MASTER.xml.gz": "07240f0cad5158519b01e3152c0a58155cf0f05b8caf903705c38d9e44f64a51",
+    "DE-MAGENTA.xml.gz": "ad3aec75f384a162ccb9ab8aee5c0307721517ba29623dacce4a2afa27e24191",
+    "DE-SAMSUNG.xml.gz": "a84337aa4e3738180c44488db689c670a514ceefd6a8c8b27301e0aeb85d93d4",
+    "DE-PLUTO.xml.gz": "a328c2508ae8a996088c98ee29c316e59f0edb81bd176b4b5d8c75b4f63a8706",
+    "DE-AMAZON.xml.gz": "49702fee2860c241aad81ef9e694d3503948f6a5253eb545bea0f7ff9c38969b"
   },
   "evidence_sha256": {
     "quarantine.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "schedule-alternatives.jsonl": "b1677a0038c3aa66f0f39754404387bd9c5259e8fb818760adde497cc404ffed"
+    "schedule-alternatives.jsonl": "13106daa7f2d929bc8902a2fa1fc658234f2e90525d6e28e83ee673b0d067b3f"
   },
   "retired_empty_feeds": [],
   "audit": {
@@ -19246,17 +18975,6 @@
       {
         "left": [
           "DE-MASTER.xml.gz",
-          "PlutoTV.de.5ad9b7aae738977e2c312132"
-        ],
-        "right": [
-          "DE-PLUTO.xml.gz",
-          "PlutoTV.de.5ad9b7aae738977e2c312132"
-        ],
-        "reason": "same-id"
-      },
-      {
-        "left": [
-          "DE-MASTER.xml.gz",
           "PlutoTV.de.5ad9b8551b95267e225e59c1"
         ],
         "right": [
@@ -19400,6 +19118,17 @@
       {
         "left": [
           "DE-MASTER.xml.gz",
+          "PlutoTV.de.6054a9f4bc8a5f000771504c"
+        ],
+        "right": [
+          "DE-PLUTO.xml.gz",
+          "PlutoTV.de.6054a9f4bc8a5f000771504c"
+        ],
+        "reason": "same-id"
+      },
+      {
+        "left": [
+          "DE-MASTER.xml.gz",
           "PlutoTV.de.608181d420fc8500075f612a"
         ],
         "right": [
@@ -19488,6 +19217,17 @@
       {
         "left": [
           "DE-MASTER.xml.gz",
+          "PlutoTV.de.642d4493aa2d690008f0a03f"
+        ],
+        "right": [
+          "DE-PLUTO.xml.gz",
+          "PlutoTV.de.642d4493aa2d690008f0a03f"
+        ],
+        "reason": "same-id"
+      },
+      {
+        "left": [
+          "DE-MASTER.xml.gz",
           "PlutoTV.de.64be64445dc166000899ce75"
         ],
         "right": [
@@ -19515,17 +19255,6 @@
         "right": [
           "DE-PLUTO.xml.gz",
           "PlutoTV.de.65004605110545000842035d"
-        ],
-        "reason": "same-id"
-      },
-      {
-        "left": [
-          "DE-MASTER.xml.gz",
-          "PlutoTV.de.66337de656fc840008ff7a65"
-        ],
-        "right": [
-          "DE-PLUTO.xml.gz",
-          "PlutoTV.de.66337de656fc840008ff7a65"
         ],
         "reason": "same-id"
       },
@@ -21105,24 +20834,24 @@
     ],
     "outputs": {
       "DE-MASTER.xml.gz": {
-        "channels": 854,
-        "programmes": 142840
+        "channels": 860,
+        "programmes": 143166
       },
       "DE-MAGENTA.xml.gz": {
         "channels": 267,
-        "programmes": 54151
+        "programmes": 55845
       },
       "DE-SAMSUNG.xml.gz": {
-        "channels": 467,
-        "programmes": 3447
+        "channels": 468,
+        "programmes": 3217
       },
       "DE-PLUTO.xml.gz": {
         "channels": 178,
-        "programmes": 8211
+        "programmes": 8306
       },
       "DE-AMAZON.xml.gz": {
         "channels": 1,
-        "programmes": 36
+        "programmes": 37
       }
     },
     "aliases": [
@@ -21224,19 +20953,19 @@
     "baseline_outputs": {
       "DE-MASTER.xml.gz": {
         "channels": 854,
-        "programmes": 142228
+        "programmes": 142840
       },
       "DE-MAGENTA.xml.gz": {
         "channels": 267,
-        "programmes": 54213
+        "programmes": 54151
       },
       "DE-SAMSUNG.xml.gz": {
-        "channels": 468,
-        "programmes": 3369
+        "channels": 467,
+        "programmes": 3447
       },
       "DE-PLUTO.xml.gz": {
         "channels": 178,
-        "programmes": 8213
+        "programmes": 8211
       },
       "DE-AMAZON.xml.gz": {
         "channels": 1,
