@@ -112,6 +112,26 @@ class ReconciliationTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'LKG regression'):
             compare_lkg({'outputs': {}}, {'outputs': {'DE-MASTER.xml.gz': {'channels': 1, 'programmes': 3}}}, 'DE')
 
+    def test_partial_optional_migration_and_unrelated_replacement(self):
+        old = [{'canonical_id': cid, 'owner': 'DE-AMAZON.xml.gz', 'programmes': 100}
+               for cid in ('retained', 'moved')]
+        baseline = {'outputs': {'DE-AMAZON.xml.gz': {'channels': 2, 'programmes': 200}},
+                    'identity_coverage': old,
+                    'mapping': [{'source_id': c['canonical_id'], 'canonical_id': c['canonical_id']} for c in old]}
+        current = deepcopy(baseline)
+        current['outputs']['DE-AMAZON.xml.gz'] = {'channels': 1, 'programmes': 100}
+        current['outputs']['DE-PLUTO.xml.gz'] = {'channels': 1, 'programmes': 100}
+        current['identity_coverage'][1]['owner'] = 'DE-PLUTO.xml.gz'
+        self.assertEqual(len(compare_lkg(current, baseline, 'DE')), 1)
+        # Unchanged optional feeds still pass; membership, not total size,
+        # decides whether a previous identity survived.
+        self.assertEqual(compare_lkg(baseline, baseline, 'DE'), [])
+        replaced = deepcopy(baseline)
+        replaced['mapping'][1] = {'source_id': 'unrelated', 'canonical_id': 'unrelated'}
+        replaced['identity_coverage'][1]['canonical_id'] = 'unrelated'
+        with self.assertRaisesRegex(ValueError, 'unproven ownership migration'):
+            compare_lkg(replaced, baseline, 'DE')
+
     def test_reconciled_retirement_preserves_schedule_at_new_owner(self):
         with tempfile.TemporaryDirectory() as directory:
             base = Path(directory)
