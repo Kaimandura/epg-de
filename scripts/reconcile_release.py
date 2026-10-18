@@ -16,7 +16,7 @@ import xml.etree.ElementTree as ET
 from collections import Counter
 from pathlib import Path
 
-from release_policy import FILES, MAGENTA_REQUIRED, audit, configured_aliases, identity_groups, inspect, timestamp, validate_file_set
+from release_policy import FILES, OPTIONAL_FILES, MAGENTA_REQUIRED, audit, configured_aliases, identity_groups, inspect, timestamp, validate_file_set
 
 
 def elements(path):
@@ -205,6 +205,9 @@ def reconcile(paths, output, region, mapping=None):
                 shutil.copyfileobj(source,target)
         counts[label] = {'channels':len(selected), 'programmes':programmes}
     programme_counts = dict(connection.execute('SELECT identity,COUNT(*) FROM programmes GROUP BY identity'))
+    report['identity_coverage'] = [
+        {'canonical_id': canonical[n], 'owner': destinations[n][0],
+         'programmes': programme_counts.get(n, 0)} for n in sorted(canonical)]
     connection.close()
     result = audit({label:output/FILES[region][label] for label in counts}, aliases)
     report['outputs'] = counts
@@ -261,19 +264,50 @@ def main():
     if args.baseline:
         baseline_paths={label:args.baseline/stem for label,stem in FILES[args.region].items() if (args.baseline/stem).exists()}
         baseline_report=reconcile(baseline_paths,args.output/'baseline',args.region,args.baseline_mapping)
-        compare_lkg(report,baseline_report,args.region)
-        report['lkg']={'status':'passed','baseline_outputs':baseline_report['outputs']}
+        try:
+            migrations = compare_lkg(report,baseline_report,args.region)
+        except ValueError as exc:
+            report['lkg'] = {'status': 'failed', 'error': str(exc),
+                             'baseline_outputs': baseline_report['outputs']}
+            (args.output/'reconciliation.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+            raise
+        report['lkg']={'status':'passed','baseline_outputs':baseline_report['outputs'],
+                       'ownership_migrations': migrations}
         (args.output/'reconciliation.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
     print(json.dumps({'status':report['status'],'outputs':report['outputs'],'quarantined':report['quarantined']}))
 
 
 def compare_lkg(current,baseline,region):
     ratios={'channels':.70 if region=='DE' else .65,'programmes':.60 if region=='DE' else .55}
+    migrations = []
     for label,previous in baseline['outputs'].items():
+        if label in OPTIONAL_FILES and label not in current['outputs']:
+            # An optional product may become empty because every identity now
+            # has a higher-priority owner. Prove each identity and its schedule
+            # survived; absence alone must never exempt a feed from LKG.
+            old = [c for c in baseline.get('identity_coverage', []) if c['owner'] == label]
+            if len(old) != previous['channels'] or not old:
+                raise ValueError(f'LKG regression {label}: missing identity coverage proof')
+            for channel in old:
+                ids = {channel['canonical_id']} | {
+                    m['source_id'] for m in baseline['mapping']
+                    if m['canonical_id'] == channel['canonical_id']}
+                targets = {m['canonical_id'] for m in current.get('mapping', [])
+                           if m['source_id'] in ids}
+                matches = [c for c in current.get('identity_coverage', [])
+                           if c['canonical_id'] in targets]
+                if (len(targets) != 1 or len(matches) != 1 or matches[0]['owner'] == label
+                        or matches[0]['owner'] not in current['outputs']
+                        or matches[0]['programmes'] <= 0
+                        or matches[0]['programmes'] < channel['programmes'] * ratios['programmes']):
+                    raise ValueError(f'LKG regression {label}: unproven ownership migration of {channel["canonical_id"]}')
+                migrations.append({'from': channel, 'to': matches[0]})
+            continue
         actual=current['outputs'].get(label,{})
         for metric,ratio in ratios.items():
             if actual.get(metric,0)<previous[metric]*ratio:
                 raise ValueError(f'LKG regression {label} {metric}: {actual.get(metric,0)} < {ratio} * {previous[metric]}')
+    return migrations
 
 
 if __name__ == '__main__':

@@ -3,6 +3,7 @@ import json
 import tempfile
 import unittest
 import xml.etree.ElementTree as ET
+from copy import deepcopy
 from pathlib import Path
 from test_release import guide
 from release_policy import FILES, MAGENTA_REQUIRED, audit, identity_groups, inspect
@@ -70,6 +71,66 @@ class ReconciliationTests(unittest.TestCase):
         baseline={'outputs':{'USA-MASTER.xml.gz':{'channels':100,'programmes':1000}}}
         with self.assertRaisesRegex(ValueError,'LKG regression'):
             compare_lkg({'outputs':{'USA-MASTER.xml.gz':{'channels':100,'programmes':500}}},baseline,'USA')
+
+    def test_optional_retirement_requires_identity_and_programme_proof(self):
+        baseline = {
+            'outputs': {'DE-AMAZON.xml.gz': {'channels': 1, 'programmes': 100}},
+            'mapping': [{'source_id': 'AmazonPrime.de.news', 'canonical_id': 'AmazonPrime.de.news'}],
+            'identity_coverage': [{'canonical_id': 'AmazonPrime.de.news',
+                                   'owner': 'DE-AMAZON.xml.gz', 'programmes': 100}]}
+        current = {
+            'outputs': {'DE-MAGENTA.xml.gz': {'channels': 1, 'programmes': 100}},
+            'mapping': [{'source_id': 'AmazonPrime.de.news', 'canonical_id': 'News.de@HD'}],
+            'identity_coverage': [{'canonical_id': 'News.de@HD',
+                                   'owner': 'DE-MAGENTA.xml.gz', 'programmes': 100}]}
+        proof = compare_lkg(current, baseline, 'DE')
+        self.assertEqual(proof[0]['to']['canonical_id'], 'News.de@HD')
+        for field in ('mapping', 'identity_coverage'):
+            broken = deepcopy(current)
+            broken[field] = []
+            with self.assertRaisesRegex(ValueError, 'unproven ownership migration'):
+                compare_lkg(broken, baseline, 'DE')
+        broken = deepcopy(current)
+        broken['identity_coverage'][0]['programmes'] = 59
+        with self.assertRaisesRegex(ValueError, 'unproven ownership migration'):
+            compare_lkg(broken, baseline, 'DE')
+        broken = deepcopy(current)
+        broken['mapping'].append({'source_id': 'AmazonPrime.de.news', 'canonical_id': 'Other'})
+        broken['identity_coverage'].append({'canonical_id': 'Other', 'owner': 'DE-MAGENTA.xml.gz', 'programmes': 100})
+        with self.assertRaisesRegex(ValueError, 'unproven ownership migration'):
+            compare_lkg(broken, baseline, 'DE')
+        broken = deepcopy(baseline)
+        broken.pop('identity_coverage')
+        with self.assertRaisesRegex(ValueError, 'missing identity coverage proof'):
+            compare_lkg(current, broken, 'DE')
+
+    def test_required_retirement_and_existing_optional_loss_still_fail(self):
+        for label in ('DE-MASTER.xml.gz', 'DE-AMAZON.xml.gz'):
+            baseline = {'outputs': {label: {'channels': 100, 'programmes': 1000}}}
+            with self.assertRaisesRegex(ValueError, 'LKG regression'):
+                compare_lkg({'outputs': {label: {'channels': 69, 'programmes': 1000}}}, baseline, 'DE')
+        with self.assertRaisesRegex(ValueError, 'LKG regression'):
+            compare_lkg({'outputs': {}}, {'outputs': {'DE-MASTER.xml.gz': {'channels': 1, 'programmes': 3}}}, 'DE')
+
+    def test_reconciled_retirement_preserves_schedule_at_new_owner(self):
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            paths = {}
+            for label, stem in FILES['DE'].items():
+                path = base/stem
+                guide(path, MAGENTA_REQUIRED if 'MAGENTA' in label else [label])
+                paths[label] = path
+            guide(paths['DE-AMAZON.xml.gz'], ['AmazonPrime.de.all-romance'], 'All Romance')
+            baseline = reconcile(paths, base/'baseline', 'DE')
+            # A new Samsung source proves the same identity by timed titles.
+            guide(paths['DE-SAMSUNG.xml.gz'], ['SamsungTVPlus.de.romance'], 'All Romance')
+            current = reconcile(paths, base/'current', 'DE')
+            proof = compare_lkg(current, baseline, 'DE')
+            self.assertEqual(proof[0]['from']['canonical_id'], 'AmazonPrime.de.all-romance')
+            self.assertEqual(proof[0]['to']['owner'], 'DE-SAMSUNG.xml.gz')
+            self.assertEqual(proof[0]['to']['programmes'], 3)
+            self.assertFalse((base/'current/amazon.xml.gz').exists())
+            self.assertTrue(paths['DE-AMAZON.xml.gz'].exists())
 
     def test_affiliates_and_event_placeholders_do_not_prove_identity(self):
         with tempfile.TemporaryDirectory() as directory:
