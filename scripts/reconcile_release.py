@@ -281,10 +281,10 @@ def compare_lkg(current,baseline,region):
     ratios={'channels':.70 if region=='DE' else .65,'programmes':.60 if region=='DE' else .55}
     migrations = []
     for label,previous in baseline['outputs'].items():
-        if label in OPTIONAL_FILES and label not in current['outputs']:
-            # An optional product may become empty because every identity now
-            # has a higher-priority owner. Prove each identity and its schedule
-            # survived; absence alone must never exempt a feed from LKG.
+        if label in OPTIONAL_FILES:
+            # Optional products may shrink or retire as identities acquire a
+            # higher-priority owner. Check every old identity even if unrelated
+            # additions keep aggregate feed counts above the old thresholds.
             old = [c for c in baseline.get('identity_coverage', []) if c['owner'] == label]
             if len(old) != previous['channels'] or not old:
                 raise ValueError(f'LKG regression {label}: missing identity coverage proof')
@@ -296,12 +296,13 @@ def compare_lkg(current,baseline,region):
                            if m['source_id'] in ids}
                 matches = [c for c in current.get('identity_coverage', [])
                            if c['canonical_id'] in targets]
-                if (len(targets) != 1 or len(matches) != 1 or matches[0]['owner'] == label
+                if (len(targets) != 1 or len(matches) != 1
                         or matches[0]['owner'] not in current['outputs']
                         or matches[0]['programmes'] <= 0
                         or matches[0]['programmes'] < channel['programmes'] * ratios['programmes']):
                     raise ValueError(f'LKG regression {label}: unproven ownership migration of {channel["canonical_id"]}')
-                migrations.append({'from': channel, 'to': matches[0]})
+                if (channel['canonical_id'], channel['owner']) != (matches[0]['canonical_id'], matches[0]['owner']):
+                    migrations.append({'from': channel, 'to': matches[0]})
             continue
         actual=current['outputs'].get(label,{})
         for metric,ratio in ratios.items():
