@@ -10,6 +10,7 @@ import xml.etree.ElementTree as ET
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
+from isolate_platform_candidates import isolated_id
 
 
 @dataclass(frozen=True)
@@ -141,6 +142,33 @@ def best_logo(channel_id: str, logos: dict[tuple[str, str], list[LogoCandidate]]
     return None
 
 
+def load_samsung_logos(guides: list[str]) -> dict[str, str]:
+    """Use original provider IDs, with the same region isolation as the grabber."""
+    result: dict[str, str] = {}
+    seen: set[str] = set()
+    for specification in guides:
+        region, separator, filename = specification.partition('=')
+        if not separator or region not in {'de', 'at', 'ch'}:
+            raise ValueError('Samsung guide must be de=PATH, at=PATH or ch=PATH')
+        root = ET.parse(filename).getroot()
+        if root.tag != 'tv':
+            raise ValueError(f'{filename}: expected tv root')
+        for channel in root.findall('channel'):
+            provider_id = channel.get('id', '').strip()
+            if not provider_id:
+                raise ValueError(f'{filename}: empty provider channel ID')
+            cid = isolated_id({'attrs': {'site_id': f'SamsungTVPlus/{region}#{provider_id}'}},
+                              {'id_prefix': 'SamsungTVPlus'})
+            if cid in seen:
+                raise ValueError(f'{filename}: duplicate provider channel ID {cid}')
+            seen.add(cid)
+            urls = {i.get('src', '').strip() for i in channel.findall('icon')
+                    if i.get('src', '').strip().lower().startswith('https://')}
+            if len(urls) == 1:
+                result[cid] = next(iter(urls))
+    return result
+
+
 def unique_name_match(channel: ET.Element, name_index: dict[str, set[str]]) -> str | None:
     matched: set[str] = set()
     for value in display_names(channel):
@@ -171,6 +199,7 @@ def enrich_file(
     known_ids: set[str],
     name_index: dict[str, set[str]],
     logos: dict[tuple[str, str], list[LogoCandidate]],
+    provider_logos: dict[str, str] | None = None,
 ) -> dict[str, int | str | float]:
     root = ET.parse(path).getroot()
     if root.tag != "tv":
@@ -185,6 +214,7 @@ def enrich_file(
     before = 0
     exact_added = 0
     name_added = 0
+    provider_added = 0
 
     for channel in channels:
         existing = [
@@ -197,15 +227,19 @@ def enrich_file(
             continue
 
         xmltv_id = (channel.attrib.get("id") or "").strip()
-        logo_url = best_logo(xmltv_id, logos)
+        logo_url = (provider_logos or {}).get(xmltv_id)
         if logo_url:
-            exact_added += 1
+            provider_added += 1
         else:
-            matched_id = unique_name_match(channel, name_index)
-            if matched_id:
-                logo_url = best_logo(matched_id, logos)
-                if logo_url:
-                    name_added += 1
+            logo_url = best_logo(xmltv_id, logos)
+            if logo_url:
+                exact_added += 1
+            else:
+                matched_id = unique_name_match(channel, name_index)
+                if matched_id:
+                    logo_url = best_logo(matched_id, logos)
+                    if logo_url:
+                        name_added += 1
 
         if logo_url:
             channel.append(ET.Element("icon", {"src": logo_url}))
@@ -234,6 +268,7 @@ def enrich_file(
         "with_logo_before": before,
         "logos_added_exact": exact_added,
         "logos_added_unique_name": name_added,
+        "logos_added_provider": provider_added,
         "with_logo_after": after,
         "missing_logo_after": missing,
         "coverage_percent": coverage,
@@ -247,11 +282,13 @@ def main() -> int:
     parser.add_argument("--channels-csv", required=True, type=Path)
     parser.add_argument("--logos-csv", required=True, type=Path)
     parser.add_argument("--report", required=True, type=Path)
+    parser.add_argument('--samsung-guide', action='append', default=[], metavar='REGION=PATH')
     parser.add_argument("files", nargs="+", type=Path)
     args = parser.parse_args()
 
     known_ids, name_index = load_channel_name_index(args.channels_csv)
     logos = load_logos(args.logos_csv)
+    provider_logos = load_samsung_logos(args.samsung_guide)
     if not logos:
         raise RuntimeError("No usable logo records loaded")
 
@@ -259,7 +296,7 @@ def main() -> int:
     for path in args.files:
         if not path.exists():
             raise RuntimeError(f"EPG file not found: {path}")
-        row = enrich_file(path, known_ids, name_index, logos)
+        row = enrich_file(path, known_ids, name_index, logos, provider_logos)
         rows.append(row)
         print(
             "Logo enrichment: "
@@ -267,6 +304,7 @@ def main() -> int:
             f"before={row['with_logo_before']} "
             f"added_exact={row['logos_added_exact']} "
             f"added_name={row['logos_added_unique_name']} "
+            f"added_provider={row['logos_added_provider']} "
             f"after={row['with_logo_after']} "
             f"missing={row['missing_logo_after']} "
             f"coverage={row['coverage_percent']}%"
@@ -279,6 +317,7 @@ def main() -> int:
         "with_logo_before",
         "logos_added_exact",
         "logos_added_unique_name",
+        "logos_added_provider",
         "with_logo_after",
         "missing_logo_after",
         "coverage_percent",
