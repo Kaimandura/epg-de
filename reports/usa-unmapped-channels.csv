@@ -61,7 +61,6 @@ AFVEspanol.us@SD,AFV Espanol,Comedy
 Akaku53.us@SD,Akaku 53,General
 Akaku54.us@SD,Akaku 54,General
 Akaku55.us@SD,Akaku 55,General
-AKCTV.us@SD,AKC TV,Outdoor
 AKCTVMeettheBreeds.us@SD,AKC TV Meet the Breeds,Outdoor
 AKCTVPuppies.us@SD,AKC TV Puppies,Outdoor
 AlabamaWeatherNetwork.us@SD,Alabama Weather Network,Weather
@@ -84,6 +83,7 @@ AlwaysFunnyVideos.us@SD,Always Funny Videos,Series
 AmazingFactsTV.us@SD,Amazing Facts TV,Religious
 AMCenEspanol.us@SD,AMC en Espanol,Entertainment
 AmericanHorrors.us@SD,American Horrors,Movies
+AmericanNinjaWarrior.us@SD,American Ninja Warrior,Sports
 AmericasNextTopModel.us@SD,America's Next Top Model,Entertainment
 AmericasTestKitchen.us@SD,America's Test Kitchen,Cooking
 AmericasVoice.us@SD,America's Voice,News
@@ -148,6 +148,8 @@ BloombergTV.us@LiveEvent,Bloomberg TV Live Event,Business
 BloombergTV.us@PoliticsLiveEvent,Bloomberg TV Politics Live Event,Business
 BloombergTV.us@US,Bloomberg TV,Business
 BMCHDTV.us@SD,BMC-HD TV,General
+BotflixRadioo.us@HD,Botflix Radioo,Music
+BotflixTV.us@HD,Botflix TV,Animation;Entertainment
 Bounce.us@SD,Bounce,Undefined
 BPTV.us@SD,BPTV,Legislative
 BPXTVRadio.us@SD,BPX TV Radio,Music
