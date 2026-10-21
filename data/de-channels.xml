@@ -965,45 +965,24 @@
   <channel site="i.mjh.nz" site_id="PlutoTV/de#5be1c3f9851dd5632e2c91b2" lang="de" xmltv_id="PlutoTVNature.de@DACH">Pluto TV Nature</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#67d984408d8dc3d7754dccf2" lang="de" xmltv_id="PlutoTVNordicCrime.de@DACH">Pluto TV Nordic Crime</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#5f98487036af340008da1e37" lang="de" xmltv_id="PlutoTVParanormal.de@DACH">Pluto TV Paranormal</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/es#612ce5214bb5790007ad3016" lang="es" xmltv_id="PlutoTVParanormal.de@ES">Pluto TV Paranormal</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/fr#5f8ed9461b35690007a0bc3a" lang="fr" xmltv_id="PlutoTVParanormal.de@FR">Pluto TV Paranormal</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/it#66c70033b1a34600087bb09a" lang="it" xmltv_id="PlutoTVParanormal.de@IT">Pluto TV Paranormal</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5d4af2ffa9506ab29cf38c38" lang="en" xmltv_id="PlutoTVParanormal.de@UK">Pluto TV Paranormal</channel>
-  <channel site="pluto.tv" site_id="5f3d279ab48c0200072df9d0" lang="en" xmltv_id="PlutoTVParanormal.de@UKPlus">Pluto TV Paranormal+</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#64be64445dc166000899ce75" lang="de" xmltv_id="PlutoTVPolizeiserien.de@DACH">Pluto TV Polizeiserien</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#67ebc1b6432a0e406f141341" lang="de" xmltv_id="PlutoTVReality.de@DACH">Pluto TV Reality</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#69f209cd0ed14e790bddeb46" lang="de" xmltv_id="PlutoTVReality.de@FR">Pluto TV Pride</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5bd8186d53ed2c6334ea0855" lang="en" xmltv_id="PlutoTVReality.de@UK">Pluto TV Reality</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#68ada3edf84960586ad31c7d" lang="de" xmltv_id="PlutoTVReportagen.de@DACH">Pluto TV Reportagen</channel>
-  <channel site="pluto.tv" site_id="5c45f216e909d90674242965" lang="en" xmltv_id="PlutoTVRomance.de@UKPlus">Pluto TV Romance+</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#67d983d6a1609bdb523f5f9b" lang="de" xmltv_id="PlutoTVSanfteBeruhrungen.de@DACH">Pluto TV Sanfte Berührungen</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#60ed498c4248a400077c0b9d" lang="de" xmltv_id="PlutoTVSciFi.de@DACH">Pluto TV Sci-Fi</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/es#5f6a38eaa5b68b0007a00e7a" lang="es" xmltv_id="PlutoTVSciFi.de@ES">Pluto TV Sci-Fi</channel>
-  <channel site="pluto.tv" site_id="69afe99a69056557a9e8599c" lang="fi" xmltv_id="PlutoTVSciFi.de@FI">Pluto TV Sci-Fi</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/it#61728bb9ee3773000840c1fa" lang="it" xmltv_id="PlutoTVSciFi.de@IT">Pluto TV Sci-Fi</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5dc02a44a9518600094273ac" lang="en" xmltv_id="PlutoTVSciFi.de@UK">Pluto TV Sci-Fi</channel>
-  <channel site="pluto.tv" site_id="64b676a4798def00088e5150" lang="en" xmltv_id="PlutoTVSciFi.de@UKPlus">Pluto TV Sci-Fi</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#5d767b4889bca2ce7b73ef2e" lang="de" xmltv_id="PlutoTVScience.de@DACH">Pluto TV Science</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/gb#5d9492c77ea6f99188738ff1" lang="en" xmltv_id="PlutoTVScience.de@UK">Pluto TV Science</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#5dc190f7bfed110009d934c3" lang="de" xmltv_id="PlutoTVSerie.de@DACH">Pluto TV Serie</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/it#60b9ff2722bfa400072676ef" lang="it" xmltv_id="PlutoTVSerie.de@IT">Pluto TV Serie</channel>
   <channel site="pluto.tv" site_id="61163de693706b0007f04898" lang="it" xmltv_id="PlutoTVSerie.de@ITPlus">Pluto TV Serie+</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#5d767ab2b456c8cf265ce921" lang="de" xmltv_id="PlutoTVSitcoms.de@DACH">Pluto TV Sitcoms</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/gb#62f53dc6ee9a0400071dc22b" lang="en" xmltv_id="PlutoTVSitcoms.de@UK">Pluto TV Sitcoms</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#68ac5543a1ac0c90f2c8943e" lang="de" xmltv_id="PlutoTVSnooker900.de@DACH">Pluto TV Snooker 900</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/es#69148c470155f9b136b5d856" lang="es" xmltv_id="PlutoTVSnooker900.de@ES">Pluto TV Snooker 900</channel>
-  <channel site="pluto.tv" site_id="68b17496a4841127a8ece8b2" lang="fi" xmltv_id="PlutoTVSnooker900.de@FI">Pluto TV Snooker 900</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/fr#66fd35e44ca31f0008060b77" lang="fr" xmltv_id="PlutoTVSnooker900.de@FR">Pluto TV Snooker 900</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/it#69148c76e9dec35c9269a16c" lang="it" xmltv_id="PlutoTVSnooker900.de@IT">Pluto TV Snooker 900</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/gb#655b7cbb2c46f300086f0afa" lang="en" xmltv_id="PlutoTVSnooker900.de@UK">Pluto TV Snooker 900</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#61409f8d6feb30000766b675" lang="de" xmltv_id="PlutoTVSpace.de@DACH">Pluto TV Space</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/gb#5dbc2f98777f2e0009934ae7" lang="en" xmltv_id="PlutoTVSpace.de@UK">Pluto TV Space</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#6152ee71bf99590007893a11" lang="de" xmltv_id="PlutoTVStarTrek.de@DACH">Pluto TV Star Trek</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#69492467ae33e24d916e56cf" lang="de" xmltv_id="PlutoTVStarTrekAnimation.de@DACH">Pluto TV Star Trek: Animation</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#615333098185f00008715a56" lang="de" xmltv_id="PlutoTVTrueCrime.de@DACH">Pluto TV True Crime</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/es#64a3f200f238ce0008d47247" lang="es" xmltv_id="PlutoTVTrueCrime.de@ES">Pluto TV True Crime</channel>
-  <channel site="pluto.tv" site_id="66cf15f861dbf00008d9b8e1" lang="fi" xmltv_id="PlutoTVTrueCrime.de@FI">Pluto TV True Crime</channel>
-  <channel site="i.mjh.nz" site_id="PlutoTV/it#66d9ab4bf0f17500084e9b7e" lang="it" xmltv_id="PlutoTVTrueCrime.de@IT">Pluto TV True Crime</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/de#630dd3b2605f140007e002f5" lang="de" xmltv_id="PlutoTVWestern.de@DACH">Pluto TV Western</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/es#6385e82900ab2e000768a058" lang="es" xmltv_id="PlutoTVWestern.de@ES">Pluto TV Western</channel>
   <channel site="i.mjh.nz" site_id="PlutoTV/it#62e7fb67478a5b0007e6c50c" lang="it" xmltv_id="PlutoTVWestern.de@IT">Pluto TV Western</channel>
