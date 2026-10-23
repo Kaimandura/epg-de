@@ -280,6 +280,7 @@ def main():
 def compare_lkg(current,baseline,region):
     ratios={'channels':.70 if region=='DE' else .65,'programmes':.60 if region=='DE' else .55}
     migrations = []
+    used_targets = set()
     for label,previous in baseline['outputs'].items():
         if label in OPTIONAL_FILES:
             # Optional products may shrink or retire as identities acquire a
@@ -301,6 +302,13 @@ def compare_lkg(current,baseline,region):
                         or matches[0]['programmes'] <= 0
                         or matches[0]['programmes'] < channel['programmes'] * ratios['programmes']):
                     raise ValueError(f'LKG regression {label}: unproven ownership migration of {channel["canonical_id"]}')
+                # The baseline is already reconciled into distinct identities.
+                # Counting one current schedule for two of them can hide loss;
+                # merging those identities needs evidence beyond count ratios.
+                target = (matches[0]['owner'], matches[0]['canonical_id'])
+                if target in used_targets:
+                    raise ValueError(f'LKG regression {label}: target schedule reused for {channel["canonical_id"]}: {target}')
+                used_targets.add(target)
                 if (channel['canonical_id'], channel['owner']) != (matches[0]['canonical_id'], matches[0]['owner']):
                     migrations.append({'from': channel, 'to': matches[0]})
             continue
