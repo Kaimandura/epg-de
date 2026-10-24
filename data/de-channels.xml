@@ -229,7 +229,8 @@
   <channel site="pickx.be" site_id="UID0641" lang="nl" xmltv_id="DAZN1.uk@Netherlands">DAZN 1 N</channel>
   <channel site="pickx.be" site_id="UID0645" lang="nl" xmltv_id="DAZN1.uk@NetherlandsHD">DAZN 1 N HD</channel>
   <channel site="meo.pt" site_id="DAZN1" lang="pt" xmltv_id="DAZN1.uk@Portugal">DAZN 1</channel>
-  <channel site="tv.sfr.fr" site_id="3795" lang="fr" xmltv_id="DAZN1.uk@UKHD">DAZN 1</channel>
+  <channel site="movistarplus.es" site_id="M1SD" lang="es" logo="https://estatico.emisiondof6.com/recorte/m-DP/wpmos/M1SD" xmltv_id="DAZN1.uk@UKHD">DAZN 1</channel>
+  <channel site="movistarplus.es" site_id="M2SD" lang="es" logo="https://estatico.emisiondof6.com/recorte/m-DP/wpmos/M2SD" xmltv_id="DAZN2.uk@Belgium">DAZN 2</channel>
   <channel site="pickx.be" site_id="UID0642" lang="fr" xmltv_id="DAZN2.uk@France">DAZN 2 F</channel>
   <channel site="pickx.be" site_id="UID0646" lang="fr" xmltv_id="DAZN2.uk@FranceHD">DAZN 2 F HD</channel>
   <channel site="sky.com" site_id="DE#122" lang="de" xmltv_id="DAZN2.uk@GermanyHD">DAZN 2 HD</channel>

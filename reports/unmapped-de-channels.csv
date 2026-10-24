@@ -1,6 +1,6 @@
 name,site,site_id,lang,status,possible_xmltv_ids,source_file
 DAZN 1,dazn.com,bj5o60qt6uoe1clfdsev239pr,de,AMBIGUOUS,DAZN1.pt@HD;DAZN1.uk@Portugal;DAZN1.uk@UKHD;ZonaDAZN.it@SD,sites/dazn.com/dazn.com.channels.xml
-DAZN 2,dazn.com,1v9s3d9dmt4ph1q4simfgo7ih4,de,AMBIGUOUS,DAZN2.pt@HD;DAZN2.uk@Portugal;ZonaDAZN2.it@SD,sites/dazn.com/dazn.com.channels.xml
+DAZN 2,dazn.com,1v9s3d9dmt4ph1q4simfgo7ih4,de,AMBIGUOUS,DAZN2.pt@HD;DAZN2.uk@Belgium;DAZN2.uk@Portugal;ZonaDAZN2.it@SD,sites/dazn.com/dazn.com.channels.xml
 DAZN FAST+,dazn.com,1vi4p39obt24i1dtsmthi921tl,de,UNMATCHED,,sites/dazn.com/dazn.com.channels.xml
 DAZN RISE,dazn.com,1xx7lone8fvv21a2rpc5cji3jx,de,UNMATCHED,,sites/dazn.com/dazn.com.channels.xml
 DFB.TV,dazn.com,mai2qbz2nmw21xjmvjj0rj6ez,de,UNMATCHED,,sites/dazn.com/dazn.com.channels.xml
@@ -23,7 +23,7 @@ ABC News,epgshare01.online,CH1#ABC.News.ch,de,AMBIGUOUS,ABCAustralia.au@SD;ABCNe
 Al Arabiya,epgshare01.online,CH1#Al.Arabiya.ch,de,AMBIGUOUS,Alarabiya.ae@SD;AlarabiyaPortrait.ae@SD,sites/epgshare01.online/epgshare01.online_CH1.channels.xml
 Al Jazeera,epgshare01.online,CH1#Al.Jazeera.ch,de,AMBIGUOUS,AlJazeera.qa@Arabic;AlJazeera.qa@English;AlJazeeraBalkans.ba@SD,sites/epgshare01.online/epgshare01.online_CH1.channels.xml
 Al Jazeera,epgshare01.online,DE1#Al.Jazeera.de,de,AMBIGUOUS,AlJazeera.qa@Arabic;AlJazeera.qa@English;AlJazeeraBalkans.ba@SD,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
-Al Jazeera English,epgshare01.online,CH1#Al.Jazeera.English.ch,de,AMBIGUOUS,AlJazeera.qa@English;AlJazeeraEnglish.qa@SD,sites/epgshare01.online/epgshare01.online_CH1.channels.xml
+Al Jazeera English,epgshare01.online,CH1#Al.Jazeera.English.ch,de,AMBIGUOUS,AlJazeera.qa@Arabic;AlJazeera.qa@English;AlJazeeraEnglish.qa@SD,sites/epgshare01.online/epgshare01.online_CH1.channels.xml
 Alpenland TV,epgshare01.online,CH1#Alpenland.TV.ch,de,UNMATCHED,,sites/epgshare01.online/epgshare01.online_CH1.channels.xml
 ALTAMEGA Plus,epgshare01.online,CH1#ALTAMEGA.Plus.ch,de,UNMATCHED,,sites/epgshare01.online/epgshare01.online_CH1.channels.xml
 Amazon Prime Video,epgshare01.online,CH1#Amazon.Prime.Video.ch,de,UNMATCHED,,sites/epgshare01.online/epgshare01.online_CH1.channels.xml
@@ -165,7 +165,7 @@ Curiosity Channel,epgshare01.online,DE1#Curiosity.Channel.de,de,AMBIGUOUS,Curios
 DAZN,epgshare01.online,CH1#DAZN.ch,de,AMBIGUOUS,DAZN1.uk@Germany;DAZNFAST.de@HD,sites/epgshare01.online/epgshare01.online_CH1.channels.xml
 DAZN,epgshare01.online,DE1#DAZN.de,de,AMBIGUOUS,DAZN1.uk@Germany;DAZNFAST.de@HD,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
 DAZN 1,epgshare01.online,DE1#DAZN.1.de,de,AMBIGUOUS,DAZN1.pt@HD;DAZN1.uk@Portugal;DAZN1.uk@UKHD;ZonaDAZN.it@SD,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
-DAZN 2,epgshare01.online,DE1#DAZN.2.de,de,AMBIGUOUS,DAZN2.pt@HD;DAZN2.uk@Portugal;ZonaDAZN2.it@SD,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
+DAZN 2,epgshare01.online,DE1#DAZN.2.de,de,AMBIGUOUS,DAZN2.pt@HD;DAZN2.uk@Belgium;DAZN2.uk@Portugal;ZonaDAZN2.it@SD,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
 De Pelicula,epgshare01.online,CH1#De.Pelicula.ch,de,AMBIGUOUS,DePeliculaEuropa.mx@SD;DePeliculaLatinAmerica.mx@SD;DePeliculaUS.us@SD,sites/epgshare01.online/epgshare01.online_CH1.channels.xml
 Deluxe Dance,epgshare01.online,DELUXEMUSIC1#Deluxe.Dance.de,de,UNMATCHED,,sites/epgshare01.online/epgshare01.online_DELUXEMUSIC1.channels.xml
 Deluxe Lounge,epgshare01.online,DELUXEMUSIC1#Deluxe.Lounge.de,de,UNMATCHED,,sites/epgshare01.online/epgshare01.online_DELUXEMUSIC1.channels.xml
@@ -254,8 +254,8 @@ Motorvision TV,epgshare01.online,CH1#Motorvision.TV.ch,de,AMBIGUOUS,Motorvision.
 Motorvision TV,epgshare01.online,DE1#Motorvision.TV.de,de,AMBIGUOUS,Motorvision.de@HD;Motorvision.de@SD,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
 Motorvision+,epgshare01.online,DE1#Motorvision+.de,de,AMBIGUOUS,Motorsporttv.fr@SD;Motorvision.de@SD;MotorvisionPlus.de@SD,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
 MS Sport,epgshare01.online,DE1#MS.Sport.de,de,UNMATCHED,,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
-MTV,epgshare01.online,CH1#MTV.ch,de,AMBIGUOUS,MTV.br@SD;MTV.de@SD;MTV.fr@SD;MTV.ie@SD;MTV.in@SD;MTV.it@SD;MTV.jp@SD;MTV.lb@SD;MTV.nl@HD;MTV.nl@SD;MTV.nz@SD;MTV.uk@SD;MTV.us@East;MTVAfrica.za@SD;MTVGlobal.uk@SD;MTVLatinAmerica.us@Panregional,sites/epgshare01.online/epgshare01.online_CH1.channels.xml
-MTV,epgshare01.online,DE1#MTV.de,de,AMBIGUOUS,MTV.br@SD;MTV.de@SD;MTV.fr@SD;MTV.ie@SD;MTV.in@SD;MTV.it@SD;MTV.jp@SD;MTV.lb@SD;MTV.nl@HD;MTV.nl@SD;MTV.nz@SD;MTV.uk@SD;MTV.us@East;MTVAfrica.za@SD;MTVGlobal.uk@SD;MTVLatinAmerica.us@Panregional,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
+MTV,epgshare01.online,CH1#MTV.ch,de,AMBIGUOUS,MTV.br@SD;MTV.de@SD;MTV.es@SD;MTV.fr@SD;MTV.ie@SD;MTV.in@SD;MTV.it@SD;MTV.jp@SD;MTV.lb@SD;MTV.nl@HD;MTV.nl@SD;MTV.nz@SD;MTV.uk@SD;MTV.us@East;MTVAfrica.za@SD;MTVGlobal.uk@SD;MTVLatinAmerica.us@Panregional,sites/epgshare01.online/epgshare01.online_CH1.channels.xml
+MTV,epgshare01.online,DE1#MTV.de,de,AMBIGUOUS,MTV.br@SD;MTV.de@SD;MTV.es@SD;MTV.fr@SD;MTV.ie@SD;MTV.in@SD;MTV.it@SD;MTV.jp@SD;MTV.lb@SD;MTV.nl@HD;MTV.nl@SD;MTV.nz@SD;MTV.uk@SD;MTV.us@East;MTVAfrica.za@SD;MTVGlobal.uk@SD;MTVLatinAmerica.us@Panregional,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
 MTV 80s,epgshare01.online,DE1#MTV.80s.de,de,AMBIGUOUS,MTV80s.uk@SD;MTVClassic.uk@SD,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
 MTV Brand New,epgshare01.online,DE1#MTV.Brand.New.de,de,UNMATCHED,,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
 MTV Hits,epgshare01.online,DE1#MTV.Hits.de,de,AMBIGUOUS,MTVHits.au@SD;MTVHits.fr@SD;MTVHits.uk@SD;MTVHitsEurope.uk@SD,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
@@ -2178,7 +2178,7 @@ Xplore Free,watch.whaletvplus.com,281460414444211550,de,UNMATCHED,,sites/watch.w
 Yu-Gi-Oh! (DE),watch.whaletvplus.com,756846289022887647,de,UNMATCHED,,sites/watch.whaletvplus.com/watch.whaletvplus.com.channels.xml
 13TH STREET (Sky),web.magentatv.de,471,de,UNMATCHED,,sites/web.magentatv.de/web.magentatv.de.channels.xml
 a.tv,web.magentatv.de,161,de,UNMATCHED,,sites/web.magentatv.de/web.magentatv.de.channels.xml
-Al Jazeera English,web.magentatv.de,5315,de,AMBIGUOUS,AlJazeera.qa@English;AlJazeeraEnglish.qa@SD,sites/web.magentatv.de/web.magentatv.de.channels.xml
+Al Jazeera English,web.magentatv.de,5315,de,AMBIGUOUS,AlJazeera.qa@Arabic;AlJazeera.qa@English;AlJazeeraEnglish.qa@SD,sites/web.magentatv.de/web.magentatv.de.channels.xml
 Ballermann TV,web.magentatv.de,5331,de,UNMATCHED,,sites/web.magentatv.de/web.magentatv.de.channels.xml
 BR Fernsehen Nord,web.magentatv.de,175,de,UNMATCHED,,sites/web.magentatv.de/web.magentatv.de.channels.xml
 Cartoon Network (Sky),web.magentatv.de,4512,de,UNMATCHED,,sites/web.magentatv.de/web.magentatv.de.channels.xml
@@ -2257,7 +2257,7 @@ WDR,webtv.delta.nl,60,de,AMBIGUOUS,WDRFernsehen.de;WDRFernsehen.de@Koln,sites/we
 123.live,www.magenta.tv,389265448065,de,UNMATCHED,,sites/www.magenta.tv/www.magenta.tv.channels.xml
 13TH STREET (Sky),www.magenta.tv,389264936244,de,UNMATCHED,,sites/www.magenta.tv/www.magenta.tv.channels.xml
 a.tv,www.magenta.tv,492496936310,de,UNMATCHED,,sites/www.magenta.tv/www.magenta.tv.channels.xml
-Al Jazeera English,www.magenta.tv,389265960215,de,AMBIGUOUS,AlJazeera.qa@English;AlJazeeraEnglish.qa@SD,sites/www.magenta.tv/www.magenta.tv.channels.xml
+Al Jazeera English,www.magenta.tv,389265960215,de,AMBIGUOUS,AlJazeera.qa@Arabic;AlJazeera.qa@English;AlJazeeraEnglish.qa@SD,sites/www.magenta.tv/www.magenta.tv.channels.xml
 Alarm für Cobra 11 / Balko,www.magenta.tv,764525608043,de,UNMATCHED,,sites/www.magenta.tv/www.magenta.tv.channels.xml
 Animal Planet,www.magenta.tv,389264936264,de,AMBIGUOUS,AnimalPlanet.au@SD;AnimalPlanet.br@SD;AnimalPlanet.ca@SD;AnimalPlanet.de@SD;AnimalPlanet.in@SD;AnimalPlanet.nl@SD;AnimalPlanet.ru@SD;AnimalPlanet.uk@SD;AnimalPlanet.us@East;AnimalPlanetEurope.uk@Romania;AnimalPlanetEurope.uk@SD;AnimalPlanetLatinAmerica.us@SD;AnimalPlanetNordic.uk@SD;AnimalPlanetSoutheastAsia.sg@SD,sites/www.magenta.tv/www.magenta.tv.channels.xml
 ANIXE+,www.magenta.tv,389265448050,de,AMBIGUOUS,AnixeHDSerie.de@SD;AnixePlus.de@SD,sites/www.magenta.tv/www.magenta.tv.channels.xml
@@ -2331,8 +2331,8 @@ Motorvision+,www.magenta.tv,389265448047,de,AMBIGUOUS,Motorsporttv.fr@SD;Motorvi
 MS GOLF 1,www.magenta.tv,746148392381,de,UNMATCHED,,sites/www.magenta.tv/www.magenta.tv.channels.xml
 MS GOLF 2,www.magenta.tv,746150440202,de,UNMATCHED,,sites/www.magenta.tv/www.magenta.tv.channels.xml
 MS Sport,www.magenta.tv,389266472165,de,UNMATCHED,,sites/www.magenta.tv/www.magenta.tv.channels.xml
-MTV,www.magenta.tv,389265448060,de,AMBIGUOUS,MTV.br@SD;MTV.de@SD;MTV.fr@SD;MTV.ie@SD;MTV.in@SD;MTV.it@SD;MTV.jp@SD;MTV.lb@SD;MTV.nl@HD;MTV.nl@SD;MTV.nz@SD;MTV.uk@SD;MTV.us@East;MTVAfrica.za@SD;MTVGlobal.uk@SD;MTVLatinAmerica.us@Panregional,sites/www.magenta.tv/www.magenta.tv.channels.xml
-MTV,www.magenta.tv,389265960221,de,AMBIGUOUS,MTV.br@SD;MTV.de@SD;MTV.fr@SD;MTV.ie@SD;MTV.in@SD;MTV.it@SD;MTV.jp@SD;MTV.lb@SD;MTV.nl@HD;MTV.nl@SD;MTV.nz@SD;MTV.uk@SD;MTV.us@East;MTVAfrica.za@SD;MTVGlobal.uk@SD;MTVLatinAmerica.us@Panregional,sites/www.magenta.tv/www.magenta.tv.channels.xml
+MTV,www.magenta.tv,389265448060,de,AMBIGUOUS,MTV.br@SD;MTV.de@SD;MTV.es@SD;MTV.fr@SD;MTV.ie@SD;MTV.in@SD;MTV.it@SD;MTV.jp@SD;MTV.lb@SD;MTV.nl@HD;MTV.nl@SD;MTV.nz@SD;MTV.uk@SD;MTV.us@East;MTVAfrica.za@SD;MTVGlobal.uk@SD;MTVLatinAmerica.us@Panregional,sites/www.magenta.tv/www.magenta.tv.channels.xml
+MTV,www.magenta.tv,389265960221,de,AMBIGUOUS,MTV.br@SD;MTV.de@SD;MTV.es@SD;MTV.fr@SD;MTV.ie@SD;MTV.in@SD;MTV.it@SD;MTV.jp@SD;MTV.lb@SD;MTV.nl@HD;MTV.nl@SD;MTV.nz@SD;MTV.uk@SD;MTV.us@East;MTVAfrica.za@SD;MTVGlobal.uk@SD;MTVLatinAmerica.us@Panregional,sites/www.magenta.tv/www.magenta.tv.channels.xml
 NARUTO,www.magenta.tv,754136616350,de,AMBIGUOUS,Naruto.us@Brazil;Naruto.us@Germany;Naruto.us@US,sites/www.magenta.tv/www.magenta.tv.channels.xml
 National Geographic,www.magenta.tv,274351656127,de,AMBIGUOUS,NationalGeographic.bg@SD;NationalGeographic.br@SD;NationalGeographic.cz@SD;NationalGeographic.de@SD;NationalGeographic.es@SD;NationalGeographic.fi@SD;NationalGeographic.fr@SD;NationalGeographic.hu@SD;NationalGeographic.in@SD;NationalGeographic.nl@SD;NationalGeographic.ph@SD;NationalGeographic.pl@SD;NationalGeographic.pt@HD;NationalGeographic.pt@SD;NationalGeographic.ro@SD;NationalGeographic.ru@SD;NationalGeographic.se@SD;NationalGeographic.si@SD;NationalGeographic.tr@SD;NationalGeographic.uk@SD;NationalGeographic.us@East;NationalGeographicLatinAmerica.us@Panregional;NationalGeographicLatinAmerica.us@South;NationalGeographicSouthAfrica.za@SD,sites/www.magenta.tv/www.magenta.tv.channels.xml
 National Geographic (Sky),www.magenta.tv,695561768146,de,UNMATCHED,,sites/www.magenta.tv/www.magenta.tv.channels.xml
