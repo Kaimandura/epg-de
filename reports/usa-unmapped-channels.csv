@@ -112,6 +112,7 @@ AvangTV.us@SD,Avang TV,Music
 AVIRewind.us@SD,AVI Rewind,Movies
 AWEInternational.us@SD,AWE International,General
 AWEPlus.us@KPVMLD,AWE Plus KPVM-LD,General
+AWEPlus.us@SD,AWE Plus,General
 BabyFirst.us@Spanish,BabyFirst Spanish,Kids
 BabyTV.uk@LatinAmerica,BabyTV Latin America,Kids
 Backstage.us@SD,Backstage,Documentary
@@ -174,6 +175,7 @@ CANTV27.us@SD,CAN TV27,General
 CANTV36.us@SD,CAN TV36,General
 CapitalCityConnectionMontgomery.us@SD,Capital City Connection Montgomery,Legislative
 CatholicFaithNetwork.us@SD,Catholic Faith Network,Religious
+CatholicTV.us@SD,Catholic TV,Religious
 CBNEspanol.us@SD,CBN Espanol,Religious
 CBNFamily.us@SD,CBN Family,Religious
 CBSNewsPhilly.us@SD,CBS News Philly,News
@@ -290,6 +292,7 @@ ESNETV.us@SD,ESNE TV,Religious
 EstrellaGames.us@SD,Estrella Games,Entertainment;Family
 EWTN.us@Spanish,EWTN (United States) Spanish,Religious
 ExtremaTV.us@SD,Extrema TV (United States),Undefined
+FairgroundAICreatorTV.us@SD,Fairground AI Creator TV,General
 FaithTV.us@SD,Faith TV,Religious
 Farscape.us@SD,Farscape,Series
 FashionFinds.us@SD,Fashion Finds,Lifestyle;Shop
@@ -742,7 +745,6 @@ TheConners.us@SD,The Conners,Comedy;Series
 TheDoctors.us@HD,The Doctors,Series
 theDoveTV.us@SD,theDove TV,Religious
 TheFirstTV.us@SD,The First TV,News
-TheGrahamNortonShow.uk@SD,The Graham Norton Show,Entertainment
 TheHillTV.us@SD,The Hill TV,Undefined
 TheLoop.us@SD,The Loop,Classic;Series
 TheMontereyChannel.us@SD,The Monterey Channel,General
