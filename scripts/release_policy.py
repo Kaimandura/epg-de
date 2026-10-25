@@ -81,7 +81,11 @@ IDs (including US callsigns) are otherwise left intact.
     station = re.match(r'^([KW][A-Z]{2,4}(?:[.-]?(?:DT|TV))?(?:[.-]?\d+)?)\.(?:us|ca)(?:@|$)', cid)
     if station:
         return 'station:' + station.group(1).casefold() + (':' + suffix if suffix else '')
-    return suffix
+    # The country in a catalog ID remains regional evidence even when a
+    # generic HD/SD suffix is removed. Losing it permits a German ID to
+    # bridge native Austrian and Swiss products after reconciliation.
+    country = re.search(r'\.([a-z]{2})(?:@|$)', cid, re.IGNORECASE)
+    return suffix or (country.group(1).casefold() if country else '')
 
 
 @dataclass
@@ -92,6 +96,7 @@ class Channel:
     slots: set = field(default_factory=set)
     records: set = field(default_factory=set)
     count: int = 0
+    icons: tuple = ()
 
 
 def inspect(path, label=None, require_active=True):
@@ -116,7 +121,8 @@ def inspect(path, label=None, require_active=True):
                 names.discard("")
                 if not names:
                     errors.append(f"{label}: {cid}: missing display name")
-                channels[cid] = Channel(label, cid, names)
+                channels[cid] = Channel(label, cid, names,
+                    icons=tuple(n.get("src", "").strip() for n in node.findall("icon") if n.get("src", "").strip()))
             elif node.tag == "programme":
                 count += 1
                 cid = node.get("channel")
@@ -157,7 +163,10 @@ def inspect(path, label=None, require_active=True):
     if label == "DE-MAGENTA.xml.gz":
         errors.extend(f"{label}: missing/inactive required sport {cid}" for cid in MAGENTA_REQUIRED
                       if cid not in channels or not channels[cid].count)
-    return list(channels.values()), errors, {"channels": len(channels), "programmes": count}
+    with_logos = sum(bool(c.icons) for c in channels.values())
+    return list(channels.values()), errors, {"channels": len(channels), "programmes": count,
+        "with_logos": with_logos, "missing_logos": len(channels)-with_logos,
+        "logo_presence_percent": round(with_logos / len(channels)*100, 2) if channels else 0.0}
 
 
 def identity_groups(channels, aliases=()):
