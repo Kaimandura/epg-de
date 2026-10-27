@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from export_amazon_epg import choose_source
 from release_policy import inspect
+from build_us_epgs import is_pseudo_channel_id
 
 
 class ProviderProvenanceTests(unittest.TestCase):
@@ -24,6 +25,11 @@ class ProviderProvenanceTests(unittest.TestCase):
         ET.SubElement(channel, "display-name").text = "All Romance"
         self.assertEqual(choose_source({"name": "All Romance"}, {source: channel},
                                        {source: [ET.Element("programme")]}), (None, 0))
+
+    def test_upstream_pseudo_id_rejected(self):
+        self.assertTrue(is_pseudo_channel_id("AdultSection.bossdummy"))
+        self.assertTrue(is_pseudo_channel_id("SkySports+.BOSSDUMMY"))
+        self.assertFalse(is_pseudo_channel_id("WABC.us"))
 
     def test_pseudo_id_fails_release_audit(self):
         with tempfile.TemporaryDirectory() as directory:
