@@ -28,6 +28,15 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
+      - name: Inventory prohibited identities in committed EPG files
+        run: python scripts/audit_committed_pseudo_ids.py --report build/pseudo-identity-inventory.json
+      - name: Upload source inventory even when it blocks release
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: committed-epg-pseudo-identity-inventory
+          path: build/pseudo-identity-inventory.json
+          if-no-files-found: error
       - name: Reconcile and audit the proposed release from the pinned snapshot
         run: python scripts/validate_release_snapshot.py --output build/snapshot
       - uses: actions/upload-artifact@v4
