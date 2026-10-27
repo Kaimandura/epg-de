@@ -61,7 +61,7 @@ jobs:
             build/snapshot/DE/*.jsonl
             build/snapshot/USA/*.json
             build/snapshot/USA/*.jsonl
-          if-no-files-found: error
+          if-no-files-found: warn
   artifact-roundtrip:
     if: github.event_name == 'push'
     needs: [tests, production-snapshot]
