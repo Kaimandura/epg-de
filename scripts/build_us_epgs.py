@@ -858,10 +858,14 @@ def write_outputs(
     output_ids_by_source: dict[str, list[str]] = defaultdict(list)
 
     for source_id in sorted(active_ids):
+        if is_pseudo_channel_id(source_id):
+            raise ValueError(f'Prohibited pseudo source channel reached publication: {source_id}')
         published[source_id] = (channels[source_id], categories[source_id], source_id)
         output_ids_by_source[source_id].append(source_id)
         for entry, _method, category, alias in aliases_by_source.get(source_id, []):
             target_id = entry.xmltv_id
+            if is_pseudo_channel_id(target_id):
+                raise ValueError(f'Prohibited pseudo playlist alias reached publication: {target_id}')
             existing = published.get(target_id)
             if existing is not None and existing[2] != source_id:
                 continue
