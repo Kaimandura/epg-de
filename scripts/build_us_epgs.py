@@ -468,6 +468,11 @@ def download_source(
     raise RuntimeError(f"all USA EPG sources failed: {last_error}")
 
 
+def is_pseudo_channel_id(channel_id: str) -> bool:
+    """Reject upstream dummy identities; never publish their schedules."""
+    return "bossdummy" in channel_id.casefold()
+
+
 def collect_channels(
     source: Path,
     metadata: dict[str, dict[str, str]],
@@ -484,7 +489,9 @@ def collect_channels(
             tag = element.tag.rsplit("}", 1)[-1]
             if tag == "channel":
                 channel_id = (element.attrib.get("id") or "").strip()
-                if channel_id and channel_id not in channels and not is_closed_or_nsfw(channel_id, metadata):
+                if (channel_id and channel_id not in channels
+                        and not is_pseudo_channel_id(channel_id)
+                        and not is_closed_or_nsfw(channel_id, metadata)):
                     channel = deepcopy(element)
                     channel.attrib["id"] = channel_id
                     sanitize_channel(channel_id, channel, metadata)
@@ -714,6 +721,10 @@ def map_playlist_channels(
 
     for entry in entries:
         target_id = entry.xmltv_id
+        if is_pseudo_channel_id(target_id):
+            unmapped_rows.append({"xmltv_id": target_id, "display_name": entry.name,
+                                  "groups": entry.groups})
+            continue
         base, feed = split_feed_id(target_id)
         source_id = ""
         method = ""
