@@ -8,6 +8,7 @@ on:
     branches:
       - main
       - codex/validated-provider-release
+      - fix/provider-provenance-gate
     paths:
       - ".github/workflows/update-usa-epg.yml"
       - "scripts/**"
@@ -22,7 +23,7 @@ concurrency:
 
 jobs:
   build:
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/codex/validated-provider-release'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/codex/validated-provider-release' || github.ref == 'refs/heads/fix/provider-provenance-gate'
     runs-on: ubuntu-latest
     timeout-minutes: 90
 
@@ -184,6 +185,7 @@ jobs:
           retention-days: 90
 
       - name: Promote validated USA build
+        if: github.ref == 'refs/heads/main'
         shell: bash
         run: |
           set -euo pipefail
