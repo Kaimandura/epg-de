@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from export_amazon_epg import choose_source
 from release_policy import inspect
-from build_us_epgs import is_pseudo_channel_id, collect_channels, collect_schedule_stats
+from build_us_epgs import is_pseudo_channel_id, collect_channels, write_outputs
 from datetime import datetime, timezone
 
 
@@ -49,6 +49,21 @@ class ProviderProvenanceTests(unittest.TestCase):
             self.assertNotIn("AdultSection.bossdummy", channels)
             self.assertIn("WABC.us", channels)
             self.assertNotIn("AdultSection.bossdummy", categories)
+
+    def test_publication_boundary_rejects_pseudo_source(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "source.xml.gz"
+            with gzip.open(source, "wb") as stream:
+                stream.write(b"<tv/>")
+            channel = ET.Element("channel", id="SkySports+.bossdummy")
+            with self.assertRaisesRegex(ValueError, "Prohibited pseudo source"):
+                write_outputs(
+                    source, Path(directory) / "output", {"local": "usa-local.xml"},
+                    {"SkySports+.bossdummy": channel},
+                    {"SkySports+.bossdummy": "local"},
+                    {"SkySports+.bossdummy"}, {},
+                    datetime.now(timezone.utc), 12, {"local": 3}, 1000000,
+                )
 
     def test_pseudo_id_fails_release_audit(self):
         with tempfile.TemporaryDirectory() as directory:
