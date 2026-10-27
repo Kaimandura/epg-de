@@ -1,5 +1,6 @@
 """Regression checks for provider isolation and pseudo channel IDs."""
 import sys
+import gzip
 import tempfile
 import unittest
 from pathlib import Path
@@ -9,7 +10,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from export_amazon_epg import choose_source
 from release_policy import inspect
-from build_us_epgs import is_pseudo_channel_id
+from build_us_epgs import is_pseudo_channel_id, collect_channels, collect_schedule_stats
+from datetime import datetime, timezone
 
 
 class ProviderProvenanceTests(unittest.TestCase):
@@ -30,6 +32,23 @@ class ProviderProvenanceTests(unittest.TestCase):
         self.assertTrue(is_pseudo_channel_id("AdultSection.bossdummy"))
         self.assertTrue(is_pseudo_channel_id("SkySports+.BOSSDUMMY"))
         self.assertFalse(is_pseudo_channel_id("WABC.us"))
+
+    def test_source_collection_excludes_pseudo_without_dropping_real_channel(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "source.xml.gz"
+            with gzip.open(path, "wb") as stream:
+                stream.write(
+                    b'<tv><channel id="AdultSection.bossdummy"><display-name>Dummy</display-name></channel>'
+                    b'<channel id="WABC.us"><display-name>WABC</display-name></channel>'
+                    b'<programme channel="AdultSection.bossdummy" start="20261027100000 +0000" '
+                    b'stop="20261027110000 +0000"><title>Fake</title></programme></tv>'
+                )
+            channels, categories = collect_channels(
+                path, {}, {}, set(), [], [], []
+            )
+            self.assertNotIn("AdultSection.bossdummy", channels)
+            self.assertIn("WABC.us", channels)
+            self.assertNotIn("AdultSection.bossdummy", categories)
 
     def test_pseudo_id_fails_release_audit(self):
         with tempfile.TemporaryDirectory() as directory:
