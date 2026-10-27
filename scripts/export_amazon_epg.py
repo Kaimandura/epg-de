@@ -64,9 +64,13 @@ def choose_source(
     channels_by_id: dict[str, ET.Element],
     programmes_by_channel: dict[str, list[ET.Element]],
 ) -> tuple[str | None, int]:
+    # Never relabel another platform's schedule as an Amazon-owned feed.
+    # Unknown origin still requires independent provenance verification.
+    foreign_prefixes = ("SamsungTVPlus.", "PlutoTV.")
     explicit_ids = as_list(definition.get("source_ids"))
     for source_id in explicit_ids:
-        if source_id in channels_by_id and programmes_by_channel.get(source_id):
+        if (not source_id.startswith(foreign_prefixes)
+                and source_id in channels_by_id and programmes_by_channel.get(source_id)):
             return source_id, 1
 
     wanted_names = {
@@ -82,6 +86,8 @@ def choose_source(
     candidates: list[str] = []
     if wanted_names:
         for channel_id, channel in channels_by_id.items():
+            if channel_id.startswith(foreign_prefixes):
+                continue
             if not programmes_by_channel.get(channel_id):
                 continue
             if normalized_names(channel) & wanted_names:
