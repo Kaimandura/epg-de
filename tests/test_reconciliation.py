@@ -152,6 +152,30 @@ class ReconciliationTests(unittest.TestCase):
             self.assertFalse((base/'current/amazon.xml.gz').exists())
             self.assertTrue(paths['DE-AMAZON.xml.gz'].exists())
 
+    def test_optional_migrations_cannot_reuse_one_target_schedule(self):
+        for retained in (False, True):
+            with self.subTest(retained=retained):
+                ids = ['first', 'second'] + (['retained'] if retained else [])
+                baseline = {
+                    'outputs': {'DE-AMAZON.xml.gz': {'channels': len(ids), 'programmes': 100 * len(ids)}},
+                    'mapping': [{'source_id': cid, 'canonical_id': cid} for cid in ids],
+                    'identity_coverage': [{'canonical_id': cid, 'owner': 'DE-AMAZON.xml.gz', 'programmes': 100} for cid in ids]}
+                current = {
+                    'outputs': {'DE-PLUTO.xml.gz': {'channels': 1, 'programmes': 100}},
+                    'mapping': [{'source_id': cid, 'canonical_id': 'shared'} for cid in ('first', 'second')],
+                    'identity_coverage': [{'canonical_id': 'shared', 'owner': 'DE-PLUTO.xml.gz', 'programmes': 100}]}
+                if retained:
+                    current['outputs']['DE-AMAZON.xml.gz'] = {'channels': 1, 'programmes': 100}
+                    current['mapping'].append({'source_id': 'retained', 'canonical_id': 'retained'})
+                    current['identity_coverage'].append({'canonical_id': 'retained', 'owner': 'DE-AMAZON.xml.gz', 'programmes': 100})
+                with self.assertRaisesRegex(ValueError, 'target schedule reused'):
+                    compare_lkg(current, baseline, 'DE')
+                # Each old identity has its own target and retains >=60%.
+                current['mapping'][1]['canonical_id'] = 'separate'
+                current['identity_coverage'].append({'canonical_id': 'separate', 'owner': 'DE-PLUTO.xml.gz', 'programmes': 60})
+                current['outputs']['DE-PLUTO.xml.gz'] = {'channels': 2, 'programmes': 160}
+                self.assertEqual(len(compare_lkg(current, baseline, 'DE')), 2)
+
     def test_affiliates_and_event_placeholders_do_not_prove_identity(self):
         with tempfile.TemporaryDirectory() as directory:
             path=Path(directory)/'USA-LOCAL.xml.gz'

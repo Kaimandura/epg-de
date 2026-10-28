@@ -12,7 +12,8 @@ on:
           - fast
           - deep
   schedule:
-    - cron: "17 2 * * *"
+    # Samsung's upstream guide covers hours, not the full daily interval.
+    - cron: "17 */3 * * *"
     - cron: "47 3 * * 0"
   push:
     branches:
@@ -28,7 +29,8 @@ permissions:
 
 concurrency:
   group: epg-de-update-v2-${{ github.ref }}
-  cancel-in-progress: true
+  # Scheduled refreshes must not cancel a slower ongoing/deep producer.
+  cancel-in-progress: ${{ github.event_name != 'schedule' }}
 
 jobs:
   build:
@@ -169,8 +171,24 @@ jobs:
             --platform-report build/publish/platform-coverage.csv
 
       - name: Enrich logos inside the Germany producer transaction
+        shell: bash
         run: |
+          set -euo pipefail
+          mkdir -p build/provider-logos
+          logo_args=()
+          for region in de at ch; do
+            guide="build/provider-logos/samsung-$region.xml"
+            if curl --retry 2 --connect-timeout 10 --max-time 60 -fsSL \
+              "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/$region.xml" \
+              -o "$guide.tmp"; then
+              mv "$guide.tmp" "$guide"
+              logo_args+=(--samsung-guide "$region=$guide")
+            else
+              echo "::warning::Samsung $region logos unavailable; retaining existing logo enrichment."
+            fi
+          done
           python scripts/enrich_epg_logos.py \
+            "${logo_args[@]}" \
             --channels-csv upstream/database/data/channels.csv \
             --logos-csv upstream/database/data/logos.csv \
             --report build/publish/logo-coverage.csv \
