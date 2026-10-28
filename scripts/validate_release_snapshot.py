@@ -48,8 +48,19 @@ def main():
     (args.output/'combined-audit.json').write_text(json.dumps(combined,indent=2)+'\n',encoding='utf-8')
     if combined['status']!='passed':
         raise ValueError('combined snapshot release failed')
+    # GitHub pull_request checkouts use a synthetic merge commit. The run API
+    # identifies the reviewed PR by its head SHA, so pin provenance to that SHA.
+    source_sha = os.environ.get('GITHUB_SHA', subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip())
+    if os.environ.get('GITHUB_EVENT_NAME') == 'pull_request':
+        event_file = os.environ.get('GITHUB_EVENT_PATH')
+        if not event_file:
+            raise ValueError('missing pull request event provenance')
+        event = json.loads(Path(event_file).read_text(encoding='utf-8'))
+        source_sha = event['pull_request']['head']['sha']
+        if not isinstance(source_sha, str) or len(source_sha) != 40:
+            raise ValueError('invalid pull request head SHA')
     provenance={'repository':os.environ.get('GITHUB_REPOSITORY','Kaimandura/epg-de'),
-                'source_sha':os.environ.get('GITHUB_SHA',subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()),
+                'source_sha':source_sha,
                 'run_id':int(os.environ.get('GITHUB_RUN_ID','0')),'run_attempt':int(os.environ.get('GITHUB_RUN_ATTEMPT','1')),
                 'policy_sha256':policy_digest(Path.cwd()),'test_only':True}
     for region in FILES:
