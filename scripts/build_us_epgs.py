@@ -646,6 +646,13 @@ def alias_category(
             entry.xmltv_id,
         ]
     )
+    feed_key = compact_key(feed)
+    # A regional broadcast affiliate remains LOCAL even when a broad FAST
+    # network/name pattern also matches. Provider FAST IDs alone are not
+    # evidence that an OTA affiliate belongs in the FAST feed.
+    if not is_generic_feed(feed) and re.fullmatch(r"[kw][a-z0-9]{2,7}", feed_key):
+        return "local"
+
     if (
         entry.xmltv_id in fast_ids
         or base in fast_ids
@@ -656,9 +663,6 @@ def alias_category(
     if "sports" in categories or any(pattern.search(blob) for pattern in sports_patterns):
         return "sports"
 
-    feed_key = compact_key(feed)
-    if not is_generic_feed(feed) and re.match(r"^[kw][a-z0-9]{2,7}$", feed_key):
-        return "local"
     return source_category
 
 
