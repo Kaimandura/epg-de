@@ -468,6 +468,11 @@ def download_source(
     raise RuntimeError(f"all USA EPG sources failed: {last_error}")
 
 
+def is_pseudo_channel_id(channel_id: str) -> bool:
+    """Reject upstream dummy identities; never publish their schedules."""
+    return "bossdummy" in channel_id.casefold()
+
+
 def collect_channels(
     source: Path,
     metadata: dict[str, dict[str, str]],
@@ -484,7 +489,9 @@ def collect_channels(
             tag = element.tag.rsplit("}", 1)[-1]
             if tag == "channel":
                 channel_id = (element.attrib.get("id") or "").strip()
-                if channel_id and channel_id not in channels and not is_closed_or_nsfw(channel_id, metadata):
+                if (channel_id and channel_id not in channels
+                        and not is_pseudo_channel_id(channel_id)
+                        and not is_closed_or_nsfw(channel_id, metadata)):
                     channel = deepcopy(element)
                     channel.attrib["id"] = channel_id
                     sanitize_channel(channel_id, channel, metadata)
@@ -639,6 +646,13 @@ def alias_category(
             entry.xmltv_id,
         ]
     )
+    feed_key = compact_key(feed)
+    # A regional broadcast affiliate remains LOCAL even when a broad FAST
+    # network/name pattern also matches. Provider FAST IDs alone are not
+    # evidence that an OTA affiliate belongs in the FAST feed.
+    if not is_generic_feed(feed) and re.fullmatch(r"[kw][a-z0-9]{2,7}", feed_key):
+        return "local"
+
     if (
         entry.xmltv_id in fast_ids
         or base in fast_ids
@@ -649,9 +663,6 @@ def alias_category(
     if "sports" in categories or any(pattern.search(blob) for pattern in sports_patterns):
         return "sports"
 
-    feed_key = compact_key(feed)
-    if not is_generic_feed(feed) and re.match(r"^[kw][a-z0-9]{2,7}$", feed_key):
-        return "local"
     return source_category
 
 
@@ -714,6 +725,10 @@ def map_playlist_channels(
 
     for entry in entries:
         target_id = entry.xmltv_id
+        if is_pseudo_channel_id(target_id):
+            unmapped_rows.append({"xmltv_id": target_id, "display_name": entry.name,
+                                  "groups": entry.groups})
+            continue
         base, feed = split_feed_id(target_id)
         source_id = ""
         method = ""
@@ -847,10 +862,14 @@ def write_outputs(
     output_ids_by_source: dict[str, list[str]] = defaultdict(list)
 
     for source_id in sorted(active_ids):
+        if is_pseudo_channel_id(source_id):
+            raise ValueError(f'Prohibited pseudo source channel reached publication: {source_id}')
         published[source_id] = (channels[source_id], categories[source_id], source_id)
         output_ids_by_source[source_id].append(source_id)
         for entry, _method, category, alias in aliases_by_source.get(source_id, []):
             target_id = entry.xmltv_id
+            if is_pseudo_channel_id(target_id):
+                raise ValueError(f'Prohibited pseudo playlist alias reached publication: {target_id}')
             existing = published.get(target_id)
             if existing is not None and existing[2] != source_id:
                 continue

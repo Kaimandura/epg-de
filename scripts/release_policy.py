@@ -110,6 +110,8 @@ def inspect(path, label=None, require_active=True):
                 continue
             if node.tag == "channel":
                 cid = node.get("id", "").strip()
+                if "bossdummy" in cid.casefold():
+                    errors.append(f"{label}: prohibited pseudo channel ID {cid}")
                 if not cid or cid in channels:
                     errors.append(f"{label}: empty/duplicate channel ID {cid}")
                 names = {name_key(n.text or "") for n in node.findall("display-name")}
