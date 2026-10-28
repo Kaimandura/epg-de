@@ -91,7 +91,7 @@ def stage(api, repository, output, workspace, policy_hash, snapshot_run=None):
     else:
         run=api.get(f'/actions/runs/{snapshot_run}')
         if (run.get('path')!='.github/workflows/test-release.yml' or run.get('repository',{}).get('full_name')!=repository
-                or run.get('head_repository',{}).get('full_name')!=repository or run.get('event')!='push'):
+                or run.get('head_repository',{}).get('full_name')!=repository or run.get('event') not in {'push', 'pull_request'}):
             raise ValueError('untrusted snapshot verification run')
         runs={region:run for region in WORKFLOWS}
     for region, run in runs.items():
