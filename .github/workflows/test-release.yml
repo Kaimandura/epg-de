@@ -54,7 +54,6 @@ jobs:
             build/snapshot/USA/*.jsonl
           if-no-files-found: error
   artifact-roundtrip:
-    if: github.event_name == 'push'
     needs: [tests, production-snapshot]
     runs-on: ubuntu-latest
     timeout-minutes: 20

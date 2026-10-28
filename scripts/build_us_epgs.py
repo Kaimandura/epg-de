@@ -468,6 +468,11 @@ def download_source(
     raise RuntimeError(f"all USA EPG sources failed: {last_error}")
 
 
+def is_prohibited_source_identity(channel_id: str) -> bool:
+    """Reject known synthetic upstream identity namespaces, not real stations."""
+    return channel_id.strip().casefold().endswith(".bossdummy")
+
+
 def collect_channels(
     source: Path,
     metadata: dict[str, dict[str, str]],
@@ -484,7 +489,9 @@ def collect_channels(
             tag = element.tag.rsplit("}", 1)[-1]
             if tag == "channel":
                 channel_id = (element.attrib.get("id") or "").strip()
-                if channel_id and channel_id not in channels and not is_closed_or_nsfw(channel_id, metadata):
+                if (channel_id and channel_id not in channels
+                    and not is_prohibited_source_identity(channel_id)
+                    and not is_closed_or_nsfw(channel_id, metadata)):
                     channel = deepcopy(element)
                     channel.attrib["id"] = channel_id
                     sanitize_channel(channel_id, channel, metadata)
