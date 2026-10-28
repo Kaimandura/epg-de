@@ -1,6 +1,12 @@
 name: Update Germany EPG
 
 on:
+  pull_request:
+    paths:
+      - ".github/workflows/**"
+      - "scripts/**"
+      - "config/**"
+      - "tests/**"
   workflow_dispatch:
     inputs:
       mode:
@@ -28,11 +34,11 @@ permissions:
 
 concurrency:
   group: epg-de-update-v2-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/codex/validated-provider-release'
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/codex/validated-provider-release'
     runs-on: ubuntu-latest
     timeout-minutes: 300
 
