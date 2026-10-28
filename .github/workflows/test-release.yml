@@ -103,6 +103,45 @@ jobs:
         run: |
           python scripts/normalize_tivimate_xmltv.py --coverage build/usa/usa-coverage.csv build/usa/output/usa.xml build/usa/output/usa-sports.xml build/usa/output/usa-local.xml build/usa/output/usa-fast.xml
           python scripts/reconcile_release.py --region USA --source build/usa/output --output build/usa/reconciled --mapping build/usa/usa-channel-mapping.csv
+      - name: Validate rebuilt USA candidate against committed Last Known Good
+        shell: bash
+        run: |
+          set -euo pipefail
+          for spec in "usa 100 5000" "usa-local 1000 100000" "usa-fast 100 5000" "usa-sports 100 5000"; do
+            read -r stem min_channels min_programmes <<< "$spec"
+            args=(
+              "build/usa/reconciled/${stem}.xml"
+              --gzip "build/usa/reconciled/${stem}.xml.gz"
+              --min-channels "$min_channels"
+              --min-programmes "$min_programmes"
+              --require-display-names
+              --require-programme-titles
+              --reject-empty-icons
+              --skip-pre-validation-cleanup
+            )
+            python scripts/validate_epg.py "${args[@]}"
+          done
+          python scripts/audit_usa_epgs.py \
+            --main build/usa/reconciled/usa.xml \
+            --sports build/usa/reconciled/usa-sports.xml \
+            --local build/usa/reconciled/usa-local.xml \
+            --fast build/usa/reconciled/usa-fast.xml \
+            --coverage build/usa/usa-coverage.csv \
+            --mapping build/usa/usa-channel-mapping.csv \
+            --playlist build/usa/input/us.m3u \
+            --summary build/usa/usa-quality-audit.json \
+            --min-playlist-mapped 400
+          python scripts/release_bundle.py --test-build --region USA \
+            --source build/usa/reconciled --output build/usa/release-candidate \
+            --mapping build/usa/usa-channel-mapping.csv
+      - name: Upload validated USA candidate for promotion review
+        uses: actions/upload-artifact@v4
+        with:
+          name: usa-validated-candidate
+          path: build/usa/release-candidate/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 90
       - name: Preserve rebuilt USA evidence, even on failure
         if: always()
         uses: actions/upload-artifact@v4
