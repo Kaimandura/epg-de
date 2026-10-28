@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from export_amazon_epg import choose_source
 from release_policy import inspect
-from build_us_epgs import is_pseudo_channel_id, collect_channels, write_outputs
+from build_us_epgs import is_pseudo_channel_id, collect_channels, write_outputs, alias_category, PlaylistChannel
 from datetime import datetime, timezone
 
 
@@ -64,6 +64,18 @@ class ProviderProvenanceTests(unittest.TestCase):
                     {"SkySports+.bossdummy"}, {},
                     datetime.now(timezone.utc), 12, {"local": 3}, 1000000,
                 )
+
+    def test_regional_abc_affiliate_stays_local_even_if_fast_pattern_matches(self):
+        import re
+        entry = PlaylistChannel(
+            xmltv_id="ABC.us@WSOCTV", name="ABC WSOC Charlotte NC",
+            logo="", groups="Sports",
+        )
+        result = alias_category(
+            entry, "fast", {}, set(),
+            [re.compile("ABC", re.I)], [re.compile("ABC", re.I)],
+        )
+        self.assertEqual(result, "local")
 
     def test_pseudo_id_fails_release_audit(self):
         with tempfile.TemporaryDirectory() as directory:
