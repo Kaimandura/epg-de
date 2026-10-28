@@ -102,7 +102,7 @@ jobs:
       - name: Validate rebuilt USA identity and XMLTV integrity
         run: |
           python scripts/normalize_tivimate_xmltv.py --coverage build/usa/usa-coverage.csv build/usa/output/usa.xml build/usa/output/usa-sports.xml build/usa/output/usa-local.xml build/usa/output/usa-fast.xml
-          python scripts/reconcile_release.py --region USA --source build/usa/output --output build/usa/reconciled --mapping build/usa/usa-channel-mapping.csv
+          python scripts/reconcile_release.py --region USA --source build/usa/output --output build/usa/reconciled --mapping build/usa/usa-channel-mapping.csv --baseline epg --baseline-mapping reports/usa-channel-mapping.csv
           cp build/usa/reconciled/usa-coverage.csv build/usa/usa-coverage.csv
           cp build/usa/reconciled/usa-channel-mapping.csv build/usa/usa-channel-mapping.csv
       - name: Validate rebuilt USA candidate against committed Last Known Good
