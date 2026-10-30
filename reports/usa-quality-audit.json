@@ -11,25 +11,25 @@
       "active_channels": 524,
       "channels": 524,
       "channels_with_logo": 447,
-      "programmes": 21806
+      "programmes": 21610
     },
     "local": {
       "active_channels": 8829,
       "channels": 8829,
-      "channels_with_logo": 8571,
-      "programmes": 417421
+      "channels_with_logo": 8572,
+      "programmes": 415593
     },
     "main": {
       "active_channels": 168,
       "channels": 168,
-      "channels_with_logo": 166,
-      "programmes": 29592
+      "channels_with_logo": 167,
+      "programmes": 25500
     },
     "sports": {
-      "active_channels": 3303,
-      "channels": 3303,
-      "channels_with_logo": 3302,
-      "programmes": 158674
+      "active_channels": 3299,
+      "channels": 3299,
+      "channels_with_logo": 3298,
+      "programmes": 155741
     }
   },
   "status": "passed"
