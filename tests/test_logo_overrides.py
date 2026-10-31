@@ -15,7 +15,7 @@ class LogoOverrideTests(unittest.TestCase):
             root = ET.Element('tv')
             ids = ['SkyCinemaPremieren.de@SD','SkyCinemaPremieren.de@HD',
                    'SkyCinemaPremieren.de@Plus24HD','ProSiebenFun.de@SD',
-                   'ProSiebenMaxx.de@SD']
+                   'ProSieben.de@SD','SkyCinemaPremieren.de@Plus24','ProSiebenMaxx.de@SD']
             for cid in ids:
                 c = ET.SubElement(root,'channel',id=cid)
                 ET.SubElement(c,'display-name').text=cid
@@ -34,7 +34,9 @@ class LogoOverrideTests(unittest.TestCase):
             self.assertEqual(channels[ids[4]],'https://example.org/original.png')
             self.assertEqual(updated.find('programme').attrib,programme.attrib)
             self.assertEqual(updated.findtext('programme/desc'),'Complete description')
-            self.assertEqual(result['logo_overrides_applied'],4)
+            self.assertEqual(channels[ids[5]],overrides[ids[5]])
+            self.assertEqual(channels[ids[6]],overrides['ProSiebenMaxx.de'])
+            self.assertEqual(result['logo_overrides_applied'],6)
             self.assertEqual(gzip.decompress(path.with_suffix('.xml.gz').read_bytes()),path.read_bytes())
             first=path.with_suffix('.xml.gz').read_bytes()
             self.assertEqual(enrich_file(path,set(),{}, {},overrides)['logo_overrides_applied'],0)
