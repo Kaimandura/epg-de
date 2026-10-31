@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import csv
 import gzip
+import json
 import re
 import unicodedata
 import xml.etree.ElementTree as ET
@@ -171,6 +172,7 @@ def enrich_file(
     known_ids: set[str],
     name_index: dict[str, set[str]],
     logos: dict[tuple[str, str], list[LogoCandidate]],
+    overrides: dict[str, str] | None = None,
 ) -> dict[str, int | str | float]:
     root = ET.parse(path).getroot()
     if root.tag != "tv":
@@ -185,6 +187,7 @@ def enrich_file(
     before = 0
     exact_added = 0
     name_added = 0
+    overrides_applied = 0
 
     for channel in channels:
         existing = [
@@ -192,6 +195,19 @@ def enrich_file(
             for node in channel.findall("icon")
             if node.attrib.get("src", "").strip()
         ]
+        xmltv_id = (channel.attrib.get("id") or "").strip()
+        base_id, _ = split_feed_id(xmltv_id)
+        override = (overrides or {}).get(xmltv_id) or (overrides or {}).get(base_id)
+        if override:
+            if not override.startswith('https://'):
+                raise ValueError(f'{xmltv_id}: logo override must use HTTPS')
+            before += bool(existing)
+            if existing != [override]:
+                for icon in list(channel.findall('icon')):
+                    channel.remove(icon)
+                channel.append(ET.Element('icon', {'src': override}))
+                overrides_applied += 1
+            continue
         if existing:
             before += 1
             continue
@@ -234,6 +250,7 @@ def enrich_file(
         "with_logo_before": before,
         "logos_added_exact": exact_added,
         "logos_added_unique_name": name_added,
+        "logo_overrides_applied": overrides_applied,
         "with_logo_after": after,
         "missing_logo_after": missing,
         "coverage_percent": coverage,
@@ -247,8 +264,11 @@ def main() -> int:
     parser.add_argument("--channels-csv", required=True, type=Path)
     parser.add_argument("--logos-csv", required=True, type=Path)
     parser.add_argument("--report", required=True, type=Path)
+    parser.add_argument('--overrides', type=Path,
+                        default=Path(__file__).resolve().parents[1] / 'config/logo-overrides.json')
     parser.add_argument("files", nargs="+", type=Path)
     args = parser.parse_args()
+    overrides = json.loads(args.overrides.read_text(encoding='utf-8'))
 
     known_ids, name_index = load_channel_name_index(args.channels_csv)
     logos = load_logos(args.logos_csv)
@@ -259,7 +279,7 @@ def main() -> int:
     for path in args.files:
         if not path.exists():
             raise RuntimeError(f"EPG file not found: {path}")
-        row = enrich_file(path, known_ids, name_index, logos)
+        row = enrich_file(path, known_ids, name_index, logos, overrides)
         rows.append(row)
         print(
             "Logo enrichment: "
@@ -267,6 +287,7 @@ def main() -> int:
             f"before={row['with_logo_before']} "
             f"added_exact={row['logos_added_exact']} "
             f"added_name={row['logos_added_unique_name']} "
+            f"overrides={row['logo_overrides_applied']} "
             f"after={row['with_logo_after']} "
             f"missing={row['missing_logo_after']} "
             f"coverage={row['coverage_percent']}%"
@@ -279,6 +300,7 @@ def main() -> int:
         "with_logo_before",
         "logos_added_exact",
         "logos_added_unique_name",
+        "logo_overrides_applied",
         "with_logo_after",
         "missing_logo_after",
         "coverage_percent",
