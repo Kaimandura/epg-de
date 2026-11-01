@@ -98,6 +98,14 @@ def main() -> int:
                 str(attrs.get("site", "")) == remap["site"]
                 and str(attrs.get("site_id", "")) == remap["site_id"]
             ):
+                expected_name = remap.get("expected_source_name")
+                actual_name = str(candidate.get("name", "")).strip()
+                if expected_name and actual_name.casefold() != expected_name.casefold():
+                    raise SystemExit(
+                        "Source identity changed; refusing channel remap: "
+                        f"{remap['site']}:{remap['site_id']} "
+                        f"expected={expected_name!r} actual={actual_name!r}"
+                    )
                 moved = dict(candidate)
                 moved_attrs = dict(attrs)
                 moved_attrs["xmltv_id"] = target_id
