@@ -7,6 +7,94 @@
       "to_xmltv_id": "CrimeTime.de@SD",
       "name": "Crime Time",
       "lang": "de"
+    },
+    {
+      "site": "web.magentatv.de",
+      "site_id": "31",
+      "from_xmltv_id": "SkySport1.de@SD",
+      "to_xmltv_id": "SkySportTopEvent.de@SD",
+      "name": "Sky Sport Top Event",
+      "lang": "de"
+    },
+    {
+      "site": "web.magentatv.de",
+      "site_id": "198",
+      "from_xmltv_id": "SkySport2.de@SD",
+      "to_xmltv_id": "SkySportTennis.de@SD",
+      "name": "Sky Sport Tennis",
+      "lang": "de"
+    },
+    {
+      "site": "web.magentatv.de",
+      "site_id": "192",
+      "from_xmltv_id": "SkySport3.de@SD",
+      "to_xmltv_id": "SkySport1.de@SD",
+      "name": "Sky Sport 1",
+      "lang": "de"
+    },
+    {
+      "site": "web.magentatv.de",
+      "site_id": "212",
+      "from_xmltv_id": "SkySport4.de@SD",
+      "to_xmltv_id": "SkySport2.de@SD",
+      "name": "Sky Sport 2",
+      "lang": "de"
+    },
+    {
+      "site": "web.magentatv.de",
+      "site_id": "189",
+      "from_xmltv_id": "SkySport5.de@SD",
+      "to_xmltv_id": "SkySport3.de@SD",
+      "name": "Sky Sport 3",
+      "lang": "de"
+    },
+    {
+      "site": "web.magentatv.de",
+      "site_id": "111",
+      "from_xmltv_id": "SkySport6.de@SD",
+      "to_xmltv_id": "SkySport4.de@SD",
+      "name": "Sky Sport 4",
+      "lang": "de"
+    },
+    {
+      "site": "web.magentatv.de",
+      "site_id": "114",
+      "from_xmltv_id": "SkySport7.de@SD",
+      "to_xmltv_id": "SkySport5.de@SD",
+      "name": "Sky Sport 5",
+      "lang": "de"
+    },
+    {
+      "site": "web.magentatv.de",
+      "site_id": "113",
+      "from_xmltv_id": "SkySport8.de@SD",
+      "to_xmltv_id": "SkySport6.de@SD",
+      "name": "Sky Sport 6",
+      "lang": "de"
+    },
+    {
+      "site": "web.magentatv.de",
+      "site_id": "127",
+      "from_xmltv_id": "SkySport9.de@SD",
+      "to_xmltv_id": "SkySport7.de@SD",
+      "name": "Sky Sport 7",
+      "lang": "de"
+    },
+    {
+      "site": "web.magentatv.de",
+      "site_id": "261",
+      "from_xmltv_id": "SkySport10.de@SD",
+      "to_xmltv_id": "SkySport8.de@SD",
+      "name": "Sky Sport 8",
+      "lang": "de"
+    },
+    {
+      "site": "web.magentatv.de",
+      "site_id": "187",
+      "from_xmltv_id": "SkySport11.de@SD",
+      "to_xmltv_id": "SkySport9.de@SD",
+      "name": "Sky Sport 9",
+      "lang": "de"
     }
   ]
 }
