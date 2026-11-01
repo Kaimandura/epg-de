@@ -66,6 +66,8 @@ def inspect(path):
                     issues.append({"type": "nonpositive_duration", "channel": cid})
             except ValueError:
                 issues.append({"type": "invalid_time", "channel": cid})
+    if not ids or counts["programmes"] == 0:
+        issues.append({"type": "empty_guide", "channel": ""})
     return {"channels": len(ids), "programmes": counts["programmes"],
             "missing_logos": counts["missing_logo"],
             "issues": issues, "issue_count": len(issues)}
