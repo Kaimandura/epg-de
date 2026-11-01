@@ -14,7 +14,8 @@
       "from_xmltv_id": "SkySport1.de@SD",
       "to_xmltv_id": "SkySportTopEvent.de@SD",
       "name": "Sky Sport Top Event",
-      "lang": "de"
+      "lang": "de",
+      "expected_source_name": "Sky Sport Top Event"
     },
     {
       "site": "web.magentatv.de",
@@ -22,7 +23,8 @@
       "from_xmltv_id": "SkySport2.de@SD",
       "to_xmltv_id": "SkySportTennis.de@SD",
       "name": "Sky Sport Tennis",
-      "lang": "de"
+      "lang": "de",
+      "expected_source_name": "Sky Sport Tennis"
     },
     {
       "site": "web.magentatv.de",
@@ -30,7 +32,8 @@
       "from_xmltv_id": "SkySport3.de@SD",
       "to_xmltv_id": "SkySport1.de@SD",
       "name": "Sky Sport 1",
-      "lang": "de"
+      "lang": "de",
+      "expected_source_name": "Sky Sport 1"
     },
     {
       "site": "web.magentatv.de",
@@ -38,7 +41,8 @@
       "from_xmltv_id": "SkySport4.de@SD",
       "to_xmltv_id": "SkySport2.de@SD",
       "name": "Sky Sport 2",
-      "lang": "de"
+      "lang": "de",
+      "expected_source_name": "Sky Sport 2"
     },
     {
       "site": "web.magentatv.de",
@@ -46,7 +50,8 @@
       "from_xmltv_id": "SkySport5.de@SD",
       "to_xmltv_id": "SkySport3.de@SD",
       "name": "Sky Sport 3",
-      "lang": "de"
+      "lang": "de",
+      "expected_source_name": "Sky Sport 3"
     },
     {
       "site": "web.magentatv.de",
@@ -54,7 +59,8 @@
       "from_xmltv_id": "SkySport6.de@SD",
       "to_xmltv_id": "SkySport4.de@SD",
       "name": "Sky Sport 4",
-      "lang": "de"
+      "lang": "de",
+      "expected_source_name": "Sky Sport 4"
     },
     {
       "site": "web.magentatv.de",
@@ -62,7 +68,8 @@
       "from_xmltv_id": "SkySport7.de@SD",
       "to_xmltv_id": "SkySport5.de@SD",
       "name": "Sky Sport 5",
-      "lang": "de"
+      "lang": "de",
+      "expected_source_name": "Sky Sport 5"
     },
     {
       "site": "web.magentatv.de",
@@ -70,7 +77,8 @@
       "from_xmltv_id": "SkySport8.de@SD",
       "to_xmltv_id": "SkySport6.de@SD",
       "name": "Sky Sport 6",
-      "lang": "de"
+      "lang": "de",
+      "expected_source_name": "Sky Sport 6"
     },
     {
       "site": "web.magentatv.de",
@@ -78,7 +86,8 @@
       "from_xmltv_id": "SkySport9.de@SD",
       "to_xmltv_id": "SkySport7.de@SD",
       "name": "Sky Sport 7",
-      "lang": "de"
+      "lang": "de",
+      "expected_source_name": "Sky Sport 7"
     },
     {
       "site": "web.magentatv.de",
@@ -86,7 +95,8 @@
       "from_xmltv_id": "SkySport10.de@SD",
       "to_xmltv_id": "SkySport8.de@SD",
       "name": "Sky Sport 8",
-      "lang": "de"
+      "lang": "de",
+      "expected_source_name": "Sky Sport 8"
     },
     {
       "site": "web.magentatv.de",
@@ -94,7 +104,8 @@
       "from_xmltv_id": "SkySport11.de@SD",
       "to_xmltv_id": "SkySport9.de@SD",
       "name": "Sky Sport 9",
-      "lang": "de"
+      "lang": "de",
+      "expected_source_name": "Sky Sport 9"
     }
   ]
 }
