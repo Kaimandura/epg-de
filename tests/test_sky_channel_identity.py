@@ -31,6 +31,28 @@ class SkyIdentityRemapTests(unittest.TestCase):
         }
         self.assertEqual({r["site_id"]: (r["to_xmltv_id"], r["name"]) for r in sky}, expected)
 
+    def test_mismatched_provider_name_fails_closed(self):
+        rows = json.loads(REMAPS.read_text(encoding="utf-8"))["remaps"]
+        rule = next(r for r in rows if r.get("expected_source_name") == "Sky Sport 8")
+        with tempfile.TemporaryDirectory() as folder:
+            folder = Path(folder)
+            source = folder / "candidates.json"
+            rules = folder / "rules.json"
+            output = folder / "channels.xml"
+            bad = {"attrs": {"site": rule["site"], "site_id": rule["site_id"],
+                             "xmltv_id": rule["from_xmltv_id"]},
+                   "name": "Sky Sport 10", "reasons": []}
+            source.write_text(json.dumps({"channels": {rule["from_xmltv_id"]: [bad]}}),
+                              encoding="utf-8")
+            rules.write_text(json.dumps({"remaps": [rule]}), encoding="utf-8")
+            result = subprocess.run(
+                [sys.executable, str(ROOT / "scripts" / "remap_candidates.py"),
+                 "--candidates", str(source), "--remap-file", str(rules),
+                 "--channels", str(output)], capture_output=True, text=True)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("Source identity changed", result.stderr)
+            self.assertFalse(output.exists())
+
     def test_remap_moves_only_matching_source(self):
         rows = json.loads(REMAPS.read_text(encoding="utf-8"))["remaps"]
         sky = next(r for r in rows if r["site_id"] == "261" and r["site"] == "web.magentatv.de")
