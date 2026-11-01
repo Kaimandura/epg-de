@@ -22,7 +22,7 @@ PRODUCTS = {
     "usa-sports": "USA-SPORTS",
 }
 OPTIONAL = {"amazon"}
-STAMP = re.compile(r"^\\d{14} [+-]\\d{4}$")
+STAMP = re.compile(r"^\d{14} [+-]\d{4}$")
 
 
 def inspect(path):
