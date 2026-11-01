@@ -14,7 +14,7 @@ from urllib.parse import urlsplit
 from audit_all_epg_products import PRODUCTS, OPTIONAL
 
 IMAGE_TYPES = ("image/png", "image/jpeg", "image/webp", "image/gif", "image/svg+xml")
-SIGNATURES = (b"\\x89PNG\\r\\n\\x1a\\n", b"\\xff\\xd8\\xff", b"RIFF", b"GIF87a", b"GIF89a")
+SIGNATURES = (bytes.fromhex("89504e470d0a1a0a"), bytes.fromhex("ffd8ff"), b"RIFF", b"GIF87a", b"GIF89a")
 
 
 def check_url(url, timeout=10):
