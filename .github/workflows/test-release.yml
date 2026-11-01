@@ -31,6 +31,9 @@ jobs:
       - name: Inventory all nine published XMLTV products and logos
         if: always()
         run: python scripts/audit_all_epg_products.py --directory epg --report build/all-epg-quality.json
+      - name: Verify all published logo URLs and image responses
+        if: always()
+        run: python scripts/audit_logo_reachability.py --directory epg --report build/all-epg-logo-reachability.json
       - name: Reconcile and audit the proposed release from the pinned snapshot
         run: python scripts/validate_release_snapshot.py --output build/snapshot
       - uses: actions/upload-artifact@v4
@@ -52,6 +55,7 @@ jobs:
           path: |
             build/snapshot/*.json
             build/all-epg-quality.json
+            build/all-epg-logo-reachability.json
             build/snapshot/DE/*.json
             build/snapshot/DE/*.jsonl
             build/snapshot/USA/*.json
