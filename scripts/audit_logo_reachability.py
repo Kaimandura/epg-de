@@ -9,10 +9,15 @@ import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from contextlib import nullcontext
+from threading import BoundedSemaphore
 from pathlib import Path
 from urllib.parse import urlsplit
 
 from audit_all_epg_products import PRODUCTS, OPTIONAL
+
+WIKIMEDIA_SLOTS = BoundedSemaphore(3)
+AUDIT_AGENT = "EPG-DE-Logo-Audit/1.2 (https://github.com/Kaimandura/epg-de; public-logo-check)"
 
 IMAGE_TYPES = ("image/png", "image/jpeg", "image/webp", "image/gif", "image/svg+xml")
 SIGNATURES = (bytes.fromhex("89504e470d0a1a0a"), bytes.fromhex("ffd8ff"), b"RIFF", b"GIF87a", b"GIF89a")
@@ -35,28 +40,34 @@ def check_url(url, timeout=10, retries=2):
         return fail("non_https_or_credentials")
 
     transient = {429, 500, 502, 503, 504}
+    # Wikimedia asks automated consumers to identify themselves and to use
+    # no more than three simultaneous requests (see its User-Agent policy).
+    # Other providers may use the normal worker pool.
+    is_wikimedia = (parsed.hostname == "upload.wikimedia.org"
+                    or parsed.hostname == "thumb.wikimedia.org")
     for attempt in range(retries + 1):
         req = urllib.request.Request(
             url,
-            headers={"User-Agent": "EPG-DE-Logo-Audit/1.0", "Accept": "image/*"},
+            headers={"User-Agent": AUDIT_AGENT, "Accept": "image/*"},
         )
         try:
-            with urllib.request.urlopen(req, timeout=timeout, context=ssl.create_default_context()) as response:
-                final = urlsplit(response.geturl())
-                if final.scheme != "https" or final.username or final.password:
-                    return fail("unsafe_redirect")
-                mime = response.headers.get("Content-Type", "").split(";")[0].strip().lower()
-                sample = response.read(512)
-                if mime not in IMAGE_TYPES:
-                    return fail("not_image_content_type", response.status)
-                signature = sample.lstrip().lower()
-                valid = (sample.startswith(SIGNATURES[:2]) or
-                         (sample.startswith(b"RIFF") and sample[8:12] == b"WEBP") or
-                         sample.startswith(SIGNATURES[3:]) or
-                         (mime == "image/svg+xml" and (b"<svg" in signature or b"<?xml" in signature)))
-                if not valid:
-                    return fail("not_image_bytes", response.status)
-                return {"url": url, "ok": True, "http_status": response.status, "content_type": mime}
+            with (WIKIMEDIA_SLOTS if is_wikimedia else nullcontext()):
+                with urllib.request.urlopen(req, timeout=timeout, context=ssl.create_default_context()) as response:
+                    final = urlsplit(response.geturl())
+                    if final.scheme != "https" or final.username or final.password:
+                        return fail("unsafe_redirect")
+                    mime = response.headers.get("Content-Type", "").split(";")[0].strip().lower()
+                    sample = response.read(512)
+                    if mime not in IMAGE_TYPES:
+                        return fail("not_image_content_type", response.status)
+                    signature = sample.lstrip().lower()
+                    valid = (sample.startswith(SIGNATURES[:2]) or
+                             (sample.startswith(b"RIFF") and sample[8:12] == b"WEBP") or
+                             sample.startswith(SIGNATURES[3:]) or
+                             (mime == "image/svg+xml" and (b"<svg" in signature or b"<?xml" in signature)))
+                    if not valid:
+                        return fail("not_image_bytes", response.status)
+                    return {"url": url, "ok": True, "http_status": response.status, "content_type": mime}
         except urllib.error.HTTPError as exc:
             if exc.code in transient and attempt < retries:
                 # Bounded delay: do not amplify a throttled provider.
