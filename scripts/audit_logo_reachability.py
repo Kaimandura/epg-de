@@ -4,6 +4,7 @@ import argparse
 import gzip
 import json
 import ssl
+import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -17,32 +18,57 @@ IMAGE_TYPES = ("image/png", "image/jpeg", "image/webp", "image/gif", "image/svg+
 SIGNATURES = (bytes.fromhex("89504e470d0a1a0a"), bytes.fromhex("ffd8ff"), b"RIFF", b"GIF87a", b"GIF89a")
 
 
-def check_url(url, timeout=10):
-    def fail(reason):
-        return {"url": url, "ok": False, "reason": reason}
+def check_url(url, timeout=10, retries=2):
+    """Verify the exact published URL; never silently accept a fallback URL.
+
+    Retry only transient 429/5xx errors. Permanent HTTP failures and invalid
+    image bytes remain hard failures with actionable HTTP status evidence.
+    """
+    def fail(reason, status=None):
+        result = {"url": url, "ok": False, "reason": reason}
+        if status is not None:
+            result["http_status"] = status
+        return result
+
     parsed = urlsplit(url)
     if parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password:
         return fail("non_https_or_credentials")
-    req = urllib.request.Request(url, headers={"User-Agent": "EPG-DE-Logo-Audit/1.0", "Accept": "image/*"})
-    try:
-        with urllib.request.urlopen(req, timeout=timeout, context=ssl.create_default_context()) as response:
-            final = urlsplit(response.geturl())
-            if final.scheme != "https" or final.username or final.password:
-                return fail("unsafe_redirect")
-            mime = response.headers.get("Content-Type", "").split(";")[0].strip().lower()
-            sample = response.read(512)
-            if mime not in IMAGE_TYPES:
-                return fail("not_image_content_type")
-            signature = sample.lstrip().lower()
-            valid = (sample.startswith(SIGNATURES[:2]) or
-                     (sample.startswith(b"RIFF") and sample[8:12] == b"WEBP") or
-                     sample.startswith(SIGNATURES[3:]) or
-                     (mime == "image/svg+xml" and (b"<svg" in signature or b"<?xml" in signature)))
-            if not valid:
-                return fail("not_image_bytes")
-            return {"url": url, "ok": True, "http_status": response.status, "content_type": mime}
-    except (urllib.error.URLError, TimeoutError, OSError, ValueError) as exc:
-        return fail(type(exc).__name__)
+
+    transient = {429, 500, 502, 503, 504}
+    for attempt in range(retries + 1):
+        req = urllib.request.Request(
+            url,
+            headers={"User-Agent": "EPG-DE-Logo-Audit/1.0", "Accept": "image/*"},
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=timeout, context=ssl.create_default_context()) as response:
+                final = urlsplit(response.geturl())
+                if final.scheme != "https" or final.username or final.password:
+                    return fail("unsafe_redirect")
+                mime = response.headers.get("Content-Type", "").split(";")[0].strip().lower()
+                sample = response.read(512)
+                if mime not in IMAGE_TYPES:
+                    return fail("not_image_content_type", response.status)
+                signature = sample.lstrip().lower()
+                valid = (sample.startswith(SIGNATURES[:2]) or
+                         (sample.startswith(b"RIFF") and sample[8:12] == b"WEBP") or
+                         sample.startswith(SIGNATURES[3:]) or
+                         (mime == "image/svg+xml" and (b"<svg" in signature or b"<?xml" in signature)))
+                if not valid:
+                    return fail("not_image_bytes", response.status)
+                return {"url": url, "ok": True, "http_status": response.status, "content_type": mime}
+        except urllib.error.HTTPError as exc:
+            if exc.code in transient and attempt < retries:
+                # Bounded delay: do not amplify a throttled provider.
+                time.sleep(min(2 ** attempt, 2))
+                continue
+            return fail("http_error", exc.code)
+        except (urllib.error.URLError, TimeoutError, OSError, ValueError) as exc:
+            if attempt < retries:
+                time.sleep(min(2 ** attempt, 2))
+                continue
+            return fail(type(exc).__name__)
+    raise AssertionError("unreachable retry state")
 
 
 def collect(directory):
@@ -91,9 +117,16 @@ def main():
             check = future.result()
             if not check["ok"]:
                 checks.append({"reason": check["reason"], "url": check["url"], "channels": usage[check["url"]]})
+    # Stable output is diffable across runs and groups repeated upstream faults.
+    checks.sort(key=lambda item: (item["reason"], item["url"]))
+    reasons = {}
+    for check in checks:
+        key = str(check.get("http_status") or check["reason"])
+        reasons[key] = reasons.get(key, 0) + 1
     report = {"scope": "overrides" if args.overrides else "published_products",
               "products": 0 if args.overrides else len(PRODUCTS), "unique_urls_checked": len(usage),
               "missing": missing, "failed_urls": checks,
+              "failure_counts": dict(sorted(reasons.items())),
               "status": "failed" if missing or checks else "passed"}
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
