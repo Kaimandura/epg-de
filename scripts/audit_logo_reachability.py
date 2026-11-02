@@ -98,6 +98,8 @@ def main():
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Logo audit: checked={len(usage)} missing={len(missing)} invalid={len(checks)} status={report['status']}")
+    for check in checks:
+        print("Failed logo: " + json.dumps(check, ensure_ascii=True))
     if report["status"] != "passed":
         raise SystemExit(1)
 
