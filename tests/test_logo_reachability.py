@@ -49,6 +49,18 @@ class LogoReachabilityTests(unittest.TestCase):
         self.assertEqual(opened.call_count, 2)
         sleep.assert_called_once()
 
+    def test_wikimedia_403_retried_but_never_silenced(self):
+        url = "https://upload.wikimedia.org/wikipedia/commons/ab.png"
+        blocked = urllib.error.HTTPError(url, 403, "Forbidden", {}, io.BytesIO())
+        with patch("urllib.request.urlopen", side_effect=blocked) as opened, \
+                patch("time.sleep") as sleep:
+            result = check_url(url, retries=2)
+        self.assertEqual(result["http_status"], 403)
+        self.assertEqual(result["reason"], "http_error")
+        self.assertFalse(result["ok"])
+        self.assertEqual(opened.call_count, 3)
+        self.assertEqual(sleep.call_count, 2)
+
     def test_permanent_failure_includes_real_http_status(self):
         url = "https://assets.example.org/deleted-logo.png"
         missing = urllib.error.HTTPError(url, 404, "Not Found", {}, io.BytesIO())
