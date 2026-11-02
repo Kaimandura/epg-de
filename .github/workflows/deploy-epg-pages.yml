@@ -31,7 +31,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - name: Checkout verifier at this workflow revision
         uses: actions/checkout@v7
@@ -45,6 +45,24 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: python scripts/stage_release.py --output build/pages --workspace build/producer-artifacts
+      - name: Verify exact nine Pages artifacts including required logos
+        run: |
+          python scripts/audit_all_epg_products.py \
+            --directory build/pages --layout pages --report build/pages-quality.json
+      - name: Verify every live logo URL in the prospective Pages bytes
+        run: |
+          python scripts/audit_logo_reachability.py \
+            --directory build/pages --layout pages --report build/pages-logo-reachability.json
+      - name: Preserve independent Pages logo quality evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pages-logo-quality-${{ github.run_id }}
+          path: |
+            build/pages-quality.json
+            build/pages-logo-reachability.json
+          if-no-files-found: warn
+          retention-days: 90
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload exact audited Pages tree
