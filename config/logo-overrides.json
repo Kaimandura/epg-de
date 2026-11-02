@@ -686,5 +686,8 @@
   "truTV.us@East": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/tru-tv-us.png",
   "MTVPlutoTV.de@DACH": "https://images.pluto.tv/channels/5caf325764025859afdd6c4d/colorLogoPNG.png",
   "SamsungTVPlus.at.ATBD1100002TA": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ATBD1100002TA_20230823T033025SQUARE.png_20230823033025.png",
-  "SamsungTVPlus.de.DEBD1100002II": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DEBD1100002II_20230823T033041SQUARE.png_20230823033041.png"
+  "SamsungTVPlus.de.DEBD1100002II": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DEBD1100002II_20230823T033041SQUARE.png_20230823033041.png",
+  "ITVN Extra": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/poland/itvn-extra-pl.png",
+  "QVC2.pluto": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/qvc-2-us.png",
+  "ShopLC.pluto": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/shop-lc-us.png"
 }
