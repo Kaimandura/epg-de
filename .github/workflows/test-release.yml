@@ -52,10 +52,10 @@ jobs:
           set -euo pipefail
           mkdir -p build/identity-source
           curl --retry 3 --connect-timeout 15 --max-time 120 -fsSL \
-            https://raw.githubusercontent.com/iptv-org/database/master/data/channels.csv \
+            https://raw.githubusercontent.com/iptv-org/database/d1d05d0011c7c2b588b486c50afa57b9191d3808/data/channels.csv \
             -o build/identity-source/channels.csv
           curl --retry 3 --connect-timeout 15 --max-time 120 -fsSL \
-            https://raw.githubusercontent.com/iptv-org/database/master/data/logos.csv \
+            https://raw.githubusercontent.com/iptv-org/database/d1d05d0011c7c2b588b486c50afa57b9191d3808/data/logos.csv \
             -o build/identity-source/logos.csv
       - name: Stage non-destructive nine-product logo repairs and preserve programmes
         run: |
