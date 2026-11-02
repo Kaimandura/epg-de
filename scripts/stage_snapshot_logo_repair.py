@@ -49,6 +49,20 @@ def channel_signature(path):
     return result
 
 
+def missing_logo_ids(path):
+    """Stop at first programme; channel inventory requires no full-guide parse."""
+    missing = []
+    with gzip.open(path, "rb") as stream:
+        for _, element in ET.iterparse(stream, events=("end",)):
+            if element.tag == "channel":
+                if not any((icon.get("src") or "").strip() for icon in element.findall("icon")):
+                    missing.append(element.get("id", ""))
+                element.clear()
+            elif element.tag == "programme":
+                break
+    return missing
+
+
 def stage(input_dir, output_dir, channels_csv, logos_csv, overrides):
     if output_dir.exists():
         raise ValueError("output directory must not exist")
@@ -79,12 +93,16 @@ def stage(input_dir, output_dir, channels_csv, logos_csv, overrides):
             raise ValueError(f"{stem}: altered programme content/order")
         if channel_signature(candidate) != before_channels:
             raise ValueError(f"{stem}: altered channel IDs or non-icon metadata")
+        unresolved = missing_logo_ids(candidate)
+        if len(unresolved) != summary["missing_logo_after"]:
+            raise ValueError(f"{stem}: inconsistent missing-logo inventory")
         destination.unlink()
         report[product] = {"input_programmes": before_programmes[0],
                            "input_digest": before_programmes[1],
                            "candidate_digest": after_programmes[1],
                            "logo_coverage_percent": summary["coverage_percent"],
                            "remaining_missing_logos": summary["missing_logo_after"],
+                           "missing_logo_channel_ids": unresolved,
                            "overrides_applied": summary["logo_overrides_applied"]}
     (output_dir / "logo-stage-evidence.json").write_text(
         json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
