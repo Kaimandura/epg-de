@@ -68,6 +68,23 @@ class CinemaTests(unittest.TestCase):
             self.assertEqual(output.findall('programme'),[])
             self.assertEqual(gzip.decompress(p.with_suffix('.xml.gz').read_bytes()),p.read_bytes())
 
+    def test_de_master_audit_rejects_missing_required_channels(self):
+        from audit_all_epg_products import inspect
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "DE-MASTER.xml.gz"
+            root = ET.Element("tv")
+            ch = ET.SubElement(root, "channel", id="Other.de")
+            ET.SubElement(ch, "display-name").text = "Other"
+            ET.SubElement(ch, "icon", src="https://example.org/other.png")
+            p = ET.SubElement(root, "programme", channel="Other.de",
+                              start="20261102160000 +0100", stop="20261102170000 +0100")
+            ET.SubElement(p, "title").text = "Real title"
+            with gzip.open(path, "wb") as stream:
+                stream.write(ET.tostring(root))
+            issues = inspect(path)["issues"]
+            missing = [item["channel"] for item in issues if item["type"] == "missing_required_channel"]
+            self.assertEqual(len(missing), 4)
+
     def test_producer_requires_all_four_active_sky_feeds(self):
         workflow=(ROOT/".github/workflows/update-epg.yml").read_text()
         for brand in ("Feelgood","Blockbuster"):
