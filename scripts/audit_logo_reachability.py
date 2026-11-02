@@ -127,7 +127,7 @@ def main():
         for future in as_completed(futures):
             check = future.result()
             if not check["ok"]:
-                checks.append({"reason": check["reason"], "url": check["url"], "channels": usage[check["url"]]})
+                checks.append({**check, "channels": usage[check["url"]]})
     # Stable output is diffable across runs and groups repeated upstream faults.
     checks.sort(key=lambda item: (item["reason"], item["url"]))
     reasons = {}
