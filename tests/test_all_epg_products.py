@@ -1,5 +1,6 @@
 """Tests for the nine-product read-only EPG quality inventory."""
 import gzip
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -25,6 +26,41 @@ class AllEpgAuditTests(unittest.TestCase):
             result = audit(Path(tmp), "pages")
             self.assertEqual(result["status"], "passed")
             self.assertEqual(len(result["products"]), 9)
+
+    def test_known_usa_logo_debt_does_not_hide_new_errors(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            valid = (b'<tv><channel id="one"><display-name>One</display-name>'
+                     b'<icon src="https://assets.example.org/one.png"/></channel>'
+                     b'<programme channel="one" start="20261101100000 +0000" '
+                     b'stop="20261101110000 +0000"><title>News</title></programme></tv>')
+            missing = (b'<tv><channel id="one"><display-name>One</display-name></channel>'
+                       b'<programme channel="one" start="20261101100000 +0000" '
+                       b'stop="20261101110000 +0000"><title>News</title></programme></tv>')
+            for stem in PRODUCTS:
+                if stem == "amazon":
+                    continue
+                with gzip.open(root / (stem + ".xml.gz"), "wb") as output:
+                    output.write(missing if stem == "usa-local" else valid)
+            policy = root / "debt.json"
+            policy.write_text(json.dumps({"schema_version": 1, "max_missing_logos": {
+                "USA-MASTER": 1, "USA-LOCAL": 1, "USA-FAST": 0, "USA-SPORTS": 0,
+            }}), encoding="utf-8")
+            self.assertEqual(audit(root)["status"], "failed")
+            result = audit(root, usa_logo_debt=policy)
+            self.assertEqual(result["status"], "passed")
+            self.assertEqual(result["products"]["USA-LOCAL"]["status"], "logo_debt")
+            self.assertEqual(result["products"]["USA-LOCAL"]["hard_issue_count"], 0)
+            policy.write_text(json.dumps({"schema_version": 1, "max_missing_logos": {
+                "USA-MASTER": 1, "USA-LOCAL": 0, "USA-FAST": 0, "USA-SPORTS": 0,
+            }}), encoding="utf-8")
+            self.assertEqual(audit(root, usa_logo_debt=policy)["status"], "failed")
+            with gzip.open(root / "usa-local.xml.gz", "wb") as output:
+                output.write(missing.replace(b'channel="one"', b'channel="orphan"'))
+            policy.write_text(json.dumps({"schema_version": 1, "max_missing_logos": {
+                "USA-MASTER": 1, "USA-LOCAL": 1, "USA-FAST": 0, "USA-SPORTS": 0,
+            }}), encoding="utf-8")
+            self.assertEqual(audit(root, usa_logo_debt=policy)["status"], "failed")
 
     def test_missing_required_product_fails(self):
         with tempfile.TemporaryDirectory() as tmp:
