@@ -7,6 +7,9 @@ on:
 permissions:
   contents: read
   actions: read
+concurrency:
+  group: epg-release-regression-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 jobs:
   tests:
     runs-on: ubuntu-latest
@@ -18,6 +21,24 @@ jobs:
         with:
           python-version: "3.12"
       - run: python -m unittest discover -s tests -v
+  logo-overrides:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Verify every configured replacement logo URL and image response
+        run: python scripts/audit_logo_reachability.py --overrides config/logo-overrides.json --report build/logo-override-reachability.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: replacement-logo-evidence
+          path: build/logo-override-reachability.json
+          if-no-files-found: error
   production-snapshot:
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -28,8 +49,29 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
+      - name: Fetch logo identity metadata for an isolated release candidate
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build/identity-source
+          curl --retry 3 --connect-timeout 15 --max-time 120 -fsSL \
+            https://raw.githubusercontent.com/iptv-org/database/d1d05d0011c7c2b588b486c50afa57b9191d3808/data/channels.csv \
+            -o build/identity-source/channels.csv
+          curl --retry 3 --connect-timeout 15 --max-time 120 -fsSL \
+            https://raw.githubusercontent.com/iptv-org/database/d1d05d0011c7c2b588b486c50afa57b9191d3808/data/logos.csv \
+            -o build/identity-source/logos.csv
+      - name: Stage non-destructive nine-product logo repairs and preserve programmes
+        run: |
+          python scripts/stage_snapshot_logo_repair.py \
+            --input epg --output build/snapshot-logo-input \
+            --channels-csv build/identity-source/channels.csv \
+            --logos-csv build/identity-source/logos.csv
+      - name: Inventory all nine candidate XMLTV products and logos
+        run: python scripts/audit_all_epg_products.py --directory build/snapshot-logo-input --usa-logo-debt config/usa-logo-debt-policy.json --report build/all-epg-quality.json
+      - name: Verify every candidate logo URL and image response
+        run: python scripts/audit_logo_reachability.py --directory build/snapshot-logo-input --usa-logo-debt config/usa-logo-debt-policy.json --report build/all-epg-logo-reachability.json --gap-csv build/logo-repair-queue.csv
       - name: Reconcile and audit the proposed release from the pinned snapshot
-        run: python scripts/validate_release_snapshot.py --output build/snapshot
+        run: python scripts/validate_release_snapshot.py --input-dir build/snapshot-logo-input --output build/snapshot
       - uses: actions/upload-artifact@v4
         with:
           name: epg-test-de-${{ github.run_id }}-${{ github.run_attempt }}
@@ -48,13 +90,17 @@ jobs:
           name: production-snapshot-evidence
           path: |
             build/snapshot/*.json
+            build/all-epg-quality.json
+            build/all-epg-logo-reachability.json
+            build/logo-repair-queue.csv
+            build/snapshot-logo-input/logo-stage-evidence.json
             build/snapshot/DE/*.json
             build/snapshot/DE/*.jsonl
             build/snapshot/USA/*.json
             build/snapshot/USA/*.jsonl
           if-no-files-found: error
   artifact-roundtrip:
-    needs: [tests, production-snapshot]
+    needs: [tests, logo-overrides, production-snapshot]
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:

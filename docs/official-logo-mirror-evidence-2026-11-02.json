@@ -1,0 +1,47 @@
+[
+  {
+    "channel": "SkyCinemaBlockbuster.de",
+    "source_url": "https://www.sky.de/bilder/blt5eda45e0873caa14/6ad75c1dea473271e6311764/sky_sky-cinema-blockbuster_light.png",
+    "path": "assets/logos/skycinemablockbuster-de.png",
+    "sha256": "a4c5ccec303eb67de0e1978c11ae9cd9082892e04956f966a5882540cda1b607",
+    "bytes": 13089,
+    "modification": "none; byte-for-byte original PNG",
+    "url": "https://raw.githubusercontent.com/Kaimandura/epg-de/f9b3633af05b2edf4a839db26ada89030e16209c/assets/logos/skycinemablockbuster-de.png"
+  },
+  {
+    "channel": "SkyCinemaFeelgood.de",
+    "source_url": "https://www.sky.de/bilder/bltc595355487f008e9/6ad75a0abcf6e053e8e582a2/sky_sky-cinema-feelgood_light.png",
+    "path": "assets/logos/skycinemafeelgood-de.png",
+    "sha256": "57241ab9789ba88632c389ff73b11d372fc922858066bb00ea5fee372ea7d38c",
+    "bytes": 12541,
+    "modification": "none; byte-for-byte original PNG",
+    "url": "https://raw.githubusercontent.com/Kaimandura/epg-de/f9b3633af05b2edf4a839db26ada89030e16209c/assets/logos/skycinemafeelgood-de.png"
+  },
+  {
+    "channel": "SkyCinemaBlockbuster.de@Plus24HD",
+    "source_url": "https://www.sky.de/bilder/blt1ff7dda192cf05f9/6ad75c01f077337502f8aaad/sky_sky-cinema-blockbuster-plus24_light.png",
+    "path": "assets/logos/skycinemablockbuster-de-plus24hd.png",
+    "sha256": "c4121ca9759b1769c33b6fd60d30b2cb2418e6f7185e1a6e058ac8a6c2d0d058",
+    "bytes": 14179,
+    "modification": "none; byte-for-byte original PNG",
+    "url": "https://raw.githubusercontent.com/Kaimandura/epg-de/f9b3633af05b2edf4a839db26ada89030e16209c/assets/logos/skycinemablockbuster-de-plus24hd.png"
+  },
+  {
+    "channel": "SkyCinemaFeelgood.de@Plus24HD",
+    "source_url": "https://www.sky.de/bilder/blt51bcbdafade559e2/6ad75c3a877687c2f8ef73fc/sky_sky-cinema-feelgood-plus24_light.png",
+    "path": "assets/logos/skycinemafeelgood-de-plus24hd.png",
+    "sha256": "80104e7b9cec13779c1f05b250bbd76e7868c7656835593c9a527811a1965b95",
+    "bytes": 13385,
+    "modification": "none; byte-for-byte original PNG",
+    "url": "https://raw.githubusercontent.com/Kaimandura/epg-de/f9b3633af05b2edf4a839db26ada89030e16209c/assets/logos/skycinemafeelgood-de-plus24hd.png"
+  },
+  {
+    "channel": "Sportdigital1Plus.de@HD",
+    "source_url": "https://www.sky.de/bilder/blt6261a9f1ca0b04a9/69b7bd3118e4235c854e2d5e/sky_25-01_sportdigital1.png",
+    "path": "assets/logos/sportdigital1plus-de-hd.png",
+    "sha256": "5e2f82d07076ef6afc68c7b651bd5e1d9e19cb488fac8650cb28ac5bc0abe07f",
+    "bytes": 53704,
+    "modification": "none; byte-for-byte original PNG",
+    "url": "https://raw.githubusercontent.com/Kaimandura/epg-de/f9b3633af05b2edf4a839db26ada89030e16209c/assets/logos/sportdigital1plus-de-hd.png"
+  }
+]

@@ -292,6 +292,12 @@ def main() -> int:
             continue
 
         xmltv_id = override["xmltv_id"]
+        expected_name = override.get("expected_source_name")
+        if expected_name and upstream["name"].casefold() != expected_name.casefold():
+            raise ValueError(
+                f"Override source identity changed: {key}: "
+                f"expected={expected_name!r} actual={upstream['name']!r}"
+            )
         attrs = dict(upstream["attrs"])
         attrs["xmltv_id"] = xmltv_id
         if override.get("lang"):

@@ -19,12 +19,13 @@ from release_policy import FILES, audit, configured_aliases
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--output',type=Path,required=True)
+    parser.add_argument('--input-dir',type=Path,default=Path('epg'))
     args=parser.parse_args()
     args.output.mkdir(parents=True,exist_ok=False)
     paths={}
     results={}
     for region in FILES:
-        source={name:Path('epg')/stem for name,stem in FILES[region].items() if (Path('epg')/stem).exists()}
+        source={name:args.input_dir/stem for name,stem in FILES[region].items() if (args.input_dir/stem).exists()}
         mapping=Path('reports/usa-channel-mapping.csv') if region=='USA' else None
         target=args.output/region
         report=reconcile(source,target,region,mapping)

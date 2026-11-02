@@ -258,6 +258,38 @@
       "site": "web.magentatv.de",
       "site_id": "5026",
       "lang": "de"
+    },
+    {
+      "xmltv_id": "SkyCinemaBlockbuster.de@HD",
+      "name": "Sky Cinema Blockbuster HD",
+      "site": "sky.com",
+      "site_id": "DE#330",
+      "lang": "de",
+      "expected_source_name": "Sky Cinema Blockbuster HD"
+    },
+    {
+      "xmltv_id": "SkyCinemaFeelgood.de@HD",
+      "name": "Sky Cinema Feelgood HD",
+      "site": "sky.com",
+      "site_id": "DE#331",
+      "lang": "de",
+      "expected_source_name": "Sky Cinema Feelgood HD"
+    },
+    {
+      "xmltv_id": "SkyCinemaBlockbuster.de@Plus24HD",
+      "name": "Sky Cinema Blockbuster HD +24",
+      "site": "sky.com",
+      "site_id": "DE#332",
+      "lang": "de",
+      "expected_source_name": "Sky Cinema Blockbuster HD +24"
+    },
+    {
+      "xmltv_id": "SkyCinemaFeelgood.de@Plus24HD",
+      "name": "Sky Cinema Feelgood HD +24",
+      "site": "sky.com",
+      "site_id": "DE#333",
+      "lang": "de",
+      "expected_source_name": "Sky Cinema Feelgood HD +24"
     }
   ]
 }

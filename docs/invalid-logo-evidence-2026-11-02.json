@@ -1,0 +1,1369 @@
+{
+  "mappings": [
+    {
+      "channel": "StingrayDJAZZ.ca@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/4361dddca4029517690e98be4bba0e69ad417b50.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#5400"
+    },
+    {
+      "channel": "ComedyCentral.de@Plus1",
+      "url": "https://ngiss.t-online.de/cm1s/media/7d7ef98c5806c082423a0127158b35e7a1e2996a.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#54"
+    },
+    {
+      "channel": "Rai1.it@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/1ba8d7da925e2000b3904e1eacd38f4137de469b.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#43"
+    },
+    {
+      "channel": "SkySport3.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/1206e226d77c64a66c18676d2a4995ac0d4f528e.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#189"
+    },
+    {
+      "channel": "DasErste.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/7296be216971cbb439b5b3df7d861d2a074c6d72.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#373"
+    },
+    {
+      "channel": "DisneyChannel.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/82653e92a7d6ebe7bd410401498ef8b74e916490.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#27"
+    },
+    {
+      "channel": "NationalGeographic.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/c9d4a2fb172069fc67d4170738cdbbc225f079f6.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#35"
+    },
+    {
+      "channel": "TLC.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/bd43973022bc8b5e4e44ecaf07cbeaaca3943fd6.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#383"
+    },
+    {
+      "channel": "TVWestsachsen.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/06c7ef3c1ed3d4a9f20564979a9e137a6961b435.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#2610"
+    },
+    {
+      "channel": "SkySportBundesliga3.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/157acf7ce820d15b32b3b032403a32fb65958ac2.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#211"
+    },
+    {
+      "channel": "SkySportF1.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/67d611a4e282db524f86d9424d2ce0921bdca5a3.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#4889"
+    },
+    {
+      "channel": "SkySportNews.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/73b37ddf8cadce6a5c4a1ebdf70a526c2ae93719.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#190"
+    },
+    {
+      "channel": "SRFernsehen.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/9b407c06cb93813dcc59ea3252f86df61e6c6c91.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#379"
+    },
+    {
+      "channel": "RTLLiving.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/df96334494725e0766bf3a22ac6ae3ea88611adf.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#227"
+    },
+    {
+      "channel": "SkySportBundesliga9.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/b23310b91343dae0296d313b692b52dbbdec8d69.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#219"
+    },
+    {
+      "channel": "SkySportBundesliga10.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/282435adc67782bce8ea32e0b92173f6d76baf4f.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#237"
+    },
+    {
+      "channel": "SWRFernsehenRheinlandPfalz.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/033802069c0c3086585d215e0592501669f15f1c.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#393"
+    },
+    {
+      "channel": "SamsungTVPlus.ch.CH500003EH",
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH500003EH_20251209T125750SQUARE.png",
+      "source": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/ch.xml.gz"
+    },
+    {
+      "channel": "Rai2.it@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/ec41b491e93ed2b64225a4c562f97af7271dcc4b.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#46"
+    },
+    {
+      "channel": "MagentaTV.de@SkySportBundesliga10",
+      "url": "https://ngiss.t-online.de/cm1s/media/083d140c6df8ca522b605c2c9ca9fb24a92455f3.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#5557"
+    },
+    {
+      "channel": "SkySportBundesliga8.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/25af99e420b22dc62986815785d2eac63c9d132b.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#258"
+    },
+    {
+      "channel": "SamsungTVPlus.ch.CH34000014Q",
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH34000014Q_20250624T020450SQUARE.png",
+      "source": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/ch.xml.gz"
+    },
+    {
+      "channel": "SamsungTVPlus.at.ATBA3300007PT",
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ATBA3300007PT_20250513T005116SQUARE.png",
+      "source": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/at.xml.gz"
+    },
+    {
+      "channel": "One.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/70b3ed315768d8799f8577aad1003e4b2758b197.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#402"
+    },
+    {
+      "channel": "SkyCinemaClassics.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/4a3b4b8df92f57b9595ee02f4966a6d97874c60d.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#200"
+    },
+    {
+      "channel": "SkySport7.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/2f260de91a03cc79f32ad816be1aae5e424fc523.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#127"
+    },
+    {
+      "channel": "SamsungTVPlus.ch.CH40000020D",
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH40000020D_20251202T002454SQUARE.png",
+      "source": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/ch.xml.gz"
+    },
+    {
+      "channel": "GEOTelevision.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/267643eb7bc861bb7e308a303f66e5301e848db7.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#153"
+    },
+    {
+      "channel": "TVPPolonia.pl@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/a0492950042ae44e2298d29b002df752d4c486ea.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#473"
+    },
+    {
+      "channel": "PlutoTV.de.660bfc032433010008def35a",
+      "url": "https://images.pluto.tv/channels/660bfc032433010008def35a/colorLogoPNG_1750064741845.png",
+      "source": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/de.xml.gz"
+    },
+    {
+      "channel": "AXNWhite.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/cf1405ca89e285dadb2b62c136abc44c214f811e.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#188"
+    },
+    {
+      "channel": "SkySportBundesliga1.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/cf8a1da7411cef9e690ad178cedbd9dbe13ebdbd.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#42"
+    },
+    {
+      "channel": "SkySportBundesliga5.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/1896c9e512a830512a50aead481612e623c7fc40.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#232"
+    },
+    {
+      "channel": "SamsungTVPlus.ch.CH500002H2",
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH500002H2_20251209T125747SQUARE.png",
+      "source": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/ch.xml.gz"
+    },
+    {
+      "channel": "CartoonNetworkCEE.uk@Germany",
+      "url": "https://ngiss.t-online.de/cm1s/media/f73ed871486bd026ffc3ff4cf5e5ac2eeaf6f746.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#126"
+    },
+    {
+      "channel": "RTLup.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/f0eab07df247d9f64761c2d9f6e12d244d5ed0b5.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#542"
+    },
+    {
+      "channel": "kabeleinsDoku.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/ca3279d86270655d49eb50a361e1dcb4564bf39e.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#573"
+    },
+    {
+      "channel": "SkySportTennis.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/e69c367167782ff684da93d889c980eec8ea0bfd.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#198"
+    },
+    {
+      "channel": "NickJr.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/6be4e3115f5ad7543f9b6da2fa36d78d70ee4f60.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#221"
+    },
+    {
+      "channel": "Rai3.it@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/3526677f16439b6e172aa5e346da151b5b57c940.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#210"
+    },
+    {
+      "channel": "AnixeHDSerie.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/f105ac8c8e8dbede59277c3b2019c65ea1ecfc95.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#4777"
+    },
+    {
+      "channel": "SAT1.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/efd5a2c8992cd87d3fcc83b5b2399d12971bf89f.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#381"
+    },
+    {
+      "channel": "BadenTVSud.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/35e2e1b57ba6a5f1ef6237c9a5e588e78b937284.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#3749"
+    },
+    {
+      "channel": "SkyKrimi.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/2b3e6d27b80bb0a6a4082d6983499e1f5a67546a.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#201"
+    },
+    {
+      "channel": "kabeleinsDoku.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/ca3279d86270655d49eb50a361e1dcb4564bf39e.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#573"
+    },
+    {
+      "channel": "ComedyCentral.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/766e5d3738b790d93690b9a6a40e65b99cb73d6b.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#50"
+    },
+    {
+      "channel": "Nitro.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/3e55a412683a498ae7e19077ea81b564bb1b271b.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#395"
+    },
+    {
+      "channel": "SkySport1.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/de52c5d48628b03453d6c09ff0d625ccd9123329.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#192"
+    },
+    {
+      "channel": "UniversalTV.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/1994bd733a17fbcd32d1d78dc43b28c362776f5b.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#185"
+    },
+    {
+      "channel": "ntv.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/1c3073dd69376d57149afdb1791c2576724000f2.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#376"
+    },
+    {
+      "channel": "SkySport2.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/a81a83173f2b76a9167bb872d535645d12ff16c5.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#212"
+    },
+    {
+      "channel": "TELE5.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/05452ad179e25678e50434da167e2f3ede2a9f60.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#48"
+    },
+    {
+      "channel": "SkySport3.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/1206e226d77c64a66c18676d2a4995ac0d4f528e.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#189"
+    },
+    {
+      "channel": "AllgauTV.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/d37488ac6d2572b3cda8b5abc35f2ef632f46d8d.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#448"
+    },
+    {
+      "channel": "CuriosityChannel.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/7502f4f2236a2916323f079e168237ffd7150a25.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#186"
+    },
+    {
+      "channel": "sixx.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/2dc9daa2cdf850169e75d472bd42362f60a0cd7f.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#380"
+    },
+    {
+      "channel": "SamsungTVPlus.at.AT1100004SR",
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/AT1100004SR_20250624T020443SQUARE.png",
+      "source": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/at.xml.gz"
+    },
+    {
+      "channel": "SAT1.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/efd5a2c8992cd87d3fcc83b5b2399d12971bf89f.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#381"
+    },
+    {
+      "channel": "LustPur.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/35264aa89ecba0a3ceb4b0f6f4e0eae0eefb9fcf.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#32"
+    },
+    {
+      "channel": "MagentaTV.de@SkySportKompakt1",
+      "url": "https://ngiss.t-online.de/cm1s/media/1eb232cfe842101537dbcb65be749be3ea5513c3.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#637"
+    },
+    {
+      "channel": "SWRFernsehenBadenWurttemberg.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/033802069c0c3086585d215e0592501669f15f1c.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#398"
+    },
+    {
+      "channel": "NHKWorldJapan.jp@SD",
+      "url": "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/NHK_World_Transparent.png",
+      "source": "iptv-org/database/data/logos.csv#NHKWorldJapan.jp"
+    },
+    {
+      "channel": "SkySportBundesliga4.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/059d08de74e6183963d844496ffa1d96b7e264ef.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#199"
+    },
+    {
+      "channel": "SkySport4.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/33e321e0ea47007d4fe5840b462f324425c04b77.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#111"
+    },
+    {
+      "channel": "TELE5.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/05452ad179e25678e50434da167e2f3ede2a9f60.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#48"
+    },
+    {
+      "channel": "13thStreetUniversal.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/668cd4d06f6981b82841f40fad42bc350babb056.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#255"
+    },
+    {
+      "channel": "kabeleinsClassics.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/3d6c4e11c8058b35f0726c1e25ab1b391a2ada75.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#157"
+    },
+    {
+      "channel": "13thStreetUniversal.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/668cd4d06f6981b82841f40fad42bc350babb056.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#255"
+    },
+    {
+      "channel": "TVBerlin.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/87aa8a42d1a650933f6299e78048a40014e1c0cb.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#599"
+    },
+    {
+      "channel": "KinoweltTV.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/8f80fdd4f8fe6853800aeec106062fc2ee1d5ab4.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#137"
+    },
+    {
+      "channel": "SkySportBundesliga1.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/cf8a1da7411cef9e690ad178cedbd9dbe13ebdbd.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#42"
+    },
+    {
+      "channel": "SamsungTVPlus.de.DEBA3300019EB",
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DEBA3300019EB_20251125T102307SQUARE.png",
+      "source": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/de.xml.gz"
+    },
+    {
+      "channel": "MTV.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/95d8d4289c6a6056f67cac44eded24ad7b8cce8a.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#28"
+    },
+    {
+      "channel": "AnimalPlanet.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/cd0ca6f68c634ba2fd4ce665043f3cefdd1c1c9d.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#105"
+    },
+    {
+      "channel": "SamsungTVPlus.de.DE3400001N1",
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DE3400001N1_20250624T020453SQUARE.png",
+      "source": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/de.xml.gz"
+    },
+    {
+      "channel": "SkySport1.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/de52c5d48628b03453d6c09ff0d625ccd9123329.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#192"
+    },
+    {
+      "channel": "ZeeTVUK.uk@DACH",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png",
+      "source": "iptv-org/database/data/logos.csv#ZeeTVUK.uk"
+    },
+    {
+      "channel": "DiscoveryChannel.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/6e522d9ae4b2a9a8f686281f7d3adff2d8862ee3.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#23"
+    },
+    {
+      "channel": "FashionTVEurope.fr@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/211dd5eb89af94c60688cb6fd5f73e080b3e6221.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#5206"
+    },
+    {
+      "channel": "NationalGeographicWild.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/deec95134d0baec0f4030cb9c96a1f7348419c30.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#569"
+    },
+    {
+      "channel": "DMAX.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/f47210c8539cdcb85e4c468f83a281f6daa66b58.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#429"
+    },
+    {
+      "channel": "AB3.be@SD",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/AB3_2025.svg/960px-AB3_2025.svg.png",
+      "source": "iptv-org/database/data/logos.csv#AB3.be"
+    },
+    {
+      "channel": "SamsungTVPlus.ch.CHBC80000437",
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CHBC80000437_20250107T031518SQUARE.png",
+      "source": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/ch.xml.gz"
+    },
+    {
+      "channel": "ZeeTVUK.uk@HD",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png",
+      "source": "iptv-org/database/data/logos.csv#ZeeTVUK.uk"
+    },
+    {
+      "channel": "SkyAtlantic.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/584598352cad6524622d3876c12d037d846e9656.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#264"
+    },
+    {
+      "channel": "N24Doku.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/bf4ce870d460dcdb3b1e573d58a14137a7d002ea.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#553"
+    },
+    {
+      "channel": "SkySportBundesliga2.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/4200a7071dfb0095510d7ed65682da53ba833eec.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#206"
+    },
+    {
+      "channel": "Boomerang.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/f609f4d13fd7e77d4c7b654a363ed5bc08e15c7a.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#148"
+    },
+    {
+      "channel": "TLC.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/bd43973022bc8b5e4e44ecaf07cbeaaca3943fd6.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#383"
+    },
+    {
+      "channel": "RomanceTV.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/26147f4735983c4f20ad71c01ba95f25b1a7ccc7.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#260"
+    },
+    {
+      "channel": "SkySport5.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/174bc4e879e6dfe8da2da79a20d1cd12a2e64a11.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#114"
+    },
+    {
+      "channel": "SkySportBundesliga7.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/18b38a657b0333c91513befb793a06e06d5e6f58.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#231"
+    },
+    {
+      "channel": "WarnerTVComedy.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/793f9b574904a15207169109b57f7b52979e9d14.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#181"
+    },
+    {
+      "channel": "TV8int.tr@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/94887be6047d7f89e747ba7a2336e3ea5b2aceb3.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#439"
+    },
+    {
+      "channel": "SkySport4.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/33e321e0ea47007d4fe5840b462f324425c04b77.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#111"
+    },
+    {
+      "channel": "SamsungTVPlus.ch.CHBA3300010UC",
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CHBA3300010UC_20250909T014556SQUARE.png",
+      "source": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/ch.xml.gz"
+    },
+    {
+      "channel": "NationalGeographic.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/c9d4a2fb172069fc67d4170738cdbbc225f079f6.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#35"
+    },
+    {
+      "channel": "SamsungTVPlus.de.DE21000013K",
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DE21000013K_20251111T014012SQUARE.png",
+      "source": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/SamsungTVPlus/de.xml.gz"
+    },
+    {
+      "channel": "EuronewsEnglish.fr@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/8ce9f3f5f5960bba793fed99f7e33bafcdde099a.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#5600"
+    },
+    {
+      "channel": "SAT1Gold.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/c4df738dfcdc4307911328c1368b717428f234d8.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#338"
+    },
+    {
+      "channel": "SkySportBundesliga8.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/25af99e420b22dc62986815785d2eac63c9d132b.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#258"
+    },
+    {
+      "channel": "SkySport2.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/a81a83173f2b76a9167bb872d535645d12ff16c5.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#212"
+    },
+    {
+      "channel": "SAT1emotions.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/fb8cf407e719419c47b394d4307cb3e7aa16c4ae.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#224"
+    },
+    {
+      "channel": "SkyKrimi.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/2b3e6d27b80bb0a6a4082d6983499e1f5a67546a.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#201"
+    },
+    {
+      "channel": "SkySportBundesliga2.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/4200a7071dfb0095510d7ed65682da53ba833eec.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#206"
+    },
+    {
+      "channel": "SAT1Gold.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/c4df738dfcdc4307911328c1368b717428f234d8.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#338"
+    },
+    {
+      "channel": "SkyOne.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/9ca199e826b0225530ddd30800973bea16f28628.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#576"
+    },
+    {
+      "channel": "SkyOne.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/9ca199e826b0225530ddd30800973bea16f28628.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#576"
+    },
+    {
+      "channel": "SkySportBundesliga4.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/059d08de74e6183963d844496ffa1d96b7e264ef.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#199"
+    },
+    {
+      "channel": "SkySportBundesliga6.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/e1b0693d92286bae1481f232ff087a4f0cd3b7e1.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#234"
+    },
+    {
+      "channel": "PlutoTV.de.60080e8a4bf36000076a81b1",
+      "url": "https://images.pluto.tv/channels/60080e8a4bf36000076a81b1/colorLogoPNG.png",
+      "source": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/de.xml.gz"
+    },
+    {
+      "channel": "ORF1.at@SD",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/ORF_1_2019.svg/960px-ORF_1_2019.svg.png",
+      "source": "iptv-org/database/data/logos.csv#ORF1.at"
+    },
+    {
+      "channel": "NationalGeographicWild.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/deec95134d0baec0f4030cb9c96a1f7348419c30.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#569"
+    },
+    {
+      "channel": "DMAX.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/f47210c8539cdcb85e4c468f83a281f6daa66b58.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#429"
+    },
+    {
+      "channel": "RTLZwei.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/c2f437c77a06daffbcaa14f5caed1b301abda6b7.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#382"
+    },
+    {
+      "channel": "One.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/70b3ed315768d8799f8577aad1003e4b2758b197.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#402"
+    },
+    {
+      "channel": "SkySportBundesliga10.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/282435adc67782bce8ea32e0b92173f6d76baf4f.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#237"
+    },
+    {
+      "channel": "SkyCinemaClassics.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/4a3b4b8df92f57b9595ee02f4966a6d97874c60d.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#200"
+    },
+    {
+      "channel": "SkyCinemaFamily.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/160d9610ddd0aa6bc218b8df10edceea59f1c161.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#572"
+    },
+    {
+      "channel": "CGTN.cn@SD",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CGTN.svg/960px-CGTN.svg.png",
+      "source": "iptv-org/database/data/logos.csv#CGTN.cn"
+    },
+    {
+      "channel": "SkyAtlantic.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/584598352cad6524622d3876c12d037d846e9656.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#264"
+    },
+    {
+      "channel": "SkySportBundesliga9.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/b23310b91343dae0296d313b692b52dbbdec8d69.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#219"
+    },
+    {
+      "channel": "sixx.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/2dc9daa2cdf850169e75d472bd42362f60a0cd7f.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#380"
+    },
+    {
+      "channel": "UniversalTV.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/1994bd733a17fbcd32d1d78dc43b28c362776f5b.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#185"
+    },
+    {
+      "channel": "WarnerTVComedy.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/793f9b574904a15207169109b57f7b52979e9d14.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#181"
+    },
+    {
+      "channel": "CrimePlusInvestigation.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/98c3430141aaf756c564aedafebb36d0258f34c1.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#106"
+    },
+    {
+      "channel": "ORF1.at@HD",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/ORF_1_2019.svg/960px-ORF_1_2019.svg.png",
+      "source": "iptv-org/database/data/logos.csv#ORF1.at"
+    },
+    {
+      "channel": "N24Doku.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/bf4ce870d460dcdb3b1e573d58a14137a7d002ea.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#553"
+    },
+    {
+      "channel": "MTV.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/95d8d4289c6a6056f67cac44eded24ad7b8cce8a.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#28"
+    },
+    {
+      "channel": "PlutoTV.de.67f3eb1c443f0671bc03ece8",
+      "url": "https://images.pluto.tv/channels/67f3eb1c443f0671bc03ece8/colorLogoPNG_1748329104247.png",
+      "source": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/de.xml.gz"
+    },
+    {
+      "channel": "SkySportBundesliga3.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/157acf7ce820d15b32b3b032403a32fb65958ac2.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#211"
+    },
+    {
+      "channel": "SkySportBundesliga5.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/1896c9e512a830512a50aead481612e623c7fc40.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#232"
+    },
+    {
+      "channel": "DisneyChannel.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/82653e92a7d6ebe7bd410401498ef8b74e916490.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#27"
+    },
+    {
+      "channel": "RTLCrime.de@SD",
+      "url": "https://ngiss.t-online.de/cm1s/media/fda6a6827c4ba695a264061adc0a8813eb83afa7.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#216"
+    },
+    {
+      "channel": "ComedyCentral.de@HD",
+      "url": "https://ngiss.t-online.de/cm1s/media/766e5d3738b790d93690b9a6a40e65b99cb73d6b.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#50"
+    },
+    {
+      "channel": "BRFernsehen.de@Sud",
+      "url": "https://ngiss.t-online.de/cm1s/media/203c9e34b509b9a484eea386db01f28eb676e396.png",
+      "source": "https://api.prod.sngtv.magentatv.de/EPG/JSON/AllChannel#407"
+    }
+  ],
+  "checks": [
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/4361dddca4029517690e98be4bba0e69ad417b50.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://images.pluto.tv/channels/60080e8a4bf36000076a81b1/colorLogoPNG.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/1eb232cfe842101537dbcb65be749be3ea5513c3.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CHBA3300010UC_20250909T014556SQUARE.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/6e522d9ae4b2a9a8f686281f7d3adff2d8862ee3.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CHBC80000437_20250107T031518SQUARE.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/766e5d3738b790d93690b9a6a40e65b99cb73d6b.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://pbs.twimg.com/profile_images/781790577390039040/5-Umq3Kb_400x400.jpg",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH34000014Q_20250624T020450SQUARE.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/6be4e3115f5ad7543f9b6da2fa36d78d70ee4f60.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/c2f437c77a06daffbcaa14f5caed1b301abda6b7.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/059d08de74e6183963d844496ffa1d96b7e264ef.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/73b37ddf8cadce6a5c4a1ebdf70a526c2ae93719.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/4a3b4b8df92f57b9595ee02f4966a6d97874c60d.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/ecbb230e99d730fda3df2b193c0cbd8c1707793e.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/22ad712a8d517ad9e0afa96636261de41eb392d3.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/a81a83173f2b76a9167bb872d535645d12ff16c5.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/c4df738dfcdc4307911328c1368b717428f234d8.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/25af99e420b22dc62986815785d2eac63c9d132b.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://i.imgur.com/8t9mdg9.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/f0eab07df247d9f64761c2d9f6e12d244d5ed0b5.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://xstreamcp-assets-msp.streamready.in/assets/DISTROTV/LIVECHANNEL/66698907bac4421ebc533647/images/logo_20231218_175557_70.png",
+      "ok": false,
+      "reason": "not_image_content_type"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/584598352cad6524622d3876c12d037d846e9656.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/98c3430141aaf756c564aedafebb36d0258f34c1.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/267643eb7bc861bb7e308a303f66e5301e848db7.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/8f80fdd4f8fe6853800aeec106062fc2ee1d5ab4.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH40000020D_20251202T002454SQUARE.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/cf8a1da7411cef9e690ad178cedbd9dbe13ebdbd.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/668cd4d06f6981b82841f40fad42bc350babb056.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/de52c5d48628b03453d6c09ff0d625ccd9123329.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/083d140c6df8ca522b605c2c9ca9fb24a92455f3.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/4200a7071dfb0095510d7ed65682da53ba833eec.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/95d8d4289c6a6056f67cac44eded24ad7b8cce8a.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/c9d4a2fb172069fc67d4170738cdbbc225f079f6.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/8bbd8b6505244eadf79acc39552459c44c052ffa.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://jiotvimages.cdn.jio.com/dare_images/images/NHK_World_Japan.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/05452ad179e25678e50434da167e2f3ede2a9f60.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/e69c367167782ff684da93d889c980eec8ea0bfd.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CGTN.svg/960px-CGTN.svg.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/157acf7ce820d15b32b3b032403a32fb65958ac2.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH500003EH_20251209T125750SQUARE.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/8ce9f3f5f5960bba793fed99f7e33bafcdde099a.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DE3400001N1_20250624T020453SQUARE.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/35e2e1b57ba6a5f1ef6237c9a5e588e78b937284.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/f609f4d13fd7e77d4c7b654a363ed5bc08e15c7a.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/3e55a412683a498ae7e19077ea81b564bb1b271b.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/bd43973022bc8b5e4e44ecaf07cbeaaca3943fd6.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/70b3ed315768d8799f8577aad1003e4b2758b197.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/18b38a657b0333c91513befb793a06e06d5e6f58.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/f73ed871486bd026ffc3ff4cf5e5ac2eeaf6f746.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/ec41b491e93ed2b64225a4c562f97af7271dcc4b.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/f105ac8c8e8dbede59277c3b2019c65ea1ecfc95.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/033802069c0c3086585d215e0592501669f15f1c.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/82653e92a7d6ebe7bd410401498ef8b74e916490.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/NHK_World_Transparent.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/35264aa89ecba0a3ceb4b0f6f4e0eae0eefb9fcf.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/e1b0693d92286bae1481f232ff087a4f0cd3b7e1.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/NHK_World-Japan_TV.svg/960px-NHK_World-Japan_TV.svg.png",
+      "ok": false,
+      "reason": "HTTPError"
+    },
+    {
+      "url": "https://jiotvimages.cdn.jio.com/dare_images/images/Euro_News.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/CH500002H2_20251209T125747SQUARE.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/efd5a2c8992cd87d3fcc83b5b2399d12971bf89f.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/deec95134d0baec0f4030cb9c96a1f7348419c30.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/f47210c8539cdcb85e4c468f83a281f6daa66b58.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/d37488ac6d2572b3cda8b5abc35f2ef632f46d8d.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/87aa8a42d1a650933f6299e78048a40014e1c0cb.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/67d611a4e282db524f86d9424d2ce0921bdca5a3.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/1ba8d7da925e2000b3904e1eacd38f4137de469b.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/ca3279d86270655d49eb50a361e1dcb4564bf39e.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/AT1100004SR_20250624T020443SQUARE.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/ATBA3300007PT_20250513T005116SQUARE.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://images.pluto.tv/channels/660bfc032433010008def35a/colorLogoPNG_1750064741845.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/3526677f16439b6e172aa5e346da151b5b57c940.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/160d9610ddd0aa6bc218b8df10edceea59f1c161.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/282435adc67782bce8ea32e0b92173f6d76baf4f.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DE21000013K_20251111T014012SQUARE.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/1896c9e512a830512a50aead481612e623c7fc40.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/NHK_World.svg/960px-NHK_World.svg.png",
+      "ok": false,
+      "reason": "HTTPError"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/b23310b91343dae0296d313b692b52dbbdec8d69.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/bf4ce870d460dcdb3b1e573d58a14137a7d002ea.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/fb8cf407e719419c47b394d4307cb3e7aa16c4ae.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/26147f4735983c4f20ad71c01ba95f25b1a7ccc7.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/06c7ef3c1ed3d4a9f20564979a9e137a6961b435.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://provider-static.plex.tv/epg/cms/production/f0a48729-6f08-43e4-9cc4-44ba472281de/Marc_Faron_-_Wurl_Plex_assets_Channel-logo-white3x2_ENrdx.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/793f9b574904a15207169109b57f7b52979e9d14.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/7502f4f2236a2916323f079e168237ffd7150a25.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/df96334494725e0766bf3a22ac6ae3ea88611adf.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/a0492950042ae44e2298d29b002df752d4c486ea.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://images.pluto.tv/channels/67f3eb1c443f0671bc03ece8/colorLogoPNG_1748329104247.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/AB3_2025.svg/960px-AB3_2025.svg.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/33e321e0ea47007d4fe5840b462f324425c04b77.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/1f0e9026087e023f7464640bcbe4eaed6cce4055.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/1994bd733a17fbcd32d1d78dc43b28c362776f5b.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/211dd5eb89af94c60688cb6fd5f73e080b3e6221.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://i.imgur.com/XeflUV9.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/cf1405ca89e285dadb2b62c136abc44c214f811e.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/2f260de91a03cc79f32ad816be1aae5e424fc523.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/174bc4e879e6dfe8da2da79a20d1cd12a2e64a11.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/1c3073dd69376d57149afdb1791c2576724000f2.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/203c9e34b509b9a484eea386db01f28eb676e396.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zee_TV_Logo_2025.svg/960px-Zee_TV_Logo_2025.svg.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/cd0ca6f68c634ba2fd4ce665043f3cefdd1c1c9d.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/DEBA3300019EB_20251125T102307SQUARE.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/94887be6047d7f89e747ba7a2336e3ea5b2aceb3.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/fda6a6827c4ba695a264061adc0a8813eb83afa7.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/7296be216971cbb439b5b3df7d861d2a074c6d72.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://pbs.twimg.com/profile_images/1283125776/TFClogoforTwitter_400x400.jpg",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/3d6c4e11c8058b35f0726c1e25ab1b391a2ada75.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/2dc9daa2cdf850169e75d472bd42362f60a0cd7f.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/1206e226d77c64a66c18676d2a4995ac0d4f528e.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/ORF_1_2019.svg/960px-ORF_1_2019.svg.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/9b407c06cb93813dcc59ea3252f86df61e6c6c91.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/2b3e6d27b80bb0a6a4082d6983499e1f5a67546a.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/7d7ef98c5806c082423a0127158b35e7a1e2996a.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://ngiss.t-online.de/cm1s/media/9ca199e826b0225530ddd30800973bea16f28628.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    }
+  ],
+  "database_sha256": "ee757292b9f6cbd49e52142404f323f008ddfadc1b796a5897845380b1cdbfb7",
+  "note": "Native source joins apply the source-specific channel remaps before joining logos. Existing verified PR24 base overrides are retained for Premiere, Action and ProSieben variants."
+}

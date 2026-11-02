@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "purpose": "Release only structurally valid EPG feeds while previously documented USA logo gaps are repaired separately.",
+  "baseline": {
+    "run_id": 41424880142,
+    "source": "production-snapshot-evidence/all-epg-quality.json",
+    "date": "2026-11-02"
+  },
+  "max_missing_logos": {
+    "USA-MASTER": 1,
+    "USA-LOCAL": 257,
+    "USA-FAST": 77,
+    "USA-SPORTS": 1
+  }
+}

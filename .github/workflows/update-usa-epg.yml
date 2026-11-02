@@ -82,6 +82,17 @@ jobs:
             --unmapped-report build/usa/usa-unmapped-channels.csv \
             --work-dir build/usa/work
 
+      - name: Apply verified exact USA logo identities before normalization
+        run: |
+          python scripts/enrich_epg_logos.py \
+            --channels-csv build/usa/input/channels.csv \
+            --logos-csv build/usa/input/logos.csv \
+            --report build/usa/logo-coverage.csv \
+            build/usa/output/usa.xml \
+            build/usa/output/usa-sports.xml \
+            build/usa/output/usa-local.xml \
+            build/usa/output/usa-fast.xml
+
       - name: Normalize USA XMLTV for TiviMate
         run: |
           python scripts/normalize_tivimate_xmltv.py \

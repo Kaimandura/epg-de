@@ -1,0 +1,191 @@
+{
+  "mappings": [
+    {
+      "channel": "OneTerra.de@SD",
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/one-terra-de.png",
+      "source": "https://github.com/tv-logo/tv-logos/tree/main/countries/germany"
+    },
+    {
+      "channel": "SerienPlus.de@HD",
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/serien-plus-de.png",
+      "source": "https://github.com/tv-logo/tv-logos/tree/main/countries/germany"
+    },
+    {
+      "channel": "Silverline.de",
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/silverline-de.png",
+      "source": "https://github.com/tv-logo/tv-logos/tree/main/countries/germany"
+    },
+    {
+      "channel": "SkySportAustria8.at@HD",
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/hd/sky-sport-austria-8-hd-at.png",
+      "source": "https://github.com/tv-logo/tv-logos/tree/main/countries/austria/hd"
+    },
+    {
+      "channel": "MTVCatfishTVShow.us@Germany",
+      "url": "https://images.pluto.tv/channels/5db6a697d5f34a000934cd13/colorLogoPNG.png",
+      "source": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/de.xml.gz#5db6a697d5f34a000934cd13"
+    },
+    {
+      "channel": "NickelodeonTeen.fr",
+      "url": "https://images.pluto.tv/channels/5f0d668b872e4400073acc68/colorLogoPNG_1750753617970.png",
+      "source": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/de.xml.gz#5f0d668b872e4400073acc68"
+    },
+    {
+      "channel": "PlutoTVSnooker900.de@DACH",
+      "url": "https://images.pluto.tv/channels/68ac5543a1ac0c90f2c8943e/colorLogoPNG_1760517341343.png",
+      "source": "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/de.xml.gz#68ac5543a1ac0c90f2c8943e"
+    }
+  ],
+  "checks": [
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/one-terra-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://dt-image-storage.broadpeak-vcdn.com/imagehosting-prod/logos/KID01073-DFBTV/stationLogoColored_20260818.png",
+      "ok": false,
+      "reason": "URLError"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/serien-plus-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/silverline-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://dt-image-storage.broadpeak-vcdn.com/imagehosting-prod/logos/KID00815-SkySportUHD/stationLogoColored_20220727.png",
+      "ok": false,
+      "reason": "URLError"
+    },
+    {
+      "url": "https://images.pluto.tv/channels/68ac5543a1ac0c90f2c8943e/colorLogoPNG_1760517341343.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://dt-image-storage.broadpeak-vcdn.com/imagehosting-prod/logos/KID01017-StimmungsgartenTV/stationLogoColored_20240815.png",
+      "ok": false,
+      "reason": "URLError"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/hd/sky-sport-austria-8-hd-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://dt-image-storage.broadpeak-vcdn.com/imagehosting-prod/logos/KID01044-Filmgold/stationLogoColored_20261001.png",
+      "ok": false,
+      "reason": "URLError"
+    },
+    {
+      "url": "https://dt-image-storage.broadpeak-vcdn.com/imagehosting-prod/logos/KID01054-TOPTRUECRIME/stationLogoColored_20261001.png",
+      "ok": false,
+      "reason": "URLError"
+    },
+    {
+      "url": "https://images.pluto.tv/channels/5db6a697d5f34a000934cd13/colorLogoPNG.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://images.pluto.tv/channels/5f0d668b872e4400073acc68/colorLogoPNG_1750753617970.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    }
+  ],
+  "extra_checks": [
+    {
+      "url": "https://filmgold-tv.de/wp-content/uploads/2026/05/logofg.svg",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/svg+xml"
+    },
+    {
+      "url": "https://www.neu-jerusalem.de/theme/images/de_snj_logo.png",
+      "ok": false,
+      "reason": "HTTPError"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/sky-sport/hd/sky-sport-uhd-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/top-true-crime-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://images.pluto.tv/channels/5ddbf866b1862a0009a0648e/logo.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://a.storyblok.com/f/267621/360x360/1c1b809d0c/dfb-tv.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://gabriele.tv/de/theme/images/de_snj_logo.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stimmungsgarten_TV_Wein-Orangeverlauf_2022.png",
+      "ok": false,
+      "reason": "HTTPError"
+    },
+    {
+      "url": "https://www.sky.de/bilder/blt6261a9f1ca0b04a9/69b7bd3118e4235c854e2d5e/sky_25-01_sportdigital1.png?imwidth=640",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-europe/cnbc-eu.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/hd/ntv-hd-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    }
+  ],
+  "extra_verified": {
+    "Filmgold.de@HD": "https://filmgold-tv.de/wp-content/uploads/2026/05/logofg.svg",
+    "SkySport.de@UHD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/sky-sport/hd/sky-sport-uhd-de.png",
+    "TOPTRUECRIME.de@HD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/top-true-crime-de.png",
+    "PlutoTV.de.5ddbf866b1862a0009a0648e": "https://images.pluto.tv/channels/5ddbf866b1862a0009a0648e/logo.png",
+    "DFBTV.de@HD": "https://a.storyblok.com/f/267621/360x360/1c1b809d0c/dfb-tv.png",
+    "SenderNeuJerusalem.de@SD": "https://gabriele.tv/de/theme/images/de_snj_logo.png",
+    "Sportdigital1Plus.de@HD": "https://www.sky.de/bilder/blt6261a9f1ca0b04a9/69b7bd3118e4235c854e2d5e/sky_25-01_sportdigital1.png?imwidth=640",
+    "CNBCEurope.uk@HD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-europe/cnbc-eu.png",
+    "ntv.at@HD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/hd/ntv-hd-de.png"
+  },
+  "stimmungsgarten": {
+    "source": "https://www.stimmungsgarten.tv/%C3%BCber-uns",
+    "archive": "https://www.stimmungsgarten.tv/_files/archives/75d7a1_50dcc1e2455a4bcaa7dcb423aa2fa79c.zip",
+    "archive_member": "StimmungsgartenTV Logo.svg",
+    "unchanged_copy": "https://raw.githubusercontent.com/Kaimandura/epg-de/c576a28dcf269000724ce45b8fa98090ba0f11e9/assets/logos/stimmungsgarten-tv.svg"
+  }
+}
