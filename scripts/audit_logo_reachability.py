@@ -70,9 +70,20 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--directory", type=Path, default=Path("epg"))
     parser.add_argument("--report", type=Path, required=True)
+    parser.add_argument("--overrides", type=Path, help="Audit every configured replacement asset separately")
     parser.add_argument("--workers", type=int, default=12)
     args = parser.parse_args()
-    usage, missing = collect(args.directory)
+    if args.overrides:
+        overrides = json.loads(args.overrides.read_text(encoding="utf-8"))
+        if not isinstance(overrides, dict) or not overrides:
+            raise ValueError("logo overrides must be a nonempty object")
+        usage, missing = {}, []
+        for cid, url in overrides.items():
+            if not isinstance(url, str) or not url.strip():
+                raise ValueError(f"{cid}: empty/non-string logo override")
+            usage.setdefault(url, []).append({"channel": cid})
+    else:
+        usage, missing = collect(args.directory)
     checks = []
     with ThreadPoolExecutor(max_workers=max(1, min(args.workers, 24))) as pool:
         futures = {pool.submit(check_url, url): url for url in usage}
@@ -80,7 +91,8 @@ def main():
             check = future.result()
             if not check["ok"]:
                 checks.append({"reason": check["reason"], "url": check["url"], "channels": usage[check["url"]]})
-    report = {"products": len(PRODUCTS), "unique_urls_checked": len(usage),
+    report = {"scope": "overrides" if args.overrides else "published_products",
+              "products": 0 if args.overrides else len(PRODUCTS), "unique_urls_checked": len(usage),
               "missing": missing, "failed_urls": checks,
               "status": "failed" if missing or checks else "passed"}
     args.report.parent.mkdir(parents=True, exist_ok=True)
