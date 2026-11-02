@@ -11,25 +11,25 @@
       "active_channels": 524,
       "channels": 524,
       "channels_with_logo": 450,
-      "programmes": 24001
+      "programmes": 25809
     },
     "local": {
       "active_channels": 8829,
       "channels": 8829,
       "channels_with_logo": 8575,
-      "programmes": 417670
+      "programmes": 415242
     },
     "main": {
       "active_channels": 168,
       "channels": 168,
       "channels_with_logo": 167,
-      "programmes": 28297
+      "programmes": 28080
     },
     "sports": {
       "active_channels": 3303,
       "channels": 3303,
       "channels_with_logo": 3302,
-      "programmes": 154649
+      "programmes": 151144
     }
   },
   "status": "passed"
