@@ -3,11 +3,35 @@ import gzip
 import json
 import tempfile
 import unittest
+import xml.etree.ElementTree as ET
 from pathlib import Path
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from audit_all_epg_products import PRODUCTS, audit, inspect
+
+
+REQUIRED_DE_SKY = (
+    "SkyCinemaBlockbuster.de@HD",
+    "SkyCinemaBlockbuster.de@Plus24HD",
+    "SkyCinemaFeelgood.de@HD",
+    "SkyCinemaFeelgood.de@Plus24HD",
+)
+
+
+def with_required_de_sky(xml):
+    """Keep synthetic DE-MASTER fixtures valid under the production identity gate."""
+    root = ET.fromstring(xml)
+    for cid in REQUIRED_DE_SKY:
+        channel = ET.SubElement(root, "channel", id=cid)
+        ET.SubElement(channel, "display-name").text = cid
+        ET.SubElement(channel, "icon", src="https://example.org/sky.png")
+        programme = ET.SubElement(
+            root, "programme", channel=cid,
+            start="20261101100000 +0000", stop="20261101110000 +0000",
+        )
+        ET.SubElement(programme, "title").text = "Fixture programme"
+    return ET.tostring(root)
 
 
 class AllEpgAuditTests(unittest.TestCase):
@@ -22,7 +46,7 @@ class AllEpgAuditTests(unittest.TestCase):
                 if label == "DE-AMAZON":
                     continue
                 with gzip.open(Path(tmp) / (label + ".xml.gz"), "wb") as stream:
-                    stream.write(xml)
+                    stream.write(with_required_de_sky(xml) if label == "DE-MASTER" else xml)
             result = audit(Path(tmp), "pages")
             self.assertEqual(result["status"], "passed")
             self.assertEqual(len(result["products"]), 9)
@@ -41,7 +65,8 @@ class AllEpgAuditTests(unittest.TestCase):
                 if stem == "amazon":
                     continue
                 with gzip.open(root / (stem + ".xml.gz"), "wb") as output:
-                    output.write(missing if stem == "usa-local" else valid)
+                    output.write(missing if stem == "usa-local" else
+                                 with_required_de_sky(valid) if stem == "de" else valid)
             policy = root / "debt.json"
             policy.write_text(json.dumps({"schema_version": 1, "max_missing_logos": {
                 "USA-MASTER": 1, "USA-LOCAL": 1, "USA-FAST": 0, "USA-SPORTS": 0,
@@ -74,7 +99,7 @@ class AllEpgAuditTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             p = Path(tmp) / "de.xml.gz"
             with gzip.open(p, "wb") as stream:
-                stream.write(xml)
+                stream.write(with_required_de_sky(xml))
             result = inspect(p)
             self.assertEqual({x["type"] for x in result["issues"]},
                              {"invalid_logo_url", "orphan_programme"})
@@ -84,7 +109,7 @@ class AllEpgAuditTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             p = Path(tmp) / "de.xml.gz"
             with gzip.open(p, "wb") as stream:
-                stream.write(xml)
+                stream.write(with_required_de_sky(xml))
             result = inspect(p)
             self.assertEqual(result["missing_logos"], 1)
             self.assertIn({"type": "missing_logo", "channel": "missing-logo"}, result["issues"])
@@ -95,7 +120,7 @@ class AllEpgAuditTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             p = Path(tmp) / "de.xml.gz"
             with gzip.open(p, "wb") as stream:
-                stream.write(xml)
+                stream.write(with_required_de_sky(xml))
             original = p.read_bytes()
             result = inspect(p)
             self.assertEqual(result["issue_count"], 0)
