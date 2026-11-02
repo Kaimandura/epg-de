@@ -46,14 +46,31 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
-      - name: Inventory all nine published XMLTV products and logos
+      - name: Fetch logo identity metadata for an isolated release candidate
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build/identity-source
+          curl --retry 3 --connect-timeout 15 --max-time 120 -fsSL \
+            https://raw.githubusercontent.com/iptv-org/database/master/data/channels.csv \
+            -o build/identity-source/channels.csv
+          curl --retry 3 --connect-timeout 15 --max-time 120 -fsSL \
+            https://raw.githubusercontent.com/iptv-org/database/master/data/logos.csv \
+            -o build/identity-source/logos.csv
+      - name: Stage non-destructive nine-product logo repairs and preserve programmes
+        run: |
+          python scripts/stage_snapshot_logo_repair.py \
+            --input epg --output build/snapshot-logo-input \
+            --channels-csv build/identity-source/channels.csv \
+            --logos-csv build/identity-source/logos.csv
+      - name: Inventory all nine candidate XMLTV products and logos
         if: always()
-        run: python scripts/audit_all_epg_products.py --directory epg --report build/all-epg-quality.json
-      - name: Verify all published logo URLs and image responses
+        run: python scripts/audit_all_epg_products.py --directory build/snapshot-logo-input --report build/all-epg-quality.json
+      - name: Verify every candidate logo URL and image response
         if: always()
-        run: python scripts/audit_logo_reachability.py --directory epg --report build/all-epg-logo-reachability.json
+        run: python scripts/audit_logo_reachability.py --directory build/snapshot-logo-input --report build/all-epg-logo-reachability.json
       - name: Reconcile and audit the proposed release from the pinned snapshot
-        run: python scripts/validate_release_snapshot.py --output build/snapshot
+        run: python scripts/validate_release_snapshot.py --input-dir build/snapshot-logo-input --output build/snapshot
       - uses: actions/upload-artifact@v4
         with:
           name: epg-test-de-${{ github.run_id }}-${{ github.run_attempt }}
@@ -74,6 +91,7 @@ jobs:
             build/snapshot/*.json
             build/all-epg-quality.json
             build/all-epg-logo-reachability.json
+            build/snapshot-logo-input/logo-stage-evidence.json
             build/snapshot/DE/*.json
             build/snapshot/DE/*.jsonl
             build/snapshot/USA/*.json
