@@ -49,6 +49,17 @@ class LogoReachabilityTests(unittest.TestCase):
         self.assertEqual(opened.call_count, 2)
         sleep.assert_called_once()
 
+    def test_rate_limit_honors_numeric_retry_after(self):
+        url = "https://assets.example.org/logo.png"
+        limited = urllib.error.HTTPError(url, 429, "Rate limited",
+                                         {"Retry-After": "12"}, io.BytesIO())
+        png = FakeResponse(bytes.fromhex("89504e470d0a1a0a") + bytes(64))
+        with patch("urllib.request.urlopen", side_effect=[limited, png]), \
+                patch("time.sleep") as sleep:
+            result = check_url(url)
+        self.assertTrue(result["ok"])
+        sleep.assert_called_once_with(12.0)
+
     def test_wikimedia_403_retried_but_never_silenced(self):
         url = "https://upload.wikimedia.org/wikipedia/commons/ab.png"
         blocked = urllib.error.HTTPError(url, 403, "Forbidden", {}, io.BytesIO())
