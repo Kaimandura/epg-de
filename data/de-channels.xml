@@ -1651,9 +1651,13 @@
   <channel site="web.magentatv.de" site_id="40" lang="de" xmltv_id="SkyCinemaAction.de@SD">Sky Cinema Action</channel>
   <channel site="tv.magenta.at" site_id="207381032336" lang="de" xmltv_id="SkyCinemaBestOf.de@HD">Sky Cinema Best of HD</channel>
   <channel site="programtv.onet.pl" site_id="sky-hits-365" lang="de" xmltv_id="SkyCinemaBestOf.de@SD">Sky Hits</channel>
+  <channel site="sky.com" site_id="DE#330" lang="de" xmltv_id="SkyCinemaBlockbuster.de@HD">Sky Cinema Blockbuster HD</channel>
+  <channel site="sky.com" site_id="DE#332" lang="de" xmltv_id="SkyCinemaBlockbuster.de@Plus24HD">Sky Cinema Blockbuster HD +24</channel>
   <channel site="sky.com" site_id="DE#107" lang="de" xmltv_id="SkyCinemaClassics.de@HD">Sky Cinema Classics HD</channel>
   <channel site="web.magentatv.de" site_id="200" lang="de" xmltv_id="SkyCinemaClassics.de@SD">Sky Cinema Classics</channel>
   <channel site="web.magentatv.de" site_id="572" lang="de" xmltv_id="SkyCinemaFamily.de@SD">Sky Cinema Family</channel>
+  <channel site="sky.com" site_id="DE#331" lang="de" xmltv_id="SkyCinemaFeelgood.de@HD">Sky Cinema Feelgood HD</channel>
+  <channel site="sky.com" site_id="DE#333" lang="de" xmltv_id="SkyCinemaFeelgood.de@Plus24HD">Sky Cinema Feelgood HD +24</channel>
   <channel site="tv.magenta.at" site_id="207382568104" lang="de" xmltv_id="SkyCinemaFun.de@HD">Sky Cinema Fun HD</channel>
   <channel site="sky.com" site_id="DE#8" lang="de" xmltv_id="SkyCinemaFun.de@SD">Sky Cinema Fun</channel>
   <channel site="sky.com" site_id="DE#131" lang="de" xmltv_id="SkyCinemaPremieren.de@HD">Sky Cinema Premiere HD</channel>
@@ -1686,26 +1690,25 @@
   <channel site="tv.blue.ch" site_id="1990" lang="de" xmltv_id="SkyShowcase.de@SD">Sky Showcase</channel>
   <channel site="sky.com" site_id="DE#3001" lang="de" xmltv_id="SkySport.de@UHD">Sky Sport UHD</channel>
   <channel site="sky.com" site_id="DE#268" lang="de" xmltv_id="SkySport1.de@HD">Sky Sport 1 HD</channel>
-  <channel site="web.magentatv.de" site_id="31" lang="de" xmltv_id="SkySport1.de@SD">Sky Sport Top Event</channel>
+  <channel site="www.magenta.tv" site_id="389265448072" lang="de" xmltv_id="SkySport1.de@SD">Sky Sport Top Event</channel>
   <channel site="sky.com" site_id="DE#269" lang="de" xmltv_id="SkySport10.de@HD">Sky Sport 10 HD</channel>
-  <channel site="web.magentatv.de" site_id="261" lang="de" xmltv_id="SkySport10.de@SD">Sky Sport 8</channel>
-  <channel site="web.magentatv.de" site_id="187" lang="de" xmltv_id="SkySport11.de@SD">Sky Sport 9</channel>
+  <channel site="www.magenta.tv" site_id="389266472183" lang="de" xmltv_id="SkySport10.de@SD">Sky Sport 10</channel>
   <channel site="sky.com" site_id="DE#278" lang="de" xmltv_id="SkySport2.de@HD">Sky Sport 2 HD</channel>
-  <channel site="web.magentatv.de" site_id="198" lang="de" xmltv_id="SkySport2.de@SD">Sky Sport Tennis</channel>
+  <channel site="tv.blue.ch" site_id="1608" lang="de" xmltv_id="SkySport2.de@SD">Sky Sport 2 D</channel>
   <channel site="sky.com" site_id="DE#288" lang="de" xmltv_id="SkySport3.de@HD">Sky Sport 3 HD</channel>
-  <channel site="web.magentatv.de" site_id="192" lang="de" xmltv_id="SkySport3.de@SD">Sky Sport 1</channel>
+  <channel site="tv.post.lu" site_id="d25abf80-81e4-11e9-b43b-9d7b168e6372" lang="de" xmltv_id="SkySport3.de@SD">Sky Sport 3</channel>
   <channel site="sky.com" site_id="DE#298" lang="de" xmltv_id="SkySport4.de@HD">Sky Sport 4 HD</channel>
-  <channel site="web.magentatv.de" site_id="212" lang="de" xmltv_id="SkySport4.de@SD">Sky Sport 2</channel>
+  <channel site="tv.post.lu" site_id="dbc99aa0-81e4-11e9-b43b-9d7b168e6372" lang="de" xmltv_id="SkySport4.de@SD">Sky Sport 4</channel>
   <channel site="sky.com" site_id="DE#3006" lang="de" xmltv_id="SkySport5.de@HD">Sky Sport 5 HD</channel>
-  <channel site="web.magentatv.de" site_id="189" lang="de" xmltv_id="SkySport5.de@SD">Sky Sport 3</channel>
+  <channel site="tv.post.lu" site_id="f58547f0-81e4-11e9-b43b-9d7b168e6372" lang="de" xmltv_id="SkySport5.de@SD">Sky Sport 5</channel>
   <channel site="sky.com" site_id="DE#3011" lang="de" xmltv_id="SkySport6.de@HD">Sky Sport 6 HD</channel>
-  <channel site="web.magentatv.de" site_id="111" lang="de" xmltv_id="SkySport6.de@SD">Sky Sport 4</channel>
+  <channel site="tv.post.lu" site_id="feb96400-81e4-11e9-b43b-9d7b168e6372" lang="de" xmltv_id="SkySport6.de@SD">Sky Sport 6</channel>
   <channel site="sky.com" site_id="DE#3012" lang="de" xmltv_id="SkySport7.de@HD">Sky Sport 7 HD</channel>
-  <channel site="web.magentatv.de" site_id="114" lang="de" xmltv_id="SkySport7.de@SD">Sky Sport 5</channel>
+  <channel site="tv.post.lu" site_id="074b73b0-81e5-11e9-b43b-9d7b168e6372" lang="de" xmltv_id="SkySport7.de@SD">Sky Sport 7</channel>
   <channel site="sky.com" site_id="DE#3013" lang="de" xmltv_id="SkySport8.de@HD">Sky Sport 8 HD</channel>
-  <channel site="web.magentatv.de" site_id="113" lang="de" xmltv_id="SkySport8.de@SD">Sky Sport 6</channel>
+  <channel site="tv.post.lu" site_id="15cf93d0-81e5-11e9-b43b-9d7b168e6372" lang="de" xmltv_id="SkySport8.de@SD">Sky Sport 8</channel>
   <channel site="sky.com" site_id="DE#258" lang="de" xmltv_id="SkySport9.de@HD">Sky Sport 9 HD</channel>
-  <channel site="web.magentatv.de" site_id="127" lang="de" xmltv_id="SkySport9.de@SD">Sky Sport 7</channel>
+  <channel site="tv.post.lu" site_id="1e06b240-81e5-11e9-b43b-9d7b168e6372" lang="de" xmltv_id="SkySport9.de@SD">Sky Sport 9</channel>
   <channel site="sky.com" site_id="DE#143" lang="de" xmltv_id="SkySportAustria1.at@HD">Sky Sport Austria 1 HD</channel>
   <channel site="epgshare01.online" site_id="DE1#Sky.Sport.Austria.de" lang="de" xmltv_id="SkySportAustria1.at@SD">Sky Sport Austria</channel>
   <channel site="sky.com" site_id="DE#3037" lang="de" xmltv_id="SkySportAustria2.at@HD">Sky Sport Austria 2 HD</channel>
@@ -1748,7 +1751,9 @@
   <channel site="sky.com" site_id="DE#145" lang="de" xmltv_id="SkySportPremierLeague.de@HD">Sky Sport Premier League HD</channel>
   <channel site="www.magenta.tv" site_id="389263912232" lang="de" xmltv_id="SkySportPremierLeague.nz@SD">Sky Sport Premier League</channel>
   <channel site="sky.com" site_id="DE#114" lang="de" xmltv_id="SkySportTennis.de@HD">Sky Sport Tennis HD</channel>
+  <channel site="web.magentatv.de" site_id="198" lang="de" xmltv_id="SkySportTennis.de@SD">Sky Sport Tennis</channel>
   <channel site="sky.com" site_id="DE#129" lang="de" xmltv_id="SkySportTopEvent.de@HD">Sky Sport Top Event HD</channel>
+  <channel site="web.magentatv.de" site_id="31" lang="de" xmltv_id="SkySportTopEvent.de@SD">Sky Sport Top Event</channel>
   <channel site="tvprofil.com" site_id="ch/tv-programm#sky-tg24-hd" lang="de" xmltv_id="SkyTG24.it@HD">Sky TG24 HD</channel>
   <channel site="epgshare01.online" site_id="CH1#sky.TG.24.ch" lang="de" xmltv_id="SkyTG24.it@SD">sky TG 24</channel>
   <channel site="epgshare01.online" site_id="CH1#Smithsonian.Channel.UK.ch" lang="de" xmltv_id="SmithsonianChannel.uk@SD">Smithsonian Channel UK</channel>
