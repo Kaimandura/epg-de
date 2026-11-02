@@ -15,7 +15,7 @@ from threading import BoundedSemaphore
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from audit_all_epg_products import PRODUCTS, OPTIONAL
+from audit_all_epg_products import PRODUCTS, OPTIONAL, load_usa_logo_debt
 
 WIKIMEDIA_SLOTS = BoundedSemaphore(3)
 AUDIT_AGENT = "EPG-DE-Logo-Audit/1.2 (https://github.com/Kaimandura/epg-de; public-logo-check)"
@@ -115,6 +115,7 @@ def main():
     parser.add_argument("--overrides", type=Path, help="Audit every configured replacement asset separately")
     parser.add_argument("--workers", type=int, default=12)
     parser.add_argument("--gap-csv", type=Path, help="Write exact channel/product logo gaps for repair")
+    parser.add_argument("--usa-logo-debt", type=Path, help="Track known USA-only logo deficits without blocking verified XMLTV")
     args = parser.parse_args()
     if args.overrides:
         overrides = json.loads(args.overrides.read_text(encoding="utf-8"))
@@ -140,11 +141,38 @@ def main():
     for check in checks:
         key = str(check.get("http_status") or check["reason"])
         reasons[key] = reasons.get(key, 0) + 1
+    limits = load_usa_logo_debt(args.usa_logo_debt)
+    if args.overrides and limits:
+        raise ValueError("USA logo debt is not allowed for the mandatory replacement asset gate")
+    by_product = {}
+    for item in missing:
+        product = item.get("product")
+        by_product[product] = by_product.get(product, 0) + 1
+    extra_debt = {product: count for product, count in by_product.items()
+                  if product in limits and count > limits[product]}
+    hard_missing = [item for item in missing if item.get("product") not in limits
+                    or item.get("reason") != "missing_logo"]
+    hard_failures = []
+    deferred_failures = []
+    for check in checks:
+        products = {item.get("product") for item in check["channels"]}
+        if (limits and products <= set(limits)
+                and check["reason"] not in {"non_https_or_credentials", "unsafe_redirect"}):
+            deferred_failures.append(check)
+        else:
+            hard_failures.append(check)
+    if extra_debt:
+        hard_missing.append({"reason": "usa_logo_debt_increased", "counts": extra_debt})
     report = {"scope": "overrides" if args.overrides else "published_products",
-              "products": 0 if args.overrides else len(PRODUCTS), "unique_urls_checked": len(usage),
+              "products": 0 if args.overrides else len(PRODUCTS),
+              "unique_urls_checked": len(usage),
               "missing": missing, "failed_urls": checks,
               "failure_counts": dict(sorted(reasons.items())),
-              "status": "failed" if missing or checks else "passed"}
+              "deferred_usa": {"missing": [item for item in missing if item.get("product") in limits],
+                               "failed_urls": deferred_failures,
+                               "limits": limits},
+              "release_blockers": {"missing": hard_missing, "failed_urls": hard_failures},
+              "status": "failed" if hard_missing or hard_failures else "passed"}
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if args.gap_csv:
