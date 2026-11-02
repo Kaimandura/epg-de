@@ -219,6 +219,14 @@ jobs:
             --min-channels 25
             --min-programmes 100
             --require-display-names
+            --required-active-channel SkyCinemaBlockbuster.de@HD
+            --required-display-name "SkyCinemaBlockbuster.de@HD=Sky Cinema Blockbuster HD"
+            --required-active-channel SkyCinemaFeelgood.de@HD
+            --required-display-name "SkyCinemaFeelgood.de@HD=Sky Cinema Feelgood HD"
+            --required-active-channel SkyCinemaBlockbuster.de@Plus24HD
+            --required-display-name "SkyCinemaBlockbuster.de@Plus24HD=Sky Cinema Blockbuster HD +24"
+            --required-active-channel SkyCinemaFeelgood.de@Plus24HD
+            --required-display-name "SkyCinemaFeelgood.de@Plus24HD=Sky Cinema Feelgood HD +24"
             --required-active-channel Silverline.de
             --required-active-channel SerienPlus.de@HD
             --required-active-channel SerienPlus.de@SD

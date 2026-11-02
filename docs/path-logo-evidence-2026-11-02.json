@@ -1,0 +1,466 @@
+{
+  "verified": {
+    "TeenNick.us@East": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/teen-nick-us.png",
+    "LoveNature.ca@4K": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/canada/love-nature-ca.png",
+    "rbbFernsehen.de@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/rbb-fernsehen-de.png",
+    "BBCTwo.uk@England": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-two-uk.png",
+    "DisneyChannel.fr@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/france/disney-channel-fr.png",
+    "Focus.it@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/focus-it.png",
+    "BRFernsehen.de@Nord": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/br-fernsehen-de.png",
+    "Boomerang.fr@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/france/boomerang-fr.png",
+    "TeleBielingue.ch@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/switzerland/tele-bielingue-ch.png",
+    "ClassTVModa.it@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/class-tv-moda-it.png",
+    "ORFSportPlus.at@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf-sport-plus-at.png",
+    "ORFSportPlus.at@HD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/hd/orf-sport-plus-hd-at.png",
+    "Cine34.it@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cine34-it.png",
+    "CanalPlusSport360.fr@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/france/canal-plus-sport-360-fr.png",
+    "SRFinfo.ch@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/switzerland/srf-info-ch.png",
+    "RSILa2.ch@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/switzerland/rsi-la2-ch.png",
+    "5Plus.ch@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/switzerland/5-plus-ch.png",
+    "ATV2.at@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/atv2-at.png",
+    "PROTVInternational.ro@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/romania/pro-tv-international-ro.png",
+    "FoodNetwork.uk@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/food-network-uk.png",
+    "Puls4.at@HD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/hd/puls4-hd-at.png",
+    "sixxAustria.at@HD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/sixx-austria-at.png",
+    "ProSiebenMaxxAustria.at@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/prosieben-maxx-austria-at.png",
+    "GBNews.uk@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/gb-news-uk.png",
+    "La5.it@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la5-it.png",
+    "Twentyseven.it@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/twenty-seven-it.png",
+    "LA7.it@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la7-it.png",
+    "BBCFour.uk@UK": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-four-uk.png",
+    "TVKlan.al@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/albania/tv-klan-al.png",
+    "HGTV.de@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/hgtv-de.png",
+    "PBSAmerica.uk@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/pbs-america-uk.png",
+    "Rai5.it@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-5-it.png",
+    "rbbFernsehen.de@Brandenburg": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/rbb-fernsehen-de.png",
+    "CT24.cz@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/czech-republic/ct24-cz.png",
+    "HGTV.de@HD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/hd/hgtv-hd-de.png",
+    "FixFoxi.de@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/fix-and-foxi-de.png",
+    "CNNTurk.tr@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/cnn-turk-tr.png",
+    "ATV2.at@HD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/hd/atv2-hd-at.png",
+    "ORF2.at@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf2-at.png",
+    "BBCOne.uk@London": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-one-uk.png",
+    "kabeleinsDokuAustria.at@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/kabel-eins-doku-austria-at.png",
+    "TRTWorld.tr@HD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/trt-world-hd-tr.png",
+    "RSILa1.ch@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/switzerland/rsi-la1-ch.png",
+    "SWRFernsehenHD.de@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/hd/swr-hd-de.png",
+    "WDRFernsehen.de": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-de.png",
+    "WDRFernsehen.de@Koln": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-de.png",
+    "ClublandTV.uk@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/clubland-uk.png",
+    "FoxNewsChannel.us@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/fox-news-us.png",
+    "ORFIII.at@HD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf3-at.png",
+    "ORFIII.at@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf3-at.png",
+    "SkyNewsInternational.uk@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-news-uk.png",
+    "oe24TV.at@HD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/oe24-at.png",
+    "oe24TV.at@SD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/oe24-at.png",
+    "WDRFernsehen.de@Aachen": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-aachen-de.png",
+    "WDRFernsehen.de@Bielefeld": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-bielefeld-de.png",
+    "WDRFernsehen.de@Bonn": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-bonn-de.png",
+    "WDRFernsehen.de@Dortmund": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-dortmund-de.png",
+    "WDRFernsehen.de@Duisburg": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-duisburg-de.png",
+    "WDRFernsehen.de@Dusseldorf": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-dusseldorf-de.png",
+    "WDRFernsehen.de@Essen": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-essen-de.png",
+    "WDRFernsehen.de@Munster": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-munster-de.png",
+    "WDRFernsehen.de@Siegen": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-siegen-de.png",
+    "WDRFernsehen.de@Wuppertal": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-wuppertal-de.png",
+    "ORF2Karnten.at@HD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf-karnten-at.png",
+    "ORF2Salzburg.at@HD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf-salzburg-at.png",
+    "ORF2Steiermark.at@HD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf-steiermark-at.png",
+    "ORF2Tirol.at@HD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf-tirol-at.png",
+    "ORF2Vorarlberg.at@HD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf-vorarlberg-at.png",
+    "ORF2Wien.at@HD": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf-wien-at.png"
+  },
+  "checks": [
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/hd/puls4-hd-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-wuppertal-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/fix-and-foxi-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la5-it.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/switzerland/srf-info-ch.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf3-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-aachen-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-dortmund-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/hgtv-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/canada/love-nature-ca.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/switzerland/tele-bielingue-ch.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/oe24-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/atv2-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/teen-nick-us.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/rbb-fernsehen-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-duisburg-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-dusseldorf-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf-vorarlberg-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/hd/orf-sport-plus-hd-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-four-uk.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/gb-news-uk.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/rai-5-it.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-munster-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/hd/hgtv-hd-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-siegen-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/pbs-america-uk.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf-steiermark-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/focus-it.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf-sport-plus-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-news-uk.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-bielefeld-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-bonn-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf2-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/la7-it.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/france/disney-channel-fr.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/cnn-turk-tr.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf-karnten-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-one-uk.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/hd/swr-hd-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/clubland-uk.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/switzerland/5-plus-ch.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/france/canal-plus-sport-360-fr.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/sixx-austria-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/trt-world-hd-tr.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/fox-news-us.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf-wien-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/albania/tv-klan-al.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/prosieben-maxx-austria-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf-tirol-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/food-network-uk.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/romania/pro-tv-international-ro.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/class-tv-moda-it.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/france/boomerang-fr.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/cine34-it.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/czech-republic/ct24-cz.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/orf-salzburg-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/switzerland/rsi-la2-ch.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/br-fernsehen-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/italy/twenty-seven-it.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/wdr-essen-de.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-two-uk.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/kabel-eins-doku-austria-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/switzerland/rsi-la1-ch.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/austria/hd/atv2-hd-at.png",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "image/png"
+    }
+  ],
+  "rule": "Exact current database channel name or explicit matching broadcaster and regional name; historical alt_names excluded"
+}

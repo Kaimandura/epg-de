@@ -67,3 +67,9 @@ class CinemaTests(unittest.TestCase):
                 self.assertEqual('plus24' in ch.find('icon').get('src'), 'Plus24' in cid)
             self.assertEqual(output.findall('programme'),[])
             self.assertEqual(gzip.decompress(p.with_suffix('.xml.gz').read_bytes()),p.read_bytes())
+
+    def test_producer_requires_all_four_active_sky_feeds(self):
+        workflow=(ROOT/".github/workflows/update-epg.yml").read_text()
+        for brand in ("Feelgood","Blockbuster"):
+            for feed in ("HD","Plus24HD"):
+                self.assertIn("--required-active-channel SkyCinema"+brand+".de@"+feed, workflow)

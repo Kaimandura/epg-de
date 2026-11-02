@@ -1,0 +1,46 @@
+{
+  "de": {
+    "before": [
+      146881,
+      "8ea8ac356b16c99c1771dd4a453b06d5707e0dcf5183ffb5f33ba8d633cd0bb2"
+    ],
+    "after": [
+      146881,
+      "8ea8ac356b16c99c1771dd4a453b06d5707e0dcf5183ffb5f33ba8d633cd0bb2"
+    ],
+    "unchanged": true
+  },
+  "magenta": {
+    "before": [
+      57082,
+      "8afc721b15066089bb7075a715e9315099c6aaa3f902f67eb0f10cfff9d776f2"
+    ],
+    "after": [
+      57082,
+      "8afc721b15066089bb7075a715e9315099c6aaa3f902f67eb0f10cfff9d776f2"
+    ],
+    "unchanged": true
+  },
+  "samsung": {
+    "before": [
+      3225,
+      "34ab82d5bbc368c9214eba968930cdc6bf745edc3c60275d61667991f72cdef4"
+    ],
+    "after": [
+      3225,
+      "34ab82d5bbc368c9214eba968930cdc6bf745edc3c60275d61667991f72cdef4"
+    ],
+    "unchanged": true
+  },
+  "pluto": {
+    "before": [
+      8192,
+      "9aa308a0dc614db056604683bd566b5ac653f7f16fd4421aa8dd8f64c0be4221"
+    ],
+    "after": [
+      8192,
+      "9aa308a0dc614db056604683bd566b5ac653f7f16fd4421aa8dd8f64c0be4221"
+    ],
+    "unchanged": true
+  }
+}
