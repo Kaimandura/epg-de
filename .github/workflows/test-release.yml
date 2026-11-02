@@ -64,10 +64,8 @@ jobs:
             --channels-csv build/identity-source/channels.csv \
             --logos-csv build/identity-source/logos.csv
       - name: Inventory all nine candidate XMLTV products and logos
-        if: always()
         run: python scripts/audit_all_epg_products.py --directory build/snapshot-logo-input --report build/all-epg-quality.json
       - name: Verify every candidate logo URL and image response
-        if: always()
         run: python scripts/audit_logo_reachability.py --directory build/snapshot-logo-input --report build/all-epg-logo-reachability.json
       - name: Reconcile and audit the proposed release from the pinned snapshot
         run: python scripts/validate_release_snapshot.py --input-dir build/snapshot-logo-input --output build/snapshot
