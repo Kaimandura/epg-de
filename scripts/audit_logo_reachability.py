@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Read-only HTTPS logo reachability and image-content audit for all XMLTV products."""
 import argparse
+import csv
 import gzip
 import json
 import ssl
@@ -113,6 +114,7 @@ def main():
     parser.add_argument("--report", type=Path, required=True)
     parser.add_argument("--overrides", type=Path, help="Audit every configured replacement asset separately")
     parser.add_argument("--workers", type=int, default=12)
+    parser.add_argument("--gap-csv", type=Path, help="Write exact channel/product logo gaps for repair")
     args = parser.parse_args()
     if args.overrides:
         overrides = json.loads(args.overrides.read_text(encoding="utf-8"))
@@ -145,6 +147,20 @@ def main():
               "status": "failed" if missing or checks else "passed"}
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if args.gap_csv:
+        rows = [{"product": item.get("product", ""), "channel": item.get("channel", ""),
+                 "reason": item["reason"], "url": ""} for item in missing]
+        for failure in checks:
+            for item in failure["channels"]:
+                rows.append({"product": item.get("product", ""), "channel": item.get("channel", ""),
+                             "reason": str(failure.get("http_status") or failure["reason"]),
+                             "url": failure["url"]})
+        rows.sort(key=lambda item: (item["product"], item["channel"], item["reason"], item["url"]))
+        args.gap_csv.parent.mkdir(parents=True, exist_ok=True)
+        with args.gap_csv.open("w", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=("product", "channel", "reason", "url"))
+            writer.writeheader()
+            writer.writerows(rows)
     print(f"Logo audit: checked={len(usage)} missing={len(missing)} invalid={len(checks)} status={report['status']}")
     for check in checks:
         print("Failed logo: " + json.dumps(check, ensure_ascii=True))
