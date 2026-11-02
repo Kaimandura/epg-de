@@ -20,13 +20,15 @@ class SkyIdentityIntegrityTests(unittest.TestCase):
             self.assertNotIn(key, seen)
             seen.add(key)
 
-    def test_four_sky_cinema_channels_are_explicitly_mapped(self):
+    def test_six_sky_cinema_channels_are_explicitly_mapped(self):
         rules = json.loads((ROOT / "config/channel-overrides.json").read_text())["channels"]
         expected = {
             "SkyCinemaBlockbuster.de@HD": "DE#330",
             "SkyCinemaFeelgood.de@HD": "DE#331",
             "SkyCinemaBlockbuster.de@Plus24HD": "DE#332",
             "SkyCinemaFeelgood.de@Plus24HD": "DE#333",
+            "SkyCinemaAction.de@Plus24HD": "DE#407",
+            "SkyCinemaClassics.de@Plus24HD": "DE#409",
         }
         for channel, site_id in expected.items():
             matches = [r for r in rules if r["xmltv_id"] == channel]
