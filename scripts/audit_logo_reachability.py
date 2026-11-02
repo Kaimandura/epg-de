@@ -69,9 +69,10 @@ def check_url(url, timeout=10, retries=2):
                         return fail("not_image_bytes", response.status)
                     return {"url": url, "ok": True, "http_status": response.status, "content_type": mime}
         except urllib.error.HTTPError as exc:
-            if exc.code in transient and attempt < retries:
-                # Bounded delay: do not amplify a throttled provider.
-                time.sleep(min(2 ** attempt, 2))
+            # Wikimedia may respond with 403 when temporarily throttling
+            # automated image requests. A repeated 403 still fails closed.
+            if (exc.code in transient or (is_wikimedia and exc.code == 403)) and attempt < retries:
+                time.sleep(min(2 ** (attempt + 1), 4))
                 continue
             return fail("http_error", exc.code)
         except (urllib.error.URLError, TimeoutError, OSError, ValueError) as exc:
