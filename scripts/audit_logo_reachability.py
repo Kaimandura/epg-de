@@ -17,7 +17,7 @@ from urllib.parse import urlsplit
 
 from audit_all_epg_products import PRODUCTS, OPTIONAL, load_usa_logo_debt
 
-WIKIMEDIA_SLOTS = BoundedSemaphore(3)
+WIKIMEDIA_SLOTS = BoundedSemaphore(1)
 AUDIT_AGENT = "EPG-DE-Logo-Audit/1.2 (https://github.com/Kaimandura/epg-de; public-logo-check)"
 
 IMAGE_TYPES = ("image/png", "image/jpeg", "image/webp", "image/gif", "image/svg+xml")
@@ -73,7 +73,12 @@ def check_url(url, timeout=10, retries=2):
             # Wikimedia may respond with 403 when temporarily throttling
             # automated image requests. A repeated 403 still fails closed.
             if (exc.code in transient or (is_wikimedia and exc.code == 403)) and attempt < retries:
-                time.sleep(min(2 ** (attempt + 1), 4))
+                retry_after = (exc.headers.get("Retry-After") if exc.headers else None)
+                try:
+                    delay = min(max(float(retry_after), 1.0), 30.0) if retry_after else min(2 ** (attempt + 1), 8)
+                except (ValueError, TypeError):
+                    delay = min(2 ** (attempt + 1), 8)
+                time.sleep(delay)
                 continue
             return fail("http_error", exc.code)
         except (urllib.error.URLError, TimeoutError, OSError, ValueError) as exc:
