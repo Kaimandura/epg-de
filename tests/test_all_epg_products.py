@@ -31,6 +31,17 @@ class AllEpgAuditTests(unittest.TestCase):
             self.assertEqual({x["type"] for x in result["issues"]},
                              {"invalid_logo_url", "orphan_programme"})
 
+    def test_missing_logo_is_release_blocking_with_channel_evidence(self):
+        xml = b'''<tv><channel id="missing-logo"><display-name>Missing Logo</display-name></channel><programme channel="missing-logo" start="20261101100000 +0000" stop="20261101110000 +0000"><title>Title</title></programme></tv>'''
+        with tempfile.TemporaryDirectory() as tmp:
+            p = Path(tmp) / "de.xml.gz"
+            with gzip.open(p, "wb") as stream:
+                stream.write(xml)
+            result = inspect(p)
+            self.assertEqual(result["missing_logos"], 1)
+            self.assertIn({"type": "missing_logo", "channel": "missing-logo"}, result["issues"])
+            self.assertEqual(result["issue_count"], 1)
+
     def test_valid_feed_preserves_inputs(self):
         xml = b'''<tv><channel id="one"><display-name>One</display-name><icon src="https://example.org/logo.png"/></channel><programme channel="one" start="20261101100000 +0000" stop="20261101110000 +0000"><title>Title</title></programme></tv>'''
         with tempfile.TemporaryDirectory() as tmp:
