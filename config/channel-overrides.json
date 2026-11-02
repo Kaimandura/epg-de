@@ -290,6 +290,22 @@
       "site_id": "DE#333",
       "lang": "de",
       "expected_source_name": "Sky Cinema Feelgood HD +24"
+    },
+    {
+      "xmltv_id": "SkyCinemaAction.de@Plus24HD",
+      "name": "Sky Cinema Action HD +24",
+      "site": "sky.com",
+      "site_id": "DE#407",
+      "lang": "de",
+      "expected_source_name": "Sky Cinema Action HD +24"
+    },
+    {
+      "xmltv_id": "SkyCinemaClassics.de@Plus24HD",
+      "name": "Sky Cinema Classics HD +24",
+      "site": "sky.com",
+      "site_id": "DE#409",
+      "lang": "de",
+      "expected_source_name": "Sky Cinema Classics HD +24"
     }
   ]
 }
