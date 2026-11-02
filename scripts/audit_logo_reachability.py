@@ -83,11 +83,13 @@ def check_url(url, timeout=10, retries=2):
     raise AssertionError("unreachable retry state")
 
 
-def collect(directory):
+def collect(directory, layout="source"):
+    if layout not in {"source", "pages"}:
+        raise ValueError(f"unknown XMLTV layout: {layout}")
     usage = {}
     missing = []
     for stem, product in PRODUCTS.items():
-        path = directory / (stem + ".xml.gz")
+        path = directory / ((stem if layout == "source" else product) + ".xml.gz")
         if not path.is_file():
             if stem not in OPTIONAL:
                 missing.append({"product": product, "reason": "missing_feed"})
@@ -107,6 +109,7 @@ def collect(directory):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--directory", type=Path, default=Path("epg"))
+    parser.add_argument("--layout", choices=("source", "pages"), default="source")
     parser.add_argument("--report", type=Path, required=True)
     parser.add_argument("--overrides", type=Path, help="Audit every configured replacement asset separately")
     parser.add_argument("--workers", type=int, default=12)
@@ -121,7 +124,7 @@ def main():
                 raise ValueError(f"{cid}: empty/non-string logo override")
             usage.setdefault(url, []).append({"channel": cid})
     else:
-        usage, missing = collect(args.directory)
+        usage, missing = collect(args.directory, args.layout)
     checks = []
     with ThreadPoolExecutor(max_workers=max(1, min(args.workers, 24))) as pool:
         futures = {pool.submit(check_url, url): url for url in usage}
