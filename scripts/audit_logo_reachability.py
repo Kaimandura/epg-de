@@ -144,14 +144,15 @@ def main():
     limits = load_usa_logo_debt(args.usa_logo_debt)
     if args.overrides and limits:
         raise ValueError("USA logo debt is not allowed for the mandatory replacement asset gate")
-    by_product = {}
-    for item in missing:
-        product = item.get("product")
-        by_product[product] = by_product.get(product, 0) + 1
-    extra_debt = {product: count for product, count in by_product.items()
-                  if product in limits and count > limits[product]}
+    # A broken URL is an unusable logo, not free debt. Count the union of
+    # missing and invalid USA channel identities against the pinned ceiling.
+    # A single failed URL may serve hundreds of channels.
+    debt_channels = {product: set() for product in limits}
     hard_missing = [item for item in missing if item.get("product") not in limits
                     or item.get("reason") != "missing_logo"]
+    for item in missing:
+        if item.get("product") in limits and item.get("reason") == "missing_logo":
+            debt_channels[item["product"]].add(item.get("channel"))
     hard_failures = []
     deferred_failures = []
     for check in checks:
@@ -159,8 +160,12 @@ def main():
         if (limits and products <= set(limits)
                 and check["reason"] not in {"non_https_or_credentials", "unsafe_redirect"}):
             deferred_failures.append(check)
+            for channel in check["channels"]:
+                debt_channels[channel["product"]].add(channel.get("channel"))
         else:
             hard_failures.append(check)
+    extra_debt = {product: len(channels) for product, channels in debt_channels.items()
+                  if len(channels) > limits[product]}
     if extra_debt:
         hard_missing.append({"reason": "usa_logo_debt_increased", "counts": extra_debt})
     report = {"scope": "overrides" if args.overrides else "published_products",
@@ -170,6 +175,7 @@ def main():
               "failure_counts": dict(sorted(reasons.items())),
               "deferred_usa": {"missing": [item for item in missing if item.get("product") in limits],
                                "failed_urls": deferred_failures,
+                               "affected_channels": {product: len(channels) for product, channels in debt_channels.items()},
                                "limits": limits},
               "release_blockers": {"missing": hard_missing, "failed_urls": hard_failures},
               "status": "failed" if hard_missing or hard_failures else "passed"}
