@@ -43,6 +43,7 @@ def inspect(path):
         icons = [(n.get("src") or "").strip() for n in ch.findall("icon")]
         if not icons or not any(icons):
             counts["missing_logo"] += 1
+            issues.append({"type": "missing_logo", "channel": cid})
         else:
             for url in icons:
                 parsed = urlsplit(url)
