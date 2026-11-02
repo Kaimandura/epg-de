@@ -48,11 +48,11 @@ jobs:
       - name: Verify exact nine Pages artifacts including required logos
         run: |
           python scripts/audit_all_epg_products.py \
-            --directory build/pages --layout pages --report build/pages-quality.json
+            --directory build/pages --layout pages --usa-logo-debt config/usa-logo-debt-policy.json --report build/pages-quality.json
       - name: Verify every live logo URL in the prospective Pages bytes
         run: |
           python scripts/audit_logo_reachability.py \
-            --directory build/pages --layout pages --report build/pages-logo-reachability.json
+            --directory build/pages --layout pages --usa-logo-debt config/usa-logo-debt-policy.json --report build/pages-logo-reachability.json
       - name: Preserve independent Pages logo quality evidence
         if: always()
         uses: actions/upload-artifact@v4
