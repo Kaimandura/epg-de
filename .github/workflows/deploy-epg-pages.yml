@@ -68,10 +68,13 @@ jobs:
       - name: Upload exact audited Pages tree
         uses: actions/upload-pages-artifact@v4
         with:
+          name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
           path: build/pages
       - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Verify public release bytes and retired URLs
         env:
           PAGE_URL: ${{ steps.deployment.outputs.page_url }}
