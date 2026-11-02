@@ -84,6 +84,20 @@ def inspect(path):
                 issues.append({"type": "invalid_time", "channel": cid})
     if not ids or counts["programmes"] == 0:
         issues.append({"type": "empty_guide", "channel": ""})
+    # Must survive producer, staging and Pages packaging.
+    if path.name in {"de.xml.gz", "DE-MASTER.xml.gz"}:
+        critical = {
+            "SkyCinemaBlockbuster.de@HD",
+            "SkyCinemaBlockbuster.de@Plus24HD",
+            "SkyCinemaFeelgood.de@HD",
+            "SkyCinemaFeelgood.de@Plus24HD",
+        }
+        scheduled = Counter(p.get("channel", "") for p in root.findall("programme"))
+        for cid in sorted(critical):
+            if cid not in ids:
+                issues.append({"type": "missing_required_channel", "channel": cid})
+            elif scheduled[cid] == 0:
+                issues.append({"type": "missing_required_programmes", "channel": cid})
     return {"channels": len(ids), "programmes": counts["programmes"],
             "missing_logos": counts["missing_logo"],
             "issues": issues, "issue_count": len(issues)}
