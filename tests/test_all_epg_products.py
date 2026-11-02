@@ -14,6 +14,18 @@ class AllEpgAuditTests(unittest.TestCase):
         self.assertEqual(len(PRODUCTS), 9)
         self.assertEqual(len(set(PRODUCTS.values())), 9)
 
+    def test_exact_pages_filenames_are_supported(self):
+        xml = b'''<tv><channel id="station"><display-name>Station</display-name><icon src="https://example.org/station.png"/></channel><programme channel="station" start="20261101100000 +0000" stop="20261101110000 +0000"><title>Programme</title></programme></tv>'''
+        with tempfile.TemporaryDirectory() as tmp:
+            for label in PRODUCTS.values():
+                if label == "DE-AMAZON":
+                    continue
+                with gzip.open(Path(tmp) / (label + ".xml.gz"), "wb") as stream:
+                    stream.write(xml)
+            result = audit(Path(tmp), "pages")
+            self.assertEqual(result["status"], "passed")
+            self.assertEqual(len(result["products"]), 9)
+
     def test_missing_required_product_fails(self):
         with tempfile.TemporaryDirectory() as tmp:
             result = audit(Path(tmp))
