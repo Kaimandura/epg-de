@@ -1,5 +1,6 @@
 """Offline contract tests for the HTTPS logo response gate."""
 import io
+import urllib.error
 import sys
 import unittest
 from pathlib import Path
@@ -36,6 +37,29 @@ class LogoReachabilityTests(unittest.TestCase):
     def test_fake_html_rejected_even_with_image_header(self):
         with patch("urllib.request.urlopen", return_value=FakeResponse(b"<html>not image</html>")):
             self.assertFalse(check_url("https://assets.example.org/logo.png")["ok"])
+
+    def test_rate_limited_image_is_retried_then_validated(self):
+        url = "https://assets.example.org/logo.png"
+        limited = urllib.error.HTTPError(url, 429, "Rate limited", {}, io.BytesIO())
+        png = FakeResponse(b"\x89PNG\r\n\x1a\n" + bytes(64))
+        with patch("urllib.request.urlopen", side_effect=[limited, png]) as opened, \
+                patch("time.sleep") as sleep:
+            result = check_url(url)
+        self.assertTrue(result["ok"])
+        self.assertEqual(opened.call_count, 2)
+        sleep.assert_called_once()
+
+    def test_permanent_failure_includes_real_http_status(self):
+        url = "https://assets.example.org/deleted-logo.png"
+        missing = urllib.error.HTTPError(url, 404, "Not Found", {}, io.BytesIO())
+        with patch("urllib.request.urlopen", side_effect=missing) as opened, \
+                patch("time.sleep") as sleep:
+            result = check_url(url)
+        self.assertEqual(result["reason"], "http_error")
+        self.assertEqual(result["http_status"], 404)
+        self.assertFalse(result["ok"])
+        opened.assert_called_once()
+        sleep.assert_not_called()
 
     def test_downgrade_redirect_refused(self):
         with patch("urllib.request.urlopen", return_value=FakeResponse(
