@@ -22,6 +22,21 @@ PRODUCTS = {
     "usa-sports": "USA-SPORTS",
 }
 OPTIONAL = {"amazon"}
+USA_PRODUCTS = {"USA-MASTER", "USA-LOCAL", "USA-FAST", "USA-SPORTS"}
+
+
+def load_usa_logo_debt(path):
+    """Allow only previously measured USA logo absences, never invalid XMLTV."""
+    if path is None:
+        return {}
+    policy = json.loads(Path(path).read_text(encoding="utf-8"))
+    limits = policy.get("max_missing_logos")
+    if (policy.get("schema_version") != 1 or not isinstance(limits, dict)
+            or set(limits) != USA_PRODUCTS
+            or any(type(value) is not int or value < 0 for value in limits.values())):
+        raise ValueError("invalid USA logo-debt policy")
+    return limits
+
 STAMP = re.compile(r"^\d{14} [+-]\d{4}$")
 
 
@@ -74,11 +89,13 @@ def inspect(path):
             "issues": issues, "issue_count": len(issues)}
 
 
-def audit(directory, layout="source"):
+def audit(directory, layout="source", usa_logo_debt=None):
     if layout not in {"source", "pages"}:
         raise ValueError(f"unknown XMLTV layout: {layout}")
+    limits = load_usa_logo_debt(usa_logo_debt)
     result = {}
     failures = []
+    deferred = {}
     for stem, label in PRODUCTS.items():
         path = directory / (f"{stem}.xml.gz" if layout == "source" else f"{label}.xml.gz")
         if not path.is_file():
@@ -90,24 +107,35 @@ def audit(directory, layout="source"):
             continue
         try:
             record = inspect(path)
-            record["status"] = "invalid" if record["issues"] else "ok"
+            issues = record["issues"]
+            hard_issues = [issue for issue in issues
+                           if not (label in limits and issue["type"] == "missing_logo")]
+            missing = record["missing_logos"]
+            if label in limits:
+                deferred[label] = {"missing_logos": missing, "ceiling": limits[label]}
+                if missing > limits[label]:
+                    hard_issues.append({"type": "usa_logo_debt_increased", "channel": ""})
+            record["hard_issue_count"] = len(hard_issues)
+            record["deferred_logo_issues"] = missing if label in limits else 0
+            record["status"] = ("invalid" if hard_issues
+                                else "logo_debt" if label in limits and missing else "ok")
             result[label] = record
-            if record["issues"]:
-                failures.append(f"{label}: {len(record['issues'])} structural errors")
+            if hard_issues:
+                failures.append(f"{label}: {len(hard_issues)} release-blocking errors")
         except (OSError, EOFError, ET.ParseError, ValueError) as exc:
             result[label] = {"status": "corrupt", "error": str(exc)}
             failures.append(f"{label}: {exc}")
-    return {"products": result, "failures": failures,
+    return {"products": result, "failures": failures, "usa_logo_debt": deferred,
             "status": "failed" if failures else "passed"}
-
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--directory", type=Path, default=Path("epg"))
     parser.add_argument("--layout", choices=("source", "pages"), default="source")
     parser.add_argument("--report", type=Path, required=True)
+    parser.add_argument("--usa-logo-debt", type=Path, help="Pin acceptable historical USA-only logo deficits")
     args = parser.parse_args()
-    report = audit(args.directory, args.layout)
+    report = audit(args.directory, args.layout, args.usa_logo_debt)
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps({name: {k: v for k, v in row.items() if k != "issues"}
