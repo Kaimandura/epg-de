@@ -74,11 +74,13 @@ def inspect(path):
             "issues": issues, "issue_count": len(issues)}
 
 
-def audit(directory):
+def audit(directory, layout="source"):
+    if layout not in {"source", "pages"}:
+        raise ValueError(f"unknown XMLTV layout: {layout}")
     result = {}
     failures = []
     for stem, label in PRODUCTS.items():
-        path = directory / f"{stem}.xml.gz"
+        path = directory / (f"{stem}.xml.gz" if layout == "source" else f"{label}.xml.gz")
         if not path.is_file():
             if stem in OPTIONAL:
                 result[label] = {"status": "optional_absent"}
@@ -102,9 +104,10 @@ def audit(directory):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--directory", type=Path, default=Path("epg"))
+    parser.add_argument("--layout", choices=("source", "pages"), default="source")
     parser.add_argument("--report", type=Path, required=True)
     args = parser.parse_args()
-    report = audit(args.directory)
+    report = audit(args.directory, args.layout)
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps({name: {k: v for k, v in row.items() if k != "issues"}
