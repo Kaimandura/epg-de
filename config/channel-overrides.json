@@ -8,6 +8,13 @@
       "lang": "de"
     },
     {
+      "xmltv_id": "Silverline.de",
+      "name": "Silverline",
+      "site": "tvprofil.com",
+      "site_id": "de/tvprogramm#silverline-tv",
+      "lang": "de"
+    },
+    {
       "xmltv_id": "SerienPlus.de@HD",
       "name": "SERIEN+ HD",
       "site": "sky.com",
@@ -290,6 +297,13 @@
       "site_id": "DE#333",
       "lang": "de",
       "expected_source_name": "Sky Cinema Feelgood HD +24"
+    },
+    {
+      "xmltv_id": "SkySport2.de@SD",
+      "name": "Sky Sport 2",
+      "site": "epgshare01.online",
+      "site_id": "DE1#Sky.Sport.2.de",
+      "lang": "de"
     }
   ]
 }
