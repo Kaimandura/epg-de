@@ -1694,7 +1694,7 @@
   <channel site="sky.com" site_id="DE#269" lang="de" xmltv_id="SkySport10.de@HD">Sky Sport 10 HD</channel>
   <channel site="www.magenta.tv" site_id="389266472183" lang="de" xmltv_id="SkySport10.de@SD">Sky Sport 10</channel>
   <channel site="sky.com" site_id="DE#278" lang="de" xmltv_id="SkySport2.de@HD">Sky Sport 2 HD</channel>
-  <channel site="tv.blue.ch" site_id="1608" lang="de" xmltv_id="SkySport2.de@SD">Sky Sport 2 D</channel>
+  <channel site="epgshare01.online" site_id="DE1#Sky.Sport.2.de" lang="de" xmltv_id="SkySport2.de@SD">Sky Sport 2</channel>
   <channel site="sky.com" site_id="DE#288" lang="de" xmltv_id="SkySport3.de@HD">Sky Sport 3 HD</channel>
   <channel site="tv.post.lu" site_id="d25abf80-81e4-11e9-b43b-9d7b168e6372" lang="de" xmltv_id="SkySport3.de@SD">Sky Sport 3</channel>
   <channel site="sky.com" site_id="DE#298" lang="de" xmltv_id="SkySport4.de@HD">Sky Sport 4 HD</channel>

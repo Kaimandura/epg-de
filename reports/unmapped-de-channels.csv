@@ -347,7 +347,6 @@ Sky Showcase,epgshare01.online,DE1#Sky.Showcase.de,de,AMBIGUOUS,SkyShowcase.de@S
 sky showcase,epgshare01.online,DE1#sky.showcase.de,de,AMBIGUOUS,SkyShowcase.de@SD;SkyShowcase.uk@SD,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
 Sky Sport,epgshare01.online,CH1#Sky.Sport.ch,de,AMBIGUOUS,SkySport.de@UHD;SkySport251.it@HD;SkySport251.it@SD;SkySport252.it@HD;SkySport252.it@SD;SkySport253.it@HD;SkySport253.it@SD;SkySport254.it@HD;SkySport254.it@SD;SkySport255.it@HD;SkySport255.it@SD;SkySport256.it@HD;SkySport256.it@SD;SkySport257.it@HD;SkySport257.it@SD;SkySport258.it@SD;SkySport259.it@SD,sites/epgshare01.online/epgshare01.online_CH1.channels.xml
 Sky Sport 1,epgshare01.online,DE1#Sky.Sport.1.de,de,AMBIGUOUS,SkySport1.de@SD;SkySport1.nz@SD;SkySport3.de@SD,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
-Sky Sport 2,epgshare01.online,DE1#Sky.Sport.2.de,de,AMBIGUOUS,SkySport2.de@SD;SkySport2.nz@SD;SkySport4.de@SD,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
 Sky Sport 3,epgshare01.online,DE1#Sky.Sport.3.de,de,AMBIGUOUS,SkySport3.de@SD;SkySport3.nz@SD;SkySport5.de@SD,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
 Sky Sport 4,epgshare01.online,DE1#Sky.Sport.4.de,de,AMBIGUOUS,SkySport4.de@SD;SkySport4.nz@SD;SkySport6.de@SD,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
 Sky Sport 5,epgshare01.online,DE1#Sky.Sport.5.de,de,AMBIGUOUS,SkySport5.de@SD;SkySport5.nz@SD;SkySport7.de@SD,sites/epgshare01.online/epgshare01.online_DE1.channels.xml
@@ -1919,7 +1918,6 @@ SIC,tvprofil.com,ch/tv-programm#sic,de,AMBIGUOUS,SIC.pt@HD;SIC.pt@SD;SICInternac
 SIC,tvprofil.com,de/tvprogramm#sic,de,AMBIGUOUS,SIC.pt@HD;SIC.pt@SD;SICInternacional.pt@SD,sites/tvprofil.com/tvprofil.com.channels.xml
 SIC Noticias,tvprofil.com,ch/tv-programm#sic-noticias,de,AMBIGUOUS,SICNoticias.pt@HD;SICNoticias.pt@SD,sites/tvprofil.com/tvprofil.com.channels.xml
 SIC Noticias,tvprofil.com,de/tvprogramm#sic-noticias,de,AMBIGUOUS,SICNoticias.pt@HD;SICNoticias.pt@SD,sites/tvprofil.com/tvprofil.com.channels.xml
-Silverline Movie Channel,tvprofil.com,de/tvprogramm#silverline-tv,de,UNMATCHED,,sites/tvprofil.com/tvprofil.com.channels.xml
 SinemaTV,tvprofil.com,at/tvprogramm#sinematv,de,UNMATCHED,,sites/tvprofil.com/tvprofil.com.channels.xml
 SinemaTV,tvprofil.com,ch/tv-programm#sinematv,de,UNMATCHED,,sites/tvprofil.com/tvprofil.com.channels.xml
 SinemaTV,tvprofil.com,de/tvprogramm#sinematv,de,UNMATCHED,,sites/tvprofil.com/tvprofil.com.channels.xml
