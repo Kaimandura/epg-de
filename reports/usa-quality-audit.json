@@ -2,34 +2,34 @@
   "errors": [],
   "hard_error_count": 0,
   "official_playlist": {
-    "coverage_percent": 40.21,
-    "mapped_active_ids": 600,
-    "total_ids": 1492
+    "coverage_percent": 40.29,
+    "mapped_active_ids": 602,
+    "total_ids": 1494
   },
   "outputs": {
     "fast": {
       "active_channels": 524,
       "channels": 524,
       "channels_with_logo": 450,
-      "programmes": 21940
+      "programmes": 21969
     },
     "local": {
-      "active_channels": 8829,
-      "channels": 8829,
-      "channels_with_logo": 8575,
-      "programmes": 426886
+      "active_channels": 8830,
+      "channels": 8830,
+      "channels_with_logo": 8576,
+      "programmes": 422524
     },
     "main": {
       "active_channels": 168,
       "channels": 168,
       "channels_with_logo": 167,
-      "programmes": 25489
+      "programmes": 25518
     },
     "sports": {
       "active_channels": 3302,
       "channels": 3302,
       "channels_with_logo": 3301,
-      "programmes": 155204
+      "programmes": 154902
     }
   },
   "status": "passed"
