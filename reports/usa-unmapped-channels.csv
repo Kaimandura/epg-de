@@ -144,7 +144,6 @@ BIGCivicChannel.us@SD,BIG Civic Channel,General
 BIGCommunityChannel.us@SD,BIG Community Channel,General
 Binge.us@SD,Binge,General
 BizTV.us@SD,Biz TV,Lifestyle
-BlackNewsChannel.us@SD,Black News Channel,News
 BloombergTV.us@LiveEvent,Bloomberg TV Live Event,Business
 BloombergTV.us@PoliticsLiveEvent,Bloomberg TV Politics Live Event,Business
 BloombergTV.us@US,Bloomberg TV,Business
@@ -277,7 +276,7 @@ DrGeneScott.us@SD,Dr. Gene Scott,Religious
 DryBarComedyPlus.us@SD,Dry Bar Comedy+,Comedy
 DuckHuntingTV.us@SD,Duck Hunting TV,Outdoor
 DungeonTV.us@SD,Dungeon TV,Undefined
-E.us@East,E! East,Entertainment
+E.us@East,E! (United States) East,Entertainment
 EBSCinema.us@SD,EBS Cinema,Movies
 EBSMusika.us@SD,EBS Musika,Music
 ElbesharaGTV.us@SD,Elbeshara GTV,Religious
@@ -702,6 +701,7 @@ SonyKALHindi.us@SD,Sony KAL Hindi,Undefined
 SoundViewCommunityMedia.us@SD,Sound View Community Media,General
 SpiritTV.us@SD,Spirit TV,Music;Religious
 SPTV.us@SD,SPTV,Legislative
+StarAction.us@SD,Star Action,Movies
 StarChannelInternational.gr@HD,Star Channel International,Entertainment
 StingrayGreatestHolidayHits.us@SD,Stingray Greatest Holiday Hits,Music
 StLuciePublicSchools.us@SD,St Lucie Public Schools,Education
@@ -746,6 +746,7 @@ TheConners.us@SD,The Conners,Comedy;Series
 TheDoctors.us@HD,The Doctors,Series
 theDoveTV.us@SD,theDove TV,Religious
 TheFirstTV.us@SD,The First TV,News
+TheGrioTV.us@FAST,TheGrio TV FAST,Undefined
 TheGrioTV.us@SD,TheGrio TV,Undefined
 TheHillTV.us@SD,The Hill TV,Undefined
 TheLoop.us@SD,The Loop,Classic;Series
