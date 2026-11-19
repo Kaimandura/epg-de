@@ -1838,7 +1838,7 @@
   <channel site="epgshare01.online" site_id="CH1#Arta.News.ch" lang="de" xmltv_id="TVArta.xk@SD">Arta News</channel>
   <channel site="web.magentatv.de" site_id="599" lang="de" xmltv_id="TVBerlin.de@SD">tv.berlin</channel>
   <channel site="epgshare01.online" site_id="CH1#tv.breizh.ch" lang="de" xmltv_id="TVBreizh.fr@SD">tv breizh</channel>
-  <channel site="tv.magenta.at" site_id="207381032397" lang="de" xmltv_id="TVCGMNE.me@SD">MNE</channel>
+  <channel site="tv.magenta.at" site_id="207381032397" lang="de" xmltv_id="TVCGMNE.me@HD">MNE</channel>
   <channel site="epgshare01.online" site_id="CH1#TV.Duga+.ch" lang="de" xmltv_id="TVDugaPlus.rs@SD">TV Duga+</channel>
   <channel site="epgshare01.online" site_id="CH1#TVI.Ficção.ch" lang="de" xmltv_id="TVIFiccao.pt@SD">TVI Ficção</channel>
   <channel site="epgshare01.online" site_id="CH1#TVI.Internacional.ch" lang="de" xmltv_id="TVIInternacional.pt@SD">TVI Internacional</channel>
