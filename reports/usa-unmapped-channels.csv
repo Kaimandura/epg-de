@@ -124,6 +124,7 @@ BATVGovernmentChannel.us@SD,BATV Government Channel,Legislative
 BATVGovernmentTV.us@SD,BATV Government TV,Legislative
 BATVPublicChannel.us@SD,BATV Public Channel,General
 Baywatch.us@US,Baywatch,Series
+BBCDrama.uk@US,BBC Drama US,Series
 BBCFood.us@SD,BBC Food,Cooking
 BBCKids.us@SD,BBC Kids,Kids
 BeachTVFloridaAlabama.us@SD,Beach TV Florida & Alabama,Travel
@@ -177,6 +178,7 @@ CapitalCityConnectionMontgomery.us@SD,Capital City Connection Montgomery,Legisla
 CatholicFaithNetwork.us@SD,Catholic Faith Network,Religious
 CBNEspanol.us@SD,CBN Espanol,Religious
 CBNFamily.us@SD,CBN Family,Religious
+CBS.us@WANF,CBS WANF,General
 CBSNewsPhilly.us@SD,CBS News Philly,News
 CCTV.us@SD,CC-TV,Undefined
 CCX1.us@SD,CCX1,General
@@ -309,6 +311,9 @@ FNX.us@KVCRDT,FNX KVCR-DT,Culture
 FNX.us@SD,FNX,Culture
 FoxNewsInternational.us@SD,"like Gecko) Chrome/156.0.0.0 Safari/537.36"" group-title=""News"",Fox News International",News
 FoxNewsRadio.us@SD,Fox News Radio,News
+FoxWeather.us@KTVU,Fox Weather KTVU,Weather
+FoxWeather.us@WFLD,Fox Weather WFLD,Weather
+FoxWeather.us@WOFL,Fox Weather WOFL,Weather
 FreebieTV.us@SD,Freebie TV,Entertainment
 FrightFlix.us@SD,FrightFlix,Movies
 FunRoads.us@SD,Fun Roads,Auto;Travel
@@ -386,6 +391,7 @@ JewelryTV.us@SD,Jewelry TV,Shop
 JewelryTV2.us@SD,Jewelry TV 2,Shop
 JewishLifeTelevision.us@SD,Jewish Life Television,Culture;Religious
 JoelOsteenNetwork.us@HD,Joel Osteen Network,Religious
+JudgeFaith.us@SD,Judge Faith,Series
 JusHindi.us@SD,Jus Hindi,Culture
 JusOne.us@SD,Jus One,Culture
 JusPunjabi.us@SD,Jus Punjabi,Culture
@@ -465,6 +471,7 @@ LoveHipHop.us@SD,Love & Hip Hop,Series
 LoveNatureenEspanol.us@SD,"like Geck0) Chrome/102.0.0.0 Safari/537.37"" group-title=""Undefined"",Love Nature en Espanol",Undefined
 LovePets.ca@US,Love Pets,Documentary
 LoveThePlanet.es@EN,Love The Planet,Documentary
+LoveThyNeighbor.us@SD,Love Thy Neighbor,Series
 LoveWorldUSA.ng@SD,LoveWorld USA,Religious
 LucasFriends.us@SD,Lucas & Friends,Kids
 LuckyDog.us@SD,Lucky Dog,Documentary
@@ -502,6 +509,8 @@ MidpenMediaCenterChannel75.us@SD,Midpen Media Center Channel 75,Culture
 MinisterioLaVozDeUnRemanenteTV.us@SD,Ministerio La Voz De Un Remanente TV,Religious
 MissionTV.us@SD,Mission TV,Religious
 MMATV.us@SD,MMA TV,Sports
+MNT.us@KCTV,MNT KCTV,General
+MNT.us@KPTV,MNT KPTV,General
 MNT.us@WCIV,MNT WCIV,General
 MNT.us@WFLD,MNT WFLD,General
 MNT.us@WOIO,MNT WOIO,General
@@ -655,6 +664,7 @@ Roar.us@KCWX,Roar KCWX,Entertainment
 Roar.us@KOKITV,Roar KOKI-TV,Entertainment
 Roar.us@WKEF,Roar WKEF,Entertainment
 Roar.us@WSBTTV,Roar WSBT-TV,Entertainment
+Roar.us@WTVF,Roar WTVF,Entertainment
 RockyHillChannel16.us@SD,Rocky Hill Channel 16,Legislative
 RTenEspanol.ru@SD,RT en Espanol,News
 RTHTV1.us@SD,RTH-TV1,General
@@ -702,6 +712,7 @@ SonicTV.us@SD,Sonic TV,Animation
 SonyCanalNovelas.us@SD,Sony Canal Novelas,Movies
 SonyKALHindi.us@SD,Sony KAL Hindi,Undefined
 SoundViewCommunityMedia.us@SD,Sound View Community Media,General
+SparkTVLightLove.us@SD,Spark TV Light & Love,Undefined
 SpiritTV.us@SD,Spirit TV,Music;Religious
 SPTV.us@SD,SPTV,Legislative
 StarAction.us@SD,Star Action,Movies
@@ -746,6 +757,10 @@ TheCarolBurnettShow.us@SD,The Carol Burnett Show,Classic
 TheChatShowChannel.uk@SD,The Chat Show Channel,Comedy;Series
 TheCityofMarina.us@SD,The City of Marina,Legislative
 TheConners.us@SD,The Conners,Comedy;Series
+TheCW.us@KTNVTV,The CW KTNV-TV,General
+TheCW.us@KWCHDT,The CW KWCH-DT,General
+TheCW.us@WAVE,The CW WAVE,General
+TheCW.us@WWBT,The CW WWBT,General
 TheDoctors.us@HD,The Doctors,Series
 theDoveTV.us@SD,theDove TV,Religious
 TheFirstTV.us@SD,The First TV,News
@@ -768,7 +783,6 @@ TLNMediaChicago.us@SD,TLN Media Chicago,Religious
 TLNMediaSanFrancisco.us@SD,TLN Media San Francisco,Religious
 TNTInternational.ru@SD,"like Gecko) Chrome/144.0.0.0 Safari/537.36"" group-title=""Entertainment"",TNT International SD",Entertainment
 TomAndJerry.do@HD,Tom And Jerry,Kids
-TomSingsTV.us@HD,Tom Sings TV,Kids
 TopStoriesbyNewsy.us@SD,Top Stories by Newsy,News
 TrueCrimeNetwork.us@WCVBTV,True Crime Network WCVB-TV,Series
 TrueHistory.us@SD,True History,Undefined
@@ -858,6 +872,7 @@ WCOT.us@SD,WCOT,General
 WeedsNurseJackie.us@SD,Weeds & Nurse Jackie,Series
 WeHoTV.us@SD,WeHoTV,Undefined
 Westerns4U.us@SD,Westerns 4U,Classic
+WFTSTV321.us@HD,WFTS-TV 32.1,News
 WGGSTV161.us@HD,WGGS-TV 16.1,Undefined
 Whiplash.us@HD,Whiplash,General
 WhiplashCinema.us@SD,Whiplash Cinema,Movies
