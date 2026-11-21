@@ -365,7 +365,6 @@
   <channel site="tvprofil.com" site_id="at/tvprogramm#fast-funbox-hd" lang="de" xmltv_id="FastFunBox.nl@SD">Fast&amp;FunBox HD</channel>
   <channel site="epgshare01.online" site_id="CH1#Fax.News.ch" lang="de" xmltv_id="FaxNews.al@SD">Fax News</channel>
   <channel site="epgshare01.online" site_id="CH1#Film.Four.ch" lang="de" xmltv_id="Film4.uk@SD">Film Four</channel>
-  <channel site="tv.magenta.at" site_id="229041191972" lang="de" xmltv_id="FilmKlub.rs@SD">Film Klub</channel>
   <channel site="plex.tv" site_id="65e9d0ad8fe4ef7053c3c876" lang="de" xmltv_id="FilmRiseAnime.us@SD">FilmRise Anime</channel>
   <channel site="plex.tv" site_id="66429aa30e0ec7b4ce5eb292" lang="de" xmltv_id="FilmRiseTrueCrime.us@SD">FilmRise True Crime</channel>
   <channel site="www.magenta.tv" site_id="736340520423" lang="de" xmltv_id="Filmgold.de@HD">Filmgold</channel>
