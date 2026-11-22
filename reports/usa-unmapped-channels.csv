@@ -178,6 +178,7 @@ CapitalCityConnectionMontgomery.us@SD,Capital City Connection Montgomery,Legisla
 CatholicFaithNetwork.us@SD,Catholic Faith Network,Religious
 CBNEspanol.us@SD,CBN Espanol,Religious
 CBNFamily.us@SD,CBN Family,Religious
+CBS.us@KBZK,CBS KBZK,General
 CBS.us@WANF,CBS WANF,General
 CBSNewsPhilly.us@SD,CBS News Philly,News
 CCTV.us@SD,CC-TV,Undefined
@@ -346,11 +347,11 @@ GreaterLoveTV.us@SD,Greater Love TV,Religious
 GreensboroTV.us@SD,Greensboro TV,Legislative
 GrjngoWesternMovies.de@SD,Grjngo Western Movies,Movies
 GuangdongTVAmerica.us@SD,Guangdong TV America,General
-GunAzTV.us@SD,GunAz TV,General
 HappyKids.us@SD,HappyKids,Kids
 HarmonyGospelMusicTV.us@SD,Harmony Gospel Music TV,Music;Religious
 HarPalGeo.pk@SD,HarPal Geo,Culture
 HarvestUSA.in@SD,Harvest USA,Religious
+HasbroLegends.us@SD,Hasbro Legends,Animation;Kids
 HBCUGOSports.us@SD,HBCU-GO Sports,Sports
 HBTV.us@SD,HBTV,General
 HCTVEducationalAccessChannel.us@SD,HCTV Educational Access Channel,Education
@@ -463,9 +464,7 @@ Localish.us@SD,Localish,Lifestyle
 LogosTV.es@SD,Logos TV (Spain),Religious
 LogosTV.us@SD,Logos TV (United States),Religious
 LogosTVEnglish.us@SD,Logos TV English,Religious
-LogosTVEstudio.es@SD,Logos TV Estudio,Religious
 LogosTVKids.es@SD,Logos TV Kids,Kids;Religious
-LogosTVSalud.es@SD,Logos TV Salud,Lifestyle
 LoneStar.us@SD,Lone Star,Entertainment
 LoveHipHop.us@SD,Love & Hip Hop,Series
 LoveNatureenEspanol.us@SD,"like Geck0) Chrome/102.0.0.0 Safari/537.37"" group-title=""Undefined"",Love Nature en Espanol",Undefined
@@ -603,6 +602,7 @@ PBSKidsEasternCentral.us@SD,PBS Kids Eastern/Central,Education;Kids
 PBSKidsHawaii.us@SD,PBS Kids Hawaii,Education;Kids
 PBSKidsMountain.us@SD,PBS Kids Mountain,Education;Kids
 PBSKidsPacific.us@SD,PBS Kids Pacific,Education;Kids
+PBSRetro.us@SD,PBS Retro,Classic;Kids
 PBSTravel.us@SD,PBS Travel,Lifestyle
 PCTChannel26.us@SD,PCT Channel 26,General
 PCTChannel27.us@SD,PCT Channel 27,General
@@ -629,6 +629,7 @@ PlutoTVTheTwilightZone.us@SD,Pluto TV The Twilight Zone,Classic;Series
 PlutoTVWipeout.us@SD,Pluto TV Wipeout,Series
 PoconoTelevisionNetwork.us@HD,Pocono Television Network,Travel
 PomonaInternetStreamingChannel.us@SD,Pomona Internet Streaming Channel,Undefined
+PopularScience.us@SD,Popular Science,Science
 PositivTV.us@SD,Positiv TV,Family
 PottaDivineTVUSA.us@SD,Potta-Divine TV USA,Religious
 PowerNationTV.us@SD,PowerNation TV,Auto
@@ -650,8 +651,10 @@ RCTV.us@SD,RCTV (United States),Undefined
 RCTV3.us@SD,RCTV3,General
 RealAmericasVoice.us@KPVMLD,Real America's Voice KPVM-LD,Undefined
 RealAmericasVoice.us@SD,Real America's Voice,Undefined
+RealWild.uk@SD,Real Wild,Undefined
 RedADvenirTV.bo@KSCE,RedADvenir TV KSCE,Undefined
 RedApple21.us@SD,Red Apple 21,Education
+RedBullTV.at@US,Red Bull TV US,Outdoor;Sports
 Reelz.us@SD,Reelz,Documentary
 ReelzFamousInfamous.us@HD,Reelz Famous & Infamous,Documentary
 RetroCrush.us@SD,RetroCrush,Animation;Classic
@@ -764,6 +767,7 @@ TheCW.us@WWBT,The CW WWBT,General
 TheDoctors.us@HD,The Doctors,Series
 theDoveTV.us@SD,theDove TV,Religious
 TheFirstTV.us@SD,The First TV,News
+TheGrahamNortonShow.uk@SD,The Graham Norton Show,Entertainment
 TheGrioTV.us@FAST,TheGrio TV FAST,Undefined
 TheGrioTV.us@SD,TheGrio TV,Undefined
 TheHillTV.us@SD,The Hill TV,Undefined
@@ -790,7 +794,6 @@ TSTV.us@SD,TSTV,Undefined
 TurismoHD.do@HD,Turismo HD,Entertainment
 TUTV.us@SD,TUTV,Education
 TV4.us@SD,TV4 (United States),Legislative
-TVDaja.do@SD,TV Daja,General
 TVEInternacionalAmerica.es@HD,TVE Internacional America HD,Undefined
 TVEInternacionalAmerica.es@SD,TVE Internacional America,Undefined
 TVHispanic.us@SD,TV Hispanic,General
@@ -895,6 +898,7 @@ WOXTV.us@SD,WOX TV,Music
 WPLG101.us@HD,WPLG 10.1,News
 WPSTV.us@SD,WPS-TV,Education
 WSOCNow.us@SD,WSOC Now,News
+WuTangCollection.us@SD,Wu Tang Collection,Movies
 WVCULP.us@SD,WVCU-LP,Music
 WVVHCD181.us@HD,WVVH-CD 18.1,Undefined
 WWONTVChannel48.us@SD,WWON-TV Channel 48,Entertainment
