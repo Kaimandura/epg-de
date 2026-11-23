@@ -8,9 +8,11 @@ import subprocess
 import sys
 import xml.etree.ElementTree as ET
 from collections import Counter
+from datetime import datetime, timezone
 from pathlib import Path
 
 from cleanup_published_epgs import clean_file
+from audit_epg_quality import parse_xmltv_time
 
 
 MASTER_PRESERVE_IDS = {
@@ -164,6 +166,13 @@ def main() -> int:
         help="Require this XMLTV channel ID to exist and have at least one programme.",
     )
     parser.add_argument(
+        "--required-now-channel",
+        action="append",
+        default=[],
+        metavar="XMLTV_ID",
+        help="Require a programme spanning the current UTC instant for this channel.",
+    )
+    parser.add_argument(
         "--required-display-name",
         action="append",
         default=[],
@@ -279,6 +288,25 @@ def main() -> int:
         if not channel_display_names(channel_by_id[required_id]):
             raise SystemExit(f"Required channel has no display-name: {required_id}")
         print(f"Required channel OK: {required_id} ({count} programmes)")
+
+    now_utc = datetime.now(timezone.utc)
+    for required_id in args.required_now_channel:
+        required_id = required_id.strip()
+        if not required_id:
+            continue
+        if required_id not in channel_by_id:
+            raise SystemExit(f"Required current channel missing: {required_id}")
+        current = []
+        for programme in programmes:
+            if programme.attrib.get("channel") != required_id:
+                continue
+            start = parse_xmltv_time(programme.attrib.get("start", ""))
+            stop = parse_xmltv_time(programme.attrib.get("stop", ""))
+            if start is not None and stop is not None and start <= now_utc < stop:
+                current.append(programme)
+        if not current:
+            raise SystemExit(f"Required channel has no current programme: {required_id} at {now_utc.isoformat()}")
+        print(f"Required current programme OK: {required_id} at {now_utc.isoformat()}")
 
     for spec in args.required_display_name:
         required_id, expected_name = parse_required_display_name(spec)
