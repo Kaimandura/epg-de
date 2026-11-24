@@ -7,9 +7,11 @@ import math
 import subprocess
 import sys
 import xml.etree.ElementTree as ET
-from collections import Counter
+from collections import Counter, defaultdict
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+from audit_epg_quality import parse_xmltv_time
 from cleanup_published_epgs import clean_file
 
 
@@ -82,6 +84,53 @@ def parse_required_display_name(spec: str) -> tuple[str, str]:
             f"got: {spec!r}"
         )
     return xmltv_id, expected_name
+
+
+def parse_required_contiguous_hours(spec: str) -> tuple[str, int]:
+    xmltv_id, separator, raw_hours = spec.partition("=")
+    xmltv_id = xmltv_id.strip()
+    try:
+        hours = int(raw_hours)
+    except ValueError:
+        hours = 0
+    if not separator or not xmltv_id or hours <= 0:
+        raise SystemExit(
+            "Invalid --required-contiguous-hours value. Expected XMLTV_ID=HOURS, "
+            f"got: {spec!r}"
+        )
+    return xmltv_id, hours
+
+
+def has_contiguous_coverage(
+    intervals: list[tuple[datetime, datetime]],
+    now: datetime,
+    hours: int,
+) -> bool:
+    required_end = now + timedelta(hours=hours)
+    covered_until = now
+    for start, stop in sorted(intervals):
+        if stop <= covered_until:
+            continue
+        if start > covered_until:
+            break
+        covered_until = stop
+        if covered_until >= required_end:
+            return True
+    return False
+
+
+def channels_below_future_horizon(
+    channel_ids: set[str],
+    schedules: dict[str, list[tuple[datetime, datetime]]],
+    cutoff: datetime,
+) -> list[str]:
+    short_channels = []
+    for channel_id in channel_ids:
+        latest_stop = max(
+            (stop for _, stop in schedules.get(channel_id, [])), default=None)
+        if latest_stop is None or latest_stop < cutoff:
+            short_channels.append(channel_id)
+    return sorted(short_channels)
 
 
 def run_master_quality_gate(xml_path: Path) -> None:
@@ -170,7 +219,23 @@ def main() -> int:
         metavar="XMLTV_ID=DISPLAY_NAME",
         help="Require an exact case-insensitive display-name for the given XMLTV ID.",
     )
+    parser.add_argument(
+        "--min-future-hours",
+        type=int,
+        default=0,
+        help="Require every channel's latest programme to end at least this many hours ahead.",
+    )
+    parser.add_argument(
+        "--required-contiguous-hours",
+        action="append",
+        default=[],
+        metavar="XMLTV_ID=HOURS",
+        help="Require a current programme schedule with no gaps for this many hours.",
+    )
     args = parser.parse_args()
+
+    if args.min_future_hours < 0:
+        parser.error("--min-future-hours must be non-negative")
 
     for name, value in (
         ("--min-baseline-programme-ratio", args.min_baseline_programme_ratio),
@@ -220,6 +285,7 @@ def main() -> int:
 
     seen: set[tuple[str, str, str, str]] = set()
     programme_counts: Counter[str] = Counter()
+    schedules: dict[str, list[tuple[datetime, datetime]]] = defaultdict(list)
     for programme in programmes:
         channel_id = programme.attrib.get("channel", "")
         if channel_id not in channel_ids:
@@ -232,6 +298,10 @@ def main() -> int:
                 f"channel={channel_id} start={programme.attrib.get('start', '')}"
             )
         programme_counts[channel_id] += 1
+        start = parse_xmltv_time(programme.attrib.get("start", ""))
+        stop = parse_xmltv_time(programme.attrib.get("stop", ""))
+        if start is not None and stop is not None and stop > start:
+            schedules[channel_id].append((start, stop))
         signature = (
             channel_id,
             programme.attrib.get("start", ""),
@@ -241,6 +311,36 @@ def main() -> int:
         if signature in seen:
             raise SystemExit(f"Duplicate programme found: {signature}")
         seen.add(signature)
+
+    now = datetime.now(timezone.utc)
+    if args.min_future_hours:
+        cutoff = now + timedelta(hours=args.min_future_hours)
+        short_channels = channels_below_future_horizon(channel_ids, schedules, cutoff)
+        if short_channels:
+            preview = ", ".join(short_channels[:20])
+            raise SystemExit(
+                f"Channels without {args.min_future_hours}h of future programmes: "
+                f"{preview}" + (" ..." if len(short_channels) > 20 else "")
+            )
+        minimum_horizon = min(
+            (max(stop for _, stop in schedules[channel_id]) - now).total_seconds() / 3600
+            for channel_id in channel_ids
+        )
+        print(
+            f"Minimum programme horizon OK: {minimum_horizon:.1f}h "
+            f"(required {args.min_future_hours}h)"
+        )
+
+    for spec in args.required_contiguous_hours:
+        required_id, hours = parse_required_contiguous_hours(spec)
+        if required_id not in channel_by_id:
+            raise SystemExit(f"Required continuous-coverage channel missing: {required_id}")
+        if not has_contiguous_coverage(schedules.get(required_id, []), now, hours):
+            raise SystemExit(
+                f"Required channel lacks continuous current coverage for {hours}h: "
+                f"{required_id}"
+            )
+        print(f"Required continuous coverage OK: {required_id} ({hours} hours)")
 
     if args.reject_empty_icons:
         empty_icons = [

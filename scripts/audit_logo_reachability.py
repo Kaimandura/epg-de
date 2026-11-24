@@ -59,15 +59,33 @@ def check_url(url, timeout=10, retries=2):
                         return fail("unsafe_redirect")
                     mime = response.headers.get("Content-Type", "").split(";")[0].strip().lower()
                     sample = response.read(512)
+                    gateway_error = sample.strip().lower()
+                    if gateway_error in {b"error code: 502", b"error code: 503", b"error code: 504"}:
+                        if attempt < retries:
+                            time.sleep(min(2 ** (attempt + 1), 8))
+                            continue
+                        return {
+                            **fail("upstream_gateway_error", response.status),
+                            "content_type": mime,
+                            "final_url": response.geturl(),
+                        }
                     if mime not in IMAGE_TYPES:
-                        return fail("not_image_content_type", response.status)
+                        return {
+                            **fail("not_image_content_type", response.status),
+                            "content_type": mime,
+                            "final_url": response.geturl(),
+                        }
                     signature = sample.lstrip().lower()
                     valid = (sample.startswith(SIGNATURES[:2]) or
                              (sample.startswith(b"RIFF") and sample[8:12] == b"WEBP") or
                              sample.startswith(SIGNATURES[3:]) or
                              (mime == "image/svg+xml" and (b"<svg" in signature or b"<?xml" in signature)))
                     if not valid:
-                        return fail("not_image_bytes", response.status)
+                        return {
+                            **fail("not_image_bytes", response.status),
+                            "content_type": mime,
+                            "final_url": response.geturl(),
+                        }
                     return {"url": url, "ok": True, "http_status": response.status, "content_type": mime}
         except urllib.error.HTTPError as exc:
             # Wikimedia may respond with 403 when temporarily throttling

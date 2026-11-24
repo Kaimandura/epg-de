@@ -11,6 +11,9 @@ import xml.etree.ElementTree as ET
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
+from urllib.parse import urlsplit
+
+UNRELIABLE_LOGO_HOSTS = {"iptv-epg.org"}
 
 
 @dataclass(frozen=True)
@@ -124,7 +127,27 @@ def load_logos(path: Path) -> dict[tuple[str, str], list[LogoCandidate]]:
     return index
 
 
-def best_logo(channel_id: str, logos: dict[tuple[str, str], list[LogoCandidate]]) -> str | None:
+def logo_host(url: str) -> str | None:
+    try:
+        return urlsplit(url).hostname
+    except ValueError:
+        return None
+
+
+def is_excluded_logo_host(url: str, excluded_hosts: set[str]) -> bool:
+    host = logo_host(url)
+    return bool(host and any(
+        host == excluded or host.endswith(f".{excluded}")
+        for excluded in excluded_hosts
+    ))
+
+
+def best_logo(
+    channel_id: str,
+    logos: dict[tuple[str, str], list[LogoCandidate]],
+    excluded_hosts: set[str] | None = None,
+) -> str | None:
+    excluded_hosts = excluded_hosts or set()
     base, feed = split_feed_id(channel_id)
     keys: list[tuple[str, str]] = []
     if feed:
@@ -137,8 +160,9 @@ def best_logo(channel_id: str, logos: dict[tuple[str, str], list[LogoCandidate]]
             continue
         seen.add(key)
         candidates = logos.get(key, [])
-        if candidates:
-            return candidates[0].url
+        for candidate in candidates:
+            if not is_excluded_logo_host(candidate.url, excluded_hosts):
+                return candidate.url
     return None
 
 
@@ -188,13 +212,15 @@ def enrich_file(
     exact_added = 0
     name_added = 0
     overrides_applied = 0
+    unreliable_source_replaced = 0
 
     for channel in channels:
-        existing = [
-            node.attrib.get("src", "").strip()
+        existing_icons = [
+            node
             for node in channel.findall("icon")
             if node.attrib.get("src", "").strip()
         ]
+        existing = [node.attrib["src"].strip() for node in existing_icons]
         xmltv_id = (channel.attrib.get("id") or "").strip()
         base_id, _ = split_feed_id(xmltv_id)
         override = (overrides or {}).get(xmltv_id) or (overrides or {}).get(base_id)
@@ -210,16 +236,39 @@ def enrich_file(
             continue
         if existing:
             before += 1
+            broken = [
+                icon for icon in existing_icons
+                if is_excluded_logo_host(
+                    icon.attrib.get("src", "").strip(), UNRELIABLE_LOGO_HOSTS)
+            ]
+            reliable = [icon for icon in existing_icons if icon not in broken]
+            if broken and not reliable:
+                replacement = best_logo(
+                    xmltv_id, logos, excluded_hosts=UNRELIABLE_LOGO_HOSTS)
+                if not replacement:
+                    matched_id = unique_name_match(channel, name_index)
+                    if matched_id:
+                        replacement = best_logo(
+                            matched_id, logos, excluded_hosts=UNRELIABLE_LOGO_HOSTS)
+                if replacement:
+                    for icon in existing_icons:
+                        channel.remove(icon)
+                    channel.append(ET.Element("icon", {"src": replacement}))
+                    unreliable_source_replaced += 1
+            elif broken:
+                for icon in broken:
+                    channel.remove(icon)
+                unreliable_source_replaced += len(broken)
             continue
 
         xmltv_id = (channel.attrib.get("id") or "").strip()
-        logo_url = best_logo(xmltv_id, logos)
+        logo_url = best_logo(xmltv_id, logos, excluded_hosts=UNRELIABLE_LOGO_HOSTS)
         if logo_url:
             exact_added += 1
         else:
             matched_id = unique_name_match(channel, name_index)
             if matched_id:
-                logo_url = best_logo(matched_id, logos)
+                logo_url = best_logo(matched_id, logos, excluded_hosts=UNRELIABLE_LOGO_HOSTS)
                 if logo_url:
                     name_added += 1
 
@@ -251,6 +300,7 @@ def enrich_file(
         "logos_added_exact": exact_added,
         "logos_added_unique_name": name_added,
         "logo_overrides_applied": overrides_applied,
+        "logos_replaced_unreliable_source": unreliable_source_replaced,
         "with_logo_after": after,
         "missing_logo_after": missing,
         "coverage_percent": coverage,
@@ -288,6 +338,7 @@ def main() -> int:
             f"added_exact={row['logos_added_exact']} "
             f"added_name={row['logos_added_unique_name']} "
             f"overrides={row['logo_overrides_applied']} "
+            f"replaced_unreliable={row['logos_replaced_unreliable_source']} "
             f"after={row['with_logo_after']} "
             f"missing={row['missing_logo_after']} "
             f"coverage={row['coverage_percent']}%"
@@ -301,6 +352,7 @@ def main() -> int:
         "logos_added_exact",
         "logos_added_unique_name",
         "logo_overrides_applied",
+        "logos_replaced_unreliable_source",
         "with_logo_after",
         "missing_logo_after",
         "coverage_percent",
