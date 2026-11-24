@@ -18,7 +18,7 @@ on:
           - fast
           - deep
   schedule:
-    - cron: "17 2 * * *"
+    - cron: "17 2,8,14,20 * * *"
     - cron: "47 3 * * 0"
   push:
     branches:
@@ -228,6 +228,8 @@ jobs:
             --required-active-channel SkyCinemaFeelgood.de@Plus24HD
             --required-display-name "SkyCinemaFeelgood.de@Plus24HD=Sky Cinema Feelgood HD +24"
             --required-active-channel Silverline.de
+            --required-now-channel Silverline.de
+            --required-future-hours Silverline.de=24
             --required-active-channel SerienPlus.de@HD
             --required-active-channel SerienPlus.de@SD
             --required-active-channel OneTerra.de@SD
