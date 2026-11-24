@@ -7,7 +7,7 @@ This is not an official Samsung lineup or public Pages byte verification.
 import csv
 import gzip
 import json
-import re
+import sys
 import unittest
 import xml.etree.ElementTree as ET
 from collections import Counter
@@ -17,7 +17,51 @@ ROOT = Path(__file__).resolve().parents[1]
 GUIDE = ROOT / "epg" / "samsung.xml.gz"
 COVERAGE = ROOT / "reports" / "platform-coverage.csv"
 RECONCILIATION = ROOT / "reports" / "de-reconciliation.json"
-DATE = re.compile(r"^\d{12}(?:\d{2})?\s[+-]\d{4}$")
+sys.path.insert(0, str(ROOT / "scripts"))
+from release_policy import timestamp
+
+
+def validate_programme_times(item):
+    start = timestamp(item.get("start", ""))
+    stop_text = item.get("stop")
+    if stop_text:
+        stop = timestamp(stop_text)
+        if stop <= start:
+            raise ValueError("programme stop must be after start")
+
+
+class SamsungTimestampContractTest(unittest.TestCase):
+    def test_rejects_invalid_times(self):
+        for start, stop in [
+            ("20260230090000 +0000", None),
+            ("20260228090000 +0000", "20260230093000 +0000"),
+            ("20260228090000 +0000", "20260228090000 +0000"),
+            ("20260228090000 +0000", "20260228085959 +0000"),
+            ("20260228090000 +0000", "20260228100000 +0200"),
+            ("202602280900 +0000", None),
+            ("20260228090000", None),
+            ("20260228090000 +2500", None),
+        ]:
+            with self.subTest(start=start, stop=stop):
+                attrs = {"start": start}
+                if stop is not None:
+                    attrs["stop"] = stop
+                with self.assertRaises(ValueError):
+                    validate_programme_times(ET.Element("programme", attrs))
+
+    def test_accepts_valid_times_and_optional_stop(self):
+        for start, stop in [
+            ("20240229090000 +0000", None),
+            ("20260228090000 +0000", ""),
+            ("20260228090000 +0000", "20260228090001 +0000"),
+            ("20260228233000 +0000", "20260301003000 +0000"),
+            ("20260228090000 +0200", "20260228080000 +0000"),
+        ]:
+            with self.subTest(start=start, stop=stop):
+                attrs = {"start": start}
+                if stop is not None:
+                    attrs["stop"] = stop
+                validate_programme_times(ET.Element("programme", attrs))
 
 
 class SamsungPublishedSnapshotTest(unittest.TestCase):
@@ -57,9 +101,7 @@ class SamsungPublishedSnapshotTest(unittest.TestCase):
                 elif item.tag == "programme":
                     ident = item.get("channel")
                     self.assertTrue(ident)
-                    self.assertRegex(item.get("start", ""), DATE)
-                    if item.get("stop"):
-                        self.assertRegex(item.get("stop"), DATE)
+                    validate_programme_times(item)
                     programme_counts[ident] += 1
                     item.clear()
 
