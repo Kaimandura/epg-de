@@ -139,6 +139,7 @@ def main():
     parser.add_argument("--workers", type=int, default=12)
     parser.add_argument("--gap-csv", type=Path, help="Write exact channel/product logo gaps for repair")
     parser.add_argument("--usa-logo-debt", type=Path, help="Track known USA-only logo deficits without blocking verified XMLTV")
+    parser.add_argument("--allow-logo-gaps", action="store_true", help="Report unavailable images as warnings; retain missing-feed and unsafe-URL failures")
     args = parser.parse_args()
     if args.overrides:
         overrides = json.loads(args.overrides.read_text(encoding="utf-8"))
@@ -191,7 +192,12 @@ def main():
                   if len(channels) > limits[product]}
     if extra_debt:
         hard_missing.append({"reason": "usa_logo_debt_increased", "counts": extra_debt})
-    report = {"scope": "overrides" if args.overrides else "published_products",
+    if args.allow_logo_gaps:
+        hard_missing = [item for item in hard_missing
+                        if item.get("reason") not in {"missing_logo", "usa_logo_debt_increased"}]
+        hard_failures = [item for item in checks
+                         if item["reason"] in {"non_https_or_credentials", "unsafe_redirect"}]
+    report = {"logo_policy": "advisory" if args.allow_logo_gaps else "strict", "scope": "overrides" if args.overrides else "published_products",
               "products": 0 if args.overrides else len(PRODUCTS),
               "unique_urls_checked": len(usage),
               "missing": missing, "failed_urls": checks,
@@ -201,7 +207,8 @@ def main():
                                "affected_channels": {product: len(channels) for product, channels in debt_channels.items()},
                                "limits": limits},
               "release_blockers": {"missing": hard_missing, "failed_urls": hard_failures},
-              "status": "failed" if hard_missing or hard_failures else "passed"}
+              "status": "failed" if hard_missing or hard_failures else
+              "passed_with_logo_warnings" if args.allow_logo_gaps and (missing or checks) else "passed"}
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if args.gap_csv:
@@ -221,7 +228,7 @@ def main():
     print(f"Logo audit: checked={len(usage)} missing={len(missing)} invalid={len(checks)} status={report['status']}")
     for check in checks:
         print("Failed logo: " + json.dumps(check, ensure_ascii=True))
-    if report["status"] != "passed":
+    if hard_missing or hard_failures:
         raise SystemExit(1)
 
 

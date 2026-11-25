@@ -103,7 +103,7 @@ def inspect(path):
             "issues": issues, "issue_count": len(issues)}
 
 
-def audit(directory, layout="source", usa_logo_debt=None):
+def audit(directory, layout="source", usa_logo_debt=None, allow_logo_gaps=False):
     if layout not in {"source", "pages"}:
         raise ValueError(f"unknown XMLTV layout: {layout}")
     limits = load_usa_logo_debt(usa_logo_debt)
@@ -123,16 +123,16 @@ def audit(directory, layout="source", usa_logo_debt=None):
             record = inspect(path)
             issues = record["issues"]
             hard_issues = [issue for issue in issues
-                           if not (label in limits and issue["type"] == "missing_logo")]
+                           if not ((allow_logo_gaps or label in limits) and issue["type"] == "missing_logo")]
             missing = record["missing_logos"]
             if label in limits:
                 deferred[label] = {"missing_logos": missing, "ceiling": limits[label]}
-                if missing > limits[label]:
+                if missing > limits[label] and not allow_logo_gaps:
                     hard_issues.append({"type": "usa_logo_debt_increased", "channel": ""})
             record["hard_issue_count"] = len(hard_issues)
-            record["deferred_logo_issues"] = missing if label in limits else 0
+            record["deferred_logo_issues"] = missing if allow_logo_gaps or label in limits else 0
             record["status"] = ("invalid" if hard_issues
-                                else "logo_debt" if label in limits and missing else "ok")
+                                else "logo_debt" if (allow_logo_gaps or label in limits) and missing else "ok")
             result[label] = record
             if hard_issues:
                 failures.append(f"{label}: {len(hard_issues)} release-blocking errors")
@@ -140,7 +140,9 @@ def audit(directory, layout="source", usa_logo_debt=None):
             result[label] = {"status": "corrupt", "error": str(exc)}
             failures.append(f"{label}: {exc}")
     return {"products": result, "failures": failures, "usa_logo_debt": deferred,
-            "status": "failed" if failures else "passed"}
+            "logo_policy": "advisory" if allow_logo_gaps else "strict",
+            "status": "failed" if failures else "passed_with_logo_warnings"
+            if allow_logo_gaps and any(r.get("missing_logos", 0) for r in result.values()) else "passed"}
 
 def main():
     parser = argparse.ArgumentParser()
@@ -148,8 +150,9 @@ def main():
     parser.add_argument("--layout", choices=("source", "pages"), default="source")
     parser.add_argument("--report", type=Path, required=True)
     parser.add_argument("--usa-logo-debt", type=Path, help="Pin acceptable historical USA-only logo deficits")
+    parser.add_argument("--allow-logo-gaps", action="store_true", help="Report missing logos without blocking valid EPG data")
     args = parser.parse_args()
-    report = audit(args.directory, args.layout, args.usa_logo_debt)
+    report = audit(args.directory, args.layout, args.usa_logo_debt, args.allow_logo_gaps)
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps({name: {k: v for k, v in row.items() if k != "issues"}
