@@ -7,10 +7,12 @@ import math
 import subprocess
 import sys
 import xml.etree.ElementTree as ET
-from collections import Counter
+from collections import Counter, defaultdict
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from cleanup_published_epgs import clean_file
+from release_policy import timestamp
 
 
 MASTER_PRESERVE_IDS = {
@@ -70,6 +72,35 @@ def channel_display_names(node: ET.Element) -> list[str]:
         for display in node.findall("display-name")
         if (display.text or "").strip()
     ]
+
+
+def programme_interval(programme: ET.Element) -> tuple[datetime, datetime | None]:
+    start = timestamp(programme.attrib.get("start", ""))
+    stop_text = programme.attrib.get("stop", "")
+    stop = timestamp(stop_text) if stop_text else None
+    if stop is not None and stop <= start:
+        raise ValueError("programme stop must be after start")
+    return start, stop
+
+
+def has_current_programme(intervals: list[tuple[datetime, datetime | None]], now: datetime) -> bool:
+    return any(start <= now < stop for start, stop in intervals if stop is not None)
+
+
+def covers_future_window(
+    intervals: list[tuple[datetime, datetime | None]], now: datetime, hours: float
+) -> bool:
+    target = now + timedelta(hours=hours)
+    cursor = now
+    for start, stop in sorted((start, stop) for start, stop in intervals if stop is not None):
+        if stop <= cursor:
+            continue
+        if start > cursor:
+            return False
+        cursor = max(cursor, stop)
+        if cursor >= target:
+            return True
+    return False
 
 
 def parse_required_display_name(spec: str) -> tuple[str, str]:
@@ -164,6 +195,20 @@ def main() -> int:
         help="Require this XMLTV channel ID to exist and have at least one programme.",
     )
     parser.add_argument(
+        "--required-now-channel",
+        action="append",
+        default=[],
+        metavar="XMLTV_ID",
+        help="Require a programme spanning the current UTC instant for this channel.",
+    )
+    parser.add_argument(
+        "--required-future-hours",
+        action="append",
+        default=[],
+        metavar="XMLTV_ID=HOURS",
+        help="Require continuous programme coverage into the future for this channel.",
+    )
+    parser.add_argument(
         "--required-display-name",
         action="append",
         default=[],
@@ -220,10 +265,19 @@ def main() -> int:
 
     seen: set[tuple[str, str, str, str]] = set()
     programme_counts: Counter[str] = Counter()
+    programme_intervals: dict[str, list[tuple[datetime, datetime | None]]] = defaultdict(list)
     for programme in programmes:
         channel_id = programme.attrib.get("channel", "")
         if channel_id not in channel_ids:
             raise SystemExit(f"Programme references unknown channel: {channel_id}")
+        try:
+            programme_intervals[channel_id].append(programme_interval(programme))
+        except ValueError as exc:
+            raise SystemExit(
+                f"Invalid programme timestamp: channel={channel_id} "
+                f"start={programme.attrib.get('start', '')} "
+                f"stop={programme.attrib.get('stop', '')}: {exc}"
+            ) from exc
         if args.require_programme_titles and not any(
             (node.text or "").strip() for node in programme.findall("title")
         ):
@@ -279,6 +333,42 @@ def main() -> int:
         if not channel_display_names(channel_by_id[required_id]):
             raise SystemExit(f"Required channel has no display-name: {required_id}")
         print(f"Required channel OK: {required_id} ({count} programmes)")
+
+    now_utc = datetime.now(timezone.utc)
+    for required_id in args.required_now_channel:
+        required_id = required_id.strip()
+        if not required_id:
+            continue
+        if required_id not in channel_by_id:
+            raise SystemExit(f"Required current channel missing: {required_id}")
+        if not has_current_programme(programme_intervals[required_id], now_utc):
+            raise SystemExit(
+                f"Required channel has no current programme: "
+                f"{required_id} at {now_utc.isoformat()}"
+            )
+        print(f"Required current programme OK: {required_id} at {now_utc.isoformat()}")
+
+    for spec in args.required_future_hours:
+        required_id, separator, raw_hours = spec.partition("=")
+        try:
+            hours = float(raw_hours)
+        except ValueError as exc:
+            raise SystemExit(
+                f"Invalid --required-future-hours value: {spec!r}; expected XMLTV_ID=HOURS"
+            ) from exc
+        required_id = required_id.strip()
+        if not separator or not required_id or hours <= 0:
+            raise SystemExit(
+                f"Invalid --required-future-hours value: {spec!r}; expected XMLTV_ID=HOURS > 0"
+            )
+        if required_id not in channel_by_id:
+            raise SystemExit(f"Required future channel missing: {required_id}")
+        if not covers_future_window(programme_intervals[required_id], now_utc, hours):
+            raise SystemExit(
+                f"Required channel lacks continuous programme coverage for {hours:g}h "
+                f"from {now_utc.isoformat()}: {required_id}"
+            )
+        print(f"Required {hours:g}h future coverage OK: {required_id}")
 
     for spec in args.required_display_name:
         required_id, expected_name = parse_required_display_name(spec)

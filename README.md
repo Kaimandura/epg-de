@@ -98,7 +98,7 @@ Die unkomprimierte `de.xml` wird nur wÃ¤hrend des Builds erzeugt und validiert
 
 ## Aktualisierung
 
-GitHub Actions aktualisiert den Guide tÃ¤glich im Fast-Profil. Ein wÃ¶chentlicher Deep Scan prÃ¼ft zusÃ¤tzliche Fallbacks. Ã„nderungen an Workflow, Scripts oder Konfiguration lÃ¶sen ebenfalls einen Build aus.
+GitHub Actions aktualisiert den Deutschland-Guide alle sechs Stunden im Fast-Profil. Ein wÃ¶chentlicher Deep Scan prÃ¼ft zusÃ¤tzliche Fallbacks. Ã„nderungen an Workflow, Scripts oder Konfiguration lÃ¶sen ebenfalls einen Build aus.
 
 ## Hinweis
 
