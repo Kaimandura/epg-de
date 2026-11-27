@@ -1,10 +1,10 @@
 {
   "region": "DE",
-  "input_programmes": 218711,
+  "input_programmes": 220200,
   "quarantined": 0,
-  "unique_retained_programmes": 150698,
-  "metadata_merged_records": 67938,
-  "preserved_alternative_records": 75,
+  "unique_retained_programmes": 152032,
+  "metadata_merged_records": 68033,
+  "preserved_alternative_records": 135,
   "identity_evidence": [
     {
       "left": [
@@ -3265,17 +3265,6 @@
     {
       "left": [
         "DE-MASTER.xml.gz",
-        "ComedyCentralSouthPark.us@Germany"
-      ],
-      "right": [
-        "DE-PLUTO.xml.gz",
-        "PlutoTV.de.60c716084d842c00085f6e64"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
         "DAZNDartsxPlutoTV.de@DACH"
       ],
       "right": [
@@ -3347,17 +3336,6 @@
       "right": [
         "DE-PLUTO.xml.gz",
         "PlutoTV.de.5ce40f42ba7f7f5ea9518fe1"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
-        "LoveThePlanet.es@DE"
-      ],
-      "right": [
-        "DE-SAMSUNG.xml.gz",
-        "SamsungTVPlus.de.DEBC4700004VZ"
       ],
       "reason": "name-and-schedule"
     },
@@ -3501,6 +3479,17 @@
       "right": [
         "DE-PLUTO.xml.gz",
         "PlutoTV.de.65004605110545000842035d"
+      ],
+      "reason": "name-and-schedule"
+    },
+    {
+      "left": [
+        "DE-MASTER.xml.gz",
+        "PlutoTVAdultAnimation.de@DACH"
+      ],
+      "right": [
+        "DE-PLUTO.xml.gz",
+        "PlutoTV.de.67f68bd2135aeda9ddf0ef54"
       ],
       "reason": "name-and-schedule"
     },
@@ -3996,39 +3985,6 @@
       "right": [
         "DE-MASTER.xml.gz",
         "SkySportBundesliga5.de@SD"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
-        "SkySportBundesliga5.de@HD"
-      ],
-      "right": [
-        "DE-MASTER.xml.gz",
-        "SkySportBundesliga6.de@SD"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
-        "SkySportBundesliga6.de@HD"
-      ],
-      "right": [
-        "DE-MASTER.xml.gz",
-        "SkySportBundesliga7.de@SD"
-      ],
-      "reason": "name-and-schedule"
-    },
-    {
-      "left": [
-        "DE-MASTER.xml.gz",
-        "SkySportBundesliga7.de@HD"
-      ],
-      "right": [
-        "DE-MASTER.xml.gz",
-        "SkySportBundesliga8.de@SD"
       ],
       "reason": "name-and-schedule"
     },
@@ -4733,12 +4689,156 @@
       ]
     },
     {
+      "id": "SkySportBundesliga2.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportBundesliga1.de@HD",
+        "20261128164500 +0000",
+        "20261128204500 +0000",
+        "live bl: vfb stuttgart - eintracht frankfurt, tipico topspiel der woche, 11. spieltag"
+      ],
+      "existing": [
+        "20261128164500 +0000",
+        "20261128201500 +0000",
+        "live bl: vfb stuttgart - eintracht frankfurt, tipico topspiel der woche, 11. spieltag",
+        "DE-MAGENTA.xml.gz:SkySportBundesliga2.de@SD"
+      ]
+    },
+    {
+      "id": "SkySportBundesliga2.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportBundesliga1.de@HD",
+        "20261128164500 +0000",
+        "20261128204500 +0000",
+        "live bl: vfb stuttgart - eintracht frankfurt, tipico topspiel der woche, 11. spieltag"
+      ],
+      "existing": [
+        "20261128201500 +0000",
+        "20261129050000 +0000",
+        "sendepause",
+        "DE-MAGENTA.xml.gz:SkySportBundesliga2.de@SD"
+      ]
+    },
+    {
+      "id": "SkySportBundesliga2.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportBundesliga1.de@HD",
+        "20261128204500 +0000",
+        "20261129050000 +0000",
+        "sendepause"
+      ],
+      "existing": [
+        "20261128201500 +0000",
+        "20261129050000 +0000",
+        "sendepause",
+        "DE-MAGENTA.xml.gz:SkySportBundesliga2.de@SD"
+      ]
+    },
+    {
+      "id": "SkySportBundesliga3.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportBundesliga2.de@HD",
+        "20261128220000 +0000",
+        "20261128233000 +0000",
+        "2. bl alle spiele, alle tore: die vodafone highlight-show, 13. spieltag, samstag komplett"
+      ],
+      "existing": [
+        "20261128220000 +0000",
+        "20261128230000 +0000",
+        "2. bl alle spiele, alle tore: die vodafone highlight-show, 11. spieltag, samstag komplett",
+        "DE-MAGENTA.xml.gz:SkySportBundesliga3.de@SD"
+      ]
+    },
+    {
+      "id": "SkySportBundesliga3.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportBundesliga2.de@HD",
+        "20261128220000 +0000",
+        "20261128233000 +0000",
+        "2. bl alle spiele, alle tore: die vodafone highlight-show, 13. spieltag, samstag komplett"
+      ],
+      "existing": [
+        "20261128230000 +0000",
+        "20261129050000 +0000",
+        "sendepause",
+        "DE-MAGENTA.xml.gz:SkySportBundesliga3.de@SD"
+      ]
+    },
+    {
+      "id": "SkySportBundesliga3.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportBundesliga2.de@HD",
+        "20261128233000 +0000",
+        "20261129050000 +0000",
+        "sendepause"
+      ],
+      "existing": [
+        "20261128230000 +0000",
+        "20261129050000 +0000",
+        "sendepause",
+        "DE-MAGENTA.xml.gz:SkySportBundesliga3.de@SD"
+      ]
+    },
+    {
+      "id": "SkySportBundesliga4.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportBundesliga3.de@HD",
+        "20261128164500 +0000",
+        "20261128204500 +0000",
+        "live bl: tactical feed: vfb - sge, 11. spieltag"
+      ],
+      "existing": [
+        "20261128164500 +0000",
+        "20261128201500 +0000",
+        "live bl: tactical feed: vfb - sge, 11. spieltag",
+        "DE-MAGENTA.xml.gz:SkySportBundesliga4.de@SD"
+      ]
+    },
+    {
+      "id": "SkySportBundesliga4.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportBundesliga3.de@HD",
+        "20261128164500 +0000",
+        "20261128204500 +0000",
+        "live bl: tactical feed: vfb - sge, 11. spieltag"
+      ],
+      "existing": [
+        "20261128201500 +0000",
+        "20261129050000 +0000",
+        "sendepause",
+        "DE-MAGENTA.xml.gz:SkySportBundesliga4.de@SD"
+      ]
+    },
+    {
+      "id": "SkySportBundesliga4.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportBundesliga3.de@HD",
+        "20261128204500 +0000",
+        "20261129050000 +0000",
+        "sendepause"
+      ],
+      "existing": [
+        "20261128201500 +0000",
+        "20261129050000 +0000",
+        "sendepause",
+        "DE-MAGENTA.xml.gz:SkySportBundesliga4.de@SD"
+      ]
+    },
+    {
       "id": "SkySportBundesliga5.de@SD",
       "new": [
         "DE-MASTER.xml.gz",
         "SkySportBundesliga4.de@HD",
         "20261128164500 +0000",
-        "20261128182000 +0000",
+        "20261128190000 +0000",
         "bl: akte vuskovic - doping. skandal. zweifel."
       ],
       "existing": [
@@ -4753,7 +4853,7 @@
       "new": [
         "DE-MASTER.xml.gz",
         "SkySportBundesliga4.de@HD",
-        "20261128182000 +0000",
+        "20261128190000 +0000",
         "20261129050000 +0000",
         "sendepause"
       ],
@@ -4762,6 +4862,102 @@
         "20261129050000 +0000",
         "sendepause",
         "DE-MAGENTA.xml.gz:SkySportBundesliga5.de@SD"
+      ]
+    },
+    {
+      "id": "SkySportF1.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportF1.de@HD",
+        "20261127150000 +0000",
+        "20261127155000 +0000",
+        "live f2: qualifying - gp katar"
+      ],
+      "existing": [
+        "20261127150000 +0000",
+        "20261127154000 +0000",
+        "live f2: qualifying - gp katar",
+        "DE-MAGENTA.xml.gz:SkySportF1.de@SD"
+      ]
+    },
+    {
+      "id": "SkySportF1.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportF1.de@HD",
+        "20261127150000 +0000",
+        "20261127155000 +0000",
+        "live f2: qualifying - gp katar"
+      ],
+      "existing": [
+        "20261127154000 +0000",
+        "20261127163000 +0000",
+        "live f1: pressekonferenz teamchefs - gp katar",
+        "DE-MAGENTA.xml.gz:SkySportF1.de@SD"
+      ]
+    },
+    {
+      "id": "SkySportF1.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportF1.de@HD",
+        "20261127155000 +0000",
+        "20261127163000 +0000",
+        "live f1: pressekonferenz teamchefs - gp katar"
+      ],
+      "existing": [
+        "20261127154000 +0000",
+        "20261127163000 +0000",
+        "live f1: pressekonferenz teamchefs - gp katar",
+        "DE-MAGENTA.xml.gz:SkySportF1.de@SD"
+      ]
+    },
+    {
+      "id": "SkySportF1.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportF1.de@HD",
+        "20261127164500 +0000",
+        "20261127184500 +0000",
+        "live f1: 2. freies training - gp katar"
+      ],
+      "existing": [
+        "20261127164500 +0000",
+        "20261127183000 +0000",
+        "live f1: 2. freies training - gp katar",
+        "DE-MAGENTA.xml.gz:SkySportF1.de@SD"
+      ]
+    },
+    {
+      "id": "SkySportF1.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportF1.de@HD",
+        "20261127164500 +0000",
+        "20261127184500 +0000",
+        "live f1: 2. freies training - gp katar"
+      ],
+      "existing": [
+        "20261127183000 +0000",
+        "20261127193000 +0000",
+        "f1: hardenacke trifft... (gast: nico rosberg)",
+        "DE-MAGENTA.xml.gz:SkySportF1.de@SD"
+      ]
+    },
+    {
+      "id": "SkySportF1.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportF1.de@HD",
+        "20261127184500 +0000",
+        "20261127193000 +0000",
+        "f1: hardenacke trifft... (gast: nico rosberg)"
+      ],
+      "existing": [
+        "20261127183000 +0000",
+        "20261127193000 +0000",
+        "f1: hardenacke trifft... (gast: nico rosberg)",
+        "DE-MAGENTA.xml.gz:SkySportF1.de@SD"
       ]
     },
     {
@@ -5345,6 +5541,54 @@
       "new": [
         "DE-MASTER.xml.gz",
         "SkySportTopEvent.de@HD",
+        "20261127150000 +0000",
+        "20261127155000 +0000",
+        "live f2: qualifying - gp katar"
+      ],
+      "existing": [
+        "20261127150000 +0000",
+        "20261127154000 +0000",
+        "live f2: qualifying - gp katar",
+        "DE-MAGENTA.xml.gz:SkySport1.de@SD"
+      ]
+    },
+    {
+      "id": "SkySport1.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportTopEvent.de@HD",
+        "20261127150000 +0000",
+        "20261127155000 +0000",
+        "live f2: qualifying - gp katar"
+      ],
+      "existing": [
+        "20261127154000 +0000",
+        "20261127163000 +0000",
+        "live f1: pressekonferenz teamchefs - gp katar",
+        "DE-MAGENTA.xml.gz:SkySport1.de@SD"
+      ]
+    },
+    {
+      "id": "SkySport1.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportTopEvent.de@HD",
+        "20261127155000 +0000",
+        "20261127163000 +0000",
+        "live f1: pressekonferenz teamchefs - gp katar"
+      ],
+      "existing": [
+        "20261127154000 +0000",
+        "20261127163000 +0000",
+        "live f1: pressekonferenz teamchefs - gp katar",
+        "DE-MAGENTA.xml.gz:SkySport1.de@SD"
+      ]
+    },
+    {
+      "id": "SkySport1.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "SkySportTopEvent.de@HD",
         "20261201085000 +0000",
         "20261201122000 +0000",
         "live motogp: testfahrten in valencia - vormittag"
@@ -5450,6 +5694,662 @@
         "20261201163000 +0000",
         "live motogp: testfahrten in valencia - nachmittag",
         "DE-MAGENTA.xml.gz:SkySport1.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261130060000 +0000",
+        "20261130065500 +0000",
+        "csi: new york"
+      ],
+      "existing": [
+        "20261130060500 +0000",
+        "20261130070000 +0000",
+        "csi: new york",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261130065500 +0000",
+        "20261130074000 +0000",
+        "csi: den t\u00e4tern auf der spur"
+      ],
+      "existing": [
+        "20261130060500 +0000",
+        "20261130070000 +0000",
+        "csi: new york",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261130065500 +0000",
+        "20261130074000 +0000",
+        "csi: den t\u00e4tern auf der spur"
+      ],
+      "existing": [
+        "20261130070000 +0000",
+        "20261130074500 +0000",
+        "csi: den t\u00e4tern auf der spur",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261130074000 +0000",
+        "20261130083000 +0000",
+        "csi: den t\u00e4tern auf der spur"
+      ],
+      "existing": [
+        "20261130070000 +0000",
+        "20261130074500 +0000",
+        "csi: den t\u00e4tern auf der spur",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261130074000 +0000",
+        "20261130083000 +0000",
+        "csi: den t\u00e4tern auf der spur"
+      ],
+      "existing": [
+        "20261130074500 +0000",
+        "20261130083500 +0000",
+        "csi: den t\u00e4tern auf der spur",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261130083000 +0000",
+        "20261130083500 +0000",
+        "vox nachrichten"
+      ],
+      "existing": [
+        "20261130074500 +0000",
+        "20261130083500 +0000",
+        "csi: den t\u00e4tern auf der spur",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261130083500 +0000",
+        "20261130093000 +0000",
+        "csi: den t\u00e4tern auf der spur"
+      ],
+      "existing": [
+        "20261130083500 +0000",
+        "20261130084000 +0000",
+        "vox nachrichten",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261130083500 +0000",
+        "20261130093000 +0000",
+        "csi: den t\u00e4tern auf der spur"
+      ],
+      "existing": [
+        "20261130084000 +0000",
+        "20261130093500 +0000",
+        "csi: den t\u00e4tern auf der spur",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261130093000 +0000",
+        "20261130102500 +0000",
+        "csi: den t\u00e4tern auf der spur"
+      ],
+      "existing": [
+        "20261130084000 +0000",
+        "20261130093500 +0000",
+        "csi: den t\u00e4tern auf der spur",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261130093000 +0000",
+        "20261130102500 +0000",
+        "csi: den t\u00e4tern auf der spur"
+      ],
+      "existing": [
+        "20261130093500 +0000",
+        "20261130102500 +0000",
+        "csi: den t\u00e4tern auf der spur",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261201003500 +0000",
+        "20261201012000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201003500 +0000",
+        "20261201012500 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261201012000 +0000",
+        "20261201021000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201003500 +0000",
+        "20261201012500 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261201012000 +0000",
+        "20261201021000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201012500 +0000",
+        "20261201021500 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261201021000 +0000",
+        "20261201030000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201012500 +0000",
+        "20261201021500 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261201021000 +0000",
+        "20261201030000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201021500 +0000",
+        "20261201030500 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261201030000 +0000",
+        "20261201040000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201021500 +0000",
+        "20261201030500 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261201030000 +0000",
+        "20261201040000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201030500 +0000",
+        "20261201035500 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.at@HD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.at@SD",
+        "20261201030000 +0000",
+        "20261201040000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201035500 +0000",
+        "20261201040000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MASTER.xml.gz:VOX.at@HD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261128050000 +0000",
+        "20261128055000 +0000",
+        "csi: new york"
+      ],
+      "existing": [
+        "20261128050000 +0000",
+        "20261128054500 +0000",
+        "csi: new york",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261128050000 +0000",
+        "20261128055000 +0000",
+        "csi: new york"
+      ],
+      "existing": [
+        "20261128054500 +0000",
+        "20261128062500 +0000",
+        "criminal intent - verbrechen im visier",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261128055000 +0000",
+        "20261128062500 +0000",
+        "criminal intent - verbrechen im visier"
+      ],
+      "existing": [
+        "20261128054500 +0000",
+        "20261128062500 +0000",
+        "criminal intent - verbrechen im visier",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261130060500 +0000",
+        "20261130070000 +0000",
+        "csi: new york"
+      ],
+      "existing": [
+        "20261130060000 +0000",
+        "20261130065500 +0000",
+        "csi: new york",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261130060500 +0000",
+        "20261130070000 +0000",
+        "csi: new york"
+      ],
+      "existing": [
+        "20261130065500 +0000",
+        "20261130074000 +0000",
+        "csi: den t\u00e4tern auf der spur",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261130070000 +0000",
+        "20261130074500 +0000",
+        "csi: den t\u00e4tern auf der spur"
+      ],
+      "existing": [
+        "20261130065500 +0000",
+        "20261130074000 +0000",
+        "csi: den t\u00e4tern auf der spur",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261130070000 +0000",
+        "20261130074500 +0000",
+        "csi: den t\u00e4tern auf der spur"
+      ],
+      "existing": [
+        "20261130074000 +0000",
+        "20261130083000 +0000",
+        "csi: den t\u00e4tern auf der spur",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261130074500 +0000",
+        "20261130083500 +0000",
+        "csi: den t\u00e4tern auf der spur"
+      ],
+      "existing": [
+        "20261130074000 +0000",
+        "20261130083000 +0000",
+        "csi: den t\u00e4tern auf der spur",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261130074500 +0000",
+        "20261130083500 +0000",
+        "csi: den t\u00e4tern auf der spur"
+      ],
+      "existing": [
+        "20261130083000 +0000",
+        "20261130083500 +0000",
+        "vox nachrichten",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261130083500 +0000",
+        "20261130084000 +0000",
+        "vox nachrichten"
+      ],
+      "existing": [
+        "20261130083500 +0000",
+        "20261130093000 +0000",
+        "csi: den t\u00e4tern auf der spur",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261130084000 +0000",
+        "20261130093500 +0000",
+        "csi: den t\u00e4tern auf der spur"
+      ],
+      "existing": [
+        "20261130083500 +0000",
+        "20261130093000 +0000",
+        "csi: den t\u00e4tern auf der spur",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261130084000 +0000",
+        "20261130093500 +0000",
+        "csi: den t\u00e4tern auf der spur"
+      ],
+      "existing": [
+        "20261130093000 +0000",
+        "20261130102500 +0000",
+        "csi: den t\u00e4tern auf der spur",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261130093500 +0000",
+        "20261130102500 +0000",
+        "csi: den t\u00e4tern auf der spur"
+      ],
+      "existing": [
+        "20261130093000 +0000",
+        "20261130102500 +0000",
+        "csi: den t\u00e4tern auf der spur",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261201003500 +0000",
+        "20261201012500 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201003500 +0000",
+        "20261201012000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261201003500 +0000",
+        "20261201012500 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201012000 +0000",
+        "20261201021000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261201012500 +0000",
+        "20261201021500 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201012000 +0000",
+        "20261201021000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261201012500 +0000",
+        "20261201021500 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201021000 +0000",
+        "20261201030000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261201021500 +0000",
+        "20261201030500 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201021000 +0000",
+        "20261201030000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261201021500 +0000",
+        "20261201030500 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201030000 +0000",
+        "20261201034500 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261201030500 +0000",
+        "20261201035500 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201030000 +0000",
+        "20261201034500 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261201030500 +0000",
+        "20261201035500 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201034500 +0000",
+        "20261201043000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261201035500 +0000",
+        "20261201040000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201034500 +0000",
+        "20261201043000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
+      ]
+    },
+    {
+      "id": "VOX.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "VOX.de@HD",
+        "20261201040000 +0000",
+        "20261201043000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin"
+      ],
+      "existing": [
+        "20261201034500 +0000",
+        "20261201043000 +0000",
+        "medical detectives - geheimnisse der gerichtsmedizin",
+        "DE-MAGENTA.xml.gz:VOX.de@SD"
       ]
     },
     {
@@ -5629,51 +6529,387 @@
       ]
     },
     {
-      "id": "tagesschau24.de@SD",
+      "id": "hrfernsehen.de@SD",
       "new": [
         "DE-MASTER.xml.gz",
-        "tagesschau24.de@HD",
-        "20261128005000 +0000",
-        "20261128010000 +0000",
-        "extra"
+        "hrfernsehen.de@HD",
+        "20261202225000 +0000",
+        "20261203002000 +0000",
+        "brokenwood - mord in neuseeland: benzin im blut"
       ],
       "existing": [
-        "20261128005000 +0000",
-        "20261128010500 +0000",
-        "tagesschau-nachrichten",
-        "DE-MAGENTA.xml.gz:tagesschau24.de@SD"
+        "20261202225000 +0000",
+        "20261203002500 +0000",
+        "brokenwood - mord in neuseeland: benzin im blut",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
       ]
     },
     {
-      "id": "tagesschau24.de@SD",
+      "id": "hrfernsehen.de@SD",
       "new": [
         "DE-MASTER.xml.gz",
-        "tagesschau24.de@HD",
-        "20261128010000 +0000",
-        "20261128011500 +0000",
-        "tagesschau-nachrichten"
+        "hrfernsehen.de@HD",
+        "20261203002000 +0000",
+        "20261203015000 +0000",
+        "der mann, der alles kann"
       ],
       "existing": [
-        "20261128005000 +0000",
-        "20261128010500 +0000",
-        "tagesschau-nachrichten",
-        "DE-MAGENTA.xml.gz:tagesschau24.de@SD"
+        "20261202225000 +0000",
+        "20261203002500 +0000",
+        "brokenwood - mord in neuseeland: benzin im blut",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
       ]
     },
     {
-      "id": "tagesschau24.de@SD",
+      "id": "hrfernsehen.de@SD",
       "new": [
         "DE-MASTER.xml.gz",
-        "tagesschau24.de@HD",
-        "20261128010000 +0000",
-        "20261128011500 +0000",
-        "tagesschau-nachrichten"
+        "hrfernsehen.de@HD",
+        "20261203002000 +0000",
+        "20261203015000 +0000",
+        "der mann, der alles kann"
       ],
       "existing": [
-        "20261128010500 +0000",
-        "20261128011500 +0000",
-        "extra",
-        "DE-MAGENTA.xml.gz:tagesschau24.de@SD"
+        "20261203002500 +0000",
+        "20261203015500 +0000",
+        "der mann, der alles kann",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203015000 +0000",
+        "20261203023500 +0000",
+        "mex. das marktmagazin"
+      ],
+      "existing": [
+        "20261203002500 +0000",
+        "20261203015500 +0000",
+        "der mann, der alles kann",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203015000 +0000",
+        "20261203023500 +0000",
+        "mex. das marktmagazin"
+      ],
+      "existing": [
+        "20261203015500 +0000",
+        "20261203020000 +0000",
+        "bilder aus hessen",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203015000 +0000",
+        "20261203023500 +0000",
+        "mex. das marktmagazin"
+      ],
+      "existing": [
+        "20261203020000 +0000",
+        "20261203024500 +0000",
+        "mex. das marktmagazin",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203023500 +0000",
+        "20261203040500 +0000",
+        "brokenwood - mord in neuseeland: benzin im blut"
+      ],
+      "existing": [
+        "20261203020000 +0000",
+        "20261203024500 +0000",
+        "mex. das marktmagazin",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203023500 +0000",
+        "20261203040500 +0000",
+        "brokenwood - mord in neuseeland: benzin im blut"
+      ],
+      "existing": [
+        "20261203024500 +0000",
+        "20261203042000 +0000",
+        "brokenwood - mord in neuseeland: benzin im blut",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203040500 +0000",
+        "20261203042500 +0000",
+        "tinka und die k\u00f6nigsspiele"
+      ],
+      "existing": [
+        "20261203024500 +0000",
+        "20261203042000 +0000",
+        "brokenwood - mord in neuseeland: benzin im blut",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203040500 +0000",
+        "20261203042500 +0000",
+        "tinka und die k\u00f6nigsspiele"
+      ],
+      "existing": [
+        "20261203042000 +0000",
+        "20261203044000 +0000",
+        "tinka und die k\u00f6nigsspiele (13/24)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203042500 +0000",
+        "20261203045000 +0000",
+        "tinka und die k\u00f6nigsspiele"
+      ],
+      "existing": [
+        "20261203042000 +0000",
+        "20261203044000 +0000",
+        "tinka und die k\u00f6nigsspiele (13/24)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203042500 +0000",
+        "20261203045000 +0000",
+        "tinka und die k\u00f6nigsspiele"
+      ],
+      "existing": [
+        "20261203044000 +0000",
+        "20261203050500 +0000",
+        "tinka und die k\u00f6nigsspiele (14/24)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203045000 +0000",
+        "20261203054000 +0000",
+        "giraffe, erdm\u00e4nnchen & co."
+      ],
+      "existing": [
+        "20261203044000 +0000",
+        "20261203050500 +0000",
+        "tinka und die k\u00f6nigsspiele (14/24)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203045000 +0000",
+        "20261203054000 +0000",
+        "giraffe, erdm\u00e4nnchen & co."
+      ],
+      "existing": [
+        "20261203050500 +0000",
+        "20261203055500 +0000",
+        "giraffe, erdm\u00e4nnchen & co. (48)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203054000 +0000",
+        "20261203061000 +0000",
+        "mission terra - expedition zum blauen planeten"
+      ],
+      "existing": [
+        "20261203050500 +0000",
+        "20261203055500 +0000",
+        "giraffe, erdm\u00e4nnchen & co. (48)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203054000 +0000",
+        "20261203061000 +0000",
+        "mission terra - expedition zum blauen planeten"
+      ],
+      "existing": [
+        "20261203055500 +0000",
+        "20261203062500 +0000",
+        "mission terra - expedition zum blauen planeten (14)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203061000 +0000",
+        "20261203062500 +0000",
+        "alle wetter!"
+      ],
+      "existing": [
+        "20261203055500 +0000",
+        "20261203062500 +0000",
+        "mission terra - expedition zum blauen planeten (14)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203213000 +0000",
+        "20261203222500 +0000",
+        "firma hesselbach"
+      ],
+      "existing": [
+        "20261203213000 +0000",
+        "20261203222000 +0000",
+        "firma hesselbach (10/66)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203213000 +0000",
+        "20261203222500 +0000",
+        "firma hesselbach"
+      ],
+      "existing": [
+        "20261203222000 +0000",
+        "20261203224500 +0000",
+        "kommissar freytag (19/39)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203222500 +0000",
+        "20261203225000 +0000",
+        "kommissar freytag"
+      ],
+      "existing": [
+        "20261203222000 +0000",
+        "20261203224500 +0000",
+        "kommissar freytag (19/39)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203222500 +0000",
+        "20261203225000 +0000",
+        "kommissar freytag"
+      ],
+      "existing": [
+        "20261203224500 +0000",
+        "20261203231000 +0000",
+        "kommissar freytag (20/39)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203225000 +0000",
+        "20261203231500 +0000",
+        "kommissar freytag"
+      ],
+      "existing": [
+        "20261203224500 +0000",
+        "20261203231000 +0000",
+        "kommissar freytag (20/39)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203225000 +0000",
+        "20261203231500 +0000",
+        "kommissar freytag"
+      ],
+      "existing": [
+        "20261203231000 +0000",
+        "20261204004000 +0000",
+        "wir sind die rosinskis",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-MASTER.xml.gz",
+        "hrfernsehen.de@HD",
+        "20261203231500 +0000",
+        "20261204004500 +0000",
+        "wir sind die rosinskis"
+      ],
+      "existing": [
+        "20261203231000 +0000",
+        "20261204004000 +0000",
+        "wir sind die rosinskis",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
       ]
     },
     {
@@ -5897,6 +7133,390 @@
         "20261128061000 +0000",
         "20261128065500 +0000",
         "mittendrin - flughafen frankfurt (62)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261202225000 +0000",
+        "20261203002000 +0000",
+        "brokenwood - mord in neuseeland: benzin im blut"
+      ],
+      "existing": [
+        "20261202225000 +0000",
+        "20261203002500 +0000",
+        "brokenwood - mord in neuseeland: benzin im blut",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203002000 +0000",
+        "20261203015000 +0000",
+        "der mann, der alles kann"
+      ],
+      "existing": [
+        "20261202225000 +0000",
+        "20261203002500 +0000",
+        "brokenwood - mord in neuseeland: benzin im blut",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203002000 +0000",
+        "20261203015000 +0000",
+        "der mann, der alles kann"
+      ],
+      "existing": [
+        "20261203002500 +0000",
+        "20261203015500 +0000",
+        "der mann, der alles kann",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203015000 +0000",
+        "20261203023500 +0000",
+        "mex. das marktmagazin"
+      ],
+      "existing": [
+        "20261203002500 +0000",
+        "20261203015500 +0000",
+        "der mann, der alles kann",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203015000 +0000",
+        "20261203023500 +0000",
+        "mex. das marktmagazin"
+      ],
+      "existing": [
+        "20261203015500 +0000",
+        "20261203020000 +0000",
+        "bilder aus hessen",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203015000 +0000",
+        "20261203023500 +0000",
+        "mex. das marktmagazin"
+      ],
+      "existing": [
+        "20261203020000 +0000",
+        "20261203024500 +0000",
+        "mex. das marktmagazin",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203023500 +0000",
+        "20261203040500 +0000",
+        "brokenwood - mord in neuseeland: benzin im blut"
+      ],
+      "existing": [
+        "20261203020000 +0000",
+        "20261203024500 +0000",
+        "mex. das marktmagazin",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203023500 +0000",
+        "20261203040500 +0000",
+        "brokenwood - mord in neuseeland: benzin im blut"
+      ],
+      "existing": [
+        "20261203024500 +0000",
+        "20261203042000 +0000",
+        "brokenwood - mord in neuseeland: benzin im blut",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203040500 +0000",
+        "20261203042500 +0000",
+        "tinka und die k\u00f6nigsspiele"
+      ],
+      "existing": [
+        "20261203024500 +0000",
+        "20261203042000 +0000",
+        "brokenwood - mord in neuseeland: benzin im blut",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203040500 +0000",
+        "20261203042500 +0000",
+        "tinka und die k\u00f6nigsspiele"
+      ],
+      "existing": [
+        "20261203042000 +0000",
+        "20261203044000 +0000",
+        "tinka und die k\u00f6nigsspiele (13/24)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203042500 +0000",
+        "20261203045000 +0000",
+        "tinka und die k\u00f6nigsspiele"
+      ],
+      "existing": [
+        "20261203042000 +0000",
+        "20261203044000 +0000",
+        "tinka und die k\u00f6nigsspiele (13/24)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203042500 +0000",
+        "20261203045000 +0000",
+        "tinka und die k\u00f6nigsspiele"
+      ],
+      "existing": [
+        "20261203044000 +0000",
+        "20261203050500 +0000",
+        "tinka und die k\u00f6nigsspiele (14/24)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203045000 +0000",
+        "20261203054000 +0000",
+        "giraffe, erdm\u00e4nnchen & co."
+      ],
+      "existing": [
+        "20261203044000 +0000",
+        "20261203050500 +0000",
+        "tinka und die k\u00f6nigsspiele (14/24)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203045000 +0000",
+        "20261203054000 +0000",
+        "giraffe, erdm\u00e4nnchen & co."
+      ],
+      "existing": [
+        "20261203050500 +0000",
+        "20261203055500 +0000",
+        "giraffe, erdm\u00e4nnchen & co. (48)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203054000 +0000",
+        "20261203061000 +0000",
+        "mission terra - expedition zum blauen planeten"
+      ],
+      "existing": [
+        "20261203050500 +0000",
+        "20261203055500 +0000",
+        "giraffe, erdm\u00e4nnchen & co. (48)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203054000 +0000",
+        "20261203061000 +0000",
+        "mission terra - expedition zum blauen planeten"
+      ],
+      "existing": [
+        "20261203055500 +0000",
+        "20261203062500 +0000",
+        "mission terra - expedition zum blauen planeten (14)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203061000 +0000",
+        "20261203062500 +0000",
+        "alle wetter!"
+      ],
+      "existing": [
+        "20261203055500 +0000",
+        "20261203062500 +0000",
+        "mission terra - expedition zum blauen planeten (14)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203213000 +0000",
+        "20261203222500 +0000",
+        "firma hesselbach"
+      ],
+      "existing": [
+        "20261203213000 +0000",
+        "20261203222000 +0000",
+        "firma hesselbach (10/66)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203213000 +0000",
+        "20261203222500 +0000",
+        "firma hesselbach"
+      ],
+      "existing": [
+        "20261203222000 +0000",
+        "20261203224500 +0000",
+        "kommissar freytag (19/39)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203222500 +0000",
+        "20261203225000 +0000",
+        "kommissar freytag"
+      ],
+      "existing": [
+        "20261203222000 +0000",
+        "20261203224500 +0000",
+        "kommissar freytag (19/39)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203222500 +0000",
+        "20261203225000 +0000",
+        "kommissar freytag"
+      ],
+      "existing": [
+        "20261203224500 +0000",
+        "20261203231000 +0000",
+        "kommissar freytag (20/39)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203225000 +0000",
+        "20261203231500 +0000",
+        "kommissar freytag"
+      ],
+      "existing": [
+        "20261203224500 +0000",
+        "20261203231000 +0000",
+        "kommissar freytag (20/39)",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203225000 +0000",
+        "20261203231500 +0000",
+        "kommissar freytag"
+      ],
+      "existing": [
+        "20261203231000 +0000",
+        "20261204004000 +0000",
+        "wir sind die rosinskis",
+        "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
+      ]
+    },
+    {
+      "id": "hrfernsehen.de@SD",
+      "new": [
+        "DE-AMAZON.xml.gz",
+        "AmazonPrime.de.hr",
+        "20261203231500 +0000",
+        "20261204004500 +0000",
+        "wir sind die rosinskis"
+      ],
+      "existing": [
+        "20261203231000 +0000",
+        "20261204004000 +0000",
+        "wir sind die rosinskis",
         "DE-MAGENTA.xml.gz:hrfernsehen.de@SD"
       ]
     },
@@ -8470,6 +10090,12 @@
     },
     {
       "source_file": "DE-MASTER.xml.gz",
+      "source_id": "CartoonNetworkCEE.uk@Romania",
+      "canonical_id": "CartoonNetworkCEE.uk@Romania",
+      "owner": "DE-MASTER.xml.gz"
+    },
+    {
+      "source_file": "DE-MASTER.xml.gz",
       "source_id": "CartoonNetworkCEE.uk@Russia",
       "canonical_id": "CartoonNetworkCEE.uk@Russia",
       "owner": "DE-MASTER.xml.gz"
@@ -8591,8 +10217,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "ComedyCentralSouthPark.us@Germany",
-      "canonical_id": "PlutoTV.de.60c716084d842c00085f6e64",
-      "owner": "DE-PLUTO.xml.gz"
+      "canonical_id": "ComedyCentralSouthPark.us@Germany",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -8926,6 +10552,12 @@
     },
     {
       "source_file": "DE-MASTER.xml.gz",
+      "source_id": "Eurosport1.fr@Romania",
+      "canonical_id": "Eurosport1.fr@Romania",
+      "owner": "DE-MASTER.xml.gz"
+    },
+    {
+      "source_file": "DE-MASTER.xml.gz",
       "source_id": "Eurosport1.fr@Russia",
       "canonical_id": "Eurosport1.fr@Russia",
       "owner": "DE-MASTER.xml.gz"
@@ -8958,6 +10590,12 @@
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "Eurosport2.fr@Netherlands",
       "canonical_id": "Eurosport2.fr@Netherlands",
+      "owner": "DE-MASTER.xml.gz"
+    },
+    {
+      "source_file": "DE-MASTER.xml.gz",
+      "source_id": "Eurosport2.fr@Romania",
+      "canonical_id": "Eurosport2.fr@Romania",
       "owner": "DE-MASTER.xml.gz"
     },
     {
@@ -10427,8 +12065,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "PlutoTVAdultAnimation.de@DACH",
-      "canonical_id": "PlutoTVAdultAnimation.de@DACH",
-      "owner": "DE-MASTER.xml.gz"
+      "canonical_id": "PlutoTV.de.67f68bd2135aeda9ddf0ef54",
+      "owner": "DE-PLUTO.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -11813,8 +13451,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySportBundesliga5.de@HD",
-      "canonical_id": "SkySportBundesliga6.de@SD",
-      "owner": "DE-MAGENTA.xml.gz"
+      "canonical_id": "SkySportBundesliga5.de@HD",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -11825,8 +13463,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySportBundesliga6.de@HD",
-      "canonical_id": "SkySportBundesliga7.de@SD",
-      "owner": "DE-MAGENTA.xml.gz"
+      "canonical_id": "SkySportBundesliga6.de@HD",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -11837,8 +13475,8 @@
     {
       "source_file": "DE-MASTER.xml.gz",
       "source_id": "SkySportBundesliga7.de@HD",
-      "canonical_id": "SkySportBundesliga8.de@SD",
-      "owner": "DE-MAGENTA.xml.gz"
+      "canonical_id": "SkySportBundesliga7.de@HD",
+      "owner": "DE-MASTER.xml.gz"
     },
     {
       "source_file": "DE-MASTER.xml.gz",
@@ -16768,6 +18406,12 @@
     },
     {
       "source_file": "DE-SAMSUNG.xml.gz",
+      "source_id": "SamsungTVPlus.de.DEBA2200008NL",
+      "canonical_id": "SamsungTVPlus.de.DEBA2200008NL",
+      "owner": "DE-SAMSUNG.xml.gz"
+    },
+    {
+      "source_file": "DE-SAMSUNG.xml.gz",
       "source_id": "SamsungTVPlus.de.DEBA3300001L9",
       "canonical_id": "SamsungTVPlus.de.DEBA3300001L9",
       "owner": "DE-SAMSUNG.xml.gz"
@@ -16895,8 +18539,8 @@
     {
       "source_file": "DE-SAMSUNG.xml.gz",
       "source_id": "SamsungTVPlus.de.DEBC4700004VZ",
-      "canonical_id": "LoveThePlanet.es@DE",
-      "owner": "DE-MASTER.xml.gz"
+      "canonical_id": "SamsungTVPlus.de.DEBC4700004VZ",
+      "owner": "DE-SAMSUNG.xml.gz"
     },
     {
       "source_file": "DE-SAMSUNG.xml.gz",
@@ -17188,7 +18832,7 @@
     {
       "canonical_id": "ARDalpha.de@SD",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 315
+      "programmes": 316
     },
     {
       "canonical_id": "ATV.at@HD",
@@ -17258,7 +18902,7 @@
     {
       "canonical_id": "AlexBerlin.de@SD",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 88
+      "programmes": 112
     },
     {
       "canonical_id": "AllgauTV.de@SD",
@@ -17328,7 +18972,7 @@
     {
       "canonical_id": "AuftankenTV.ch@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 245
+      "programmes": 243
     },
     {
       "canonical_id": "AugsburgTV.de@SD",
@@ -17338,7 +18982,7 @@
     {
       "canonical_id": "AutoMotorogSportTV.no@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 409
+      "programmes": 408
     },
     {
       "canonical_id": "BBCFour.uk@UK",
@@ -17353,7 +18997,7 @@
     {
       "canonical_id": "BBCOne.uk@London",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 75
+      "programmes": 97
     },
     {
       "canonical_id": "BBCTravel.us@Germany",
@@ -17363,7 +19007,7 @@
     {
       "canonical_id": "BBCTwo.uk@England",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 72
+      "programmes": 86
     },
     {
       "canonical_id": "BRFernsehen.de@Nord",
@@ -17438,7 +19082,7 @@
     {
       "canonical_id": "BlueAction.ch@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 81
+      "programmes": 87
     },
     {
       "canonical_id": "BlueHustler.nl@SD",
@@ -17453,7 +19097,7 @@
     {
       "canonical_id": "BlueSport1.ch@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 137
+      "programmes": 138
     },
     {
       "canonical_id": "BlueSport2.ch@SD",
@@ -17503,7 +19147,7 @@
     {
       "canonical_id": "PlutoTV.de.62441d6ded1827000763dcda",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 39
+      "programmes": 40
     },
     {
       "canonical_id": "CCPlutoTV.de@DACH",
@@ -17626,6 +19270,11 @@
       "programmes": 782
     },
     {
+      "canonical_id": "CartoonNetworkCEE.uk@Romania",
+      "owner": "DE-MASTER.xml.gz",
+      "programmes": 769
+    },
+    {
       "canonical_id": "CartoonNetworkCEE.uk@Russia",
       "owner": "DE-MASTER.xml.gz",
       "programmes": 767
@@ -17638,7 +19287,7 @@
     {
       "canonical_id": "CartoonitoCEE.uk@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 212
+      "programmes": 207
     },
     {
       "canonical_id": "CartoonitoMENA.uk@SD",
@@ -17653,7 +19302,7 @@
     {
       "canonical_id": "PlutoTV.de.60afbad343e3840007164348",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 68
+      "programmes": 69
     },
     {
       "canonical_id": "PlutoTV.de.611e7f224676bf00076a4d8d",
@@ -17678,7 +19327,7 @@
     {
       "canonical_id": "CinemaPlus.co@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 52
+      "programmes": 62
     },
     {
       "canonical_id": "ClassTVModa.it@SD",
@@ -17698,7 +19347,7 @@
     {
       "canonical_id": "ClubbingTV.us@Germany",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 158
+      "programmes": 174
     },
     {
       "canonical_id": "ClublandTV.uk@SD",
@@ -17726,9 +19375,9 @@
       "programmes": 420
     },
     {
-      "canonical_id": "PlutoTV.de.60c716084d842c00085f6e64",
-      "owner": "DE-PLUTO.xml.gz",
-      "programmes": 63
+      "canonical_id": "ComedyCentralSouthPark.us@Germany",
+      "owner": "DE-MASTER.xml.gz",
+      "programmes": 26
     },
     {
       "canonical_id": "CrimeDistrict.fr@SD",
@@ -17768,7 +19417,7 @@
     {
       "canonical_id": "DAZN1.uk@GermanyHD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 72
+      "programmes": 91
     },
     {
       "canonical_id": "DAZN1.uk@Portugal",
@@ -17788,7 +19437,7 @@
     {
       "canonical_id": "DAZN2.uk@GermanyHD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 73
+      "programmes": 84
     },
     {
       "canonical_id": "DAZN2.uk@Portugal",
@@ -17798,7 +19447,7 @@
     {
       "canonical_id": "PlutoTV.de.64b67f0424ade50008a3be17",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 20
+      "programmes": 21
     },
     {
       "canonical_id": "DAZNFAST.de@HD",
@@ -17808,7 +19457,7 @@
     {
       "canonical_id": "PlutoTV.de.64afe50c5dc16600087f3227",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 33
+      "programmes": 32
     },
     {
       "canonical_id": "ServusTV.at@SD",
@@ -17853,12 +19502,12 @@
     {
       "canonical_id": "DR1.dk@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 99
+      "programmes": 127
     },
     {
       "canonical_id": "DR2.dk@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 79
+      "programmes": 92
     },
     {
       "canonical_id": "DW.de@Arabic",
@@ -17918,12 +19567,12 @@
     {
       "canonical_id": "DisneyChannel.de@SD",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 308
+      "programmes": 309
     },
     {
       "canonical_id": "DoctorWhoClassic.us@US",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 28
+      "programmes": 27
     },
     {
       "canonical_id": "Dokusat.de@SD",
@@ -17943,7 +19592,7 @@
     {
       "canonical_id": "EuroStar.tr@SD",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 79
+      "programmes": 81
     },
     {
       "canonical_id": "Eurochannel.uk@SD",
@@ -17973,7 +19622,7 @@
     {
       "canonical_id": "Eurosport1.fr@France",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 113
+      "programmes": 116
     },
     {
       "canonical_id": "Eurosport1.fr@Germany",
@@ -17996,9 +19645,14 @@
       "programmes": 113
     },
     {
+      "canonical_id": "Eurosport1.fr@Romania",
+      "owner": "DE-MASTER.xml.gz",
+      "programmes": 136
+    },
+    {
       "canonical_id": "Eurosport1.fr@Russia",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 130
+      "programmes": 127
     },
     {
       "canonical_id": "Eurosport1.fr@Spain",
@@ -18008,12 +19662,12 @@
     {
       "canonical_id": "Eurosport2.fr@France",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 142
+      "programmes": 150
     },
     {
       "canonical_id": "Eurosport2.fr@Germany",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 136
+      "programmes": 146
     },
     {
       "canonical_id": "Eurosport2.fr@Italy",
@@ -18026,9 +19680,14 @@
       "programmes": 154
     },
     {
+      "canonical_id": "Eurosport2.fr@Romania",
+      "owner": "DE-MASTER.xml.gz",
+      "programmes": 153
+    },
+    {
       "canonical_id": "Eurosport2.fr@Russia",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 147
+      "programmes": 144
     },
     {
       "canonical_id": "Eurosport2.fr@Spain",
@@ -18078,22 +19737,22 @@
     {
       "canonical_id": "FailArmy.us@Brazil",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 23
+      "programmes": 24
     },
     {
       "canonical_id": "FailArmy.us@France",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 23
+      "programmes": 24
     },
     {
       "canonical_id": "FailArmy.us@Italy",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 23
+      "programmes": 24
     },
     {
       "canonical_id": "FailArmy.us@Spain",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 23
+      "programmes": 24
     },
     {
       "canonical_id": "FailArmy.us@UK",
@@ -18108,7 +19767,7 @@
     {
       "canonical_id": "FashionTVEurope.fr@SD",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 337
+      "programmes": 336
     },
     {
       "canonical_id": "FilmRiseAnime.us@SD",
@@ -18133,7 +19792,7 @@
     {
       "canonical_id": "FolxMusicTelevision.de@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 204
+      "programmes": 205
     },
     {
       "canonical_id": "France24.fr@English",
@@ -18303,7 +19962,7 @@
     {
       "canonical_id": "HorseCountryTV.uk@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 41
+      "programmes": 38
     },
     {
       "canonical_id": "IMEARTH.fr@SD",
@@ -18333,7 +19992,7 @@
     {
       "canonical_id": "IcePilots.us@Spain",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 15
+      "programmes": 14
     },
     {
       "canonical_id": "ImmaculataTV.ch@SD",
@@ -18463,7 +20122,7 @@
     {
       "canonical_id": "MLBNetwork.us@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 38
+      "programmes": 36
     },
     {
       "canonical_id": "MST3K.us@US",
@@ -18503,7 +20162,7 @@
     {
       "canonical_id": "MTVPlutoTV.de@DACH",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 18
+      "programmes": 20
     },
     {
       "canonical_id": "MTVRealities.us@Spain",
@@ -18678,12 +20337,12 @@
     {
       "canonical_id": "MinecrafTV.us@US",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 7
+      "programmes": 6
     },
     {
       "canonical_id": "PlutoTV.de.634fe5afece2e60007c9d8b8",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 36
+      "programmes": 35
     },
     {
       "canonical_id": "MoreThanSportsTV.de@SD",
@@ -18733,7 +20392,7 @@
     {
       "canonical_id": "MovieSphere.us@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 6
+      "programmes": 7
     },
     {
       "canonical_id": "MovieSphere.us@UK",
@@ -18763,27 +20422,27 @@
     {
       "canonical_id": "MySports2.ch@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 7
+      "programmes": 8
     },
     {
       "canonical_id": "MySports3.ch@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 6
+      "programmes": 7
     },
     {
       "canonical_id": "MySports4.ch@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 47
+      "programmes": 4
     },
     {
       "canonical_id": "MySports5.ch@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 46
+      "programmes": 3
     },
     {
       "canonical_id": "MySports6.ch@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 46
+      "programmes": 3
     },
     {
       "canonical_id": "MySports7.ch@SD",
@@ -18803,7 +20462,7 @@
     {
       "canonical_id": "MySportsOne.ch@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 132
+      "programmes": 131
     },
     {
       "canonical_id": "N24Doku.de@HD",
@@ -18833,12 +20492,12 @@
     {
       "canonical_id": "NDRFernsehen.de@SchleswigHolstein",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 272
+      "programmes": 271
     },
     {
       "canonical_id": "NFLNetwork.us@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 26
+      "programmes": 25
     },
     {
       "canonical_id": "NHKWorldJapan.jp@SD",
@@ -18918,7 +20577,7 @@
     {
       "canonical_id": "NickPlutoTV.us@US",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 12
+      "programmes": 11
     },
     {
       "canonical_id": "NickelodeonAustria.at@SD",
@@ -18988,7 +20647,7 @@
     {
       "canonical_id": "OK54.de@SD",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 108
+      "programmes": 120
     },
     {
       "canonical_id": "OKTVLudwigshafen.de@SD",
@@ -19068,7 +20727,7 @@
     {
       "canonical_id": "ORFIII.at@HD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 182
+      "programmes": 181
     },
     {
       "canonical_id": "ORFIII.at@SD",
@@ -19228,12 +20887,12 @@
     {
       "canonical_id": "PlutoTV.de.65004605110545000842035d",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 22
+      "programmes": 23
     },
     {
-      "canonical_id": "PlutoTVAdultAnimation.de@DACH",
-      "owner": "DE-MASTER.xml.gz",
-      "programmes": 30
+      "canonical_id": "PlutoTV.de.67f68bd2135aeda9ddf0ef54",
+      "owner": "DE-PLUTO.xml.gz",
+      "programmes": 66
     },
     {
       "canonical_id": "PlutoTV.de.5d767ae7b456c8cf265ce922",
@@ -19243,32 +20902,32 @@
     {
       "canonical_id": "PlutoTVAnimals.de@UK",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 12
+      "programmes": 13
     },
     {
       "canonical_id": "PlutoTV.de.608181d420fc8500075f612a",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 62
+      "programmes": 63
     },
     {
       "canonical_id": "PlutoTV.de.677e5a3d7bffa6000808dbf2",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 53
+      "programmes": 54
     },
     {
       "canonical_id": "PlutoTVBudTerence.de@FI",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 21
+      "programmes": 22
     },
     {
       "canonical_id": "PlutoTV.de.5e7b6c60fd20c50007910bf5",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 35
+      "programmes": 34
     },
     {
       "canonical_id": "PlutoTVCrime.de@UK",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 20
+      "programmes": 23
     },
     {
       "canonical_id": "PlutoTVCrime.de@UKPlus",
@@ -19283,12 +20942,12 @@
     {
       "canonical_id": "PlutoTV.de.67ebc04855de98dc71428538",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 50
+      "programmes": 52
     },
     {
       "canonical_id": "PlutoTV.de.5ad9b8551b95267e225e59c1",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 34
+      "programmes": 35
     },
     {
       "canonical_id": "PlutoTVFood.de@DACH",
@@ -19298,7 +20957,7 @@
     {
       "canonical_id": "PlutoTVFood.de@UK",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 16
+      "programmes": 17
     },
     {
       "canonical_id": "PlutoTV.de.664f10c4f9992200084a2f47",
@@ -19313,7 +20972,7 @@
     {
       "canonical_id": "PlutoTV.de.62f4f4b88157cf00075c22db",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 48
+      "programmes": 49
     },
     {
       "canonical_id": "PlutoTV.de.67ff7d9c7fc25e0e72451bc9",
@@ -19323,7 +20982,7 @@
     {
       "canonical_id": "PlutoTV.de.66337de656fc840008ff7a65",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 22
+      "programmes": 23
     },
     {
       "canonical_id": "PlutoTV.de.5dde47b63585b500099f74ec",
@@ -19338,7 +20997,7 @@
     {
       "canonical_id": "PlutoTVMovies.de@UK",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 7
+      "programmes": 6
     },
     {
       "canonical_id": "PlutoTV.de.617aad99b68ef100072608cd",
@@ -19348,7 +21007,7 @@
     {
       "canonical_id": "PlutoTV.de.5be1c3f9851dd5632e2c91b2",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 39
+      "programmes": 40
     },
     {
       "canonical_id": "PlutoTV.de.5f98487036af340008da1e37",
@@ -19358,7 +21017,7 @@
     {
       "canonical_id": "PlutoTV.de.64be64445dc166000899ce75",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 31
+      "programmes": 30
     },
     {
       "canonical_id": "PlutoTV.de.67d983d6a1609bdb523f5f9b",
@@ -19373,7 +21032,7 @@
     {
       "canonical_id": "PlutoTV.de.5d767b4889bca2ce7b73ef2e",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 35
+      "programmes": 37
     },
     {
       "canonical_id": "PlutoTV.de.5dc190f7bfed110009d934c3",
@@ -19383,22 +21042,22 @@
     {
       "canonical_id": "PlutoTVSerie.de@IT",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 13
+      "programmes": 12
     },
     {
       "canonical_id": "PlutoTVSerie.de@ITPlus",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 38
+      "programmes": 39
     },
     {
       "canonical_id": "PlutoTV.de.5d767ab2b456c8cf265ce921",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 53
+      "programmes": 49
     },
     {
       "canonical_id": "PlutoTVSitcoms.de@UK",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 29
+      "programmes": 27
     },
     {
       "canonical_id": "PlutoTV.de.68ac5543a1ac0c90f2c8943e",
@@ -19413,7 +21072,7 @@
     {
       "canonical_id": "PlutoTVSpace.de@UK",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 21
+      "programmes": 23
     },
     {
       "canonical_id": "PlutoTV.de.6152ee71bf99590007893a11",
@@ -19423,7 +21082,7 @@
     {
       "canonical_id": "PlutoTV.de.69492467ae33e24d916e56cf",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 62
+      "programmes": 63
     },
     {
       "canonical_id": "PlutoTV.de.615333098185f00008715a56",
@@ -19508,7 +21167,7 @@
     {
       "canonical_id": "Puls24.at@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 6
+      "programmes": 8
     },
     {
       "canonical_id": "Puls4.at@HD",
@@ -19698,7 +21357,7 @@
     {
       "canonical_id": "Rai1.it@SD",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 231
+      "programmes": 229
     },
     {
       "canonical_id": "Rai2.it@SD",
@@ -19748,7 +21407,7 @@
     {
       "canonical_id": "RedBullTV.at@EUMENA",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 278
+      "programmes": 277
     },
     {
       "canonical_id": "RedBullTV.at@SD",
@@ -19758,7 +21417,7 @@
     {
       "canonical_id": "RedBullTV.at@US",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 106
+      "programmes": 105
     },
     {
       "canonical_id": "RegioTVplus.ch@SD",
@@ -19783,7 +21442,7 @@
     {
       "canonical_id": "RiffTrax.us@US",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 7
+      "programmes": 8
     },
     {
       "canonical_id": "RomanceTV.de@SD",
@@ -19913,7 +21572,7 @@
     {
       "canonical_id": "SalveTV.de@SD",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 125
+      "programmes": 273
     },
     {
       "canonical_id": "SanMarinoRTV.sm@SD",
@@ -20133,7 +21792,7 @@
     {
       "canonical_id": "SkySport1.de@HD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 30
+      "programmes": 29
     },
     {
       "canonical_id": "SkySport1.de@SD",
@@ -20223,7 +21882,7 @@
     {
       "canonical_id": "SkySportAustria1.at@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 78
+      "programmes": 105
     },
     {
       "canonical_id": "SkySportAustria2.at@HD",
@@ -20306,9 +21965,24 @@
       "programmes": 19
     },
     {
+      "canonical_id": "SkySportBundesliga5.de@HD",
+      "owner": "DE-MASTER.xml.gz",
+      "programmes": 18
+    },
+    {
+      "canonical_id": "SkySportBundesliga6.de@HD",
+      "owner": "DE-MASTER.xml.gz",
+      "programmes": 12
+    },
+    {
       "canonical_id": "SkySportBundesliga6.de@SD",
       "owner": "DE-MAGENTA.xml.gz",
       "programmes": 18
+    },
+    {
+      "canonical_id": "SkySportBundesliga7.de@HD",
+      "owner": "DE-MASTER.xml.gz",
+      "programmes": 12
     },
     {
       "canonical_id": "SkySportBundesliga7.de@SD",
@@ -20316,14 +21990,14 @@
       "programmes": 12
     },
     {
-      "canonical_id": "SkySportBundesliga8.de@SD",
-      "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 12
-    },
-    {
       "canonical_id": "SkySportBundesliga8.de@HD",
       "owner": "DE-MASTER.xml.gz",
       "programmes": 8
+    },
+    {
+      "canonical_id": "SkySportBundesliga8.de@SD",
+      "owner": "DE-MAGENTA.xml.gz",
+      "programmes": 12
     },
     {
       "canonical_id": "SkySportBundesliga9.de@HD",
@@ -20343,7 +22017,7 @@
     {
       "canonical_id": "SkySportGolf.de@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 103
+      "programmes": 101
     },
     {
       "canonical_id": "SkySportNews.de@SD",
@@ -20403,7 +22077,7 @@
     {
       "canonical_id": "SportdigitalFUSSBALL2.de@HD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 98
+      "programmes": 96
     },
     {
       "canonical_id": "Sportitalia.it@SD",
@@ -20688,7 +22362,7 @@
     {
       "canonical_id": "TVOberfranken.de@SD",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 417
+      "programmes": 420
     },
     {
       "canonical_id": "TVOberwallis.ch@SD",
@@ -20728,7 +22402,7 @@
     {
       "canonical_id": "TeenNick.us@East",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 375
+      "programmes": 372
     },
     {
       "canonical_id": "Tele1.ch@SD",
@@ -20838,7 +22512,7 @@
     {
       "canonical_id": "TheAsylum.us@US",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 107
+      "programmes": 108
     },
     {
       "canonical_id": "TheGrahamNortonShow.uk@SD",
@@ -20848,7 +22522,7 @@
     {
       "canonical_id": "ThePetCollective.us@Brazil",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 24
+      "programmes": 22
     },
     {
       "canonical_id": "ThePetCollective.us@UK",
@@ -20858,7 +22532,7 @@
     {
       "canonical_id": "ThePetCollective.us@US",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 24
+      "programmes": 22
     },
     {
       "canonical_id": "TopCalcio24.it@SD",
@@ -20948,12 +22622,12 @@
     {
       "canonical_id": "VOX.at@HD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 179
+      "programmes": 178
     },
     {
       "canonical_id": "VOX.de@SD",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 181
+      "programmes": 179
     },
     {
       "canonical_id": "VolksmusikTV.de@SD",
@@ -21048,7 +22722,7 @@
     {
       "canonical_id": "WarnerTVComedy.de@SD",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 414
+      "programmes": 415
     },
     {
       "canonical_id": "WarnerTVFilm.de@HD",
@@ -21058,7 +22732,7 @@
     {
       "canonical_id": "WarnerTVFilm.de@SD",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 94
+      "programmes": 95
     },
     {
       "canonical_id": "WarnerTVSerie.de@HD",
@@ -21068,12 +22742,12 @@
     {
       "canonical_id": "WarnerTVSerie.de@SD",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 217
+      "programmes": 218
     },
     {
       "canonical_id": "WedoBigStories.ch@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 266
+      "programmes": 265
     },
     {
       "canonical_id": "WeltderWunderTV.de@SD",
@@ -21093,7 +22767,7 @@
     {
       "canonical_id": "WorldPokerTour.us@Italy",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 7
+      "programmes": 8
     },
     {
       "canonical_id": "WorldPokerTour.us@Spain",
@@ -21103,7 +22777,7 @@
     {
       "canonical_id": "WorldPokerTour.us@UK",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "WorldPokerTour.us@US",
@@ -21118,12 +22792,12 @@
     {
       "canonical_id": "XITEHits.nl@UK",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 2
+      "programmes": 1
     },
     {
       "canonical_id": "XITEHits.nl@US",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 9
+      "programmes": 17
     },
     {
       "canonical_id": "Xplore.de@SD",
@@ -21223,7 +22897,7 @@
     {
       "canonical_id": "beINIZ.tr@SD",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 542
+      "programmes": 543
     },
     {
       "canonical_id": "beINMoviesTurk.tr@SD",
@@ -21233,7 +22907,7 @@
     {
       "canonical_id": "ducktv.sk@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 3850
+      "programmes": 3853
     },
     {
       "canonical_id": "eSports1.de@SD",
@@ -21303,12 +22977,12 @@
     {
       "canonical_id": "ntv.at@HD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 356
+      "programmes": 354
     },
     {
       "canonical_id": "ntv.de@SD",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 356
+      "programmes": 354
     },
     {
       "canonical_id": "oe24TV.at@HD",
@@ -21318,17 +22992,17 @@
     {
       "canonical_id": "oe24TV.at@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 76
+      "programmes": 99
     },
     {
       "canonical_id": "phoenix.de@HD",
       "owner": "DE-MAGENTA.xml.gz",
-      "programmes": 211
+      "programmes": 210
     },
     {
       "canonical_id": "rbbFernsehen.de@SD",
       "owner": "DE-MASTER.xml.gz",
-      "programmes": 252
+      "programmes": 257
     },
     {
       "canonical_id": "rbbFernsehen.de@Brandenburg",
@@ -21378,12 +23052,12 @@
     {
       "canonical_id": "SamsungTVPlus.at.AT12000011L",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT1400001YL",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 9
+      "programmes": 8
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT15000015I",
@@ -21403,12 +23077,12 @@
     {
       "canonical_id": "SamsungTVPlus.at.AT19000012X",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT1900003VW",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 7
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT2000029T",
@@ -21418,12 +23092,12 @@
     {
       "canonical_id": "SamsungTVPlus.at.AT2100002QM",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 11
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT2100004P1",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT22000019A",
@@ -21433,7 +23107,7 @@
     {
       "canonical_id": "SamsungTVPlus.at.AT2200004OF",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 18
+      "programmes": 12
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT23000017K",
@@ -21443,7 +23117,7 @@
     {
       "canonical_id": "SamsungTVPlus.at.AT230000238",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT2300003IC",
@@ -21453,7 +23127,7 @@
     {
       "canonical_id": "SamsungTVPlus.at.AT2400001WV",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 4
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT2600002KW",
@@ -21463,47 +23137,47 @@
     {
       "canonical_id": "SamsungTVPlus.at.AT260000326",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT2600004LH",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT26000054S",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT260000634",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 4
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT2600007N2",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT2600009ON",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT2800001N5",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT300000183",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT30000053R",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 7
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT3000006M1",
@@ -21513,7 +23187,7 @@
     {
       "canonical_id": "SamsungTVPlus.at.AT3000009D6",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT300007S8",
@@ -21523,47 +23197,47 @@
     {
       "canonical_id": "SamsungTVPlus.at.AT300008JS",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT300009BI",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT300044H2",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT300045YS",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 4
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT32000109U",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 10
+      "programmes": 9
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT3200011S4",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 11
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT3200012MN",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT3300001K9",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 9
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT3300002K2",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 9
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT33000033D",
@@ -21588,7 +23262,7 @@
     {
       "canonical_id": "SamsungTVPlus.at.AT3700004SR",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT3700005NP",
@@ -21603,7 +23277,7 @@
     {
       "canonical_id": "SamsungTVPlus.at.AT400001GG",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT4100001P2",
@@ -21618,7 +23292,7 @@
     {
       "canonical_id": "SamsungTVPlus.at.AT430000288",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT4400002IB",
@@ -21648,17 +23322,17 @@
     {
       "canonical_id": "SamsungTVPlus.at.AT4500001S1",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT4600002H5",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT48000012I",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 4
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT4800002G5",
@@ -21673,27 +23347,27 @@
     {
       "canonical_id": "SamsungTVPlus.at.AT500002TW",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 8
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT5100001HE",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT70000595",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 11
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT900003TU",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 4
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.at.AT900005FB",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 14
+      "programmes": 16
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ0500413A",
@@ -21703,27 +23377,27 @@
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ0500422A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ0500427A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ0500428A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 9
+      "programmes": 11
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ0500431A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ0500433A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ0500443A",
@@ -21733,7 +23407,7 @@
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ0500445A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 16
+      "programmes": 21
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ0500451A",
@@ -21743,12 +23417,12 @@
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ0500454A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ0500455A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ0500456A",
@@ -21758,7 +23432,7 @@
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ0500458A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 8
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ32000027V",
@@ -21798,7 +23472,7 @@
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ70000741",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ70000866",
@@ -21808,7 +23482,7 @@
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ700009X4",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATAJ7000105F",
@@ -21833,7 +23507,7 @@
     {
       "canonical_id": "SamsungTVPlus.at.ATAK3504505A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 10
+      "programmes": 9
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATAK3504506A",
@@ -21863,7 +23537,7 @@
     {
       "canonical_id": "SamsungTVPlus.at.ATBA15000088F",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBA1500010H3",
@@ -21878,12 +23552,12 @@
     {
       "canonical_id": "SamsungTVPlus.at.ATBA1500021SL",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBA1500028F9",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 11
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBA1500029H6",
@@ -21898,7 +23572,7 @@
     {
       "canonical_id": "SamsungTVPlus.at.ATBA3300006WH",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 7
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBA3300007PT",
@@ -21908,72 +23582,72 @@
     {
       "canonical_id": "SamsungTVPlus.at.ATBA3300008ZT",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 7
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBA3300009MF",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBA3300010PU",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 4
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBA3300018K1",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBA3300021BW",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBA3300023X4",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBA33000270C",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBA33000280A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBA330002946",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBA3300031VR",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBC300000551",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBC3900001W3",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBC3900002PV",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 12
+      "programmes": 11
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBC4700001JX",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBD1100002TA",
@@ -21983,7 +23657,7 @@
     {
       "canonical_id": "SamsungTVPlus.at.ATBD1500003ES",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBD190000101",
@@ -21993,37 +23667,37 @@
     {
       "canonical_id": "SamsungTVPlus.at.ATBD2500001A8",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 11
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBD2600001QK",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBD2600009FE",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 13
+      "programmes": 12
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBD2600010EC",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 10
+      "programmes": 11
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBD2600011EO",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBD26000124P",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 4
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBD2700001KY",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 4
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBD2700004VR",
@@ -22043,7 +23717,7 @@
     {
       "canonical_id": "SamsungTVPlus.at.ATBD390000167",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBD5000001SF",
@@ -22053,17 +23727,17 @@
     {
       "canonical_id": "SamsungTVPlus.at.ATBD5000002B1",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 9
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBD700001VF",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.at.ATBD800001VA",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 7
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH1100002FH",
@@ -22073,7 +23747,7 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CH1400001FA",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 9
+      "programmes": 8
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH20000288",
@@ -22083,12 +23757,12 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CH2000332L",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH2100003MU",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH220000164",
@@ -22098,7 +23772,7 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CH2200006VD",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 18
+      "programmes": 12
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH2300001O9",
@@ -22108,12 +23782,12 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CH2300002MI",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH23000031M",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH230000401",
@@ -22123,12 +23797,12 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CH2600001UH",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH2600002VE",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH26000037F",
@@ -22138,67 +23812,67 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CH2600004R1",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH26000056O",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH2600006TR",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH2600007IJ",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 4
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH28000014U",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH3000001PT",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH3000003NM",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 7
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH300006UT",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH300042FH",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 4
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH3100001XL",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH3200009XW",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 10
+      "programmes": 9
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH3200010F6",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 11
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH3200011YH",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH330000132",
@@ -22233,12 +23907,12 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CH3600001HH",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH37000043J",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH37000057T",
@@ -22258,7 +23932,7 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CH40000020D",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 23
+      "programmes": 14
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH4100001ZY",
@@ -22273,7 +23947,7 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CH4300002NC",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH4400002F5",
@@ -22303,17 +23977,17 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CH4600001X9",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 9
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH4700001E1",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH4800001LT",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 4
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH48000025D",
@@ -22328,37 +24002,37 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CH500001V2",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH500002H2",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 10
+      "programmes": 7
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH500003EH",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH5100001XI",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH700003RV",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 11
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH900001R9",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 14
+      "programmes": 16
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CH900002UF",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 4
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHAJ0500413A",
@@ -22368,17 +24042,17 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CHAJ0500422A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHAJ0500427A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHAJ0500433A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHAJ0500443A",
@@ -22388,17 +24062,17 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CHAJ0500445A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 16
+      "programmes": 21
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHAJ0500455A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHAJ0500456A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHAJ0500457A",
@@ -22408,7 +24082,7 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CHAJ0500459A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 8
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHAJ32000026J",
@@ -22423,7 +24097,7 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CHAJ3500001Z8",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHAJ700002UB",
@@ -22453,7 +24127,7 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CHAJ700007XE",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHAJ7000084D",
@@ -22463,7 +24137,7 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CHAJ700009UV",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHAJ700010NR",
@@ -22488,7 +24162,7 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CHAK3504505A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 10
+      "programmes": 9
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHAK3504510A",
@@ -22523,12 +24197,12 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CHBA1500021M5",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBA1500028KP",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 11
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBA1500029TL",
@@ -22543,7 +24217,7 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CHBA3300008LD",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 10
+      "programmes": 11
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBA3300010UC",
@@ -22553,77 +24227,77 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CHBA3300011A6",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 4
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBA3300016BA",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBA3300018TD",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBA3300023SN",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBA3300026CA",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBA3300028G3",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBA330002991",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBA3300030AJ",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBB3400001IU",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBB3900007I2",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBB46000021V",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBB49000023B",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBC3500001NJ",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 4
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBC3500004YJ",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBC40000011Y",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBC4000003K9",
@@ -22633,12 +24307,12 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CHBC40000040J",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBC4000005PW",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 12
+      "programmes": 11
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBC4000006ZD",
@@ -22648,22 +24322,22 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CHBC800001N2",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBC800003LH",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBC80000437",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBC800006EP",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD1100003CW",
@@ -22673,12 +24347,12 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD1400001NP",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 7
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD1400002AK",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD1900001JB",
@@ -22688,12 +24362,12 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD2000023S",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD200003G1",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 15
+      "programmes": 13
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD200004J8",
@@ -22703,37 +24377,37 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD2500001SY",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 11
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD26000017A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD2600011YG",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 13
+      "programmes": 12
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD2600012Y6",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 10
+      "programmes": 11
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD26000130C",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD2600014C0",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 4
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD27000011N",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 7
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD2700002B7",
@@ -22758,17 +24432,17 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD39000015L",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD4700001DY",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD5000001T0",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 9
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD5000002CB",
@@ -22788,7 +24462,7 @@
     {
       "canonical_id": "SamsungTVPlus.ch.CHBD800001D0",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 7
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE1000001CT",
@@ -22813,12 +24487,12 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE1200001JW",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE1300001XL",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE1400001OB",
@@ -22828,22 +24502,22 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE1400002W0",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 9
+      "programmes": 8
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE1400003DP",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 14
+      "programmes": 16
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE16000042J",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 4
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE1600005LU",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 4
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE160000644",
@@ -22858,7 +24532,7 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE1900001NT",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE2000004BG",
@@ -22878,17 +24552,17 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE200044MH",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE21000013K",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE21000031Z",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE22000012Y",
@@ -22898,7 +24572,7 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE2200005GX",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 18
+      "programmes": 12
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE23000015Y",
@@ -22908,12 +24582,12 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE2300002KX",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE2400001DK",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 4
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE2400002VA",
@@ -22923,7 +24597,7 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE2500001DO",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE2600003TR",
@@ -22933,37 +24607,37 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE2600004U3",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 4
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE2600005XA",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE2600006H2",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE2600007ET",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE26000085Y",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE26000096S",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE2800002LK",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE2900003ED",
@@ -22973,12 +24647,12 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE30000067I",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE3000008RT",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 7
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE3000009SE",
@@ -22988,17 +24662,17 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE3000016Q",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 11
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE300002CL",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE300003AV",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE30000489",
@@ -23013,17 +24687,17 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE300020D3",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE300061W7",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 4
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE310000218",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE3200001RI",
@@ -23033,27 +24707,27 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE32000079E",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 4
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE3200015MJ",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 10
+      "programmes": 9
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE3200016QF",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 11
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE32000175T",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE33000013J",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 9
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE33000025Y",
@@ -23088,12 +24762,12 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE3700001F7",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE3700006DB",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE3700007RY",
@@ -23113,12 +24787,12 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE3900001WX",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE3900002R1",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE3900004ZH",
@@ -23128,12 +24802,12 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE4000002I3",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE40000191",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 8
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE400011F2",
@@ -23158,7 +24832,7 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE4300001HK",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 4
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE4300003MR",
@@ -23168,7 +24842,7 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE43000043H",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE4400002AE",
@@ -23198,12 +24872,12 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE46000025H",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE4600003OS",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE4800001Y8",
@@ -23218,12 +24892,12 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE4800003M6",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 4
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE5100001TC",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.de.DE700001BN",
@@ -23233,7 +24907,7 @@
     {
       "canonical_id": "SamsungTVPlus.de.DE7000038K",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 11
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEAH3904006A",
@@ -23243,42 +24917,42 @@
     {
       "canonical_id": "SamsungTVPlus.de.DEAJ0500419A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEAJ0500422A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 9
+      "programmes": 11
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEAJ0500423A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEAJ0500428A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEAJ0500429A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEAJ2900001NG",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEAJ2900003CN",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 7
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEAJ32000012H",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 4
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEAJ3200004UF",
@@ -23323,7 +24997,7 @@
     {
       "canonical_id": "SamsungTVPlus.de.DEAJ700007OT",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEAJ700008WL",
@@ -23333,7 +25007,7 @@
     {
       "canonical_id": "SamsungTVPlus.de.DEAJ7000096L",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEAJ7000105I",
@@ -23348,7 +25022,7 @@
     {
       "canonical_id": "SamsungTVPlus.de.DEAK0500441A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 16
+      "programmes": 21
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEAK0500445A",
@@ -23358,12 +25032,12 @@
     {
       "canonical_id": "SamsungTVPlus.de.DEAK0500448A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEAK0500449A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEAK0500450A",
@@ -23373,7 +25047,7 @@
     {
       "canonical_id": "SamsungTVPlus.de.DEAK0500452A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 8
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEAK3504500A",
@@ -23398,7 +25072,7 @@
     {
       "canonical_id": "SamsungTVPlus.de.DEAK3504508A",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 10
+      "programmes": 9
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEAK3504517A",
@@ -23408,7 +25082,7 @@
     {
       "canonical_id": "SamsungTVPlus.de.DEBA1500009ZY",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBA1500011RJ",
@@ -23423,12 +25097,12 @@
     {
       "canonical_id": "SamsungTVPlus.de.DEBA15000227H",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBA15000298V",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 11
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBA150003050",
@@ -23439,6 +25113,11 @@
       "canonical_id": "SamsungTVPlus.de.DEBA2200007V6",
       "owner": "DE-SAMSUNG.xml.gz",
       "programmes": 2
+    },
+    {
+      "canonical_id": "SamsungTVPlus.de.DEBA2200008NL",
+      "owner": "DE-SAMSUNG.xml.gz",
+      "programmes": 1
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBA3300001L9",
@@ -23453,12 +25132,12 @@
     {
       "canonical_id": "SamsungTVPlus.de.DEBA3300014CV",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 7
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBA3300016EV",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 4
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBA3300019EB",
@@ -23468,42 +25147,42 @@
     {
       "canonical_id": "SamsungTVPlus.de.DEBA3300027ZJ",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBA3300030O1",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 4
+      "programmes": 7
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBA3300032UV",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBA3300034HH",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBA3300038NO",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBA3300039TT",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBA3300040CR",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBA3300042XG",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBC2100001ZJ",
@@ -23518,47 +25197,52 @@
     {
       "canonical_id": "SamsungTVPlus.de.DEBC220000422",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBC2300001EU",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBC3000003IG",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBC35000020P",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBC470000128",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBC4700002Z2",
+      "owner": "DE-SAMSUNG.xml.gz",
+      "programmes": 3
+    },
+    {
+      "canonical_id": "SamsungTVPlus.de.DEBC4700004VZ",
       "owner": "DE-SAMSUNG.xml.gz",
       "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBC47000055Z",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 6
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBC4700007JV",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBD11000019M",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 12
+      "programmes": 11
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBD1100002II",
@@ -23573,37 +25257,37 @@
     {
       "canonical_id": "SamsungTVPlus.de.DEBD1900002CB",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 6
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBD2400001PC",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 11
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBD26000034M",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 13
+      "programmes": 12
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBD2600004U7",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 10
+      "programmes": 11
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBD2600005U6",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 8
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBD260000692",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 4
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBD2700001ID",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 2
+      "programmes": 4
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBD2700003W5",
@@ -23628,7 +25312,7 @@
     {
       "canonical_id": "SamsungTVPlus.de.DEBD390000181",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 7
+      "programmes": 10
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBD4100002H1",
@@ -23638,12 +25322,12 @@
     {
       "canonical_id": "SamsungTVPlus.de.DEBD4700001UN",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBD4900001QV",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 3
+      "programmes": 2
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBD5000001VL",
@@ -23653,22 +25337,22 @@
     {
       "canonical_id": "SamsungTVPlus.de.DEBD5000002EW",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 9
+      "programmes": 5
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBD5100001XP",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 38
+      "programmes": 37
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBD700001C5",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 3
     },
     {
       "canonical_id": "SamsungTVPlus.de.DEBD800001S4",
       "owner": "DE-SAMSUNG.xml.gz",
-      "programmes": 5
+      "programmes": 7
     },
     {
       "canonical_id": "PlutoTV.de.5ad9b7aae738977e2c312132",
@@ -23678,7 +25362,7 @@
     {
       "canonical_id": "PlutoTV.de.5caf325764025859afdd6c4d",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 49
+      "programmes": 50
     },
     {
       "canonical_id": "PlutoTV.de.5caf330ea5068259a32320fd",
@@ -23688,12 +25372,12 @@
     {
       "canonical_id": "PlutoTV.de.5cb5cfe5caf83414128f209e",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 32
+      "programmes": 33
     },
     {
       "canonical_id": "PlutoTV.de.5cb5d043a461406ffe3fb2de",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 37
+      "programmes": 38
     },
     {
       "canonical_id": "PlutoTV.de.5cd149f021cb6c55e258bbe8",
@@ -23723,7 +25407,7 @@
     {
       "canonical_id": "PlutoTV.de.5dc280c9aa218c0009724b4b",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 57
+      "programmes": 58
     },
     {
       "canonical_id": "PlutoTV.de.5dc287ce3086a20009f5024c",
@@ -23733,7 +25417,7 @@
     {
       "canonical_id": "PlutoTV.de.5ddbf866b1862a0009a0648e",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 36
+      "programmes": 35
     },
     {
       "canonical_id": "PlutoTV.de.5e7cb84a172a0f0007da69e4",
@@ -23753,12 +25437,12 @@
     {
       "canonical_id": "PlutoTV.de.5f760c3d41aa2d0007bfde19",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 49
+      "programmes": 48
     },
     {
       "canonical_id": "PlutoTV.de.60080e8a4bf36000076a81b1",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 32
+      "programmes": 33
     },
     {
       "canonical_id": "PlutoTV.de.6054a9f4bc8a5f000771504c",
@@ -23769,6 +25453,11 @@
       "canonical_id": "PlutoTV.de.60afb576053df900076fa2f0",
       "owner": "DE-PLUTO.xml.gz",
       "programmes": 37
+    },
+    {
+      "canonical_id": "PlutoTV.de.60c716084d842c00085f6e64",
+      "owner": "DE-PLUTO.xml.gz",
+      "programmes": 103
     },
     {
       "canonical_id": "PlutoTV.de.60e4519e6873180007d3cddb",
@@ -23823,7 +25512,7 @@
     {
       "canonical_id": "PlutoTV.de.62cebd7302478b00073a6b71",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 36
+      "programmes": 37
     },
     {
       "canonical_id": "PlutoTV.de.62cebf042ffc6d0007c4e59a",
@@ -23838,7 +25527,7 @@
     {
       "canonical_id": "PlutoTV.de.6305ca798bd95300072d2f93",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 28
+      "programmes": 30
     },
     {
       "canonical_id": "PlutoTV.de.638f2983dcd9100008c2374d",
@@ -23848,7 +25537,7 @@
     {
       "canonical_id": "PlutoTV.de.638f2bc7bc363100072f02dd",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 36
+      "programmes": 37
     },
     {
       "canonical_id": "PlutoTV.de.642abea1283aa4000805bb5b",
@@ -23858,7 +25547,7 @@
     {
       "canonical_id": "PlutoTV.de.642ad2127ef83900085f8910",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 63
+      "programmes": 62
     },
     {
       "canonical_id": "PlutoTV.de.642d7e029189ce0008958af5",
@@ -23903,7 +25592,7 @@
     {
       "canonical_id": "PlutoTV.de.646b14d0e1979c0008915a09",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 65
+      "programmes": 64
     },
     {
       "canonical_id": "PlutoTV.de.646b150a15939400089e2702",
@@ -23918,12 +25607,12 @@
     {
       "canonical_id": "PlutoTV.de.64be7398e4391c0008cdedfe",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 21
+      "programmes": 22
     },
     {
       "canonical_id": "PlutoTV.de.64be745340962900080b55e7",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 36
+      "programmes": 35
     },
     {
       "canonical_id": "PlutoTV.de.64c109735dc1660008a4a2dc",
@@ -23943,7 +25632,7 @@
     {
       "canonical_id": "PlutoTV.de.65253d66c52b3600083d8dd2",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 37
+      "programmes": 38
     },
     {
       "canonical_id": "PlutoTV.de.655ca3d1fbc15b00081f1186",
@@ -23963,7 +25652,7 @@
     {
       "canonical_id": "PlutoTV.de.65a67dd13af63d0008257f17",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 40
+      "programmes": 39
     },
     {
       "canonical_id": "PlutoTV.de.65b923f90cb1a100088a03ab",
@@ -23983,7 +25672,7 @@
     {
       "canonical_id": "PlutoTV.de.65dde5848145cb00083277f6",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 31
+      "programmes": 32
     },
     {
       "canonical_id": "PlutoTV.de.65dde5ef28730900089af7cf",
@@ -23993,7 +25682,7 @@
     {
       "canonical_id": "PlutoTV.de.65dde626ec9fda0008b3dc89",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 32
+      "programmes": 31
     },
     {
       "canonical_id": "PlutoTV.de.660bfc032433010008def35a",
@@ -24008,7 +25697,7 @@
     {
       "canonical_id": "PlutoTV.de.66337e6ba0a74e000889563b",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 36
+      "programmes": 35
     },
     {
       "canonical_id": "PlutoTV.de.66337ea1307fa300082c28a0",
@@ -24053,7 +25742,7 @@
     {
       "canonical_id": "PlutoTV.de.667d63d236a2f90008f72269",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 64
+      "programmes": 63
     },
     {
       "canonical_id": "PlutoTV.de.66a244d5cd0d3100083b1e47",
@@ -24063,17 +25752,17 @@
     {
       "canonical_id": "PlutoTV.de.66c45b1803e3b20008d8c200",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 43
+      "programmes": 44
     },
     {
       "canonical_id": "PlutoTV.de.66c6fc06489bab0008b6f9da",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 64
+      "programmes": 63
     },
     {
       "canonical_id": "PlutoTV.de.66c6fcfc6838ee00085beb1a",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 37
+      "programmes": 38
     },
     {
       "canonical_id": "PlutoTV.de.677fafd91da79bfe4fb0b4ec",
@@ -24093,7 +25782,7 @@
     {
       "canonical_id": "PlutoTV.de.67a324d221af380008105d6f",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 63
+      "programmes": 62
     },
     {
       "canonical_id": "PlutoTV.de.67d984c989788ef7f058b084",
@@ -24103,7 +25792,7 @@
     {
       "canonical_id": "PlutoTV.de.67dc21ce5a15c0759a07ee19",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 37
+      "programmes": 36
     },
     {
       "canonical_id": "PlutoTV.de.67ebbdced2832b463faa1e79",
@@ -24113,17 +25802,12 @@
     {
       "canonical_id": "PlutoTV.de.67ed0c86f7c5d70b90889a51",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 37
+      "programmes": 36
     },
     {
       "canonical_id": "PlutoTV.de.67f3eb800a1beb98767ca748",
       "owner": "DE-PLUTO.xml.gz",
       "programmes": 60
-    },
-    {
-      "canonical_id": "PlutoTV.de.67f68bd2135aeda9ddf0ef54",
-      "owner": "DE-PLUTO.xml.gz",
-      "programmes": 67
     },
     {
       "canonical_id": "PlutoTV.de.67ff7dd84906b1acfad97330",
@@ -24138,7 +25822,7 @@
     {
       "canonical_id": "PlutoTV.de.684ac10236c9361b1977f7bc",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 22
+      "programmes": 23
     },
     {
       "canonical_id": "PlutoTV.de.685136fb33a52de120bbb086",
@@ -24148,7 +25832,7 @@
     {
       "canonical_id": "PlutoTV.de.68590366010ddd78ef837d29",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 30
+      "programmes": 31
     },
     {
       "canonical_id": "PlutoTV.de.685aaec481c345899e4458bb",
@@ -24158,7 +25842,7 @@
     {
       "canonical_id": "PlutoTV.de.6864e8f264d94c1425fb4563",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 25
+      "programmes": 26
     },
     {
       "canonical_id": "PlutoTV.de.6866525c8a412a0e95c438b4",
@@ -24168,7 +25852,7 @@
     {
       "canonical_id": "PlutoTV.de.686cfef52704ca31d85c4bf1",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 58
+      "programmes": 56
     },
     {
       "canonical_id": "PlutoTV.de.686cff3224918d4300fa542b",
@@ -24198,12 +25882,12 @@
     {
       "canonical_id": "PlutoTV.de.688735087b2cf33d01a2d411",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 37
+      "programmes": 36
     },
     {
       "canonical_id": "PlutoTV.de.68ad90673efb41cd97c95825",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 36
+      "programmes": 35
     },
     {
       "canonical_id": "PlutoTV.de.68d27437e6767bdeb23f0336",
@@ -24228,12 +25912,12 @@
     {
       "canonical_id": "PlutoTV.de.6914913274601d957ae35565",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 38
+      "programmes": 39
     },
     {
       "canonical_id": "PlutoTV.de.691491c6bb69fb3258c3524a",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 38
+      "programmes": 39
     },
     {
       "canonical_id": "PlutoTV.de.691b2b690d121b44ad4a53ef",
@@ -24258,12 +25942,12 @@
     {
       "canonical_id": "PlutoTV.de.697a0577f9c3aa5a215a4ef8",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 73
+      "programmes": 72
     },
     {
       "canonical_id": "PlutoTV.de.6989b64839dd847194cadcd7",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 40
+      "programmes": 42
     },
     {
       "canonical_id": "PlutoTV.de.69a554497ed3b3fff0b9ca80",
@@ -24273,12 +25957,12 @@
     {
       "canonical_id": "PlutoTV.de.69b015c5d29cc97de7da4af8",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 33
+      "programmes": 32
     },
     {
       "canonical_id": "PlutoTV.de.69b0160da9b840a456a11b4a",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 35
+      "programmes": 36
     },
     {
       "canonical_id": "PlutoTV.de.69b01641a9b840a456a11c18",
@@ -24288,7 +25972,7 @@
     {
       "canonical_id": "PlutoTV.de.69b0167477cdde1f05c8a625",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 33
+      "programmes": 36
     },
     {
       "canonical_id": "PlutoTV.de.69b14863dd687227e1e4b6b2",
@@ -24303,43 +25987,43 @@
     {
       "canonical_id": "PlutoTV.de.69c2ac2b14c0213702da7a29",
       "owner": "DE-PLUTO.xml.gz",
-      "programmes": 35
+      "programmes": 34
     }
   ],
   "outputs": {
     "DE-MASTER.xml.gz": {
-      "channels": 862,
-      "programmes": 141855
+      "channels": 868,
+      "programmes": 143221
     },
     "DE-MAGENTA.xml.gz": {
       "channels": 266,
-      "programmes": 55794
+      "programmes": 55992
     },
     "DE-SAMSUNG.xml.gz": {
-      "channels": 462,
-      "programmes": 2827
+      "channels": 464,
+      "programmes": 2754
     },
     "DE-PLUTO.xml.gz": {
       "channels": 175,
-      "programmes": 8145
+      "programmes": 8196
     }
   },
   "input_sha256": {
-    "DE-MASTER.xml.gz": "fee6d6e4760319dba28c2af0483c3835350fdc91477dcaa7e2e22a5afbfd0c8a",
-    "DE-MAGENTA.xml.gz": "6be78f270584df954daf011b355dd47ea57e76083f1761b60b81f2f024522a8a",
-    "DE-SAMSUNG.xml.gz": "b83f91e532164bdc750ac016b2b9bb221d406a53f0589ed2cd743d4d21762ac0",
-    "DE-PLUTO.xml.gz": "41201028c6fdcda6386fff18812b168c08a203da08547f083a6bb4bf7ca9303f",
-    "DE-AMAZON.xml.gz": "7ed663a83d908caa9ac5667a3fc0795cc6c6a5bffdf095cd95010e611b41f1dc"
+    "DE-MASTER.xml.gz": "a9c0a3153ea4afa9999d937f95286da4d88aeb6e63785b116689abf966b78645",
+    "DE-MAGENTA.xml.gz": "5008eaac4a7d4aabf6a45b1bfd31a467c54e164fccaac47d5b4bed3ccfebc96f",
+    "DE-SAMSUNG.xml.gz": "c757166ec21d765cb030fdadbd1f3ef1791a969aa75d06f697a930f122b4c1f6",
+    "DE-PLUTO.xml.gz": "ed3b5e7f6d9eb1ac6d7f983dc00deb4a0f52fefb6d4c8d816d32b41208a19f70",
+    "DE-AMAZON.xml.gz": "489f35470acfe995eeda0e015e0a4262af4889be851a472049736e3a2d123bc1"
   },
   "output_sha256": {
-    "DE-MASTER.xml.gz": "fd674b5771b0034ff1eb77a347be49e7dc279c2c4498212266bc97e9f71a3260",
-    "DE-MAGENTA.xml.gz": "a377e53a65e27754e3c3b8ee98974fbe61084dad424e50f7652d8d525a25c913",
-    "DE-SAMSUNG.xml.gz": "0cbf406612b4f81b263f3a18e83c93f116ef5049a593122f616f6d4360f753aa",
-    "DE-PLUTO.xml.gz": "7a1b1a6e1362aa9fd4a91ee20576c86afec2989e1a43a6a2716ea7f22409df2f"
+    "DE-MASTER.xml.gz": "cb9ed7265785aa696683279f6dc42d2c33d25f6d592008834bc49ac447b17998",
+    "DE-MAGENTA.xml.gz": "e41dd5c495bd528c3bf235b328bedf6f96fd7a8f895c70f60669ffa2942224a4",
+    "DE-SAMSUNG.xml.gz": "dd1e02ad4b184c20ccf6945ec12f2110d982b9bf00eae826c9a9b19476b0fd55",
+    "DE-PLUTO.xml.gz": "de34731f25ad0682c53efb1ed5e6994928c10bc61f96cd4e6fa2acf1e008f987"
   },
   "evidence_sha256": {
     "quarantine.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "schedule-alternatives.jsonl": "d885b9952e2b88b146fcad1741a1df1eb2acd82fda77f9b3afc086f18090942a"
+    "schedule-alternatives.jsonl": "b6625d85e825fa49e14feb1dec6c4179399384a4b339e7b1218790546f27dfb2"
   },
   "retired_empty_feeds": [
     "DE-AMAZON.xml.gz"
@@ -26013,17 +27697,6 @@
       {
         "left": [
           "DE-MASTER.xml.gz",
-          "PlutoTV.de.60c716084d842c00085f6e64"
-        ],
-        "right": [
-          "DE-PLUTO.xml.gz",
-          "PlutoTV.de.60c716084d842c00085f6e64"
-        ],
-        "reason": "same-id"
-      },
-      {
-        "left": [
-          "DE-MASTER.xml.gz",
           "PlutoTV.de.60ed498c4248a400077c0b9d"
         ],
         "right": [
@@ -26293,6 +27966,17 @@
         "right": [
           "DE-PLUTO.xml.gz",
           "PlutoTV.de.67f3eb1c443f0671bc03ece8"
+        ],
+        "reason": "same-id"
+      },
+      {
+        "left": [
+          "DE-MASTER.xml.gz",
+          "PlutoTV.de.67f68bd2135aeda9ddf0ef54"
+        ],
+        "right": [
+          "DE-PLUTO.xml.gz",
+          "PlutoTV.de.67f68bd2135aeda9ddf0ef54"
         ],
         "reason": "same-id"
       },
@@ -27806,20 +29490,20 @@
     ],
     "outputs": {
       "DE-MASTER.xml.gz": {
-        "channels": 862,
-        "programmes": 141855
+        "channels": 868,
+        "programmes": 143221
       },
       "DE-MAGENTA.xml.gz": {
         "channels": 266,
-        "programmes": 55794
+        "programmes": 55992
       },
       "DE-SAMSUNG.xml.gz": {
-        "channels": 462,
-        "programmes": 2827
+        "channels": 464,
+        "programmes": 2754
       },
       "DE-PLUTO.xml.gz": {
         "channels": 175,
-        "programmes": 8145
+        "programmes": 8196
       }
     },
     "aliases": [
@@ -27921,19 +29605,19 @@
     "baseline_outputs": {
       "DE-MASTER.xml.gz": {
         "channels": 862,
-        "programmes": 141927
+        "programmes": 141855
       },
       "DE-MAGENTA.xml.gz": {
         "channels": 266,
-        "programmes": 55536
+        "programmes": 55794
       },
       "DE-SAMSUNG.xml.gz": {
-        "channels": 465,
-        "programmes": 2848
+        "channels": 462,
+        "programmes": 2827
       },
       "DE-PLUTO.xml.gz": {
         "channels": 175,
-        "programmes": 8152
+        "programmes": 8145
       }
     },
     "ownership_migrations": []
