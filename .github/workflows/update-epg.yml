@@ -228,6 +228,7 @@ jobs:
             --required-active-channel SkyCinemaFeelgood.de@Plus24HD
             --required-display-name "SkyCinemaFeelgood.de@Plus24HD=Sky Cinema Feelgood HD +24"
             --required-active-channel Silverline.de
+            --required-now-channel Silverline.de
             --required-active-channel SerienPlus.de@HD
             --required-active-channel SerienPlus.de@SD
             --required-active-channel OneTerra.de@SD

@@ -90,6 +90,7 @@ def main() -> int:
     parser.add_argument("--max-hard-errors", type=int, default=0)
     parser.add_argument("--stale-hours", type=int, default=12)
     parser.add_argument("--large-gap-hours", type=int, default=6)
+    parser.add_argument("--required-now-channel", action="append", default=[], help="Channel ID that must have a real programme covering the current UTC instant.")
     args = parser.parse_args()
 
     try:
@@ -186,6 +187,14 @@ def main() -> int:
                 add("WARNING", "large_schedule_gap", channel_id, name, str(int(gap.total_seconds())), f"gap exceeds {args.large_gap_hours}h")
             if stop > previous_stop:
                 previous_stop, previous_title = stop, title
+
+    for channel_id in args.required_now_channel:
+        items = schedules.get(channel_id, [])
+        if not any(start <= now < stop for start, stop, _ in items):
+            name = display_name(channels[channel_id]) if channel_id in channels else ""
+            next_start = min((start for start, _, _ in items if start > now), default=None)
+            latest_stop = max((stop for _, stop, _ in items), default=None)
+            add("ERROR", "required_channel_no_current_programme", channel_id, name, now.isoformat(), f"next_start={next_start}; latest_stop={latest_stop}; valid_programmes={len(items)}")
 
     coverage = coverage_rows(args.coverage)
     for channel_id, node in channels.items():
