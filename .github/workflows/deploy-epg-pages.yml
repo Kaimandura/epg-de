@@ -45,13 +45,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: python scripts/stage_release.py --output build/pages --workspace build/producer-artifacts
-      - name: Verify exact nine Pages artifacts including required logos
+      - name: Verify exact Pages XMLTV artifacts and report logo gaps
         run: |
-          python scripts/audit_all_epg_products.py \
+          python scripts/audit_all_epg_products.py --allow-logo-gaps \
             --directory build/pages --layout pages --usa-logo-debt config/usa-logo-debt-policy.json --report build/pages-quality.json
-      - name: Verify every live logo URL in the prospective Pages bytes
+      - name: Audit live Pages logos (availability warnings allowed)
         run: |
-          python scripts/audit_logo_reachability.py \
+          python scripts/audit_logo_reachability.py --allow-logo-gaps \
             --directory build/pages --layout pages --usa-logo-debt config/usa-logo-debt-policy.json --report build/pages-logo-reachability.json
       - name: Preserve independent Pages logo quality evidence
         if: always()

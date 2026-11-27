@@ -18,7 +18,7 @@ on:
           - fast
           - deep
   schedule:
-    - cron: "17 2 * * *"
+    - cron: "17 */3 * * *"
     - cron: "47 3 * * 0"
   push:
     branches:
@@ -228,6 +228,7 @@ jobs:
             --required-active-channel SkyCinemaFeelgood.de@Plus24HD
             --required-display-name "SkyCinemaFeelgood.de@Plus24HD=Sky Cinema Feelgood HD +24"
             --required-active-channel Silverline.de
+            --required-contiguous-hours Silverline.de=24
             --required-active-channel SerienPlus.de@HD
             --required-active-channel SerienPlus.de@SD
             --required-active-channel OneTerra.de@SD
@@ -285,7 +286,8 @@ jobs:
             --gzip build/validated-input-de/samsung.xml.gz \
             --min-channels 20 \
             --min-programmes 1000 \
-            --require-display-names
+            --require-display-names \
+            --min-future-hours 4
           python scripts/validate_channel_namespace.py \
             build/validated-input-de/samsung.xml \
             --require-prefix SamsungTVPlus.

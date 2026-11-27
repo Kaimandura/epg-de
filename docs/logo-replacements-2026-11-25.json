@@ -1,0 +1,566 @@
+{
+  "checked_at": "2026-11-25T06:51:23.809106+00:00",
+  "scope": "46 exact channel logo replacements; does not certify the complete release",
+  "upstream_report_run": 45376327320,
+  "replacements": {
+    "60Minutes.pluto": {
+      "url": "https://images.pluto.tv/channels/66b646f9cd0d3100086af83c/colorLogoPNG.png",
+      "source": "https://i.mjh.nz/PlutoTV/us.xml.gz",
+      "source_id": "66b646f9cd0d3100086af83c",
+      "name": "60 Minutes",
+      "check": {
+        "url": "https://images.pluto.tv/channels/66b646f9cd0d3100086af83c/colorLogoPNG.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "AntiquesRoadshowUK.pluto": {
+      "url": "https://images.pluto.tv/channels/5ce44810b421747ae467b7cd/colorLogoPNG_1782832480489.png",
+      "source": "https://i.mjh.nz/PlutoTV/us.xml.gz",
+      "source_id": "5ce44810b421747ae467b7cd",
+      "name": "Antiques Roadshow UK",
+      "check": {
+        "url": "https://images.pluto.tv/channels/5ce44810b421747ae467b7cd/colorLogoPNG_1782832480489.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "BravoVault.pluto": {
+      "url": "https://images.pluto.tv/channels/6549310a53fc97000838fcc9/colorLogoPNG.png",
+      "source": "https://i.mjh.nz/PlutoTV/us.xml.gz",
+      "source_id": "6549310a53fc97000838fcc9",
+      "name": "Bravo Vault",
+      "check": {
+        "url": "https://images.pluto.tv/channels/6549310a53fc97000838fcc9/colorLogoPNG.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "CBSSportsHQ.pluto": {
+      "url": "https://images.pluto.tv/channels/5e9f2c05172a0f0007db4786/colorLogoPNG_1731837352945.png",
+      "source": "https://i.mjh.nz/PlutoTV/us.xml.gz",
+      "source_id": "5e9f2c05172a0f0007db4786",
+      "name": "CBS Sports HQ",
+      "check": {
+        "url": "https://images.pluto.tv/channels/5e9f2c05172a0f0007db4786/colorLogoPNG_1731837352945.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "MonsterJam.pluto": {
+      "url": "https://images.pluto.tv/channels/65c69b683ba51e00084534a3/colorLogoPNG.png",
+      "source": "https://i.mjh.nz/PlutoTV/us.xml.gz",
+      "source_id": "65c69b683ba51e00084534a3",
+      "name": "Monster Jam",
+      "check": {
+        "url": "https://images.pluto.tv/channels/65c69b683ba51e00084534a3/colorLogoPNG.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "Nosey.pluto": {
+      "url": "https://images.pluto.tv/channels/5aec96ec5126c2157123c657/colorLogoPNG.png",
+      "source": "https://i.mjh.nz/PlutoTV/us.xml.gz",
+      "source_id": "5aec96ec5126c2157123c657",
+      "name": "Nosey",
+      "check": {
+        "url": "https://images.pluto.tv/channels/5aec96ec5126c2157123c657/colorLogoPNG.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "OANPlus.pluto": {
+      "url": "https://images.pluto.tv/channels/5e7cf6c7b156d500078c5f44/colorLogoPNG.png",
+      "source": "https://i.mjh.nz/PlutoTV/us.xml.gz",
+      "source_id": "5e7cf6c7b156d500078c5f44",
+      "name": "OAN Plus",
+      "check": {
+        "url": "https://images.pluto.tv/channels/5e7cf6c7b156d500078c5f44/colorLogoPNG.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "SupermarketSweep.pluto": {
+      "url": "https://images.pluto.tv/channels/649ddbfb6f29ec000874ca9e/colorLogoPNG.png",
+      "source": "https://i.mjh.nz/PlutoTV/us.xml.gz",
+      "source_id": "649ddbfb6f29ec000874ca9e",
+      "name": "Supermarket Sweep",
+      "check": {
+        "url": "https://images.pluto.tv/channels/649ddbfb6f29ec000874ca9e/colorLogoPNG.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "FloRacing.us": {
+      "url": "https://images.fubo.tv/channel-config-ui/station-logos/on-dark/floracing-white.png",
+      "source": "https://iptv-org.github.io/api/logos.json",
+      "source_id": "FloRacing.us",
+      "name": "FloRacing",
+      "check": {
+        "url": "https://images.fubo.tv/channel-config-ui/station-logos/on-dark/floracing-white.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "2KstoNowPopHits.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/new-xtra-channels/2KsToNowPopHits.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "2Ks to Now Pop Hits",
+      "source_id": "2Ks to Now Pop Hits",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/new-xtra-channels/2KsToNowPopHits.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "60s70s.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/60s-70s/60s70s.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "60s/70s",
+      "source_id": "60s/70s",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/60s-70s/60s70s.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "60s70sRAndBHits.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/60s-70s/60s70sRnBHits-126-500x400-P.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "60s/70s R&B Hits",
+      "source_id": "60s/70s R&B Hits",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/60s-70s/60s70sRnBHits-126-500x400-P.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "60sGold.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/Music/x-Pop/60s-gold/60sGold-126-500x400-P.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "60s Gold",
+      "source_id": "60s Gold",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/Music/x-Pop/60s-gold/60sGold-126-500x400-P.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "80son8Top100.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/80s-on-8-Top-100/80sOn8Top100.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "80s on 8 Top 100",
+      "source_id": "80s on 8 Top 100",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/80s-on-8-Top-100/80sOn8Top100.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "80son8Workout.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/80s-on-8-Workout/80sOn8Workout.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "80s on 8 Workout",
+      "source_id": "80s on 8 Workout",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/80s-on-8-Workout/80sOn8Workout.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "MadDogSportsRadio.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/SportsChannels/Mad-Dog-Sports-Radio/Mad_Dog_Sports_Radio.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "Mad Dog Sports Radio",
+      "source_id": "Mad Dog Sports Radio",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/SportsChannels/Mad-Dog-Sports-Radio/Mad_Dog_Sports_Radio.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "Mazaa.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/mazaa/Mazaa-126-500x400-P.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "Mazaa",
+      "source_id": "Mazaa",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/mazaa/Mazaa-126-500x400-P.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "MessageWorship.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/Music/x-Christian/The-Message/MessageWorship-126-500x400-P.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "Message Worship",
+      "source_id": "Message Worship",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/Music/x-Christian/The-Message/MessageWorship-126-500x400-P.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "MilwaukeeBrewers.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/SportsPlayByPlay/x-MLB-Teams-SVG/MilwaukeeBrewers-126-500x400-P.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "Milwaukee Brewers",
+      "source_id": "Milwaukee Brewers",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/SportsPlayByPlay/x-MLB-Teams-SVG/MilwaukeeBrewers-126-500x400-P.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "MontrealCanadiens.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/SportsPlayByPlay/x-NHL-Teams-SVG/NHL_Canadiens_Primary.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "Montreal Canadiens",
+      "source_id": "Montreal Canadiens",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/SportsPlayByPlay/x-NHL-Teams-SVG/NHL_Canadiens_Primary.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "Octane.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/Music/x-Rock/Octane/Octane-126-500x400-P1.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "Octane",
+      "source_id": "Octane",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/Music/x-Rock/Octane/Octane-126-500x400-P1.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "PrimeCountryDeepCuts.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/prime-country-deep-cuts/PrimeCountryDeepCuts-4C.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "Prime Country Deep Cuts",
+      "source_id": "Prime Country Deep Cuts",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/prime-country-deep-cuts/PrimeCountryDeepCuts-4C.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "ProgRockRadio.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/prog-rock/ProgRockRadio-126-500x400-P.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "Prog Rock Radio",
+      "source_id": "Prog Rock Radio",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/prog-rock/ProgRockRadio-126-500x400-P.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "PulseJustMusic.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/the-pulse-just-music/ThePulseJustMusic-126-500x400-P.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "Pulse Just Music",
+      "source_id": "Pulse Just Music",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/the-pulse-just-music/ThePulseJustMusic-126-500x400-P.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "PulseTopHits.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/Pulse-Top-Hits/ThePulseTopHits-126-500x400-P.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "Pulse Top Hits",
+      "source_id": "Pulse Top Hits",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/Pulse-Top-Hits/ThePulseTopHits-126-500x400-P.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "PureComedy.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/Comedy/pure-comedy/PureComedy-126-500x400-P.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "Pure Comedy",
+      "source_id": "Pure Comedy",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/Comedy/pure-comedy/PureComedy-126-500x400-P.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "QueensofPop.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/queens-of-pop/QueensOfPop-126-500x400-P.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "Queens of Pop",
+      "source_id": "Queens of Pop",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/queens-of-pop/QueensOfPop-126-500x400-P.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "QueensofRAndB.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/queens-of-r-b/QueensOfRnB-126-500x400-P.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "Queens of R&B",
+      "source_id": "Queens of R&B",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/queens-of-r-b/QueensOfRnB-126-500x400-P.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "RedWhiteAndBooze.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/Music/x-Country/Red-White-and-Booze/RedWhiteBooze_SMPL_4C.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "Red White & Booze",
+      "source_id": "Red White & Booze",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/Music/x-Country/Red-White-and-Booze/RedWhiteBooze_SMPL_4C.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "ReggaeTop100.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/reggae-top-100/ReggaeTop100-126-500x400-P.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "Reggae Top 100",
+      "source_id": "Reggae Top 100",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/XtraChannels/reggae-top-100/ReggaeTop100-126-500x400-P.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "RoadDogTrucking.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/TalkAndEntertainment/Entertainment/Road-Dog-Trucking/RoadDogTrucking-126-500x400-P.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "Road Dog Trucking",
+      "source_id": "Road Dog Trucking",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/TalkAndEntertainment/Entertainment/Road-Dog-Trucking/RoadDogTrucking-126-500x400-P.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "RockTheBellsRadio.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/Music/x-Hip-HopRaB/Rock-the-Bells-Radio/RockTheBellsRadio-126-500x400-P4.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "Rock The Bells Radio",
+      "source_id": "Rock The Bells Radio",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/Music/x-Hip-HopRaB/Rock-the-Bells-Radio/RockTheBellsRadio-126-500x400-P4.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "SiriusXMComesAlive.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/Music/x-Rock/SiriusXM-Comes-Alive/SXMcomesAlive.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "SiriusXM Comes Alive!",
+      "source_id": "SiriusXM Comes Alive!",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/Music/x-Rock/SiriusXM-Comes-Alive/SXMcomesAlive.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "ESPNXtra.sxm": {
+      "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/SportsChannels/ESPN-Xtra/ESPN-Xtra.svg",
+      "source": "https://www.siriusxm.com/channels",
+      "name": "ESPN Xtra",
+      "source_id": "ESPN Xtra",
+      "check": {
+        "url": "https://www.siriusxm.com/content/dam/sxm-com/channel-logos/SportsChannels/ESPN-Xtra/ESPN-Xtra.svg",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/svg+xml"
+      }
+    },
+    "IceRoadTruckers.us": {
+      "url": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBB520002173_20260825T040228SQUARE.png",
+      "source": "https://i.mjh.nz/SamsungTVPlus/us.xml.gz",
+      "source_id": "USBB520002173",
+      "name": "Ice Road Truckers",
+      "check": {
+        "url": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBB520002173_20260825T040228SQUARE.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "MillionDollarListingVault.us": {
+      "url": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBB3200024V5_20260421T142931SQUARE.png",
+      "source": "https://i.mjh.nz/SamsungTVPlus/us.xml.gz",
+      "source_id": "USBB3200024V5",
+      "name": "Million Dollar Listing Vault",
+      "check": {
+        "url": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/USBB3200024V5_20260421T142931SQUARE.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "BETJams.us": {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/bet-jams-us.png",
+      "source": "https://github.com/tv-logo/tv-logos",
+      "source_id": "bet-jams-us.png",
+      "name": "USA: BET Jams",
+      "check": {
+        "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/bet-jams-us.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "NBALeaguePass10.us": {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+      "source": "https://github.com/tv-logo/tv-logos",
+      "source_id": "nba-league-pass-us.png",
+      "name": "USA: NBA League Pass 10",
+      "check": {
+        "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "NBALeaguePass2.us": {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+      "source": "https://github.com/tv-logo/tv-logos",
+      "source_id": "nba-league-pass-us.png",
+      "name": "USA: NBA League Pass 2",
+      "check": {
+        "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "NBALeaguePass3.us": {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+      "source": "https://github.com/tv-logo/tv-logos",
+      "source_id": "nba-league-pass-us.png",
+      "name": "USA: NBA League Pass 3",
+      "check": {
+        "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "NBALeaguePass4.us": {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+      "source": "https://github.com/tv-logo/tv-logos",
+      "source_id": "nba-league-pass-us.png",
+      "name": "USA: NBA League Pass 4",
+      "check": {
+        "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "NBALeaguePass5.us": {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+      "source": "https://github.com/tv-logo/tv-logos",
+      "source_id": "nba-league-pass-us.png",
+      "name": "USA: NBA League Pass 5",
+      "check": {
+        "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "NBALeaguePass6.us": {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+      "source": "https://github.com/tv-logo/tv-logos",
+      "source_id": "nba-league-pass-us.png",
+      "name": "USA: NBA League Pass 6",
+      "check": {
+        "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "NBALeaguePass7.us": {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+      "source": "https://github.com/tv-logo/tv-logos",
+      "source_id": "nba-league-pass-us.png",
+      "name": "USA: NBA League Pass 7",
+      "check": {
+        "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "NBALeaguePass8.us": {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+      "source": "https://github.com/tv-logo/tv-logos",
+      "source_id": "nba-league-pass-us.png",
+      "name": "USA: NBA League Pass 8",
+      "check": {
+        "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    },
+    "NBALeaguePass9.us": {
+      "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+      "source": "https://github.com/tv-logo/tv-logos",
+      "source_id": "nba-league-pass-us.png",
+      "name": "USA: NBA League Pass 9",
+      "check": {
+        "url": "https://raw.githubusercontent.com/tv-logo/tv-logos/d32e347bb7c4c640dceec23957802ad9182f58a6/countries/united-states/nba-league-pass-us.png",
+        "ok": true,
+        "http_status": 200,
+        "content_type": "image/png"
+      }
+    }
+  },
+  "source_sha256": {
+    "sxm-lineup.html": "8d87270051195219ae0462382a99644c2141d06102f3793a3fe3c9f0498b84b1",
+    "pluto.xml.gz": "dbfc2542ce496bdbe36b7da0761aeaa50ac26fbb7f0386c726449bb033955b1b",
+    "samsung-us.data": "1bbe293efe88f7ae583856385cf7d63aa868e9f10fe735e680ef83ab2f79d4c2",
+    "tvlogos.data": "08cb52311589618189f11e082b889668d3f9f072e9ed27e945c1c4e87c399d65",
+    "logos.json": "bd04c5316015d457ab1d50b52b73ad868aec7a94f08910fcd81267865daee70e"
+  }
+}

@@ -12,10 +12,11 @@ from audit_logo_reachability import check_url
 
 class FakeResponse:
     status = 200
-    headers = {"Content-Type": "image/png"}
-    def __init__(self, data, url="https://assets.example.org/logo.png"):
+    def __init__(self, data, url="https://assets.example.org/logo.png",
+                 content_type="image/png"):
         self.data = data
         self.url = url
+        self.headers = {"Content-Type": content_type}
     def __enter__(self): return self
     def __exit__(self, *args): return False
     def geturl(self): return self.url
@@ -35,8 +36,39 @@ class LogoReachabilityTests(unittest.TestCase):
             self.assertTrue(check_url("https://assets.example.org/logo.png")["ok"])
 
     def test_fake_html_rejected_even_with_image_header(self):
-        with patch("urllib.request.urlopen", return_value=FakeResponse(b"<html>not image</html>")):
-            self.assertFalse(check_url("https://assets.example.org/logo.png")["ok"])
+        with patch("urllib.request.urlopen", return_value=FakeResponse(
+            b"<html>not image</html>", url="https://cdn.example.org/failure",
+            content_type="text/html")):
+            result = check_url("https://assets.example.org/logo.png")
+        self.assertFalse(result["ok"])
+        self.assertEqual(result["content_type"], "text/html")
+        self.assertEqual(result["final_url"], "https://cdn.example.org/failure")
+
+    def test_gateway_error_disguised_as_http_200_is_retried_and_image_verified(self):
+        url = "https://assets.example.org/logo.png"
+        gateway_error = FakeResponse(
+            b"error code: 502\n", content_type="text/plain")
+        png = FakeResponse(b"\x89PNG\r\n\x1a\n" + bytes(64))
+        with patch("urllib.request.urlopen", side_effect=[gateway_error, png]) as opened, \
+                patch("time.sleep") as sleep:
+            result = check_url(url)
+        self.assertTrue(result["ok"])
+        self.assertEqual(opened.call_count, 2)
+        sleep.assert_called_once_with(2)
+
+    def test_persistent_gateway_error_is_reported_with_response_details(self):
+        url = "https://assets.example.org/logo.png"
+        response = FakeResponse(
+            b"error code: 502\n", url="https://cdn.example.org/error",
+            content_type="text/plain")
+        with patch("urllib.request.urlopen", return_value=response), \
+                patch("time.sleep"):
+            result = check_url(url, retries=0)
+        self.assertFalse(result["ok"])
+        self.assertEqual(result["reason"], "upstream_gateway_error")
+        self.assertEqual(result["http_status"], 200)
+        self.assertEqual(result["content_type"], "text/plain")
+        self.assertEqual(result["final_url"], "https://cdn.example.org/error")
 
     def test_rate_limited_image_is_retried_then_validated(self):
         url = "https://assets.example.org/logo.png"

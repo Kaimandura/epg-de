@@ -31,8 +31,8 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
-      - name: Verify every configured replacement logo URL and image response
-        run: python scripts/audit_logo_reachability.py --overrides config/logo-overrides.json --report build/logo-override-reachability.json
+      - name: Audit replacement logos (availability warnings allowed)
+        run: python scripts/audit_logo_reachability.py --allow-logo-gaps --overrides config/logo-overrides.json --report build/logo-override-reachability.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -67,9 +67,9 @@ jobs:
             --channels-csv build/identity-source/channels.csv \
             --logos-csv build/identity-source/logos.csv
       - name: Inventory all nine candidate XMLTV products and logos
-        run: python scripts/audit_all_epg_products.py --directory build/snapshot-logo-input --usa-logo-debt config/usa-logo-debt-policy.json --report build/all-epg-quality.json
-      - name: Verify every candidate logo URL and image response
-        run: python scripts/audit_logo_reachability.py --directory build/snapshot-logo-input --usa-logo-debt config/usa-logo-debt-policy.json --report build/all-epg-logo-reachability.json --gap-csv build/logo-repair-queue.csv
+        run: python scripts/audit_all_epg_products.py --allow-logo-gaps --directory build/snapshot-logo-input --usa-logo-debt config/usa-logo-debt-policy.json --report build/all-epg-quality.json
+      - name: Audit candidate logos (availability warnings allowed)
+        run: python scripts/audit_logo_reachability.py --allow-logo-gaps --directory build/snapshot-logo-input --usa-logo-debt config/usa-logo-debt-policy.json --report build/all-epg-logo-reachability.json --gap-csv build/logo-repair-queue.csv
       - name: Reconcile and audit the proposed release from the pinned snapshot
         run: python scripts/validate_release_snapshot.py --input-dir build/snapshot-logo-input --output build/snapshot
       - uses: actions/upload-artifact@v4

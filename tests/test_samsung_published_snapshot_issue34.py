@@ -21,6 +21,13 @@ DATE = re.compile(r"^\d{12}(?:\d{2})?\s[+-]\d{4}$")
 
 
 class SamsungPublishedSnapshotTest(unittest.TestCase):
+    def test_update_workflow_guards_real_horizon_and_refreshes_every_three_hours(self):
+        workflow = (ROOT / ".github" / "workflows" / "update-epg.yml").read_text(
+            encoding="utf-8")
+        self.assertIn('cron: "17 */3 * * *"', workflow)
+        self.assertIn("--min-future-hours 4", workflow)
+        self.assertIn("--required-contiguous-hours Silverline.de=24", workflow)
+
     def test_samsung_snapshot_matches_reconciled_release(self):
         with COVERAGE.open(encoding="utf-8-sig", newline="") as handle:
             rows = [r for r in csv.DictReader(handle) if r.get("platform") == "samsung"]
